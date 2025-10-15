@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Pete's Email Engagement Toolkit">f003892693acba502e03fde1a903d69b</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Customer Interaction</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>4</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-15 12:50:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd03cd2293ecba502e03fde1a903d6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer Interaction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_app_module_cd03cd2293ecba502e03fde1a903d6ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-15 12:50:08</sys_updated_on>
+        <timeline_page/>
+        <title>Customer Interaction</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ed2cff2dffadead8c80bf8e4fc4fd97e</instance_id>
+        <instance_name>demoalectriallwf114117</instance_name>
+        <name>sys_app_module_cd03cd2293ecba502e03fde1a903d6ba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Pete's Email Engagement Toolkit">f003892693acba502e03fde1a903d69b</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>Customer Interaction</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>4</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-15 12:50:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>cd03cd2293ecba502e03fde1a903d6ba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Customer Interaction</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_app_module_cd03cd2293ecba502e03fde1a903d6ba</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-15 12:50:08</sys_updated_on><timeline_page/><title>Customer Interaction</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>282001786</payload_hash>
+        <record_name>Customer Interaction</record_name>
+        <reverted_from/>
+        <source>c9900de693acba502e03fde1a903d658</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-15 12:50:08</sys_created_on>
+        <sys_id>cd03cd2293ecba502e03fde1a903d6bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199e7ebb7e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-15 12:50:08</sys_updated_on>
+        <type>Module</type>
+        <update_guid>8103cd2217ecba508bb86a2988755dbc</update_guid>
+        <update_guid_history>8103cd2217ecba508bb86a2988755dbc:282001786</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Customer Interaction">9399ea6693683e502e03fde1a903d6fd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-15 20:18:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>a65aff2df11b4fd98a12a6fb8ac457b1</sys_id>
+        <sys_metadata>cd03cd2293ecba502e03fde1a903d6ba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer Interaction</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_app_module_cd03cd2293ecba502e03fde1a903d6ba</sys_update_name>
+        <sys_update_version display_value="sys_app_module_cd03cd2293ecba502e03fde1a903d6ba">cd03cd2293ecba502e03fde1a903d6bc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-15 20:18:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
