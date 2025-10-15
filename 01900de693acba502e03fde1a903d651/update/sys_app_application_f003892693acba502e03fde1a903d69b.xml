@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order/>
+        <roles>interaction_agent,interaction_admin,interaction_integration_user,awa_agent,awa_admin,awa_manager,awa_integration_user,awa_external_user,sn_customerservice_agent,sn_customerservice_manager,sn_customerservice.consumer,sn_customerservice.customer</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-15 12:50:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f003892693acba502e03fde1a903d69b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pete's Email Engagement Toolkit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_app_application_f003892693acba502e03fde1a903d69b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-15 12:50:08</sys_updated_on>
+        <title>Pete's Email Engagement Toolkit</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>
