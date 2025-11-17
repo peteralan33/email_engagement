@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Purpose
+The Interaction Record Enrichment (IRE) tool ensures that the crucial context from any analyzed documents is preserved and readily accessible. Its function is to integrate the newly generated attachment summaries into the main conversation log.
+
+Input
+Attachment Summaries: The textual output from the summarization process (Step 2), representing the condensed content of documents or prior interactions.
+
+Contextual Data for Action
+Original Interaction Record: This is the existing object that the tool acts upon. While not a direct input to the tool's execution, it is the designated target for the update.
+
+Action &amp; Logic
+Direct Integration: This tool takes the received Attachment Summaries text and seamlessly embeds or appends it into a designated field within the Original Interaction Record.
+
+Creating a Complete Package: This action ensures that the master record now contains a holistic view: the associated emails, and the key insights from any supporting documents.
+
+Preparation for Classification: By making the Interaction Record the single source of truth, it perfectly prepares the data package for the next step, Specialized Case Classification (Step 4), which will analyze all this context to make its final determination.
+
+Key Output Determined
+Updated Interaction Record: The resulting object is the enriched Interaction Record, which now fully incorporates the Attachment Summaries. This complete data package is passed forward for subsequent analysis and processing.</description>
+        <input_schema>[{"name":"attachmentSummary","description":"The summary of the attachments from the interaction","mandatory":false},{"name":"crudInputs","description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</input_schema>
+        <name>Interaction enrichment with attachment summary</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function (inputs) {
+    function getChoiceList(tableName, fieldName) {
+        var choices = GlideChoiceList.getChoiceList(tableName, fieldName);
+        if (!choices) return [];
+
+        var choicesArray = [];
+        for (var i = 0; i < choices.getSize(); i++) {
+            choicesArray.push({
+                value: choices.getChoice(i).getValue(),
+                label: choices.getChoice(i).getLabel(),
+            });
+        }
+        return choicesArray;
+    }
+
+    // parses query expression containing {{variables}}
+    // by replacing {{variableName}} with the value of the variableName property in the inputs object
+    // if the variableName property is not found in the inputs object, the variableName is returned as is
+    function parseQuery(expression, inputs) {
+        if (expression === '') return '';
+        return expression.replace(
+            /{{\s*(\w+)\s*}}/g,
+            function (match, variableName) {
+                if (inputs && inputs.hasOwnProperty(variableName)) {
+                    return inputs[variableName].toLowerCase();
+                }
+                return match;
+            }
+        );
+    }
+
+    // parses {{value}} and obtains the correct value for a choice or reference field.
+    function parseValue(table, value, field, inputs) {
+        if (!value || typeof value === 'object') return '';
+        // regex to parse {{var}} and check if the inputs contain that prop
+        var fieldValue = value.replace(
+            /{{\s*(\w+)\s*}}/g,
+            function (match, variableName) {
+                if (inputs && inputs.hasOwnProperty(variableName)) {
+                    return inputs[variableName];
+                }
+                return '';
+            }
+        );
+        if (!fieldValue) return field.type === 'string' ? '' : null;
+        if (field.type === 'choice') {
+            var choices = getChoiceList(table, field.id);
+            for (var i = 0; i < choices.length; i++) {
+                if (
+                    choices[i].value == fieldValue ||
+                    choices[i].label
+                        .toLowerCase()
+                        .includes(fieldValue.toLowerCase())
+                ) {
+                    return choices[i].value;
+                }
+            }
+            // Neither value nor label matched
+            gs.error(
+                '[AIA AGENTS MSG] Invalid choice field value or label: {0}',
+                fieldValue
+            );
+        } else if (field.referenceTable) {
+            // First check if the input is a valid sys_id
+            var refGr = new GlideRecordSecure(field.referenceTable);
+            refGr.addQuery('sys_id', fieldValue);
+            refGr.query();
+            if (refGr.getRowCount() === 1) {
+                return fieldValue; // User input is a valid sys_id
+            }
+
+            if (field.referenceTableDefaultField) {
+                // If not, try to find a record with matching display value
+                var refName = field.referenceTableDefaultField;
+                refGr = new GlideRecordSecure(field.referenceTable);
+
+                // Check for both exact match and display value containing the input
+                var qr = refGr.addQuery(refName, fieldValue);
+                qr.addOrCondition(refName, 'CONTAINS', fieldValue);
+                refGr.setLimit(1);
+                refGr.query();
+
+                if (refGr.next()) {
+                    return refGr.getUniqueValue(); // Return the sys_id
+                }
+            }
+            // No match found
+            gs.error(
+                '[AIA AGENTS MSG] Invalid reference field value or label: {0}',
+                fieldValue
+            );
+        }
+        return fieldValue;
+    }
+
+    var table = inputs.crudInputs.table.value;
+    var tableName = inputs.crudInputs.table.displayValue;
+    var query = parseQuery(inputs.crudInputs.query, inputs);
+    var fieldValues = inputs.crudInputs.fieldValues
+        ? inputs.crudInputs.fieldValues
+        : [];
+    fieldValues = fieldValues.map(function (item) {
+        var fieldValue = item.value ? item.value.fieldValue : '';
+        return {
+            field: item.field.id,
+            value: parseValue(table, fieldValue, item.field, inputs),
+        };
+    });
+
+    var gr = new GlideRecordSecure(table);
+    if (query) {
+        gr.addEncodedQuery(query);
+    } else {
+        gs.error('[AIA error] No query provided');
+        return {
+            message: 'No query provided',
+            status: sn_i18n.Message.getMessage('sn_aia', 'error'),
+        };
+    }
+
+    var updated = [];
+    var failed = [];
+
+    gr.query();
+    while (gr.next()) {
+        if (gr.canWrite()) {
+            // Store original record ID
+            var recordId = gr.getUniqueValue();
+
+            // Set field values
+            fieldValues.forEach(function (item) {
+                if (gr.isValidField(item.field)) {
+                    gr.setValue(item.field, item.value);
+                }
+            });
+
+            // Attempt update
+            var updatedId = gr.update();
+
+            if (updatedId) {
+                updated.push(updatedId);
+            } else {
+                // Update operation failed entirely
+                failed.push(recordId);
+            }
+        }
+    }
+
+    var fullSuccessCount = updated.length;
+    var completeFailCount = failed.length;
+
+    var totalCount = fullSuccessCount + completeFailCount;
+
+    // Create simple main message: X out of Y records updated
+    var mainMessage;
+    if (totalCount === 1) {
+        // Single record case
+        if (fullSuccessCount === 1) {
+            mainMessage = sn_i18n.Message.getMessage(
+                'sn_aia',
+                '1 out of 1 record updated in the {table} table.',
+                {
+                    table: tableName,
+                }
+            );
+        } else {
+            mainMessage = sn_i18n.Message.getMessage(
+                'sn_aia',
+                '0 out of 1 record updated in the {table} table.',
+                {
+                    table: tableName,
+                }
+            );
+        }
+    } else {
+        // Multiple records case
+        mainMessage = sn_i18n.Message.getMessage(
+            'sn_aia',
+            '{successCount} out of {totalCount} records updated in the {table} table.',
+            {
+                successCount: fullSuccessCount.toString(),
+                totalCount: totalCount.toString(),
+                table: tableName,
+            }
+        );
+    }
+
+    // Create detailed messages for different update types
+    var successMessage = '';
+    var failureMessage = '';
+
+    // Success message
+    if (fullSuccessCount > 0) {
+        var fullSuccessSingular = sn_i18n.Message.getMessage(
+            'sn_aia',
+            '{count} record completely updated: {ids}. ',
+            {
+                count: fullSuccessCount.toString(),
+                ids: JSON.stringify(updated),
+            }
+        );
+        var fullSuccessPlural = sn_i18n.Message.getMessage(
+            'sn_aia',
+            '{count} records completely updated: {ids}. ',
+            {
+                count: fullSuccessCount.toString(),
+                ids: JSON.stringify(updated),
+            }
+        );
+
+        successMessage = fullSuccessCount === 1 ? fullSuccessSingular : fullSuccessPlural;
+    }
+
+    // Complete failure message
+    if (completeFailCount > 0) {
+        var failureSingular = sn_i18n.Message.getMessage(
+            'sn_aia',
+            '{count} record failed to update: {ids}. ',
+            {
+                count: completeFailCount.toString(),
+                ids: JSON.stringify(failed),
+            }
+        );
+        var failurePlural = sn_i18n.Message.getMessage(
+            'sn_aia',
+            '{count} records failed to update: {ids}. ',
+            {
+                count: completeFailCount.toString(),
+                ids: JSON.stringify(failed),
+            }
+        );
+
+        failureMessage = completeFailCount === 1 ? failureSingular : failurePlural;
+    }
+
+    // Build detailed message
+    var detailedMessage = '';
+    if (successMessage) detailedMessage += successMessage;
+    if (failureMessage) detailedMessage += failureMessage;
+
+    var status;
+    if (totalCount === 0) {
+        status = sn_i18n.Message.getMessage('sn_aia', 'success'); // No records to update
+    } else if (failed.length === 0) {
+        status = sn_i18n.Message.getMessage('sn_aia', 'success'); // All records fully updated successfully
+    } else {
+        status = sn_i18n.Message.getMessage('sn_aia', 'error'); // Some records failed to update
+    }
+
+    return {
+        message: mainMessage,
+        detailedMessage: detailedMessage,
+        status: status,
+    };
+})(inputs);
+]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 02:55:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c6aaa71693093ad00f91fce79503d6aa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Interaction enrichment with attachment summary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_c6aaa71693093ad00f91fce79503d6aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 16:28:48</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>crud</type>
+    </sn_aia_tool>
+</record_update>

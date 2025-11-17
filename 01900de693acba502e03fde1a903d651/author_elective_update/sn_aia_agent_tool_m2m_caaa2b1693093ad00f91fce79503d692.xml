@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
+        <description>Purpose
+The Interaction Record Enrichment (IRE) tool ensures that the crucial context from any analyzed documents is preserved and readily accessible. Its function is to integrate the newly generated attachment summaries into the main conversation log.
+
+Input
+Attachment Summaries: The textual output from the summarization process (Step 2), representing the condensed content of documents or prior interactions.
+
+Contextual Data for Action
+Original Interaction Record: This is the existing object that the tool acts upon. While not a direct input to the tool's execution, it is the designated target for the update.
+
+Action &amp; Logic
+Direct Integration: This tool takes the received Attachment Summaries text and seamlessly embeds or appends it into a designated field within the Original Interaction Record.
+
+Creating a Complete Package: This action ensures that the master record now contains a holistic view: the associated emails, and the key insights from any supporting documents.
+
+Preparation for Classification: By making the Interaction Record the single source of truth, it perfectly prepares the data package for the next step, Specialized Case Classification (Step 4), which will analyze all this context to make its final determination.
+
+Key Output Determined
+Updated Interaction Record: The resulting object is the enriched Interaction Record, which now fully incorporates the Attachment Summaries. This complete data package is passed forward for subsequent analysis and processing.</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"attachmentSummary","value":"","description":"The summary of the attachments from the interaction","mandatory":false,"invalidMessage":null},{"name":"crudInputs","value":{"operation":"update","table":{"value":"interaction","displayValue":"Interaction"},"query":"type=email","fieldValues":[{"field":{"id":"x_snc_pab_ee_tkit_attachment_summarize","sublabel":"x_snc_pab_ee_tkit_attachment_summarize","excludedOperators":[],"extendedOperators":null,"label":"Attachment summarize","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{attachmentSummary}}"}}]},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Interaction enrichment with attachment summary</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Updating attachment summaries</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 02:55:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>caaa2b1693093ad00f91fce79503d692</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Interaction enrichment with attachment summary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_caaa2b1693093ad00f91fce79503d692</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 16:28:49</sys_updated_on>
+        <tool display_value="Interaction enrichment with attachment summary">c6aaa71693093ad00f91fce79503d6aa</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_caaa2b1693093ad00f91fce79503d692</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent><description>Purpose
+The Interaction Record Enrichment (IRE) tool ensures that the crucial context from any analyzed documents is preserved and readily accessible. Its function is to integrate the newly generated attachment summaries into the main conversation log.
+
+Input
+Attachment Summaries: The textual output from the summarization process (Step 2), representing the condensed content of documents or prior interactions.
+
+Contextual Data for Action
+Original Interaction Record: This is the existing object that the tool acts upon. While not a direct input to the tool's execution, it is the designated target for the update.
+
+Action &amp; Logic
+Direct Integration: This tool takes the received Attachment Summaries text and seamlessly embeds or appends it into a designated field within the Original Interaction Record.
+
+Creating a Complete Package: This action ensures that the master record now contains a holistic view: the associated emails, and the key insights from any supporting documents.
+
+Preparation for Classification: By making the Interaction Record the single source of truth, it perfectly prepares the data package for the next step, Specialized Case Classification (Step 4), which will analyze all this context to make its final determination.
+
+Key Output Determined
+Updated Interaction Record: The resulting object is the enriched Interaction Record, which now fully incorporates the Attachment Summaries. This complete data package is passed forward for subsequent analysis and processing.</description><display_output>true</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"attachmentSummary","value":"","description":"The summary of the attachments from the interaction","mandatory":false,"invalidMessage":null},{"name":"crudInputs","value":{"operation":"update","table":{"value":"interaction","displayValue":"Interaction"},"query":"type=email","fieldValues":[{"field":{"id":"x_snc_pab_ee_tkit_attachment_summarize","sublabel":"x_snc_pab_ee_tkit_attachment_summarize","excludedOperators":[],"extendedOperators":null,"label":"Attachment summarize","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{attachmentSummary}}"}}]},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs><max_auto_executions>10</max_auto_executions><name>Interaction enrichment with attachment summary</name><output_transformation_strategy>abstract_summary</output_transformation_strategy><post_processing_script/><pre_message>Updating attachment summaries</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-09 02:55:30</sys_created_on><sys_domain>global</sys_domain><sys_id>caaa2b1693093ad00f91fce79503d692</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Interaction enrichment with attachment summary</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_caaa2b1693093ad00f91fce79503d692</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-09 16:28:49</sys_updated_on><tool display_value="Interaction enrichment with attachment summary">c6aaa71693093ad00f91fce79503d6aa</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-1520725246</payload_hash>
+        <record_name>Interaction enrichment with attachment summary</record_name>
+        <reverted_from/>
+        <source>0194326e2fa07650b14f861cbfa4e361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 16:28:49</sys_created_on>
+        <sys_id>ffc4a6269341bad00f91fce79503d6de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a6972e6740000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 16:28:49</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>33c4a6260341bad0b415e0ffc509f9de</update_guid>
+        <update_guid_history>33c4a6260341bad0b415e0ffc509f9de:-1520725246,ceaa2b162f093ad06ef01ee660143895:1442838943</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Interaction enrichment with attachment summary">504ca2e69381bad00f91fce79503d60f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:01:20</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>01274e0231364050b69c4d32b7bc4f84</sys_id>
+        <sys_metadata>caaa2b1693093ad00f91fce79503d692</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Interaction enrichment with attachment summary</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_caaa2b1693093ad00f91fce79503d692</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_caaa2b1693093ad00f91fce79503d692">ffc4a6269341bad00f91fce79503d6de</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:01:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

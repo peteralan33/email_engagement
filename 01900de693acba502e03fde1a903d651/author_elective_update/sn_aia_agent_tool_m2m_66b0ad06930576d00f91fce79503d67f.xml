@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Document and visual insights AI agent (Copy)">d6b0ad06930576d00f91fce79503d667</agent>
+        <description>Get Relevant DocIntel Task Definition</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"search_type","description":"Search type","value":"hybrid"},{"name":"query","description":"search query for retrieving relevant information from DocIntel Task Definition Indexed Source"},{"name":"search_profile","value":"sn_docintel_gen_ai_docintel_task_definition_search_profile","label":"DocIntel Task Definition Search Profile","description":"Search profile"},{"name":"sources","label":["DocIntel Task Definition Indexed Source"],"value":["sys_di_task_definition"],"description":"Search sources"},{"name":"fields","label":["Sys ID [sys_di_task_definition]","Display Name [sys_di_task_definition]"],"value":["sys_di_task_definition.sys_id","sys_di_task_definition.display_name"],"description":"Fields to be returned"},{"name":"search_results_limit","value":"3","description":"Search results limit"},{"name":"document_match_threshold","value":"0.7","description":"Document matching threshold"},{"name":"semantic_index_names","label":["body"],"value":["body"],"description":"Semantic indexed fields"}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Get Relevant DocIntel Task Definition</name>
+        <output_transformation_strategy>summary_for_search_results</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 22:14:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>66b0ad06930576d00f91fce79503d67f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Relevant DocIntel Task Definition</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d67f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 22:14:23</sys_updated_on>
+        <tool display_value="AIA RAG Retriever">8021ddea2b0d52101d72fb466e91bfd1</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d67f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Document and visual insights AI agent (Copy)">d6b0ad06930576d00f91fce79503d667</agent><description>Get Relevant DocIntel Task Definition</description><display_output>false</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"search_type","description":"Search type","value":"hybrid"},{"name":"query","description":"search query for retrieving relevant information from DocIntel Task Definition Indexed Source"},{"name":"search_profile","value":"sn_docintel_gen_ai_docintel_task_definition_search_profile","label":"DocIntel Task Definition Search Profile","description":"Search profile"},{"name":"sources","label":["DocIntel Task Definition Indexed Source"],"value":["sys_di_task_definition"],"description":"Search sources"},{"name":"fields","label":["Sys ID [sys_di_task_definition]","Display Name [sys_di_task_definition]"],"value":["sys_di_task_definition.sys_id","sys_di_task_definition.display_name"],"description":"Fields to be returned"},{"name":"search_results_limit","value":"3","description":"Search results limit"},{"name":"document_match_threshold","value":"0.7","description":"Document matching threshold"},{"name":"semantic_index_names","label":["body"],"value":["body"],"description":"Semantic indexed fields"}]</inputs><max_auto_executions>10</max_auto_executions><name>Get Relevant DocIntel Task Definition</name><output_transformation_strategy>summary_for_search_results</output_transformation_strategy><post_processing_script/><pre_message/><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-07 22:14:23</sys_created_on><sys_domain>global</sys_domain><sys_id>66b0ad06930576d00f91fce79503d67f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Get Relevant DocIntel Task Definition</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d67f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-07 22:14:23</sys_updated_on><tool display_value="AIA RAG Retriever">8021ddea2b0d52101d72fb466e91bfd1</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-1117183112</payload_hash>
+        <record_name>Get Relevant DocIntel Task Definition</record_name>
+        <reverted_from/>
+        <source>0194326e2fa07650b14f861cbfa4e361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 22:14:23</sys_created_on>
+        <sys_id>2eb0ad06930576d00f91fce79503d682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a60628fa20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 22:14:23</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>62b0ad063b0576d0d39d2b10347f6882</update_guid>
+        <update_guid_history>62b0ad063b0576d0d39d2b10347f6882:-1117183112</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Get Relevant DocIntel Task Definition">b96f6d06938576d00f91fce79503d641</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 23:18:31</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>2f2780f21a824f28b8a442ab1f141240</sys_id>
+        <sys_metadata>66b0ad06930576d00f91fce79503d67f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Relevant DocIntel Task Definition</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d67f</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d67f">2eb0ad06930576d00f91fce79503d682</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 23:18:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

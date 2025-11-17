@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill_applicability">
+    <sys_gen_ai_skill_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <condition_mode>simple</condition_mode>
+        <condition_script><![CDATA[(function executeCondition(/* glide record */ current) {   
+	// customize condition logic here, return true or false   
+	return false;
+})(current);]]></condition_script>
+        <context_profile/>
+        <roles>now_assist_panel_user</roles>
+        <skill_id display_value="Determine Case Classification from Email">2370da66938d7ad00f91fce79503d6fe</skill_id>
+        <sys_class_name>sys_gen_ai_skill_applicability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 15:00:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>15805e66938d7ad00f91fce79503d6ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>2370da66938d7ad00f91fce79503d6fe</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_gen_ai_skill_applicability_15805e66938d7ad00f91fce79503d6ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 15:09:46</sys_updated_on>
+    </sys_gen_ai_skill_applicability>
+</record_update>

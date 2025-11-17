@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
+        <description>Purpose
+The Capital Markets Case Classifier (CMCC) uses specialized financial expertise to analyze the customer's request from the Interaction Record. Its goal is to pinpoint the exact nature of the issue and automatically generate the core technical metadata needed for efficient case creation and routing.
+
+Input
+Interaction Record (Primary Input): The definitive record of the customer interaction.
+
+Action &amp; Logic
+Specialized Analysis: The tool runs the input through a custom Capital Markets skill model, which is trained on extensive historical operational data, knowledge base articles, and key business reference data (Trade Exceptions, Settlements, Regulatory Filing issues, etc.).
+
+Granular Classification: It maps the broad intent (e.g., "Trade Issue") to the most specific, actionable classification possible (e.g., "Failed Settlement - T+2 Equities"). This specificity is crucial for accurate routing and priority setting.
+
+Metadata Generation: Based on this precise classification, the tool automatically determines and prepares the technical parameters required for the downstream case management system.
+
+Key Outputs Determined
+The CMCC determines five critical metadata fields that define the new case record:
+
+Case Table: It specifies the exact system location (e.g., sn_bom_treasury_wire_service) where the case must be created.
+
+Business Activity Name: It assigns the functional name for the issue, such as Unmatched Trade.
+
+Business Activity ID: It provides the unique technical identifier (e.g., f565708f2fec7a50b14f861cbfa4e359) that links the classification to the correct system activity.
+
+Summary: It creates a concise, one-line subject for the new case (e.g., Client failed to settle T+2 equities trade).
+Description: It generates a detailed description for the resolving agent, incorporating context from the conversation and any extracted data points.</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Capital Markets Case Classifier (CMCC)</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Determining classification</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 15:13:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7b93d6ae938d7ad00f91fce79503d67b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Capital Markets Case Classifier (CMCC)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_7b93d6ae938d7ad00f91fce79503d67b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 18:10:24</sys_updated_on>
+        <tool display_value="Case Classification from Email Interaction">041cfaae9305bad00f91fce79503d6b3</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions>undefined</transformation_instructions>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_7b93d6ae938d7ad00f91fce79503d67b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent><description>Purpose
+The Capital Markets Case Classifier (CMCC) uses specialized financial expertise to analyze the customer's request from the Interaction Record. Its goal is to pinpoint the exact nature of the issue and automatically generate the core technical metadata needed for efficient case creation and routing.
+
+Input
+Interaction Record (Primary Input): The definitive record of the customer interaction.
+
+Action &amp; Logic
+Specialized Analysis: The tool runs the input through a custom Capital Markets skill model, which is trained on extensive historical operational data, knowledge base articles, and key business reference data (Trade Exceptions, Settlements, Regulatory Filing issues, etc.).
+
+Granular Classification: It maps the broad intent (e.g., "Trade Issue") to the most specific, actionable classification possible (e.g., "Failed Settlement - T+2 Equities"). This specificity is crucial for accurate routing and priority setting.
+
+Metadata Generation: Based on this precise classification, the tool automatically determines and prepares the technical parameters required for the downstream case management system.
+
+Key Outputs Determined
+The CMCC determines five critical metadata fields that define the new case record:
+
+Case Table: It specifies the exact system location (e.g., sn_bom_treasury_wire_service) where the case must be created.
+
+Business Activity Name: It assigns the functional name for the issue, such as Unmatched Trade.
+
+Business Activity ID: It provides the unique technical identifier (e.g., f565708f2fec7a50b14f861cbfa4e359) that links the classification to the correct system activity.
+
+Summary: It creates a concise, one-line subject for the new case (e.g., Client failed to settle T+2 equities trade).
+Description: It generates a detailed description for the resolving agent, incorporating context from the conversation and any extracted data points.</description><display_output>true</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Capital Markets Case Classifier (CMCC)</name><output_transformation_strategy>abstract_summary</output_transformation_strategy><post_processing_script/><pre_message>Determining classification</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-09 15:13:42</sys_created_on><sys_domain>global</sys_domain><sys_id>7b93d6ae938d7ad00f91fce79503d67b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Capital Markets Case Classifier (CMCC)</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_7b93d6ae938d7ad00f91fce79503d67b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-09 18:10:24</sys_updated_on><tool display_value="Case Classification from Email Interaction">041cfaae9305bad00f91fce79503d6b3</tool><tool_attributes>{}</tool_attributes><transformation_instructions>undefined</transformation_instructions></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>1887436726</payload_hash>
+        <record_name>Capital Markets Case Classifier (CMCC)</record_name>
+        <reverted_from/>
+        <source>0194326e2fa07650b14f861cbfa4e361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 18:10:24</sys_created_on>
+        <sys_id>001cfaae9305bad00f91fce79503d6d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a69cfe9180000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 18:10:24</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>001cfaae5205bad072d74bdf8c221ed7</update_guid>
+        <update_guid_history>001cfaae5205bad072d74bdf8c221ed7:1887436726,3fc4e2267e41bad03eabd4de4fc47060:1880625315,339316ee1f8d7ad0aed849de3e2ba7ea:1846730307</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Capital Markets Case Classifier (CMCC)">3c2047aa9345bad00f91fce79503d68f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 18:28:13</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>157f017fa0bd46d5ba4be62739b1e3a1</sys_id>
+        <sys_metadata>7b93d6ae938d7ad00f91fce79503d67b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Capital Markets Case Classifier (CMCC)</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_7b93d6ae938d7ad00f91fce79503d67b</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_7b93d6ae938d7ad00f91fce79503d67b">001cfaae9305bad00f91fce79503d6d8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 18:28:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

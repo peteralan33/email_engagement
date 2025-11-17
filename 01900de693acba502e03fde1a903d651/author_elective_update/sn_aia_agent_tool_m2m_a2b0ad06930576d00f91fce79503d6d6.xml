@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Document and visual insights AI agent (Copy)">d6b0ad06930576d00f91fce79503d667</agent>
+        <description>This tool receives a record number and uses the record number prefix to find the parent table. This tool is useful if the user provides a record number in their prompt, but doesn't specify which table the record comes from.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"record_number","value":"","description":"The unique number identifier from the record on the table.","mandatory":true,"invalidMessage":null}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Get table name from record number</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Finding parent table for record</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 22:14:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a2b0ad06930576d00f91fce79503d6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get table name from record number</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_a2b0ad06930576d00f91fce79503d6d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 22:14:23</sys_updated_on>
+        <tool display_value="Get table name from record number">44056103b726621023933aa75e11a998</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_a2b0ad06930576d00f91fce79503d6d6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Document and visual insights AI agent (Copy)">d6b0ad06930576d00f91fce79503d667</agent><description>This tool receives a record number and uses the record number prefix to find the parent table. This tool is useful if the user provides a record number in their prompt, but doesn't specify which table the record comes from.</description><display_output>false</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"record_number","value":"","description":"The unique number identifier from the record on the table.","mandatory":true,"invalidMessage":null}]</inputs><max_auto_executions>10</max_auto_executions><name>Get table name from record number</name><output_transformation_strategy>none</output_transformation_strategy><post_processing_script/><pre_message>Finding parent table for record</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-07 22:14:23</sys_created_on><sys_domain>global</sys_domain><sys_id>a2b0ad06930576d00f91fce79503d6d6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Get table name from record number</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_a2b0ad06930576d00f91fce79503d6d6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-07 22:14:23</sys_updated_on><tool display_value="Get table name from record number">44056103b726621023933aa75e11a998</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-1165638334</payload_hash>
+        <record_name>Get table name from record number</record_name>
+        <reverted_from/>
+        <source>0194326e2fa07650b14f861cbfa4e361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 22:14:23</sys_created_on>
+        <sys_id>2eb0ad06930576d00f91fce79503d6d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a606290eb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 22:14:23</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>62b0ad06100576d088318f23b3a23dd9</update_guid>
+        <update_guid_history>62b0ad06100576d088318f23b3a23dd9:-1165638334</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Get table name from record number">0e6f6d06938576d00f91fce79503d67a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 23:18:31</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>25fe0608f0814658b29142d3ac4d8771</sys_id>
+        <sys_metadata>a2b0ad06930576d00f91fce79503d6d6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get table name from record number</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_a2b0ad06930576d00f91fce79503d6d6</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_a2b0ad06930576d00f91fce79503d6d6">2eb0ad06930576d00f91fce79503d6d9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 23:18:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

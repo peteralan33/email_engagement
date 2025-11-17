@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 01:16:43</sys_created_on>
+        <sys_id>24d0325b2f09be14743eb82bcfa4e33d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>case_classification_from_email_interacti.710632ee93c1bad00f91fce79503d623.now_assist_panel_user</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_security_acl display_value="case_classification_from_email_interacti.710632ee93c1bad00f91fce79503d623">8a0632ee93c1bad00f91fce79503d657</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_24d0325b2f09be14743eb82bcfa4e33d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 01:16:43</sys_updated_on>
+        <sys_user_role display_value="now_assist_panel_user" name="now_assist_panel_user">a64d0d7dc36431100f24c87af040ddf9</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

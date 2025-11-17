@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This tool is used when the user requests a summarization of an image attachment, or a summarization of the image attachments on a record.</description>
+        <input_schema>[{"name":"attachment_sys_ids","description":"list of sys_ids for the attachments to use as a document for summarization"}]</input_schema>
+        <name>Summarise attachments on the interaction record</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+
+    function normalizeInputData(inputData) {
+    if (
+        inputData === null ||
+        inputData === "{}" ||
+        (typeof inputData === "object" && !Array.isArray(inputData) && Object.keys(inputData).length === 0)
+    ) {
+        return null;
+    }
+
+    if (typeof inputData === "string") {
+        try {
+            var parsedData = JSON.parse(inputData);
+            if (Array.isArray(parsedData)) {
+                return parsedData;
+            }
+            return [parsedData];
+        } catch (error) {
+            return [inputData];
+        }
+    }
+
+    if (Array.isArray(inputData)) {
+        return inputData;
+    }
+
+    if (typeof inputData === "object") {
+        return Object.values(inputData);
+    }
+
+    throw new Error("Invalid format: inputData must be an object, array, or a valid JSON string.");
+    }
+
+    var docintelGenAIConstants = new sn_docintel_gen_ai.DocintelGenAIConstants();
+    var attSumAPI = new sn_docintel_gen_ai.AttachmentSummarizer();
+    var taskDefinitionSysId = docintelGenAIConstants.ATTACHMENT_SUMMARIZATION_AGENT_TASK_DEF_ID;
+
+    var attachmentIds = normalizeInputData(inputs.attachment_sys_ids);
+    var taskID = attSumAPI.processAttachmentSysIds(attachmentIds, taskDefinitionSysId);
+    return JSON.stringify({
+        "docintel_task_id": taskID
+    });
+
+    })(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 02:44:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4438eb9e93c53ad00f91fce79503d67b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Summarise attachments on the interaction record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_4438eb9e93c53ad00f91fce79503d67b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 02:55:30</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

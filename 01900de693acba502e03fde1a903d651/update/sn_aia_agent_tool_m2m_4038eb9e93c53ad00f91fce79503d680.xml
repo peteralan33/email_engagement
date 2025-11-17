@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
+        <description>This tool is used when the user requests a summarization of an image attachment, or a summarization of the image attachments on a record.</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"attachment_sys_ids","value":"","description":"list of sys_ids for the attachments to use as a document for summarization","invalidMessage":null}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Summarise attachments on the interaction record</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Initiating attachment summarization</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 02:44:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4038eb9e93c53ad00f91fce79503d680</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Summarise attachments on the interaction record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_4038eb9e93c53ad00f91fce79503d680</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 00:23:33</sys_updated_on>
+        <tool display_value="Summarise attachments on the interaction record">4438eb9e93c53ad00f91fce79503d67b</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>

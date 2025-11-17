@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=46235000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>970b62269381bad00f91fce79503d676</copied_from>
+        <copied_from_name>Update interaction record with a</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>enact_capital_markets_case_classifier_cmcc</internal_name>
+        <label_cache>[{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.response","label":"1➛output➛response","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["skill_response-0"]}},{"name":"subflow.attachment_summary","label":"Input➛Attachment summary","type":"string","base_type":"string","usedInstances":{"a675e18c-88b5-4fb5-b338-e6ccf1f9fbda":["x_snc_pab_ee_tkit_attachment_summarize"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"95f3b2cb-16f1-4e45-971d-71b7cccaf5ee"}},{"name":"subflow.interaction_record","label":"Input➛Interaction record","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a675e18c-88b5-4fb5-b338-e6ccf1f9fbda":["record"],"dfd65392-b053-4f1a-bc7b-2d35889f5127":["interaction"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e62e4eca-e912-4efe-ad7e-cc49e4802e16","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.summary_of_classification","label":"1➛output➛Summary of classification","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["summary-2"]}},{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.service_definition_sysid","label":"1➛output➛Service Definition SysID","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["business_activity_id-0"]}},{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.description_of_classification","label":"1➛output➛Description of classification","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["description-3"]}},{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.service_definition_table","label":"1➛output➛Service Definition Table","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["table_name-1"]}}]</label_cache>
+        <master_snapshot>d4bea26e9381bad00f91fce79503d61b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Enact Capital Markets Case Classifier (CMCC)</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:05:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>be4d2e6a9381bad00f91fce79503d6b0</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Enact Capital Markets Case Classifier (CMCC)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_hub_flow_be4d2e6a9381bad00f91fce79503d6b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 05:56:32</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-11-10 12:56:32 AM">3bad91fa2f017a14743eb82bcfa4e35e</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_be4d2e6a9381bad00f91fce79503d6b0^id=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=be4d2e6a9381bad00f91fce79503d6b0^sys_idNOT INba4d2e6a9381bad00f91fce79503d6b1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>be4d2e6a9381bad00f91fce79503d6b0</id>
+        <name>Enact Capital Markets Case Classifier (CMCC)</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:05:53</sys_created_on>
+        <sys_id>ba4d2e6a9381bad00f91fce79503d6b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:05:53</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ba4d2e6a9381bad00f91fce79503d6b1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=be4d2e6a9381bad00f91fce79503d6b0^sys_idNOT IN834d2e6a9381bad00f91fce79503d6b8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e62e4eca-e912-4efe-ad7e-cc49e4802e16</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>interaction</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>interaction_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Interaction record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Enact Capital Markets Case Classifier (CMCC)">be4d2e6a9381bad00f91fce79503d6b0</model>
+        <model_id>be4d2e6a9381bad00f91fce79503d6b0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_be4d2e6a9381bad00f91fce79503d6b0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Interaction" name="interaction">interaction</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:05:53</sys_created_on>
+        <sys_id>834d2e6a9381bad00f91fce79503d6b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:05:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=834d2e6a9381bad00f91fce79503d6b8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=be4d2e6a9381bad00f91fce79503d6b0^sys_idNOT IN1f1ef6269345bad00f91fce79503d649"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f89ffa11-af38-4995-899c-e8df5ac81c78</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>skill_response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Skill response</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Enact Capital Markets Case Classifier (CMCC)">be4d2e6a9381bad00f91fce79503d6b0</model>
+        <model_id>be4d2e6a9381bad00f91fce79503d6b0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_be4d2e6a9381bad00f91fce79503d6b0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 18:19:22</sys_created_on>
+        <sys_id>1f1ef6269345bad00f91fce79503d649</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 18:25:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1f1ef6269345bad00f91fce79503d649"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=be4d2e6a9381bad00f91fce79503d6b0^sys_idNOT IN522eaeea9381bad00f91fce79503d62e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Execute Skill">30468d977f921210f465c3b76d8665c1</action_type>
+        <action_type_parent display_value="Execute Skill">d88205df7f521210f465c3b76d866563</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>30468d977f921210f465c3b76d8665c1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enact Capital Markets Case Classifier (CMCC)">be4d2e6a9381bad00f91fce79503d6b0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:09:40</sys_created_on>
+        <sys_id>522eaeea9381bad00f91fce79503d62e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-10 19:16:33</sys_updated_on>
+        <ui_id>dfd65392-b053-4f1a-bc7b-2d35889f5127</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=522eaeea9381bad00f91fce79503d62e"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=be4d2e6a9381bad00f91fce79503d6b0^sys_idNOT IN0b4d6e6a9381bad00f91fce79503d602"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a1abea669381bad00f91fce79503d647</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enact Capital Markets Case Classifier (CMCC)">be4d2e6a9381bad00f91fce79503d6b0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>skill_response</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:05:54</sys_created_on>
+        <sys_id>0b4d6e6a9381bad00f91fce79503d602</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 05:56:28</sys_updated_on>
+        <ui_id>9c7d9fe5-1005-487a-beb7-7c435f596fb6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTXWvbMBT9K0PPsbHjOLHzVhiFQrvCmvVlDCNLV4moLKmSnDQL+e+7ip00BAaDPercr3POvToQ0wfbB78yd97LtSbLnwciOVmSXOQg5tN5XczKlvIsE3UuGCzqMiv4fFaTCdG0A8z0b1KpxoG3RntAfEtVHwOHAxd8Xhb1NGmzskhmIqdJyxZtMuVFWVW1KPPpIh0opOcGxyO24NJbRfev/9+JbaTiDqKyXxNiqUPSARxZHm5CYW+hUbQFhQNfgpN6jeX/6sWlMJrx5cqMv5kUx0X8PMg4HlnlEwIfATQHHCyo8jAhHdWcBuP2F8QB5c9afQIbqQN2IzH5w8vf2HpeZlkWUwWgRgZD+PJsRosHmG2MZPBsgzR6QAJt1VjDjOo7/W0QEpcDgvYqnJeDSO+xH9hIO/IYSYmXjdl9Pw+8l/qkcAwqw6i6vGhAH9o+gI+L6eXqxp0BebzdDijocGLTUWsRaawzW3magqS7dK3wkQpldsgunndKWVSYop00vUf86wl+pU5GuU/YBovjuB9avvfwELcv8LwEzfOEiqJKZnVdJlVdswQqLkrKqpwtKnI8Wdu891HUYNJoRzM4igmeOWnDHVLYwqj8iIcndfyBwxFuRybjkwOTHgmvIvZwlcf3eFeSXUM7496i1E/s+Af1IMXJ3wMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>interaction_record</element>
+        <help/>
+        <hint/>
+        <label>Interaction record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_be4d2e6a9381bad00f91fce79503d6b0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:05:53</sys_created_on>
+        <sys_id>874d2e6a9381bad00f91fce79503d6bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:05:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>skill_response</element>
+        <help/>
+        <hint/>
+        <label>Skill response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_be4d2e6a9381bad00f91fce79503d6b0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 18:19:22</sys_created_on>
+        <sys_id>9f1ef6269345bad00f91fce79503d688</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 18:19:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=157000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>970b62269381bad00f91fce79503d676</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>enact_capital_markets_case_classifier_cmcc</internal_name>
+        <label_cache>[{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.response","label":"1➛output➛response","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["skill_response-0"]}},{"name":"subflow.attachment_summary","label":"Input➛Attachment summary","type":"string","base_type":"string","usedInstances":{"a675e18c-88b5-4fb5-b338-e6ccf1f9fbda":["x_snc_pab_ee_tkit_attachment_summarize"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"95f3b2cb-16f1-4e45-971d-71b7cccaf5ee"}},{"name":"subflow.interaction_record","label":"Input➛Interaction record","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","column_name":"","usedInstances":{"a675e18c-88b5-4fb5-b338-e6ccf1f9fbda":["record"],"dfd65392-b053-4f1a-bc7b-2d35889f5127":["interaction"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e62e4eca-e912-4efe-ad7e-cc49e4802e16","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.summary_of_classification","label":"1➛output➛Summary of classification","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["summary-2"]}},{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.service_definition_sysid","label":"1➛output➛Service Definition SysID","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["business_activity_id-0"]}},{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.description_of_classification","label":"1➛output➛Description of classification","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["description-3"]}},{"name":"dfd65392-b053-4f1a-bc7b-2d35889f5127.output.service_definition_table","label":"1➛output➛Service Definition Table","type":"string","base_type":"string","usedInstances":{"9c7d9fe5-1005-487a-beb7-7c435f596fb6":["table_name-1"]}}]</label_cache>
+        <master>true</master>
+        <name>Enact Capital Markets Case Classifier (CMCC)</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Enact Capital Markets Case Classifier (CMCC)">be4d2e6a9381bad00f91fce79503d6b0</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:11:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d4bea26e9381bad00f91fce79503d61b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 05:56:30</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_d4bea26e9381bad00f91fce79503d61b^id=d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d4bea26e9381bad00f91fce79503d61b^sys_idNOT IN14bea26e9381bad00f91fce79503d61c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d4bea26e9381bad00f91fce79503d61b</id>
+        <name>Enact Capital Markets Case Classifier (CMCC)</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:11:59</sys_created_on>
+        <sys_id>14bea26e9381bad00f91fce79503d61c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:11:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=14bea26e9381bad00f91fce79503d61c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d4bea26e9381bad00f91fce79503d61b^sys_idNOT IN10bea26e9381bad00f91fce79503d636"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e62e4eca-e912-4efe-ad7e-cc49e4802e16</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>interaction</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>interaction_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Interaction record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Enact Capital Markets Case Classifier (CMCC)">d4bea26e9381bad00f91fce79503d61b</model>
+        <model_id>d4bea26e9381bad00f91fce79503d61b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d4bea26e9381bad00f91fce79503d61b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Interaction" name="interaction">interaction</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:11:59</sys_created_on>
+        <sys_id>10bea26e9381bad00f91fce79503d636</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:11:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=10bea26e9381bad00f91fce79503d636"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d4bea26e9381bad00f91fce79503d61b^sys_idNOT INdcafb26a9345bad00f91fce79503d621"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f89ffa11-af38-4995-899c-e8df5ac81c78</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>skill_response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Skill response</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Enact Capital Markets Case Classifier (CMCC)">d4bea26e9381bad00f91fce79503d61b</model>
+        <model_id>d4bea26e9381bad00f91fce79503d61b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_d4bea26e9381bad00f91fce79503d61b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 18:25:59</sys_created_on>
+        <sys_id>dcafb26a9345bad00f91fce79503d621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 18:25:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dcafb26a9345bad00f91fce79503d621"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d4bea26e9381bad00f91fce79503d61b^sys_idNOT INe8bee26e9381bad00f91fce79503d624"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Execute Skill">30468d977f921210f465c3b76d8665c1</action_type>
+        <action_type_parent display_value="Execute Skill">d88205df7f521210f465c3b76d866563</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>30468d977f921210f465c3b76d8665c1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Enact Capital Markets Case Classifier (CMCC)">d4bea26e9381bad00f91fce79503d61b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:12:00</sys_created_on>
+        <sys_id>e8bee26e9381bad00f91fce79503d624</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 18:26:01</sys_updated_on>
+        <ui_id>dfd65392-b053-4f1a-bc7b-2d35889f5127</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e8bee26e9381bad00f91fce79503d624"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d4bea26e9381bad00f91fce79503d61b^sys_idNOT INe0bee26e9381bad00f91fce79503d623"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a1abea669381bad00f91fce79503d647</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Enact Capital Markets Case Classifier (CMCC)">d4bea26e9381bad00f91fce79503d61b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>skill_response</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:12:00</sys_created_on>
+        <sys_id>e0bee26e9381bad00f91fce79503d623</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 05:56:30</sys_updated_on>
+        <ui_id>9c7d9fe5-1005-487a-beb7-7c435f596fb6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTXWvbMBT9K0PPsbHjOLHzVloKhW6FtevLKOZaH4mILLmSnDQL+e+7iu0krAwGe/M9uh/nnHt9IKbzbefdi7lxTq40Wf48EMnIkqQi5WI+nZfZLK+BJYkoU0H5osyTjM1nJZkQDQ3HTLeRSlWWu9ZoxxHfgurCw+HABJvnWTmN6iTPoplIIarpoo6mLMuLohR5Ol3EPYV4bHA8YgsmXatg//r/nehaKmZ5UPY2IS1YJO25JUvUqfFDg3qUeoNDPiX/qw8Kaq4w9TkY8eXKiL8Z5PftCfdW6tUQP45NRtBYFmimE8I/PNeMIxsByvEJaUAz8Mbuz4jlwJ60ugBrFNdrauDDyV84b54nSRJSBUeJlPfP57AaPO9hcQcekEtHfWf56I6RlLveHMYFdMrfXmN9wlPrpdF9iYdajdVGdY3+1ltCzg3GFSPSOSTB26A1kB+UiOe12X0fWd5LfbJleFSGgjpH4NG8uvOBz4F08uUPn3vkk9Nc8QYnVg20LSJVa81WnqYg6SZeKQxiocwO2YWfJAYaFMa4A4jvEb87wa9gZZD7FdtgcRj3Q8v3jj+EOxJ4pALSNAKRFdGsLPOoKEsa8YKJHGiR0kVBjhPi9u5WgXMXo3BD1XsXZPa2DQZVvcehhFrZ+hskteWDF8dwvjr82f1mtgO38/KodCjhJWAPV3lsjzcr6TW0M3YTxF+w42+X4/zINwQAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>interaction_record</element>
+        <help/>
+        <hint/>
+        <label>Interaction record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d4bea26e9381bad00f91fce79503d61b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:11:59</sys_created_on>
+        <sys_id>1cbea26e9381bad00f91fce79503d642</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:11:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>skill_response</element>
+        <help/>
+        <hint/>
+        <label>Skill response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_d4bea26e9381bad00f91fce79503d61b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 18:25:59</sys_created_on>
+        <sys_id>d8afb26a9345bad00f91fce79503d627</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 18:25:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d4bea26e9381bad00f91fce79503d61b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>be4d2e6a9381bad00f91fce79503d6b0</sys_id>
+        <latest_snapshot>d4bea26e9381bad00f91fce79503d61b</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1a-09-24-2025_10-14-2025_2100.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=be4d2e6a9381bad00f91fce79503d6b0"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=be4d2e6a9381bad00f91fce79503d6b0^sys_idNOT INbcbee26e9381bad00f91fce79503d649"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"bcbee26e9381bad00f91fce79503d649","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Enact Capital Markets Case Classifier (CMCC)">be4d2e6a9381bad00f91fce79503d6b0</plan_id>
+        <snapshot>4f05ceeb2f813210b14f861cbfa4e3ce</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:12:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bcbee26e9381bad00f91fce79503d649</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 05:56:31</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

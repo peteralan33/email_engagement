@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
+    <sn_bom_service_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <case_type display_value="sn_complaint_case">c1f6568887310010f734a7da0acb0b67</case_type>
+        <description>Triggered automatically upon receipt of an inbound customer email containing keywords or phrases identified as a formal grievance, dissatisfaction, or demand for corrective action. This crucial activity initiates the Customer Complaint Triage and Escalation Protocol. &#13;
+&#13;
+The process involves immediate logging and categorization of the complaint based on severity and subject matter (e.g., billing, service failure, personnel issue). This initial step is vital for ensuring the complaint is assigned to the correct specialized resolution team within the mandated service level agreement (SLA) timeframe, guaranteeing the customer receives a timely acknowledgement and a structured path to resolution.</description>
+        <id>compl_case</id>
+        <image/>
+        <name>Complaint Case via Email</name>
+        <order>100</order>
+        <playbook_record_generator/>
+        <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
+        <service_type>3</service_type>
+        <show_in_interceptor>true</show_in_interceptor>
+        <sys_class_name>sn_bom_service_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-23 02:04:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e2abb3bc2f34be90b14f861cbfa4e3e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Complaint Case via Email</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_bom_service_definition_e2abb3bc2f34be90b14f861cbfa4e3e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-23 02:04:54</sys_updated_on>
+        <table>sn_complaint_case</table>
+        <task_table>sn_complaint_case</task_table>
+        <template/>
+        <use_service_catalog_item>false</use_service_catalog_item>
+    </sn_bom_service_definition>
+</record_update>

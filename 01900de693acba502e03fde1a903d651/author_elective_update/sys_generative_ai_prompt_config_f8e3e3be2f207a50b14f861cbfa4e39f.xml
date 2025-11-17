@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_prompt_config">
+    <sys_generative_ai_prompt_config action="DELETE">
+        <ai_config display_value="OneExtend Capability Definition: Determine Service Definition from Email (Now LLM Service - Now LLM Generic)">b4e3e3be2f207a50b14f861cbfa4e39e</ai_config>
+        <definition display_value="Determine Service Definition from Email (Now LLM Service - Now LLM Generic)">8a6a6e7a2fe43a50b14f861cbfa4e36c</definition>
+        <filter_properties/>
+        <filter_type>default</filter_type>
+        <is_default>false</is_default>
+        <order>0</order>
+        <sys_class_name>sys_generative_ai_prompt_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 19:11:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f8e3e3be2f207a50b14f861cbfa4e39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b4e3e3be2f207a50b14f861cbfa4e39e</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_generative_ai_prompt_config_f8e3e3be2f207a50b14f861cbfa4e39f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-16 19:11:29</sys_updated_on>
+    </sys_generative_ai_prompt_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_generative_ai_prompt_config_f8e3e3be2f207a50b14f861cbfa4e39f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_prompt_config"><sys_generative_ai_prompt_config action="INSERT_OR_UPDATE"><ai_config display_value="OneExtend Capability Definition: Determine Service Definition from Email (Now LLM Service - Now LLM Generic)">b4e3e3be2f207a50b14f861cbfa4e39e</ai_config><definition display_value="Determine Service Definition from Email (Now LLM Service - Now LLM Generic)">8a6a6e7a2fe43a50b14f861cbfa4e36c</definition><filter_properties/><filter_type>default</filter_type><is_default>false</is_default><order>0</order><sys_class_name>sys_generative_ai_prompt_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-16 19:11:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f8e3e3be2f207a50b14f861cbfa4e39f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>b4e3e3be2f207a50b14f861cbfa4e39e</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_generative_ai_prompt_config_f8e3e3be2f207a50b14f861cbfa4e39f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-16 19:11:29</sys_updated_on></sys_generative_ai_prompt_config></record_update>]]></payload>
+        <payload_hash>1981183989</payload_hash>
+        <record_name>b4e3e3be2f207a50b14f861cbfa4e39e</record_name>
+        <reverted_from/>
+        <source>0194326e2fa07650b14f861cbfa4e361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 19:11:29</sys_created_on>
+        <sys_id>b4e3e3be2f207a50b14f861cbfa4e3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199ee6f35810000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-16 19:11:29</sys_updated_on>
+        <type>Generative AI Prompt Config</type>
+        <update_guid>b8e3e3be1f207a5063fffedb3846c5a1</update_guid>
+        <update_guid_history>b8e3e3be1f207a5063fffedb3846c5a1:1981183989</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 19:12:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_generative_ai_prompt_config">sys_generative_ai_prompt_config</sys_db_object>
+        <sys_id>86453a26b0864c1d9b95bc2f9928e9c1</sys_id>
+        <sys_metadata>f8e3e3be2f207a50b14f861cbfa4e39f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b4e3e3be2f207a50b14f861cbfa4e39e</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_generative_ai_prompt_config_f8e3e3be2f207a50b14f861cbfa4e39f</sys_update_name>
+        <sys_update_version display_value="sys_generative_ai_prompt_config_f8e3e3be2f207a50b14f861cbfa4e39f">b4e3e3be2f207a50b14f861cbfa4e3a2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-16 19:12:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

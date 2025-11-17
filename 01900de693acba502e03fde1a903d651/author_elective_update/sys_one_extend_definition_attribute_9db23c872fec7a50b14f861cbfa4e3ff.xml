@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_definition_attribute">
+    <sys_one_extend_definition_attribute action="DELETE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <apply_filter>false</apply_filter>
+        <attribute_label/>
+        <capability display_value="Determine Service Definition from Email">956ae2762fe43a50b14f861cbfa4e397</capability>
+        <choice_list/>
+        <contains_large_input>false</contains_large_input>
+        <data_type>string</data_type>
+        <default_value/>
+        <definition/>
+        <description>Table identified for processing from the service definition</description>
+        <group/>
+        <hidden>false</hidden>
+        <info/>
+        <label>Service Definition Table</label>
+        <mandatory>false</mandatory>
+        <name>service_definition_table</name>
+        <order>100</order>
+        <schema/>
+        <sys_class_name>sys_one_extend_definition_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-17 00:55:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9db23c872fec7a50b14f861cbfa4e3ff</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>service_definition_table</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_one_extend_definition_attribute_9db23c872fec7a50b14f861cbfa4e3ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-08 04:52:34</sys_updated_on>
+        <translate>false</translate>
+        <truncate>false</truncate>
+        <type>output</type>
+        <user_query>false</user_query>
+    </sys_one_extend_definition_attribute>
+    <sys_translated_text action="DELETE" query="documentkey=9db23c872fec7a50b14f861cbfa4e3ff"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_one_extend_definition_attribute_9db23c872fec7a50b14f861cbfa4e3ff</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_definition_attribute"><sys_one_extend_definition_attribute action="INSERT_OR_UPDATE"><active>true</active><advanced>false</advanced><apply_filter>false</apply_filter><attribute_label/><capability display_value="Determine Service Definition from Email">956ae2762fe43a50b14f861cbfa4e397</capability><choice_list/><contains_large_input>false</contains_large_input><data_type>string</data_type><default_value/><definition/><description>Table identified for processing from the service definition</description><group/><hidden>false</hidden><info/><label>Service Definition Table</label><mandatory>false</mandatory><name>service_definition_table</name><order>100</order><schema/><sys_class_name>sys_one_extend_definition_attribute</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-17 00:55:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9db23c872fec7a50b14f861cbfa4e3ff</sys_id><sys_mod_count>1</sys_mod_count><sys_name>service_definition_table</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_one_extend_definition_attribute_9db23c872fec7a50b14f861cbfa4e3ff</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-08 04:52:34</sys_updated_on><translate>false</translate><truncate>false</truncate><type>output</type><user_query>false</user_query></sys_one_extend_definition_attribute><sys_translated_text action="delete_multiple" query="documentkey=9db23c872fec7a50b14f861cbfa4e3ff"/></record_update>]]></payload>
+        <payload_hash>-2022113746</payload_hash>
+        <record_name>service_definition_table</record_name>
+        <reverted_from/>
+        <source>0194326e2fa07650b14f861cbfa4e361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-08 04:52:34</sys_created_on>
+        <sys_id>4bdbba069301b6d00f91fce79503d61a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a61cf1ae80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-08 04:52:34</sys_updated_on>
+        <type>OneExtend Capability Attribute</type>
+        <update_guid>8bdbba060801b6d07f17f94cd652e119</update_guid>
+        <update_guid_history>8bdbba060801b6d07f17f94cd652e119:-2022113746,55b27c879bec7a509e7feebfb3a97801:-519140361</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:36:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_one_extend_definition_attribute">sys_one_extend_definition_attribute</sys_db_object>
+        <sys_id>bee4c05979c8427aa7e8821c58376019</sys_id>
+        <sys_metadata>9db23c872fec7a50b14f861cbfa4e3ff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>service_definition_table</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_one_extend_definition_attribute_9db23c872fec7a50b14f861cbfa4e3ff</sys_update_name>
+        <sys_update_version display_value="sys_one_extend_definition_attribute_9db23c872fec7a50b14f861cbfa4e3ff">4bdbba069301b6d00f91fce79503d61a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:36:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

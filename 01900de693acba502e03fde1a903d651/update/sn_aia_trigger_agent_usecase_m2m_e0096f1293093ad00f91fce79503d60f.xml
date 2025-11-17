@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_agent_usecase_m2m">
+    <sn_aia_trigger_agent_usecase_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <objective_template><![CDATA[Help me categorise the new email interaction ${number}]]></objective_template>
+        <related_resource_record>9510f586938576d00f91fce79503d6a4</related_resource_record>
+        <related_resource_table>sn_aia_agent</related_resource_table>
+        <sys_class_name>sn_aia_trigger_agent_usecase_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 02:48:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e0096f1293093ad00f91fce79503d60f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_trigger_agent_usecase_m2m_e0096f1293093ad00f91fce79503d60f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 02:48:18</sys_updated_on>
+        <trigger_configuration display_value="interaction">a409e71293093ad00f91fce79503d6fd</trigger_configuration>
+    </sn_aia_trigger_agent_usecase_m2m>
+</record_update>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Document and visual insights AI agent (Copy)">d6b0ad06930576d00f91fce79503d667</agent>
+        <description>Given a task definition ID and a list of attachments (together forming a document), submit a new task in DocIntel to extract the fields. Note that the attachments must all be from the same record.
+
+The tool returns:
+- the sys_id of the task that was set up in DocIntel
+- a link to the UI to review the values
+- the time at which extraction started</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"task_definition_id","value":"","description":"sys_id of the DocIntel task definition to use","invalidMessage":null},{"name":"attachments_sys_ids","value":"","description":"list of sys_ids for the attachments to use as a document for extraction","invalidMessage":null}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Submit task to DocIntel from attachments</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 22:14:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>66b0ad06930576d00f91fce79503d6ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Submit task to DocIntel from attachments</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d6ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 22:14:23</sys_updated_on>
+        <tool display_value="Submit task to DocIntel from attachments">6a8caa4d2b18e6108b83f5486e91bfbd</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d6ef</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Document and visual insights AI agent (Copy)">d6b0ad06930576d00f91fce79503d667</agent><description>Given a task definition ID and a list of attachments (together forming a document), submit a new task in DocIntel to extract the fields. Note that the attachments must all be from the same record.
+
+The tool returns:
+- the sys_id of the task that was set up in DocIntel
+- a link to the UI to review the values
+- the time at which extraction started</description><display_output>true</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"task_definition_id","value":"","description":"sys_id of the DocIntel task definition to use","invalidMessage":null},{"name":"attachments_sys_ids","value":"","description":"list of sys_ids for the attachments to use as a document for extraction","invalidMessage":null}]</inputs><max_auto_executions>10</max_auto_executions><name>Submit task to DocIntel from attachments</name><output_transformation_strategy>none</output_transformation_strategy><post_processing_script/><pre_message/><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-07 22:14:23</sys_created_on><sys_domain>global</sys_domain><sys_id>66b0ad06930576d00f91fce79503d6ef</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Submit task to DocIntel from attachments</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d6ef</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-07 22:14:23</sys_updated_on><tool display_value="Submit task to DocIntel from attachments">6a8caa4d2b18e6108b83f5486e91bfbd</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>319245317</payload_hash>
+        <record_name>Submit task to DocIntel from attachments</record_name>
+        <reverted_from/>
+        <source>0194326e2fa07650b14f861cbfa4e361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 22:14:24</sys_created_on>
+        <sys_id>a2b0ad06930576d00f91fce79503d6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a606292870000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 22:14:24</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>e6b0ad06c10576d0865d942c676e52f2</update_guid>
+        <update_guid_history>e6b0ad06c10576d0865d942c676e52f2:319245317</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Submit task to DocIntel from attachments">ca6f6d06938576d00f91fce79503d672</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 23:18:31</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>447cb6eb971f4b9b9cc9150d2a21a459</sys_id>
+        <sys_metadata>66b0ad06930576d00f91fce79503d6ef</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Submit task to DocIntel from attachments</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d6ef</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_66b0ad06930576d00f91fce79503d6ef">a2b0ad06930576d00f91fce79503d6f3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 23:18:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=169136000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>315bca6a934d7ad00f91fce79503d624</copied_from>
+        <copied_from_name>Create new record via classifica</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>create_new_case_record_via_classification</internal_name>
+        <label_cache>[{"name":"60d5f4d8-659c-4280-a87b-f83b200a0082.record.sys_id","label":"2 - Create Record➛Interaction Related Record Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction_related_record","column_name":"sys_id","usedInstances":{"90fe1978-3cc6-487c-994b-3fd5a6e271fe":["conditions"]}},{"name":"subflow.table_name","label":"Input➛Table Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"29ac3511-2cdd-4c72-beeb-70a379c4944b":["table"],"79a69969-2a39-404f-af91-9326df2036cd":["table"],"60d5f4d8-659c-4280-a87b-f83b200a0082":["document_table"],"fed455af-8830-43c2-9cd0-179937d504f4":["table"],"9127d6a0-38db-4348-80c4-84ae956e4144":["table"],"9970ee87-2321-481d-a36c-e3ec88f68119":["table"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"35967658-ad98-417d-bb24-6cb779a7ee0d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"60d5f4d8-659c-4280-a87b-f83b200a0082.record","label":"2 - Create Record➛Interaction Related Record Record","reference":"interaction_related_record","reference_display":"Interaction Related Record","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.worknotes","label":"Input➛workNotes","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"79a69969-2a39-404f-af91-9326df2036cd":["work_notes"],"a223ba99-86da-4106-9723-42ffa76bddc3":["values","work_notes"],"36510411-6d69-4984-a2e5-dac1aa081bdc":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"61704cc1-f630-40b7-adce-75bdd9c94757","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"79a69969-2a39-404f-af91-9326df2036cd.case_sys_id","label":"1 - Create new record via classification➛Case Sys ID","reference_display":"Case Sys ID","type":"string","base_type":"string","usedInstances":{"fed455af-8830-43c2-9cd0-179937d504f4":["target_record"],"36510411-6d69-4984-a2e5-dac1aa081bdc":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2ae23396-25ca-4cc0-b9d3-2bf71b59068a"}},{"name":"subflow.interaction","label":"Input➛Interaction","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","column_name":"","usedInstances":{"60d5f4d8-659c-4280-a87b-f83b200a0082":["interaction"],"5a950a92-e1ca-4a6f-8952-18c9f0586991":["record"],"a223ba99-86da-4106-9723-42ffa76bddc3":["record"],"36510411-6d69-4984-a2e5-dac1aa081bdc":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"27af7472-b0da-4ff3-9045-0f5871658664","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.summary","label":"Input➛Summary","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"79a69969-2a39-404f-af91-9326df2036cd":["summary"],"5a950a92-e1ca-4a6f-8952-18c9f0586991":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d49a9d50-657a-400a-9912-ac8061b6db27","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"79a69969-2a39-404f-af91-9326df2036cd.case","label":"1 - Create new record via classification➛Case","reference":"sn_customerservice_case","reference_display":"Case","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5520ad21-2aa0-451c-bf76-cca462cf5692"}},{"name":"79a69969-2a39-404f-af91-9326df2036cd.case_number","label":"1 - Create new record via classification➛Case Number","reference_display":"Case Number","type":"string","base_type":"string","usedInstances":{"98c4b4b3-8c0d-467b-9ff3-acf34cbb3828":["case_classification_output-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7d29583-ca3a-4af1-9785-29784b5b700d"}},{"name":"subflow.description","label":"Input➛Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"79a69969-2a39-404f-af91-9326df2036cd":["description"],"5a950a92-e1ca-4a6f-8952-18c9f0586991":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e145df50-bc6e-4078-a1ba-eb0ddea30df6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.business_activity","label":"Input➛Business Activity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"79a69969-2a39-404f-af91-9326df2036cd":["business_activity_id"],"9127d6a0-38db-4348-80c4-84ae956e4144":["business_activity_id"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"subflow.interaction.sys_id","label":"Input➛Interaction➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"81afd495-1113-4529-85f0-543b247fed14":["conditions"]}}]</label_cache>
+        <master_snapshot>409c70769385fad00f91fce79503d68e</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Create new case record via classification</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>674c34369385fad00f91fce79503d65c</sys_id>
+        <sys_mod_count>118</sys_mod_count>
+        <sys_name>Create new case record via classification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_hub_flow_674c34369385fad00f91fce79503d65c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:29:44</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-11-11 09:29:44 PM">4281c3172fc9be14743eb82bcfa4e346</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=674c34369385fad00f91fce79503d65c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=674c34369385fad00f91fce79503d65c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_674c34369385fad00f91fce79503d65c^id=674c34369385fad00f91fce79503d65c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=674c34369385fad00f91fce79503d65c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=674c34369385fad00f91fce79503d65c^sys_idNOT INa74cf4369385fad00f91fce79503d631"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>674c34369385fad00f91fce79503d65c</id>
+        <name>Create new case record via classification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:42</sys_created_on>
+        <sys_id>a74cf4369385fad00f91fce79503d631</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:30:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a74cf4369385fad00f91fce79503d631"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=674c34369385fad00f91fce79503d65c^sys_idNOT IN2e8c30769385fad00f91fce79503d65b,774cf4369385fad00f91fce79503d695,7b4cf4369385fad00f91fce79503d698,7f4cf4369385fad00f91fce79503d69b,af4cf4369385fad00f91fce79503d638,ff4cf4369385fad00f91fce79503d653"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=27af7472-b0da-4ff3-9045-0f5871658664</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>interaction</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>interaction</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Interaction</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</model>
+        <model_id>674c34369385fad00f91fce79503d65c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Interaction" name="interaction">interaction</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:44</sys_created_on>
+        <sys_id>2e8c30769385fad00f91fce79503d65b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2e8c30769385fad00f91fce79503d65b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d49a9d50-657a-400a-9912-ac8061b6db27</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>summary</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Summary</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</model>
+        <model_id>674c34369385fad00f91fce79503d65c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>774cf4369385fad00f91fce79503d695</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=774cf4369385fad00f91fce79503d695"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e145df50-bc6e-4078-a1ba-eb0ddea30df6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Description</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</model>
+        <model_id>674c34369385fad00f91fce79503d65c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>7b4cf4369385fad00f91fce79503d698</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7b4cf4369385fad00f91fce79503d698"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=61704cc1-f630-40b7-adce-75bdd9c94757</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>worknotes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>workNotes</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</model>
+        <model_id>674c34369385fad00f91fce79503d65c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>7f4cf4369385fad00f91fce79503d69b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7f4cf4369385fad00f91fce79503d69b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=35967658-ad98-417d-bb24-6cb779a7ee0d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Table Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</model>
+        <model_id>674c34369385fad00f91fce79503d65c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:42</sys_created_on>
+        <sys_id>af4cf4369385fad00f91fce79503d638</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=af4cf4369385fad00f91fce79503d638"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1178d14d-039b-4f2c-90f0-19cad2aece12</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>business_activity</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Business Activity</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</model>
+        <model_id>674c34369385fad00f91fce79503d65c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>ff4cf4369385fad00f91fce79503d653</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ff4cf4369385fad00f91fce79503d653"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=674c34369385fad00f91fce79503d65c^sys_idNOT INff4cf4369385fad00f91fce79503d6c4"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b1763b28-f96a-4052-ab06-23236d207e6e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_classification_output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Classification Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</model>
+        <model_id>674c34369385fad00f91fce79503d65c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_674c34369385fad00f91fce79503d65c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>ff4cf4369385fad00f91fce79503d6c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:30:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ff4cf4369385fad00f91fce79503d6c4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=674c34369385fad00f91fce79503d65c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=674c34369385fad00f91fce79503d65c"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=674c34369385fad00f91fce79503d65c^sys_idNOT IN045cf4369385fad00f91fce79503d6cf,6a46651f2f0d7e14743eb82bcfa4e30e,885cf4369385fad00f91fce79503d6f6,fc26fe172f49be14743eb82bcfa4e377"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create new record via classification">ab0a4aa6934d7ad00f91fce79503d650</action_type>
+        <action_type_parent display_value="Create new record via classification">05b20aa6930d7ad00f91fce79503d622</action_type_parent>
+        <attributes/>
+        <comment>Utility to create an record based on the business activity selected</comment>
+        <compiled_snapshot>ab0a4aa6934d7ad00f91fce79503d650</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:44</sys_created_on>
+        <sys_id>045cf4369385fad00f91fce79503d6cf</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:30</sys_updated_on>
+        <ui_id>79a69969-2a39-404f-af91-9326df2036cd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2X207jMBCGXwXluqmS2Dlxx1IhIe2CtLDsBULR+ATWOgdyKHSrvvvaTXqgjUorLTdVLz0ee/5/PJ/SPk4tyaxzywsdwABBjDALgTmOiF1BeRj7DmJBQK2BlUHKdWYNRHG9HINqzHo6rRoiVP42nO8kJm020wlMVoWCyUOXpyP0RSpW8sw6f3waWAWUOrXmpXU+3djaV5ICwpVOve80bUisJ4VZVnUps+du/b07crcI5iUzEtyBxd9rnjGuawtQFR9YKWQM6rycLCMlB3abqVXgRWZ1ay6F90r+1fUix3FMpuDaD+2sL5dJ15Y2LEZQg5bS0Lopl13KJeVV2wnGBTSqvlyPtQm3RS3zrD3SGm5P56pJs5u2EdbygrVXaCotghfGqtHeGRF3L/nbz4XKK5nNu9JtqpyCWq6g1r0jTW30TK1G3m+0uY1sNZornuqKSQpFoSNJUeZjOa+iRafDZ6UXQzNIWl0ln7MhUONwqJ8Ahlc6PpqHH6CUxu4PfY0+bMr9yuRrw6/N0DgIB4ADZANFxMY+F3bkU2ELxARhNKQEB9ZsYFWT6lJBVa0apV8oeW2MzbZtXYOStsfmCC1lUV9oUWPe9WI26PDhO2c1dFezSZpKZryqEuNuLOtJoi/oo2krsQ+qz9IPI24PFwvivnXlzi66cmfXo09NHsKjd+LxGHhkUUxCxrANEMY2xhDbcUAdO/BwDMyLEAf/C3gUhEcMAGJEeyaZwWpUqyZNQU9UH4Ld3m7w1pMOw20PkQvc7pYqt2QfAhU6QXUMUAUuxsLTHzmXOczGnIJNoiC0fQxhxKOIxvQrPnKh2Dmvaz/AtLf5Pebt+sBa298N12biYYDtIXgB2OiD4l4bh4CGT6AdA2g4cFHEmGPHKNBfLzCgeS63PQ9ClwCJUQRfABphMXII9/T1PtmaW8JWE/qWl3+SLDfN6+PMbM93d1P2Me0wxvbQumDsty5zdtOJ7TNwCGH+ibBjICx0OfXBYzYBrP+vIZfYEcJgI6b/rQk39nwU/UfCnv4BQJDnhPAQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=045cf4369385fad00f91fce79503d6cf"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Leaves notes about the determination</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 19:51:05</sys_created_on>
+        <sys_id>6a46651f2f0d7e14743eb82bcfa4e30e</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:30</sys_updated_on>
+        <ui_id>5a950a92-e1ca-4a6f-8952-18c9f0586991</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0bPIdhJW9q8hYZAoGuhHX1pipGt60RMljx9JM1C/vuubDnx0tC1UBhlftP9kM45Otd62hLOyIicAYuTq+QiHybD4SCOB5dnSXYxzJIBG1KAhPSIpCVgpYZcaYbrFRXOB7Zb47JCqHWfSwua5pYrudthBeOmEnTzGAoxki+5YBokGT0990hFNe6JPWS0PUq9F5SgGQgsvW9RHaO0m8qvmcpdCdKmvA3ehM5JyESzCWawycNJ4h6BFwuSAQIpqDDQIyWVjFqlN2RktcOABsrupNjsK5aoQEO0pC+G/8KTz2JfVwAyy4MI+2UaBGrCxYRa+oA759bpvV6K52AaTRgU1Al73Y01BXeV17xpsTQTbbcSrpS3jSJkv0HnPpxBEFB5nh55Q6t4WKr1fQtyymUtSaAoVE7FfkWt1Txz1sPZEhBQa1zSquJykVZarXjdjFDK/kLgou+dgmcavpD9xit9VJX2pxif1OFHqrkn8Q23weZdj5iNuRbUmAMV1DD96TyShligkNYq1BKktRN8c655Zcd41AoC8F0v2D47f8th+dXBUJ09D9bvGP613Wd/JD/m/Hfgap3/vb7v0ziD+V/Fbrq90W2TCNY//zTrX34l6wcaX977f3N8PHjzn9pxUm1y03H7WukfqVRIeO7ieMjGs2i88H9OtQK94rCOVBHZJURcZspJFkFJuRjN5Vw+uLKkejOKDo+FaUK7nc8j+RozKtKtYYfwqQfl3wP62FS/Q/t2qqccBDMnLqMdaShRCQtpczlHYx2S0WNI7l+1T5vt5CKuvy804f/N4/b8Gz8/z7nVCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6a46651f2f0d7e14743eb82bcfa4e30e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment>Links the interaction &amp; the case records</comment>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:44</sys_created_on>
+        <sys_id>885cf4369385fad00f91fce79503d6f6</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:30</sys_updated_on>
+        <ui_id>60d5f4d8-659c-4280-a87b-f83b200a0082</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VU227bMAz9lUDPjuFL5tV5G1oEGNC1QFvkpWsNWqITAfJlspw2C/zvo3xJgizFNmAv8YtN6pA6JA/9vGNSsDmLBHpx7Ec89MMw8LzgauanUZj6gQgB/ZQ5rIAcCbkB1WBNdvdBDlkY1MCNLIvvjeeFYrermzRT5Zt7dNS2r6LkTY6FSQykCk+xnTOxlxxDpRhxn2OI4jiKpwGE8XTmzbIpZLE/jcMgElnghREXLocak3pbU1zbEkch60rBdnkBVPlaKqGxYPPnF4dVoCk9UWLz3cnR385LQYqKoAuJStRnBmi2lbUN5tQjg0k/0N5/OwQ/DYeT5XBYamFJ+Q7Dd4OFQGKTgarRYTkUAkypt2xudEMOjSDuC7XdI9bUZUrKLPa9lj/pej/yuseiM6QiOfaIvZkMQ+zd2Q0YeKT83DR6gPJ1KTmV1LVHYAaNMtfHvh5wX9np9iHdCIfoUjV5cdc3h+0TjJohT0OTEljZai3/vrjscV2+PYwkF7Lo+jIUqkoOam+BMVqmjbF0dgwVdnrJoapksUoqXW5kF0xUcnelyHCtzujOWq4Kt1elS70Fd0H+m869BC1tEd8oDQW3DiMxXSuo60Mp1MPkR2OZ9IUNJSRdFw4q7oK5lpX5QldtcCDeOuPPwUfv04diw9lBW0c5z/4gEo1WTYLenJT0+4Z+PWAnDz2W3gP2H1fkz6zHFXnq1HC+inFLTn23x7GTu/5g2A7vf23H1SXtxVDGxS/GR+vw8gsFGlrjLQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=885cf4369385fad00f91fce79503d6f6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Leaves summary</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 01:39:56</sys_created_on>
+        <sys_id>fc26fe172f49be14743eb82bcfa4e377</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:30</sys_updated_on>
+        <ui_id>a223ba99-86da-4106-9723-42ffa76bddc3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5GfqyppC4K+ISokJAYSTLwwFt3YN601x85sB+iq/vddJ07poGIgIU3V8hTfD/uc43OTuxWTgk3ZBEWaHWeHfJyNx6M0HR1NsuJwXGQjMQbEjA2Yhgqp0iI3VtD6AVQTAquVa4pSmceh1B4tcC+NXq+pQkhXK1jexkKK8IVUwqJm07v7AavB0p7Uw6arF6n3glJQoKLS6x7VS5R+WYe1MLypUPtc9sGL2DmLmeR8RhlqCnCydMDwyaMWSEBKUA4HrAItwBu7ZFNvGwpYBHGl1XJTsSAFOqIVPDn5i06epKGuRGLGowibZR4F6sLlDDzc0M7cN3ajl5EcXaeJwBIa5U+3Y13BVR0071o8FKrvNqqp9GWnCNtssHUfjSMQWAeeAXlHq7xZmMfrHuSZ1K0kkaIyHNRmBd5bWTQ+wFkxVNhqXEFdSz3Pa2seZNtMUKrhXNFiGJxCZzo518POK0NSFYZnFJ+14VuwMpD4QttQ83rA3NKdKnDumQppmP9sApKOWKSQtyq0EuStE0Izt7L2J3TUA0bg60G0fXHwlsP48bOhtvZ8tv6W4V/b/fyP5Mec/w5cvfO/tve9G2c0/6vYxXZvctklovUPPs36R/tk/Uhj773/N8enoze/qVtOak3udn7oH439oQ0xX6+/h/e8XXxr0nQsTs6Tk3n4ni7AJUS9VuRzkXBwmPBARJaSQ+CeFBQTCb34BSalUbQ1STdNdh70esD+OZ6PzfQ7lO9n+kyiEm7HVfQDjUQDPObd1bwY6phMbmNy80/7tMnODtP22aP5/m9+bfe/AZ12nQHTCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fc26fe172f49be14743eb82bcfa4e377"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=674c34369385fad00f91fce79503d65c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=674c34369385fad00f91fce79503d65c^sys_idNOT IN845cf4369385fad00f91fce79503d6cd"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">692d4e6e934d7ad00f91fce79503d6bd</block>
+        <comment>Assigns outputs to the AI Agent</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>case_classification_output</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:44</sys_created_on>
+        <sys_id>845cf4369385fad00f91fce79503d6cd</sys_id>
+        <sys_mod_count>53</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:29:38</sys_updated_on>
+        <ui_id>98c4b4b3-8c0d-467b-9ff3-acf34cbb3828</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/71TTW+bQBD9K2jPBmGwsfEtShUpUhtLjZtLVaFhd9ZedVnIsthxLf/3zgJ2Up9y6oHDvJ2P994MJ1Z3rulcu6nv2lZtDVv9PDEl2IpJOeNylmZ5upxLEHEs86nkuMjncSoyPmMTZqBCyuTQYsE1UAOpODhVm2JoSzl70J1Puqek4KmrSrTB6bTIIcvzLA8TSPNwFs9kCNQ/zNMkEzKJ04yLqO9r+pLzOdhBG5SIJuAWwaEIwNDXk0YRBTRKqLbRcHz5fxP5Tmlh0bv2a8IasGSIQ8tWp5snd2yw0FCiJmLPziqzpfLP+nwp7BXd/2N0sL4Y/ZlleBqU014I1FZ4ttMJwzeHRiARkqBbnLCKxIKr7fGKkAlibfQ7sFPGUTfmk99a9YdaL+M49pkSSTrH4fUaFuOGBpjvasVx3XiKA+Kg1GMNr3VXmadBk98tSui0u+yWkI50Cmw8a09j5CSfd/Xh+2XggzK9wPFR1xz0NQJHNpSdw9bvq1ObG3MG5Ovt0lBjRROLCpqGkKKx9V71U4h0FW01BZHU9YHY+VOJgHuFEbkJ0QPhX3r4Bazycr9RGyr2434Y9drhoz+KcrrI0jJZhjLPgK51noRQxlmYpEmaiSReYIbs3FtbvHZe1GDSaEcxOEoJLbeqcXdEYY+j8jPdozL+px9ucz8yGUOBXLVEeOOxxw954kgnpvhH6FDb317qO3b+C9kdsM9SBAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=674c34369385fad00f91fce79503d65c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=674c34369385fad00f91fce79503d65c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>interaction</element>
+        <help/>
+        <hint/>
+        <label>Interaction</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:44</sys_created_on>
+        <sys_id>a68c30769385fad00f91fce79503d65f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>worknotes</element>
+        <help/>
+        <hint/>
+        <label>workNotes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>b34cf4369385fad00f91fce79503d69e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:30:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>business_activity</element>
+        <help/>
+        <hint/>
+        <label>Business Activity</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>b74cf4369385fad00f91fce79503d694</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:30:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>bb4cf4369385fad00f91fce79503d652</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:30:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>summary</element>
+        <help/>
+        <hint/>
+        <label>Summary</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>bb4cf4369385fad00f91fce79503d697</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:30:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>description</element>
+        <help/>
+        <hint/>
+        <label>Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:43</sys_created_on>
+        <sys_id>bf4cf4369385fad00f91fce79503d69a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:30:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_674c34369385fad00f91fce79503d65c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_classification_output</element>
+        <help/>
+        <hint/>
+        <label>Case Classification Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_674c34369385fad00f91fce79503d65c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:30:44</sys_created_on>
+        <sys_id>bb4cf4369385fad00f91fce79503d6c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:30:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_674c34369385fad00f91fce79503d65c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=14792000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>315bca6a934d7ad00f91fce79503d624</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>create_new_case_record_via_classification</internal_name>
+        <label_cache>[{"name":"60d5f4d8-659c-4280-a87b-f83b200a0082.record.sys_id","label":"2 - Create Record➛Interaction Related Record Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction_related_record","column_name":"sys_id","usedInstances":{"90fe1978-3cc6-487c-994b-3fd5a6e271fe":["conditions"]}},{"name":"subflow.table_name","label":"Input➛Table Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"29ac3511-2cdd-4c72-beeb-70a379c4944b":["table"],"79a69969-2a39-404f-af91-9326df2036cd":["table"],"60d5f4d8-659c-4280-a87b-f83b200a0082":["document_table"],"fed455af-8830-43c2-9cd0-179937d504f4":["table"],"9127d6a0-38db-4348-80c4-84ae956e4144":["table"],"9970ee87-2321-481d-a36c-e3ec88f68119":["table"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"35967658-ad98-417d-bb24-6cb779a7ee0d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"60d5f4d8-659c-4280-a87b-f83b200a0082.record","label":"2 - Create Record➛Interaction Related Record Record","reference":"interaction_related_record","reference_display":"Interaction Related Record","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.worknotes","label":"Input➛workNotes","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"79a69969-2a39-404f-af91-9326df2036cd":["work_notes"],"a223ba99-86da-4106-9723-42ffa76bddc3":["values","work_notes"],"36510411-6d69-4984-a2e5-dac1aa081bdc":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"61704cc1-f630-40b7-adce-75bdd9c94757","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"79a69969-2a39-404f-af91-9326df2036cd.case_sys_id","label":"1 - Create new record via classification➛Case Sys ID","reference_display":"Case Sys ID","type":"string","base_type":"string","usedInstances":{"fed455af-8830-43c2-9cd0-179937d504f4":["target_record"],"36510411-6d69-4984-a2e5-dac1aa081bdc":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"2ae23396-25ca-4cc0-b9d3-2bf71b59068a"}},{"name":"subflow.interaction","label":"Input➛Interaction","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","column_name":"","usedInstances":{"60d5f4d8-659c-4280-a87b-f83b200a0082":["interaction"],"5a950a92-e1ca-4a6f-8952-18c9f0586991":["record"],"a223ba99-86da-4106-9723-42ffa76bddc3":["record"],"36510411-6d69-4984-a2e5-dac1aa081bdc":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"27af7472-b0da-4ff3-9045-0f5871658664","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.summary","label":"Input➛Summary","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"79a69969-2a39-404f-af91-9326df2036cd":["summary"],"5a950a92-e1ca-4a6f-8952-18c9f0586991":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d49a9d50-657a-400a-9912-ac8061b6db27","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"79a69969-2a39-404f-af91-9326df2036cd.case","label":"1 - Create new record via classification➛Case","reference":"sn_customerservice_case","reference_display":"Case","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5520ad21-2aa0-451c-bf76-cca462cf5692"}},{"name":"79a69969-2a39-404f-af91-9326df2036cd.case_number","label":"1 - Create new record via classification➛Case Number","reference_display":"Case Number","type":"string","base_type":"string","usedInstances":{"98c4b4b3-8c0d-467b-9ff3-acf34cbb3828":["case_classification_output-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7d29583-ca3a-4af1-9785-29784b5b700d"}},{"name":"subflow.description","label":"Input➛Description","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"79a69969-2a39-404f-af91-9326df2036cd":["description"],"5a950a92-e1ca-4a6f-8952-18c9f0586991":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e145df50-bc6e-4078-a1ba-eb0ddea30df6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.business_activity","label":"Input➛Business Activity","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"79a69969-2a39-404f-af91-9326df2036cd":["business_activity_id"],"9127d6a0-38db-4348-80c4-84ae956e4144":["business_activity_id"]},"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"subflow.interaction.sys_id","label":"Input➛Interaction➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction","column_name":"sys_id","choices":[{"order":0.0}],"usedInstances":{"81afd495-1113-4529-85f0-543b247fed14":["conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>Create new case record via classification</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>409c70769385fad00f91fce79503d68e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:29:41</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=409c70769385fad00f91fce79503d68e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=409c70769385fad00f91fce79503d68e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_409c70769385fad00f91fce79503d68e^id=409c70769385fad00f91fce79503d68e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=409c70769385fad00f91fce79503d68e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=409c70769385fad00f91fce79503d68e^sys_idNOT IN049c70769385fad00f91fce79503d68f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>409c70769385fad00f91fce79503d68e</id>
+        <name>Create new case record via classification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:50</sys_created_on>
+        <sys_id>049c70769385fad00f91fce79503d68f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=049c70769385fad00f91fce79503d68f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=409c70769385fad00f91fce79503d68e^sys_idNOT IN149c70769385fad00f91fce79503d6c2,589c70769385fad00f91fce79503d6e2,9c9c70769385fad00f91fce79503d6ba,c09c70769385fad00f91fce79503d690,c09c70769385fad00f91fce79503d6a7,cc9c70769385fad00f91fce79503d69f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e145df50-bc6e-4078-a1ba-eb0ddea30df6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Description</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</model>
+        <model_id>409c70769385fad00f91fce79503d68e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:51</sys_created_on>
+        <sys_id>149c70769385fad00f91fce79503d6c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=149c70769385fad00f91fce79503d6c2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=61704cc1-f630-40b7-adce-75bdd9c94757</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>worknotes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>workNotes</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</model>
+        <model_id>409c70769385fad00f91fce79503d68e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:51</sys_created_on>
+        <sys_id>589c70769385fad00f91fce79503d6e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=589c70769385fad00f91fce79503d6e2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d49a9d50-657a-400a-9912-ac8061b6db27</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>summary</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Summary</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</model>
+        <model_id>409c70769385fad00f91fce79503d68e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:50</sys_created_on>
+        <sys_id>9c9c70769385fad00f91fce79503d6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9c9c70769385fad00f91fce79503d6ba"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=27af7472-b0da-4ff3-9045-0f5871658664</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>interaction</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>interaction</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Interaction</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</model>
+        <model_id>409c70769385fad00f91fce79503d68e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="Interaction" name="interaction">interaction</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:50</sys_created_on>
+        <sys_id>c09c70769385fad00f91fce79503d690</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c09c70769385fad00f91fce79503d690"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1178d14d-039b-4f2c-90f0-19cad2aece12</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>business_activity</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Business Activity</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</model>
+        <model_id>409c70769385fad00f91fce79503d68e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:50</sys_created_on>
+        <sys_id>c09c70769385fad00f91fce79503d6a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c09c70769385fad00f91fce79503d6a7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=35967658-ad98-417d-bb24-6cb779a7ee0d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Table Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</model>
+        <model_id>409c70769385fad00f91fce79503d68e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:50</sys_created_on>
+        <sys_id>cc9c70769385fad00f91fce79503d69f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cc9c70769385fad00f91fce79503d69f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=409c70769385fad00f91fce79503d68e^sys_idNOT INd49cb0769385fad00f91fce79503d612"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b1763b28-f96a-4052-ab06-23236d207e6e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_classification_output</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Classification Output</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</model>
+        <model_id>409c70769385fad00f91fce79503d68e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_409c70769385fad00f91fce79503d68e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:51</sys_created_on>
+        <sys_id>d49cb0769385fad00f91fce79503d612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d49cb0769385fad00f91fce79503d612"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=409c70769385fad00f91fce79503d68e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=409c70769385fad00f91fce79503d68e"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=409c70769385fad00f91fce79503d68e^sys_idNOT IN4266215f2f0d7e14743eb82bcfa4e3b5,8396ba5b2f49be14743eb82bcfa4e305,e49cb0769385fad00f91fce79503d61e,e89cb0769385fad00f91fce79503d61f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Leaves notes about the determination</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 19:51:36</sys_created_on>
+        <sys_id>4266215f2f0d7e14743eb82bcfa4e3b5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:29:41</sys_updated_on>
+        <ui_id>5a950a92-e1ca-4a6f-8952-18c9f0586991</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0bPIdhJW9q8hYZAoGuhHX1pipGt60RMljx9JM1C/vuubDnx0tC1UBhlftP9kM45Otd62hLOyIicAYuTq+QiHybD4SCOB5dnSXYxzJIBG1KAhPSIpCVgpYZcaYbrFRXOB7Zb47JCqHWfSwua5pYrudthBeOmEnTzGAoxki+5YBokGT0990hFNe6JPWS0PUq9F5SgGQgsvW9RHaO0m8qvmcpdCdKmvA3ehM5JyESzCWawycNJ4h6BFwuSAQIpqDDQIyWVjFqlN2RktcOABsrupNjsK5aoQEO0pC+G/8KTz2JfVwAyy4MI+2UaBGrCxYRa+oA759bpvV6K52AaTRgU1Al73Y01BXeV17xpsTQTbbcSrpS3jSJkv0HnPpxBEFB5nh55Q6t4WKr1fQtyymUtSaAoVE7FfkWt1Txz1sPZEhBQa1zSquJykVZarXjdjFDK/kLgou+dgmcavpD9xit9VJX2pxif1OFHqrkn8Q23weZdj5iNuRbUmAMV1DD96TyShligkNYq1BKktRN8c655Zcd41AoC8F0v2D47f8th+dXBUJ09D9bvGP613Wd/JD/m/Hfgap3/vb7v0ziD+V/Fbrq90W2TCNY//zTrX34l6wcaX977f3N8PHjzn9pxUm1y03H7WukfqVRIeO7ieMjGs2i88H9OtQK94rCOVBHZJURcZspJFkFJuRjN5Vw+uLKkejOKDo+FaUK7nc8j+RozKtKtYYfwqQfl3wP62FS/Q/t2qqccBDMnLqMdaShRCQtpczlHYx2S0WNI7l+1T5vt5CKuvy804f/N4/b8Gz8/z7nVCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4266215f2f0d7e14743eb82bcfa4e3b5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Leaves summary</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 01:42:00</sys_created_on>
+        <sys_id>8396ba5b2f49be14743eb82bcfa4e305</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:29:41</sys_updated_on>
+        <ui_id>a223ba99-86da-4106-9723-42ffa76bddc3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5GfqyppC4K+ISokJAYSTLwwFt3YN601x85sB+iq/vddJ07poGIgIU3V8hTfD/uc43OTuxWTgk3ZBEWaHWeHfJyNx6M0HR1NsuJwXGQjMQbEjA2Yhgqp0iI3VtD6AVQTAquVa4pSmceh1B4tcC+NXq+pQkhXK1jexkKK8IVUwqJm07v7AavB0p7Uw6arF6n3glJQoKLS6x7VS5R+WYe1MLypUPtc9sGL2DmLmeR8RhlqCnCydMDwyaMWSEBKUA4HrAItwBu7ZFNvGwpYBHGl1XJTsSAFOqIVPDn5i06epKGuRGLGowibZR4F6sLlDDzc0M7cN3ajl5EcXaeJwBIa5U+3Y13BVR0071o8FKrvNqqp9GWnCNtssHUfjSMQWAeeAXlHq7xZmMfrHuSZ1K0kkaIyHNRmBd5bWTQ+wFkxVNhqXEFdSz3Pa2seZNtMUKrhXNFiGJxCZzo518POK0NSFYZnFJ+14VuwMpD4QttQ83rA3NKdKnDumQppmP9sApKOWKSQtyq0EuStE0Izt7L2J3TUA0bg60G0fXHwlsP48bOhtvZ8tv6W4V/b/fyP5Mec/w5cvfO/tve9G2c0/6vYxXZvctklovUPPs36R/tk/Uhj773/N8enoze/qVtOak3udn7oH439oQ0xX6+/h/e8XXxr0nQsTs6Tk3n4ni7AJUS9VuRzkXBwmPBARJaSQ+CeFBQTCb34BSalUbQ1STdNdh70esD+OZ6PzfQ7lO9n+kyiEm7HVfQDjUQDPObd1bwY6phMbmNy80/7tMnODtP22aP5/m9+bfe/AZ12nQHTCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8396ba5b2f49be14743eb82bcfa4e305"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create new record via classification">ab0a4aa6934d7ad00f91fce79503d650</action_type>
+        <action_type_parent display_value="Create new record via classification">05b20aa6930d7ad00f91fce79503d622</action_type_parent>
+        <attributes/>
+        <comment>Utility to create an record based on the business activity selected</comment>
+        <compiled_snapshot>ab0a4aa6934d7ad00f91fce79503d650</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:51</sys_created_on>
+        <sys_id>e49cb0769385fad00f91fce79503d61e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:10:08</sys_updated_on>
+        <ui_id>79a69969-2a39-404f-af91-9326df2036cd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2X207jMBCGXwXluqmS2Dlxx1IhIe2CtLDsBULR+ATWOgdyKHSrvvvaTXqgjUorLTdVLz0ee/5/PJ/SPk4tyaxzywsdwABBjDALgTmOiF1BeRj7DmJBQK2BlUHKdWYNRHG9HINqzHo6rRoiVP42nO8kJm020wlMVoWCyUOXpyP0RSpW8sw6f3waWAWUOrXmpXU+3djaV5ICwpVOve80bUisJ4VZVnUps+du/b07crcI5iUzEtyBxd9rnjGuawtQFR9YKWQM6rycLCMlB3abqVXgRWZ1ay6F90r+1fUix3FMpuDaD+2sL5dJ15Y2LEZQg5bS0Lopl13KJeVV2wnGBTSqvlyPtQm3RS3zrD3SGm5P56pJs5u2EdbygrVXaCotghfGqtHeGRF3L/nbz4XKK5nNu9JtqpyCWq6g1r0jTW30TK1G3m+0uY1sNZornuqKSQpFoSNJUeZjOa+iRafDZ6UXQzNIWl0ln7MhUONwqJ8Ahlc6PpqHH6CUxu4PfY0+bMr9yuRrw6/N0DgIB4ADZANFxMY+F3bkU2ELxARhNKQEB9ZsYFWT6lJBVa0apV8oeW2MzbZtXYOStsfmCC1lUV9oUWPe9WI26PDhO2c1dFezSZpKZryqEuNuLOtJoi/oo2krsQ+qz9IPI24PFwvivnXlzi66cmfXo09NHsKjd+LxGHhkUUxCxrANEMY2xhDbcUAdO/BwDMyLEAf/C3gUhEcMAGJEeyaZwWpUqyZNQU9UH4Ld3m7w1pMOw20PkQvc7pYqt2QfAhU6QXUMUAUuxsLTHzmXOczGnIJNoiC0fQxhxKOIxvQrPnKh2Dmvaz/AtLf5Pebt+sBa298N12biYYDtIXgB2OiD4l4bh4CGT6AdA2g4cFHEmGPHKNBfLzCgeS63PQ9ClwCJUQRfABphMXII9/T1PtmaW8JWE/qWl3+SLDfN6+PMbM93d1P2Me0wxvbQumDsty5zdtOJ7TNwCGH+ibBjICx0OfXBYzYBrP+vIZfYEcJgI6b/rQk39nwU/UfCnv4BQJDnhPAQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e49cb0769385fad00f91fce79503d61e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment>Links the interaction &amp; the case records</comment>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:51</sys_created_on>
+        <sys_id>e89cb0769385fad00f91fce79503d61f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:10:08</sys_updated_on>
+        <ui_id>60d5f4d8-659c-4280-a87b-f83b200a0082</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VU227bMAz9lUDPjuFL5tV5G1oEGNC1QFvkpWsNWqITAfJlspw2C/zvo3xJgizFNmAv8YtN6pA6JA/9vGNSsDmLBHpx7Ec89MMw8LzgauanUZj6gQgB/ZQ5rIAcCbkB1WBNdvdBDlkY1MCNLIvvjeeFYrermzRT5Zt7dNS2r6LkTY6FSQykCk+xnTOxlxxDpRhxn2OI4jiKpwGE8XTmzbIpZLE/jcMgElnghREXLocak3pbU1zbEkch60rBdnkBVPlaKqGxYPPnF4dVoCk9UWLz3cnR385LQYqKoAuJStRnBmi2lbUN5tQjg0k/0N5/OwQ/DYeT5XBYamFJ+Q7Dd4OFQGKTgarRYTkUAkypt2xudEMOjSDuC7XdI9bUZUrKLPa9lj/pej/yuseiM6QiOfaIvZkMQ+zd2Q0YeKT83DR6gPJ1KTmV1LVHYAaNMtfHvh5wX9np9iHdCIfoUjV5cdc3h+0TjJohT0OTEljZai3/vrjscV2+PYwkF7Lo+jIUqkoOam+BMVqmjbF0dgwVdnrJoapksUoqXW5kF0xUcnelyHCtzujOWq4Kt1elS70Fd0H+m869BC1tEd8oDQW3DiMxXSuo60Mp1MPkR2OZ9IUNJSRdFw4q7oK5lpX5QldtcCDeOuPPwUfv04diw9lBW0c5z/4gEo1WTYLenJT0+4Z+PWAnDz2W3gP2H1fkz6zHFXnq1HC+inFLTn23x7GTu/5g2A7vf23H1SXtxVDGxS/GR+vw8gsFGlrjLQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e89cb0769385fad00f91fce79503d61f"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=409c70769385fad00f91fce79503d68e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=409c70769385fad00f91fce79503d68e^sys_idNOT IN209cb0769385fad00f91fce79503d61d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">692d4e6e934d7ad00f91fce79503d6bd</block>
+        <comment>Assigns outputs to the AI Agent</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create new case record via classification">409c70769385fad00f91fce79503d68e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>case_classification_output</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:51</sys_created_on>
+        <sys_id>209cb0769385fad00f91fce79503d61d</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:29:41</sys_updated_on>
+        <ui_id>98c4b4b3-8c0d-467b-9ff3-acf34cbb3828</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/71UTU/cMBD9K5HPmygkS5bsDYGQkChIhXKpqmhij1kLxwmxvbBd7X/vOB8LLRdOPUTKvMzHe29G2bPWu847+9CeW6ueDFv/3DMl2JpJueRymRdlfnYqQaSpLE8kx1V5muai4Eu2YAYapEwOFiuugRpIxcGp1lRjW8rZgvYh6YKSolvf1NhH+/2qhKIsizLOIC/jZbqUMVD/uMyzQsgszQsukqGvGUoOh2gDNqoRTcR7BIciAkPPQBpFEtEooWynYff4/ybyjdKix+DarwXroCdDHPZsTR4aejGgb5R5JjKfkr/qsYYa9azm4i+To7vZ5K8swu26kGNdr8zTFN9Mze9nsO1FoH+yYPjm0AgklhK0xQVrSD24tt8dEXJF3Bn9DmxI9Ki1gTerftO8szRNQ6ZEUs5x/HoMq2llIywvwQFR8dz5HmfTWsXRjp4JlOC1u/iIjQl3XRA7ljio9Vzdat+Y29EddmwwXwghnhwT2AWpgfskRN5v2tfvM8srZQZXpo+65aCPETjyrvYu8Nkzrx7+sXlEPhmNGhuaWDXQdYRUXd9u1TCFSDfJk6Ygkbp9JXbh4BLgQWFCK4DkivDLAX6EXgW536gNFYdxP4x68Xgdzqs+WRV5nZ3FsiyAbv40i6FOizjLs7wQWbrCAtlhwezODpf1bhRtqHrxQeZo22RQNXocSnivOndOpLY4eXEIV23Cz2TczHbidlweV5YkPATs+kOe2NH5Kv4Rem375yD+HTv8AXlCUISqBAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=409c70769385fad00f91fce79503d68e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=409c70769385fad00f91fce79503d68e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>description</element>
+        <help/>
+        <hint/>
+        <label>Description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:51</sys_created_on>
+        <sys_id>109c70769385fad00f91fce79503d6e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>worknotes</element>
+        <help/>
+        <hint/>
+        <label>workNotes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:51</sys_created_on>
+        <sys_id>189c70769385fad00f91fce79503d6e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>interaction</element>
+        <help/>
+        <hint/>
+        <label>Interaction</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:50</sys_created_on>
+        <sys_id>849c70769385fad00f91fce79503d69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:50</sys_created_on>
+        <sys_id>889c70769385fad00f91fce79503d6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>business_activity</element>
+        <help/>
+        <hint/>
+        <label>Business Activity</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:50</sys_created_on>
+        <sys_id>9c9c70769385fad00f91fce79503d6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>summary</element>
+        <help/>
+        <hint/>
+        <label>Summary</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:50</sys_created_on>
+        <sys_id>d89c70769385fad00f91fce79503d6bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_409c70769385fad00f91fce79503d68e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_classification_output</element>
+        <help/>
+        <hint/>
+        <label>Case Classification Output</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_409c70769385fad00f91fce79503d68e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:51</sys_created_on>
+        <sys_id>e49cb0769385fad00f91fce79503d617</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:31:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_409c70769385fad00f91fce79503d68e"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>674c34369385fad00f91fce79503d65c</sys_id>
+        <latest_snapshot>409c70769385fad00f91fce79503d68e</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1a-09-24-2025_10-14-2025_2100.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=674c34369385fad00f91fce79503d65c"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=674c34369385fad00f91fce79503d65c^sys_idNOT IN249cb0769385fad00f91fce79503d649"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"249cb0769385fad00f91fce79503d649","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Create new case record via classification">674c34369385fad00f91fce79503d65c</plan_id>
+        <snapshot>ba25862f2f813210b14f861cbfa4e372</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:31:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>249cb0769385fad00f91fce79503d649</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:29:42</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
