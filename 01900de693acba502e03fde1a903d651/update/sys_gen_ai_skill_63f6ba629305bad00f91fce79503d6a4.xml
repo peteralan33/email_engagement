@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill">
+    <sys_gen_ai_skill action="INSERT_OR_UPDATE">
+        <enable_followup>false</enable_followup>
+        <skill_description>The Determine Case Classification from Email Interaction (DCCEI) skill automatically analyzes a specific type of interaction record—one where the source is an email—to accurately identify and determine the precise support case category and sub-category. This classification uses the email's content (subject line, body text, and context of any attachments within the record) to initiate the correct workflow and ensure accurate routing.</skill_description>
+        <skill_document>dc06faae93c1bad00f91fce79503d6be</skill_document>
+        <skill_name>Case Classification from Email Interacti</skill_name>
+        <skill_table>sys_one_extend_capability</skill_table>
+        <sys_class_name>sys_gen_ai_skill</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:48:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>63f6ba629305bad00f91fce79503d6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_gen_ai_skill_63f6ba629305bad00f91fce79503d6a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:48:19</sys_updated_on>
+    </sys_gen_ai_skill>
+    <sys_translated_text action="delete_multiple" query="documentkey=63f6ba629305bad00f91fce79503d6a4"/>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_datasource_attribute">
+    <ais_datasource_attribute action="INSERT_OR_UPDATE">
+        <attribute display_value="index_attachments">2dd8f14753320010ffaaddeeff7b1293</attribute>
+        <datasource display_value="Service Definitions ">caf8db7e2fec3a50b14f861cbfa4e3e2</datasource>
+        <source>sn_bom_service_definition</source>
+        <sys_class_name>ais_datasource_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 18:23:47</sys_created_on>
+        <sys_id>caf8db7e2fec3a50b14f861cbfa4e3e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_datasource_attribute_caf8db7e2fec3a50b14f861cbfa4e3e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-16 18:23:47</sys_updated_on>
+        <value>false</value>
+    </ais_datasource_attribute>
+</record_update>

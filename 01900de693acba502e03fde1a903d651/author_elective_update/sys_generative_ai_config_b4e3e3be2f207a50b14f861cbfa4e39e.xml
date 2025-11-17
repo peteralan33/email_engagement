@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="DELETE">
+        <active>false</active>
+        <additional_configurations>{}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>8a6a6e7a2fe43a50b14f861cbfa4e36c</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Set Service Definition</name>
+        <parent/>
+        <prompt>Note to user: This is a sample prompt. Before running this prompt, please add a skill input of type "Record" and choose Incident table.
+
+You are a customer service representative. Summarize the below incident in no more than 250 words.
+The summary should only contain two sections "Issue" and "Priority".
+
+You are optionally given the following details from the incident:
+Incident SHORT_DESCRIPTION: {{incident.short_description}}
+Incident DESCRIPTION: {{incident.description}}
+Incident PRIORITY: {{incident.priority}}</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>false</show_in_prompt_library>
+        <state>draft</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 19:11:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b4e3e3be2f207a50b14f861cbfa4e39e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8a6a6e7a2fe43a50b14f861cbfa4e36c</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_generative_ai_config_b4e3e3be2f207a50b14f861cbfa4e39e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-16 19:11:29</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>1</version>
+    </sys_generative_ai_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_generative_ai_config_b4e3e3be2f207a50b14f861cbfa4e39e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config"><sys_generative_ai_config action="INSERT_OR_UPDATE"><active>false</active><additional_configurations>{}</additional_configurations><ai_suggested>false</ai_suggested><definition>8a6a6e7a2fe43a50b14f861cbfa4e36c</definition><definition_table>sys_one_extend_capability_definition</definition_table><max_tokens>500</max_tokens><min_word_count>-1</min_word_count><model>llm_generic_small</model><name>Set Service Definition</name><parent/><prompt>Note to user: This is a sample prompt. Before running this prompt, please add a skill input of type "Record" and choose Incident table.
+
+You are a customer service representative. Summarize the below incident in no more than 250 words.
+The summary should only contain two sections "Issue" and "Priority".
+
+You are optionally given the following details from the incident:
+Incident SHORT_DESCRIPTION: {{incident.short_description}}
+Incident DESCRIPTION: {{incident.description}}
+Incident PRIORITY: {{incident.priority}}</prompt><prompt_template_role>user</prompt_template_role><request_tokens>32018</request_tokens><show_in_prompt_library>false</show_in_prompt_library><state>draft</state><sys_class_name>sys_generative_ai_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-16 19:11:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b4e3e3be2f207a50b14f861cbfa4e39e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>8a6a6e7a2fe43a50b14f861cbfa4e36c</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_generative_ai_config_b4e3e3be2f207a50b14f861cbfa4e39e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-16 19:11:29</sys_updated_on><temperature>0.2</temperature><thinking_tokens>0</thinking_tokens><version>1</version></sys_generative_ai_config></record_update>]]></payload>
+        <payload_hash>-1631614891</payload_hash>
+        <record_name>8a6a6e7a2fe43a50b14f861cbfa4e36c</record_name>
+        <reverted_from/>
+        <source>0194326e2fa07650b14f861cbfa4e361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 19:11:29</sys_created_on>
+        <sys_id>b0e3e3be2f207a50b14f861cbfa4e3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199ee6f362e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-16 19:11:29</sys_updated_on>
+        <type>Generative AI Configuration</type>
+        <update_guid>b4e3e3be01207a50eba7667bc740bba3</update_guid>
+        <update_guid_history>b4e3e3be01207a50eba7667bc740bba3:-1631614891</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 19:12:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_generative_ai_config">sys_generative_ai_config</sys_db_object>
+        <sys_id>0016abc939db4351b17ab27b0639cde1</sys_id>
+        <sys_metadata>b4e3e3be2f207a50b14f861cbfa4e39e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8a6a6e7a2fe43a50b14f861cbfa4e36c</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_generative_ai_config_b4e3e3be2f207a50b14f861cbfa4e39e</sys_update_name>
+        <sys_update_version display_value="sys_generative_ai_config_b4e3e3be2f207a50b14f861cbfa4e39e">b0e3e3be2f207a50b14f861cbfa4e3a4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-16 19:12:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

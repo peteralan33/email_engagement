@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_resource_attribute_mapping">
+    <sys_one_extend_resource_attribute_mapping action="INSERT_OR_UPDATE">
+        <attribute_value_script><![CDATA[(function execute(currentInputs, context) {
+    /* @param {Object} currentInputs - Inputs provided for the current step.*/
+    /* @param {Object} context - Execution context, which may include:*/
+    /*						   - Previous tool outputs/inputs (e.g., context['ToolName.attributeName'] or context.getValue('ToolName.attributeName')).*/
+    /*						   - Additional context information (e.g., context.getAllValues()).*/
+    /* @returns {Object} - The computed value for the attribute.*/
+    return '';
+})(currentInputs, context);]]></attribute_value_script>
+        <attribute_value_template>["sn_bom_service_definition.table","sn_bom_service_definition.description","sn_bom_service_definition.name","sn_bom_service_definition.sys_id"]</attribute_value_template>
+        <attribute_value_type>template</attribute_value_type>
+        <from_resource_mapping/>
+        <resource_attribute_name display_value="fields">3ad2a50a77e81210e9c41345ba5a99ed</resource_attribute_name>
+        <resource_mapping display_value="getServiceDefinitions">fb3ad3b22f207a50b14f861cbfa4e38c</resource_mapping>
+        <sys_class_name>sys_one_extend_resource_attribute_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 18:29:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1c4ad3b22f207a50b14f861cbfa4e3d1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_one_extend_resource_attribute_mapping_1c4ad3b22f207a50b14f861cbfa4e3d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-17 01:15:55</sys_updated_on>
+        <truncate>false</truncate>
+        <type>input</type>
+    </sys_one_extend_resource_attribute_mapping>
+</record_update>

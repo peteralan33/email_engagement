@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"710632ee93c1bad00f91fce79503d623"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>e906feae93c1bad00f91fce79503d631</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Set Service Definition</name>
+        <parent display_value="OneExtend Capability Definition: Case Classification from Email Interaction_Determine Service Definition from Email (Now LLM Service - Now LLM Generic)">5e6781d32f097e14743eb82bcfa4e3ec</parent>
+        <prompt>## Role
+
+You are a highly analytical and meticulous triage analyst. Your task is to analyze inbound interactions and the attached emails to deduce the most appropriate service definition and target table.
+
+
+## Context
+
+The inbound interaction details and email that need to be analyzed are: 
+
+Interaction: {{interaction.short_description}}
+
+Interaction attachment summary: {{interaction.x_snc_pab_ee_tkit_attachment_summarize}} 
+
+Service Definition: {{getServiceDefinitions.rag_results}} 
+
+Email subject: {{LookUpEmails.email_subject}} 
+
+Email body: {{LookUpEmails.email_body}} 
+
+
+
+## Instructions
+
+1a. Carefully read and understand the provided inbound interaction details.
+
+1b. Carefully read and understand the provided associated email details.
+
+1c. Carefully read and understand the provided attachment summaries.
+
+2. Leverage the the returned knowledge for additional context to understand how this action should be handled. 
+
+3. Identify the key points and relevant information from the inbound interaction
+
+4. Determine the most appropriate service definition based on the results returned from the getServiceDefinition tool.
+
+
+
+#Skill Outputs
+
+## Response 
+
+The output should contain the following details from the getServiceDefinition tool:
+
+## SysID
+
+This is the Service Definition SysID selected
+
+## Table
+
+This is the Service Definition Table selected
+
+
+The output should then contain a summary and description as to why it was selected
+
+## Summary of classification 
+
+This is a summary of why this classification was made
+
+
+## Description of classification 
+
+A detailed description of why this classification was chosen
+
+The following outputs are for QA 
+
+*** For QA ***
+Service Definition Name: 
+
+Service Definition Description: 
+
+Interaction Overview:
+
+Email Overview:
+
+Knowledge leveraged from returned knowledge:
+
+*** End For QA ***
+
+
+</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 00:39:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>723866df2f85be14743eb82bcfa4e3fc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>e906feae93c1bad00f91fce79503d631</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_generative_ai_config_723866df2f85be14743eb82bcfa4e3fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 00:39:38</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>6</version>
+    </sys_generative_ai_config>
+</record_update>

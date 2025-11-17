@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config">
+    <sn_nowassist_skill_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <description><![CDATA[The Determine Case Classification from Email Interaction (DCCEI) skill automatically analyzes a specific type of interaction record—one where the source is an email—to accurately identify and determine the precise support case category and sub-category. This classification uses the email&#39;s content (subject line, body text, and context of any attachments within the record) to initiate the correct workflow and ensure accurate routing.]]></description>
+        <edited_in_nask>false</edited_in_nask>
+        <in_product_active>false</in_product_active>
+        <in_product_roles/>
+        <internal_name>case_classification_from_email_interacti.710632ee93c1bad00f91fce79503d623</internal_name>
+        <is_template>false</is_template>
+        <name>Case Classification from Email Interaction</name>
+        <nap_skill_applicability display_value="Case Classification from Email Interacti">91073e629305bad00f91fce79503d618</nap_skill_applicability>
+        <order>100</order>
+        <parent/>
+        <skill_family display_value="Triage and Classification">d7701666938d7ad00f91fce79503d61d</skill_family>
+        <skill_id>dc06faae93c1bad00f91fce79503d6be</skill_id>
+        <skill_table>sys_one_extend_capability</skill_table>
+        <state>1</state>
+        <success_message/>
+        <sys_class_name>sn_nowassist_skill_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 17:44:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>710632ee93c1bad00f91fce79503d623</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Case Classification from Email Interaction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_710632ee93c1bad00f91fce79503d623</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-09 17:50:04</sys_updated_on>
+    </sn_nowassist_skill_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=710632ee93c1bad00f91fce79503d623"/>
+</record_update>

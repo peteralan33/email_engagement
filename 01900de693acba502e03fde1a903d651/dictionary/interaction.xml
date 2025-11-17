@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="7e03e7602fa43210b14f861cbfa4e30f" label="Interaction" max_length="40" name="interaction" type="collection">
+        <element label="Attachment summarize" max_length="4000" name="x_snc_pab_ee_tkit_attachment_summarize" type="string"/>
+    </element>
+</database>
