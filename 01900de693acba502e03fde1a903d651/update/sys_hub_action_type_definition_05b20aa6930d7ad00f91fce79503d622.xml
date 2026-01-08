@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>create_new_record_via_classification</internal_name>
-        <label_cache>[{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.business_activity_id}}","label":"action➛Business Activity ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.create_record_table_name}}","label":"action➛create_record_table_name","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.create_record_table_name1}}","label":"action➛create_record_table_name1","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.summary}}","label":"action➛Summary","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.description}}","label":"action➛Description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.work_notes}}","label":"action➛Work Notes","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[023780e3-0e99-42bd-96ae-388886e0e4b9].case_sys_id}}","label":"step➛Script step➛case_sys_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"65da9e27-56f1-425d-8a34-ad84a368f252"}},{"name":"{{step[023780e3-0e99-42bd-96ae-388886e0e4b9].case_number}}","label":"step➛Script step➛case_number","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"0346a463-ac3b-45ef-85cf-f3dfbdc7cb46"}},{"name":"{{action.business_activity_id}}","label":"action➛Business Activity ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d89b7dd4-aa79-44a9-96c0-6249ad283ea5"}},{"name":"{{action.create_record_table_name}}","label":"action➛create_record_table_name","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.create_record_table_name1}}","label":"action➛create_record_table_name1","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.summary}}","label":"action➛Summary","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6144f263-1d0d-4eca-b867-54a78e88c9c6"}},{"name":"{{action.description}}","label":"action➛Description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"46138dd0-9369-4aca-b21e-22a71bab938a"}},{"name":"{{action.work_notes}}","label":"action➛Work Notes","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"71ec5a2d-ba4b-431b-834a-3dbdcf192538"}},{"name":"{{action.account}}","label":"action➛Account","type":"action","ref":"","reference_display":"Account","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"1c989b11-d9ee-413f-9dcf-da2d3bb8fb90"}},{"name":"{{action.contact}}","label":"action➛Contact","type":"action","ref":"","reference_display":"Contact","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"reference","uiUniqueId":"43884817-4fb6-428c-b150-49fb214fdc05"}},{"name":"{{action.account.sys_id}}","label":"action➛Account➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"customer_account","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.contact.sys_id}}","label":"action➛Contact➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"contact","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.account_contact}}","label":"action➛Account Contact","type":"action","ref":"","reference_display":"Contact","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"3ae00e7d-0190-4fbf-a25d-ddc5be3f2fff"}},{"name":"{{action.account_contact.sys_id}}","label":"action➛Account Contact➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"customer_contact","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[023780e3-0e99-42bd-96ae-388886e0e4b9].case_sys_id}}","label":"step➛Script step➛case_sys_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"65da9e27-56f1-425d-8a34-ad84a368f252"}},{"name":"{{step[023780e3-0e99-42bd-96ae-388886e0e4b9].case_number}}","label":"step➛Script step➛case_number","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>ab0a4aa6934d7ad00f91fce79503d650</master_snapshot>
         <master_snapshot_digest/>
         <name>Create new record via classification</name>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>05b20aa6930d7ad00f91fce79503d622</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>Create new record via classification</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_05b20aa6930d7ad00f91fce79503d622</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-12 02:05:35</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:55</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -53,10 +53,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:22:40</sys_created_on>
         <sys_id>00f78a62934d7ad00f91fce79503d6dc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-12 02:05:32</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"20ceedf2-bd82-4d73-9199-10e826987418\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-11-28 18:59:26</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"20ceedf2-bd82-4d73-9199-10e826987418\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">80f78a62934d7ad00f91fce79503d6be</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -152,10 +152,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:22:39</sys_created_on>
         <sys_id>3be78a62934d7ad00f91fce79503d69f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 16:26:26</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:50</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3be78a62934d7ad00f91fce79503d69f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -180,13 +180,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:22:40</sys_created_on>
         <sys_id>84f78a62934d7ad00f91fce79503d6b9</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 16:26:26</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:50</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     // Input variables are clearly named&#13;
     var tableName = inputs.table;&#13;
     var businessAct = inputs.businessActivity;&#13;
+    var accountId = inputs.account;&#13;
+    var conactId = inputs.contact;&#13;
+    var open_By = inputs.openBy&#13;
 &#13;
     // Use let or const for modern JavaScript practices if possible, &#13;
     // but var is acceptable in ServiceNow's older contexts.&#13;
@@ -196,7 +199,9 @@
     // Check if the businessAct input is not empty before setting (good practice)&#13;
     if (businessAct) {&#13;
         // Set the field value&#13;
-        gr.setValue('service_definition', businessAct);&#13;
+        gr.setValue('account', accountId);&#13;
+        gr.setValue('contact', conactId);&#13;
+        gr.setValue('opened_by', open_By);&#13;
 &#13;
         // Insert the record and capture the sys_id directly&#13;
         var caseSysID = gr.insert();&#13;
@@ -213,9 +218,10 @@
             // Define your update values&#13;
             var shortDesc = inputs.summary;&#13;
             var descriptionText = inputs.description;&#13;
-            var wkNotes = inputs.workNotes&#13;
+            var wkNotes = inputs.workNotes;&#13;
 &#13;
             // Set the new field values on the same 'gr' object&#13;
+            gr.service_definition = businessAct;&#13;
             gr.short_description = shortDesc;&#13;
             gr.description = descriptionText;&#13;
             gr.work_notes = wkNotes; &#13;
@@ -241,7 +247,33 @@
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>3be78a62934d7ad00f91fce79503d69f</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 02:43:50</sys_created_on>
+        <sys_id>dec7ee302fe5f6d0b14f861cbfa4e3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:50</sys_updated_on>
+        <value>55e1b18a938576d00f91fce79503d6e3</value>
+        <variable display_value="">82c7ee302fe5f6d0b14f861cbfa4e397</variable>
+    </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=3be78a62934d7ad00f91fce79503d69f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>account</field>
+        <id>3be78a62934d7ad00f91fce79503d69f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:26</sys_created_on>
+        <sys_id>177d78382fe1b6d0b14f861cbfa4e329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 18:59:26</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3be78a62934d7ad00f91fce79503d69f</table>
+        <value>{{action.account.sys_id}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>application</field>
         <id>3be78a62934d7ad00f91fce79503d69f</id>
@@ -267,6 +299,18 @@
         <value>{{action.business_activity_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>contact</field>
+        <id>3be78a62934d7ad00f91fce79503d69f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:26</sys_created_on>
+        <sys_id>5f7d78382fe1b6d0b14f861cbfa4e328</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 23:24:52</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3be78a62934d7ad00f91fce79503d69f</table>
+        <value>{{action.account_contact.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>description</field>
         <id>3be78a62934d7ad00f91fce79503d69f</id>
         <sys_created_by>admin</sys_created_by>
@@ -277,6 +321,18 @@
         <sys_updated_on>2025-11-09 15:36:53</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_3be78a62934d7ad00f91fce79503d69f</table>
         <value>{{action.description}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>openBy</field>
+        <id>3be78a62934d7ad00f91fce79503d69f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 02:43:50</sys_created_on>
+        <sys_id>5ac7ee302fe5f6d0b14f861cbfa4e3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3be78a62934d7ad00f91fce79503d69f</table>
+        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
@@ -329,7 +385,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_3be78a62934d7ad00f91fce79503d69f^id=3be78a62934d7ad00f91fce79503d69f"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=3be78a62934d7ad00f91fce79503d69f"/>
     <sys_translated_text action="delete_multiple" query="documentkey=3be78a62934d7ad00f91fce79503d69f"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=3be78a62934d7ad00f91fce79503d69f^sys_idNOT IN03e8daaa93cd7ad00f91fce79503d618,87e8daaa93cd7ad00f91fce79503d61b,b7e78a62934d7ad00f91fce79503d6a5,cd4422e29341bad00f91fce79503d6d6,f3e78a62934d7ad00f91fce79503d6a9"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=3be78a62934d7ad00f91fce79503d69f^sys_idNOT IN03e8daaa93cd7ad00f91fce79503d618,177d38382fe1b6d0b14f861cbfa4e3fc,82c7ee302fe5f6d0b14f861cbfa4e397,87e8daaa93cd7ad00f91fce79503d61b,977d78382fe1b6d0b14f861cbfa4e300,b7e78a62934d7ad00f91fce79503d6a5,cd4422e29341bad00f91fce79503d6d6,f3e78a62934d7ad00f91fce79503d6a9"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -417,6 +473,172 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">3be78a62934d7ad00f91fce79503d69f</model>
+        <model_id>3be78a62934d7ad00f91fce79503d69f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3be78a62934d7ad00f91fce79503d69f</name>
+        <next_element/>
+        <order>500</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:25</sys_created_on>
+        <sys_id>177d38382fe1b6d0b14f861cbfa4e3fc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 20:14:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>openBy</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">3be78a62934d7ad00f91fce79503d69f</model>
+        <model_id>3be78a62934d7ad00f91fce79503d69f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3be78a62934d7ad00f91fce79503d69f</name>
+        <next_element/>
+        <order>700</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 02:43:50</sys_created_on>
+        <sys_id>82c7ee302fe5f6d0b14f861cbfa4e397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
         <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
@@ -484,6 +706,89 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-09 15:36:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contact</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">3be78a62934d7ad00f91fce79503d69f</model>
+        <model_id>3be78a62934d7ad00f91fce79503d69f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3be78a62934d7ad00f91fce79503d69f</name>
+        <next_element/>
+        <order>600</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:25</sys_created_on>
+        <sys_id>977d78382fe1b6d0b14f861cbfa4e300</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 23:29:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -959,7 +1264,175 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=05b20aa6930d7ad00f91fce79503d622^sys_idNOT IN4be89aaa93cd7ad00f91fce79503d6dc,4fe89aaa93cd7ad00f91fce79503d6e0,63e78a62934d7ad00f91fce79503d654,73e78a62934d7ad00f91fce79503d65a,f84422e29341bad00f91fce79503d691"/>
+    <sys_hub_action_input action="delete_multiple" query="model=05b20aa6930d7ad00f91fce79503d622^sys_idNOT IN30f9fd342fadb6d0b14f861cbfa4e3a6,477d38382fe1b6d0b14f861cbfa4e387,4be89aaa93cd7ad00f91fce79503d6dc,4fe89aaa93cd7ad00f91fce79503d6e0,63e78a62934d7ad00f91fce79503d654,73e78a62934d7ad00f91fce79503d65a,f84422e29341bad00f91fce79503d691"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=3ae00e7d-0190-4fbf-a25d-ddc5be3f2fff</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>customer_contact</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"Julie Lewis","value":"4d147a386f0331003b3c498f5d3ee437","table":"customer_contact","sys_id":"4d147a386f0331003b3c498f5d3ee437"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account_contact</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Account Contact</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create new record via classification">05b20aa6930d7ad00f91fce79503d622</model>
+        <model_id>05b20aa6930d7ad00f91fce79503d622</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_05b20aa6930d7ad00f91fce79503d622</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="customer_contact">customer_contact</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 23:23:35</sys_created_on>
+        <sys_id>30f9fd342fadb6d0b14f861cbfa4e3a6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=30f9fd342fadb6d0b14f861cbfa4e3a6"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=1c989b11-d9ee-413f-9dcf-da2d3bb8fb90</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>customer_account</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"Boxeo","value":"86837a386f0331003b3c498f5d3ee4ca","table":"customer_account","sys_id":"86837a386f0331003b3c498f5d3ee4ca"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Account</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create new record via classification">05b20aa6930d7ad00f91fce79503d622</model>
+        <model_id>05b20aa6930d7ad00f91fce79503d622</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_05b20aa6930d7ad00f91fce79503d622</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="customer_account">customer_account</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:24</sys_created_on>
+        <sys_id>477d38382fe1b6d0b14f861cbfa4e387</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=477d38382fe1b6d0b14f861cbfa4e387"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -978,7 +1451,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>Testing</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -1023,14 +1496,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 15:36:52</sys_created_on>
         <sys_id>4be89aaa93cd7ad00f91fce79503d6dc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 15:36:52</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1062,7 +1535,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>Testing</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -1107,14 +1580,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 15:36:52</sys_created_on>
         <sys_id>4fe89aaa93cd7ad00f91fce79503d6e0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 15:36:52</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1146,7 +1619,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>sn_bom_treasury_wire_service</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -1191,14 +1664,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:22:38</sys_created_on>
         <sys_id>63e78a62934d7ad00f91fce79503d654</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 14:22:38</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1230,7 +1703,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>f565708f2fec7a50b14f861cbfa4e359</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -1275,14 +1748,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:22:38</sys_created_on>
         <sys_id>73e78a62934d7ad00f91fce79503d65a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 14:22:38</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1314,7 +1787,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>Testing</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -1359,14 +1832,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 16:26:25</sys_created_on>
         <sys_id>f84422e29341bad00f91fce79503d691</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 16:26:25</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1620,14 +2093,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:22:40</sys_created_on>
         <sys_id>44f78a62934d7ad00f91fce79503d6d0</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-12 02:05:32</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1834,6 +2307,52 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>account</element>
+        <help/>
+        <hint/>
+        <label>Account</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_05b20aa6930d7ad00f91fce79503d622</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:24</sys_created_on>
+        <sys_id>cb7d38382fe1b6d0b14f861cbfa4e38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 18:59:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>account_contact</element>
+        <help/>
+        <hint/>
+        <label>Account Contact</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_05b20aa6930d7ad00f91fce79503d622</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 23:23:35</sys_created_on>
+        <sys_id>f0f9fd342fadb6d0b14f861cbfa4e3ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 23:23:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>business_activity_id</element>
         <help/>
         <hint/>
@@ -1954,17 +2473,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create new record via classification">05b20aa6930d7ad00f91fce79503d622</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"181a4aa6934d7ad00f91fce79503d6fa","name":"plan","plan_signature":null}}</plan>
-        <snapshot>500cb6972f89be14743eb82bcfa4e3d0</snapshot>
+        <snapshot>2fc722702fe5f6d0b14f861cbfa4e3e4</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:31:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>181a4aa6934d7ad00f91fce79503d6fa</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-12 02:05:36</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:57</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1981,7 +2500,7 @@
         <description/>
         <flow_priority/>
         <internal_name>create_new_record_via_classification</internal_name>
-        <label_cache>[{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.business_activity_id}}","label":"action➛Business Activity ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.create_record_table_name}}","label":"action➛create_record_table_name","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.create_record_table_name1}}","label":"action➛create_record_table_name1","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.summary}}","label":"action➛Summary","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.description}}","label":"action➛Description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.work_notes}}","label":"action➛Work Notes","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[023780e3-0e99-42bd-96ae-388886e0e4b9].case_sys_id}}","label":"step➛Script step➛case_sys_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"65da9e27-56f1-425d-8a34-ad84a368f252"}},{"name":"{{step[023780e3-0e99-42bd-96ae-388886e0e4b9].case_number}}","label":"step➛Script step➛case_number","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"0346a463-ac3b-45ef-85cf-f3dfbdc7cb46"}},{"name":"{{action.business_activity_id}}","label":"action➛Business Activity ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d89b7dd4-aa79-44a9-96c0-6249ad283ea5"}},{"name":"{{action.create_record_table_name}}","label":"action➛create_record_table_name","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.create_record_table_name1}}","label":"action➛create_record_table_name1","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.summary}}","label":"action➛Summary","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6144f263-1d0d-4eca-b867-54a78e88c9c6"}},{"name":"{{action.description}}","label":"action➛Description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"46138dd0-9369-4aca-b21e-22a71bab938a"}},{"name":"{{action.work_notes}}","label":"action➛Work Notes","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"71ec5a2d-ba4b-431b-834a-3dbdcf192538"}},{"name":"{{action.account}}","label":"action➛Account","type":"action","ref":"","reference_display":"Account","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"1c989b11-d9ee-413f-9dcf-da2d3bb8fb90"}},{"name":"{{action.contact}}","label":"action➛Contact","type":"action","ref":"","reference_display":"Contact","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"reference","uiUniqueId":"43884817-4fb6-428c-b150-49fb214fdc05"}},{"name":"{{action.account.sys_id}}","label":"action➛Account➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"customer_account","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.contact.sys_id}}","label":"action➛Contact➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"contact","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.account_contact}}","label":"action➛Account Contact","type":"action","ref":"","reference_display":"Contact","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"3ae00e7d-0190-4fbf-a25d-ddc5be3f2fff"}},{"name":"{{action.account_contact.sys_id}}","label":"action➛Account Contact➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"customer_contact","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[023780e3-0e99-42bd-96ae-388886e0e4b9].case_sys_id}}","label":"step➛Script step➛case_sys_id","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"65da9e27-56f1-425d-8a34-ad84a368f252"}},{"name":"{{step[023780e3-0e99-42bd-96ae-388886e0e4b9].case_number}}","label":"step➛Script step➛case_number","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>
         <name>Create new record via classification</name>
         <natlang/>
@@ -1994,7 +2513,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ab0a4aa6934d7ad00f91fce79503d650</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2002,7 +2521,7 @@
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 18:43:17</sys_updated_on>
+        <sys_updated_on>2025-11-28 23:24:54</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -2016,10 +2535,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:31:56</sys_created_on>
         <sys_id>bb0a4aa6934d7ad00f91fce79503d6b6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-12 02:05:35</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"20ceedf2-bd82-4d73-9199-10e826987418\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-11-28 18:59:30</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"20ceedf2-bd82-4d73-9199-10e826987418\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">bb0a4aa6934d7ad00f91fce79503d69a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2115,10 +2634,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:31:55</sys_created_on>
         <sys_id>af0a4aa6934d7ad00f91fce79503d679</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 18:43:19</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=af0a4aa6934d7ad00f91fce79503d679"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2129,13 +2648,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:31:56</sys_created_on>
         <sys_id>370a4aa6934d7ad00f91fce79503d691</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 18:43:19</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     // Input variables are clearly named&#13;
     var tableName = inputs.table;&#13;
     var businessAct = inputs.businessActivity;&#13;
+    var accountId = inputs.account;&#13;
+    var conactId = inputs.contact;&#13;
+    var open_By = inputs.openBy&#13;
 &#13;
     // Use let or const for modern JavaScript practices if possible, &#13;
     // but var is acceptable in ServiceNow's older contexts.&#13;
@@ -2145,7 +2667,9 @@
     // Check if the businessAct input is not empty before setting (good practice)&#13;
     if (businessAct) {&#13;
         // Set the field value&#13;
-        gr.setValue('service_definition', businessAct);&#13;
+        gr.setValue('account', accountId);&#13;
+        gr.setValue('contact', conactId);&#13;
+        gr.setValue('opened_by', open_By);&#13;
 &#13;
         // Insert the record and capture the sys_id directly&#13;
         var caseSysID = gr.insert();&#13;
@@ -2162,9 +2686,10 @@
             // Define your update values&#13;
             var shortDesc = inputs.summary;&#13;
             var descriptionText = inputs.description;&#13;
-            var wkNotes = inputs.workNotes&#13;
+            var wkNotes = inputs.workNotes;&#13;
 &#13;
             // Set the new field values on the same 'gr' object&#13;
+            gr.service_definition = businessAct;&#13;
             gr.short_description = shortDesc;&#13;
             gr.description = descriptionText;&#13;
             gr.work_notes = wkNotes; &#13;
@@ -2204,7 +2729,33 @@
         <value>35aa573fd7802200bdbaee5b5e610375</value>
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>af0a4aa6934d7ad00f91fce79503d679</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 02:43:54</sys_created_on>
+        <sys_id>dfc722702fe5f6d0b14f861cbfa4e3d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:54</sys_updated_on>
+        <value>55e1b18a938576d00f91fce79503d6e3</value>
+        <variable display_value="openBy">1fc722702fe5f6d0b14f861cbfa4e3c2</variable>
+    </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=af0a4aa6934d7ad00f91fce79503d679"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>account</field>
+        <id>af0a4aa6934d7ad00f91fce79503d679</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:29</sys_created_on>
+        <sys_id>d88db8382fe1b6d0b14f861cbfa4e33c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 18:59:29</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_af0a4aa6934d7ad00f91fce79503d679</table>
+        <value>{{action.account.sys_id}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>application</field>
         <id>af0a4aa6934d7ad00f91fce79503d679</id>
@@ -2230,6 +2781,18 @@
         <value>{{action.business_activity_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>contact</field>
+        <id>af0a4aa6934d7ad00f91fce79503d679</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:29</sys_created_on>
+        <sys_id>188db8382fe1b6d0b14f861cbfa4e33c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 23:24:56</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_af0a4aa6934d7ad00f91fce79503d679</table>
+        <value>{{action.account_contact.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>description</field>
         <id>af0a4aa6934d7ad00f91fce79503d679</id>
         <sys_created_by>admin</sys_created_by>
@@ -2240,6 +2803,18 @@
         <sys_updated_on>2025-11-09 15:36:56</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_af0a4aa6934d7ad00f91fce79503d679</table>
         <value>{{action.description}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>openBy</field>
+        <id>af0a4aa6934d7ad00f91fce79503d679</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 02:43:54</sys_created_on>
+        <sys_id>5fc722702fe5f6d0b14f861cbfa4e3d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:54</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_af0a4aa6934d7ad00f91fce79503d679</table>
+        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
@@ -2292,7 +2867,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_af0a4aa6934d7ad00f91fce79503d679^id=af0a4aa6934d7ad00f91fce79503d679"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=af0a4aa6934d7ad00f91fce79503d679"/>
     <sys_translated_text action="delete_multiple" query="documentkey=af0a4aa6934d7ad00f91fce79503d679"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=af0a4aa6934d7ad00f91fce79503d679^sys_idNOT IN0e930be29385bad00f91fce79503d6d2,7be8daaa93cd7ad00f91fce79503d6fc,80f81eaa93cd7ad00f91fce79503d600,e70a4aa6934d7ad00f91fce79503d682,ef0a4aa6934d7ad00f91fce79503d67d"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=af0a4aa6934d7ad00f91fce79503d679^sys_idNOT IN0e930be29385bad00f91fce79503d6d2,1fc722702fe5f6d0b14f861cbfa4e3c2,7be8daaa93cd7ad00f91fce79503d6fc,80f81eaa93cd7ad00f91fce79503d600,888db8382fe1b6d0b14f861cbfa4e31d,988db8382fe1b6d0b14f861cbfa4e32d,e70a4aa6934d7ad00f91fce79503d682,ef0a4aa6934d7ad00f91fce79503d67d"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2364,6 +2939,89 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-09 18:43:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>openBy</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>openBy</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">af0a4aa6934d7ad00f91fce79503d679</model>
+        <model_id>af0a4aa6934d7ad00f91fce79503d679</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_af0a4aa6934d7ad00f91fce79503d679</name>
+        <next_element/>
+        <order>700</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 02:43:54</sys_created_on>
+        <sys_id>1fc722702fe5f6d0b14f861cbfa4e3c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2530,6 +3188,172 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-09 15:36:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>account</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">af0a4aa6934d7ad00f91fce79503d679</model>
+        <model_id>af0a4aa6934d7ad00f91fce79503d679</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_af0a4aa6934d7ad00f91fce79503d679</name>
+        <next_element/>
+        <order>500</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:29</sys_created_on>
+        <sys_id>888db8382fe1b6d0b14f861cbfa4e31d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 20:14:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>contact</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>contact</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">af0a4aa6934d7ad00f91fce79503d679</model>
+        <model_id>af0a4aa6934d7ad00f91fce79503d679</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_af0a4aa6934d7ad00f91fce79503d679</name>
+        <next_element/>
+        <order>600</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:29</sys_created_on>
+        <sys_id>988db8382fe1b6d0b14f861cbfa4e32d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 23:29:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2922,7 +3746,7 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=ab0a4aa6934d7ad00f91fce79503d650^sys_idNOT IN270a4aa6934d7ad00f91fce79503d66c,7fe8daaa93cd7ad00f91fce79503d6de,bd930be29385bad00f91fce79503d6bd,e70a4aa6934d7ad00f91fce79503d671,fbe8daaa93cd7ad00f91fce79503d6da"/>
+    <sys_hub_action_input action="delete_multiple" query="model=ab0a4aa6934d7ad00f91fce79503d650^sys_idNOT IN270a4aa6934d7ad00f91fce79503d66c,448db8382fe1b6d0b14f861cbfa4e301,7fe8daaa93cd7ad00f91fce79503d6de,9c4a7d742fadb6d0b14f861cbfa4e3b6,bd930be29385bad00f91fce79503d6bd,e70a4aa6934d7ad00f91fce79503d671,fbe8daaa93cd7ad00f91fce79503d6da"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2941,7 +3765,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>sn_bom_treasury_wire_service</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -2986,14 +3810,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:31:55</sys_created_on>
         <sys_id>270a4aa6934d7ad00f91fce79503d66c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 14:31:55</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3007,6 +3831,90 @@
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=270a4aa6934d7ad00f91fce79503d66c"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=1c989b11-d9ee-413f-9dcf-da2d3bb8fb90</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>customer_account</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"Boxeo","value":"86837a386f0331003b3c498f5d3ee4ca","table":"customer_account","sys_id":"86837a386f0331003b3c498f5d3ee4ca"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Account</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create new record via classification">ab0a4aa6934d7ad00f91fce79503d650</model>
+        <model_id>ab0a4aa6934d7ad00f91fce79503d650</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_ab0a4aa6934d7ad00f91fce79503d650</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="customer_account">customer_account</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:28</sys_created_on>
+        <sys_id>448db8382fe1b6d0b14f861cbfa4e301</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=448db8382fe1b6d0b14f861cbfa4e301"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3025,7 +3933,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>Testing</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -3070,14 +3978,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 15:36:55</sys_created_on>
         <sys_id>7fe8daaa93cd7ad00f91fce79503d6de</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 15:36:55</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3091,6 +3999,90 @@
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7fe8daaa93cd7ad00f91fce79503d6de"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=3ae00e7d-0190-4fbf-a25d-ddc5be3f2fff</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>customer_contact</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>{"display":"Julie Lewis","value":"4d147a386f0331003b3c498f5d3ee437","table":"customer_contact","sys_id":"4d147a386f0331003b3c498f5d3ee437"}</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account_contact</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Account Contact</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create new record via classification">ab0a4aa6934d7ad00f91fce79503d650</model>
+        <model_id>ab0a4aa6934d7ad00f91fce79503d650</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_ab0a4aa6934d7ad00f91fce79503d650</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="customer_contact">customer_contact</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 23:24:55</sys_created_on>
+        <sys_id>9c4a7d742fadb6d0b14f861cbfa4e3b6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:43:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9c4a7d742fadb6d0b14f861cbfa4e3b6"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3109,7 +4101,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>Testing</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -3154,14 +4146,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 18:43:18</sys_created_on>
         <sys_id>bd930be29385bad00f91fce79503d6bd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 18:43:18</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3193,7 +4185,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>f565708f2fec7a50b14f861cbfa4e359</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -3238,14 +4230,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:31:55</sys_created_on>
         <sys_id>e70a4aa6934d7ad00f91fce79503d671</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 14:31:55</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3277,7 +4269,7 @@
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>Testing</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -3322,14 +4314,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 15:36:55</sys_created_on>
         <sys_id>fbe8daaa93cd7ad00f91fce79503d6da</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 15:36:55</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3583,14 +4575,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 14:31:56</sys_created_on>
         <sys_id>b70a4aa6934d7ad00f91fce79503d6ab</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-12 02:05:35</sys_updated_on>
+        <sys_updated_on>2025-11-29 02:43:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3724,6 +4716,52 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-09 14:31:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>account</element>
+        <help/>
+        <hint/>
+        <label>Account</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ab0a4aa6934d7ad00f91fce79503d650</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 18:59:28</sys_created_on>
+        <sys_id>488db8382fe1b6d0b14f861cbfa4e305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 18:59:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>account_contact</element>
+        <help/>
+        <hint/>
+        <label>Account Contact</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ab0a4aa6934d7ad00f91fce79503d650</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 23:24:55</sys_created_on>
+        <sys_id>904a7d742fadb6d0b14f861cbfa4e3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 23:24:55</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -3916,6 +4954,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>05b20aa6930d7ad00f91fce79503d622</sys_id>
         <latest_snapshot>ab0a4aa6934d7ad00f91fce79503d650</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1-09-18-2025_09-20-2025_1616.zip</compiler_build>
+        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1a-09-24-2025_10-14-2025_2100.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

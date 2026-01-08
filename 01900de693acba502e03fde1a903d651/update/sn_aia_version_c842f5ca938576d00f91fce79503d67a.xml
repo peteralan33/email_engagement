@@ -3,6 +3,8 @@
         <condition/>
         <instructions>The agent operates through a precise, automated sequence, functioning continuously without human intervention until the final case is created, structured, and routed.
 
+You must execute all steps without fail
+
 # Step 1: Ingestion &amp; Monitoring
 Action: The agent actively monitors the designated incoming support channel, focusing specifically on email-originated interactions to initiate the triage process.
 Input: The agent ingests the new email interaction record, which contains both the body text and any attachments.
@@ -28,15 +30,15 @@ Context: The agent leverages a tailored Capital Markets skill and model trained 
 Action: The agent analyzes the extracted data and the synthesized summary to accurately determine and classify the precise request type (e.g., classifying "Trade Issue" as "Failed Settlement - T+2 Equities").
 
 Key Outputs Determined: This step determines the necessary metadata for the new case, including:
---&gt;Case Table (e.g., sn_bom_treasury_wire_service)
+--&gt; Case Table (e.g., sn_bom_treasury_wire_service)
 --&gt; Business Activity Name (e.g., Unmatched Trade), 
 --&gt; Business Activity ID (e.g. f565708f2fec7a50b14f861cbfa4e359)
 --&gt; Summary 
 --&gt; Description.
 
-Step 5: Seamless Case Generation
+Step 5: Automated Case Generation (ACGA)
 Actions:
---&gt; Case Creation: The agent instantly creates a new support case in the target system.
+--&gt; Case Creation: The agent instantly creates a new support case in the target case.
 --&gt; Data Population: All relevant fields are pre-populated using the classification outputs from the previous steps. 
 ---&gt; Case Table and Business Activity ID must match the predefined return format exactly.
 ---&gt; The Summary and Description contains the agent-generated actionable summary.</instructions>
@@ -46,7 +48,7 @@ Actions:
         <sys_created_on>2025-11-07 23:30:57</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>c842f5ca938576d00f91fce79503d67a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>V1</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -54,7 +56,7 @@ Actions:
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sn_aia_version_c842f5ca938576d00f91fce79503d67a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 16:02:41</sys_updated_on>
+        <sys_updated_on>2025-11-28 20:02:32</sys_updated_on>
         <target_id>9510f586938576d00f91fce79503d6a4</target_id>
         <target_table>sn_aia_agent</target_table>
         <version_name>V1</version_name>
