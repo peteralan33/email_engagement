@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
+        <description>This tool is used when the user requests a summarization of an image attachment, or a summarization of the image attachments on a record.</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"attachment_sys_ids","value":"","description":"list of sys_ids for the attachments to use as a document for summarization","invalidMessage":null}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Summarise attachments on the interaction record</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Initiating attachment summarization</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-09 02:44:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4038eb9e93c53ad00f91fce79503d680</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Summarise attachments on the interaction record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_4038eb9e93c53ad00f91fce79503d680</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 00:23:33</sys_updated_on>
+        <tool display_value="Summarise attachments on the interaction record">4438eb9e93c53ad00f91fce79503d67b</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_4038eb9e93c53ad00f91fce79503d680</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent><description>This tool is used when the user requests a summarization of an image attachment, or a summarization of the image attachments on a record.</description><display_output>true</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"attachment_sys_ids","value":"","description":"list of sys_ids for the attachments to use as a document for summarization","invalidMessage":null}]</inputs><max_auto_executions>10</max_auto_executions><name>Summarise attachments on the interaction record</name><output_transformation_strategy>abstract_summary</output_transformation_strategy><post_processing_script/><pre_message>Initiating attachment summarization</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-09 02:44:43</sys_created_on><sys_domain>global</sys_domain><sys_id>4038eb9e93c53ad00f91fce79503d680</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Summarise attachments on the interaction record</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_4038eb9e93c53ad00f91fce79503d680</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-12 00:23:33</sys_updated_on><tool display_value="Summarise attachments on the interaction record">4438eb9e93c53ad00f91fce79503d67b</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>995688954</payload_hash>
+        <record_name>Summarise attachments on the interaction record</record_name>
+        <reverted_from/>
+        <source>0194326e2fa07650b14f861cbfa4e361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 00:23:33</sys_created_on>
+        <sys_id>b5a4ee172f85be14743eb82bcfa4e353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a7572407e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 00:23:33</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>b5a4ee179885be141ec97f0c2f242f52</update_guid>
+        <update_guid_history>b5a4ee179885be141ec97f0c2f242f52:995688954,162aae626881bad0cbcaaec05f9c1a0b:-605078101,92aa2b164e093ad0eb55eceeac44e0a7:1993298828,9038eb9e1fc53ad0e500f9d9f6200883:-1082182139</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Summarise attachments on the interaction record">c8dc38e6938e32540f91fce79503d670</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-29 01:57:13</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>62894b9edc3c433a941bfb5e78a28c24</sys_id>
+        <sys_metadata>4038eb9e93c53ad00f91fce79503d680</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Summarise attachments on the interaction record</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_4038eb9e93c53ad00f91fce79503d680</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_4038eb9e93c53ad00f91fce79503d680">b5a4ee172f85be14743eb82bcfa4e353</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-29 01:57:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

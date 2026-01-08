@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
     <sn_aia_agent action="INSERT_OR_UPDATE">
+        <advanced_mode>false</advanced_mode>
         <agent_type>internal</agent_type>
         <applicability_script><![CDATA[/** 
  * Function to process inputs related to ServiceNow change request operations 
@@ -27,7 +28,10 @@
     return context.table == 'incident' ; */
     return false;
 })(inputs);]]></applicability_script>
+        <channel>nap_and_va</channel>
         <compiled_handbook/>
+        <condition/>
+        <context_processing_script/>
         <description>This robust back-office AI agent is specifically engineered to automate the critical intake and triage phase for Capital Market Operations support, dramatically improving efficiency when handling high-volume, complex, and attachment-rich incoming requests.
 
 The agent executes a precise, multi-step workflow powered by specialized Capital Markets intelligence:
@@ -44,6 +48,7 @@ Automatically creates a fully contextualized case, ensuring the new entry is pre
 # Key Outcomes &amp; Benefits 
 Eliminates the bottleneck of manual triage, dramatically reducing response times and guaranteeing that all high-priority cases are routed immediately with complete, actionable data.</description>
         <external_agent_configuration/>
+        <inputs>[]</inputs>
         <instructions>The agent operates through a precise, automated sequence, functioning continuously without human intervention until the final case is created, structured, and routed.
 
 You must execute all steps without fail
@@ -87,17 +92,19 @@ Actions:
 ---&gt; The Summary and Description contains the agent-generated actionable summary.</instructions>
         <internal_name>global.x_snc_pab_ee_tkit.Email Triage and Classification Agent</internal_name>
         <name>Email Triage and Classification Agent</name>
+        <outputs>""</outputs>
         <parent/>
-        <processing_message>IMS0000973</processing_message>
-        <proficiency>- Expertly automates the intake and triage phase for Capital Market Operations support by leveraging specialized Capital Markets intelligence to process, classify, and route complex, attachment-rich inbound requests. The agent transforms unstructured, high-volume email interactions into structured, actionable cases, ensuring rapid classification, accurate summarization, and immediate routing to the correct support team, thereby eliminating manual bottlenecks and accelerating operational workflows.
-- Continuously monitors designated support channels for new email-originated interactions, automatically ingesting both the body text and all associated attachments of each interaction record to initiate the triage process without human intervention.
-- Efficiently retrieves all attachments associated with a given interaction record, providing access to the file names and unique system identifiers (sys_ids) for each document, thereby enabling subsequent processing and analysis of supporting materials.
-- Processes and synthesizes the content of all attachments on an interaction record, generating a consolidated, concise, and actionable summary that eliminates the need for human analysts to review every file, thus accelerating the triage process.
-- Manages and retrieves the results of asynchronous attachment summarization jobs, ensuring that the agent only proceeds with fully completed and accurate summaries, thereby maintaining the integrity and reliability of the triage process.
-- Enriches the original interaction record by embedding the generated attachment summaries, creating a comprehensive data package that consolidates all relevant context and insights, and prepares the record for specialized case classification.
-- Performs specialized analysis of enriched interaction records using a custom Capital Markets skill model, accurately classifying the request to the most granular, actionable level and generating all required technical metadata—including Case Table, Business Activity Name, Business Activity ID, Summary, and Description—for precise and efficient case creation and routing.
-- Automatically creates new support cases in the target system using the precise classification outputs, pre-populating all required fields—including Case Table, Business Activity ID, Summary, Description, and workNotes—to ensure accurate, immediate case instantiation and seamless handoff to human agents for resolution.
-- Orchestrates a fully automated, multi-step triage workflow by sequentially leveraging all available tools—monitoring, ingestion, attachment retrieval, summarization, enrichment, classification, and case generation—ensuring that each support request is processed, structured, and routed with maximum efficiency and zero manual intervention.</proficiency>
+        <post_processing_message/>
+        <processing_message>Reviewing inbound email</processing_message>
+        <proficiency>- Expert automation of the intake and triage phase for Capital Market Operations support, including the transformation of unstructured, attachment-rich inbound requests into structured, actionable cases. The agent leverages specialized Capital Markets intelligence to ensure rapid classification, accurate summarization, and immediate routing to the correct support team, thereby eliminating manual bottlenecks and accelerating operational response.
+- Continuous monitoring and ingestion of designated incoming support channels, specifically focusing on email-originated interactions. The agent is capable of capturing both the body text and all attachments from each new interaction record, ensuring that every inbound request is promptly and comprehensively processed for triage.
+- Automated retrieval of all attachments associated with a given interaction record, including extraction of file names and system IDs. This capability ensures that the agent can access and process all supporting documentation required for comprehensive request analysis and downstream summarization.
+- Automated summarization of all attachments on an interaction record, enabling the agent to distill complex, multi-document inputs into a single, concise, and actionable summary. This capability streamlines the triage process by providing immediate clarity on the core issue without requiring manual document review.
+- Asynchronous management and retrieval of attachment summarization results, including status tracking (IN_PROGRESS, ERROR, COMPLETED) and final output acquisition. This capability ensures that the agent can reliably obtain and utilize synthesized document content for subsequent enrichment and classification steps.
+- Enrichment of the original interaction record with synthesized attachment summaries, resulting in a comprehensive data package that integrates all relevant context from emails and supporting documents. This capability ensures that the interaction record is fully prepared for precise classification and case generation.
+- Specialized analysis and classification of enriched interaction records using a Capital Markets-trained model, resulting in granular determination of case type, business activity name, business activity ID, summary, and description. This capability ensures precise, actionable categorization and prepares all required metadata for automated case generation and routing.
+- Automated creation of new support cases in the target system, leveraging precise classification outputs to pre-populate all required fields (case table, business activity, summary, description, work notes). This capability ensures immediate, accurate instantiation of cases, strict adherence to system formats, and comprehensive documentation for seamless downstream processing.
+- End-to-end autonomous orchestration of the entire triage and case creation workflow, from initial monitoring and ingestion of inbound requests through document summarization, record enrichment, specialized classification, and automated case generation. This integrated capability enables the agent to operate continuously and without human intervention, delivering rapid, accurate, and fully documented case handoff to downstream support teams.</proficiency>
         <record_type>custom</record_type>
         <role># Outline of Role
 The AI Agent's primary role is to act as the Intelligent Gatekeeper and Triage Specialist for Capital Market Operations support, automating the initial and most labor-intensive phase of request handling. Its operation is designed to transform unstructured, high-volume inputs into structured, actionable cases.
@@ -111,13 +118,13 @@ The agent's role is to automate the critical intake and triage phase for Capital
         <sys_created_on>2025-11-07 23:30:57</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>9510f586938576d00f91fce79503d6a4</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Email Triage and Classification Agent</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sn_aia_agent_9510f586938576d00f91fce79503d6a4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-28 20:11:06</sys_updated_on>
+        <sys_updated_on>2025-12-29 02:43:30</sys_updated_on>
     </sn_aia_agent>
 </record_update>
