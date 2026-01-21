@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_component_field">
+    <ais_semantic_component_field action="DELETE">
+        <component_field_name>description</component_field_name>
+        <order>2</order>
+        <semantic_field display_value="ServiceDefinition">02cef1f92f2aba50ecb8b04bcfa4e354</semantic_field>
+        <source>sn_case_type_selection</source>
+        <sys_class_name>ais_semantic_component_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:21:46</sys_created_on>
+        <sys_id>afdef53d2f2aba50ecb8b04bcfa4e3c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_semantic_component_field_afdef53d2f2aba50ecb8b04bcfa4e3c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:21:46</sys_updated_on>
+        <type>field</type>
+    </ais_semantic_component_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>ais_semantic_component_field_afdef53d2f2aba50ecb8b04bcfa4e3c1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_component_field"><ais_semantic_component_field action="INSERT_OR_UPDATE"><component_field_name>description</component_field_name><order>2</order><semantic_field display_value="ServiceDefinition">02cef1f92f2aba50ecb8b04bcfa4e354</semantic_field><source>sn_case_type_selection</source><sys_class_name>ais_semantic_component_field</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-20 19:21:46</sys_created_on><sys_id>afdef53d2f2aba50ecb8b04bcfa4e3c1</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_semantic_component_field_afdef53d2f2aba50ecb8b04bcfa4e3c1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-20 19:21:46</sys_updated_on><type>field</type></ais_semantic_component_field></record_update>]]></payload>
+        <payload_hash>-1199014325</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>09927d20936af6509634f3990103d697</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:21:46</sys_created_on>
+        <sys_id>6bdebd3d2f2aba50ecb8b04bcfa4e3e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bdcdb1edb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:21:46</sys_updated_on>
+        <type>Semantic Index Fields</type>
+        <update_guid>e7debd3d8b2aba5008ffce558d2124e3</update_guid>
+        <update_guid_history>e7debd3d8b2aba5008ffce558d2124e3:-1199014325</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">0c911b3593a272509634f3990103d6e2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 01:23:04</sys_created_on>
+        <sys_db_object display_value="" name="ais_semantic_component_field">ais_semantic_component_field</sys_db_object>
+        <sys_id>027db537520241f0800666abe3670640</sys_id>
+        <sys_metadata>afdef53d2f2aba50ecb8b04bcfa4e3c1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_semantic_component_field_afdef53d2f2aba50ecb8b04bcfa4e3c1</sys_update_name>
+        <sys_update_version display_value="ais_semantic_component_field_afdef53d2f2aba50ecb8b04bcfa4e3c1">6bdebd3d2f2aba50ecb8b04bcfa4e3e4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 01:23:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

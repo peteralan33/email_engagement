@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
+    <ais_search_source action="DELETE">
+        <active>true</active>
+        <condition table="sn_case_type_selection">service_type=4<item display_value="Medical Imaging" endquery="false" field="service_type" goto="false" newquery="false" operator="=" or="false" value="4"/>
+        </condition>
+        <datasource display_value="">sn_case_type_selection</datasource>
+        <has_dynamic_filters>false</has_dynamic_filters>
+        <name>NASK Created HCLS Case Classification from Email Int getHealthServiceDefinitions Service Definition</name>
+        <sys_class_name>ais_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 00:27:51</sys_created_on>
+        <sys_id>dbe40fb993aa32509634f3990103d60e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NASK Created HCLS Case Classification from Email Int getHealthServiceDefinitions Service Definition</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_source_dbe40fb993aa32509634f3990103d60e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 00:27:51</sys_updated_on>
+    </ais_search_source>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>ais_search_source_dbe40fb993aa32509634f3990103d60e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source"><ais_search_source action="INSERT_OR_UPDATE"><active>true</active><condition table="sn_case_type_selection">service_type=4<item display_value="Medical Imaging" endquery="false" field="service_type" goto="false" newquery="false" operator="=" or="false" value="4"/></condition><datasource display_value="">sn_case_type_selection</datasource><has_dynamic_filters>false</has_dynamic_filters><name>NASK Created HCLS Case Classification from Email Int getHealthServiceDefinitions Service Definition</name><sys_class_name>ais_search_source</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-21 00:27:51</sys_created_on><sys_id>dbe40fb993aa32509634f3990103d60e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>NASK Created HCLS Case Classification from Email Int getHealthServiceDefinitions Service Definition</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_search_source_dbe40fb993aa32509634f3990103d60e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-21 00:27:51</sys_updated_on></ais_search_source></record_update>]]></payload>
+        <payload_hash>303360651</payload_hash>
+        <record_name>NASK Created HCLS Case Classification from Email Int getHealthServiceDefinitions Service Definition</record_name>
+        <reverted_from/>
+        <source>09927d20936af6509634f3990103d697</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 00:27:51</sys_created_on>
+        <sys_id>97e447fd93aa32509634f3990103d60f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bddf359cf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 00:27:51</sys_updated_on>
+        <type>AI Search Search Source</type>
+        <update_guid>d3e447fd8aaa3250c296ecee166ad10e</update_guid>
+        <update_guid_history>d3e447fd8aaa3250c296ecee166ad10e:303360651</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="NASK Created HCLS Case Classification from Email Int getHealthServiceDefinitions">ce3f4f71936272509634f3990103d6de</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 01:12:50</sys_created_on>
+        <sys_db_object display_value="" name="ais_search_source">ais_search_source</sys_db_object>
+        <sys_id>6d325dc72ddc4b69ab60e7b54fc339e1</sys_id>
+        <sys_metadata>dbe40fb993aa32509634f3990103d60e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NASK Created HCLS Case Classification from Email Int getHealthServiceDefinitions Service Definition</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_search_source_dbe40fb993aa32509634f3990103d60e</sys_update_name>
+        <sys_update_version display_value="ais_search_source_dbe40fb993aa32509634f3990103d60e">97e447fd93aa32509634f3990103d60f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 01:12:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

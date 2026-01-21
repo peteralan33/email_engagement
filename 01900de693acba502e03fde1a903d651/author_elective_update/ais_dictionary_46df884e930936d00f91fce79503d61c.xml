@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary">
+    <ais_dictionary action="DELETE">
+        <active>true</active>
+        <auto_refresh>24</auto_refresh>
+        <blocked_field/>
+        <case_sensitive>false</case_sensitive>
+        <data_source/>
+        <derived>true</derived>
+        <field/>
+        <label>Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Created Default Spell Check Dictionary</label>
+        <last_derived>2026-01-20 01:22:58</last_derived>
+        <locale>en</locale>
+        <name>x_snc_pab_ee_tkit_determine_service_definition_from_email_searchforcapitalmarketknowledge_nask_created_default_spell_check_dictionary</name>
+        <publish_id>45ec40f2-7bf3-46cb-9d28-468c4411966d</publish_id>
+        <punctuation_sensitive>false</punctuation_sensitive>
+        <state>DRAFT</state>
+        <sys_class_name>ais_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 16:21:00</sys_created_on>
+        <sys_id>46df884e930936d00f91fce79503d61c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_determine_service_definition_from_email_searchforcapitalmarketknowledge_nask_created_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_dictionary_46df884e930936d00f91fce79503d61c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:08:24</sys_updated_on>
+        <type>SPELLCHECK</type>
+    </ais_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>ais_dictionary_46df884e930936d00f91fce79503d61c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary"><ais_dictionary action="INSERT_OR_UPDATE"><active>true</active><auto_refresh>24</auto_refresh><blocked_field/><case_sensitive>false</case_sensitive><data_source/><derived>true</derived><field/><label>Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Created Default Spell Check Dictionary</label><last_derived>2026-01-20 01:22:58</last_derived><locale>en</locale><name>x_snc_pab_ee_tkit_determine_service_definition_from_email_searchforcapitalmarketknowledge_nask_created_default_spell_check_dictionary</name><publish_id>45ec40f2-7bf3-46cb-9d28-468c4411966d</publish_id><punctuation_sensitive>false</punctuation_sensitive><state>DRAFT</state><sys_class_name>ais_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-07 16:21:00</sys_created_on><sys_id>46df884e930936d00f91fce79503d61c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_snc_pab_ee_tkit_determine_service_definition_from_email_searchforcapitalmarketknowledge_nask_created_default_spell_check_dictionary</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_dictionary_46df884e930936d00f91fce79503d61c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-20 19:08:24</sys_updated_on><type>SPELLCHECK</type></ais_dictionary></record_update>]]></payload>
+        <payload_hash>628514250</payload_hash>
+        <record_name>x_snc_pab_ee_tkit_determine_service_definition_from_email_searchforcapitalmarketknowledge_nask_creat</record_name>
+        <reverted_from/>
+        <source>09927d20936af6509634f3990103d697</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:08:24</sys_created_on>
+        <sys_id>f3cb3d792fe6ba50ecb8b04bcfa4e351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bdccee19f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:08:24</sys_updated_on>
+        <type>AI Search Dictionary</type>
+        <update_guid>a3cb3d795fe6ba5042bbd8dd94b4d950</update_guid>
+        <update_guid_history>a3cb3d795fe6ba5042bbd8dd94b4d950:628514250,2c598779625af6d41b1724d0806bdea3:-958147131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_pab_ee_tkit_determine_service_definition_from_email_searchforcapitalmarket">88db7d792fe6ba50ecb8b04bcfa4e30e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:08:25</sys_created_on>
+        <sys_db_object display_value="" name="ais_dictionary">ais_dictionary</sys_db_object>
+        <sys_id>1137ef477f2345c88bd6634ce9bf8f64</sys_id>
+        <sys_metadata>46df884e930936d00f91fce79503d61c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_determine_service_definition_from_email_searchforcapitalmarketknowledge_nask_created_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_dictionary_46df884e930936d00f91fce79503d61c</sys_update_name>
+        <sys_update_version display_value="ais_dictionary_46df884e930936d00f91fce79503d61c">f3cb3d792fe6ba50ecb8b04bcfa4e351</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:08:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

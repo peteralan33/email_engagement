@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="DELETE">
+        <dictionary display_value="default_stop_word_dictionary">9865058bc7031010d1cfd9795cc26037</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>true</marked_for_deletion>
+        <profile display_value="">433a93b22f207a50b14f861cbfa4e3f9</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 18:29:19</sys_created_on>
+        <sys_id>c73a93b22f207a50b14f861cbfa4e3fd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>default_stop_word_dictionary.</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_c73a93b22f207a50b14f861cbfa4e3fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:07:58</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>ais_search_profile_ais_dictionary_m2m_c73a93b22f207a50b14f861cbfa4e3fd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m"><ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE"><dictionary display_value="default_stop_word_dictionary">9865058bc7031010d1cfd9795cc26037</dictionary><dictionary_reference_qualifier/><marked_for_deletion>true</marked_for_deletion><profile display_value="">433a93b22f207a50b14f861cbfa4e3f9</profile><sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-16 18:29:19</sys_created_on><sys_id>c73a93b22f207a50b14f861cbfa4e3fd</sys_id><sys_mod_count>1</sys_mod_count><sys_name>default_stop_word_dictionary.</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_search_profile_ais_dictionary_m2m_c73a93b22f207a50b14f861cbfa4e3fd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-20 19:07:58</sys_updated_on></ais_search_profile_ais_dictionary_m2m></record_update>]]></payload>
+        <payload_hash>467369142</payload_hash>
+        <record_name>default_stop_word_dictionary.</record_name>
+        <reverted_from/>
+        <source>09927d20936af6509634f3990103d697</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:07:58</sys_created_on>
+        <sys_id>91bb31792fe6ba50ecb8b04bcfa4e316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bdcce7c920000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:07:58</sys_updated_on>
+        <type>AI Search Search Profile Dictionary Mapp</type>
+        <update_guid>51bb317969e6ba500b740161118c7a15</update_guid>
+        <update_guid_history>51bb317969e6ba500b740161118c7a15:467369142,cd59c779855af6d4f293f894c855d3c4:-1617988471</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="default_stop_word_dictionary.">29bb31792fe6ba50ecb8b04bcfa4e33b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:07:59</sys_created_on>
+        <sys_db_object display_value="" name="ais_search_profile_ais_dictionary_m2m">ais_search_profile_ais_dictionary_m2m</sys_db_object>
+        <sys_id>0088188c62204d068008151811b41064</sys_id>
+        <sys_metadata>c73a93b22f207a50b14f861cbfa4e3fd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>default_stop_word_dictionary.</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_c73a93b22f207a50b14f861cbfa4e3fd</sys_update_name>
+        <sys_update_version display_value="ais_search_profile_ais_dictionary_m2m_c73a93b22f207a50b14f861cbfa4e3fd">91bb31792fe6ba50ecb8b04bcfa4e316</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:07:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

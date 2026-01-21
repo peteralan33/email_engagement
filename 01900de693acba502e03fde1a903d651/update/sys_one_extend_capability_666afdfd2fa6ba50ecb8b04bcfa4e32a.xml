@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability">
+    <sys_one_extend_capability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>The Determine Case Classification from Email Interaction (DCCEI) skill automatically analyzes a specific type of interaction record—one where the source is an email—to accurately identify and determine the precise support case category and sub-category. This classification uses the email's content (subject line, body text, and context of any attachments within the record) to initiate the correct workflow and ensure accurate routing.</description>
+        <external>true</external>
+        <metadata>{"isGuidedStep":false}</metadata>
+        <name>ZZZ Case Classification from Email Int</name>
+        <short_description>Determine Case Classification from Email Interaction (DCCEI) for FSO</short_description>
+        <sys_class_name>sys_one_extend_capability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:02:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>666afdfd2fa6ba50ecb8b04bcfa4e32a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ZZZ Case Classification from Email Int</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_one_extend_capability_666afdfd2fa6ba50ecb8b04bcfa4e32a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 00:49:51</sys_updated_on>
+        <type>skill</type>
+    </sys_one_extend_capability>
+    <sys_translated_text action="delete_multiple" query="documentkey=666afdfd2fa6ba50ecb8b04bcfa4e32a"/>
+</record_update>

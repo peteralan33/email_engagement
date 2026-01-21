@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
+    <ais_search_source action="DELETE">
+        <active>true</active>
+        <condition table="sn_case_type_selection">service_type=4<item display_value="Medical Imaging" endquery="false" field="service_type" goto="false" newquery="false" operator="=" or="false" value="4"/>
+        </condition>
+        <datasource display_value="">sn_case_type_selection</datasource>
+        <has_dynamic_filters>false</has_dynamic_filters>
+        <name>NASK Created HCLS Medical Imagining Email Review getMedicalImaginingServiceDefinitions Service Definition</name>
+        <sys_class_name>ais_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 01:15:55</sys_created_on>
+        <sys_id>53ef8bf5936272509634f3990103d6ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NASK Created HCLS Medical Imagining Email Review getMedicalImaginingServiceDefinitions Service Definition</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_source_53ef8bf5936272509634f3990103d6ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 01:15:55</sys_updated_on>
+    </ais_search_source>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>ais_search_source_53ef8bf5936272509634f3990103d6ca</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source"><ais_search_source action="INSERT_OR_UPDATE"><active>true</active><condition table="sn_case_type_selection">service_type=4<item display_value="Medical Imaging" endquery="false" field="service_type" goto="false" newquery="false" operator="=" or="false" value="4"/></condition><datasource display_value="">sn_case_type_selection</datasource><has_dynamic_filters>false</has_dynamic_filters><name>NASK Created HCLS Medical Imagining Email Review getMedicalImaginingServiceDefinitions Service Definition</name><sys_class_name>ais_search_source</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-21 01:15:55</sys_created_on><sys_id>53ef8bf5936272509634f3990103d6ca</sys_id><sys_mod_count>0</sys_mod_count><sys_name>NASK Created HCLS Medical Imagining Email Review getMedicalImaginingServiceDefinitions Service Definition</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_search_source_53ef8bf5936272509634f3990103d6ca</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-21 01:15:55</sys_updated_on></ais_search_source></record_update>]]></payload>
+        <payload_hash>712826121</payload_hash>
+        <record_name>NASK Created HCLS Medical Imagining Email Review getMedicalImaginingServiceDefinitions Service Defin</record_name>
+        <reverted_from/>
+        <source>09927d20936af6509634f3990103d697</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 01:15:55</sys_created_on>
+        <sys_id>d7ef8bf5936272509634f3990103d6cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bde1f5bb30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 01:15:55</sys_updated_on>
+        <type>AI Search Search Source</type>
+        <update_guid>57ef8bf51062725075b2af16414a03cc</update_guid>
+        <update_guid_history>57ef8bf51062725075b2af16414a03cc:712826121</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="NASK Created HCLS Medical Imagining Email Review getMedicalImaginingServiceDefin">edebea8e9326b6509634f3990103d6e7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 17:17:00</sys_created_on>
+        <sys_db_object display_value="" name="ais_search_source">ais_search_source</sys_db_object>
+        <sys_id>3d2ce97c18734fa9a16d9eb41a81fb01</sys_id>
+        <sys_metadata>53ef8bf5936272509634f3990103d6ca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NASK Created HCLS Medical Imagining Email Review getMedicalImaginingServiceDefinitions Service Definition</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_search_source_53ef8bf5936272509634f3990103d6ca</sys_update_name>
+        <sys_update_version display_value="ais_search_source_53ef8bf5936272509634f3990103d6ca">d7ef8bf5936272509634f3990103d6cd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 17:17:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
