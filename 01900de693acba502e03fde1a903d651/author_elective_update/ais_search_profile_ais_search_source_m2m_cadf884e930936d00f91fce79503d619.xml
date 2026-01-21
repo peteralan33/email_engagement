@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="DELETE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Created">31df884e930936d00f91fce79503d604</profile>
+        <search_source display_value="NASK Created Determine Service Definition from Email searchForCapitalMarketKnowledge Knowledge">fddf484e930936d00f91fce79503d6ff</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 16:21:00</sys_created_on>
+        <sys_id>cadf884e930936d00f91fce79503d619</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Created.NASK Created Determine Service Definition from Email searchForCapitalMarketKnowledge Knowledge</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_cadf884e930936d00f91fce79503d619</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 16:21:00</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>ais_search_profile_ais_search_source_m2m_cadf884e930936d00f91fce79503d619</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Created">31df884e930936d00f91fce79503d604</profile>
+        <search_source display_value="NASK Created Determine Service Definition from Email searchForCapitalMarketKnowledge Knowledge">fddf484e930936d00f91fce79503d6ff</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-07 16:21:00</sys_created_on>
+        <sys_id>cadf884e930936d00f91fce79503d619</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Created.NASK Created Determine Service Definition from Email searchForCapitalMarketKnowledge Knowledge</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_cadf884e930936d00f91fce79503d619</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-07 16:21:00</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>]]></payload>
+        <payload_hash>1253233320</payload_hash>
+        <record_name>Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Created.NASK Created De</record_name>
+        <reverted_from/>
+        <source>8e49cf39935af6d49634f3990103d69d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-08 14:31:24</sys_created_on>
+        <sys_id>95590b79935af6d49634f3990103d618</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b9e04f93b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-08 14:31:24</sys_updated_on>
+        <type>AI Search Search Profile Search Source M</type>
+        <update_guid>55590b79865af6d4d3b43f209a97f618</update_guid>
+        <update_guid_history>55590b79865af6d4d3b43f209a97f618:1253233320</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Cre">abcb3d792fe6ba50ecb8b04bcfa4e315</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:08:24</sys_created_on>
+        <sys_db_object display_value="" name="ais_search_profile_ais_search_source_m2m">ais_search_profile_ais_search_source_m2m</sys_db_object>
+        <sys_id>1de060a8b6c742808de0657218f44000</sys_id>
+        <sys_metadata>cadf884e930936d00f91fce79503d619</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Created.NASK Created Determine Service Definition from Email searchForCapitalMarketKnowledge Knowledge</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_cadf884e930936d00f91fce79503d619</sys_update_name>
+        <sys_update_version display_value="ais_search_profile_ais_search_source_m2m_cadf884e930936d00f91fce79503d619">95590b79935af6d49634f3990103d618</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:08:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary">
+    <ais_dictionary action="DELETE">
+        <active>true</active>
+        <auto_refresh>24</auto_refresh>
+        <blocked_field/>
+        <case_sensitive>false</case_sensitive>
+        <data_source/>
+        <derived>true</derived>
+        <field/>
+        <label>Determine Service Definition from Email getServiceDefinitions NASK Created Default Spell Check Dictionary</label>
+        <last_derived>2026-01-20 01:22:58</last_derived>
+        <locale>en</locale>
+        <name>x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_nask_created_default_spell_check_dictionary</name>
+        <publish_id>a4bee99a-cd50-4397-be8d-6b259d9a46cd</publish_id>
+        <punctuation_sensitive>false</punctuation_sensitive>
+        <state>DRAFT</state>
+        <sys_class_name>ais_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 18:29:20</sys_created_on>
+        <sys_id>9b3ad3b22f207a50b14f861cbfa4e35a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_nask_created_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_dictionary_9b3ad3b22f207a50b14f861cbfa4e35a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:07:56</sys_updated_on>
+        <type>SPELLCHECK</type>
+    </ais_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>ais_dictionary_9b3ad3b22f207a50b14f861cbfa4e35a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary"><ais_dictionary action="INSERT_OR_UPDATE"><active>true</active><auto_refresh>24</auto_refresh><blocked_field/><case_sensitive>false</case_sensitive><data_source/><derived>true</derived><field/><label>Determine Service Definition from Email getServiceDefinitions NASK Created Default Spell Check Dictionary</label><last_derived>2026-01-20 01:22:58</last_derived><locale>en</locale><name>x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_nask_created_default_spell_check_dictionary</name><publish_id>a4bee99a-cd50-4397-be8d-6b259d9a46cd</publish_id><punctuation_sensitive>false</punctuation_sensitive><state>DRAFT</state><sys_class_name>ais_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-16 18:29:20</sys_created_on><sys_id>9b3ad3b22f207a50b14f861cbfa4e35a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_nask_created_default_spell_check_dictionary</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_dictionary_9b3ad3b22f207a50b14f861cbfa4e35a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-20 19:07:56</sys_updated_on><type>SPELLCHECK</type></ais_dictionary></record_update>]]></payload>
+        <payload_hash>679225866</payload_hash>
+        <record_name>x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_nask_created_default</record_name>
+        <reverted_from/>
+        <source>09927d20936af6509634f3990103d697</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:07:56</sys_created_on>
+        <sys_id>c9bbfd392fe6ba50ecb8b04bcfa4e34d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bdcce76ba0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:07:56</sys_updated_on>
+        <type>AI Search Dictionary</type>
+        <update_guid>49bbfd3923e6ba509fe9149ed220cb4c</update_guid>
+        <update_guid_history>49bbfd3923e6ba509fe9149ed220cb4c:679225866,64598779e55af6d4b4fee490aeaaeaa8:1225981933</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_">e5bb31792fe6ba50ecb8b04bcfa4e326</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:07:58</sys_created_on>
+        <sys_db_object display_value="" name="ais_dictionary">ais_dictionary</sys_db_object>
+        <sys_id>cb0b5987e39548ca981a8f278462ce04</sys_id>
+        <sys_metadata>9b3ad3b22f207a50b14f861cbfa4e35a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_nask_created_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_dictionary_9b3ad3b22f207a50b14f861cbfa4e35a</sys_update_name>
+        <sys_update_version display_value="ais_dictionary_9b3ad3b22f207a50b14f861cbfa4e35a">c9bbfd392fe6ba50ecb8b04bcfa4e34d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:07:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

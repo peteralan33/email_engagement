@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 00:51:38</sys_created_on>
+        <sys_id>af5a4f3593ae32509634f3990103d68b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>hcls_medical_imagining_email_review.1f5acb3593ae32509634f3990103d6e3.now_assist_panel_user</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_security_acl display_value="hcls_medical_imagining_email_review.1f5acb3593ae32509634f3990103d6e3">575a0f3593ae32509634f3990103d622</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_af5a4f3593ae32509634f3990103d68b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 00:51:38</sys_updated_on>
+        <sys_user_role display_value="now_assist_panel_user" name="now_assist_panel_user">a64d0d7dc36431100f24c87af040ddf9</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

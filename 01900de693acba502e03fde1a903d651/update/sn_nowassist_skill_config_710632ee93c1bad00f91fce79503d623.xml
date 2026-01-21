@@ -7,8 +7,8 @@
         <in_product_roles/>
         <internal_name>case_classification_from_email_interacti.710632ee93c1bad00f91fce79503d623</internal_name>
         <is_template>false</is_template>
-        <name>Case Classification from Email Interaction</name>
-        <nap_skill_applicability display_value="Case Classification from Email Interacti">91073e629305bad00f91fce79503d618</nap_skill_applicability>
+        <name>FSO Case Classification from Email Int</name>
+        <nap_skill_applicability display_value="FSO Case Classification from Email Int">91073e629305bad00f91fce79503d618</nap_skill_applicability>
         <order>100</order>
         <parent/>
         <skill_family display_value="Triage and Classification">d7701666938d7ad00f91fce79503d61d</skill_family>
@@ -21,15 +21,15 @@
         <sys_created_on>2025-11-09 17:44:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>710632ee93c1bad00f91fce79503d623</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Case Classification from Email Interaction</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>FSO Case Classification from Email Int</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sn_nowassist_skill_config_710632ee93c1bad00f91fce79503d623</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 17:50:04</sys_updated_on>
+        <sys_updated_on>2026-01-20 19:00:15</sys_updated_on>
     </sn_nowassist_skill_config>
     <sys_translated_text action="delete_multiple" query="documentkey=710632ee93c1bad00f91fce79503d623"/>
 </record_update>

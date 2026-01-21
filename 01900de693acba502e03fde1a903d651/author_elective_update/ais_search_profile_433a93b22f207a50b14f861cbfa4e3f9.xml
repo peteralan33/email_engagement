@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile">
+    <ais_search_profile action="DELETE">
+        <active>true</active>
+        <creator_source>NASK</creator_source>
+        <description/>
+        <exclude_from_evaluation>false</exclude_from_evaluation>
+        <genius_result_assembly/>
+        <label>Determine Service Definition from Email getServiceDefinitions NASK Created</label>
+        <name>x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_nask_created</name>
+        <publish_id>44dd9d82-d6be-4da7-ab6b-92e349ef961c</publish_id>
+        <qna_model_id>bert-qa-model-1.1.6</qna_model_id>
+        <state>DRAFT</state>
+        <sys_class_name>ais_search_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-16 18:29:19</sys_created_on>
+        <sys_id>433a93b22f207a50b14f861cbfa4e3f9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Determine Service Definition from Email getServiceDefinitions NASK Created</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_profile_433a93b22f207a50b14f861cbfa4e3f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:07:57</sys_updated_on>
+    </ais_search_profile>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>ais_search_profile_433a93b22f207a50b14f861cbfa4e3f9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile"><ais_search_profile action="INSERT_OR_UPDATE"><active>true</active><creator_source>NASK</creator_source><description/><exclude_from_evaluation>false</exclude_from_evaluation><genius_result_assembly/><label>Determine Service Definition from Email getServiceDefinitions NASK Created</label><name>x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_nask_created</name><publish_id>44dd9d82-d6be-4da7-ab6b-92e349ef961c</publish_id><qna_model_id>bert-qa-model-1.1.6</qna_model_id><state>DRAFT</state><sys_class_name>ais_search_profile</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-16 18:29:19</sys_created_on><sys_id>433a93b22f207a50b14f861cbfa4e3f9</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Determine Service Definition from Email getServiceDefinitions NASK Created</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_search_profile_433a93b22f207a50b14f861cbfa4e3f9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-20 19:07:57</sys_updated_on></ais_search_profile></record_update>]]></payload>
+        <payload_hash>-922984865</payload_hash>
+        <record_name>Determine Service Definition from Email getServiceDefinitions NASK Created</record_name>
+        <reverted_from/>
+        <source>09927d20936af6509634f3990103d697</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:07:57</sys_created_on>
+        <sys_id>49bbfd392fe6ba50ecb8b04bcfa4e354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bdcce773d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:07:57</sys_updated_on>
+        <type>AI Search Search Profile</type>
+        <update_guid>c5bbfd392be6ba507cb9625e3b4f4653</update_guid>
+        <update_guid_history>c5bbfd392be6ba507cb9625e3b4f4653:-922984865,f859c779a15af6d4189a425c02b24c08:741535456</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Determine Service Definition from Email getServiceDefinitions NASK Created">11bbfd392fe6ba50ecb8b04bcfa4e37c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-01-20 19:07:58</sys_created_on>
+        <sys_db_object display_value="" name="ais_search_profile">ais_search_profile</sys_db_object>
+        <sys_id>6b8af2989c3a4cb883a6ce976dd0aea4</sys_id>
+        <sys_metadata>433a93b22f207a50b14f861cbfa4e3f9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Determine Service Definition from Email getServiceDefinitions NASK Created</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_search_profile_433a93b22f207a50b14f861cbfa4e3f9</sys_update_name>
+        <sys_update_version display_value="ais_search_profile_433a93b22f207a50b14f861cbfa4e3f9">49bbfd392fe6ba50ecb8b04bcfa4e354</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:07:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
