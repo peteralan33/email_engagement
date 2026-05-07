@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_search_nask_configuration_m2m">
+    <ais_semantic_search_nask_configuration_m2m action="DELETE">
+        <semantic_search_configuration display_value="LookUpServiceDefinitions">39059d1d2f140fd0b14f861cbfa4e307</semantic_search_configuration>
+        <skill>dc06faae93c1bad00f91fce79503d6be</skill>
+        <sys_class_name>ais_semantic_search_nask_configuration_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 02:51:53</sys_created_on>
+        <sys_id>fd059d1d2f140fd0b14f861cbfa4e31d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_semantic_search_nask_configuration_m2m_fd059d1d2f140fd0b14f861cbfa4e31d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 02:51:53</sys_updated_on>
+        <tool display_value="LookUpServiceDefinitions">71055d1d2f140fd0b14f861cbfa4e33b</tool>
+    </ais_semantic_search_nask_configuration_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>ais_semantic_search_nask_configuration_m2m_fd059d1d2f140fd0b14f861cbfa4e31d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_search_nask_configuration_m2m"><ais_semantic_search_nask_configuration_m2m action="INSERT_OR_UPDATE"><semantic_search_configuration display_value="LookUpServiceDefinitions">39059d1d2f140fd0b14f861cbfa4e307</semantic_search_configuration><skill>dc06faae93c1bad00f91fce79503d6be</skill><sys_class_name>ais_semantic_search_nask_configuration_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-16 02:51:53</sys_created_on><sys_id>fd059d1d2f140fd0b14f861cbfa4e31d</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_semantic_search_nask_configuration_m2m_fd059d1d2f140fd0b14f861cbfa4e31d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-16 02:51:53</sys_updated_on><tool display_value="LookUpServiceDefinitions">71055d1d2f140fd0b14f861cbfa4e33b</tool></ais_semantic_search_nask_configuration_m2m></record_update>]]></payload>
+        <payload_hash>2038850854</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-16 02:51:53</sys_created_on>
+        <sys_id>71059d1d2f140fd0b14f861cbfa4e332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d9433c4370000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-16 02:51:53</sys_updated_on>
+        <type>Semantic Search Configuration NASK Mappi</type>
+        <update_guid>bd059d1d88140fd090a8acdbfe798630</update_guid>
+        <update_guid_history>bd059d1d88140fd090a8acdbfe798630:2038850854</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">3d850bb69354039051fcffe03603d6ae</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-21 02:54:17</sys_created_on>
+        <sys_db_object display_value="" name="ais_semantic_search_nask_configuration_m2m">ais_semantic_search_nask_configuration_m2m</sys_db_object>
+        <sys_id>68addbd818da4dda92d79d2135419fc9</sys_id>
+        <sys_metadata>fd059d1d2f140fd0b14f861cbfa4e31d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_semantic_search_nask_configuration_m2m_fd059d1d2f140fd0b14f861cbfa4e31d</sys_update_name>
+        <sys_update_version display_value="ais_semantic_search_nask_configuration_m2m_fd059d1d2f140fd0b14f861cbfa4e31d">71059d1d2f140fd0b14f861cbfa4e332</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-21 02:54:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

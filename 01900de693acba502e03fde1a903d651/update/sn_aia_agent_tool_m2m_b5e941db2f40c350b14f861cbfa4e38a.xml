@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Determine Email Response">2da29d4b2f004f10b14f861cbfa4e3f5</agent>
+        <description>Purpose
+The Finalize and Send Agent Communication tool is the execution layer of the workflow. It leverages the AI’s discretionary reasoning to refine the pre-generated draft and technical notes, ensuring the final output is contextually perfect for the specific Work Management Record before it is dispatched to the assigned agent.
+
+Inputs
+WM Record Sys ID: (Data Type: string) The anchor for the ServiceNow transaction.
+
+Work Notes: (Data Type: string) The internal-facing technical summary of the AI’s findings and reasoning.
+
+Subject: (Data Type: string) The technical subject line tailored to the case classification.
+
+Email Content: (Data Type: string) The professional, internal facing response for suggested next steps
+
+Action &amp; Logic
+Contextual Refinement (Discretionary): The agent does not simply pass through raw text. It applies discretion to ensure the Subject and Email Content are perfectly aligned with the most recent state of the Work Management Record. This includes adjusting for any "Source Record Flags" discovered in earlier steps.
+
+Tone &amp; Accuracy Audit: The logic performs a final check to ensure the language matches the standards for the record's category (e.g., Mortgages vs. Payments).
+
+Subflow Triggering: Once finalized, the tool pushes the data into the ServiceNow subflow to initiate the "Send Email" action and concurrently update the system activity logs.
+
+Key Outputs
+Dispatched Communication Package: A confirmation that the finalized subject and body have been sent to the agent's workspace.
+
+Integrated Audit Trail: Verification that the Work Notes have been successfully injected into the ServiceNow record, fulfilling the mission of providing a holistic view of the interaction.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>2da29d4b2f004f10b14f861cbfa4e3f5</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Send Email To Assigned Agent</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 20:55:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b5e941db2f40c350b14f861cbfa4e38a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Send Email To Assigned Agent</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_b5e941db2f40c350b14f861cbfa4e38a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:35:06</sys_updated_on>
+        <timeout/>
+        <tool display_value="Send Email To Assigned Agent">bde941db2f40c350b14f861cbfa4e338</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

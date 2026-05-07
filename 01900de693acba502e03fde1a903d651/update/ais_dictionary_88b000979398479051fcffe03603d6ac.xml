@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary">
+    <ais_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <auto_refresh>24</auto_refresh>
+        <blocked_field/>
+        <case_sensitive>false</case_sensitive>
+        <data_source>kb_knowledge</data_source>
+        <derived>true</derived>
+        <field/>
+        <label>Certificate Request (FSSC / CoA) Default Spell Check Dictionary</label>
+        <last_derived>2026-05-07 15:52:42</last_derived>
+        <locale>en</locale>
+        <name>x_snc_pab_ee_tkit_certificate_request_fssc_coa_default_spell_check_dictionary</name>
+        <publish_id>5712506b-e3e0-41f6-89da-ec81d6bd1862</publish_id>
+        <punctuation_sensitive>false</punctuation_sensitive>
+        <state>PUBLISHED</state>
+        <sys_class_name>ais_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 01:51:15</sys_created_on>
+        <sys_id>88b000979398479051fcffe03603d6ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_certificate_request_fssc_coa_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_dictionary_88b000979398479051fcffe03603d6ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 01:51:15</sys_updated_on>
+        <type>SPELLCHECK</type>
+    </ais_dictionary>
+</record_update>

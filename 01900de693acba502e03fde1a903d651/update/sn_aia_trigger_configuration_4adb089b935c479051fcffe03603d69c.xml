@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_rule/>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="sn_customerservice_case">state=10^service=2ea7874393d8079051fcffe03603d6ab<item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/>
+            <item display_table="sn_case_type_selection" display_value="ESG and Sustainability Questionnaire Response" endquery="false" field="service" goto="false" newquery="false" operator="=" or="false" value="2ea7874393d8079051fcffe03603d6ab"/>
+        </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name>global.x_snc_pab_ee_tkit.Trigger Email Response</internal_name>
+        <name>Trigger Email Response</name>
+        <notification_script display_value="Show AIA notification - Case">769fed0f3babd2100b4fee8c24e45a7a</notification_script>
+        <objective_template><![CDATA[Help me draft an email response for ${number}]]></objective_template>
+        <portal/>
+        <profile/>
+        <run_as>assigned_to</run_as>
+        <run_as_script/>
+        <run_as_user/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
+        <show_notifications>true</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 02:39:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4adb089b935c479051fcffe03603d69c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>sn_customerservice_case</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_4adb089b935c479051fcffe03603d69c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 04:20:23</sys_updated_on>
+        <target_table>sn_customerservice_case</target_table>
+        <trigger_flow display_value="Case - AI Agent: ESG Response Email - 8edb40db2fdc8b10b14f861cbfa4e3f7">cadb40db2fdc8b10b14f861cbfa4e3f9</trigger_flow>
+        <trigger_flow_definition_type>record_update</trigger_flow_definition_type>
+        <trigger_strategy>once</trigger_strategy>
+        <usecase/>
+        <usecase_discovery>false</usecase_discovery>
+    </sn_aia_trigger_configuration>
+</record_update>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=200935000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>create_work_notification_case</internal_name>
+        <label_cache>[{"name":"trigger.current.u_detailed_type","label":"Trigger - Record Created➛External Work Records Record➛Detailed type","reference":"","reference_display":"Detailed type","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_detailed_type","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["sub_category"]}},{"name":"trigger.current.u_main_category","label":"Trigger - Record Created➛External Work Records Record➛Main category","reference":"","reference_display":"Main category","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_main_category","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["category_ext"]}},{"name":"trigger.current.u_due_date","label":"Trigger - Record Created➛External Work Records Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_due_date","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["due_date"]}},{"name":"trigger.current.u_internal_source_system","label":"Trigger - Record Created➛External Work Records Record➛Internal source system","reference":"","reference_display":"Internal source system","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_internal_source_system","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_system"]}},{"name":"trigger.current.u_record_id","label":"Trigger - Record Created➛External Work Records Record➛Record id","reference":"","reference_display":"Record id","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_record_id","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_id"]}},{"name":"trigger.current.u_request_description","label":"Trigger - Record Created➛External Work Records Record➛Request description","reference":"","reference_display":"Request description","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_request_description","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["short_description"]}},{"name":"Created_1.current.u_detailed_type","label":"Trigger - Record Created➛External Work Items Record➛Detailed type","reference":"","reference_display":"Detailed type","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_detailed_type","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["sub_category"]}},{"name":"Created_1.current.u_main_category","label":"Trigger - Record Created➛External Work Items Record➛Main category","reference":"","reference_display":"Main category","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_main_category","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["category_ext"]}},{"name":"Created_1.current.u_segment","label":"Trigger - Record Created➛External Work Items Record➛Segment","reference":"","reference_display":"Segment","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_segment","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["segement"]}},{"name":"Created_1.current.u_request_description","label":"Trigger - Record Created➛External Work Items Record➛Request description","reference":"","reference_display":"Request description","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_request_description","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["description","short_description"]}},{"name":"Created_1.current.u_record_id","label":"Trigger - Record Created➛External Work Items Record➛Record id","reference":"","reference_display":"Record id","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_record_id","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_id"]}},{"name":"Created_1.current.u_internal_source_system","label":"Trigger - Record Created➛External Work Items Record➛Internal source system","reference":"","reference_display":"Internal source system","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_internal_source_system","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_system"]}},{"name":"Created_1.current.u_due_date","label":"Trigger - Record Created➛External Work Items Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_due_date","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["due_date"]}},{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35":[null]},"attributes":{}},{"name":"Created_1.current.u_case_owner","label":"Trigger - Record Created➛External Work Items Record➛Case owner","reference":"","reference_display":"Case owner","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_case_owner","usedInstances":{"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35":[null,"conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛External Work Items Record","reference":"x_snc_pab_ee_tkit_df_ext_work_items","reference_display":"External Work Items","type":"reference","base_type":"reference","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["parent"]},"attributes":{}},{"name":"92b5baa6-1830-4d2f-95df-47401eee429e.record","label":"3 - Create Record➛Work Management Case Record","reference":"x_snc_pab_ee_tkit_work_management_case","reference_display":"Work Management Case","type":"reference","base_type":"reference","usedInstances":{"fbfb3c5f-c69e-48c8-baa8-ad4d2c687dcc":["record"],"11f8b63a-04ea-45a8-99df-6da1ac161513":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35.Record","label":"4 - Look Up Record➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"fbfb3c5f-c69e-48c8-baa8-ad4d2c687dcc":["assigned_to"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"trigger.current.u_case_owner","label":"Trigger - Record Created➛External Work Records Record➛Case owner","reference":"","reference_display":"Case owner","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_case_owner","usedInstances":{"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35":[null,"conditions"]}},{"name":"trigger.current.u_segment","label":"Trigger - Record Created➛External Work Records Record➛Segment","reference":"","reference_display":"Segment","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_segment","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["segement"]}},{"name":"64dbe78c-2037-4096-86f5-b241b9b071df.Records","label":"1 - Look Up Records➛External Work Records Records","reference":"x_snc_pab_ee_tkit_df_external_work_records","reference_display":"External Work Records","type":"records","base_type":"records","usedInstances":{"b7584a39-125a-413b-b2f3-a6a752c0484e":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_request_description","label":"2➛External Work Records Record➛Request description","reference":"","reference_display":"Request description","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_request_description","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["short_description"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_segment","label":"2➛External Work Records Record➛Segment","reference":"","reference_display":"Segment","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_segment","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["segement"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_detailed_type","label":"2➛External Work Records Record➛Detailed type","reference":"","reference_display":"Detailed type","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_detailed_type","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["sub_category"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_due_date","label":"2➛External Work Records Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_due_date","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["due_date"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_record_id","label":"2➛External Work Records Record➛Record id","reference":"","reference_display":"Record id","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_record_id","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_id"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_internal_source_system","label":"2➛External Work Records Record➛Internal source system","reference":"","reference_display":"Internal source system","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_internal_source_system","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_system"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_main_category","label":"2➛External Work Records Record➛Main category","reference":"","reference_display":"Main category","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_main_category","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["category_ext"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_case_owner","label":"2➛External Work Records Record➛Case owner","reference":"","reference_display":"Case owner","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_case_owner","usedInstances":{"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35":[null,"conditions"]}}]</label_cache>
+        <master_snapshot>ee1ae4ba2f44c710b14f861cbfa4e305</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Create Work Notification Case</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>dd53e1d72f88c350b14f861cbfa4e3c2</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 05:17:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f289a4f62f44c710b14f861cbfa4e334</sys_id>
+        <sys_mod_count>116</sys_mod_count>
+        <sys_name>Create Work Notification Case</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_hub_flow_f289a4f62f44c710b14f861cbfa4e334</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-11 14:02:38</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>1f9e35332fc88f50b14f861cbfa4e3bd</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <published_version/>
+        <run_period>1970-01-01 12:00:01</run_period>
+        <run_start/>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:46:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dd53e1d72f88c350b14f861cbfa4e3c2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 13:06:03</sys_updated_on>
+        <time/>
+        <timer_type>1</timer_type>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:dd53e1d72f88c350b14f861cbfa4e3c2^sys_idNOT IN9953e1d72f88c350b14f861cbfa4e3c3"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:dd53e1d72f88c350b14f861cbfa4e3c2</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <repeat_every/>
+        <run_as display_value="Pete Barnes">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month/>
+        <run_period>1970-01-01 12:00:01</run_period>
+        <run_start>2026-04-11 01:06:04</run_start>
+        <run_time/>
+        <run_type>periodically</run_type>
+        <run_weekinmonth/>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('dd53e1d72f88c350b14f861cbfa4e3c2');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:46:32</sys_created_on>
+        <sys_id>9953e1d72f88c350b14f861cbfa4e3c3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 13:06:03</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">dd53e1d72f88c350b14f861cbfa4e3c2</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f289a4f62f44c710b14f861cbfa4e334^sys_idNOT INfa89a4f62f44c710b14f861cbfa4e338"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f289a4f62f44c710b14f861cbfa4e334</id>
+        <name>Create Work Notification Case</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 05:17:05</sys_created_on>
+        <sys_id>fa89a4f62f44c710b14f861cbfa4e338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-08 05:17:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=fa89a4f62f44c710b14f861cbfa4e338"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f289a4f62f44c710b14f861cbfa4e334^sys_idNOT INa4c16ddf2f48c350b14f861cbfa4e332"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">f289a4f62f44c710b14f861cbfa4e334</flow>
+        <generation_source/>
+        <name>Repeat</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:39:40</sys_created_on>
+        <sys_id>a4c16ddf2f48c350b14f861cbfa4e332</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 13:05:59</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/3VSy07DMBD8FeRziZy2vHJDQpU4AFJBXBCKNvamtbR+4DgtAfHvbB6tEIgoF894Z2dGfvkUBBWSKMQaA0ISM2FcwuiAnrqAjG/IaCx1GyEZ75i34DQkHztRpNjiTNTR2ye0gSDxQA3UMOijxiiKXMqZ2AG1+Ng1t5r1WMGB7ZXjYePAM5BfXchTmfN/ks8LKQuZM6u2hnREJ4qX15kIEHk69dqfvyjTy+fqrF7qq6VazPmTcn65zKvzRZXP9QKwWrDgn8S//aR/kv/MhO8JnUZ9DPynloigHxx1xxtbbnYswMJ7Yz5wkopYI4dQOJLHY6lNw6V2I6y23ih8CIOXAUlQ0TSjPLXW3Y85+KyxhpbS81QsI23DehyQPfcuJkv149bv14eFK+OGgBNJXgEdT5BSNFWbsOmbR0LLQqWFEIzblCH6nRmG2YvNhuqymvyelzZm4zJQvfGMK4JsxfjNAD9DNH2KO5bh4a8hffnW9nvHHJPjcgzNF6ZSVgZpek6Niiaka16wO7y/r9dv62elftoCAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f289a4f62f44c710b14f861cbfa4e334^sys_idNOT IN8df1e9132f88c350b14f861cbfa4e36a,91f76b722f00cb10b14f861cbfa4e3fb,c24692f22f844b10b14f861cbfa4e315,c2d9283a2f44c710b14f861cbfa4e362"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">f289a4f62f44c710b14f861cbfa4e334</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:40:30</sys_created_on>
+        <sys_id>8df1e9132f88c350b14f861cbfa4e36a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-11 01:06:08</sys_updated_on>
+        <ui_id>64dbe78c-2037-4096-86f5-b241b9b071df</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9leBnE+wmTbt9W3qBQtssTehSShGyLCeiiuyV5Fwa8u87smTHJE43gRRa9lFzkc7MnCPLL0uPxd6Fd550gwCHp+dnQdDpBEGv1yE4jKJOj0RB1I083xN4QiFS44hTWE4xz816jpQgKMMRohTpN6ZRnCA611QKzNEslW9IUpLKWEFSzFTG8eLJ5V67sNZvCGs9VmFkzHgsqfAuXl59L8MSjoZI72K54doXO8cR5RA6dOA3atGLrFqiwmdtd/W01oN1AEYDJfA9U6WIKWBIMFfU9yZYxFinclFZJMVxX/C1YcyEhh09EzxX7B3OPQ9MXEKhKkKtr1oi1zFrTq6wxgMtc6Jz6ULJOGWEKtuPmCY45/qybrMB/UyzVNgUW7bNTnk+EQ+2HV61QTkgsOQKQNDMFGqQuzKSwTidPZYob5goeuKcPCWYVyustWRRrg2epUc5ncBGaIKzjIkRymQ6ZUUyYJm0RxwW7YSnMzhUsZFoY2KAt6GvuH0D9qvC/IQlM1XcwzaQDIAYB4YgO0KV5rJo5RQRnqvCIbFQdi9v5XtqoS45VmpdObQc/ckNbtsHVzGyTTMpRLJM/4QtptQVt/L3ks9psKYcSUXMDApV01DuJIJYfDt46A+v738Nn7flsivsmHIpsJZyuayDbSrACWfLdte0gRNOeDThQB3fSTpw+NdTzuFasC34hyDI2YckO13zSaVSI9vLmiK2yX8wz/eAUPK8b5jZiha7UDmaJ4zyuOn7cGMcG9+Hk//z+/AlSQ6AYmSnxwRnovjYA9DPYn/w8RX7Y4NnBb3W3C9sWJFtDeCWTlvvBythDzilEgZwdmto8TRALO/7gjKbd31pdALoHE0AnZPjCGBZlVk1sqHn5fvOTLOMfzfxeDMeKFhLCFdNAjvozPDQM09W2wLuHKTgOtms52oH5478ENyhSP8zr4AxpLrzkNUvmrF4RPX69DIqTvUM87cmv2McKgdVlPcJj8ruh7LthWuJglLgaahgePVXZQjPo+07JPSt+bArZA8sZTvu8Rx+5UowjQjdNQJKp6NiNvV75LayOpJ3j/hg/LJf0nJYjRosZ/Yt/sWOJ4TXv1Tr186eEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8df1e9132f88c350b14f861cbfa4e36a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">f289a4f62f44c710b14f861cbfa4e334</flow>
+        <generation_source>flowRecommendation</generation_source>
+        <order>5</order>
+        <parent_ui_id>b7584a39-125a-413b-b2f3-a6a752c0484e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 19:09:01</sys_created_on>
+        <sys_id>91f76b722f00cb10b14f861cbfa4e3fb</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-11 01:06:08</sys_updated_on>
+        <ui_id>fbfb3c5f-c69e-48c8-baa8-ad4d2c687dcc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy07jMBT9lcrrJsqrpe1uRIU0Eg8JRswCUHRj3xQLx8kkDtCJ+u9zkzihAoYBiQ2a7u7T55z41FcNk4KtWITC85f+nId+GAaeFywiP5mHiR+IEBB9NmUaMqTOEnleCorvQdVtommWQTJLAOaOvwg9JxJB6ixnInWig8jzETEKluj2c7sdTQpZFQq2l3YBZfitVKJEzVZXN1NWQElnGSzZqnlWei9YBQkqaj0f0D5Hb7ZFG4uc1xlqE8sheWwn17Yy+b6mCg21cHxvyvDRoBZIQFJQFU5ZBlqAycstW5mypkSJIM602o4dt1KbnmgGj5X8TSdHXtuXIjHjVoQxjK1AfTpdg4EL2sxNXY565ZJj1WsiMIVamcP9XN9wVhiZ637EQKKG6VzVmT7tFWHjgr3vUVcEAouWZ4u8p5Ve3OYP5wPII6k7SSxFlXNQYwTGlDKpTQunYaiw0ziDopB6Exdlfi+7YYKSuRtFgZuq/IHOrORGu8Bb3C6pCu4R5ddd+hJK2ZI4oTU0vJuyalsdKqiqJyqkYfyrbpH0xCyFuFOhkyDubkI7zEtZmG901D1a4LuptUMye+uG8eXThdrb+WSJx7jSPC4giRFjcydN/JCXd8Rfw6aXgkOFL53wk7omJ2PX5LDv+pg73oF9cMeP7k68zsUa5EXueH92ctoXrD1mn2aPxVeyh6Xx5f3xL1d4wZv/u3s3qTNCtecIAkEIUcQmv649LxRNM4eIJ4uDwPHSNHEiLwUHDsLESXgazhcBVcOZe/7XV+MTNn7MV+9gP/jqSKIS1StyDKbCjKgYjHt5nhnLFieXtji+PZ/mLn/udb8v5LH/5gm6+QMldesSkwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=91f76b722f00cb10b14f861cbfa4e3fb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">f289a4f62f44c710b14f861cbfa4e334</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>b7584a39-125a-413b-b2f3-a6a752c0484e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 13:12:10</sys_created_on>
+        <sys_id>c24692f22f844b10b14f861cbfa4e315</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-11 01:06:08</sys_updated_on>
+        <ui_id>6a4cb872-0ffb-40fa-a73b-bcf3682a4c35</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW+jOBD+K4jnJAeBhKRvp1aRVtrbStvuvuytLINNY51js8Y0m0b57zfGkKCEJkFHpVb3yMzY/mbm+wbDj63LiHvjkrk3T+fzySzyvCDwvOk0SLAfx8E0ib0Yh+7AFXhFIVLjmFN4fMa8MM/5JkdFThWYCMszjjffK883a02WjBNFhXvz4+fAzbCCfTR4brZHrmuBcBxTDqGPFZIjYHqT7R9R6bO2z81lzhfrkIoYKN7Apb81FYQChhTznA7cFRYEa6k2e4uimNwLfjAsmdCwo2uCf+fsBc6deSYupZBVQq1v/4iqAllzeoc1ftCqSHShqtBkKVlCc1sPQlNccH3btNmA+0wzKewSm7ZdLXmxEl9sOdz9BnU/wAKNQoRmJlGDvEojfVjK9dca5YKJsiaVk8sE8/0T1lqxuNAGz9alnK5gI7TCWcbEE8qUfGblYsCyGj1xeBilXK7h0Jw9iRFODPAR1BWPFmC/K83fsWImi79gm5IyKePAEGRbmMtClaV8Rgkv8tKhsMjtXu5uYCh4y3GeHzKHkqNfhcFt61BljGzRzJJEsUz/CVs80yq53aDWwuQsBecHyiVSEGZQ5A1BGN/fBSwl220cTWYhDuZDfzzBw9AP4mE8ToMhnuJoMk68cBbSEdN0NSpQgqE5ci2o2u1OxdTTrh3FeLkStRhvm6VoK08lyxPb57YNKln6vcky9LyPJEw4/P3psrvSbAkuyM0nZ0lGDnzKpdLI1rKht1OtdOb5FRBqnt8bZjrx5jVUFc1TRjlpe/ssjOPo7TP+f7593iXJARBBtntMcCbKqwQAfSv2T85SL/aPeFbSq3H5MjacJ6cawI6WzktnJVwBp1bCA5ztPFo8LRDreV9S5njW18ZKAEFvAgjG/Qhgu09zX8iWmte3R9PNOv7FxOPjeKBgY4G/axNYpzP9rmeOd6cCDjopuEk267l7hXM9XzNfUeTgLUfAEpZW5yGrX7Rm5Inqw+l1FJF6jfk/bf6KcahuVJneG1xZ/bNfTXHjyspStILOsQxu1oomQI4cYUVRKgtBUHWnPhDJdDJlKtdV8Omg+UpBP8KRIExHL6lTRjv76I4v4st51KX8lDp1ItVpuQOJOGUizj6Rbml3GVphj5fTvofWAjNedgM+l7JGO6lSUr0yuC408gwjrpxqV4LyewX138demwRax98FrB/i27v/0ZRQHIdjPI0C3/c83yORN4sifzaNU/hcDdODRhHKRQLTFHZOgSqwPaqpUffZO50/dqR2HTRXoKopeCeF+fAeR9oxsKC/Tg3rMvBqoMRScorF0UR5hPfEH4sKf8XXybubKh/iT1TBHo8rbU2ttX6re0PBvgn2q6CfDMVm1BvPfJIMZ5EfDcOUTIdzgidDPI8nUUBoEqZ9XgV+/gtQ2IM8yxUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c24692f22f844b10b14f861cbfa4e315"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">f289a4f62f44c710b14f861cbfa4e334</flow>
+        <generation_source>flowRecommendation</generation_source>
+        <order>3</order>
+        <parent_ui_id>b7584a39-125a-413b-b2f3-a6a752c0484e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 05:18:24</sys_created_on>
+        <sys_id>c2d9283a2f44c710b14f861cbfa4e362</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-11 01:06:08</sys_updated_on>
+        <ui_id>92b5baa6-1830-4d2f-95df-47401eee429e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1X328bNwz+Vw562gDHuF92HL8F6QIMWFtgLbKHuhEoHc8WqtNdJV0Sz/D/Xuru7DhegnbGXorFCGCQIj99pEia+bRhqmBzNk0wnlwkU5klWZbGcTrLEzHNRJIWGSDmbMQMVEiWHoRG3gkjdge6DcoH7ozkDQiOyP0X5fl9bb/wCgwssULjuQQXHArlGg3rm8HvL7KK3u6toqveSq6ULiwaNv/0ecQasHSbR8vmm6OjH+WuQaAm04+B/Aux+HXzrO6PQ9/oXX9Q2yLwiUcMHzyaAolICdrhiFHQBfjartnc25YUFqF4b/R6b7FSxhMgC7YPTv1N187iYFciRSaxP9uLfEhary7fgIcPhCx9awdTuaqVRNfnpMASWu2vDnW9wfvGq9r0Ll2Yg3et28q861PC9gC7NyJN64gENiHOwHwIo/ywqu//3LG8VqZLyXCoawl6L4H3VonWBz4bhrqviQqaRpklb2x9pzpn4lKNl5qEcanre7rUqaUZgwzEx5RWGF+T/k2nvgGrQhRvCYactyPm1u5Kg3OPsVAS+dc2MOkjG2LgfRqCi7Sq8Zd0wR0OdLejXVMUGF+8WFiJeCykrg/cQUO4VW19oN/BE/lFG8dZsdmI88ksh+ziLEkncJYnmTgTaZmdwRTOJ6mM81mOY+WxGrfc4ldCfQKz3d66urVUFKo4DVJS6ZLzIxAljc5OAaMyRmtA8ydIhFy0VC/g8RTQnS/BSPpaUiNx6rFToCpQhu9AQsCt2IsnUUMPSmPBw1ggvJqqiSSxA1vsxtuCzRfsI1XnEqOuIFWp6GJ6v+jy98sFGy36QunsZjCVFzAp0zKeCEzy8zxDMUuFLCHHLM86865dO3NKMqd+tJ06CFQIPwazve2GsqmpDXvGYdxGK3CRQDSRpEHlsYjEOgpDLbxsFFou6p/X3Trsx/QpuSPf4BpeAe2dClMNS2XUQW88Td9zPw3RL78NxH49SuJ5cp7mUE7TUspYJPSXl7NpIkUXfRkfJ9FwUVf8GSpHWf0+7vafv2qvzf/a/K/N/39p/n+5rH5/p9gtq9cKdeGeWTJ2mypWlDCPvF86jrbV4TC6GQ6HjTX5rzbWZBp3n59ob+2D++nX1oP/UF5YYD9/A1RJVlXXDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c2d9283a2f44c710b14f861cbfa4e362"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f289a4f62f44c710b14f861cbfa4e334^sys_idNOT IN1ab265172f88c350b14f861cbfa4e366"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d85361d72f88c350b14f861cbfa4e3d0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">f289a4f62f44c710b14f861cbfa4e334</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:43:53</sys_created_on>
+        <sys_id>1ab265172f88c350b14f861cbfa4e366</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 13:06:00</sys_updated_on>
+        <ui_id>b7584a39-125a-413b-b2f3-a6a752c0484e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51STW/bMAz9LzonhmxnTpxbgaFAD22BruhlKAxZohNhsqTpI6ln+L+Pip106HEnm4/ke48iR2JisDH4V3PnvTxosv/5viJSJwz/R6JZD2RPZIDekxU5MRVTPI7VRrSw3fF1QcvtekPrar2rum/rttjkbd3SbS667AW4ccJPE7YK6a1iw9v/M/CjVMLBYtIyh94COLIfv6TCYKFRrAWFQgsD9kuBYV6Lrs5pzcuiKgtKix2qVWWbF6JkICqsu3Y+LEN/eYPEjqG78eInuSjoisBHAC0AhTqmPKxIz7RgwbiB7IOLCDhg4lmr4VZxlDogHUm1H17+Qe6c0lTYAU7EYU7ewmZ5yBnmRyM5PNsgjZ6RwFq19HCjYq+fZvtpBdCxqMJ1BYhEj3xgk+fkYrHU/Tia88tV8F7qy3xLUhnO1C1iITjZxgA+rQEU9EjU9MxaqQ+NdeYkL83opc8OCoOsU+aMouncMsaT8QyfiGX3iH+/wG/MyTTFI9Jg83SZvvkdk+48x+K4mYfGAs+dtOEO6U6wmJve073OTH4+DAFcehR8TdjD9cpTYsAlS/4vdDbuV7L6iU1/ATumFIgvAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f289a4f62f44c710b14f861cbfa4e334"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>create_work_notification_case</internal_name>
+        <label_cache>[{"name":"trigger.current.u_detailed_type","label":"Trigger - Record Created➛External Work Records Record➛Detailed type","reference":"","reference_display":"Detailed type","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_detailed_type","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["sub_category"]}},{"name":"trigger.current.u_main_category","label":"Trigger - Record Created➛External Work Records Record➛Main category","reference":"","reference_display":"Main category","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_main_category","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["category_ext"]}},{"name":"trigger.current.u_due_date","label":"Trigger - Record Created➛External Work Records Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_due_date","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["due_date"]}},{"name":"trigger.current.u_internal_source_system","label":"Trigger - Record Created➛External Work Records Record➛Internal source system","reference":"","reference_display":"Internal source system","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_internal_source_system","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_system"]}},{"name":"trigger.current.u_record_id","label":"Trigger - Record Created➛External Work Records Record➛Record id","reference":"","reference_display":"Record id","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_record_id","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_id"]}},{"name":"trigger.current.u_request_description","label":"Trigger - Record Created➛External Work Records Record➛Request description","reference":"","reference_display":"Request description","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_request_description","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["short_description"]}},{"name":"Created_1.current.u_detailed_type","label":"Trigger - Record Created➛External Work Items Record➛Detailed type","reference":"","reference_display":"Detailed type","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_detailed_type","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["sub_category"]}},{"name":"Created_1.current.u_main_category","label":"Trigger - Record Created➛External Work Items Record➛Main category","reference":"","reference_display":"Main category","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_main_category","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["category_ext"]}},{"name":"Created_1.current.u_segment","label":"Trigger - Record Created➛External Work Items Record➛Segment","reference":"","reference_display":"Segment","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_segment","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["segement"]}},{"name":"Created_1.current.u_request_description","label":"Trigger - Record Created➛External Work Items Record➛Request description","reference":"","reference_display":"Request description","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_request_description","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["description","short_description"]}},{"name":"Created_1.current.u_record_id","label":"Trigger - Record Created➛External Work Items Record➛Record id","reference":"","reference_display":"Record id","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_record_id","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_id"]}},{"name":"Created_1.current.u_internal_source_system","label":"Trigger - Record Created➛External Work Items Record➛Internal source system","reference":"","reference_display":"Internal source system","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_internal_source_system","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_system"]}},{"name":"Created_1.current.u_due_date","label":"Trigger - Record Created➛External Work Items Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_due_date","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["due_date"]}},{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35":[null]},"attributes":{}},{"name":"Created_1.current.u_case_owner","label":"Trigger - Record Created➛External Work Items Record➛Case owner","reference":"","reference_display":"Case owner","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_ext_work_items","column_name":"u_case_owner","usedInstances":{"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35":[null,"conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛External Work Items Record","reference":"x_snc_pab_ee_tkit_df_ext_work_items","reference_display":"External Work Items","type":"reference","base_type":"reference","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["parent"]},"attributes":{}},{"name":"92b5baa6-1830-4d2f-95df-47401eee429e.record","label":"3 - Create Record➛Work Management Case Record","reference":"x_snc_pab_ee_tkit_work_management_case","reference_display":"Work Management Case","type":"reference","base_type":"reference","usedInstances":{"fbfb3c5f-c69e-48c8-baa8-ad4d2c687dcc":["record"],"11f8b63a-04ea-45a8-99df-6da1ac161513":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35.Record","label":"4 - Look Up Record➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"fbfb3c5f-c69e-48c8-baa8-ad4d2c687dcc":["assigned_to"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"trigger.current.u_case_owner","label":"Trigger - Record Created➛External Work Records Record➛Case owner","reference":"","reference_display":"Case owner","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_case_owner","usedInstances":{"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35":[null,"conditions"]}},{"name":"trigger.current.u_segment","label":"Trigger - Record Created➛External Work Records Record➛Segment","reference":"","reference_display":"Segment","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_segment","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["segement"]}},{"name":"64dbe78c-2037-4096-86f5-b241b9b071df.Records","label":"1 - Look Up Records➛External Work Records Records","reference":"x_snc_pab_ee_tkit_df_external_work_records","reference_display":"External Work Records","type":"records","base_type":"records","usedInstances":{"b7584a39-125a-413b-b2f3-a6a752c0484e":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_request_description","label":"2➛External Work Records Record➛Request description","reference":"","reference_display":"Request description","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_request_description","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["short_description"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_segment","label":"2➛External Work Records Record➛Segment","reference":"","reference_display":"Segment","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_segment","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["segement"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_detailed_type","label":"2➛External Work Records Record➛Detailed type","reference":"","reference_display":"Detailed type","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_detailed_type","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["sub_category"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_due_date","label":"2➛External Work Records Record➛Due date","reference":"","reference_display":"Due date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_due_date","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["due_date"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_record_id","label":"2➛External Work Records Record➛Record id","reference":"","reference_display":"Record id","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_record_id","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_id"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_internal_source_system","label":"2➛External Work Records Record➛Internal source system","reference":"","reference_display":"Internal source system","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_internal_source_system","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["source_system"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_main_category","label":"2➛External Work Records Record➛Main category","reference":"","reference_display":"Main category","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_main_category","usedInstances":{"92b5baa6-1830-4d2f-95df-47401eee429e":["category_ext"]}},{"name":"b7584a39-125a-413b-b2f3-a6a752c0484e.item.u_case_owner","label":"2➛External Work Records Record➛Case owner","reference":"","reference_display":"Case owner","type":"string","base_type":"string","parent_table_name":"x_snc_pab_ee_tkit_df_external_work_records","column_name":"u_case_owner","usedInstances":{"6a4cb872-0ffb-40fa-a73b-bcf3682a4c35":[null,"conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>Create Work Notification Case</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create Work Notification Case">f289a4f62f44c710b14f861cbfa4e334</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 05:19:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ee1ae4ba2f44c710b14f861cbfa4e305</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 13:06:02</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ee1ae4ba2f44c710b14f861cbfa4e305^sys_idNOT IN221ae4ba2f44c710b14f861cbfa4e308"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ee1ae4ba2f44c710b14f861cbfa4e305</id>
+        <name>Create Work Notification Case</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 05:19:32</sys_created_on>
+        <sys_id>221ae4ba2f44c710b14f861cbfa4e308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-08 05:19:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=221ae4ba2f44c710b14f861cbfa4e308"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ee1ae4ba2f44c710b14f861cbfa4e305^sys_idNOT IN3c53e1d72f88c350b14f861cbfa4e32d"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">ee1ae4ba2f44c710b14f861cbfa4e305</flow>
+        <generation_source/>
+        <name>Repeat</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:46:30</sys_created_on>
+        <sys_id>3c53e1d72f88c350b14f861cbfa4e32d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 13:06:02</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/3VSy07DMBD8FeRziZy2vHJDQpU4AFJBXBCKNvamtbR+4DgtAfHvbB6tEIgoF894Z2dGfvkUBBWSKMQaA0ISM2FcwuiAnrqAjG/IaCx1GyEZ75i34DQkHztRpNjiTNTR2ye0gSDxQA3UMOijxiiKXMqZ2AG1+Ng1t5r1WMGB7ZXjYePAM5BfXchTmfN/ks8LKQuZM6u2hnREJ4qX15kIEHk69dqfvyjTy+fqrF7qq6VazPmTcn65zKvzRZXP9QKwWrDgn8S//aR/kv/MhO8JnUZ9DPynloigHxx1xxtbbnYswMJ7Yz5wkopYI4dQOJLHY6lNw6V2I6y23ih8CIOXAUlQ0TSjPLXW3Y85+KyxhpbS81QsI23DehyQPfcuJkv149bv14eFK+OGgBNJXgEdT5BSNFWbsOmbR0LLQqWFEIzblCH6nRmG2YvNhuqymvyelzZm4zJQvfGMK4JsxfjNAD9DNH2KO5bh4a8hffnW9nvHHJPjcgzNF6ZSVgZpek6Niiaka16wO7y/r9dv62elftoCAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ee1ae4ba2f44c710b14f861cbfa4e305^sys_idNOT IN0528abb22f00cb10b14f861cbfa4e3e0,3976d6362f844b10b14f861cbfa4e3bd,7053e1d72f88c350b14f861cbfa4e32f,721ae4ba2f44c710b14f861cbfa4e359"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">ee1ae4ba2f44c710b14f861cbfa4e305</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>b7584a39-125a-413b-b2f3-a6a752c0484e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 19:09:49</sys_created_on>
+        <sys_id>0528abb22f00cb10b14f861cbfa4e3e0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 22:46:30</sys_updated_on>
+        <ui_id>fbfb3c5f-c69e-48c8-baa8-ad4d2c687dcc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy07jMBT9lcrrJsqrpe1uRIU0Eg8JRswCUHRj3xQLx8kkDtCJ+u9zkzihAoYBiQ2a7u7T55z41FcNk4KtWITC85f+nId+GAaeFywiP5mHiR+IEBB9NmUaMqTOEnleCorvQdVtommWQTJLAOaOvwg9JxJB6ixnInWig8jzETEKluj2c7sdTQpZFQq2l3YBZfitVKJEzVZXN1NWQElnGSzZqnlWei9YBQkqaj0f0D5Hb7ZFG4uc1xlqE8sheWwn17Yy+b6mCg21cHxvyvDRoBZIQFJQFU5ZBlqAycstW5mypkSJIM602o4dt1KbnmgGj5X8TSdHXtuXIjHjVoQxjK1AfTpdg4EL2sxNXY565ZJj1WsiMIVamcP9XN9wVhiZ637EQKKG6VzVmT7tFWHjgr3vUVcEAouWZ4u8p5Ve3OYP5wPII6k7SSxFlXNQYwTGlDKpTQunYaiw0ziDopB6Exdlfi+7YYKSuRtFgZuq/IHOrORGu8Bb3C6pCu4R5ddd+hJK2ZI4oTU0vJuyalsdKqiqJyqkYfyrbpH0xCyFuFOhkyDubkI7zEtZmG901D1a4LuptUMye+uG8eXThdrb+WSJx7jSPC4giRFjcydN/JCXd8Rfw6aXgkOFL53wk7omJ2PX5LDv+pg73oF9cMeP7k68zsUa5EXueH92ctoXrD1mn2aPxVeyh6Xx5f3xL1d4wZv/u3s3qTNCtecIAkEIUcQmv649LxRNM4eIJ4uDwPHSNHEiLwUHDsLESXgazhcBVcOZe/7XV+MTNn7MV+9gP/jqSKIS1StyDKbCjKgYjHt5nhnLFieXtji+PZ/mLn/udb8v5LH/5gm6+QMldesSkwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0528abb22f00cb10b14f861cbfa4e3e0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">ee1ae4ba2f44c710b14f861cbfa4e305</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>b7584a39-125a-413b-b2f3-a6a752c0484e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 13:12:59</sys_created_on>
+        <sys_id>3976d6362f844b10b14f861cbfa4e3bd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 22:46:30</sys_updated_on>
+        <ui_id>6a4cb872-0ffb-40fa-a73b-bcf3682a4c35</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW+jOBD+K4jnJAeBhKRvp1aRVtrbStvuvuytLINNY51js8Y0m0b57zfGkKCEJkFHpVb3yMzY/mbm+wbDj63LiHvjkrk3T+fzySzyvCDwvOk0SLAfx8E0ib0Yh+7AFXhFIVLjmFN4fMa8MM/5JkdFThWYCMszjjffK883a02WjBNFhXvz4+fAzbCCfTR4brZHrmuBcBxTDqGPFZIjYHqT7R9R6bO2z81lzhfrkIoYKN7Apb81FYQChhTznA7cFRYEa6k2e4uimNwLfjAsmdCwo2uCf+fsBc6deSYupZBVQq1v/4iqAllzeoc1ftCqSHShqtBkKVlCc1sPQlNccH3btNmA+0wzKewSm7ZdLXmxEl9sOdz9BnU/wAKNQoRmJlGDvEojfVjK9dca5YKJsiaVk8sE8/0T1lqxuNAGz9alnK5gI7TCWcbEE8qUfGblYsCyGj1xeBilXK7h0Jw9iRFODPAR1BWPFmC/K83fsWImi79gm5IyKePAEGRbmMtClaV8Rgkv8tKhsMjtXu5uYCh4y3GeHzKHkqNfhcFt61BljGzRzJJEsUz/CVs80yq53aDWwuQsBecHyiVSEGZQ5A1BGN/fBSwl220cTWYhDuZDfzzBw9AP4mE8ToMhnuJoMk68cBbSEdN0NSpQgqE5ci2o2u1OxdTTrh3FeLkStRhvm6VoK08lyxPb57YNKln6vcky9LyPJEw4/P3psrvSbAkuyM0nZ0lGDnzKpdLI1rKht1OtdOb5FRBqnt8bZjrx5jVUFc1TRjlpe/ssjOPo7TP+f7593iXJARBBtntMcCbKqwQAfSv2T85SL/aPeFbSq3H5MjacJ6cawI6WzktnJVwBp1bCA5ztPFo8LRDreV9S5njW18ZKAEFvAgjG/Qhgu09zX8iWmte3R9PNOv7FxOPjeKBgY4G/axNYpzP9rmeOd6cCDjopuEk267l7hXM9XzNfUeTgLUfAEpZW5yGrX7Rm5Inqw+l1FJF6jfk/bf6KcahuVJneG1xZ/bNfTXHjyspStILOsQxu1oomQI4cYUVRKgtBUHWnPhDJdDJlKtdV8Omg+UpBP8KRIExHL6lTRjv76I4v4st51KX8lDp1ItVpuQOJOGUizj6Rbml3GVphj5fTvofWAjNedgM+l7JGO6lSUr0yuC408gwjrpxqV4LyewX138demwRax98FrB/i27v/0ZRQHIdjPI0C3/c83yORN4sifzaNU/hcDdODRhHKRQLTFHZOgSqwPaqpUffZO50/dqR2HTRXoKopeCeF+fAeR9oxsKC/Tg3rMvBqoMRScorF0UR5hPfEH4sKf8XXybubKh/iT1TBHo8rbU2ttX6re0PBvgn2q6CfDMVm1BvPfJIMZ5EfDcOUTIdzgidDPI8nUUBoEqZ9XgV+/gtQ2IM8yxUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3976d6362f844b10b14f861cbfa4e3bd"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">ee1ae4ba2f44c710b14f861cbfa4e305</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:46:30</sys_created_on>
+        <sys_id>7053e1d72f88c350b14f861cbfa4e32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 22:46:30</sys_updated_on>
+        <ui_id>64dbe78c-2037-4096-86f5-b241b9b071df</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX22rjMBD9leBnE+wmTbt9W3qBQtssTehSShGyLCeiiuyV5Fwa8u87smTHJE43gRRa9lFzkc7MnCPLL0uPxd6Fd550gwCHp+dnQdDpBEGv1yE4jKJOj0RB1I083xN4QiFS44hTWE4xz816jpQgKMMRohTpN6ZRnCA611QKzNEslW9IUpLKWEFSzFTG8eLJ5V67sNZvCGs9VmFkzHgsqfAuXl59L8MSjoZI72K54doXO8cR5RA6dOA3atGLrFqiwmdtd/W01oN1AEYDJfA9U6WIKWBIMFfU9yZYxFinclFZJMVxX/C1YcyEhh09EzxX7B3OPQ9MXEKhKkKtr1oi1zFrTq6wxgMtc6Jz6ULJOGWEKtuPmCY45/qybrMB/UyzVNgUW7bNTnk+EQ+2HV61QTkgsOQKQNDMFGqQuzKSwTidPZYob5goeuKcPCWYVyustWRRrg2epUc5ncBGaIKzjIkRymQ6ZUUyYJm0RxwW7YSnMzhUsZFoY2KAt6GvuH0D9qvC/IQlM1XcwzaQDIAYB4YgO0KV5rJo5RQRnqvCIbFQdi9v5XtqoS45VmpdObQc/ckNbtsHVzGyTTMpRLJM/4QtptQVt/L3ks9psKYcSUXMDApV01DuJIJYfDt46A+v738Nn7flsivsmHIpsJZyuayDbSrACWfLdte0gRNOeDThQB3fSTpw+NdTzuFasC34hyDI2YckO13zSaVSI9vLmiK2yX8wz/eAUPK8b5jZiha7UDmaJ4zyuOn7cGMcG9+Hk//z+/AlSQ6AYmSnxwRnovjYA9DPYn/w8RX7Y4NnBb3W3C9sWJFtDeCWTlvvBythDzilEgZwdmto8TRALO/7gjKbd31pdALoHE0AnZPjCGBZlVk1sqHn5fvOTLOMfzfxeDMeKFhLCFdNAjvozPDQM09W2wLuHKTgOtms52oH5478ENyhSP8zr4AxpLrzkNUvmrF4RPX69DIqTvUM87cmv2McKgdVlPcJj8ruh7LthWuJglLgaahgePVXZQjPo+07JPSt+bArZA8sZTvu8Rx+5UowjQjdNQJKp6NiNvV75LayOpJ3j/hg/LJf0nJYjRosZ/Yt/sWOJ4TXv1Tr186eEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7053e1d72f88c350b14f861cbfa4e32f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">ee1ae4ba2f44c710b14f861cbfa4e305</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>b7584a39-125a-413b-b2f3-a6a752c0484e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 05:19:32</sys_created_on>
+        <sys_id>721ae4ba2f44c710b14f861cbfa4e359</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 05:56:12</sys_updated_on>
+        <ui_id>92b5baa6-1830-4d2f-95df-47401eee429e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1X328bNwz+Vw562gDHuF92HL8F6QIMWFtgLbKHuhEoHc8WqtNdJV0Sz/D/Xuru7DhegnbGXorFCGCQIj99pEia+bRhqmBzNk0wnlwkU5klWZbGcTrLEzHNRJIWGSDmbMQMVEiWHoRG3gkjdge6DcoH7ozkDQiOyP0X5fl9bb/wCgwssULjuQQXHArlGg3rm8HvL7KK3u6toqveSq6ULiwaNv/0ecQasHSbR8vmm6OjH+WuQaAm04+B/Aux+HXzrO6PQ9/oXX9Q2yLwiUcMHzyaAolICdrhiFHQBfjartnc25YUFqF4b/R6b7FSxhMgC7YPTv1N187iYFciRSaxP9uLfEhary7fgIcPhCx9awdTuaqVRNfnpMASWu2vDnW9wfvGq9r0Ll2Yg3et28q861PC9gC7NyJN64gENiHOwHwIo/ywqu//3LG8VqZLyXCoawl6L4H3VonWBz4bhrqviQqaRpklb2x9pzpn4lKNl5qEcanre7rUqaUZgwzEx5RWGF+T/k2nvgGrQhRvCYactyPm1u5Kg3OPsVAS+dc2MOkjG2LgfRqCi7Sq8Zd0wR0OdLejXVMUGF+8WFiJeCykrg/cQUO4VW19oN/BE/lFG8dZsdmI88ksh+ziLEkncJYnmTgTaZmdwRTOJ6mM81mOY+WxGrfc4ldCfQKz3d66urVUFKo4DVJS6ZLzIxAljc5OAaMyRmtA8ydIhFy0VC/g8RTQnS/BSPpaUiNx6rFToCpQhu9AQsCt2IsnUUMPSmPBw1ggvJqqiSSxA1vsxtuCzRfsI1XnEqOuIFWp6GJ6v+jy98sFGy36QunsZjCVFzAp0zKeCEzy8zxDMUuFLCHHLM86865dO3NKMqd+tJ06CFQIPwazve2GsqmpDXvGYdxGK3CRQDSRpEHlsYjEOgpDLbxsFFou6p/X3Trsx/QpuSPf4BpeAe2dClMNS2XUQW88Td9zPw3RL78NxH49SuJ5cp7mUE7TUspYJPSXl7NpIkUXfRkfJ9FwUVf8GSpHWf0+7vafv2qvzf/a/K/N/39p/n+5rH5/p9gtq9cKdeGeWTJ2mypWlDCPvF86jrbV4TC6GQ6HjTX5rzbWZBp3n59ob+2D++nX1oP/UF5YYD9/A1RJVlXXDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=721ae4ba2f44c710b14f861cbfa4e359"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ee1ae4ba2f44c710b14f861cbfa4e305^sys_idNOT IN3453e1d72f88c350b14f861cbfa4e332"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d85361d72f88c350b14f861cbfa4e3d0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create Work Notification Case">ee1ae4ba2f44c710b14f861cbfa4e305</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:46:30</sys_created_on>
+        <sys_id>3453e1d72f88c350b14f861cbfa4e332</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 13:06:02</sys_updated_on>
+        <ui_id>b7584a39-125a-413b-b2f3-a6a752c0484e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miI+UhLxVrSpV6l2ltOrLqYoWe0msMzZnm6Qcyn+/dSC06uM9wY53Z2cGMzDT+bbz7tXcOif3mm1+vUdM6oDR+8A0NMg2THpsHIvYEVQX6mEolqLC1ZovsiRfLZZJWSzWRX2zqLJlWpVVskpFHW+RGyvc+UyjQrpWQf/2/wz8IJWwOIlswZI2j5Zthm9HUtCCtBR1mSYlz7Miz5IkWxNtkVdpJnJAURChggoVtT5O7r6Z9X0bSjtKmICnaWY7o/QIIrIkYvjhUQuk9TUohxFrQAvwxvZs421HgEUQz1r1c8dBak90LPR+OPmXNqZJEhprJEMcx8O53E05jnB9Dx5eiJr7zk6t/GAkRzdGIbCGTvm7r9jY8Nx6afQ44qFS12mjukb/HJNgM8H1sxHSORKBbTAapE8+6peDOW2vKh+kvoQyHSrDQc0VeG9l1fmgZ2CosCGiXQNtK/V+11pzlJdh0tLEe0VFXCtzoqXhisbAg/CYcoX4gfD7C/wGVgYXP4iGhs8Rc727U+DcpxcKcfenC0pGZ5OH3RhDGOFWtv6WFhxxknt+D7d+5J4z5dKRhNeAPV7/lXDQ0w2S/Ct0MvZ3EP+Jnf8BNLFfe3UDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ee1ae4ba2f44c710b14f861cbfa4e305"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>f289a4f62f44c710b14f861cbfa4e334</sys_id>
+        <latest_snapshot>ee1ae4ba2f44c710b14f861cbfa4e305</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch1-03-23-2026_03-31-2026_1137.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f289a4f62f44c710b14f861cbfa4e334^sys_idNOT INfe1ae4ba2f44c710b14f861cbfa4e378"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"fe1ae4ba2f44c710b14f861cbfa4e378","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>f289a4f62f44c710b14f861cbfa4e334</plan_id>
+        <snapshot>7fdccbef2f4c4350d73ea23fafa4e32d</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 05:19:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe1ae4ba2f44c710b14f861cbfa4e378</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 13:06:03</sys_updated_on>
+        <trigger display_value="">dd53e1d72f88c350b14f861cbfa4e3c2</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f289a4f62f44c710b14f861cbfa4e334"/>
+</record_update>

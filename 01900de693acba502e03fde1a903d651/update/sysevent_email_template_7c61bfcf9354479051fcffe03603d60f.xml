@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>sn_customerservice_case</collection>
+        <email_layout display_value="Mondelez Layout">4e60b78b9354479051fcffe03603d67a</email_layout>
+        <message/>
+        <message_html><![CDATA[<p data-path-to-node="1">Hello,</p>
+<p data-path-to-node="2">Thank you for reaching out to Mondelēz International.</p>
+<p data-path-to-node="3">This is just a quick note to let you know that we have successfully received your inquiry. Our team is currently reviewing the details, and we&rsquo;re committed to getting back to you with a thoughtful response as soon as possible.</p>
+<p data-path-to-node="3">Your reference number: ${number}</p>
+<p data-path-to-node="4">In the meantime, if you have any additional information or specific details you&rsquo;d like to add to your request, feel free to reply directly to this email.</p>
+<p data-path-to-node="5">Thank you for your patience and for being part of our mission to lead the future of snacking.</p>
+<p data-path-to-node="6">Best regards,</p>
+<p data-path-to-node="7">The Mondelēz International Team <em data-index-in-node="32" data-path-to-node="7">Snacking Made Right</em></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>We have recieved your request</name>
+        <sms_alternate/>
+        <subject>We have recieved your request - ${number}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 00:44:24</sys_created_on>
+        <sys_id>7c61bfcf9354479051fcffe03603d60f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>We have recieved your request</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sysevent_email_template_7c61bfcf9354479051fcffe03603d60f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 00:57:53</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

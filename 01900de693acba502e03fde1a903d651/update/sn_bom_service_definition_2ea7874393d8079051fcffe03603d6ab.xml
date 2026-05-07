@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
+    <sn_bom_service_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <case_type display_value="sn_customerservice_case">c6f88627877f7090cfdeea8d0ebb359e</case_type>
+        <description>This service enables retail customers, trading partners, and suppliers to submit ESG questionnaires and surveys to Mondelez for a structured, approved response. It is designed to handle the growing volume and complexity of ESG due diligence requests received from customers across European and global markets.&#13;
+Questionnaires and supporting attachments are submitted through the Mondelez Customer Enquiry Portal. Upon receipt, the ServiceNow platform analyses the questionnaire content, identifies the relevant ESG topics, and uses AI-assisted drafting to generate an initial response drawn from Mondelez's approved library of ESG policy statements. Topics covered include palm oil and RSPO certification, carbon footprint and climate targets, deforestation and EUDR compliance, human rights and child labour, packaging and plastics, water and energy use, and broader sustainability reporting.&#13;
+All AI-generated draft responses are routed to the Corporate and Government Affairs (CGA) team for review and approval before any response is issued to the customer. CGA may approve the draft as written, edit it, or return it for manual handling by the relevant subject matter expert. A complete audit trail of the draft, any edits, the approval decision, and the delivery timestamp is maintained for every case.&#13;
+In Scope&#13;
+&#13;
+Customer and retailer ESG supplier questionnaires and surveys&#13;
+Palm oil sourcing, RSPO, and deforestation policy responses&#13;
+Carbon footprint, climate targets, and SBTi disclosure&#13;
+EUDR compliance statements and questionnaire responses&#13;
+Human rights, animal welfare, and social sustainability topics&#13;
+ESG report references and non-financial disclosure queries&#13;
+&#13;
+Out of Scope&#13;
+&#13;
+Product-specific sustainability data (e.g. carbon footprint per SKU) — treated as sensitive product data and routed to the relevant technical team&#13;
+Regulatory compliance certificates — covered by the Certificate Request Service</description>
+        <id>esg_sust_quest_response</id>
+        <image/>
+        <name>ESG and Sustainability Questionnaire Response</name>
+        <order>100</order>
+        <playbook_record_generator/>
+        <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
+        <service_type>3</service_type>
+        <show_in_interceptor>true</show_in_interceptor>
+        <sys_class_name>sn_bom_service_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-21 21:43:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2ea7874393d8079051fcffe03603d6ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ESG and Sustainability Questionnaire Response</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_bom_service_definition_2ea7874393d8079051fcffe03603d6ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-21 22:53:03</sys_updated_on>
+        <table>sn_customerservice_case</table>
+        <task_table>sn_customerservice_case</task_table>
+        <template>service=^EQ</template>
+        <u_email_classification>true</u_email_classification>
+        <use_service_catalog_item>false</use_service_catalog_item>
+    </sn_bom_service_definition>
+</record_update>

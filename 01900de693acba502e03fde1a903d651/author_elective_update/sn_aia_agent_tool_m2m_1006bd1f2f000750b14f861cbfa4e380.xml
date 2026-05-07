@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Determine Email Response">2da29d4b2f004f10b14f861cbfa4e3f5</agent>
+        <description>This tool retrieves knowledge that is specific to outstanding work and suggested next steps</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>2da29d4b2f004f10b14f861cbfa4e3f5</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"search_profile","value":"x_snc_pab_ee_tkit_work_management_knowledge","label":"Work Management Knowledge ","description":"Search profile"},{"name":"sources","label":["Knowledge Table"],"value":["kb_knowledge"],"description":"Search sources"},{"name":"fields","label":["Article body [kb_knowledge]","Short description [kb_knowledge]"],"value":["kb_knowledge.text","kb_knowledge.short_description"],"description":"Fields to be returned"},{"name":"search_results_limit","value":"3","description":"Search results limit"},{"name":"search_type","value":"hybrid","description":"Search type"},{"name":"semantic_index_names","label":["title","body"],"value":["title","body"],"description":"Semantic indexed fields"},{"name":"document_match_threshold","value":"0","description":"Document matching threshold"}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Work Management Knowledge</name>
+        <output_transformation_strategy>summary_for_search_results</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 00:08:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1006bd1f2f000750b14f861cbfa4e380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work Management Knowledge</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_1006bd1f2f000750b14f861cbfa4e380</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:08:07</sys_updated_on>
+        <timeout/>
+        <tool display_value="AIA RAG Retriever">8021ddea2b0d52101d72fb466e91bfd1</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_1006bd1f2f000750b14f861cbfa4e380</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Determine Email Response">2da29d4b2f004f10b14f861cbfa4e3f5</agent><description>This tool retrieves knowledge that is specific to outstanding work and suggested next steps</description><display_mode>inline</display_mode><display_output>true</display_output><document_status/><entity>sn_aia_agent</entity><entity_id>2da29d4b2f004f10b14f861cbfa4e3f5</entity_id><execution_mode>autopilot</execution_mode><inputs>[{"name":"search_profile","value":"x_snc_pab_ee_tkit_work_management_knowledge","label":"Work Management Knowledge ","description":"Search profile"},{"name":"sources","label":["Knowledge Table"],"value":["kb_knowledge"],"description":"Search sources"},{"name":"fields","label":["Article body [kb_knowledge]","Short description [kb_knowledge]"],"value":["kb_knowledge.text","kb_knowledge.short_description"],"description":"Fields to be returned"},{"name":"search_results_limit","value":"3","description":"Search results limit"},{"name":"search_type","value":"hybrid","description":"Search type"},{"name":"semantic_index_names","label":["title","body"],"value":["title","body"],"description":"Semantic indexed fields"},{"name":"document_match_threshold","value":"0","description":"Document matching threshold"}]</inputs><max_auto_executions>10</max_auto_executions><name>Work Management Knowledge</name><output_transformation_strategy>summary_for_search_results</output_transformation_strategy><post_message/><post_processing_script/><pre_message/><pre_run>false</pre_run><requires_text_refined_message>false</requires_text_refined_message><requires_widget_transformation>true</requires_widget_transformation><should_display_refined_message>false</should_display_refined_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-10 00:08:07</sys_created_on><sys_domain>global</sys_domain><sys_id>1006bd1f2f000750b14f861cbfa4e380</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Work Management Knowledge</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_1006bd1f2f000750b14f861cbfa4e380</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-10 00:08:07</sys_updated_on><timeout/><tool display_value="AIA RAG Retriever">8021ddea2b0d52101d72fb466e91bfd1</tool><tool_attributes>{}</tool_attributes><transformation_instructions/><widgets>db0e858eff62b210f465ffffffffff2c</widgets></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-324847831</payload_hash>
+        <record_name>Work Management Knowledge</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 00:08:07</sys_created_on>
+        <sys_id>1806fd1f2f000750b14f861cbfa4e37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d74b7aceb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:08:07</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>9406fd1f8500075041629dfd5d856e79</update_guid>
+        <update_guid_history>9406fd1f8500075041629dfd5d856e79:-324847831</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Work Management Knowledge">3ecb7d5b2f800750b14f861cbfa4e34e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 00:33:24</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>8283c72dccfc4c8aa0b5cd5cedef5c59</sys_id>
+        <sys_metadata>1006bd1f2f000750b14f861cbfa4e380</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work Management Knowledge</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_1006bd1f2f000750b14f861cbfa4e380</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_1006bd1f2f000750b14f861cbfa4e380">1806fd1f2f000750b14f861cbfa4e37a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:33:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

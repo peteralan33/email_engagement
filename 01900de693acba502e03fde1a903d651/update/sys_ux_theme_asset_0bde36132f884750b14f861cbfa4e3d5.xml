@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_asset">
+    <sys_ux_theme_asset action="INSERT_OR_UPDATE">
+        <category>image</category>
+        <name>RBC Logo</name>
+        <sys_class_name>sys_ux_theme_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 05:26:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0bde36132f884750b14f861cbfa4e3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RBC Logo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_theme_asset_0bde36132f884750b14f861cbfa4e3d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 05:26:26</sys_updated_on>
+    </sys_ux_theme_asset>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>RBC Logo.png</file_name>
+        <hash>698088973146d7673072fa670297d413a2023908345f593f76c26afde9b78b4c</hash>
+        <image_height>50</image_height>
+        <image_width>86</image_width>
+        <size_bytes>4883</size_bytes>
+        <size_compressed>4521</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 05:26:26</sys_created_on>
+        <sys_id>cfde76172f884750b14f861cbfa4e392</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 05:26:27</sys_updated_on>
+        <table_name>sys_ux_theme_asset</table_name>
+        <table_sys_id>0bde36132f884750b14f861cbfa4e3d5</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="RBC Logo.png" sys_id="cfde76172f884750b14f861cbfa4e392">cfde76172f884750b14f861cbfa4e392</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 05:26:26</sys_created_on>
+        <sys_id>83de76172f884750b14f861cbfa4e393</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>6016</length>
+        <position>1</position>
+        <sys_attachment display_value="RBC Logo.png" sys_id="cfde76172f884750b14f861cbfa4e392">cfde76172f884750b14f861cbfa4e392</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 05:26:26</sys_created_on>
+        <sys_id>47de76172f884750b14f861cbfa4e393</sys_id>
+    </sys_attachment_doc>
+</record_update>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_customization">
+    <sys_ux_theme_customization action="INSERT_OR_UPDATE">
+        <customization>{
+  "colors": [
+    {
+      "id": "isSecondaryColorUpdated",
+      "value": true,
+      "type": "secondary_color_updated"
+    },
+    {
+      "id": "--now-color_secondary-nav--brand",
+      "value": "0, 89, 179",
+      "type": "color_hook_overridden"
+    }
+  ],
+  "feedback": [],
+  "groupName": "",
+  "imagery": [],
+  "baseIcon": [],
+  "systemTokenVersion": "v1",
+  "telemetry": {
+    "created_from": "theme_builder_ai",
+    "colors_overridden": true
+  },
+  "initialValues": {}
+}</customization>
+        <name>RBC</name>
+        <sys_class_name>sys_ux_theme_customization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 05:19:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>524db25f2f484750b14f861cbfa4e3f8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>RBC</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_theme_customization_524db25f2f484750b14f861cbfa4e3f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 05:30:38</sys_updated_on>
+        <theme display_value="RBC">f54dbe1f2f484750b14f861cbfa4e30d</theme>
+    </sys_ux_theme_customization>
+</record_update>

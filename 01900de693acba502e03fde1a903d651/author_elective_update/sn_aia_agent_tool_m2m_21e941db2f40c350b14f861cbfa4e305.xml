@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Determine Email Response">2da29d4b2f004f10b14f861cbfa4e3f5</agent>
+        <description>Purpose
+The Generate Email Response Strategy tool applies specialized financial domain expertise to synthesize an appropriate, compliant, and professional reply to an inbound inquiry. Its goal is to analyze the extracted intent and automatically draft a high-fidelity response that addresses all customer requests while adhering to operational standards.
+
+Input
+WM Record Sys ID: (Data Type: string) The primary task object containing the enriched email context, technical metadata, and the specific requests identified for processing.
+
+Action &amp; Logic
+Intent-Driven Drafting: The tool utilizes a tailored skill model to map the identified classification (e.g., "Failed Settlement") to the correct communication protocol and technical explanation.
+
+Requirement Addressing: It cross-references the Key Requests identified in the enrichment phase to ensure every customer pain point is addressed in a single, cohesive response.
+
+Tone &amp; Compliance Calibration: The tool audits the draft against business reference data to ensure the language is professional, accurate, and meets the specific regulatory standards for the assigned category (e.g., Fraud, Mortgages, or Payments).
+
+Key Outputs
+The tool generates a structured response package for each identified work item:
+
+Recommended Email Response: A complete, ready-to-send draft that incorporates the case summary and specific resolution steps or requests for further information.
+
+Actionable Next Steps: A concise summary for the agent outlining what specific actions were proposed in the email (e.g., "Requested proof of identity" or "Advised of 24-hour processing window").
+
+Communication Justification: A brief technical note explaining why this specific response was generated based on the current case metadata.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>2da29d4b2f004f10b14f861cbfa4e3f5</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Determine Email Response</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 20:55:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>21e941db2f40c350b14f861cbfa4e305</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Determine Email Response</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_21e941db2f40c350b14f861cbfa4e305</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 21:32:40</sys_updated_on>
+        <timeout/>
+        <tool display_value="Determine Email Response">a5e9c99b2f40c350b14f861cbfa4e33b</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions>undefined</transformation_instructions>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_21e941db2f40c350b14f861cbfa4e305</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Determine Email Response">2da29d4b2f004f10b14f861cbfa4e3f5</agent><description>Purpose
+The Generate Email Response Strategy tool applies specialized financial domain expertise to synthesize an appropriate, compliant, and professional reply to an inbound inquiry. Its goal is to analyze the extracted intent and automatically draft a high-fidelity response that addresses all customer requests while adhering to operational standards.
+
+Input
+WM Record Sys ID: (Data Type: string) The primary task object containing the enriched email context, technical metadata, and the specific requests identified for processing.
+
+Action &amp; Logic
+Intent-Driven Drafting: The tool utilizes a tailored skill model to map the identified classification (e.g., "Failed Settlement") to the correct communication protocol and technical explanation.
+
+Requirement Addressing: It cross-references the Key Requests identified in the enrichment phase to ensure every customer pain point is addressed in a single, cohesive response.
+
+Tone &amp; Compliance Calibration: The tool audits the draft against business reference data to ensure the language is professional, accurate, and meets the specific regulatory standards for the assigned category (e.g., Fraud, Mortgages, or Payments).
+
+Key Outputs
+The tool generates a structured response package for each identified work item:
+
+Recommended Email Response: A complete, ready-to-send draft that incorporates the case summary and specific resolution steps or requests for further information.
+
+Actionable Next Steps: A concise summary for the agent outlining what specific actions were proposed in the email (e.g., "Requested proof of identity" or "Advised of 24-hour processing window").
+
+Communication Justification: A brief technical note explaining why this specific response was generated based on the current case metadata.</description><display_mode>inline</display_mode><display_output>true</display_output><document_status/><entity>sn_aia_agent</entity><entity_id>2da29d4b2f004f10b14f861cbfa4e3f5</entity_id><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Determine Email Response</name><output_transformation_strategy>none</output_transformation_strategy><post_message/><post_processing_script/><pre_message/><pre_run>false</pre_run><requires_text_refined_message>false</requires_text_refined_message><requires_widget_transformation>true</requires_widget_transformation><should_display_refined_message>false</should_display_refined_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-09 20:55:25</sys_created_on><sys_domain>global</sys_domain><sys_id>21e941db2f40c350b14f861cbfa4e305</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Determine Email Response</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_21e941db2f40c350b14f861cbfa4e305</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-09 21:32:40</sys_updated_on><timeout/><tool display_value="Determine Email Response">a5e9c99b2f40c350b14f861cbfa4e33b</tool><tool_attributes>{}</tool_attributes><transformation_instructions>undefined</transformation_instructions><widgets>db0e858eff62b210f465ffffffffff2c</widgets></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-522419145</payload_hash>
+        <record_name>Determine Email Response</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 21:32:41</sys_created_on>
+        <sys_id>9762559f2f04c350b14f861cbfa4e376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d74295d180000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 21:32:41</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>5362559f8d04c35074a065e291e66375</update_guid>
+        <update_guid_history>5362559f8d04c35074a065e291e66375:-522419145,39e941db2840c350cb5a814d3784bd36:967111441</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Determine Email Response">d806fd1f2f000750b14f861cbfa4e37f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 00:08:07</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>046e7016dcfc405288e73f2df136c844</sys_id>
+        <sys_metadata>21e941db2f40c350b14f861cbfa4e305</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Determine Email Response</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_21e941db2f40c350b14f861cbfa4e305</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_21e941db2f40c350b14f861cbfa4e305">9762559f2f04c350b14f861cbfa4e376</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:08:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

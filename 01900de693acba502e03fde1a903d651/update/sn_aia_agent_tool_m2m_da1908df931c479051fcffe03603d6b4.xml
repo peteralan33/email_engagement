@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="ESG Response Email">8291041f9398479051fcffe03603d6f0</agent>
+        <description>Purpose
+The ESG Response Generation tool is a specialized subflow designed to drive operational sustainability and corporate accountability. It automates the creation of high-quality email responses for complex enquiries, ensuring every interaction is handled with transparency, equity, and maximum resource efficiency.
+
+Action &amp; Logic
+
+Trigger Condition: This tool is activated immediately upon the completion of the ESG data analysis and response synthesis phase, ensuring Governance through accurate and timely communication.
+
+Data Integration: It synthesizes the generated email content with existing Work Notes to provide a transparent, contextual record of the response for responsible decision-making and oversight.
+
+Record Linking: It utilizes the Case Sys ID to maintain a robust audit trail, programmatically linking the generated email response to the master record for seamless, accountable case management.
+
+Inputs
+
+Email Reply (email_reply): The generated response content required to address the enquiry, ensuring alignment with ESG standards and regulatory compliance.
+
+Work Notes (work_notes): Critical history and technical context updated to reflect the response sent, maintaining service continuity for all stakeholders.
+
+Case Sys ID (case_sys_id): The unique system identifier for the case, ensuring full auditability and record integrity throughout the lifecycle of the enquiry.
+
+Key Output
+The tool facilitates the immediate generation and logging of an enquiry response, mitigating Governance risk by ensuring a standardized, compliant communication trail. It supports Social goals by providing stakeholders with prompt, reliable information and protects employee well-being by eliminating repetitive manual drafting.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>8291041f9398479051fcffe03603d6f0</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Draft Email Response</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 02:27:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>da1908df931c479051fcffe03603d6b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Draft Email Response</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_da1908df931c479051fcffe03603d6b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 02:27:59</sys_updated_on>
+        <timeout/>
+        <tool display_value="Update with Email Response">da19c4df931c479051fcffe03603d627</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

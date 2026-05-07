@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Determine Email Response">2da29d4b2f004f10b14f861cbfa4e3f5</agent>
+        <description>Purpose
+The Source Record Flag Lookup tool serves as a critical diagnostic layer. Its function is to query the Internal Source System to identify any active flags, administrative holds, or compliance triggers associated with the record. This ensures that the agent is aware of underlying system constraints before attempting a resolution or routing action.
+
+Input
+WM Record Sys ID: (Data Type: string) The primary task object containing the enriched email context, technical metadata, and the specific requests identified for processing.
+
+Action &amp; Logic
+Automated Status Audit: The tool initiates a real-time call to the designated source system to retrieve the current state of all operational and compliance flags.
+
+Flag Interpretation: Rather than returning raw codes, the tool translates system-specific flags (e.g., "Flag-88") into actionable business language (e.g., "Fraud Prevention Hold - Manual Review Required").
+
+Impact Assessment: The logic evaluates how identified flags affect the current workflow. If a "Hard Stop" flag is detected, the tool alerts the agent that the work item cannot proceed until the flag is cleared.
+
+Key Outputs
+The tool provides a summarized Status Report for the record:
+
+Active Flag Summary: A prioritized list of all current flags, categorized by severity (High, Medium, Low).
+
+Workflow Restriction Status: A definitive "Proceed" or "Halt" indicator based on the nature of the identified flags.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>2da29d4b2f004f10b14f861cbfa4e3f5</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Look Up Source Records Flags</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 20:55:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b1e941db2f40c350b14f861cbfa4e3d8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Look Up Source Records Flags</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_b1e941db2f40c350b14f861cbfa4e3d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 21:32:41</sys_updated_on>
+        <timeout/>
+        <tool display_value="Look Up Source Records Flags">71e941db2f40c350b14f861cbfa4e393</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions>undefined</transformation_instructions>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

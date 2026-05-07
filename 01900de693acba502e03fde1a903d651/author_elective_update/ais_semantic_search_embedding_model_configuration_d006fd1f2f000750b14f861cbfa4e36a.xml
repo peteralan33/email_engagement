@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_search_embedding_model_configuration">
+    <ais_semantic_search_embedding_model_configuration action="DELETE">
+        <default>false</default>
+        <document_match_threshold>0</document_match_threshold>
+        <embedding_model display_value="ServiceNow Embedding (E5)">c153d0f2432302104611495d9bb8f2ec</embedding_model>
+        <semantic_search_configuration display_value="Work Management Knowledge">9806fd1f2f000750b14f861cbfa4e364</semantic_search_configuration>
+        <sys_class_name>ais_semantic_search_embedding_model_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 00:08:07</sys_created_on>
+        <sys_id>d006fd1f2f000750b14f861cbfa4e36a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_semantic_search_embedding_model_configuration_d006fd1f2f000750b14f861cbfa4e36a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:08:07</sys_updated_on>
+    </ais_semantic_search_embedding_model_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>ais_semantic_search_embedding_model_configuration_d006fd1f2f000750b14f861cbfa4e36a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_search_embedding_model_configuration"><ais_semantic_search_embedding_model_configuration action="INSERT_OR_UPDATE"><default>false</default><document_match_threshold>0</document_match_threshold><embedding_model display_value="ServiceNow Embedding (E5)">c153d0f2432302104611495d9bb8f2ec</embedding_model><semantic_search_configuration display_value="Work Management Knowledge">9806fd1f2f000750b14f861cbfa4e364</semantic_search_configuration><sys_class_name>ais_semantic_search_embedding_model_configuration</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-10 00:08:07</sys_created_on><sys_id>d006fd1f2f000750b14f861cbfa4e36a</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_semantic_search_embedding_model_configuration_d006fd1f2f000750b14f861cbfa4e36a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-10 00:08:07</sys_updated_on></ais_semantic_search_embedding_model_configuration></record_update>]]></payload>
+        <payload_hash>508506963</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 00:08:07</sys_created_on>
+        <sys_id>d006fd1f2f000750b14f861cbfa4e36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d74b7ac530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:08:07</sys_updated_on>
+        <type>Semantic Search Configuration Embedding </type>
+        <update_guid>1006fd1f81000750e4aa56c785a05f6e</update_guid>
+        <update_guid_history>1006fd1f81000750e4aa56c785a05f6e:508506963</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f2cb3d5b2f800750b14f861cbfa4e3c2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 00:33:24</sys_created_on>
+        <sys_db_object display_value="" name="ais_semantic_search_embedding_model_configuration">ais_semantic_search_embedding_model_configuration</sys_db_object>
+        <sys_id>27a46e25332344bb874c195caca4c209</sys_id>
+        <sys_metadata>d006fd1f2f000750b14f861cbfa4e36a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_semantic_search_embedding_model_configuration_d006fd1f2f000750b14f861cbfa4e36a</sys_update_name>
+        <sys_update_version display_value="ais_semantic_search_embedding_model_configuration_d006fd1f2f000750b14f861cbfa4e36a">d006fd1f2f000750b14f861cbfa4e36f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:33:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

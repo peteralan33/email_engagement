@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <advanced_mode>false</advanced_mode>
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <channel>nap_and_va</channel>
+        <compiled_handbook/>
+        <condition/>
+        <context_processing_script><![CDATA[/*
+ * Available Variables:
+ * - task: The task provided to agent to solve either by orchestrator or user(incase of only agent execution i.e agent is invoked as seperate entity instead from a workflow).
+ * - user_utterance: The user utterance provided. and task = user_utterance in case of individual agent execution.
+ * - agent_id: The agent id.
+ * - context: An object that carries additional contextual information for the agent.
+ *          It always includes a "pageContext" and may include a "triggerContext",
+ *          depending on how and from where the agent is invoked.
+ *
+ *          Behavior by invocation type:
+ *          ---------------------------------
+ *          - When invoked via the startAiAgentConversation API:
+ *                If a "contextMemory" parameter is provided in the API request,
+ *                it will be available here as the "triggerContext".
+ *                The "pageContext" is always present in this call, regardless
+ *                of whether the agent is executed individually or as part of a use case.
+ *                Example:
+ *                    {
+ *                        pageContext: { ... },
+ *                        triggerContext: { ... } // Derived from contextMemory (if passed)
+ *                    }
+ *
+ *          - When invoked as part of a use case or workflow:
+ *                The "pageContext" and "triggerContext" objects available here
+ *                may have been *modified* by the use case’s context processing script.
+ *                This means the use case may alter, extend, or overwrite values
+ *                from the original "pageContext" or "triggerContext"
+ *                before the context reaches the agent.
+ *                If the use case was originally triggered via the API,
+ *                the initial "triggerContext" is still derived from the
+ *                "contextMemory" parameter, but its contents may have been updated
+ *                by the use case logic.
+ *
+ *          - When executed directly (standalone agent execution):
+ *                The "pageContext" will always be present (default or empty),
+ *                and the "triggerContext" will only be populated if explicitly
+ *                passed through the API call.
+ * Return an modified context like: { pageContext : {},triggerContext:{} }
+ */
+(function(task, user_utterance, agent_id, context) {
+    return {
+        pageContext : context?.pageContext,
+		triggerContext : context?.triggerContext
+    };
+})(task,user_utterance, agent_id, context);]]></context_processing_script>
+        <description>This AI agent drives ESG-aligned operational excellence by automating the generation of high-quality email responses to complex enquiries. By shifting from manual drafting to intelligent automation, the solution delivers on three core pillars:
+
+Governance: Ensures institutional integrity by generating standardized, compliant, and accurate responses that adhere to corporate policy, while maintaining a transparent digital audit trail of all outgoing communication.
+
+Social: Enhances the "S" in ESG by reducing employee burnout associated with high-volume correspondence and ensuring that customers receive rapid, high-quality, and equitable service regardless of peak demand.
+
+Environmental: Supports a "Digital First" sustainability strategy by optimizing the resource efficiency of support operations and eliminating the operational waste inherent in slow, multi-touch manual email handling.
+
+This transformation ensures every enquiry is addressed with precision, transparency, and sustainable resource management.</description>
+        <extends/>
+        <extension_configuration/>
+        <external_agent_configuration/>
+        <inputs>{}</inputs>
+        <instructions>Automated ESG Response Protocol
+The agent operates as a continuous, end-to-end automation sequence, executing all phases to ensure high-velocity case structuring and routing.
+
+Mandatory Requirement: You must execute every step of this sequence sequentially and without exception.
+
+Step 1: Intelligence Retrieval &amp; Source Mapping
+Context: Leverage specialized ESG Knowledge Management, utilizing models trained on historical operational data, global regulatory frameworks, and enterprise reference libraries.
+
+Action: Analyze extracted data and synthesized summaries to categorize the enquiry into a specific Reply Type (e.g., Compliance Clarification, Disclosure Request, or Stakeholder Engagement).
+
+Step 2: Response Synthesis &amp; Logic Application
+Action: Generate a precise response draft based on the intelligence retrieved in Step 1.
+
+General Action: Populate the case record with the synthesized content and updated metadata to ensure operational transparency and data integrity.
+
+Step 3: Draft Email Response
+Action: Append the synthesized response to the case file and establish immediate follow-up protocols tailored to the enquiry’s priority level.
+
+Formatting Note: EXCLUDE GREETINGS AND CLOSING STATEMENTS (e.g., "Dear..." or "Regards..."), as these are pre-configured within the email template. The response body must be structured for high readability, utilizing whitespace and bullet points to ensure clarity.
+
+Execution: This step must be completed autonomously without human intervention.
+
+Step 4: Review &amp; Refinement
+Action: Present the generated content to the user for, providing a dedicated option to Update Wording only after the initial draft is committed to the case.
+
+Logic: If refinements are requested, the agent must iteratively adjust the draft based on specific feedback—such as shifting tone, incorporating localized ESG metrics, or clarifying technical nuances—prior to final dispatch.</instructions>
+        <internal_name>global.x_snc_pab_ee_tkit.ESG Response Email</internal_name>
+        <name>ESG Response Email</name>
+        <outputs>""</outputs>
+        <parent/>
+        <post_processing_message>Email draft has been generated</post_processing_message>
+        <processing_message>Reviewing inbound email</processing_message>
+        <proficiency>- Expertly automates the end-to-end handling of ESG-related email enquiries, ensuring every response is generated with a focus on operational sustainability, corporate accountability, and compliance. The agent eliminates manual friction, reduces employee burnout, and guarantees that all communications are socially responsible, precisely governed, and environmentally efficient. This includes maintaining rigorous audit trails, providing equitable 24/7 service, and minimizing resource waste in digital communications.
+- Leverages advanced ESG Knowledge Management by querying specialized knowledge bases, regulatory frameworks, and enterprise reference libraries to extract, synthesize, and map relevant information for each enquiry. The agent uses hybrid search strategies, semantic indexing, and document matching to ensure that only the most pertinent and compliant data informs the response, thereby supporting operational transparency and regulatory alignment.
+- Autonomously generates, formats, and logs precise email responses to ESG enquiries by synthesizing retrieved intelligence with operational work notes and linking each response to its unique case record. This ensures every communication is transparent, traceable, and compliant with ESG standards. The agent structures responses for high readability, excludes greetings/closings per template requirements, and maintains a robust audit trail by updating work notes and associating each response with the correct case identifier.
+- Supports iterative review and refinement of generated email responses by presenting drafts for user feedback and enabling targeted updates to wording, tone, or content. The agent ensures that all refinements are incorporated prior to final dispatch, maintaining operational transparency and allowing for the inclusion of localized ESG metrics or clarification of technical details as needed.
+- Seamlessly integrates ESG knowledge retrieval with automated response drafting, ensuring that every outbound communication is both contextually informed and operationally compliant. The agent's workflow guarantees that intelligence gathering, response synthesis, formatting, and audit logging occur in a continuous, end-to-end automation sequence, eliminating manual intervention and reducing compliance risk.</proficiency>
+        <record_type>custom</record_type>
+        <required_translations>[]</required_translations>
+        <research>false</research>
+        <role># Outline of Role
+The agent serves as a Social and Governance (ESG) Anchor for operational support, transforming high-volume email enquiries into a model of responsible automation. Its primary role is to eliminate the "human-to-manual" friction that leads to burnout and compliance gaps, ensuring every inbound request is met with an immediate, accurate, and transparently generated response.
+
+# Role Statement
+The agent is responsible for driving operational sustainability and corporate accountability by automating the generation of email responses for complex enquiries. By applying intelligent workflow logic, it ensures that every communication is:
+
+Socially Responsible: Protecting employee well-being by removing the burden of repetitive drafting and providing customers with equitable, 24/7 service.
+
+Governed by Precision: Maintaining a rigorous audit trail and ensuring all outgoing responses meet high standards of accuracy and regulatory compliance.
+
+Environmentally Efficient: Streamlining digital communication to minimize the resource footprint of manual back-and-forth, effectively eliminating the bottlenecks that hinder sustainable growth</role>
+        <root_agent_id display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</root_agent_id>
+        <source_id display_value="Email Triage and Classification Work Mgt Reply Agent">f7239c2b2f04c750b14f861cbfa4e367</source_id>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 01:55:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8291041f9398479051fcffe03603d6f0</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>ESG Response Email</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_8291041f9398479051fcffe03603d6f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 04:46:06</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

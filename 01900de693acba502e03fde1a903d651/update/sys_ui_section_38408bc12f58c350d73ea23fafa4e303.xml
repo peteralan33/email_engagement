@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="38408bc12f58c350d73ea23fafa4e303" sys_domain="global" table="sn_bom_service_definition" version="3" view="Email_Categorization_Filter_">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>table</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:54</sys_created_on>
+            <sys_id>fc408bc12f58c350d73ea23fafa4e312</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:54</sys_created_on>
+            <sys_id>f4408bc12f58c350d73ea23fafa4e314</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>id</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:54</sys_created_on>
+            <sys_id>74408bc12f58c350d73ea23fafa4e315</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:54</sys_created_on>
+            <sys_id>f0408bc12f58c350d73ea23fafa4e316</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>order</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:54</sys_created_on>
+            <sys_id>70408bc12f58c350d73ea23fafa4e317</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_type</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:54</sys_created_on>
+            <sys_id>fc408bc12f58c350d73ea23fafa4e317</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:55</sys_created_on>
+            <sys_id>7c408bc12f58c350d73ea23fafa4e318</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:55</sys_created_on>
+            <sys_id>f8408bc12f58c350d73ea23fafa4e319</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:55</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:55</sys_created_on>
+            <sys_id>78408bc12f58c350d73ea23fafa4e31a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>template</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:55</sys_created_on>
+            <sys_id>f4408bc12f58c350d73ea23fafa4e31b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>image</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:55</sys_created_on>
+            <sys_id>74408bc12f58c350d73ea23fafa4e31c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_service_definition" sys_domain="global" view="a0404bc12f58c350d73ea23fafa4e3f9">38408bc12f58c350d73ea23fafa4e303</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sn_bom_service_definition</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-15 16:01:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>38408bc12f58c350d73ea23fafa4e303</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_bom_service_definition</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+            <sys_update_name>sys_ui_section_38408bc12f58c350d73ea23fafa4e303</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-15 16:01:54</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Email Categorization Filter " name="Email_Categorization_Filter_">a0404bc12f58c350d73ea23fafa4e3f9</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

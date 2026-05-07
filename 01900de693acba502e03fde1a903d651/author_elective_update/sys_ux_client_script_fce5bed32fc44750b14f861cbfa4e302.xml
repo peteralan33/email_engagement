@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="CSM default record page (Skill Demo)">58e532d32fc44750b14f861cbfa4e34c</macroponent>
+        <name>AI Banner Display</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({ api, event, helpers, imports }) {
+    const { table } = api.context.props;
+    
+    const solutionMeta = api.state.solutionMeta;
+    if (Object.keys(solutionMeta).length === 0) {
+        // on change predictions don't support filterInactivePredictions, ultimately used in the API script includes
+        const queryParams = `tableName=${table}&sysId=${-1}`;
+        helpers.snHttp(
+            "/api/sn_csm_ml_task/categorization/get_solution_meta?" + queryParams, 
+            { method: "GET" }
+        ).then(({ response: { result } }) => {
+            showBanner(result);
+            api.setState("solutionMeta", result);
+        });
+    } else {
+        showBanner(solutionMeta);
+    }
+
+    function showBanner(solutionMeta) {
+        const { inputFields, outputFields, autofillConstant } = solutionMeta;
+        const unsavedChanges = JSON.parse(api.data.record.unsavedChanges).map((c) => c.name);
+        if (getIntersection(inputFields, unsavedChanges).length > 0) {
+            // only include fields that are labeled as autofill
+            const filterFields = event.payload.fieldNames.filter(function(field) {
+                const fieldOutputMeta = outputFields.find(function (ofield) { return field === ofield.name; });
+                if (!fieldOutputMeta) return false;
+                return fieldOutputMeta.implementationPlan === autofillConstant;
+            });
+            if (filterFields.length > 0) {
+                const rawMessage = "Check fields predicted by AI for accuracy as values might have been modified and save the updated predictions: ";
+                helpers.translate(rawMessage).then(message => {
+                    api.data.record.removeAllFormMessages();
+                    api.data.record.addFormMessage({
+                        message: message,
+                        type: "suggestion",
+                        messageOptions: {
+                            linksToFields: filterFields
+                        }
+                    });
+                });
+            }
+        }
+    }
+
+    function getIntersection(a, b) {
+        return a.filter(value => b.includes(value));
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 04:47:13</sys_created_on>
+        <sys_id>fce5bed32fc44750b14f861cbfa4e302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AI Banner Display</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_fce5bed32fc44750b14f861cbfa4e302</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:47:13</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_client_script_fce5bed32fc44750b14f861cbfa4e302</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="CSM default record page (Skill Demo)"&gt;58e532d32fc44750b14f861cbfa4e34c&lt;/macroponent&gt;&lt;name&gt;AI Banner Display&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({ api, event, helpers, imports }) {
+    const { table } = api.context.props;
+    
+    const solutionMeta = api.state.solutionMeta;
+    if (Object.keys(solutionMeta).length === 0) {
+        // on change predictions don't support filterInactivePredictions, ultimately used in the API script includes
+        const queryParams = `tableName=${table}&amp;sysId=${-1}`;
+        helpers.snHttp(
+            "/api/sn_csm_ml_task/categorization/get_solution_meta?" + queryParams, 
+            { method: "GET" }
+        ).then(({ response: { result } }) =&gt; {
+            showBanner(result);
+            api.setState("solutionMeta", result);
+        });
+    } else {
+        showBanner(solutionMeta);
+    }
+
+    function showBanner(solutionMeta) {
+        const { inputFields, outputFields, autofillConstant } = solutionMeta;
+        const unsavedChanges = JSON.parse(api.data.record.unsavedChanges).map((c) =&gt; c.name);
+        if (getIntersection(inputFields, unsavedChanges).length &gt; 0) {
+            // only include fields that are labeled as autofill
+            const filterFields = event.payload.fieldNames.filter(function(field) {
+                const fieldOutputMeta = outputFields.find(function (ofield) { return field === ofield.name; });
+                if (!fieldOutputMeta) return false;
+                return fieldOutputMeta.implementationPlan === autofillConstant;
+            });
+            if (filterFields.length &gt; 0) {
+                const rawMessage = "Check fields predicted by AI for accuracy as values might have been modified and save the updated predictions: ";
+                helpers.translate(rawMessage).then(message =&gt; {
+                    api.data.record.removeAllFormMessages();
+                    api.data.record.addFormMessage({
+                        message: message,
+                        type: "suggestion",
+                        messageOptions: {
+                            linksToFields: filterFields
+                        }
+                    });
+                });
+            }
+        }
+    }
+
+    function getIntersection(a, b) {
+        return a.filter(value =&gt; b.includes(value));
+    }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-10 04:47:13&lt;/sys_created_on&gt;&lt;sys_id&gt;fce5bed32fc44750b14f861cbfa4e302&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;AI Banner Display&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_fce5bed32fc44750b14f861cbfa4e302&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-10 04:47:13&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1133885271</payload_hash>
+        <record_name>AI Banner Display</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 04:47:13</sys_created_on>
+        <sys_id>f8e5bed32fc44750b14f861cbfa4e31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d75b732490000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:47:13</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>78e5bed350c44750f1a13de8976e721e</update_guid>
+        <update_guid_history>78e5bed350c44750f1a13de8976e721e:-1133885271</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 04:52:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>a7993860402e41ceb88e138f9bbe9864</sys_id>
+        <sys_metadata>fce5bed32fc44750b14f861cbfa4e302</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AI Banner Display</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_fce5bed32fc44750b14f861cbfa4e302</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_fce5bed32fc44750b14f861cbfa4e302">f8e5bed32fc44750b14f861cbfa4e31f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:52:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

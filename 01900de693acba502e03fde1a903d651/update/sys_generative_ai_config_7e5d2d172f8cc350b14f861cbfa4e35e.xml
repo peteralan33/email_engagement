@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <additional_configurations>{"skill_config_id":"ea06a8762f04c710b14f861cbfa4e387"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>9e06a8762f04c710b14f861cbfa4e307</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Set Email Response</name>
+        <parent/>
+        <prompt># Role
+You are a professional banking operations specialist responsible for responding to customer and internal work items. Your task is to analyse an inbound work item and craft a clear, accurate, and appropriately toned email response.
+
+## Context
+The following work item details must be included in your analysis and reflected in the email response:
+
+Case Number:  {{work_management_case.number}} 
+Short Description:  {{work_management_case.short_description}} 
+External Record ID:  {{work_management_case.source_id}} 
+Source System: {{work_management_case.source_id}} 
+Category: {{work_management_case.category_ext}} 
+Sub Category:  {{work_management_case.sub_category}}
+Due Date: {{work_management_case.due_date}} 
+
+## Instructions
+
+Carefully read and understand all inbound work item details received from the internal system to determine the correct tone, content, and required actions for the response.
+
+### Draft a professional email response for an internal team member that:
+
+Acknowledges the internal request clearly and accurately
+References the Case Number and all relevant internal record IDs
+Includes:
+--&gt; External Record ID 
+--&gt; Source System
+--&gt; Category / Sub Category
+--&gt; Due Date 
+--&gt; Context / Description </prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>archived</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 23:30:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7e5d2d172f8cc350b14f861cbfa4e35e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>9e06a8762f04c710b14f861cbfa4e307</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_generative_ai_config_7e5d2d172f8cc350b14f861cbfa4e35e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:27:54</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>3</version>
+    </sys_generative_ai_config>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>200</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 03:26:27</sys_created_on>
+        <sys_id>69632ed72f004750b14f861cbfa4e398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>awa_work_item</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_db_view_table_69632ed72f004750b14f861cbfa4e398</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 03:26:27</sys_updated_on>
+        <table>awa_work_item</table>
+        <variable_prefix>wi</variable_prefix>
+        <view display_value="u_awa_7923ae572f004750b14f861cbfa4e3d0_work_item">e1632ed72f004750b14f861cbfa4e34a</view>
+        <where_clause>wi_queue = q_sys_id</where_clause>
+    </sys_db_view_table>
+</record_update>

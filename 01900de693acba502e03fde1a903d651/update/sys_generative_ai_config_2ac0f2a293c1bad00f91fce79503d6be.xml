@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
     <sys_generative_ai_config action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <additional_configurations>{"skill_config_id":"3a6aae7a2fe43a50b14f861cbfa4e3d0"}</additional_configurations>
         <ai_suggested>false</ai_suggested>
         <definition>8a6a6e7a2fe43a50b14f861cbfa4e36c</definition>
         <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
         <max_tokens>500</max_tokens>
         <min_word_count>-1</min_word_count>
         <model>llm_generic_small</model>
         <name>Set Service Definition</name>
-        <parent display_value="OneExtend Capability Definition: Determine Service Definition from Email (Now LLM Service - Now LLM Generic)">17ede2ea9381bad00f91fce79503d6b9</parent>
+        <parent/>
         <prompt>## Role
 You are a highly analytical and meticulous triage analyst. Your task is to analyze inbound interactions and the attached emails to deduce the most appropriate service definition and target table.
 
@@ -64,16 +65,19 @@ This is a summary of why this classification was made
 A detailed description of why this classification was chosen
 </prompt>
         <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
         <request_tokens>32018</request_tokens>
         <show_in_prompt_library>true</show_in_prompt_library>
-        <state>published</state>
+        <state>archived</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 17:21:09</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2ac0f2a293c1bad00f91fce79503d6be</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>8a6a6e7a2fe43a50b14f861cbfa4e36c</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -81,7 +85,7 @@ A detailed description of why this classification was chosen
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_generative_ai_config_2ac0f2a293c1bad00f91fce79503d6be</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 17:23:55</sys_updated_on>
+        <sys_updated_on>2026-04-15 22:13:55</sys_updated_on>
         <temperature>0.2</temperature>
         <thinking_tokens>0</thinking_tokens>
         <version>5</version>
