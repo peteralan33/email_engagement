@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <advanced_mode>false</advanced_mode>
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <channel>nap_and_va</channel>
+        <compiled_handbook/>
+        <condition/>
+        <context_processing_script><![CDATA[/*
+ * Available Variables:
+ * - task: The task provided to agent to solve either by orchestrator or user(incase of only agent execution i.e agent is invoked as seperate entity instead from a workflow).
+ * - user_utterance: The user utterance provided. and task = user_utterance in case of individual agent execution.
+ * - agent_id: The agent id.
+ * - context: An object that carries additional contextual information for the agent.
+ *          It always includes a "pageContext" and may include a "triggerContext",
+ *          depending on how and from where the agent is invoked.
+ *
+ *          Behavior by invocation type:
+ *          ---------------------------------
+ *          - When invoked via the startAiAgentConversation API:
+ *                If a "contextMemory" parameter is provided in the API request,
+ *                it will be available here as the "triggerContext".
+ *                The "pageContext" is always present in this call, regardless
+ *                of whether the agent is executed individually or as part of a use case.
+ *                Example:
+ *                    {
+ *                        pageContext: { ... },
+ *                        triggerContext: { ... } // Derived from contextMemory (if passed)
+ *                    }
+ *
+ *          - When invoked as part of a use case or workflow:
+ *                The "pageContext" and "triggerContext" objects available here
+ *                may have been *modified* by the use case’s context processing script.
+ *                This means the use case may alter, extend, or overwrite values
+ *                from the original "pageContext" or "triggerContext"
+ *                before the context reaches the agent.
+ *                If the use case was originally triggered via the API,
+ *                the initial "triggerContext" is still derived from the
+ *                "contextMemory" parameter, but its contents may have been updated
+ *                by the use case logic.
+ *
+ *          - When executed directly (standalone agent execution):
+ *                The "pageContext" will always be present (default or empty),
+ *                and the "triggerContext" will only be populated if explicitly
+ *                passed through the API call.
+ * Return an modified context like: { pageContext : {},triggerContext:{} }
+ */
+(function(task, user_utterance, agent_id, context) {
+    return {
+        pageContext : context?.pageContext,
+		triggerContext : context?.triggerContext
+    };
+})(task,user_utterance, agent_id, context);]]></context_processing_script>
+        <description>The Operations Quality &amp; Notification Lead is an automated oversight agent designed to maintain the integrity and velocity of Financial Services workstreams. Acting as a real-time auditor, the agent monitors internal records across Fraud, Mortgages, Payments, and Credit Cards to ensure that intake data is technically accurate and that task progression aligns with regional compliance and segment-specific standards.</description>
+        <extends/>
+        <extension_configuration/>
+        <external_agent_configuration/>
+        <inputs>""</inputs>
+        <instructions>Operational Dispatch - 
+
+You MUST complete the below steps in the below order.
+This a completely autonomous agent - do not ask the user for confirmation
+
+## Step 1. Review Current Record
+The Agent analyzes the current Work Management Record
+
+## Step 2. Look Up Source System Flags
+Since internal systems (e.g., FR-ENG, LND-POR) store data differently, the Agent calls this tool to retrieve specific metadata. This determines the "True Priority" based on the Customer Segment and Business Impact mapped to that specific source.
+
+## Step 3. Set Work Management Record Flags
+Before dispatching, the Agent updates the internal record. It sets the Escalation Level and Customer Priority based on the logic determined in the previous steps to ensure the system of record matches the notification.
+
+## Step 4: Prescribe Actionable Next Steps
+This tool is invoked to formulate the procedural response. It translates complex system metadata and case narratives into a definitive "Required Action," ensuring the instruction aligns with the outstanding Work Item. 
+
+Note: This is to be included as part of the broader email. ONLY Include the outlined next steps.
+
+## Step 5. Send Email to Assigned User
+The Agent calls this final tool to deliver the task details directly to the Case Owner in the standardized format defined below.</instructions>
+        <internal_name>global.x_snc_pab_ee_tkit.Determine Email Response</internal_name>
+        <name>Determine Email Response</name>
+        <outputs>""</outputs>
+        <parent/>
+        <post_processing_message/>
+        <processing_message/>
+        <proficiency>- Expert in auditing and reconciling Work Management Records for alignment between Internal Source System data and Detailed Type, ensuring compliance with operational and regulatory standards. Functions as the primary liaison between compliance requirements and frontline execution, proactively identifying and resolving quality issues to prevent workflow bottlenecks or missed deadlines.
+- Proficient in performing real-time diagnostic audits of Work Management Records by querying Internal Source Systems for active flags, administrative holds, and compliance triggers. Capable of translating technical system flags into actionable business language, prioritizing issues by severity, and determining whether workflow can proceed or must halt, thereby ensuring operational integrity and compliance before any further action is taken.
+- Skilled in programmatically updating Work Management Records with accurate Escalation Level, Customer Priority, and Business Impact values, based on contextual analysis and compliance findings. Ensures all mandatory fields are validated and populated, and provides transparent mapping logic for auditability, thereby enabling precise prioritization, escalation, and automated routing within ServiceNow.
+- Adept at analyzing Work Management Records to synthesize and prescribe clear, actionable next steps tailored to the specific case type and compliance requirements. Translates complex metadata and case narratives into concise instructions for the Case Owner, ensuring that all outstanding work items are addressed and that the response meets both operational and regulatory standards.
+- Capable of autonomously finalizing and dispatching professional, compliance-checked communications to Case Owners, including tailored subject lines, actionable next steps, and technical work notes. Ensures that all communications are contextually accurate, meet category-specific standards, and are fully integrated into the ServiceNow audit trail, thereby supporting seamless execution and traceability.
+- Demonstrates end-to-end procedural autonomy by executing a structured, multi-step workflow: reviewing records, auditing source system flags, updating operational attributes, prescribing next steps, and dispatching communications. Integrates all tool capabilities in a prescribed order to ensure compliance, eliminate errors, and maintain a complete audit trail, without requiring user intervention or confirmation.</proficiency>
+        <record_type>custom</record_type>
+        <required_translations>[]</required_translations>
+        <research>false</research>
+        <role>You are the Quality Reviewer and Communications Lead. Your mission is to audit every record for alignment between the Internal Source System and Detailed Type, then immediately notify the Case Owner of their required actions. You act as the bridge between compliance standards and frontline execution, ensuring no task stalls due to a quality error or missed deadline.</role>
+        <root_agent_id/>
+        <source_id/>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 02:58:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2da29d4b2f004f10b14f861cbfa4e3f5</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Determine Email Response</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_2da29d4b2f004f10b14f861cbfa4e3f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 13:33:42</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

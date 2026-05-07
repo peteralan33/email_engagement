@@ -2,64 +2,62 @@
     <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
         <active>true</active>
         <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
-        <description>Purpose
-The Automated Case Generation via Classification (ACGA) tool is responsible for instantly formalizing the customer's request into a structured support case in the target system. It leverages the precise classification data from the preceding step to ensure accurate and immediate case record creation, thereby initiating the workflow for fulfillment.
+        <description>Tool: Automated Case Generation via Classification (ACGA)
+Purpose
+The Automated Case Generation via Classification (ACGA) tool is the primary execution engine for record formalization. It transforms analyzed intent into a structured, trackable case within the system of record. By leveraging high-fidelity classification data, it ensures that every case is initiated with the exact technical parameters required for automated routing and fulfillment.
 
 Data Prerequisites
-Before executing this step, the AI Agent must have successfully run the Customer Look-Up Tool and the Disruption Service Case Lookup Tool to secure required reference numbers. Crucially, the Specialized Case Classification (Step 4) must have determined the exact case type and system IDs.
+Identity &amp; Status Validation: Successful execution of the Customer Look-Up and Disruption Service Case Lookup tools.
 
-Input Parameters and Context
-Parameter: interaction
-Source: Interaction Record (Primary Input): The definitive record of the customer interaction.
-Use: Need to link the interaction to the new case for auditing purposes
+Input Parameters
+Interaction Sys Id (interaction): The Interaction Record SysID used as the foundational anchor to maintain a 1:1 audit trail between the conversation and the case.
 
-Parameter Name: table_name
-Source: Specialized Case Classification (Step 4) - this will be found under Service Definition Table
-Use: Provides the table that has been determined for processing 
-MANDATORY CONSIDERATION - Must match the predefined return format exactly, e.g., sn_bom_treasury_wire_service
+Table Name (target_table):
+--&gt; Source: Output from Step 6.1 (Specialized Case Classification).
+--&gt; Definition: The backend name of the ServiceNow table (e.g., sn_bom_treasury_wire_service) where the record will be created. This allows for dynamic record retrieval and creation.
 
-Parameter Name: business_activity
-Source: Specialized Case Classification (Step 4)  - this will be found under Service Definition SysID
-Use: Provides the specific business activity that has been determined for processing
-MANDATORY CONSIDERATION - Must match the predefined return format exactly, e.g., f565708f2fec7a50b14f861cbfa4e359
+System Definition Sys ID (sys_definition_id):
+--&gt; Source: Output from Step .1 (Specialized Case Classification).
+--&gt; Definition: The unique GUID from the System Definition table that identifies the specific configuration or metadata record linked to this disruption.
 
-Parameter Name: summary 
-Source: Agent Synthesis 
-Use: Generate a concise, human-readable subject line within 80 characters that identifies the primary blocking issue. Instruction: Summarize the core discrepancy requiring human intervention. The summary must enable a human operator to understand the urgency and nature of the task without opening the case file. 
-Example Output: "Urgent: Settlement Date Discrepancy on JP Morgan Trade"
+Summary (summary): A concise, high-impact headline (max 80 characters). Directive: Define the primary blocking issue so a human agent can assess urgency at a glance.
 
-Parameter Name: description
-Source: Agent's Discretion 
-Use: To provide a detailed overview of the core issue and classification.
+Description (description): A technical overview of the core issue, synthesized from the inbound request and classification findings.
 
-Parameter Name: workNotes
-Source: Agent's Discretion
-Use: To provide a complete, actionable summary of the interaction so far, ensuring a human agent can seamlessly take over without needing the customer to repeat information.
+Work Notes (work_notes): An internal-facing audit summary documenting the interaction history to ensure a seamless hand-off to the resolving agent.
 
-Actions &amp; Logic
-Case Creation: The tool initiates an API call to the target system, instantly creating a new support case record.
+Action &amp; Logic
+Record Instantiation: The tool executes a direct system call to generate the case record within the specified Table Name.
 
-Field Population: It strictly uses the classification outputs and provided input parameters to pre-populate all relevant fields. It ensures that the Case Table and Business Activity ID adhere strictly to the system's predefined format, which is necessary for the post-creation routing logic to execute correctly.
+Precise Field Injection: It strictly populates the Business Activity and metadata fields. The logic enforces a "no-variation" policy on system IDs to ensure post-creation routing engines trigger correctly.
 
-Contextual Documentation: The provided summary and description are used to fully document the case record, offering immediate clarity on the nature and context of the request for the human agent who will manage it next.
+Contextual Documentation: It synthesizes the Summary and Description to provide immediate operational clarity, eliminating the need for the resolving agent to perform redundant analysis.
 
-Key Outputs Determined
-The main output is the New Case Reference Number generated by the target system for the newly created support record, confirming successful case instantiation.</description>
+Key Output
+New Case Reference Number: The unique system identifier for the newly instantiated record, confirming successful entry into the fulfillment workflow.</description>
+        <display_mode>inline</display_mode>
         <display_output>true</display_output>
         <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>9510f586938576d00f91fce79503d6a4</entity_id>
         <execution_mode>autopilot</execution_mode>
         <inputs>[]</inputs>
         <max_auto_executions>10</max_auto_executions>
         <name>Automated Case Generation via Classification (ACGA)</name>
         <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_message/>
         <post_processing_script/>
         <pre_message>Creating new case record</pre_message>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
         <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 15:02:47</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>fb115ae6938d7ad00f91fce79503d664</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Automated Case Generation via Classification (ACGA)</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -67,9 +65,11 @@ The main output is the New Case Reference Number generated by the target system 
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sn_aia_agent_tool_m2m_fb115ae6938d7ad00f91fce79503d664</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-29 01:12:57</sys_updated_on>
-        <tool display_value="Create new case record via classification">a040097e9385fad00f91fce79503d623</tool>
+        <sys_updated_on>2026-04-21 05:41:21</sys_updated_on>
+        <timeout/>
+        <tool display_value="Create new case record via skill classification">0bdf5ff6935c039051fcffe03603d63d</tool>
         <tool_attributes>{}</tool_attributes>
         <transformation_instructions>undefined</transformation_instructions>
+        <widgets/>
     </sn_aia_agent_tool_m2m>
 </record_update>

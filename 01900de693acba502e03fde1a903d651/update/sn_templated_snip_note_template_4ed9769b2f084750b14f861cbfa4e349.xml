@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_templated_snip_note_template">
+    <sn_templated_snip_note_template action="INSERT_OR_UPDATE">
+        <condition/>
+        <group_visibility/>
+        <html_script_body><![CDATA[<p data-path-to-node="5">Team,</p>
+<p data-path-to-node="6">I am providing a status update on ${number}. Work is currently underway, and we have reached the following milestone:</p>
+<p data-path-to-node="7,0,0">Case NumberL ${number}</p>
+<p data-path-to-node="7,0,0">Current Status: ${state}</p>
+<p data-path-to-node="7,1,0">Completed Thus Far:&nbsp;</p>
+<p data-path-to-node="7,2,0">Next Steps: [e.g., Proceeding to testing / Awaiting vendor feedback]</p>
+<p data-path-to-node="8">We are currently on track for the estimated completion date of ${expected_start}. I will provide further updates as the work progresses.</p>
+<p data-path-to-node="9">&nbsp;</p>]]></html_script_body>
+        <language>en</language>
+        <name>Work Item in Progress</name>
+        <short_name>work_item_wip</short_name>
+        <sys_class_name>sn_templated_snip_note_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 05:04:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4ed9769b2f084750b14f861cbfa4e349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work Item in Progress</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_templated_snip_note_template_4ed9769b2f084750b14f861cbfa4e349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 05:04:58</sys_updated_on>
+        <table>x_snc_pab_ee_tkit_work_management_case</table>
+    </sn_templated_snip_note_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ed9769b2f084750b14f861cbfa4e349"/>
+</record_update>

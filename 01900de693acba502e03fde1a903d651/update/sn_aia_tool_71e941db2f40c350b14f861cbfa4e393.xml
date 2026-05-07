@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Look Up Source Records Flags</description>
+        <input_schema>[]</input_schema>
+        <name>Look Up Source Records Flags</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[undefined]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 20:55:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>71e941db2f40c350b14f861cbfa4e393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Look Up Source Records Flags</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_71e941db2f40c350b14f861cbfa4e393</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 20:55:26</sys_updated_on>
+        <target_document>0dafcfcf2f84cf10b14f861cbfa4e361</target_document>
+        <target_document_table>sys_hub_flow</target_document_table>
+        <type>subflow</type>
+    </sn_aia_tool>
+</record_update>

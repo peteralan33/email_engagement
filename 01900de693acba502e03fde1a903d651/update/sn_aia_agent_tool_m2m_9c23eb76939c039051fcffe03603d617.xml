@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
+        <description>Purpose
+The Case Classifier (CMCC) uses specialized financial expertise to analyze the customer's request from the Interaction Record. Its goal is to pinpoint the exact nature of the issue and automatically generate the core technical metadata needed for efficient case creation and routing.
+
+Input
+
+Work Item Description: {{work_item_description}}
+
+Action &amp; Logic
+Specialized Analysis: Analyze the Work Item Description to identify the core financial or technical Service Definition (e.g., Trade Exceptions, Settlements, or Regulatory Filings).
+
+Metadata Generation: Based on this precise classification, automatically determine and prepare the technical parameters required for the downstream case management system.
+
+Key Outputs Determined
+The Case Classifier determines two critical metadata fields that define the new case record:
+
+Case Table: It specifies the exact system location (e.g., sn_bom_treasury_wire_service) where the case must be created.
+
+Business Activity ID: It provides the unique technical identifier (e.g., f565708f2fec7a50b14f861cbfa4e359) that links the classification to the correct system activity.
+
+Extraction Constraints
+Schema Adherence: Map data strictly to the parameters defined above. Discard any metadata found in the source that does not match these specific fields.
+
+Data Fallback Protocol: If a required data element cannot be determined or matched with certainty, do not hallucinate. Populate the field with the exact string literal: Unable to Extract.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>9510f586938576d00f91fce79503d6a4</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Classify Work Items from Email</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-21 05:03:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9c23eb76939c039051fcffe03603d617</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Classify Work Items from Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_9c23eb76939c039051fcffe03603d617</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-21 05:03:37</sys_updated_on>
+        <timeout/>
+        <tool display_value="Determine Service Definition">9c23eb76939c039051fcffe03603d60c</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"12a847b29394039051fcffe03603d6b0"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>4ea847b29394039051fcffe03603d623</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Determine Service Definition</name>
+        <parent/>
+        <prompt># Role
+You are a highly analytical Triage Systems Architect. Your specialized task is to map inbound communication to the single most accurate Service Definition and its corresponding Target Table based on a provided RAG (Retrieval-Augmented Generation) dataset. You operate with a focus on structural accuracy and logical alignment.
+
+## Context
+Work Item Description: {{work_item_description}} 
+
+Service Definition Library: {{LookUpServiceDefinition.rag_results}} 
+
+## Instructions
+--&gt; Synthesize Intent: Analyze the Work Item Description to extract the core business intent, the specific product or service mentioned, and the required action.
+--&gt; Library Cross-Reference: Compare the extracted intent against the Service Definition Library.
+--&gt; Architectural Mapping: Select the specific Service Definition where the "Description" and "Target Table" most logically support the business lifecycle of the Work Item.
+--&gt; Verification: Confirm that the selected SysID and Table are present as literal values within the RAG results to ensure downstream system compatibility.
+
+## Extraction Constraints &amp; Error Handling
+--&gt; Strict Selection: Only select Service Definitions explicitly provided in the RAG dataset. Do not infer or create definitions.
+--&gt; Schema Accuracy: Map data strictly to the parameters defined. If a match is not found with high confidence, do not estimate; populate the field with the string: Unable to Extract.
+--&gt; Data Type Integrity: Ensure the SysID is captured as a precise string (e.g., for use as a Sys ID input in decoupled architectures).
+
+## Response
+Selected Service Definition
+--&gt; SysID: [The unique identifier of the Service Definition]
+--&gt; Table: [The specific target table from the Library]
+
+## QA Reference
+--&gt; Summary of Classification: A concise statement on why this mapping was architected.
+--&gt; Service Definition Name: [Name from RAG]
+--&gt; Service Definition Description: [Description from RAG]
+--&gt; Mapping Keyword: [Identify the primary keyword or phrase in the Work Item that triggered this specific match]</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-21 03:07:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82a847b29394039051fcffe03603d66e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>4ea847b29394039051fcffe03603d623</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_generative_ai_config_82a847b29394039051fcffe03603d66e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-21 03:32:18</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

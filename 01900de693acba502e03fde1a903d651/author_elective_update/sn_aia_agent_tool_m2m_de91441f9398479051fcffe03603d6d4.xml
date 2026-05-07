@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Work Mgt Reply Agent (Copy 2)">8291041f9398479051fcffe03603d6f0</agent>
+        <description>Purpose
+The Work Management Record Enrichment (WMRE) tool serves as the authoritative data consolidator. Its primary function is to maintain a unified "Source of Truth" by programmatically integrating extracted email context, availability status, and case updates directly into the master Work Management Record.
+
+Inputs
+Master Work Management Record: The foundational record governing the task, including current assignment and escalation level.
+
+Enriched Email Context: The structured output containing identified intents, work item counts, and next actions.
+
+State: The current operational status (e.g., "Awaiting Review," "Assigned," or "Pending Reassignment").
+
+Contextual Target
+Target Object: The existing Work Management Record. The WMRE tool performs a stateful update to this object, ensuring all downstream agents and human owners have immediate access to the enriched data set and continuity flags.
+
+Action &amp; Logic
+Seamless Record Injection: The tool executes a direct append of the structured email context into the Work Management Record’s activity log.
+
+Availability Triage Sync: If the inbound context identifies an Out of Office (OOO), the tool updates the record status to "Pending Reassignment" and triggers the link to the backup resource.
+
+State Completion Logic: If the analysis of the inbound communication or document indicates that the final required action has been fulfilled (e.g., a confirmation of funds received or a signed disclosure uploaded), the tool automatically updates the Record State to "Completed." This triggers the final archival workflow and stops all further SLA timers.
+
+Holistic Data Packaging: By synthesizing fragmented inputs—such as raw email intent and technical system flags—the tool creates a comprehensive audit trail. This ensures the record is operationally "complete," reflecting the latest case updates for the next phase of the workflow.
+
+Key Output
+Enriched Work Management Record: A finalized, high-context data package. This record now serves as the validated input for subsequent automated processing, quality review, and final task execution—or acts as the closed master record if the "Completed" state was triggered.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>c08e945b2f408350b14f861cbfa4e3a2</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Update Interaction with Email Context</name>
+        <output_transformation_strategy>paraphrase</output_transformation_strategy>
+        <post_message>Interaction has been enriched</post_message>
+        <post_processing_script/>
+        <pre_message>Interaction is being enriched</pre_message>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 01:55:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>de91441f9398479051fcffe03603d6d4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update Interaction with Email Context</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_de91441f9398479051fcffe03603d6d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 01:55:13</sys_updated_on>
+        <timeout/>
+        <tool display_value="Update Work Management Task">83462ce72fc8c750b14f861cbfa4e300</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_de91441f9398479051fcffe03603d6d4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Email Triage and Classification Work Mgt Reply Agent (Copy 2)">8291041f9398479051fcffe03603d6f0</agent><description>Purpose
+The Work Management Record Enrichment (WMRE) tool serves as the authoritative data consolidator. Its primary function is to maintain a unified "Source of Truth" by programmatically integrating extracted email context, availability status, and case updates directly into the master Work Management Record.
+
+Inputs
+Master Work Management Record: The foundational record governing the task, including current assignment and escalation level.
+
+Enriched Email Context: The structured output containing identified intents, work item counts, and next actions.
+
+State: The current operational status (e.g., "Awaiting Review," "Assigned," or "Pending Reassignment").
+
+Contextual Target
+Target Object: The existing Work Management Record. The WMRE tool performs a stateful update to this object, ensuring all downstream agents and human owners have immediate access to the enriched data set and continuity flags.
+
+Action &amp; Logic
+Seamless Record Injection: The tool executes a direct append of the structured email context into the Work Management Record’s activity log.
+
+Availability Triage Sync: If the inbound context identifies an Out of Office (OOO), the tool updates the record status to "Pending Reassignment" and triggers the link to the backup resource.
+
+State Completion Logic: If the analysis of the inbound communication or document indicates that the final required action has been fulfilled (e.g., a confirmation of funds received or a signed disclosure uploaded), the tool automatically updates the Record State to "Completed." This triggers the final archival workflow and stops all further SLA timers.
+
+Holistic Data Packaging: By synthesizing fragmented inputs—such as raw email intent and technical system flags—the tool creates a comprehensive audit trail. This ensures the record is operationally "complete," reflecting the latest case updates for the next phase of the workflow.
+
+Key Output
+Enriched Work Management Record: A finalized, high-context data package. This record now serves as the validated input for subsequent automated processing, quality review, and final task execution—or acts as the closed master record if the "Completed" state was triggered.</description><display_mode>inline</display_mode><display_output>true</display_output><document_status/><entity>sn_aia_agent</entity><entity_id>c08e945b2f408350b14f861cbfa4e3a2</entity_id><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Update Interaction with Email Context</name><output_transformation_strategy>paraphrase</output_transformation_strategy><post_message>Interaction has been enriched</post_message><post_processing_script/><pre_message>Interaction is being enriched</pre_message><pre_run>false</pre_run><requires_text_refined_message>false</requires_text_refined_message><requires_widget_transformation>true</requires_widget_transformation><should_display_refined_message>false</should_display_refined_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-22 01:55:13</sys_created_on><sys_domain>global</sys_domain><sys_id>de91441f9398479051fcffe03603d6d4</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Update Interaction with Email Context</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_de91441f9398479051fcffe03603d6d4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-22 01:55:13</sys_updated_on><timeout/><tool display_value="Update Work Management Task">83462ce72fc8c750b14f861cbfa4e300</tool><tool_attributes>{}</tool_attributes><transformation_instructions/><widgets>db0e858eff62b210f465ffffffffff2c</widgets></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>24877546</payload_hash>
+        <record_name>Update Interaction with Email Context</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 01:55:13</sys_created_on>
+        <sys_id>d691841f9398479051fcffe03603d612</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19db2e60ae70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 01:55:13</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>9a91441f76984790b84f1e134d3d1ddf</update_guid>
+        <update_guid_history>9a91441f76984790b84f1e134d3d1ddf:24877546,1e91441fd798479064d28c78bcd423da:-1290795440</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Update Interaction with Email Context">b387045b931c479051fcffe03603d642</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 02:21:16</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>50e54a80ecb44059a41fcff1ccf34889</sys_id>
+        <sys_metadata>de91441f9398479051fcffe03603d6d4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Interaction with Email Context</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_de91441f9398479051fcffe03603d6d4</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_de91441f9398479051fcffe03603d6d4">d691841f9398479051fcffe03603d612</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 02:21:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

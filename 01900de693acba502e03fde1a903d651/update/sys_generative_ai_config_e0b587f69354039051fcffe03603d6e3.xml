@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <additional_configurations>{"skill_config_id":"710632ee93c1bad00f91fce79503d623"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>e906feae93c1bad00f91fce79503d631</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Set Service Definition</name>
+        <parent/>
+        <prompt>## Role
+You are a highly analytical and meticulous triage analyst. Your task is to analyze inbound interactions and the attached emails to deduce the most appropriate service definition and target table.
+
+## Context
+The inbound interaction details and email that need to be analyzed are: 
+Interaction: {{interaction.short_description}}
+Interaction attachment summary: {{interaction.x_snc_pab_ee_tkit_attachment_summarize}} 
+Email subject: {{LookUpEmails.email_subject}} 
+Email body: {{LookUpEmails.email_body}} 
+
+## Instructions
+1a. Carefully read and understand the provided inbound interaction details.
+1b. Carefully read and understand the provided associated email details.
+1c. Carefully read and understand the provided attachment summaries.
+2a. Identify the key points and relevant information from the inbound interaction
+2b. Identify sentiment from the inbound email
+3. Identify the number of work items that are required - i.e. a email may contain multiple requests, i.e. complete a payment and update an insurance policy.
+4. Inbound Reply Processing: Prioritize all incoming replies to establish immediate next steps. Determine if the response necessitates a case update or an immediate reassignment—such as in the event of an "Out of Office" notification—to ensure the continuous progression of the outstanding work item.
+
+#Skill Outputs
+## Response
+The response must include the following:
+--&gt; Email Context – A brief summary of the email's intent and relevant background.
+--&gt; Work Item Count – Total number of work items identified.
+### For each work item:
+--&gt; Summary of the work item
+--&gt; A description of the work item
+--&gt; Sentiment - Negative, Neutral, Positive and an explanation why
+Note: When multiple work items are present, list each one separately in the order they appear.real </prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>archived</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-21 02:55:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e0b587f69354039051fcffe03603d6e3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>e906feae93c1bad00f91fce79503d631</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_generative_ai_config_e0b587f69354039051fcffe03603d6e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-21 05:34:49</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>13</version>
+    </sys_generative_ai_config>
+</record_update>

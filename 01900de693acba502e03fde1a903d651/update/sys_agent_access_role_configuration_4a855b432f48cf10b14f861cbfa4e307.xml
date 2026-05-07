@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_agent_access_role_configuration">
+    <sys_agent_access_role_configuration action="INSERT_OR_UPDATE">
+        <action>limit_to_roles</action>
+        <agent>2da29d4b2f004f10b14f861cbfa4e3f5</agent>
+        <agent_table>sn_aia_agent</agent_table>
+        <allow_all_session_roles>false</allow_all_session_roles>
+        <description/>
+        <name>2da29d4b2f004f10b14f861cbfa4e3f5</name>
+        <role_list name="snc_internal">7fcaa702933002009c8579b4f47ffbde</role_list>
+        <sys_class_name>sys_agent_access_role_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 12:27:00</sys_created_on>
+        <sys_id>4a855b432f48cf10b14f861cbfa4e307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2da29d4b2f004f10b14f861cbfa4e3f5</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_agent_access_role_configuration_4a855b432f48cf10b14f861cbfa4e307</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 12:27:00</sys_updated_on>
+    </sys_agent_access_role_configuration>
+</record_update>

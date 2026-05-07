@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_asset">
+    <sys_ux_theme_asset action="INSERT_OR_UPDATE">
+        <category>image</category>
+        <name>UBS_Logo_Semibold</name>
+        <sys_class_name>sys_ux_theme_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 12:26:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e9fe4e852f5c8350d73ea23fafa4e388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>UBS_Logo_Semibold</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_theme_asset_e9fe4e852f5c8350d73ea23fafa4e388</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-15 12:26:30</sys_updated_on>
+    </sys_ux_theme_asset>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <encryption_context/>
+        <file_name>UBS_Logo_Semibold.svg</file_name>
+        <hash>93235948b9fc64cb3035b1bb481686f7174c423123fdd4a292d3a07704e3dbf1</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>3610</size_bytes>
+        <size_compressed>1588</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 12:26:33</sys_created_on>
+        <sys_id>0afe0ac52f5c8350d73ea23fafa4e326</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-15 12:26:34</sys_updated_on>
+        <table_name>sys_ux_theme_asset</table_name>
+        <table_sys_id>e9fe4e852f5c8350d73ea23fafa4e388</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="UBS_Logo_Semibold.svg" sys_id="0afe0ac52f5c8350d73ea23fafa4e326">0afe0ac52f5c8350d73ea23fafa4e326</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 12:26:33</sys_created_on>
+        <sys_id>cafe0ac52f5c8350d73ea23fafa4e326</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2104</length>
+        <position>1</position>
+        <sys_attachment display_value="UBS_Logo_Semibold.svg" sys_id="0afe0ac52f5c8350d73ea23fafa4e326">0afe0ac52f5c8350d73ea23fafa4e326</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-15 12:26:33</sys_created_on>
+        <sys_id>8efe0ac52f5c8350d73ea23fafa4e326</sys_id>
+    </sys_attachment_doc>
+</record_update>

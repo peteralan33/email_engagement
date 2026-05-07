@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_rule/>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="x_snc_pab_ee_tkit_work_management_case">state=1<item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name>global.x_snc_pab_ee_tkit.Trigger email to case owner</internal_name>
+        <name>Trigger email to case owner</name>
+        <notification_script display_value="AIA notif - x_snc_pab_ee_tkit_work_manag">c503955793840f1051fcffe03603d641</notification_script>
+        <objective_template><![CDATA[Help me send an email to a case owner regarding an outstanding work item for ${number}]]></objective_template>
+        <portal/>
+        <profile/>
+        <run_as>assigned_to</run_as>
+        <run_as_script/>
+        <run_as_user/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
+        <show_notifications>true</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 21:35:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ebf2d99f2f04c350b14f861cbfa4e3df</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_work_management_case</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_ebf2d99f2f04c350b14f861cbfa4e3df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 22:54:59</sys_updated_on>
+        <target_table>x_snc_pab_ee_tkit_work_management_case</target_table>
+        <trigger_flow display_value="Work Management Case - AI Agent: Determine Email Response - 6ff2d15793840f1051fcffe03603d6ae">73f2d15793840f1051fcffe03603d6b1</trigger_flow>
+        <trigger_flow_definition_type>record_create_or_update</trigger_flow_definition_type>
+        <trigger_strategy>once</trigger_strategy>
+        <usecase/>
+        <usecase_discovery>false</usecase_discovery>
+    </sn_aia_trigger_configuration>
+</record_update>

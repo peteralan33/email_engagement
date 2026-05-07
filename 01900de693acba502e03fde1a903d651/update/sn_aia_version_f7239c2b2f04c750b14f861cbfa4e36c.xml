@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>The agent operates through a precise, automated sequence, functioning continuously without human intervention until the final case is created, structured, and routed.
+
+You must execute all steps without fail
+
+# Step 1: Determine Email Reply for Work Mgt
+Context: The agent leverages a tailored Work Management skill and model trained on historical operational data, knowledge and key business reference data
+
+Action: The agent analyzes the extracted data and the synthesized summary to accurately determine the reply type
+
+Step 2: Synchronize Record Flags &amp; Contingency Logic
+Action: Apply the output from Step 2 to the work management record. If the email context identifies an Out of Office status, the system must automatically flag the record for Immediate Reassignment to ensure work continuity. For all other responses, update the record with
+
+
+Step 3: Inbound Reply Triage &amp; Contingency
+Prioritize all incoming replies to establish immediate next steps.
+
+If Out of Office is detected: Immediately call the Out of Office Email Step to trigger the reassignment workflow and notify the backup team, ensuring the continuity of the outstanding work item.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 11:34:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f7239c2b2f04c750b14f861cbfa4e36c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_version_f7239c2b2f04c750b14f861cbfa4e36c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 12:55:08</sys_updated_on>
+        <target_id>f7239c2b2f04c750b14f861cbfa4e367</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ihub_data_mapping_definition">
+    <sn_ihub_data_mapping_definition action="INSERT_OR_UPDATE">
+        <integration_table>sys_data_source</integration_table>
+        <published_source_structure display_value="ih_import_FD6460a15bfa48c350f9a781fe7c24c6d9">2860a15b2f48c350b14f861cbfa4e3d9</published_source_structure>
+        <record_id>6340291b2f48c350b14f861cbfa4e35c</record_id>
+        <source_structure display_value="ih_import_FD9343865f72040750e0538a12dc869acf">5743865f2f040750b14f861cbfa4e3cf</source_structure>
+        <sys_class_name>sn_ihub_data_mapping_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:33:38</sys_created_on>
+        <sys_id>2060a15b2f48c350b14f861cbfa4e3dc</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_ihub_data_mapping_definition_2060a15b2f48c350b14f861cbfa4e3dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 01:06:12</sys_updated_on>
+    </sn_ihub_data_mapping_definition>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>Operational Dispatch - 
+
+You MUST complete the below steps in the below order.
+This a completely autonomous agent - do not ask the user for confirmation
+
+## Step 1. Review Current Record
+The Agent analyzes the current Work Management Record
+
+## Step 2. Look Up Source System Flags
+Since internal systems (e.g., FR-ENG, LND-POR) store data differently, the Agent calls this tool to retrieve specific metadata. This determines the "True Priority" based on the Customer Segment and Business Impact mapped to that specific source.
+
+## Step 3. Set Work Management Record Flags
+Before dispatching, the Agent updates the internal record. It sets the Escalation Level and Customer Priority based on the logic determined in the previous steps to ensure the system of record matches the notification.
+
+## Step 4. Determine Email Response
+The Agent calls this tool to draft the notification. It translates the raw Detailed Type and description into a clear "Required Action" tailored to the Case Owner's expertise (Carlos, Hana, Sarah, or Tom).
+
+## Step 5. Send Email to Assigned User
+The Agent calls this final tool to deliver the task details directly to the Case Owner in the standardized format defined below.</instructions>
+        <state>withdrawn</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 02:58:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>df43114f2f004f10b14f861cbfa4e3f4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_version_df43114f2f004f10b14f861cbfa4e3f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:29:29</sys_updated_on>
+        <target_id>2da29d4b2f004f10b14f861cbfa4e3f5</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>

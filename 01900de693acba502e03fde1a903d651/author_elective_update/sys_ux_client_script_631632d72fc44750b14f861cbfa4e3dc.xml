@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Knowledge Category Picker Modal Default">eb1632d72fc44750b14f861cbfa4e3ac</macroponent>
+        <name>Update Knowledge Categories</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[function handler({
+    api,
+    event,
+    imports
+}) {
+    const getStringPath = (path, tree) => {
+        let actualPath = 'items';
+        let tempTree = tree;
+
+        for (let i = 0; i < path.length; i++) {
+            let index = tempTree.findIndex(y => y.id == path[i]);
+            tempTree = tempTree[index].children;
+            if (index != -1)
+                actualPath += `[${index}].children`;
+        }
+
+        return actualPath;
+    };
+
+    /**
+     * Alternative method to lodash _.set()
+     */
+    const put = function(obj, path, val) {
+        var stringToPath = function(path) {
+            if (typeof path !== 'string') return path;
+            var output = [];
+
+            path.split('.').forEach(function(item, index) {
+                item.split(/\[([^}]+)\]/g).forEach(function(key) {
+                    if (key.length > 0) {
+                        output.push(key);
+                    }
+                });
+            });
+
+            return output;
+        };
+
+        path = stringToPath(path);
+
+        var length = path.length;
+        var current = obj;
+
+        path.forEach(function(key, index) {
+            var isArray = key.slice(-2) === '[]';
+            key = isArray ? key.slice(0, -2) : key;
+
+            if (isArray && Object.prototype.toString.call(current[key]) !== '[object Array]') {
+                current[key] = [];
+            }
+
+            if (index === length - 1) {
+                if (isArray) {
+                    current[key].push(val);
+                } else {
+                    current[key] = val;
+                }
+            } else {
+                if (!current[key]) {
+                    current[key] = {};
+                }
+
+                current = current[key];
+            }
+        });
+    };
+
+    /**
+     * Alternative method to lodash _.has()
+     */
+    const has = function(object, property) {
+        return object != null && object.hasOwnProperty(property);
+    };
+
+    const buildTree = (categories) => {
+        var catTree = {};
+        try {
+            categories.forEach((x) => {
+                if (has(catTree, x.id)) {
+                    catTree[x.id].label = x.label;
+                    catTree[x.id].id = x.id;
+                    catTree[x.id].path.unshift(x.parentId);
+                } else {
+                    catTree[x.id] = {
+                        id: x.id,
+                        label: x.label,
+                        children: [],
+                        path: [x.parentId]
+                    };
+                    if (catTree[x.parentId] && catTree[x.parentId].path) {
+                        catTree[x.id].path.unshift(...catTree[x.parentId].path);
+                    }
+                }
+
+                if (has(catTree, x.parentId)) {
+                    catTree[x.parentId].children.push(catTree[x.id]);
+                } else {
+                    catTree[x.parentId] = {
+                        children: [catTree[x.id]]
+                    };
+                }
+            });
+            return catTree;
+        } catch (e) {
+            return {};
+        }
+    };
+
+    const getExpandedPath = (path) => {
+        let tempPath = [];
+        path.forEach((element, i) => {
+            if (i == 0)
+                tempPath.push([element]);
+            else
+                tempPath.push([...tempPath[i - 1], element]);
+        });
+        return tempPath;
+    };
+
+    if (event.elementId == 'get_knowledge_categories_initial' || event.elementId == 'get_knowledge_categories_encoded_record') {
+        if (event.name == 'DATA_FETCH_SUCCEEDED') {
+            if (api.state.items.length <= 0) {
+                let categories = null;
+
+                if (api.data.get_knowledge_categories_initial.output.data) {
+                    categories = api.data.get_knowledge_categories_initial.output.data.AppKnowledge_Query.first;
+                } else {
+                    categories = api.data.get_knowledge_categories_encoded_record.output.data.AppKnowledge_Query.first;
+                }
+
+                if (categories.length <= 0) {
+                    api.setState('hideNoItemsMessage', false);
+                }
+
+                if (categories && categories.length > 0) {
+                    api.setState('items', categories);
+
+                    if (api.state.value) {
+                        let flatCategories = null;
+
+                        if (api.data.get_knowledge_categories_initial.output.data) {
+                            flatCategories = api.data.get_knowledge_categories_initial.output.data.AppKnowledge_Query.second;
+                        } else {
+                            flatCategories = api.data.get_knowledge_categories_encoded_record.output.data.AppKnowledge_Query.second;
+                        }
+
+                        if (flatCategories && flatCategories.length > 0) {
+                            let categoryTree = buildTree(flatCategories);
+
+                            if (categoryTree[api.state.value]) {
+                                let path = categoryTree[api.state.value].path;
+
+                                if (path.length > 0) {
+                                    path.shift();
+                                    let index = categories.findIndex((y) => y.id == path[0]);
+
+                                    if (index != -1) {
+                                        categories[index].children = categoryTree[path[0]].children;
+                                        api.setState('items', categories);
+                                    }
+
+                                    let expandedItems = getExpandedPath(path);
+                                    path.push(api.state.value);
+
+                                    if (expandedItems.length > 0) {
+                                        api.setState('expandedItems', expandedItems);
+                                    }
+
+                                    api.setState('selectedItems', [path]);
+                                }
+                            }
+                        } else {
+                            let index = categories.findIndex(y => y.id == api.state.value);
+
+                            if (index != -1) {
+                                api.setState('selectedItems', [[api.state.value]]);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if (event.elementId == 'get_knowledge_categories_expand') {
+        if (event.name == 'DATA_FETCH_SUCCEEDED') {
+            var path = getStringPath(api.state.route, api.state.items);
+            var items = {
+                'items': api.state.items
+            };
+
+            put(items, path, api.data.get_knowledge_categories_expand.output.data.AppKnowledge_Query.first);
+
+            api.setState('items', items.items);
+            api.setState('loadingItems', []);
+        }
+    }
+}]]></script>
+        <script_api_version>1.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-04-10 04:48:14</sys_created_on>
+        <sys_id>631632d72fc44750b14f861cbfa4e3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Knowledge Categories</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_631632d72fc44750b14f861cbfa4e3dc</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:48:14</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_client_script_631632d72fc44750b14f861cbfa4e3dc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Knowledge Category Picker Modal Default"&gt;eb1632d72fc44750b14f861cbfa4e3ac&lt;/macroponent&gt;&lt;name&gt;Update Knowledge Categories&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function handler({
+    api,
+    event,
+    imports
+}) {
+    const getStringPath = (path, tree) =&gt; {
+        let actualPath = 'items';
+        let tempTree = tree;
+
+        for (let i = 0; i &lt; path.length; i++) {
+            let index = tempTree.findIndex(y =&gt; y.id == path[i]);
+            tempTree = tempTree[index].children;
+            if (index != -1)
+                actualPath += `[${index}].children`;
+        }
+
+        return actualPath;
+    };
+
+    /**
+     * Alternative method to lodash _.set()
+     */
+    const put = function(obj, path, val) {
+        var stringToPath = function(path) {
+            if (typeof path !== 'string') return path;
+            var output = [];
+
+            path.split('.').forEach(function(item, index) {
+                item.split(/\[([^}]+)\]/g).forEach(function(key) {
+                    if (key.length &gt; 0) {
+                        output.push(key);
+                    }
+                });
+            });
+
+            return output;
+        };
+
+        path = stringToPath(path);
+
+        var length = path.length;
+        var current = obj;
+
+        path.forEach(function(key, index) {
+            var isArray = key.slice(-2) === '[]';
+            key = isArray ? key.slice(0, -2) : key;
+
+            if (isArray &amp;&amp; Object.prototype.toString.call(current[key]) !== '[object Array]') {
+                current[key] = [];
+            }
+
+            if (index === length - 1) {
+                if (isArray) {
+                    current[key].push(val);
+                } else {
+                    current[key] = val;
+                }
+            } else {
+                if (!current[key]) {
+                    current[key] = {};
+                }
+
+                current = current[key];
+            }
+        });
+    };
+
+    /**
+     * Alternative method to lodash _.has()
+     */
+    const has = function(object, property) {
+        return object != null &amp;&amp; object.hasOwnProperty(property);
+    };
+
+    const buildTree = (categories) =&gt; {
+        var catTree = {};
+        try {
+            categories.forEach((x) =&gt; {
+                if (has(catTree, x.id)) {
+                    catTree[x.id].label = x.label;
+                    catTree[x.id].id = x.id;
+                    catTree[x.id].path.unshift(x.parentId);
+                } else {
+                    catTree[x.id] = {
+                        id: x.id,
+                        label: x.label,
+                        children: [],
+                        path: [x.parentId]
+                    };
+                    if (catTree[x.parentId] &amp;&amp; catTree[x.parentId].path) {
+                        catTree[x.id].path.unshift(...catTree[x.parentId].path);
+                    }
+                }
+
+                if (has(catTree, x.parentId)) {
+                    catTree[x.parentId].children.push(catTree[x.id]);
+                } else {
+                    catTree[x.parentId] = {
+                        children: [catTree[x.id]]
+                    };
+                }
+            });
+            return catTree;
+        } catch (e) {
+            return {};
+        }
+    };
+
+    const getExpandedPath = (path) =&gt; {
+        let tempPath = [];
+        path.forEach((element, i) =&gt; {
+            if (i == 0)
+                tempPath.push([element]);
+            else
+                tempPath.push([...tempPath[i - 1], element]);
+        });
+        return tempPath;
+    };
+
+    if (event.elementId == 'get_knowledge_categories_initial' || event.elementId == 'get_knowledge_categories_encoded_record') {
+        if (event.name == 'DATA_FETCH_SUCCEEDED') {
+            if (api.state.items.length &lt;= 0) {
+                let categories = null;
+
+                if (api.data.get_knowledge_categories_initial.output.data) {
+                    categories = api.data.get_knowledge_categories_initial.output.data.AppKnowledge_Query.first;
+                } else {
+                    categories = api.data.get_knowledge_categories_encoded_record.output.data.AppKnowledge_Query.first;
+                }
+
+                if (categories.length &lt;= 0) {
+                    api.setState('hideNoItemsMessage', false);
+                }
+
+                if (categories &amp;&amp; categories.length &gt; 0) {
+                    api.setState('items', categories);
+
+                    if (api.state.value) {
+                        let flatCategories = null;
+
+                        if (api.data.get_knowledge_categories_initial.output.data) {
+                            flatCategories = api.data.get_knowledge_categories_initial.output.data.AppKnowledge_Query.second;
+                        } else {
+                            flatCategories = api.data.get_knowledge_categories_encoded_record.output.data.AppKnowledge_Query.second;
+                        }
+
+                        if (flatCategories &amp;&amp; flatCategories.length &gt; 0) {
+                            let categoryTree = buildTree(flatCategories);
+
+                            if (categoryTree[api.state.value]) {
+                                let path = categoryTree[api.state.value].path;
+
+                                if (path.length &gt; 0) {
+                                    path.shift();
+                                    let index = categories.findIndex((y) =&gt; y.id == path[0]);
+
+                                    if (index != -1) {
+                                        categories[index].children = categoryTree[path[0]].children;
+                                        api.setState('items', categories);
+                                    }
+
+                                    let expandedItems = getExpandedPath(path);
+                                    path.push(api.state.value);
+
+                                    if (expandedItems.length &gt; 0) {
+                                        api.setState('expandedItems', expandedItems);
+                                    }
+
+                                    api.setState('selectedItems', [path]);
+                                }
+                            }
+                        } else {
+                            let index = categories.findIndex(y =&gt; y.id == api.state.value);
+
+                            if (index != -1) {
+                                api.setState('selectedItems', [[api.state.value]]);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if (event.elementId == 'get_knowledge_categories_expand') {
+        if (event.name == 'DATA_FETCH_SUCCEEDED') {
+            var path = getStringPath(api.state.route, api.state.items);
+            var items = {
+                'items': api.state.items
+            };
+
+            put(items, path, api.data.get_knowledge_categories_expand.output.data.AppKnowledge_Query.first);
+
+            api.setState('items', items.items);
+            api.setState('loadingItems', []);
+        }
+    }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;1.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-10 04:48:14&lt;/sys_created_on&gt;&lt;sys_id&gt;631632d72fc44750b14f861cbfa4e3dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update Knowledge Categories&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_631632d72fc44750b14f861cbfa4e3dc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-10 04:48:14&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2007170150</payload_hash>
+        <record_name>Update Knowledge Categories</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-04-10 04:48:14</sys_created_on>
+        <sys_id>231632d72fc44750b14f861cbfa4e3e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d75b81f730000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:48:14</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>af1632d742c44750a87fbe163f9765de</update_guid>
+        <update_guid_history>af1632d742c44750a87fbe163f9765de:-2007170150</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-04-10 04:52:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>14ec334d97944b2aa4cee89474f6c3e4</sys_id>
+        <sys_metadata>631632d72fc44750b14f861cbfa4e3dc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Knowledge Categories</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_631632d72fc44750b14f861cbfa4e3dc</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_631632d72fc44750b14f861cbfa4e3dc">231632d72fc44750b14f861cbfa4e3e0</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:52:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Relay event for Glide Form SET_VALUE from "Knowledge Category Picker Modal"</description>
+        <event_name>GFORM_SET_VALUE_RELAY_eb1632d72fc44750b14f861cbfa4e3ac</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Glide Form SET_VALUE Relay (Knowledge Category Picker Modal Default)</label>
+        <props>[
+    {
+        "fieldType": "string",
+        "label": "Field Name",
+        "name": "fieldName"
+    },
+    {
+        "fieldType": "string",
+        "label": "Value",
+        "name": "value"
+    },
+    {
+        "fieldType": "string",
+        "label": "Display Value",
+        "name": "displayValue"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Display Value",
+  "comment" : ""
+}, {
+  "message" : "Field Name",
+  "comment" : ""
+}, {
+  "message" : "Value",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-04-10 04:48:14</sys_created_on>
+        <sys_id>ab1672d72fc44750b14f861cbfa4e314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Glide Form SET_VALUE Relay (Knowledge Category Picker Modal Default)</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_event_ab1672d72fc44750b14f861cbfa4e314</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:48:14</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=ab1672d72fc44750b14f861cbfa4e314"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ab1672d72fc44750b14f861cbfa4e314</documentkey>
+        <fieldname>description</fieldname>
+        <language>en, fr, es</language>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-04-10 04:48:14</sys_created_on>
+        <sys_id>631672d72fc44750b14f861cbfa4e316</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:48:14</sys_updated_on>
+        <tablename>sys_ux_event</tablename>
+        <value>Relay event for Glide Form SET_VALUE from "Knowledge Category Picker Modal"</value>
+    </sys_translated_text>
+</record_update>

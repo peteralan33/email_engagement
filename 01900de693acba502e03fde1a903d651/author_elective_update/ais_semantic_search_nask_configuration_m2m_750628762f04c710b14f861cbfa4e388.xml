@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_search_nask_configuration_m2m">
+    <ais_semantic_search_nask_configuration_m2m action="DELETE">
+        <semantic_search_configuration display_value="searchForCapitalMarketKnowledge">f50628762f04c710b14f861cbfa4e37c</semantic_search_configuration>
+        <skill>9506a4762f04c710b14f861cbfa4e3f9</skill>
+        <sys_class_name>ais_semantic_search_nask_configuration_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 05:01:44</sys_created_on>
+        <sys_id>750628762f04c710b14f861cbfa4e388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_semantic_search_nask_configuration_m2m_750628762f04c710b14f861cbfa4e388</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-08 05:01:44</sys_updated_on>
+        <tool display_value="searchForCapitalMarketKnowledge">b10628762f04c710b14f861cbfa4e34e</tool>
+    </ais_semantic_search_nask_configuration_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>ais_semantic_search_nask_configuration_m2m_750628762f04c710b14f861cbfa4e388</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_search_nask_configuration_m2m"><ais_semantic_search_nask_configuration_m2m action="INSERT_OR_UPDATE"><semantic_search_configuration display_value="searchForCapitalMarketKnowledge">f50628762f04c710b14f861cbfa4e37c</semantic_search_configuration><skill>9506a4762f04c710b14f861cbfa4e3f9</skill><sys_class_name>ais_semantic_search_nask_configuration_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-08 05:01:44</sys_created_on><sys_id>750628762f04c710b14f861cbfa4e388</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_semantic_search_nask_configuration_m2m_750628762f04c710b14f861cbfa4e388</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-08 05:01:44</sys_updated_on><tool display_value="searchForCapitalMarketKnowledge">b10628762f04c710b14f861cbfa4e34e</tool></ais_semantic_search_nask_configuration_m2m></record_update>]]></payload>
+        <payload_hash>-1208128663</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 05:01:44</sys_created_on>
+        <sys_id>3d0628762f04c710b14f861cbfa4e390</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d6b77c45d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-08 05:01:44</sys_updated_on>
+        <type>Semantic Search Configuration NASK Mappi</type>
+        <update_guid>79062876bf04c7107d074db53e53078f</update_guid>
+        <update_guid_history>79062876bf04c7107d074db53e53078f:-1208128663</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">1f7eafb22f80cb10b14f861cbfa4e39f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-08 19:37:34</sys_created_on>
+        <sys_db_object display_value="" name="ais_semantic_search_nask_configuration_m2m">ais_semantic_search_nask_configuration_m2m</sys_db_object>
+        <sys_id>2359873676194d09a10c73752ae3e961</sys_id>
+        <sys_metadata>750628762f04c710b14f861cbfa4e388</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_semantic_search_nask_configuration_m2m_750628762f04c710b14f861cbfa4e388</sys_update_name>
+        <sys_update_version display_value="ais_semantic_search_nask_configuration_m2m_750628762f04c710b14f861cbfa4e388">3d0628762f04c710b14f861cbfa4e390</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-08 19:37:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

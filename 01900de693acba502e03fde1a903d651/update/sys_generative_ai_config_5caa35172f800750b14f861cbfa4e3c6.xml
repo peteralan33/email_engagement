@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"ea06a8762f04c710b14f861cbfa4e387"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>9e06a8762f04c710b14f861cbfa4e307</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Set Email Response</name>
+        <parent/>
+        <prompt># Role
+You are a professional banking operations specialist responsible for responding to customer and internal work items. Your task is to analyse an inbound work item and craft a clear, accurate set of next steps.
+
+## Context
+Based on the description of the work item - determine the appropriate next steps from the knowledge base
+
+
+## Instructions
+
+Carefully read and understand the work item description and associated knowledge to determine the correct tone, content, and required actions for the response.
+
+Work Item Description:  {{description_of_work_item}} 
+Knowledge:  {{GetWorkMgtKB.rag_results}} 
+
+### Draft a concise set of next steps that leverages the internal knowledge for an internal user.
+</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 00:28:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5caa35172f800750b14f861cbfa4e3c6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>9e06a8762f04c710b14f861cbfa4e307</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_generative_ai_config_5caa35172f800750b14f861cbfa4e3c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 00:28:43</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>5</version>
+    </sys_generative_ai_config>
+</record_update>

@@ -2,7 +2,8 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>true</active>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=0.4,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=254689000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
@@ -28,7 +29,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -36,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>38092f1293093ad00f91fce79503d6eb</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Interaction - AI Agent: Email Triage and Classification Agent - f8092f1293093ad00f91fce79503d6ea</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -44,18 +45,18 @@
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_hub_flow_38092f1293093ad00f91fce79503d6eb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-12 01:33:12</sys_updated_on>
+        <sys_updated_on>2026-04-22 02:53:06</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record display_value="Created 2025-11-11 08:08:56 PM">e20f66172f09be14743eb82bcfa4e37d</version_record>
+        <version_record>e20f66172f09be14743eb82bcfa4e37d</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=38092f1293093ad00f91fce79503d6eb"/>
     <sys_variable_value action="delete_multiple" query="document_key=38092f1293093ad00f91fce79503d6eb"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
         <condition table="interaction">type=email^opened_by=55e1b18a938576d00f91fce79503d6e3<item display_value="Email" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="email"/>
-            <item display_table="sys_user" display_value="Email Triage Agent  Capital Markets" endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="55e1b18a938576d00f91fce79503d6e3"/>
+            <item display_table="sys_user" display_value="Email Triage  Agent" endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="55e1b18a938576d00f91fce79503d6e3"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -85,6 +86,7 @@
         <active>true</active>
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>38092f1293093ad00f91fce79503d6eb</identifier>
+        <identifier_type/>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-12 01:33:12</sys_created_on>
@@ -158,6 +160,7 @@
         <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -242,6 +245,7 @@
         <order>101</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -326,6 +330,7 @@
         <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -376,12 +381,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-12 01:08:52</sys_created_on>
         <sys_id>e90f26172f09be14743eb82bcfa4e364</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-12 01:33:09</sys_updated_on>
+        <sys_updated_on>2026-04-06 12:12:12</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
-        <trigger_inputs>H4sIAAAAAAAA/+Va227jNhD9FUFPLeACuliWlbetnaIB0qRwvO1DmgqUSNrCypQrUcq6Qf69Q+ti6mKvL0l37X0JIF7nHM6cGdJ5fFFD5JFQvVKnyAuJ2lMDxknMUDhdLQk0c9HsMrQQfZgsCcOEceiAzwViGPEoXqlXPE5JT6VxtJiSxTJEHOZSFCbQGMWYxOqV3lPXqxRLwvQMhan4Xu+IfB5ETOwRJDB/9UfReVPrXKIY1uBivZfK0tuAfcoN8udBiGPC1KvHJ0CCodWnPnIMovmmbhqGphnDvu4NTE83sImIpsGsJgMNM3kHEaLtVp6m3OUdG7DkMxdc4YqHFlsxQfiehatqxDzYMPs5Cf6FbYeaGEcJgPJJ3ld9ugVVeTMdI44eYGWfpzEp+YgCnyQ5HZhQlIZ8JLflA+6Xa3rXU3LU+ewoTBfsLmdDrRYoTwZa0gSM2PhEAYM+zKPnSWnlLwFbU1J0hpGPwuoLcR4HXsqFPS8qDUI4UTdnOonSeA15cj26n4zdPz9MR79eT9zJ9cN0cjOaXo/V156arJJRiJJkYyXQ4/6Tij1U2WPdHKCY4sfBkn8Al8pKJ33tbeIgThmMdavja0VEzlk7GvL22yCB70cAU/K03kEcUOkwk5QpEZw7/FH8NAaWuFI6G71ZoFmBhP5eevuancItMxS77sIF4O489VzgbzYD0gK2TLlrO0NHH6At3m77NUbW8SccQVWfXsWxkZD4XPJY+jGRv34LkiRgM4mzCqNw6DbECh14vlISmkNNzgvrUy18y0G71E7TKiFpe1TWcI3DZU3XKfUINTRbQNc106O6ZmsWotjUNN+QZK29/Va7eMPDZZkblY0ywl0iV7Tso3L9N1K5TRTvirEm+yUgWQX2cuCs7v3FOsZrl9h+O6Y1NN88SPRLw4rmcT1Z74L2xrkC4QzBDFxifLdc8DwnzE0I50IOTk4GDAKuqneymmaKIFEEgzSKlbuI/XSzGac8ENCjdQl0RqopZ4h9QMNisXJRqL2Iz5t5USD9GdprSEUUbznz7y1VNgIuq1N5RKok/aHlUNO3ATgkR9onHtL7hoUce2BSp5EqG9tvN+xykuWeypNt1bCuNLVvZLdugVktYTUS3zHB0/CgYmnzC2n6+yXlpAKhWG97fXCMsedaO9AwegavOL1s8JD/aRZHKcOtbAJbKAFTNiOUHwryfzyvxCHnTXASshtvfcT5oDw5PW58qgxhxFZHJUaT6p5D+kSDq6MJidGzHMfzkUGpPbCJoTcS42bjTmsuJx3uEVZZV1xuu6x1umzW5ekH3CC/voEnpYncZ7uzRN53jpo/ihgOiqfqpuKXXUlD9cv78fGq4Eu7Vvd+2PWvVNNMTBYoCP+OYEOCXW+VN1oW0T19iBxzaNkDDEWxo1Of2I4FnQNiHqUngwFCmGyTUY9KeiIT1YGCd3BW0xO54100RTund/fix5djQ2MRYRKOZZeUs6Og+Bkxnrg8chHGrnQqR8dSjvaABxhAHL/lK4ywg7gRlcuLcaRAhwJ7KgFVChIIVryVwucE1DEEnYT9FWHMmd3K5eKqjby6llw07jyvtN5ioHmN7LyAvc0zSyOsTq0oCbaRZZl291OL06wou0z4goWXU2UerDZZl3jtfGQ4bN3mmp3PDFKw1J1lz1eVC0b9bvVwhxXnWBzXQzoUSbmVyGdhgEnZt/2/TU6Su2L1bFNOHS50dOj4lm5vEbqhtVXois13GcY7qJBl7jZv+l/KXpHnCpfrkruPRdr8+iXwtxsBT/8BiNEH4GQlAAA=</trigger_inputs>
+        <trigger_inputs>H4sIAAAAAAAA/+Va227jNhD9FUFPLZAFdLEtK29bO0UDpNnC8bYPaSpQImkLK1NeiVLWG+TfO7Qupm5e23EaO30JoOFlZg5nzgzp3D+pAXJJoF6qU+QGRL1QfcZJxFAwXS0JiLkQOwwtxBgmS8IwYRwG4HOBGEY8jFbqJY8ScqHSKFxMyWIZIA5rKQpiEIYRJpF6qV+o613yLWF5ioJEfK81Io/7IRM6/BjWr/7MB68rg0sUwR5c7PdUWnrjsy+ZQd7cD3BEmHp5/wCeYJB61EO2QTTP1E3D0DRj2NPdgenqBjYR0TRYVUegZiZvAULIbuRlym02sHGWfOMCK1zi0EArIgh/YsGqnDH3N8h+i/3voHaoiXmUgFMeycbKTyeHKhPTMeLoDnb2eBKRAo/Q90icwYEJRUnAR7Ism/BpuYZ3vSTzOlsdBsmC3WZoqOUGxcmAJInBiE1M5G7Qu3n4OCms/NVna0jywSD0UFB+Ic4j3024sOdJpX4AJ+pkSMdhEq1dnlyNPk3Gzl8fp6PfribO5OpuOrkeTa/G6vOFGq/iUYDieGMlwON8TYQOVY5YJ3NQLPEif8k/QkilRZA+X2zyIEoYzHXK42tkRIZZMxsy+Y0fw/c9OHNHvibZqUE00AK1tT5xXEX4TBKmhBAF8Efxkggw40oRevR6gWa5X/SPIvbXWOVBmqLIcRYOwODME9cBNGczgNBny4Q7lj209QHqiH3Lq+CzzkYRFqr60JQ7C7QUarca/PwsDp8ExONS3NPPsfz1ux/HPptJyEtIGRJSIkmaQJUqIZuU4pAy/fFpI7bV8kOge6hwSjFpGwVrWsluzTBPaxG6P9fqOqUuoYZmCex0zXSprllaH1FsappnSFzbVN9pF6+lncy9o0Ioe7iNeXPJLtTbOxL1bqhlW6rX0S8ckqlppwxIq+mT72M8t1WA0zGtVojMvSpRYVguHlc7iG2uHbmAIZwiWIELH1+tQD3OCXNiwrmggyNUqA9yiWKQf2VPllY4WOSMIgClYaTchuzD9WaeckeAntZt2kmy8E62v7yEVaDcBUbYO1LOFcdO448MpBvyeb0ZEPp/AXlFv2CejsM96f5gf2fepGWoEU9aPZ4DWgbSG/ZtanoWgAlNAu0RF+k9o49sa2BSu9Yy1NR3G/Z+moYdKTftJO+2cr0rATWu6GmlcNcagEMSshZB+dbmD9qV/y8oL2qU8v26+6RDjD3XHooG4SNExbEv+C7yvsyiMGG4Ua9AoeIzZTND+Sk/ip9PujRts/u4d36IP7IdvOqMU4dMsvZNyvUmxgtKQWx1UKE2qe7apEc0uNKbUKjdvm27HjIotQYWMfRaod4obrXm/ZTnHRI7bWOGrkt0a5ynbemxx83+7Q18UdnKYra9amVj51iDRiHDfv67Rr0CFUNxrQoV7xaHs4InaS3fY0Dr34mmmZgskB/8E4JCgh13lQn7faK7+hDZ5rBvDTA06bZOPWLZfRgcEPMgPhkMEMKki3tdKvGJDFSLF7wFswqfyAOvwinaOf1Ik/9Sd2hqLEJMgrEcknJJFRA/IsZjh4cOwtiRTuXgXMp/XNj9YQw8jl7xdUyYRZyQyi3KOFRgQAETFJ8qOSYEK+5K4XMCZBkAbYI5irDtZB8i9vTiyG88TVTLG9kZY7qXD0dGNCuOjUczEK/1nSpkDTvf7qmrRiUv7aIJtlC/b1rtz112vYtuM+EHFr6fznpvSk3bGHrrQ89++9b3bH3qkXKrGiw7vmy9Y69f7Q7QYsU5XgiqKR2IRqTRvMwCH5NirPvfsV5Ed/nu6aaF3J/o6ND2+rrVQXTDfifR5cq3GcZboJBp7iYT/SetviiLeci10d3nvMq+fdt/uhnw8C+X68kOhSgAAA==</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
         <updation_source/>
@@ -402,13 +407,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-12 01:08:52</sys_created_on>
         <sys_id>2d0f26172f09be14743eb82bcfa4e367</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_updated_by>classification.agent</sys_updated_by>
-        <sys_updated_on>2025-11-12 01:13:15</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-06 12:12:13</sys_updated_on>
         <ui_id>05096f12-3d09-3ad0-475c-0f0d8517c93b</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/71TXU8bMRD8K8jPSXRfucvlrQpCQmqLRCgvFTrt2evEquM7fD4gjfjvXecuIYBSpSri0etZ78ys5+eGAXeqMpemcWA4ztfNpWBTluZBnsowyuMgj0EEgcxDyTHLx0EsUpmzAVMeN5FpjOMQxjHPwigMxjkGQiBKmZVhVE4IZ2CFhHRWLRZoC14ZqRatBT+2oEcG7AF06yGQBDlmR4d6qFBNrWF9e3oHXyotLBo2/Xk3YDVYouPQsunmzdWpejSUqAl60wk6mx0KOrsUJ0l269ojGoKYRX/+2j883xUrKzzRcMDwyaERSAwl6AYHbAVGgKvsmk2dbalgEcSV0es9YqmMo8eYxz416jeNmwRB4JESSTTH7nZ/LHpvu7I8BwfEpOWutT2ULyvFsensEiih1W52WOsAV7XX2bU4KPWuu9LtynzvrGH7B3arpErbEAmsvVLPvRci58vq8XrH8kKZrSn9pa446P0JHFlXts7z2bBW3bxxuau88xk1rmhisYK6pkpR2+pBbacQ6dVooekwkrp6JHaNWphRl5kRbQBGF1Q/35ZvwSov9xs9Q81+3A+j7lvcJmqSJJNJnIlhFMpomMgwHZZynA7TJM0zGSVhiJI9D1izbmYamubFKNpQcd96mZ1tvUFF57Fv4VbV7guResDei+fB/yY7yf6ahMNvDnaBrrDI6cMexHmzmdGvdCiKcMRbS+tzz8/vM/zPGT2B2T6jW2pn1ztqRxj3aXxJxutAXh/U+0xGH5XJOHqdSAfNryOpvOmuPjiZ/cBPSKecI1i+vFCo/RpNuyq3MTmS2sNtvA7u4T4+JbtlkqZhKcWQizQZJgDZMI8m+TDhAU8B6NfF+Qdm9+4PH/4PkJcHAAA=</values>
+        <values>H4sIAAAAAAAA/71UTU/bQBD9K2jPceTvxLmhICSktkhAuSBkjXdnnVU3tlmvgTTKf+9s7ARTisoBcdzxfLz3Zp7vtqyCNbIFs0aVJZqc15VUZWfAqrrKlWAT9gi6cykQ+xnOgjCL/CwC4fsyCyTHWZb4kUilSxWqbTRsbj9e0YAhABYNW2wZXyktDFZscXc/YTR8wfxAQJIlkERzahT4SYa+EIhSzoogjDJqoaFATak3PYWT5ZjCyYWb8n+SdtO4jJZSqnJ4fxsaXx+CtREOaDBh+GyxEkgIJegWJ2wNlQBbmw1bWNNRwCCIy0pvjhkrVVlqxlzuc6t+07i57/suUyKR5th/PT7zQc0+LM/AAiHpuO3MkMpXteLY9nIJlNBpuxzH+oTLxvHsSywU+lBd625d/eilYccGh+VRpGsJBDaOqcM+EJHXq/rp6oDyXFV7UYaPuuagjy+wJF3RWYdnyzp185fKfeSNzqhxTRPzNTQNRfLG1I9qP4VAr6elpsdU6vqJ0LWqrKbAHcMpbQCm5xQ/24dvwShH9zu1oWI37melHjq8cJc1j+P5PJoJLwxk6MUySL1CJqmXxmk2k2EcBCjZbsLaTbvU0LYvQtGG8ofO0exlGwTKe41dCTeqsacE6hEHLXaTF6uBKdHmBjnd08hf2+2SjsaiyIMp7wypa3e7t6b6gGlkwkMIRJpE/B+mCcXYNHswJ1cHMO9gHOzxcqqvHXI1ig8mCT/LJFH42iIW2l/v2OSm//TJVhkGfoFd5DWC4atzhdqtserWxf5u37HReBuvnTTex5eYqYjTNCik8LhIYy8GmHlZOM+8mPs8Beh/1Z9npvs/mqKMyrkGAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=2d0f26172f09be14743eb82bcfa4e367"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=38092f1293093ad00f91fce79503d6eb"/>
@@ -490,6 +495,7 @@
         <access>public</access>
         <acls/>
         <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
         <attributes>intermediateFlowVersion=0.4,labelCacheCleanUpExecuted=true</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
@@ -594,6 +600,7 @@
         <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -678,6 +685,7 @@
         <order>101</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -818,15 +826,15 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>38092f1293093ad00f91fce79503d6eb</sys_id>
         <latest_snapshot>4a09af1293093ad00f91fce79503d679</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1a-09-24-2025_10-14-2025_2100.zip</compiler_build>
+        <compiler_build>glide-australia-02-11-2026__patch1-03-23-2026_03-31-2026_1137.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=38092f1293093ad00f91fce79503d6eb^sys_idNOT IN9a09af1293093ad00f91fce79503d6ae"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"9a09af1293093ad00f91fce79503d6ae","name":"plan","plan_signature":null}}</plan>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"9a09af1293093ad00f91fce79503d6ae","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id>38092f1293093ad00f91fce79503d6eb</plan_id>
-        <snapshot>65c48eab2f813210b14f861cbfa4e385</snapshot>
+        <snapshot>82437f422f0c8b10b14f861cbfa4e3cd</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 02:48:25</sys_created_on>
         <sys_domain>global</sys_domain>

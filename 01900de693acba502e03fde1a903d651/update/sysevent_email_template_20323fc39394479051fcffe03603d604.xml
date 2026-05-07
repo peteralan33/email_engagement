@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>sn_customerservice_case</collection>
+        <email_layout display_value="Mondelez Layout">4e60b78b9354479051fcffe03603d67a</email_layout>
+        <message/>
+        <message_html><![CDATA[<p data-path-to-node="2">Dear ${contact.first_name},</p>
+<p data-path-to-node="3">Thank you for reaching out to Mondelēz International. As part of our commitment to Snacking Made Right, we are dedicated to evolving our service capabilities to provide you with the most accurate and timely support possible.</p>
+<p data-path-to-node="4">Your request has been processed through our specialized service framework to ensure it is routed to the correct expert team for immediate attention.</p>
+<p data-path-to-node="4">Please see a response for your review below.</p>
+<hr data-path-to-node="5">
+<p>AI Suggested Response: ${x_snc_pab_ee_tkit_ai_suggested_response}</p>
+<hr data-path-to-node="8">
+<p data-path-to-node="9">Our ESG Commitment: By streamlining our internal workflows and improving routing precision, we reduce operational redundancy and enhance our resource efficiency. This focus on operational excellence is a core part of our mission to lead the future of snacking sustainably and responsibly.</p>
+<p data-path-to-node="10">We will provide a further update as soon as your case progresses.</p>
+<p data-path-to-node="11">Best regards,</p>
+<p data-path-to-node="12">The Mondelēz International Team <em data-index-in-node="32" data-path-to-node="12">Snacking Made Right</em></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Here is your response</name>
+        <sms_alternate/>
+        <subject>Here is your response - ${number}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-22 00:47:56</sys_created_on>
+        <sys_id>20323fc39394479051fcffe03603d604</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Here is your response</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sysevent_email_template_20323fc39394479051fcffe03603d604</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-22 00:57:47</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

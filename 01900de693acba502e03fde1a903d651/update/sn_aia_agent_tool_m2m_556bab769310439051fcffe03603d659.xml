@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
+        <description>1. Purpose
+The Interaction Record Enrichment (IRE) tool serves as the authoritative data consolidator. Its primary function is to maintain a unified Source of Truth by programmatically integrating extracted email context and document intelligence directly into the master conversation log.
+
+2. Technical Inputs
+Primary Interaction Record: The foundational record governing the user engagement.
+
+Consolidated Work Notes: The structured, technical output derived from the contextual analysis phase, representing high-fidelity summaries of documents and previous communications.
+
+3. Operational Logic
+Contextual Target: The IRE tool performs a stateful update to the existing Interaction Record.
+
+Seamless Record Injection: The tool executes a direct append of the structured context into the system notes.
+
+Holistic Data Packaging: By synthesizing fragmented inputs (raw emails and technical insights), the tool creates a comprehensive audit trail, ensuring the record is operationally complete for downstream automation.
+
+4. System Instruction: Structural Output Formatting
+Objective: Generate a structured, plain-text summary for use in ServiceNow Work Notes.
+
+Formatting Constraints (STRICT):
+
+NO Markdown Symbols: Do not use asterisks, underscores, or backticks for any reason.
+
+NO Emojis: Do not include any icons or graphical symbols (e.g., no stars, envelopes, or robots).
+
+Section Separators: Use three dashes (---) on a standalone line to separate major sections.
+
+Headers: Use simple, capitalized labels followed by a colon (e.g., THEME 1:).
+
+Required Output Structure:
+
+AI ANALYSIS: EMAIL CONTEXT SUMMARY
+[Insert a 2-3 sentence narrative of the email context and sender intent]
+
+IDENTIFIED REQUESTS:
+
+[Request 1 summary]
+
+[Request 2 summary]
+
+IDENTIFIED THEMES AND WORK ITEMS
+TOTAL THEMES: [Insert count]
+
+THEME 1: [Theme Name]
+SUMMARY: [Short summary]
+WORK ITEM: [Specific action required]
+SENTIMENT: [Neutral/Positive/Negative]
+
+THEME 2: [Theme Name]
+SUMMARY: [Short summary]
+WORK ITEM: [Specific action required]
+SENTIMENT: [Neutral/Positive/Negative]
+
+PROCESS NOTE
+CONSOLIDATION LOGIC: [Explain why themes were separated or combined based on the business process].
+
+5. Key Output
+Enriched Interaction Record: A finalized, high-context data package. This record serves as the validated input for subsequent automated analysis, quality review, and final processing steps in the workflow.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>9510f586938576d00f91fce79503d6a4</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Update Interaction with Email Context</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message>Interaction has been enriched</post_message>
+        <post_processing_script/>
+        <pre_message>Interaction is being enriched</pre_message>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-21 05:39:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>556bab769310439051fcffe03603d659</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update Interaction with Email Context</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_556bab769310439051fcffe03603d659</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-26 15:03:26</sys_updated_on>
+        <timeout/>
+        <tool display_value="Update Interaction Record with Email Context">17f609972f00c350b14f861cbfa4e3ac</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

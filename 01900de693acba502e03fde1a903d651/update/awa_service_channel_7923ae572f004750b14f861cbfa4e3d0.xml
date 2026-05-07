@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="awa_service_channel">
+    <awa_service_channel action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced_condition>false</advanced_condition>
+        <assign_to_field>assigned_to</assign_to_field>
+        <assignment_group_field>assignment_group</assignment_group_field>
+        <channel_group display_value="Default">2c58cc2f6f03111026b95d3a945b36c5</channel_group>
+        <condition/>
+        <default_capacity>50</default_capacity>
+        <default_size>1</default_size>
+        <description/>
+        <enable_logging>false</enable_logging>
+        <inbox_alert_audio display_value="connect_alert.mp3">a0b698b09f201200d5f9b3e2957fcf88</inbox_alert_audio>
+        <log_level>none</log_level>
+        <message_alert_audio display_value="connect_alert.mp3">a0b698b09f201200d5f9b3e2957fcf88</message_alert_audio>
+        <name>Work Management</name>
+        <order>-10</order>
+        <stop_logging_at/>
+        <stop_logging_schedule/>
+        <synchronous_routing>false</synchronous_routing>
+        <sys_class_name>awa_service_channel</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 03:26:26</sys_created_on>
+        <sys_id>7923ae572f004750b14f861cbfa4e3d0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Work Management</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>awa_service_channel_7923ae572f004750b14f861cbfa4e3d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:14:25</sys_updated_on>
+        <type/>
+        <utilization_condition table="x_snc_pab_ee_tkit_work_management_case">state!=3^ORstate!=4^EQ<item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="3"/>
+            <item display_value="Closed Rejected" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="true" value="4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </utilization_condition>
+        <workitem_table>x_snc_pab_ee_tkit_work_management_case</workitem_table>
+    </awa_service_channel>
+</record_update>

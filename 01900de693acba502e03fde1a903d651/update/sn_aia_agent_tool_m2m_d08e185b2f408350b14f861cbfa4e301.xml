@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Work Mgt Agent">c08e945b2f408350b14f861cbfa4e3a2</agent>
+        <description>Purpose
+The Determine Email Context for Work Mgt tool functions as a technical triage layer. It utilizes financial domain expertise to analyze inbound communications from the Interaction Record, extracting intent and generating the precise metadata required for automated case creation, routing, and compliance alignment.
+
+Input
+Interaction Record: The primary data object containing the raw inbound communication and associated session metadata.
+
+Action &amp; Logic
+Contextual Extraction: The tool processes the input against a tailored skill model—anchored in historical operational data and business reference architecture—to identify the underlying financial requirement.
+
+Granular Classification: It transforms broad intent (e.g., "Payment Issue") into a specific, actionable classification (e.g., "Cross-Border Wire Transfer - Failed FX Validation"). This level of detail is mandatory for high-precision routing and SLA triggering.
+
+Technical Parameter Mapping: The tool automatically maps the identified classification to the specific schema requirements of the downstream case management system.
+
+Key Outputs
+The tool generates the following structural components for each identified work request:
+
+Case Summary: A concise, technical headline for the record (e.g., "Action Required: Mortgage Settlement Funding Shortfall").
+
+Operational Description: A comprehensive brief for the resolving agent, synthesizing conversation context, extracted data points, and the core issue to be addressed.
+
+Requirement Outline: A distinct list of the primary requests identified within the email, ensuring that multi-intent communications are broken down into individual, trackable work items.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>9510f586938576d00f91fce79503d6a4</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Determine Email Context for Work Mgt</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message>Determining classification</pre_message>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 17:45:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d08e185b2f408350b14f861cbfa4e301</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Determine Email Context for Work Mgt</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_d08e185b2f408350b14f861cbfa4e301</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 20:42:42</sys_updated_on>
+        <timeout/>
+        <tool display_value="Determine Email Context for Work Mgt">57f685972f00c350b14f861cbfa4e36a</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets/>
+    </sn_aia_agent_tool_m2m>
+</record_update>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"710632ee93c1bad00f91fce79503d623"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>e906feae93c1bad00f91fce79503d631</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Set Service Definition</name>
+        <parent/>
+        <prompt>## Role
+You are a highly analytical and meticulous triage analyst. Your task is to analyze inbound interactions and the attached emails to deduce the most appropriate service definition and target table.
+
+## Context
+The inbound interaction details and email that need to be analyzed are: 
+Interaction: {{interaction.short_description}}
+Interaction attachment summary: {{interaction.x_snc_pab_ee_tkit_attachment_summarize}} 
+Email subject: {{LookUpEmails.email_subject}} 
+Email body: {{LookUpEmails.email_body}} 
+
+## Instructions
+1a. Carefully read and understand the provided inbound interaction details.
+1b. Carefully read and understand the provided associated email details.
+1c. Carefully read and understand the provided attachment summaries.
+2a. Identify the key points and relevant information from the inbound interaction
+2b. Identify sentiment from the inbound email
+3. Identify the number of work items that are required - i.e. a email may contain multiple requests, i.e. complete a payment and update an insurance policy.
+4. Inbound Reply Processing: Prioritize all incoming replies to establish immediate next steps. Determine if the response necessitates a case update or an immediate reassignment—such as in the event of an "Out of Office" notification—to ensure the continuous progression of the outstanding work item.
+
+# Skill Outputs
+## Response
+The response must include the following:
+--&gt; Email Context – A concise summary of the sender's core intent, the overarching business objective, and relevant background.
+--&gt; Email Themes – A high-level categorical breakdown. Directive: Consolidate related requests into a single theme if they share the same business process (e.g., group all unmatched trade queries into one "Trade Settlement" theme).
+--&gt; Total Number of Themes Identified – The count of unique business processes identified.
+--&gt; Number of Work Items per Theme – The count of distinct actionable outcomes.
+--&gt; Note on Consolidation: Treat multiple items (e.g., individual trade references or account numbers) as one work item if they require the same type of action by the same team. Do not create separate work items for every data point mentioned.
+
+### For each theme:
+--&gt; Theme Summary – A high-level headline for the consolidated theme.
+--&gt; Theme Description – A narrative explanation of the theme, encompassing all related items mentioned in the email.
+--&gt; Sentiment – Classified as Negative, Neutral, or Positive, with an explanation of the tone relative to the business urgency.
+--&gt; Number of Work Items – The total count of unique actions (not total data points).
+--&gt; Work Item Description – A comprehensive overview of the required action. Directive: List the specific data points (like Trade IDs 94001236 and 94001235) as details within this single description rather than creating separate descriptions.
+
+Note: When truly distinct themes (e.g., a Trade Break and a separate User Access request) are present, list them sequentially in the order they appear. Otherwise, prioritize logical grouping over document formatting.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-21 05:08:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>734463fa939c039051fcffe03603d615</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>e906feae93c1bad00f91fce79503d631</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_generative_ai_config_734463fa939c039051fcffe03603d615</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-21 05:34:49</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>14</version>
+    </sys_generative_ai_config>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Determine Email Response">2da29d4b2f004f10b14f861cbfa4e3f5</agent>
+        <description>Purpose
+The Apply Work Management Flags tool programmatically updates the core operational attributes of a task. It translates complex situational analysis into the structured fields required for ServiceNow governance, ensuring the record is correctly prioritized and visible to the right escalation paths.
+
+Input
+WM Record Sys ID: (Data Type: string) The primary task object containing the enriched email context, technical metadata, and the specific requests identified for processing.
+
+Business Impact: (Data Type: choice) The assessed effect of the work item on the business (e.g., Critical, High, Moderate).
+
+Priority: (Data Type: choice) The calculated urgency of the record, determining its placement in the agent's queue.
+
+Escalation Required: (Data Type: choice) A binary or tiered indicator of whether the record requires immediate oversight or specialized handling.
+
+Action &amp; Logic
+Contextual Mapping: The tool maps the nuanced findings from the Email Context analysis to these specific fields.
+
+Strategic Discretion: &gt; Note on Alignment: The "Business Impact" and "Priority" levels determined by the AI may not always have a 1:1 linguistic match with the existing ServiceNow Choice List. The tool is instructed to use professional discretion to select the choice that best represents the financial risk and operational urgency identified in the earlier analysis.
+
+Mandatory Field Validation: The tool ensures all required fields (marked with *) are populated with valid system choices before committing the update to the WM Record Sys ID.
+
+Key Output
+Provisioned Work Management Record: The updated ServiceNow object, now fully enriched with the metadata necessary for automated routing and dashboard reporting.
+
+Mapping Logic Log: A brief explanation of why specific "Business Impact" or "Escalation" choices were selected, ensuring transparency for future audits by a Quality Reviewer.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>2da29d4b2f004f10b14f861cbfa4e3f5</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Set WM Record Flags</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 20:55:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b1e981db2f40c350b14f861cbfa4e325</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Set WM Record Flags</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_b1e981db2f40c350b14f861cbfa4e325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 21:32:41</sys_updated_on>
+        <timeout/>
+        <tool display_value="Set WM Record Flags">35e981db2f40c350b14f861cbfa4e31e</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

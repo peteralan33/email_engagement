@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Knowledge Category Picker Modal Default">eb1632d72fc44750b14f861cbfa4e3ac</macroponent>
+        <name>Set Category Picker Parameters</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[function handler({
+    api,
+    event,
+    imports
+}) {
+    const isEmpty = (value) => {
+        return (
+            value == null || (typeof value === 'object' && Object.keys(value).length === 0) || (typeof value === 'string' && value.trim().length === 0)
+        );
+    };
+
+    var changes = JSON.parse(api.context.props.serializedChanges);
+    var sysId = api.context.props.sysId;
+    var value = api.context.props.value;
+    var encodedRecord = api.context.props.encodedRecord;
+    var hasValue = true;
+
+    if (isEmpty(value)) {
+        hasValue = false;
+        value = '';
+    }
+
+    api.setState('hasValue', hasValue);
+    api.setState('value', value);
+    api.setState('sysId', '-1');
+
+    if (changes.hasOwnProperty('kb_knowledge_base') && !isEmpty(changes.kb_knowledge_base)) {
+        api.setState('parentId', changes.kb_knowledge_base);
+    } else if (!isEmpty(sysId) && sysId.length == 32) {
+        api.setState('sysId', sysId);
+    } else if (!isEmpty(encodedRecord)) {
+        api.setState('encodedRecord', encodedRecord);
+    }
+}]]></script>
+        <script_api_version>1.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-04-10 04:48:14</sys_created_on>
+        <sys_id>6b1632d72fc44750b14f861cbfa4e3e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Category Picker Parameters</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_6b1632d72fc44750b14f861cbfa4e3e0</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:48:14</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_client_script_6b1632d72fc44750b14f861cbfa4e3e0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Knowledge Category Picker Modal Default"&gt;eb1632d72fc44750b14f861cbfa4e3ac&lt;/macroponent&gt;&lt;name&gt;Set Category Picker Parameters&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function handler({
+    api,
+    event,
+    imports
+}) {
+    const isEmpty = (value) =&gt; {
+        return (
+            value == null || (typeof value === 'object' &amp;&amp; Object.keys(value).length === 0) || (typeof value === 'string' &amp;&amp; value.trim().length === 0)
+        );
+    };
+
+    var changes = JSON.parse(api.context.props.serializedChanges);
+    var sysId = api.context.props.sysId;
+    var value = api.context.props.value;
+    var encodedRecord = api.context.props.encodedRecord;
+    var hasValue = true;
+
+    if (isEmpty(value)) {
+        hasValue = false;
+        value = '';
+    }
+
+    api.setState('hasValue', hasValue);
+    api.setState('value', value);
+    api.setState('sysId', '-1');
+
+    if (changes.hasOwnProperty('kb_knowledge_base') &amp;&amp; !isEmpty(changes.kb_knowledge_base)) {
+        api.setState('parentId', changes.kb_knowledge_base);
+    } else if (!isEmpty(sysId) &amp;&amp; sysId.length == 32) {
+        api.setState('sysId', sysId);
+    } else if (!isEmpty(encodedRecord)) {
+        api.setState('encodedRecord', encodedRecord);
+    }
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;1.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-10 04:48:14&lt;/sys_created_on&gt;&lt;sys_id&gt;6b1632d72fc44750b14f861cbfa4e3e0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Category Picker Parameters&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_6b1632d72fc44750b14f861cbfa4e3e0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-10 04:48:14&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1749710758</payload_hash>
+        <record_name>Set Category Picker Parameters</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-04-10 04:48:14</sys_created_on>
+        <sys_id>671632d72fc44750b14f861cbfa4e3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d75b81f9f0000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:48:14</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>e31632d755c447507679147bab8ad4fc</update_guid>
+        <update_guid_history>e31632d755c447507679147bab8ad4fc:1749710758</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-04-10 04:52:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>17c18781d4594c3ea5bc6526edb3fa64</sys_id>
+        <sys_metadata>6b1632d72fc44750b14f861cbfa4e3e0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Category Picker Parameters</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_6b1632d72fc44750b14f861cbfa4e3e0</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_6b1632d72fc44750b14f861cbfa4e3e0">671632d72fc44750b14f861cbfa4e3fd</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-10 04:52:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

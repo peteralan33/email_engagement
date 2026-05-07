@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Determine Email Response">2da29d4b2f004f10b14f861cbfa4e3f5</agent>
+        <description>Purpose
+This tool analyzes the Work Management Record to create a professional response and a clear list of next steps. It ensures the resolution matches the case type (e.g., Fraud, Mortgages) and addresses every request in the record.
+
+Input
+Work Management Record: The case file containing the email context, metadata, and identified requests.
+
+Action &amp; Logic
+Direct Mapping: Matches the case category to the correct communication style and technical requirements.
+
+Compliance Check: Validates that the response meets the specific standards for the assigned work category.
+
+Key Outputs:
+
+Required Next Steps: Clear instructions for the Case Owner on what needs to happen next to close the record.
+
+NOTE: We ONLY need to list the next steps as this will be embedded into an email template.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>2da29d4b2f004f10b14f861cbfa4e3f5</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Determine Next Steps</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 00:33:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a2cbb95b2f800750b14f861cbfa4e3ab</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Determine Next Steps</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_a2cbb95b2f800750b14f861cbfa4e3ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 06:02:30</sys_updated_on>
+        <timeout/>
+        <tool display_value="Determine Email Response">a5e9c99b2f40c350b14f861cbfa4e33b</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

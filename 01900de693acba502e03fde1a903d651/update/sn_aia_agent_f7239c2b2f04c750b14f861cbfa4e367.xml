@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <advanced_mode>false</advanced_mode>
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <channel>nap_and_va</channel>
+        <compiled_handbook/>
+        <condition/>
+        <context_processing_script><![CDATA[/*
+ * Available Variables:
+ * - task: The task provided to agent to solve either by orchestrator or user(incase of only agent execution i.e agent is invoked as seperate entity instead from a workflow).
+ * - user_utterance: The user utterance provided. and task = user_utterance in case of individual agent execution.
+ * - agent_id: The agent id.
+ * - context: An object that carries additional contextual information for the agent.
+ *          It always includes a "pageContext" and may include a "triggerContext",
+ *          depending on how and from where the agent is invoked.
+ *
+ *          Behavior by invocation type:
+ *          ---------------------------------
+ *          - When invoked via the startAiAgentConversation API:
+ *                If a "contextMemory" parameter is provided in the API request,
+ *                it will be available here as the "triggerContext".
+ *                The "pageContext" is always present in this call, regardless
+ *                of whether the agent is executed individually or as part of a use case.
+ *                Example:
+ *                    {
+ *                        pageContext: { ... },
+ *                        triggerContext: { ... } // Derived from contextMemory (if passed)
+ *                    }
+ *
+ *          - When invoked as part of a use case or workflow:
+ *                The "pageContext" and "triggerContext" objects available here
+ *                may have been *modified* by the use case’s context processing script.
+ *                This means the use case may alter, extend, or overwrite values
+ *                from the original "pageContext" or "triggerContext"
+ *                before the context reaches the agent.
+ *                If the use case was originally triggered via the API,
+ *                the initial "triggerContext" is still derived from the
+ *                "contextMemory" parameter, but its contents may have been updated
+ *                by the use case logic.
+ *
+ *          - When executed directly (standalone agent execution):
+ *                The "pageContext" will always be present (default or empty),
+ *                and the "triggerContext" will only be populated if explicitly
+ *                passed through the API call.
+ * Return an modified context like: { pageContext : {},triggerContext:{} }
+ */
+(function(task, user_utterance, agent_id, context) {
+    return {
+        pageContext : context?.pageContext,
+		triggerContext : context?.triggerContext
+    };
+})(task,user_utterance, agent_id, context);]]></context_processing_script>
+        <description>This robust back-office AI agent is specifically engineered to automate the critical intake and triage phase for Capital Market Operations support, dramatically improving efficiency when handling high-volume, complex, and attachment-rich incoming requests.
+
+The agent executes a precise, multi-step workflow powered by specialized Capital Markets intelligence:
+
+# Attachment Analysis &amp; Summarization
+The agent automatically processes all inbound attachments (e.g., trade confirmations, exception reports, supporting documents) using advanced OCR/NLP to generate a concise, actionable summary of the issue.
+
+# Specialized Classification
+Leverages a tailored Capital Markets skill and machine learning model to accurately determine the precise request type (e.g., identifying specific Trade Exception types, regulatory reporting issues, etc.).
+
+# Seamless Case Generation: 
+Automatically creates a fully contextualized case, ensuring the new entry is pre-populated with validated key data fields and immediately routed to the correct processing queue or support team.
+
+# Key Outcomes &amp; Benefits 
+Eliminates the bottleneck of manual triage, dramatically reducing response times and guaranteeing that all high-priority cases are routed immediately with complete, actionable data.</description>
+        <extends/>
+        <extension_configuration/>
+        <external_agent_configuration/>
+        <inputs>""</inputs>
+        <instructions>The agent operates through a precise, automated sequence, functioning continuously without human intervention until the final case is created, structured, and routed.
+
+You must execute all steps without fail
+
+# Step 1: Determine Email Reply for Work Mgt
+Context: The agent leverages a tailored Work Management skill and model trained on historical operational data, knowledge and key business reference data
+
+Action: The agent analyzes the extracted data and the synthesized summary to accurately determine the reply type
+
+Step 2: Synchronize Record Flags &amp; Contingency Logic
+Action: Apply the output from Step 2 to the work management record. If the email context identifies an Out of Office status, the system must automatically flag the record for Immediate Reassignment to ensure work continuity. For all other responses, update the record with
+
+
+Step 3: Inbound Reply Triage &amp; Contingency
+Prioritize all incoming replies to establish immediate next steps.
+
+If Out of Office is detected: Immediately call the Out of Office Email Step to trigger the reassignment workflow and notify the backup team, ensuring the continuity of the outstanding work item.</instructions>
+        <internal_name>global.x_snc_pab_ee_tkit.Email Triage and Classification Work Mgt Reply Agent</internal_name>
+        <name>Email Triage and Classification Work Mgt Reply Agent</name>
+        <outputs>""</outputs>
+        <parent/>
+        <post_processing_message>Help review the email reply for WMC0001204</post_processing_message>
+        <processing_message>Reviewing inbound email</processing_message>
+        <proficiency>- Expertly automates the intake and triage phase for Capital Market Operations support by leveraging specialized capital markets intelligence. The agent processes complex, attachment-rich inbound requests, rapidly classifies and summarizes them, and ensures immediate, accurate routing to the correct support team. This core capability enables the agent to transform unstructured, high-volume operational inputs into structured, actionable cases, thereby eliminating manual bottlenecks and supporting continuous, SLA-driven workflows.
+- Performs advanced contextual analysis of inbound communications using the 'Determine Email Context for Work Mgt Reply' tool. The agent extracts the underlying financial requirement from the Interaction Record, classifies the request with high granularity (e.g., transforming broad intents into specific actionable classifications), and generates structured metadata for downstream case management. It also identifies Out of Office (OOO) statuses and flags requests outside the defined knowledge scope, ensuring that each work item is accurately categorized and routed for immediate action or manual review.
+- Automatically detects Out of Office (OOO) scenarios within inbound communications and triggers the 'Send email for Out office' tool. Upon detection, the agent ingests the OOO email content and relevant work notes, links the notification to the correct Work Management Record, and dispatches a high-priority notification to the designated manager or backup team. This ensures immediate reassignment of the outstanding work item, maintaining SLA compliance and continuous operational coverage.
+- Consolidates and enriches the master Work Management Record using the 'Update Interaction with Email Context' tool. The agent programmatically integrates extracted email context, availability status, and case updates into the record, ensuring all downstream agents and human owners have immediate access to the latest data. It updates the record state based on operational triggers (e.g., OOO detection, case completion), creates a comprehensive audit trail, and ensures the record is operationally complete for subsequent processing, review, or archival.
+- Executes a fully automated, end-to-end triage and case management workflow by orchestrating the sequential use of all available tools. The agent begins by determining the email context and reply type, synchronizes record flags and applies contingency logic, and prioritizes inbound replies to establish immediate next steps. It ensures that Out of Office scenarios are handled with immediate escalation and reassignment, and that all case updates are consolidated into the master record. This integrated capability enables the agent to deliver continuous, high-precision operational support in capital markets environments.</proficiency>
+        <record_type>custom</record_type>
+        <required_translations>[]</required_translations>
+        <research>false</research>
+        <role># Outline of Role
+The AI Agent's primary role is to act as the Intelligent Gatekeeper and Triage Specialist for Capital Market Operations support, automating the initial and most labor-intensive phase of request handling. Its operation is designed to transform unstructured, high-volume inputs into structured, actionable cases.
+
+# Role Statement
+The agent's role is to automate the critical intake and triage phase for Capital Market Operations support. By applying specialized Capital Markets intelligence, it efficiently processes complex, attachment-rich inbound requests, ensuring rapid classification, accurate summarization, and immediate routing to the correct support team. This effectively eliminates manual bottlenecking.</role>
+        <root_agent_id display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</root_agent_id>
+        <source_id display_value="Email Triage and Classification Work Mgt Agent">c08e945b2f408350b14f861cbfa4e3a2</source_id>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 11:34:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f7239c2b2f04c750b14f861cbfa4e367</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Email Triage and Classification Work Mgt Reply Agent</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_f7239c2b2f04c750b14f861cbfa4e367</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 14:52:05</sys_updated_on>
+    </sn_aia_agent>
+</record_update>
