@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_snippetization_configuration">
+    <ais_semantic_snippetization_configuration action="DELETE">
+        <enable_pre_processing>false</enable_pre_processing>
+        <limit>250</limit>
+        <limited_by>WORDS</limited_by>
+        <max_total_words>-1</max_total_words>
+        <overlap_sentences>5</overlap_sentences>
+        <semantic_script><![CDATA[/** 
+ * 
+ * @param {Dictionary} semanticIndexPayload 
+ *   Dictionary of key-value pairs, with each pair representing a semantic index field. 
+ *     Key is the field's column name (element as per sys_dictionary). 
+ *     Value is the display value for the semantic index field. 
+ * 
+ * @return {string} 
+*   This string value is embedded exactly as it's specified here. 
+*/
+(function preProcessing(semanticIndexPayload) {
+	return '';
+})(semanticIndexPayload);]]></semantic_script>
+        <snippet_mode>CONCATENATE</snippet_mode>
+        <sys_class_name>ais_semantic_snippetization_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:21:23</sys_created_on>
+        <sys_id>cecef1f92f2aba50ecb8b04bcfa4e34c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CONCATENATE</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_semantic_snippetization_configuration_cecef1f92f2aba50ecb8b04bcfa4e34c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 01:17:45</sys_updated_on>
+        <validate_script_output/>
+        <validate_script_reference_record/>
+        <validate_script_table/>
+    </ais_semantic_snippetization_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>ais_semantic_snippetization_configuration_cecef1f92f2aba50ecb8b04bcfa4e34c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="ais_semantic_snippetization_configuration"&gt;&lt;ais_semantic_snippetization_configuration action="INSERT_OR_UPDATE"&gt;&lt;enable_pre_processing&gt;false&lt;/enable_pre_processing&gt;&lt;limit&gt;250&lt;/limit&gt;&lt;limited_by&gt;WORDS&lt;/limited_by&gt;&lt;max_total_words&gt;-1&lt;/max_total_words&gt;&lt;overlap_sentences&gt;5&lt;/overlap_sentences&gt;&lt;semantic_script&gt;&lt;![CDATA[/** 
+ * 
+ * @param {Dictionary} semanticIndexPayload 
+ *   Dictionary of key-value pairs, with each pair representing a semantic index field. 
+ *     Key is the field's column name (element as per sys_dictionary). 
+ *     Value is the display value for the semantic index field. 
+ * 
+ * @return {string} 
+*   This string value is embedded exactly as it's specified here. 
+*/
+(function preProcessing(semanticIndexPayload) {
+	return '';
+})(semanticIndexPayload);]]&gt;&lt;/semantic_script&gt;&lt;snippet_mode&gt;CONCATENATE&lt;/snippet_mode&gt;&lt;sys_class_name&gt;ais_semantic_snippetization_configuration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-20 19:21:23&lt;/sys_created_on&gt;&lt;sys_id&gt;cecef1f92f2aba50ecb8b04bcfa4e34c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;CONCATENATE&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;ais_semantic_snippetization_configuration_cecef1f92f2aba50ecb8b04bcfa4e34c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-21 01:17:45&lt;/sys_updated_on&gt;&lt;validate_script_output/&gt;&lt;validate_script_reference_record/&gt;&lt;validate_script_table/&gt;&lt;/ais_semantic_snippetization_configuration&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>285053943</payload_hash>
+        <record_name>CONCATENATE</record_name>
+        <reverted_from/>
+        <source>09927d20936af6509634f3990103d697</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 01:17:45</sys_created_on>
+        <sys_id>825053f9936272509634f3990103d694</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bde2107be0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 01:17:45</sys_updated_on>
+        <type>Chunking Configuration For Embedding</type>
+        <update_guid>0e5053f924627250dce69e0cf6140292</update_guid>
+        <update_guid_history>0e5053f924627250dce69e0cf6140292:285053943,4ecef1f9fa2aba50ac8e0359d478cd51:1661844996</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Full Text">ff811b3593a272509634f3990103d641</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 01:23:03</sys_created_on>
+        <sys_db_object display_value="" name="ais_semantic_snippetization_configuration">ais_semantic_snippetization_configuration</sys_db_object>
+        <sys_id>1bb5248a82ab4842ae5f72b452e12384</sys_id>
+        <sys_metadata>cecef1f92f2aba50ecb8b04bcfa4e34c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CONCATENATE</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_semantic_snippetization_configuration_cecef1f92f2aba50ecb8b04bcfa4e34c</sys_update_name>
+        <sys_update_version display_value="ais_semantic_snippetization_configuration_cecef1f92f2aba50ecb8b04bcfa4e34c">825053f9936272509634f3990103d694</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 01:23:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

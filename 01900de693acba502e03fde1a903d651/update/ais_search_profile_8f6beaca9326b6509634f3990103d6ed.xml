@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile">
+    <ais_search_profile action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <creator_source/>
+        <description/>
+        <exclude_from_evaluation>false</exclude_from_evaluation>
+        <genius_result_assembly/>
+        <label>HCLS Service Definitions</label>
+        <name>x_snc_pab_ee_tkit_hcls_service_definitions</name>
+        <publish_id>15dee081-ba58-447d-a24c-79a44029e037</publish_id>
+        <qna_model_id>bert-qa-model-1.1.6</qna_model_id>
+        <state>PUBLISHED</state>
+        <sys_class_name>ais_search_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 17:15:10</sys_created_on>
+        <sys_id>8f6beaca9326b6509634f3990103d6ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>HCLS Service Definitions</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_profile_8f6beaca9326b6509634f3990103d6ed</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-01-21 17:20:08</sys_updated_on>
+    </ais_search_profile>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_semantic_index_configuration">
+    <ais_semantic_index_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conflict>false</conflict>
+        <datasource display_value="">sn_case_type_selection</datasource>
+        <embedding_models>c153d0f2432302104611495d9bb8f2ec</embedding_models>
+        <semantic_field_name>getHealthServiceDefinitions</semantic_field_name>
+        <semantic_snippetization_configuration display_value="Truncate">adba974693223a509634f3990103d666</semantic_snippetization_configuration>
+        <sys_class_name>ais_semantic_index_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 20:41:31</sys_created_on>
+        <sys_id>edba974693223a509634f3990103d66d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getHealthServiceDefinitions</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_semantic_index_configuration_edba974693223a509634f3990103d66d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 20:41:31</sys_updated_on>
+    </ais_semantic_index_configuration>
+</record_update>
