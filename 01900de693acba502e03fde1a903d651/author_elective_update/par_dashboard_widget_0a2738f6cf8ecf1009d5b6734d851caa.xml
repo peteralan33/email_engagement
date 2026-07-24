@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">1527b4f6cf8ecf1009d5b6734d851c15</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"lg","scoreAlignment":"start","sparklineStyle":"area","iconStyle":"background","showScoreDate":true,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":false,"wrapElements":true,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"dataSources":[{"allowRealTime":false,"allowTotalValue":true,"indicatorType":"3","isScriptedIndicator":false,"allowMultiElementsAggregation":false,"indicatorClass":"PA_INDICATOR","aggregateType":1,"label":"Avg ACW Duration - Daily","sourceType":"indicator","uuid":{"indicator":"8b8abb962fc68f10b14f861cbfa4e378"},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yOGI4YWJiOTYyZmM2OGYxMGIxNGY4NjFjYmZhNGUzNzgxNzg0MjE2Mzk5OTA0","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"start","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headerTitle":"ACW (After Call Work)","headingLevel":2,"showBorder":true,"bareBorder":false,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"aW5kaWNhdG9yOGI4YWJiOTYyZmM2OGYxMGIxNGY4NjFjYmZhNGUzNzgxNzg0MjE2Mzk5OTA0","id":"YVc1a2FXTmhkRzl5T0dJNFlXSmlPVFl5Wm1NMk9HWXhNR0l4TkdZNE5qRmpZbVpoTkdVek56Z3hOemcwTWpFMk16azVPVEEwMTc4NDIxNjQwMjA1MQ==","frequency":10,"numberFormat":{"customFormat":false},"axisId":"primary","aggregateIndicator":""}],"sortBy":"value","sortByOrder":"desc","showChange":true,"showChangePercentage":true,"showTarget":true,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":true,"showSparkline":true,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"2wyildw0","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"showChangeFrom":true,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","description":"AHT is the average duration of a complete customer interaction, measured from the moment the customer initiates contact until the agent finishes all associated administrative work (ACW).","headingPosition":"top","scoreType":null,"filterPerMetric":[]}</component_props>
+        <h>24</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Avg ACW Duration - Daily","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"},{"comment":"","message":"ACW (After Call Work)","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"},{"comment":"","message":"AHT is the average duration of a complete customer interaction, measured from the moment the customer initiates contact until the agent finishes all associated administrative work (ACW).","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:22:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0a2738f6cf8ecf1009d5b6734d851caa</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>par_dashboard_widget_0a2738f6cf8ecf1009d5b6734d851caa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 16:28:47</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props>{"headerTitle":"ACW (After Call Work)","showHeaderSeparator":false,"description":"AHT is the average duration of a complete customer interaction, measured from the moment the customer initiates contact until the agent finishes all associated administrative work (ACW)."}</widget_props>
+        <x>24</x>
+        <y>36</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>par_dashboard_widget_0a2738f6cf8ecf1009d5b6734d851caa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">1527b4f6cf8ecf1009d5b6734d851c15</canvas><component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component><component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"lg","scoreAlignment":"start","sparklineStyle":"area","iconStyle":"background","showScoreDate":true,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":false,"wrapElements":true,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"dataSources":[{"allowRealTime":false,"allowTotalValue":true,"indicatorType":"3","isScriptedIndicator":false,"allowMultiElementsAggregation":false,"indicatorClass":"PA_INDICATOR","aggregateType":1,"label":"Avg ACW Duration - Daily","sourceType":"indicator","uuid":{"indicator":"8b8abb962fc68f10b14f861cbfa4e378"},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yOGI4YWJiOTYyZmM2OGYxMGIxNGY4NjFjYmZhNGUzNzgxNzg0MjE2Mzk5OTA0","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"start","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headerTitle":"ACW (After Call Work)","headingLevel":2,"showBorder":true,"bareBorder":false,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"aW5kaWNhdG9yOGI4YWJiOTYyZmM2OGYxMGIxNGY4NjFjYmZhNGUzNzgxNzg0MjE2Mzk5OTA0","id":"YVc1a2FXTmhkRzl5T0dJNFlXSmlPVFl5Wm1NMk9HWXhNR0l4TkdZNE5qRmpZbVpoTkdVek56Z3hOemcwTWpFMk16azVPVEEwMTc4NDIxNjQwMjA1MQ==","frequency":10,"numberFormat":{"customFormat":false},"axisId":"primary","aggregateIndicator":""}],"sortBy":"value","sortByOrder":"desc","showChange":true,"showChangePercentage":true,"showTarget":true,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":true,"showSparkline":true,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"2wyildw0","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"showChangeFrom":true,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","description":"AHT is the average duration of a complete customer interaction, measured from the moment the customer initiates contact until the agent finishes all associated administrative work (ACW).","headingPosition":"top","scoreType":null,"filterPerMetric":[]}</component_props><h>24</h><name/><required_translations>[{"comment":"","message":"Avg ACW Duration - Daily","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"},{"comment":"","message":"ACW (After Call Work)","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"},{"comment":"","message":"AHT is the average duration of a complete customer interaction, measured from the moment the customer initiates contact until the agent finishes all associated administrative work (ACW).","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.0a2738f6cf8ecf1009d5b6734d851caa"}]</required_translations><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-16 16:22:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0a2738f6cf8ecf1009d5b6734d851caa</sys_id><sys_mod_count>3</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>par_dashboard_widget_0a2738f6cf8ecf1009d5b6734d851caa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-16 16:28:47</sys_updated_on><visualization/><w>12</w><widget_props>{"headerTitle":"ACW (After Call Work)","showHeaderSeparator":false,"description":"AHT is the average duration of a complete customer interaction, measured from the moment the customer initiates contact until the agent finishes all associated administrative work (ACW)."}</widget_props><x>24</x><y>36</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-1498117213</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:28:47</sys_created_on>
+        <sys_id>8ba8f832cfcecf1009d5b6734d851c1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6bc25a6f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 16:28:47</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>47a8f832d6cecf1034cfb7097dd5f41c</update_guid>
+        <update_guid_history>47a8f832d6cecf1034cfb7097dd5f41c:-1498117213,b6887cfe848ecf10fd2db604179d0552:2120803525,f74874be868ecf1070c9df69b15fbae8:2133406318,462738f6a68ecf106f66544ba0b6f1ad:-991281148</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c5e830b2cfcecf1009d5b6734d851c28</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:29:44</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>58f5a5480c834e968cd74dddad3ca671</sys_id>
+        <sys_metadata>0a2738f6cf8ecf1009d5b6734d851caa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_0a2738f6cf8ecf1009d5b6734d851caa</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_0a2738f6cf8ecf1009d5b6734d851caa">8ba8f832cfcecf1009d5b6734d851c1d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 16:29:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

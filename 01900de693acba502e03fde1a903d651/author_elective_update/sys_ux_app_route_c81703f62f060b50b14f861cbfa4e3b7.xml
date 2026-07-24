@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="CSM/FSM Configurable Workspace App Config">f224e5a3530210102c30ddeeff7b128d</app_config>
+        <description/>
+        <extension_point/>
+        <fields>table,sysId</fields>
+        <icon/>
+        <interoperable>false</interoperable>
+        <name>Active Call Interaction Control</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="FSO Interaction Record Page (Channel Eng)">75078bb2cfc2835009d5b6734d851cfc</parent_macroponent>
+        <parent_macroponent_composition_element_id>active_call_interaction_control_viewport</parent_macroponent_composition_element_id>
+        <route_type>active-call-interaction-control</route_type>
+        <screen_type display_value="Active Call Interaction Control">481703f62f060b50b14f861cbfa4e364</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:53</sys_created_on>
+        <sys_id>c81703f62f060b50b14f861cbfa4e3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Active Call Interaction Control</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_app_route_c81703f62f060b50b14f861cbfa4e3b7</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:53</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=c81703f62f060b50b14f861cbfa4e3b7"/>
+    <sys_translated_text action="DELETE">
+        <documentkey>c81703f62f060b50b14f861cbfa4e3b7</documentkey>
+        <fieldname>description</fieldname>
+        <language>en, fr, es</language>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:53</sys_created_on>
+        <sys_id>141703f62f060b50b14f861cbfa4e3e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:53</sys_updated_on>
+        <tablename>sys_ux_app_route</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_app_route_c81703f62f060b50b14f861cbfa4e3b7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="CSM/FSM Configurable Workspace App Config">f224e5a3530210102c30ddeeff7b128d</app_config><description/><extension_point/><fields>table,sysId</fields><icon/><interoperable>false</interoperable><name>Active Call Interaction Control</name><optional_parameters/><order>0</order><parent_macroponent display_value="FSO Interaction Record Page (Channel Eng)">75078bb2cfc2835009d5b6734d851cfc</parent_macroponent><parent_macroponent_composition_element_id>active_call_interaction_control_viewport</parent_macroponent_composition_element_id><route_type>active-call-interaction-control</route_type><screen_type display_value="Active Call Interaction Control">481703f62f060b50b14f861cbfa4e364</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2026-07-17 02:50:53</sys_created_on><sys_id>c81703f62f060b50b14f861cbfa4e3b7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Active Call Interaction Control</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_ux_app_route_c81703f62f060b50b14f861cbfa4e3b7</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-07-17 02:50:53</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=c81703f62f060b50b14f861cbfa4e3b7"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>c81703f62f060b50b14f861cbfa4e3b7</documentkey><fieldname>description</fieldname><language>en, fr, es</language><sys_created_by>system</sys_created_by><sys_created_on>2026-07-17 02:50:53</sys_created_on><sys_id>141703f62f060b50b14f861cbfa4e3e0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-07-17 02:50:53</sys_updated_on><tablename>sys_ux_app_route</tablename><value/></sys_translated_text></record_update>]]></payload>
+        <payload_hash>1641636896</payload_hash>
+        <record_name>Active Call Interaction Control</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:53</sys_created_on>
+        <sys_id>941703f62f060b50b14f861cbfa4e3e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6dfbe9770000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:53</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>941703f68d060b50ac5bc8faf92c24e2</update_guid>
+        <update_guid_history>941703f68d060b50ac5bc8faf92c24e2:1641636896</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 12:37:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>15abe8f341e6439683854755b602d484</sys_id>
+        <sys_metadata>c81703f62f060b50b14f861cbfa4e3b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Active Call Interaction Control</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_c81703f62f060b50b14f861cbfa4e3b7</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_c81703f62f060b50b14f861cbfa4e3b7">941703f62f060b50b14f861cbfa4e3e3</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 12:37:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

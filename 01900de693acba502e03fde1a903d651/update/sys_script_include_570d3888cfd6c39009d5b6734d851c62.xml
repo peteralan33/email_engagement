@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_pab_ee_tkit.CreateCallTranscript</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CreateCallTranscript</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[
+var CreateCallTranscript = Class.create();
+CreateCallTranscript.prototype = {
+    initialize: function() {},
+
+    handleEvent: function(interactionSysId, step) {
+        if (gs.nil(step) || step === 'init') {
+            this.runSimulation(interactionSysId);
+        }
+    },
+
+    runSimulation: function(interactionSysId) {
+        // 1. Immediately ensure times are set
+        this.ensureTimesAreSet(interactionSysId);
+
+        // 2. Inject initial IVR dialogue lines immediately so the page is never blank
+        var initialLines = [
+            { speaker: 'customer', text: "[IVR Menu Option] Speak to a Commercial Loan Specialist" },
+            { speaker: 'agent', text: "[IVR System] Connecting your call to a Commercial Loan Specialist. Please stand by." },
+            { speaker: 'customer', text: "[Connecting Music]" },
+            { speaker: 'agent', text: "Hello! Thank you for calling Summit Sports, Outdoors & Events. My name is Quinn. How can I help you today?" }
+        ];
+
+        this.appendMultipleTranscriptMessages(interactionSysId, initialLines);
+
+        // 3. Define the 20 dialogue steps
+        var scriptLines = [
+            { speaker: 'customer', text: "Hi, I have a question about my Summit Commercial Term Loan account." },
+            { speaker: 'agent', text: "Sure, I can help you with that. Can you please confirm the last 4 digits of your account number?" },
+            { speaker: 'customer', text: "Yes, it is 4001." },
+            { speaker: 'agent', text: "Excellent, I see the account here. How can I assist you with this loan?" },
+            { speaker: 'customer', text: "I'd like to check if there are any prepayment fees if I pay it off early." },
+            { speaker: 'agent', text: "Let me pull up the terms of your contract. Please hold for a moment." },
+            { speaker: 'customer', text: "No problem, thank you." },
+            { speaker: 'agent', text: "Thank you for waiting. According to the contract terms, there are no prepayment penalties for early payoff." },
+            { speaker: 'customer', text: "That is great news! How long does it take for the account closure to be processed once payment is received?" },
+            { speaker: 'agent', text: "Once we receive the payoff amount, it usually takes 2 to 3 business days to process and close the loan." },
+            { speaker: 'customer', text: "Perfect. Can you send me the final payoff letter with the exact amount and wire instructions?" },
+            { speaker: 'agent', text: "Yes, I can email that to the registered address on file: contact@summitsports.com. Is that correct?" },
+            { speaker: 'customer', text: "Yes, that is the correct email address." },
+            { speaker: 'agent', text: "Great. I have initiated the payoff document request. You should receive it in your email within 10 minutes." },
+            { speaker: 'customer', text: "Thank you so much, Quinn! You've been extremely helpful." },
+            { speaker: 'agent', text: "You are very welcome! Is there anything else I can assist you with today?" },
+            { speaker: 'customer', text: "No, that's all. Have a great day!" },
+            { speaker: 'agent', text: "Thank you, you too! Goodbye." },
+            { speaker: 'customer', text: "[Call Terminated by Customer]" },
+            { speaker: 'agent', text: "[Call Finished]" }
+        ];
+
+        // 4. Sequentially execute each step with 3 seconds sleep in the background thread
+        for (var i = 0; i < scriptLines.length; i++) {
+            new global.LiveTranscriptInserter().sleep(3000);
+            this.ensureTimesAreSet(interactionSysId);
+            var line = scriptLines[i];
+            this.appendLiveTranscriptMessage(interactionSysId, line.speaker, line.text);
+        }
+
+        // 5. Close the call after a final 3 seconds sleep
+        new global.LiveTranscriptInserter().sleep(3000);
+        this.executeClose(interactionSysId);
+    },
+
+    executeClose: function(interactionSysId) {
+        var closeGR = new GlideRecord('interaction');
+        if (closeGR.get(interactionSysId)) {
+            closeGR.state = 'closed_complete';
+            closeGR.end_time = new GlideDateTime();
+            closeGR.duration = '00:01:03'; 
+            closeGR.update();
+        }
+    },
+
+    ensureTimesAreSet: function(interactionSysId) {
+        var startGR = new GlideRecord('interaction');
+        if (startGR.get(interactionSysId)) {
+            var updated = false;
+            if (gs.nil(startGR.getValue('live_handoff_time'))) {
+                startGR.setValue('live_handoff_time', new GlideDateTime());
+                updated = true;
+            }
+            if (gs.nil(startGR.getValue('duration'))) {
+                startGR.setValue('duration', '00:00:05'); 
+                updated = true;
+            }
+            if (updated) {
+                startGR.update();
+            }
+        }
+
+        var irrGR = new GlideRecord('interaction_related_record');
+        irrGR.addQuery('interaction', interactionSysId);
+        irrGR.addQuery('document_table', 'sn_openframe_phone_log');
+        irrGR.query();
+        while (irrGR.next()) {
+            var plGR = new GlideRecord('sn_openframe_phone_log');
+            if (plGR.get(irrGR.getValue('document_id'))) {
+                if (gs.nil(plGR.getValue('end_time'))) {
+                    plGR.setValue('end_time', new GlideDateTime());
+                    plGR.update();
+                }
+            }
+        }
+    },
+
+    insertCSMessage: function(conversationId, speaker, text) {
+        try {
+            new global.LiveTranscriptInserter().insertMessage(conversationId, speaker, text);
+        } catch (e) {
+            gs.error("x_snc_pab_ee_tkit (CreateCallTranscript): Failed to call global.LiveTranscriptInserter - " + e.message);
+        }
+    },
+
+    appendMultipleTranscriptMessages: function(interactionSysId, linesArray) {
+        var sa = new GlideSysAttachment();
+        var attachmentName = 'analysis.json';
+        
+        var attachmentGr = sa.getAttachments('interaction', interactionSysId);
+        attachmentGr.addQuery('file_name', attachmentName);
+        attachmentGr.query();
+        
+        var jsonPayload = {
+            "Version": "1.0.0",
+            "Transcript": [],
+            "ConversationCharacteristics": {
+                "TotalConversationDurationMillis": 0,
+                "TalkTime": {
+                    "DetailsByParticipant": {
+                        "AGENT": { "TotalTimeMillis": 0 },
+                        "CUSTOMER": { "TotalTimeMillis": 0 }
+                    }
+                },
+                "NonTalkTime": { "TotalTimeMillis": 0 }
+            }
+        };
+        
+        var attachmentSysId = '';
+        if (attachmentGr.next()) {
+            attachmentSysId = attachmentGr.getUniqueValue();
+            try {
+                var contentString = sa.getContent(attachmentGr);
+                if (contentString) {
+                    jsonPayload = JSON.parse(contentString);
+                }
+                sa.deleteAttachment(attachmentSysId);
+            } catch (e) {
+                gs.error('x_snc_pab_ee_tkit (CreateCallTranscript): Error reading analysis.json in appendMultipleTranscriptMessages - ' + e.message);
+            }
+        }
+        
+        var conversationId = '';
+        var interactionGr = new GlideRecord('interaction');
+        if (interactionGr.get(interactionSysId)) {
+            conversationId = interactionGr.getValue('channel_metadata_document');
+        }
+
+        for (var idx = 0; idx < linesArray.length; idx++) {
+            var participant = linesArray[idx].speaker;
+            var messageText = linesArray[idx].text;
+            var timestampOffset = jsonPayload.Transcript.length * 3000;
+            var mappedParticipant = (participant.toLowerCase() === 'agent') ? 'AGENT' : 'CUSTOMER';
+            
+            jsonPayload.Transcript.push({
+                "Content": messageText,
+                "BeginOffsetMillis": timestampOffset,
+                "ParticipantId": mappedParticipant,
+                "Sentiment": "NEUTRAL"
+            });
+            jsonPayload.ConversationCharacteristics.TotalConversationDurationMillis = timestampOffset + 3000;
+
+            if (!gs.nil(conversationId)) {
+                this.insertCSMessage(conversationId, participant, messageText);
+            }
+            this.insertCSMessage(interactionSysId, participant, messageText);
+        }
+        
+        // Write to interaction record
+        var writeGr = new GlideRecord('interaction');
+        if (writeGr.get(interactionSysId)) {
+            sa.write(
+                writeGr, 
+                attachmentName, 
+                'application/json', 
+                JSON.stringify(jsonPayload)
+            );
+        }
+
+        // Also write to any linked phone log records
+        var irrGR = new GlideRecord('interaction_related_record');
+        irrGR.addQuery('interaction', interactionSysId);
+        irrGR.addQuery('document_table', 'sn_openframe_phone_log');
+        irrGR.query();
+        while (irrGR.next()) {
+            var plGR = new GlideRecord('sn_openframe_phone_log');
+            if (plGR.get(irrGR.getValue('document_id'))) {
+                var plAttachmentGr = sa.getAttachments('sn_openframe_phone_log', plGR.getUniqueValue());
+                plAttachmentGr.addQuery('file_name', attachmentName);
+                plAttachmentGr.query();
+                while (plAttachmentGr.next()) {
+                    sa.deleteAttachment(plAttachmentGr.getUniqueValue());
+                }
+                sa.write(
+                    plGR, 
+                    attachmentName, 
+                    'application/json', 
+                    JSON.stringify(jsonPayload)
+                );
+            }
+        }
+    },
+
+    appendLiveTranscriptMessage: function(interactionSysId, participant, messageText) {
+        var sa = new GlideSysAttachment();
+        var attachmentName = 'analysis.json';
+        
+        var attachmentGr = sa.getAttachments('interaction', interactionSysId);
+        attachmentGr.addQuery('file_name', attachmentName);
+        attachmentGr.query();
+        
+        var jsonPayload = {
+            "Version": "1.0.0",
+            "Transcript": [],
+            "ConversationCharacteristics": {
+                "TotalConversationDurationMillis": 0,
+                "TalkTime": {
+                    "DetailsByParticipant": {
+                        "AGENT": { "TotalTimeMillis": 0 },
+                        "CUSTOMER": { "TotalTimeMillis": 0 }
+                    }
+                },
+                "NonTalkTime": { "TotalTimeMillis": 0 }
+            }
+        };
+        
+        var attachmentSysId = '';
+        if (attachmentGr.next()) {
+            attachmentSysId = attachmentGr.getUniqueValue();
+            try {
+                var contentString = sa.getContent(attachmentGr);
+                if (contentString) {
+                    jsonPayload = JSON.parse(contentString);
+                }
+                sa.deleteAttachment(attachmentSysId);
+            } catch (e) {
+                gs.error('x_snc_pab_ee_tkit (CreateCallTranscript): Error reading analysis.json in appendLiveTranscriptMessage - ' + e.message);
+            }
+        }
+        
+        var timestampOffset = jsonPayload.Transcript.length * 3000;
+        var mappedParticipant = (participant.toLowerCase() === 'agent') ? 'AGENT' : 'CUSTOMER';
+        
+        jsonPayload.Transcript.push({
+            "Content": messageText,
+            "BeginOffsetMillis": timestampOffset,
+            "ParticipantId": mappedParticipant,
+            "Sentiment": "NEUTRAL"
+        });
+        
+        jsonPayload.ConversationCharacteristics.TotalConversationDurationMillis = timestampOffset + 3000;
+        
+        // Write to interaction record
+        var interactionGr = new GlideRecord('interaction');
+        if (interactionGr.get(interactionSysId)) {
+            sa.write(
+                interactionGr, 
+                attachmentName, 
+                'application/json', 
+                JSON.stringify(jsonPayload)
+            );
+
+            // Also write to sys_cs_message if conversation exists
+            var conversationId = interactionGr.getValue('channel_metadata_document');
+            if (!gs.nil(conversationId)) {
+                this.insertCSMessage(conversationId, participant, messageText);
+            }
+            this.insertCSMessage(interactionSysId, participant, messageText);
+        }
+
+        // Also write to any linked phone log records
+        var irrGR = new GlideRecord('interaction_related_record');
+        irrGR.addQuery('interaction', interactionSysId);
+        irrGR.addQuery('document_table', 'sn_openframe_phone_log');
+        irrGR.query();
+        while (irrGR.next()) {
+            var plGR = new GlideRecord('sn_openframe_phone_log');
+            if (plGR.get(irrGR.getValue('document_id'))) {
+                var plAttachmentGr = sa.getAttachments('sn_openframe_phone_log', plGR.getUniqueValue());
+                plAttachmentGr.addQuery('file_name', attachmentName);
+                plAttachmentGr.query();
+                while (plAttachmentGr.next()) {
+                    sa.deleteAttachment(plAttachmentGr.getUniqueValue());
+                }
+                sa.write(
+                    plGR, 
+                    attachmentName, 
+                    'application/json', 
+                    JSON.stringify(jsonPayload)
+                );
+            }
+        }
+    },
+
+    type: 'CreateCallTranscript'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-20 14:01:06</sys_created_on>
+        <sys_id>570d3888cfd6c39009d5b6734d851c62</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>CreateCallTranscript</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_script_include_570d3888cfd6c39009d5b6734d851c62</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-20 21:20:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

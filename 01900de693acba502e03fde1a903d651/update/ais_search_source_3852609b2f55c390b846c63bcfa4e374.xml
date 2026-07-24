@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
+    <ais_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="kb_knowledge">kb_knowledge_base=05808158cf098350e0b8fe9b2c851c09<item display_table="kb_knowledge_base" display_value="CalmPoint Health Operations" endquery="false" field="kb_knowledge_base" goto="false" newquery="false" operator="=" or="false" value="05808158cf098350e0b8fe9b2c851c09"/>
+        </condition>
+        <datasource display_value="">kb_knowledge</datasource>
+        <has_dynamic_filters>false</has_dynamic_filters>
+        <name>CalmPoint Health Knowledge</name>
+        <sys_class_name>ais_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 21:21:33</sys_created_on>
+        <sys_id>3852609b2f55c390b846c63bcfa4e374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CalmPoint Health Knowledge</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_source_3852609b2f55c390b846c63bcfa4e374</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-10 21:21:33</sys_updated_on>
+    </ais_search_source>
+</record_update>

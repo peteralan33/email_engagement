@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template display_value="Microsoft Teams Client Credentials Template">53f44613c3f03010092d99ccc840dd33</configuration_template>
+        <connection_type>http_connection</connection_type>
+        <description/>
+        <id>x_snc_pab_ee_tkit.PAB_Teams_Graph_Spoke</id>
+        <is_internal>false</is_internal>
+        <multiple_connections>false</multiple_connections>
+        <name>PAB Teams Graph Spoke</name>
+        <parent display_value="sn_msteams_ahv2.Microsoft_Teams_Graph_Client_Credentials">b4638a5fc3b03010092d99ccc840dd0a</parent>
+        <retry_policy/>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 08:46:32</sys_created_on>
+        <sys_id>78de70dccf1ec79009d5b6734d851c0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.PAB_Teams_Graph_Spoke</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_alias_78de70dccf1ec79009d5b6734d851c0d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 08:46:32</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_alias_78de70dccf1ec79009d5b6734d851c0d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template display_value="Microsoft Teams Client Credentials Template">53f44613c3f03010092d99ccc840dd33</configuration_template><connection_type>http_connection</connection_type><description/><id>x_snc_pab_ee_tkit.PAB_Teams_Graph_Spoke</id><is_internal>false</is_internal><multiple_connections>false</multiple_connections><name>PAB Teams Graph Spoke</name><parent display_value="sn_msteams_ahv2.Microsoft_Teams_Graph_Client_Credentials">b4638a5fc3b03010092d99ccc840dd0a</parent><retry_policy/><sys_class_name>sys_alias</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-21 08:46:32</sys_created_on><sys_id>78de70dccf1ec79009d5b6734d851c0d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.PAB_Teams_Graph_Spoke</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_alias_78de70dccf1ec79009d5b6734d851c0d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-21 08:46:32</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+        <payload_hash>476562940</payload_hash>
+        <record_name>x_snc_pab_ee_tkit.PAB_Teams_Graph_Spoke</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 08:46:33</sys_created_on>
+        <sys_id>81def450cf5ec79009d5b6734d851c98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f83daf7d50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 08:46:33</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>01def450715ec790647fac5a7bffac97</update_guid>
+        <update_guid_history>01def450715ec790647fac5a7bffac97:476562940</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-21 08:59:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>7bf431384eaa456a92a6f93894c79a11</sys_id>
+        <sys_metadata>78de70dccf1ec79009d5b6734d851c0d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.PAB_Teams_Graph_Spoke</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_alias_78de70dccf1ec79009d5b6734d851c0d</sys_update_name>
+        <sys_update_version display_value="sys_alias_78de70dccf1ec79009d5b6734d851c0d">81def450cf5ec79009d5b6734d851c98</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 08:59:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

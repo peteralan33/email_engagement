@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=33000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>4b79595dcf5d871009d5b6734d851c69</copied_from>
+        <copied_from_name>Update WM for OOO</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>update_wm_for_completed_note</internal_name>
+        <label_cache>[{"name":"subflow.work_management_case","label":"Input➛Work Management Case","reference":"x_snc_pab_ee_tkit_work_management_case","reference_display":"Work Management Case","type":"reference","base_type":"reference","usedInstances":{"92d3d3ac-46ce-49ee-9858-c5cc6cfabbaa":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b02bfc43-fa31-4b9f-beb4-c7a1808f1a53","uiTypeLabel":"Reference"}}]</label_cache>
+        <master_snapshot>336ad551cf9d871009d5b6734d851c5c</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Update WM for Completed Note</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:17:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>934a5d11cf9d871009d5b6734d851c20</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Update WM for Completed Note</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_hub_flow_934a5d11cf9d871009d5b6734d851c20</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:18:25</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>187a1951cf9d871009d5b6734d851c6b</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_variable_value action="delete_multiple" query="document_key=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=934a5d11cf9d871009d5b6734d851c20^sys_idNOT IN934a5d11cf9d871009d5b6734d851c21"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>934a5d11cf9d871009d5b6734d851c20</id>
+        <name>Update WM for Completed Note</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:17:44</sys_created_on>
+        <sys_id>934a5d11cf9d871009d5b6734d851c21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:17:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=934a5d11cf9d871009d5b6734d851c21"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=934a5d11cf9d871009d5b6734d851c20^sys_idNOT IN274a5d11cf9d871009d5b6734d851c2b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=b02bfc43-fa31-4b9f-beb4-c7a1808f1a53</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_pab_ee_tkit_work_management_case</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>work_management_case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Work Management Case</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update WM for Completed Note">934a5d11cf9d871009d5b6734d851c20</model>
+        <model_id>934a5d11cf9d871009d5b6734d851c20</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_934a5d11cf9d871009d5b6734d851c20</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="x_snc_pab_ee_tkit_work_management_case">x_snc_pab_ee_tkit_work_management_case</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:17:44</sys_created_on>
+        <sys_id>274a5d11cf9d871009d5b6734d851c2b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:17:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=274a5d11cf9d871009d5b6734d851c2b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=934a5d11cf9d871009d5b6734d851c20^sys_idNOT INe34a5d11cf9d871009d5b6734d851c9e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update WM for Completed Note">934a5d11cf9d871009d5b6734d851c20</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:17:44</sys_created_on>
+        <sys_id>e34a5d11cf9d871009d5b6734d851c9e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:18:17</sys_updated_on>
+        <ui_id>92d3d3ac-46ce-49ee-9858-c5cc6cfabbaa</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4bPgWHHadDmNiwIsENboBu6Q9cJtMU4QmXZk+R8LMh/H2XLafqxLigCDAPmG2nq8T3yyb7bhoKHk3CEPE4uknGeJmk6jOPh+SjJxmmWDHkKiEk4CBWUSJUa80pzipcgG5fYbk2TzWW1ilaVfmAlKCiwRGVZDgZ3OyrlwtQSNrf+BGXyhZBcowond/eDsAZN4BZ1ONk+e2U3NTIJGUo6OK3yxiEHn6aEcSzx/vRNz/y5EteDYu7RmXBJeuX4JPEgxLVFxZHazUEaHISkkYOt9CacWN1QQiPwayU3+4qFULZTWsLaiJ+EP4pd3RxJWu6nsA+Zn1A/nErkeF1bUakuYyGT/eQq2ZTqqpPgZotzaKQ9mG1jCA9rR9mR6BjOPy+q1U3fbyZUq86zlVUOch+BtVpkjUXj1oGyW2YJdS1UwWpdLUV7mKiUUSEpiNz6qacRhYogd7wjGhBEM8pP2/QtaOFEXBIMHd614tmPxvXtZHjCrNXcCmbtoqjU5FrU9gMBL9HT3A28c7OztwyQXzzu+wDz0b1rZlTOasgYIrMPwrLXXPzSw1+pKrjcVwUfu6r3+fqLYxZcdcyOVfXk8G9Uemc/yXljn53M2Od/ydie0T/m7D/5OR6++UE72HRrYXPgZWPB4rcmjlOefm9trCrS2mVawwqLZbAAE2SIKphLKArkAcUkuJbkVB4FL71+Mtx33g4kDGIQdHwGR8+pB5gJlNy8Mrj+evgGbOkb7L/9J7sjyThun/+/gBP+Au5/AcHYgli+CAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e34a5d11cf9d871009d5b6734d851c9e"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>work_management_case</element>
+        <help/>
+        <hint/>
+        <label>Work Management Case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_934a5d11cf9d871009d5b6734d851c20</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:17:44</sys_created_on>
+        <sys_id>ab4a5d11cf9d871009d5b6734d851c6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:17:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=137000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>4b79595dcf5d871009d5b6734d851c69</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>update_wm_for_completed_note</internal_name>
+        <label_cache>[{"name":"subflow.work_management_case","label":"Input➛Work Management Case","reference":"x_snc_pab_ee_tkit_work_management_case","reference_display":"Work Management Case","type":"reference","base_type":"reference","usedInstances":{"92d3d3ac-46ce-49ee-9858-c5cc6cfabbaa":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b02bfc43-fa31-4b9f-beb4-c7a1808f1a53","uiTypeLabel":"Reference"}}]</label_cache>
+        <master>true</master>
+        <name>Update WM for Completed Note</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Update WM for Completed Note">934a5d11cf9d871009d5b6734d851c20</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:18:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>336ad551cf9d871009d5b6734d851c5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:18:18</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=336ad551cf9d871009d5b6734d851c5c^sys_idNOT INb36ad551cf9d871009d5b6734d851c5d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>336ad551cf9d871009d5b6734d851c5c</id>
+        <name>Update WM for Completed Note</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:18:18</sys_created_on>
+        <sys_id>b36ad551cf9d871009d5b6734d851c5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:18:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b36ad551cf9d871009d5b6734d851c5d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=336ad551cf9d871009d5b6734d851c5c^sys_idNOT IN7b6ad551cf9d871009d5b6734d851c5e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=b02bfc43-fa31-4b9f-beb4-c7a1808f1a53</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_snc_pab_ee_tkit_work_management_case</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>work_management_case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Work Management Case</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update WM for Completed Note">336ad551cf9d871009d5b6734d851c5c</model>
+        <model_id>336ad551cf9d871009d5b6734d851c5c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_336ad551cf9d871009d5b6734d851c5c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="x_snc_pab_ee_tkit_work_management_case">x_snc_pab_ee_tkit_work_management_case</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:18:18</sys_created_on>
+        <sys_id>7b6ad551cf9d871009d5b6734d851c5e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:18:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7b6ad551cf9d871009d5b6734d851c5e"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=336ad551cf9d871009d5b6734d851c5c^sys_idNOT IN3b6ad551cf9d871009d5b6734d851cbb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update WM for Completed Note">336ad551cf9d871009d5b6734d851c5c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:18:18</sys_created_on>
+        <sys_id>3b6ad551cf9d871009d5b6734d851cbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:18:18</sys_updated_on>
+        <ui_id>92d3d3ac-46ce-49ee-9858-c5cc6cfabbaa</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K5HPVZQ0gKC3VSuklfiQYMUeWLAm8aS1cJys7QDdqv99J7ETKkAsSFzQ9jafee9lXnO9YVKwGdtDkaRH6UGRpVk2TZLp4V6aH2R5OhUZIKZswjRUSJ0Gi9oIiu9BtV1is7FtXqr6IX6ozR2vQMMSK9SOF2Bxu6VWIW2jYH0VJihTrKQSBjWbXd9MWAOGljs0bLZ5VnovOgU5Kmq9GOA9h+vWTReLumh7cHJInoTJRahE3xdUoaEOTppMGD461AIJSAnK4oQRRQGuNms2c6alhEEQ51qtx46V1M4TreDRyj/05L2k6yuRmBVBhDHkQSCfLhfg4JI2F641o161LNB6TQSW0Co33835hvPGyVr7EQe5GqZr1Vb6zCvCxgU776O1BAKbjmeH3NMqL1f1w8UA8ljqXpJAUdUFqDEC54zMW9fB2TBU/gAqaBqpl7wx9b3shwlKFS8VBXF3MvRMK5c6hqLDHZOqEB9TftGnr8DIjsQpraHh7YTZtZ0rsPaJCmnIf7cdEk8sUOC9Cr0EvL+EbrgwsnHf6FH3GIBvJ+H+8/23Lqw4ejqonZ1PHnjkVhe8gZwjcncnHX/NCy+d8JO6otOxK5r7ro+54x3YB3f86G/idS7BIC9yJ7uz0ZkvBHvsf5o9Dr+SPQKNL++Pf7kimb75v7tzSb0R7I4jrAOHv9okyUR225tB18TeZ/qzlw6raAU2yhF1VCpYLlFEFJMEjaJ7F3H00jGftvdjHnuHEoPHjiUqYV+RZjAYEgwiwb1Uz0wWitFVKI7foU9zWnqQ9L8v5Lf/5nN08xdNo94AkAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3b6ad551cf9d871009d5b6734d851cbb"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>work_management_case</element>
+        <help/>
+        <hint/>
+        <label>Work Management Case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_336ad551cf9d871009d5b6734d851c5c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:18:18</sys_created_on>
+        <sys_id>bb6ad551cf9d871009d5b6734d851c95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:18:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_336ad551cf9d871009d5b6734d851c5c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>934a5d11cf9d871009d5b6734d851c20</sys_id>
+        <latest_snapshot>336ad551cf9d871009d5b6734d851c5c</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=934a5d11cf9d871009d5b6734d851c20"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=934a5d11cf9d871009d5b6734d851c20^sys_idNOT INc87ad551cf9d871009d5b6734d851cea"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@39fa1da8</plan>
+        <plan_id display_value="Update WM for Completed Note">934a5d11cf9d871009d5b6734d851c20</plan_id>
+        <snapshot>336ad551cf9d871009d5b6734d851c5c</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:18:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c87ad551cf9d871009d5b6734d851cea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:18:19</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

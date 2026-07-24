@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_target_values">
+    <pa_target_values action="INSERT_OR_UPDATE">
+        <next_target>00000000</next_target>
+        <sys_class_name>pa_target_values</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-16 15:50:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9cffa8322f8e0750b14f861cbfa4e39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>90</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>pa_target_values_9cffa8322f8e0750b14f861cbfa4e39a</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-16 15:50:54</sys_updated_on>
+        <target display_value="Calls answered within SLA ">60dc0d1a2f4e8b10b14f861cbfa4e34a</target>
+        <target_at>20260701</target_at>
+        <target_name>Calls answered within SLA , 28d running AVG</target_name>
+        <target_review>20300731</target_review>
+        <value>90</value>
+    </pa_target_values>
+</record_update>

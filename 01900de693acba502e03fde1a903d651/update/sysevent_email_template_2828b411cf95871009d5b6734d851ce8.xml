@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_snc_pab_ee_tkit_work_management_case</collection>
+        <email_layout display_value="Toolkit Layout">eacd7b26fb1c92907bdafb4655efdca4</email_layout>
+        <message/>
+        <message_html><![CDATA[<p>Hi ${x_snc_pab_ee_tkit_case_owner.first_name},</p>
+<p>A new external work record has just cleared the Customer Gatekeeper team and has been assigned to your queue. When you have a moment, could you please take a look at the details below so we can keep things moving forward?</p>
+<p>Case Details:</p>
+<ul style="list-style-position: inside;">
+<li>Record ID: ${source_id}</li>
+<li>Category: ${category_ext}</li>
+<li>Due Date: ${due_date}</li>
+<li>Overview: ${short_description}</li>
+<li>Description: ${description}</li>
+</ul>
+<p>Please let us know when you have completed this update.&nbsp;</p>
+<p>Please don't hesitate to reach out if you run into any roadblocks or need any additional context from our end!</p>
+<p>Best regards,</p>
+<p>Customer Gatekeeper Team</p>
+<p><em>(Automated Notification)</em></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Outstanding Case Update Required</name>
+        <sms_alternate/>
+        <subject>Outstanding Case Update Required - ${number}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 17:48:27</sys_created_on>
+        <sys_id>2828b411cf95871009d5b6734d851ce8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Outstanding Case Update Required</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sysevent_email_template_2828b411cf95871009d5b6734d851ce8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 17:58:06</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

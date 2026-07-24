@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="FSO Interaction Record Page">75078bb2cfc2835009d5b6734d851cfc</macroponent>
+        <name>secondary_items/items</name>
+        <preset/>
+        <required_translations>[
+    {
+        "message": "Wrap up timer"
+    }
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    const timerLabel = api.data.wrap_up.timerLabel;
+    const timerColor = api.data.wrap_up.timerColor;
+    const timeLeftInSecond = api.data.wrap_up.timeLeftInSecond;
+    var secondaryItems = api.data.ribbonCtrl.secondaryItemsHeader;
+    if (!api.data.wrap_up || api.data.wrap_up.enabledCodes || !api.data.wrap_up.showTimer || !timerLabel || timeLeftInSecond <= 0)
+        return secondaryItems;
+
+    var highlightedTimer = {
+        "label": helpers.translateSync("Wrap up timer"),
+        "value": {
+            "label": timerLabel,
+            "status": timerColor,
+            "type": "highlighted-value"
+        }
+    };
+    return secondaryItems ? [...secondaryItems, highlightedTimer] : [highlightedTimer];
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:45</sys_created_on>
+        <sys_id>0a074fb2cfc2835009d5b6734d851ca2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>secondary_items/items</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_0a074fb2cfc2835009d5b6734d851ca2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:45</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_client_script_0a074fb2cfc2835009d5b6734d851ca2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="FSO Interaction Record Page"&gt;75078bb2cfc2835009d5b6734d851cfc&lt;/macroponent&gt;&lt;name&gt;secondary_items/items&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    {
+        "message": "Wrap up timer"
+    }
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    const timerLabel = api.data.wrap_up.timerLabel;
+    const timerColor = api.data.wrap_up.timerColor;
+    const timeLeftInSecond = api.data.wrap_up.timeLeftInSecond;
+    var secondaryItems = api.data.ribbonCtrl.secondaryItemsHeader;
+    if (!api.data.wrap_up || api.data.wrap_up.enabledCodes || !api.data.wrap_up.showTimer || !timerLabel || timeLeftInSecond &lt;= 0)
+        return secondaryItems;
+
+    var highlightedTimer = {
+        "label": helpers.translateSync("Wrap up timer"),
+        "value": {
+            "label": timerLabel,
+            "status": timerColor,
+            "type": "highlighted-value"
+        }
+    };
+    return secondaryItems ? [...secondaryItems, highlightedTimer] : [highlightedTimer];
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-17 02:50:45&lt;/sys_created_on&gt;&lt;sys_id&gt;0a074fb2cfc2835009d5b6734d851ca2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;secondary_items/items&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_0a074fb2cfc2835009d5b6734d851ca2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-17 02:50:45&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-38218317</payload_hash>
+        <record_name>secondary_items/items</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:45</sys_created_on>
+        <sys_id>4a074fb2cfc2835009d5b6734d851ca6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6dfbc94c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:45</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>c6074fb2b5c28350050b489b6d1661a5</update_guid>
+        <update_guid_history>c6074fb2b5c28350050b489b6d1661a5:-38218317</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 12:37:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>64d5f91b72814df08201cf9565710900</sys_id>
+        <sys_metadata>0a074fb2cfc2835009d5b6734d851ca2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>secondary_items/items</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_0a074fb2cfc2835009d5b6734d851ca2</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_0a074fb2cfc2835009d5b6734d851ca2">4a074fb2cfc2835009d5b6734d851ca6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 12:37:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

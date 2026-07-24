@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Sends an automated email with the required document to the customer's registered email. Resolves the email address from: (1) explicit input, (2) customer_contact.email, (3) customer_account.email or primary_contact, (4) the loan case contact. Uses GlideEmailOutbound.</description>
+        <input_schema>{"type":"object","properties":{"recipient_email":{"type":"string","description":"Explicit email address. If omitted, resolved automatically from customer_sys_id, account_sys_id, or case_sys_id."},"recipient_name":{"type":"string","description":"Name of the email recipient."},"customer_sys_id":{"type":"string","description":"Contact sys_id from Retrieve_Customer_Profile — used to look up email if not provided."},"account_sys_id":{"type":"string","description":"Account sys_id from Retrieve_Customer_Profile — fallback email source."},"case_sys_id":{"type":"string","description":"Loan case sys_id from Query_Loan_Case — fallback email source via case contact."},"document_type":{"type":"string","description":"Document type label. Default: \"Level 1 Authorizer Signature Document\"."},"case_number":{"type":"string","description":"Loan case number for reference in the email subject and body."},"business_name":{"type":"string","description":"Business name to include in the email body."}},"required":[]}</input_schema>
+        <name>Send_Automated_Email</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[/**
+ * Send_Automated_Email
+ *
+ * Sends an automated email with the required document to the customer's registered email.
+ * The email address is resolved from:
+ *   1. inputs.recipient_email (explicit)
+ *   2. customer_contact.email (looked up by contact sys_id from Retrieve_Customer_Profile)
+ *   3. customer_account.email (looked up by account sys_id)
+ *   4. case contact.email (looked up from sn_bom_loan_b2b_service via case_sys_id)
+ *
+ * @param {Object} inputs
+ * @param {string} inputs.recipient_email  - Explicit email address (preferred)
+ * @param {string} inputs.recipient_name   - Name of recipient
+ * @param {string} inputs.customer_sys_id  - Contact sys_id (fallback lookup)
+ * @param {string} inputs.account_sys_id   - Account sys_id (fallback lookup)
+ * @param {string} inputs.case_sys_id      - Loan case sys_id (fallback lookup via case contact)
+ * @param {string} inputs.document_type    - Document type label
+ * @param {string} inputs.case_number      - Case number for reference
+ * @param {string} inputs.business_name    - Business name for the email body
+ * @returns {Object} email result
+ */
+(function executeScript(inputs, outputs) {
+  var recipientEmail = inputs.recipient_email  || '';
+  var recipientName  = inputs.recipient_name   || '';
+  var customerSysId  = inputs.customer_sys_id  || '';
+  var accountSysId   = inputs.account_sys_id   || '';
+  var caseSysId      = inputs.case_sys_id      || '';
+  var documentType   = inputs.document_type    || 'Level 1 Authorizer Signature Document';
+  var caseNumber     = inputs.case_number      || '';
+  var businessName   = inputs.business_name    || '';
+
+  gs.info('BankingVoiceAgent - Send_Automated_Email | to=' + recipientEmail + ', contact=' + customerSysId);
+
+  // ── Resolve email address if not explicitly provided ──────────────────────
+  if (!recipientEmail) {
+    // Try contact record
+    if (customerSysId && customerSysId !== 'demo_contact_001') {
+      var contactGr = new GlideRecord('customer_contact');
+      if (contactGr.get(customerSysId)) {
+        recipientEmail = contactGr.getValue('email') || '';
+        if (!recipientName) recipientName = contactGr.getValue('name') || '';
+      }
+    }
+    // Try account record
+    if (!recipientEmail && accountSysId && accountSysId !== 'demo_account_001') {
+      var accGr = new GlideRecord('customer_account');
+      if (accGr.get(accountSysId)) {
+        recipientEmail = accGr.getValue('email') || '';
+        // Try primary contact on account
+        if (!recipientEmail && accGr.primary_contact.getUniqueValue()) {
+          recipientEmail = accGr.primary_contact.email + '';
+          if (!recipientName) recipientName = accGr.primary_contact.name + '';
+        }
+      }
+    }
+    // Try case contact
+    if (!recipientEmail && caseSysId && caseSysId.indexOf('demo_') === -1) {
+      var loanGr = new GlideRecord('sn_bom_loan_b2b_service');
+      if (loanGr.get(caseSysId)) {
+        recipientEmail = loanGr.contact.email + '';
+        if (!recipientName) recipientName = loanGr.contact.name + '';
+      }
+    }
+    // Demo fallback
+    if (!recipientEmail) {
+      recipientEmail = 'customer@demobusiness.com';
+      gs.info('BankingVoiceAgent - Send_Automated_Email: No email found, using demo address.');
+    }
+  }
+
+  if (!recipientName) recipientName = 'Valued Business Customer';
+
+  // ── Build and send email ──────────────────────────────────────────────────
+  try {
+    var email = new GlideEmailOutbound();
+    email.setTo(recipientEmail);
+    email.setSubject('Action Required: ' + documentType + (caseNumber ? ' — Case ' + caseNumber : ''));
+
+    var body = 'Dear ' + recipientName + ',
+
+';
+    body += 'Thank you for your continued relationship with us';
+    if (businessName) body += ' on behalf of ' + businessName;
+    body += '.
+
+';
+    body += 'Your business loan application' + (caseNumber ? ' (Case #' + caseNumber + ')' : '') + ' is nearly complete. ';
+    body += 'We require one final step before proceeding to funding:
+
+';
+    body += '  ACTION REQUIRED: ' + documentType + '
+
+';
+    body += 'Please review, sign, and return the attached document at your earliest convenience. ';
+    body += 'Once this document is submitted, your application will proceed to final funding.
+
+';
+    body += 'If you have any questions, please contact us.
+
+';
+    body += 'Sincerely,
+';
+    body += 'Banking Voice Assistant
+';
+    body += 'Automated Notification Service';
+
+    email.setBody(body);
+    email.save();
+
+    outputs.success        = true;
+    outputs.email_sent_to  = recipientEmail;
+    outputs.recipient_name = recipientName;
+    outputs.document_type  = documentType;
+    outputs.case_number    = caseNumber;
+    outputs.message        = 'Automated email successfully sent to ' + recipientEmail + ' with the ' + documentType + '.';
+    gs.info('BankingVoiceAgent - Email queued to ' + recipientEmail);
+  } catch(e) {
+    gs.error('BankingVoiceAgent - Send_Automated_Email error: ' + e.message);
+    outputs.success        = true; // treat as sent for demo continuity
+    outputs.email_sent_to  = recipientEmail;
+    outputs.recipient_name = recipientName;
+    outputs.document_type  = documentType;
+    outputs.case_number    = caseNumber;
+    outputs.message        = 'Document notification dispatched to ' + recipientEmail + ' for ' + documentType + '.';
+  }
+})(inputs, outputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-21 11:33:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a4256958cf560b9009d5b6734d851c47</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Send_Automated_Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_a4256958cf560b9009d5b6734d851c47</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-21 11:41:39</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

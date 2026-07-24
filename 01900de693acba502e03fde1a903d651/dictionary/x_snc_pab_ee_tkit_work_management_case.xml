@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="email_client=true,enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="494c68762f84c710b14f861cbfa4e3dc" extends="sn_bom_financial_service" label="Work Management Case" max_length="40" name="x_snc_pab_ee_tkit_work_management_case" type="collection">
-        <element label="Source ID" max_length="40" name="source_id" type="string"/>
-        <element label="Category" max_length="40" name="category_ext" type="string"/>
-        <element label="Source System" max_length="100" name="source_system" type="string"/>
+        <element label="Source ID" max_length="40" name="source_id" read_only="true" read_only_option="display_read_only" type="string"/>
+        <element label="Category" max_length="40" name="category_ext" read_only="true" read_only_option="display_read_only" type="string"/>
+        <element label="Source System" max_length="100" name="source_system" read_only="true" read_only_option="display_read_only" type="string"/>
         <element label="Segement" max_length="40" name="segement" type="string"/>
         <element label="Sub Category" max_length="40" name="sub_category" type="string"/>
     </element>

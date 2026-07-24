@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">c3dc7476cf02035009d5b6734d851c16</canvas>
+        <component display_value="Spline">0f1e76928c4814e1430774fb864003f0</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"disableTooltip":false,"showClosestSeriesOnHover":false,"showXGrid":false,"showDateRangeByDefault":false,"showYGrid":true,"hideYAxis0":false,"yAxis0Position":"left","hideYAxis1":false,"yAxis1Position":"right","hideYAxis2":false,"yAxis2Position":"right","hideYAxis3":false,"yAxis3Position":"right","hideYAxis4":false,"yAxis4Position":"right","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"yAxisStyle":"default","lineStrokeWidth":"2","chartVariation":"stacked","showPercentageOfTotalInTooltip":true,"extensionType":"spline","showContinuousLine":true,"showMarkers":false,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":false,"dataSources":[{"allowRealTime":false,"allowTotalValue":true,"indicatorType":"3","isScriptedIndicator":false,"allowMultiElementsAggregation":false,"indicatorClass":"PA_INDICATOR","aggregateType":1,"label":"Service Level - Weekly","sourceType":"indicator","uuid":{"indicator":"53a2c06e2f4a8f10b14f861cbfa4e318"},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yNTNhMmMwNmUyZjRhOGYxMGIxNGY4NjFjYmZhNGUzMTgxNzg0MjE5ODc1MDY2","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"start","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headerTitle":"Calls Answered within SLA","headingLevel":2,"showBorder":true,"bareBorder":false,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":true,"metrics":[{"dataSource":"aW5kaWNhdG9yNTNhMmMwNmUyZjRhOGYxMGIxNGY4NjFjYmZhNGUzMTgxNzg0MjE5ODc1MDY2","id":"YVc1a2FXTmhkRzl5TlROaE1tTXdObVV5WmpSaE9HWXhNR0l4TkdZNE5qRmpZbVpoTkdVek1UZ3hOemcwTWpFNU9EYzFNRFkyMTc4NDIxOTg3NzE1Ng==","frequency":20,"numberFormat":{"customFormat":false},"axisId":"primary"}],"trendBy":{"trendByFields":[{"field":"anything","metric":"YVc1a2FXTmhkRzl5TlROaE1tTXdObVV5WmpSaE9HWXhNR0l4TkdZNE5qRmpZbVpoTkdVek1UZ3hOemcwTWpFNU9EYzFNRFkyMTc4NDIxOTg3NzE1Ng=="}]},"showTarget":true,"showForecast":false,"showForecastRange":false,"showTrend":true,"showConfidenceBand":false,"showThreshold":true,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"2wyildw0","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"applyDateRange":false,"numberOfPeriods":5,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"scoreType":"latest","useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","forecastConfig":{"YVc1a2FXTmhkRzl5TldGaFkyTTFaRFl5WmpSbE9HSXhNR0l4TkdZNE5qRmpZbVpoTkdVelpXWXhOemcwTWpFMU5EazNOamMyMTc4NDIxNTQ5ODE2Mw==":{"periodsToForecast":"5","forecastMethod":{"label":"Auto","value":"AUTO","id":"1"},"forecastBasedOn":{"label":"Previous Periods","value":"PREVIOUS_PERIODS","id":"2"},"lowerLimit":"75","forecastBasedOnPreviousPeriods":"10","upperLimit":"95"}},"showMetricLabel":false,"showSparkline":false,"showGapPercentage":false,"showChange":false,"showChangeFrom":"previous","sortByOrder":"desc","enableRealTimeUpdate":false,"showChangePercentage":false}</component_props>
+        <h>29</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Service Level - Weekly","code":"PAR_DASHBOARD.c3dc7476cf02035009d5b6734d851c16.23dcb476cf02035009d5b6734d851c37"},{"comment":"","message":"Calls Answered within SLA","code":"PAR_DASHBOARD.c3dc7476cf02035009d5b6734d851c16.23dcb476cf02035009d5b6734d851c37"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.c3dc7476cf02035009d5b6734d851c16.23dcb476cf02035009d5b6734d851c37"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.c3dc7476cf02035009d5b6734d851c16.23dcb476cf02035009d5b6734d851c37"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:47:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>23dcb476cf02035009d5b6734d851c37</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>par_dashboard_widget_23dcb476cf02035009d5b6734d851c37</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 14:29:02</sys_updated_on>
+        <visualization/>
+        <w>16</w>
+        <widget_props>{"headerTitle":"Calls Answered within SLA","showHeaderSeparator":false}</widget_props>
+        <x>32</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_targets">
+    <pa_targets action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <aggregate display_value="28d running AVG">ee015051d7001100ba986f14ce610378</aggregate>
+        <any_element>true</any_element>
+        <breakdown display_value="Call Wait Time Target ">3bdc415a2f4e8b10b14f861cbfa4e391</breakdown>
+        <breakdown_level2/>
+        <color_scheme/>
+        <display_name>Calls answered within SLA , 28d running AVG</display_name>
+        <element/>
+        <element_level2/>
+        <indicator display_value="Calls answered within SLA ">5aacc5d62f4e8b10b14f861cbfa4e3ef</indicator>
+        <owner display_value="Tom Chandler">52d8a5d32f4d7e14743eb82bcfa4e3e1</owner>
+        <responsible_users/>
+        <sys_class_name>pa_targets</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-15 04:41:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>60dc0d1a2f4e8b10b14f861cbfa4e34a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>5aacc5d62f4e8b10b14f861cbfa4e3ef</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>pa_targets_60dc0d1a2f4e8b10b14f861cbfa4e34a</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-16 15:50:54</sys_updated_on>
+        <values_modified_at>2026-07-16 15:50:54</values_modified_at>
+    </pa_targets>
+</record_update>

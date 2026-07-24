@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Customer Insights Default">191743f62f060b50b14f861cbfa4e3fe</macroponent>
+        <name>Set Current Context</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    var text = '';
+    var aiSkillOutput = api.data.get_ai_skill_data.output;
+    if (aiSkillOutput) {
+        if (aiSkillOutput.status == 'success' && aiSkillOutput.response) {
+            var skillResponse = aiSkillOutput.response;
+            var data = skillResponse.startsWith('{') ?
+                JSON.parse(skillResponse) :
+                skillResponse;
+
+            var keys = Object.keys(data);
+            if (keys.length > 0) {
+                var value = data[keys[0]];
+                if (typeof value === 'string') {
+                    text = value
+                        .replace(/&lt;/g, '<')
+                        .replace(/&gt;/g, '>')
+                        .replace(/&amp;/g, '&')
+                        .replace(/&quot;/g, '"')
+                        .replace(/&#39;/g, "'")
+                        .replace(/<[^>]*>/g, '')
+                        .replace(/\s+/g, ' ')
+                        .trim();
+                }
+            }
+        } else if (aiSkillOutput.errorMessage) {
+            api.emit('NOW_UXF_PAGE#ADD_NOTIFICATIONS', {
+                items: [{
+                    'status': 'critical',
+                    'icon': 'circle-close-outline',
+                    'content': aiSkillOutput.errorMessage,
+                    'action': {
+                        'type': 'dismiss'
+                    }
+                }]
+            });
+        }
+    }
+    api.setState('skillPayload', {
+        'tablename': api.context.props.table,
+        'sysid': api.context.props.sysId,
+        'currentcontext': text
+
+    });
+    if (api.state.queryText && text != api.state.queryText)
+        api.setState('isRefreshDisabled', false);
+    var triggerProps = {
+        'autoTriggerDefaultAction': true
+    };
+    api.setState('triggerProps', triggerProps);
+    api.setState('queryText', text);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:58</sys_created_on>
+        <sys_id>291783f62f060b50b14f861cbfa4e310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Current Context</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_291783f62f060b50b14f861cbfa4e310</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:58</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_client_script_291783f62f060b50b14f861cbfa4e310</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Customer Insights Default"&gt;191743f62f060b50b14f861cbfa4e3fe&lt;/macroponent&gt;&lt;name&gt;Set Current Context&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    var text = '';
+    var aiSkillOutput = api.data.get_ai_skill_data.output;
+    if (aiSkillOutput) {
+        if (aiSkillOutput.status == 'success' &amp;&amp; aiSkillOutput.response) {
+            var skillResponse = aiSkillOutput.response;
+            var data = skillResponse.startsWith('{') ?
+                JSON.parse(skillResponse) :
+                skillResponse;
+
+            var keys = Object.keys(data);
+            if (keys.length &gt; 0) {
+                var value = data[keys[0]];
+                if (typeof value === 'string') {
+                    text = value
+                        .replace(/&amp;lt;/g, '&lt;')
+                        .replace(/&amp;gt;/g, '&gt;')
+                        .replace(/&amp;amp;/g, '&amp;')
+                        .replace(/&amp;quot;/g, '"')
+                        .replace(/&amp;#39;/g, "'")
+                        .replace(/&lt;[^&gt;]*&gt;/g, '')
+                        .replace(/\s+/g, ' ')
+                        .trim();
+                }
+            }
+        } else if (aiSkillOutput.errorMessage) {
+            api.emit('NOW_UXF_PAGE#ADD_NOTIFICATIONS', {
+                items: [{
+                    'status': 'critical',
+                    'icon': 'circle-close-outline',
+                    'content': aiSkillOutput.errorMessage,
+                    'action': {
+                        'type': 'dismiss'
+                    }
+                }]
+            });
+        }
+    }
+    api.setState('skillPayload', {
+        'tablename': api.context.props.table,
+        'sysid': api.context.props.sysId,
+        'currentcontext': text
+
+    });
+    if (api.state.queryText &amp;&amp; text != api.state.queryText)
+        api.setState('isRefreshDisabled', false);
+    var triggerProps = {
+        'autoTriggerDefaultAction': true
+    };
+    api.setState('triggerProps', triggerProps);
+    api.setState('queryText', text);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-17 02:50:58&lt;/sys_created_on&gt;&lt;sys_id&gt;291783f62f060b50b14f861cbfa4e310&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Current Context&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_291783f62f060b50b14f861cbfa4e310&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-17 02:50:58&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-930878857</payload_hash>
+        <record_name>Set Current Context</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:59</sys_created_on>
+        <sys_id>291783f62f060b50b14f861cbfa4e314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6dfbfe860000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:59</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>a51783f628060b5007afc301748e0213</update_guid>
+        <update_guid_history>a51783f628060b5007afc301748e0213:-930878857</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 12:37:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>2bc2ca89b42f43509c1ee50769c51900</sys_id>
+        <sys_metadata>291783f62f060b50b14f861cbfa4e310</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Current Context</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_291783f62f060b50b14f861cbfa4e310</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_291783f62f060b50b14f861cbfa4e310">291783f62f060b50b14f861cbfa4e314</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 12:37:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

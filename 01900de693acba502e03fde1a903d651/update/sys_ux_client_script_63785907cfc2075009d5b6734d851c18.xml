@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Pete's Voice Engagement Interaction Record">df785507cfc2075009d5b6734d851c50</macroponent>
+        <name>wrap_up_code_selector/items</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    let wrapUpCodes = [];
+
+    if (api.data.wrap_up && api.data.wrap_up.allowedWrapUpCodes) {
+        wrapUpCodes = api.data.wrap_up.allowedWrapUpCodes;
+
+        wrapUpCodes = wrapUpCodes.map((item) => {
+            return { ...item,
+                id: item.id + item.label
+            };
+        });
+    }
+
+    return wrapUpCodes;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 13:26:17</sys_created_on>
+        <sys_id>63785907cfc2075009d5b6734d851c18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>wrap_up_code_selector/items</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_63785907cfc2075009d5b6734d851c18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 13:26:17</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

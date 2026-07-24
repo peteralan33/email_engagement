@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Searches the bank's knowledge base for answers to general banking inquiries such as routing numbers, business hours, wire transfer fees, account types, and standard banking policies.</description>
+        <input_schema>{"type":"object","properties":{"query":{"type":"string","description":"The banking question or topic to search for. E.g. \"routing number\", \"wire transfer fee\", \"business hours\", \"account types\"."}},"required":["query"]}</input_schema>
+        <name>Search_Knowledge_Base</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[/**
+ * Search_Knowledge_Base
+ * Queries ServiceNow Knowledge Base articles relevant to a banking customer inquiry.
+ *
+ * @param {Object} inputs
+ * @param {string} inputs.query - The customer's question or search term
+ * @returns {Object} kb_results
+ */
+(function executeScript(inputs, outputs) {
+  var query = inputs.query || '';
+
+  if (!query) {
+    outputs.success = false;
+    outputs.answer = 'No search query provided.';
+    outputs.articles = '[]';
+    return;
+  }
+
+  gs.info('Banking Voice Agent - Search_Knowledge_Base query: ' + query);
+
+  var results = [];
+
+  // Search KB articles using text search
+  var gr = new GlideRecord('kb_knowledge');
+  gr.addQuery('workflow_state', 'published');
+  gr.addQuery('active', true);
+  var qc = gr.addQuery('short_description', 'CONTAINS', query);
+  qc.addOrCondition('text', 'CONTAINS', query);
+  gr.setLimit(5);
+  gr.orderByDesc('sys_updated_on');
+  gr.query();
+
+  while (gr.next()) {
+    results.push({
+      title: gr.getValue('short_description') || '',
+      snippet: (gr.getValue('text') || '').substring(0, 500),
+      number: gr.getValue('number') || '',
+      sys_id: gr.getUniqueValue()
+    });
+  }
+
+  if (results.length > 0) {
+    outputs.success = true;
+    outputs.answer = results[0].snippet;
+    outputs.articles = JSON.stringify(results);
+    outputs.article_count = results.length;
+  } else {
+    outputs.success = false;
+    outputs.answer = 'No knowledge articles found for query: ' + query + '. I will need to connect you with a specialist.';
+    outputs.articles = '[]';
+    outputs.article_count = 0;
+  }
+})(inputs, outputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-21 11:33:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1c252958cf560b9009d5b6734d851c4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search_Knowledge_Base</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_1c252958cf560b9009d5b6734d851c4b</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-21 11:33:53</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

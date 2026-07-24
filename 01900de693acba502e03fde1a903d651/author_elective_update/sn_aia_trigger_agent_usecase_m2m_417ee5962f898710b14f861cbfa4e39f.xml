@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_agent_usecase_m2m">
+    <sn_aia_trigger_agent_usecase_m2m action="DELETE">
+        <active>false</active>
+        <objective_template><![CDATA[Help me draft an email response for ${number}]]></objective_template>
+        <related_resource_record>747ea95e2f498710b14f861cbfa4e332</related_resource_record>
+        <related_resource_table>sn_aia_agent</related_resource_table>
+        <sys_class_name>sn_aia_trigger_agent_usecase_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 14:03:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>417ee5962f898710b14f861cbfa4e39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_trigger_agent_usecase_m2m_417ee5962f898710b14f861cbfa4e39f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-26 14:03:59</sys_updated_on>
+        <trigger_configuration display_value="sn_customerservice_case">c97ee5962f898710b14f861cbfa4e397</trigger_configuration>
+    </sn_aia_trigger_agent_usecase_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_trigger_agent_usecase_m2m_417ee5962f898710b14f861cbfa4e39f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_trigger_agent_usecase_m2m"&gt;&lt;sn_aia_trigger_agent_usecase_m2m action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;objective_template&gt;&lt;![CDATA[Help me draft an email response for ${number}]]&gt;&lt;/objective_template&gt;&lt;related_resource_record&gt;747ea95e2f498710b14f861cbfa4e332&lt;/related_resource_record&gt;&lt;related_resource_table&gt;sn_aia_agent&lt;/related_resource_table&gt;&lt;sys_class_name&gt;sn_aia_trigger_agent_usecase_m2m&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-26 14:03:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;417ee5962f898710b14f861cbfa4e39f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_trigger_agent_usecase_m2m_417ee5962f898710b14f861cbfa4e39f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-26 14:03:59&lt;/sys_updated_on&gt;&lt;trigger_configuration display_value="sn_customerservice_case"&gt;c97ee5962f898710b14f861cbfa4e397&lt;/trigger_configuration&gt;&lt;/sn_aia_trigger_agent_usecase_m2m&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>381472386</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 14:03:59</sys_created_on>
+        <sys_id>4d7ee5962f898710b14f861cbfa4e3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e649975840000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-26 14:03:59</sys_updated_on>
+        <type>Trigger M2M</type>
+        <update_guid>c97ee596c18987104cbde960600be7bb</update_guid>
+        <update_guid_history>c97ee596c18987104cbde960600be7bb:381472386</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6601391a2fc98710b14f861cbfa4e3b3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 14:15:17</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_trigger_agent_usecase_m2m">sn_aia_trigger_agent_usecase_m2m</sys_db_object>
+        <sys_id>483fd94ee16f4340a20379ded46e3810</sys_id>
+        <sys_metadata>417ee5962f898710b14f861cbfa4e39f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_aia_trigger_agent_usecase_m2m_417ee5962f898710b14f861cbfa4e39f</sys_update_name>
+        <sys_update_version display_value="sn_aia_trigger_agent_usecase_m2m_417ee5962f898710b14f861cbfa4e39f">4d7ee5962f898710b14f861cbfa4e3bc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-26 14:15:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

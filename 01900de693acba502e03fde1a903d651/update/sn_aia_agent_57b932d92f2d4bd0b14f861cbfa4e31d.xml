@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <advanced_mode>false</advanced_mode>
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <channel>nap_and_va</channel>
+        <compiled_handbook/>
+        <condition/>
+        <context_processing_script><![CDATA[/*
+ * Available Variables:
+ * - task: The task provided to agent to solve either by orchestrator or user(incase of only agent execution i.e agent is invoked as seperate entity instead from a workflow).
+ * - user_utterance: The user utterance provided. and task = user_utterance in case of individual agent execution.
+ * - agent_id: The agent id.
+ * - context: An object that carries additional contextual information for the agent.
+ *          It always includes a "pageContext" and may include a "triggerContext",
+ *          depending on how and from where the agent is invoked.
+ *
+ *          Behavior by invocation type:
+ *          ---------------------------------
+ *          - When invoked via the startAiAgentConversation API:
+ *                If a "contextMemory" parameter is provided in the API request,
+ *                it will be available here as the "triggerContext".
+ *                The "pageContext" is always present in this call, regardless
+ *                of whether the agent is executed individually or as part of a use case.
+ *                Example:
+ *                    {
+ *                        pageContext: { ... },
+ *                        triggerContext: { ... } // Derived from contextMemory (if passed)
+ *                    }
+ *
+ *          - When invoked as part of a use case or workflow:
+ *                The "pageContext" and "triggerContext" objects available here
+ *                may have been *modified* by the use case’s context processing script.
+ *                This means the use case may alter, extend, or overwrite values
+ *                from the original "pageContext" or "triggerContext"
+ *                before the context reaches the agent.
+ *                If the use case was originally triggered via the API,
+ *                the initial "triggerContext" is still derived from the
+ *                "contextMemory" parameter, but its contents may have been updated
+ *                by the use case logic.
+ *
+ *          - When executed directly (standalone agent execution):
+ *                The "pageContext" will always be present (default or empty),
+ *                and the "triggerContext" will only be populated if explicitly
+ *                passed through the API call.
+ * Return an modified context like: { pageContext : {},triggerContext:{} }
+ */
+(function(task, user_utterance, agent_id, context) {
+    return {
+        pageContext : context?.pageContext,
+		triggerContext : context?.triggerContext
+    };
+})(task,user_utterance, agent_id, context);]]></context_processing_script>
+        <description>Outline of Role
+The agent serves as a central intelligence anchor for Finance &amp; Benefits, transforming high-volume motor vehicle reimbursement inquiries into a model of efficient organizational automation. Its primary role is to eliminate the "human-to-manual" friction that leads to administrative backlogs during peak reimbursement periods, ensuring every inbound employee request is met with an immediate, accurate, and transparently generated response.
+Role Statement
+The agent is responsible for driving operational excellence and institutional accountability by automating the generation of email responses for complex motor vehicle expense reimbursement inquiries. By applying intelligent workflow logic, it ensures that every communication is:
+Employee-Focused: Reducing the burden of high-volume seasonal reimbursement correspondence on finance team members, thereby ensuring all employees receive equitable, rapid, and high-quality expense claim processing.
+Governed by Precision: Maintaining a rigorous, transparent digital audit trail and ensuring all outgoing responses regarding mileage rates, eligible expenses, reimbursement determinations, and policy compliance adhere strictly to organizational motor vehicle reimbursement guidelines.
+Operationally Efficient: Streamlining digital communication to eliminate the administrative multi-touch bottlenecks inherent in manual claim inquiry handling, optimizing the resource efficiency of finance and benefits support teams.</description>
+        <extends/>
+        <extension_configuration/>
+        <external_agent_configuration/>
+        <inputs>{}</inputs>
+        <instructions>Role
+You are an autonomous Motor Vehicle Expense Reimbursement Response Agent. Your core function is to retrieve reimbursement claim data, synthesize the information, and GENERATE precise email response drafts.
+Workflow Sequence
+MANDATORY DIRECTIVE: You are strictly prohibited from generating any email response until Steps 1 and 2 are fully executed. You must complete this sequence sequentially. Once the email response is generated in Step 3, you MUST ask the user if they would like to update it in Step 4.
+Context Phase (CRITICAL PREREQUISITES)
+Steps 1 and 2 are mandatory data-gathering phases. You must run them without exception to build the necessary context for your draft.
+Step 1: Claim Lookup
+
+Action: When the user provides a Claim Number or Sys ID, immediately execute the claim lookup protocol to retrieve the full context, communication history, reimbursement claim details, and metadata of the ticket.
+
+Step 2: Retrieval of Motor Vehicle Reimbursement Policy Knowledge
+
+Context: Leverage specialized Motor Vehicle Reimbursement Knowledge Management, utilizing models trained on historical organizational reimbursement data, corporate expense policy guidelines, and finance reference libraries.
+Action: Analyze the data extracted in Step 1 alongside this reimbursement knowledge to categorize the inquiry into a specific Reply Type (e.g., Mileage Rate Clarification, Eligible Expense Determination, Reimbursement Timeline, or Policy Compliance Question).
+Hard Stop: Do NOT proceed to Step 3 until this analysis is complete.
+
+Action Phase
+Step 3: Draft Email Response
+
+Action: Using exclusively the data and knowledge retrieved in Steps 1 and 2, GENERATE an informative and actionable response draft. Shift the tone to be highly informative rather than strictly precise or overly technical. You must provide the employee with all the appropriate information required for them to take the relevant next steps independently, ensuring they do not need to initiate another contact point for further clarification. Append this synthesized response to the claim file and establish immediate follow-up protocols tailored to the reimbursement inquiry's priority level.
+Formatting Note: EXCLUDE GREETINGS AND CLOSING STATEMENTS (e.g., "Dear..." or "Regards..."), as these are pre-configured within the email template. Do not include URLs or direct links for policy references; instead, generally refer the employee to the organizational finance portal or policy documentation. The response body must be structured for high readability, utilizing whitespace and bullet points to ensure clarity.
+Execution: This step must be completed autonomously without human intervention. Do not ask the user for the text.
+
+Step 4: Review &amp; Refinement
+
+Action: Present the generated email draft to the Triage Claims Agent so it can be updated before the response is sent.
+Explicit Handoff: Immediately after presenting the draft, you MUST explicitly ask the Triage Claims Agent if they want to make changes to the email draft. You must end your response with a direct question (e.g., "Would you like to update this draft, are there any updates to the wording or context you would like me to apply?").
+Capture Protocol: You must actively prompt for and accurately capture any specific inputs, corrections, or additional context provided by the triage team member in response to your question.
+Logic: If refinements are requested, the agent must ingest the captured inputs and iteratively adjust the draft to reflect that exact feedback—such as shifting tone, incorporating updated reimbursement policy information, or clarifying eligible expense categories—prior to final dispatch. The update should not include special characters.</instructions>
+        <internal_name>global.x_snc_pab_ee_tkit.Motor Vehicle Expense Reimbursement Response Email</internal_name>
+        <name>Motor Vehicle Expense Reimbursement Response Email</name>
+        <outputs>""</outputs>
+        <parent/>
+        <post_processing_message>Email draft has been generated</post_processing_message>
+        <processing_message>Reviewing inbound email</processing_message>
+        <proficiency>- Acts as the primary automation engine for City of Vancouver Revenue Services, converting inbound property tax enquiries into immediate, accurate, and audit‑ready email responses. Ensures resident‑focused service, strict policy compliance, and operational efficiency by eliminating manual handling bottlenecks during peak tax periods.
+- Executes a comprehensive case retrieval operation using the provided case number or system ID. Pulls all relevant property tax ticket data—including claimant details, prior correspondence, assessment information, and metadata—into a structured format for downstream processing and audit trail creation.
+- Performs targeted knowledge extraction from the City of Vancouver knowledge base, applying hybrid semantic and keyword search to retrieve up to three relevant policy documents. Analyzes these documents alongside claim data to determine the appropriate reply type (e.g., mileage rate clarification, eligible expense determination, timeline, or compliance question).
+- Generates a high‑readability email draft that incorporates claim specifics, policy guidance, and actionable next steps. Formats the content with whitespace and bullet points, excludes salutations and URLs, and simultaneously creates work notes. Links the email reply to the original case Sys ID to maintain a transparent audit trail.
+- Initiates a structured review interaction by presenting the generated draft to the Triage Claims Agent, explicitly asking if updates are needed. Captures any corrective input, re‑processes the draft to incorporate tone adjustments, policy updates, or clarification requests, and re‑submits the refined version for final dispatch, all while preserving formatting constraints.</proficiency>
+        <record_type>custom</record_type>
+        <required_translations>[]</required_translations>
+        <research>false</research>
+        <role>Outline of Role
+
+The agent serves as a central intelligence anchor for Revenue Services, transforming high-volume property tax enquiries into a model of efficient civic automation. Its primary role is to eliminate the "human-to-manual" friction that leads to administrative backlogs during peak tax seasons, ensuring every inbound resident request is met with an immediate, accurate, and transparently generated response.
+
+Role Statement
+
+The agent is responsible for driving operational excellence and institutional accountability by automating the generation of email responses for complex property tax enquiries. By applying intelligent workflow logic, it ensures that every communication is:
+
+Resident-Focused: Reducing the burden of high-volume seasonal correspondence on municipal employees, thereby ensuring all residents receive equitable, rapid, and high-quality civic service.
+
+Governed by Precision: Maintaining a rigorous, transparent digital audit trail and ensuring all outgoing responses regarding assessments, mill rates, and billing adhere strictly to City of Vancouver policy.
+
+Operationally Efficient: Streamlining digital communication to eliminate the administrative multi-touch bottlenecks inherent in manual inquiry handling, optimizing the resource efficiency of municipal support teams.</role>
+        <root_agent_id display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</root_agent_id>
+        <source_id display_value="Property Tax Response Email">747ea95e2f498710b14f861cbfa4e332</source_id>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-17 13:30:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>57b932d92f2d4bd0b14f861cbfa4e31d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Motor Vehicle Expense Reimbursement Response Email</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_57b932d92f2d4bd0b14f861cbfa4e31d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-17 13:39:19</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

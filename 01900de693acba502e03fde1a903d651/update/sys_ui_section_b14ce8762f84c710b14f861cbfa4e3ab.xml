@@ -4,13 +4,13 @@
             <element>resolved_by</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>394ce8762f84c710b14f861cbfa4e3c0</sys_id>
+            <sys_created_on>2026-06-03 23:40:22</sys_created_on>
+            <sys_id>c21f7c8dcf99831009d5b6734d851c14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:40:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>closed_by</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>fd4ce8762f84c710b14f861cbfa4e3ad</sys_id>
+            <sys_created_on>2026-06-03 23:40:22</sys_created_on>
+            <sys_id>421f7c8dcf99831009d5b6734d851c15</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:40:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>resolution_code</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>b94ce8762f84c710b14f861cbfa4e3bf</sys_id>
+            <sys_created_on>2026-06-03 23:40:22</sys_created_on>
+            <sys_id>ce1f7c8dcf99831009d5b6734d851c15</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:40:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>714ce8762f84c710b14f861cbfa4e3ad</sys_id>
+            <sys_created_on>2026-06-03 23:40:22</sys_created_on>
+            <sys_id>4e1f7c8dcf99831009d5b6734d851c16</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:40:22</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>resolved_at</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>3d4ce8762f84c710b14f861cbfa4e3be</sys_id>
+            <sys_created_on>2026-06-03 23:40:22</sys_created_on>
+            <sys_id>ca1f7c8dcf99831009d5b6734d851c17</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:40:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,71 +74,15 @@
             <element>closed_at</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>794ce8762f84c710b14f861cbfa4e3b0</sys_id>
+            <sys_created_on>2026-06-03 23:40:22</sys_created_on>
+            <sys_id>4a1f7c8dcf99831009d5b6734d851c18</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:40:22</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>f54ce8762f84c710b14f861cbfa4e3b1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>cause</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>f94ce8762f84c710b14f861cbfa4e3af</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>close_notes</element>
-            <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>b54ce8762f84c710b14f861cbfa4e3c1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>attached_knowledge</element>
-            <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-08 05:29:02</sys_created_on>
-            <sys_id>7d4ce8762f84c710b14f861cbfa4e3ae</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter display_value="Attached Knowledge">cfa76e850a0a0b1f01446f67c8538d00</sys_ui_formatter>
-            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
-            <sys_user/>
-            <type>formatter</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Resolution Information</caption>

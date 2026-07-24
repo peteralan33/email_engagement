@@ -4,125 +4,125 @@
             <element>sn_res_shaper_resolution_shaper.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>74cb7e172f484750b14f861cbfa4e39a</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>caaf7841cfd9831009d5b6734d851c4a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="ResolutionShaper">58dca524d77002004f1e82285e610309</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>number</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>78cb7e172f484750b14f861cbfa4e39b</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>ceaf7841cfd9831009d5b6734d851c4b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>f4cb7e172f484750b14f861cbfa4e39c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>requesting_service_organization</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>74cb7e172f484750b14f861cbfa4e39d</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>consumer</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>f0cb7e172f484750b14f861cbfa4e39e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>product</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>70cb7e172f484750b14f861cbfa4e39f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>sold_product</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>fccb7e172f484750b14f861cbfa4e39f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>7ccb7e172f484750b14f861cbfa4e3a0</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>service_definition</element>
-            <position>8</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>f8cb7e172f484750b14f861cbfa4e3a1</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>4eaf7841cfd9831009d5b6734d851c4c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category_ext</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>caaf7841cfd9831009d5b6734d851c4d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>source_system</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>4aaf7841cfd9831009d5b6734d851c4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>source_id</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>c6af7841cfd9831009d5b6734d851c4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_pab_ee_tkit_case_owner</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>46af7841cfd9831009d5b6734d851c50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>c2af7841cfd9831009d5b6734d851c51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>42af7841cfd9831009d5b6734d851c52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,27 +130,27 @@
             <element>state</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>78cb7e172f484750b14f861cbfa4e3a2</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>ceaf7841cfd9831009d5b6734d851c52</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assignment_group</element>
+            <element>priority</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>f4cb7e172f484750b14f861cbfa4e3a3</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>4eaf7841cfd9831009d5b6734d851c53</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,153 +158,125 @@
             <element>assigned_to</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>74cb7e172f484750b14f861cbfa4e3a4</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>caaf7841cfd9831009d5b6734d851c54</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>priority</element>
+            <element>assignment_group</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>f0cb7e172f484750b14f861cbfa4e3a5</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>4aaf7841cfd9831009d5b6734d851c55</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requesting_service_organization</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>c6af7841cfd9831009d5b6734d851c56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>consumer</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>46af7841cfd9831009d5b6734d851c57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>product</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>c2af7841cfd9831009d5b6734d851c58</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>parent</element>
-            <position>13</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>70cb7e172f484750b14f861cbfa4e3a6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>14</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>fccb7e172f484750b14f861cbfa4e3a6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>short_description</element>
-            <position>15</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>7ccb7e172f484750b14f861cbfa4e3a7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
             <position>16</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>f8cb7e172f484750b14f861cbfa4e3a8</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>42af7841cfd9831009d5b6734d851c59</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>source_id</element>
-            <position>17</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>78cb7e172f484750b14f861cbfa4e3a9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>source_system</element>
-            <position>18</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>f4cb7e172f484750b14f861cbfa4e3aa</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cxs_table_search.xml</element>
-            <position>19</position>
+            <position>17</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>74cb7e172f484750b14f861cbfa4e3ab</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>ceaf7841cfd9831009d5b6734d851c59</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>REL.sn_bom_financial_service.REL:bb260316c301120095ccd02422d3aed9</element>
-            <position>20</position>
+            <position>18</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>74cb7e172f484750b14f861cbfa4e3ac</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>ceaf7841cfd9831009d5b6734d851c5a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type>list</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>special_handling_notes</element>
-            <position>21</position>
+            <position>19</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-10 05:12:53</sys_created_on>
-            <sys_id>f0cb7e172f484750b14f861cbfa4e3ad</sys_id>
+            <sys_created_on>2026-06-03 23:42:49</sys_created_on>
+            <sys_id>4eaf7841cfd9831009d5b6734d851c5b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Special Handling Notes Pop Up">07103c0dc351120095ccd02422d3ae9b</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-10 05:12:53</sys_updated_on>
+            <sys_updated_on>2026-06-03 23:42:49</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>

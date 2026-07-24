@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">5b5cbcb2cf02035009d5b6734d851cd0</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"lg","scoreAlignment":"start","sparklineStyle":"area","iconStyle":"background","showScoreDate":true,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":false,"wrapElements":true,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"dataSources":[{"allowRealTime":false,"allowTotalValue":true,"indicatorType":"3","isScriptedIndicator":false,"allowMultiElementsAggregation":false,"indicatorClass":"PA_INDICATOR","aggregateType":1,"label":"Avg ACW Duration - Monthly","sourceType":"indicator","uuid":{"indicator":"5ba2406acfc6cb1009d5b6734d851cc3"},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yNWJhMjQwNmFjZmM2Y2IxMDA5ZDViNjczNGQ4NTFjYzMxNzg0MjIwMTkzNDk0","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"start","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headerTitle":"AHT (Average Handle Time) ","headingLevel":2,"showBorder":true,"bareBorder":false,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"aW5kaWNhdG9yNWJhMjQwNmFjZmM2Y2IxMDA5ZDViNjczNGQ4NTFjYzMxNzg0MjIwMTkzNDk0","id":"YVc1a2FXTmhkRzl5TldKaE1qUXdObUZqWm1NMlkySXhNREE1WkRWaU5qY3pOR1E0TlRGall6TXhOemcwTWpJd01Ua3pORGswMTc4NDIyMDE5NTQwNA==","frequency":40,"numberFormat":{"customFormat":false},"axisId":"primary"}],"sortBy":"value","sortByOrder":"desc","showChange":true,"showChangePercentage":true,"showTarget":true,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":true,"showSparkline":true,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"2wyildw0","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"showChangeFrom":true,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","description":"AHT is the average duration of a complete customer interaction, measured from the moment the customer initiates contact until the agent finishes all associated administrative work (ACW).","scoreType":"latest","headingPosition":"top"}</component_props>
+        <h>24</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Avg ACW Duration - Monthly","code":"PAR_DASHBOARD.5b5cbcb2cf02035009d5b6734d851cd0.ebdcb476cf02035009d5b6734d851c07"},{"comment":"","message":"AHT (Average Handle Time) ","code":"PAR_DASHBOARD.5b5cbcb2cf02035009d5b6734d851cd0.ebdcb476cf02035009d5b6734d851c07"},{"comment":"","message":"AHT is the average duration of a complete customer interaction, measured from the moment the customer initiates contact until the agent finishes all associated administrative work (ACW).","code":"PAR_DASHBOARD.5b5cbcb2cf02035009d5b6734d851cd0.ebdcb476cf02035009d5b6734d851c07"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.5b5cbcb2cf02035009d5b6734d851cd0.ebdcb476cf02035009d5b6734d851c07"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.5b5cbcb2cf02035009d5b6734d851cd0.ebdcb476cf02035009d5b6734d851c07"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:47:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ebdcb476cf02035009d5b6734d851c07</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>par_dashboard_widget_ebdcb476cf02035009d5b6734d851c07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-21 14:29:01</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props>{"headerTitle":"AHT (Average Handle Time) ","showHeaderSeparator":false,"description":"AHT is the average duration of a complete customer interaction, measured from the moment the customer initiates contact until the agent finishes all associated administrative work (ACW)."}</widget_props>
+        <x>12</x>
+        <y>36</y>
+    </par_dashboard_widget>
+</record_update>

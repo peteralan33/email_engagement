@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="awa_queue">
     <awa_queue action="INSERT_OR_UPDATE">
         <active>true</active>
-        <average_wait_time>1970-01-01 00:00:30</average_wait_time>
+        <average_wait_time>1970-01-01 00:39:08</average_wait_time>
         <ccc_source_id/>
-        <condition table="x_snc_pab_ee_tkit_work_management_case">short_descriptionLIKEMortgages^ORshort_descriptionLIKEmortgages^service_definition=1f95d6db2f880750b14f861cbfa4e3f4^EQ<item endquery="false" field="short_description" goto="false" newquery="false" operator="LIKE" or="false" value="Mortgages"/>
+        <condition table="x_snc_pab_ee_tkit_work_management_case">short_descriptionLIKEMortgages^ORshort_descriptionLIKEmortgages^ORshort_descriptionLIKEMortgage^ORshort_descriptionLIKEmortgage^service_definition=1f95d6db2f880750b14f861cbfa4e3f4^ORservice_definition=a5077cc1cf19831009d5b6734d851c8c^state=2^EQ<item endquery="false" field="short_description" goto="false" newquery="false" operator="LIKE" or="false" value="Mortgages"/>
             <item endquery="false" field="short_description" goto="false" newquery="false" operator="LIKE" or="true" value="mortgages"/>
+            <item endquery="false" field="short_description" goto="false" newquery="false" operator="LIKE" or="true" value="Mortgage"/>
+            <item endquery="false" field="short_description" goto="false" newquery="false" operator="LIKE" or="true" value="mortgage"/>
             <item display_table="sn_bom_service_definition" display_value="Work Management Request - Email" endquery="false" field="service_definition" goto="false" newquery="false" operator="=" or="false" value="1f95d6db2f880750b14f861cbfa4e3f4"/>
+            <item display_table="sn_bom_service_definition" display_value="External Work Tracking" endquery="false" field="service_definition" goto="false" newquery="false" operator="=" or="true" value="a5077cc1cf19831009d5b6734d851c8c"/>
+            <item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <condition_mode>simple</condition_mode>
@@ -20,27 +24,27 @@
         <external_provider/>
         <external_request_id/>
         <initial_agent_response>Thank you for contacting support. I am looking into your question now and will be with you shortly.</initial_agent_response>
-        <max_wait_time>1970-01-01 00:00:00</max_wait_time>
+        <max_wait_time/>
         <max_wait_time_message>No agents are available to chat right now. Check back later.</max_wait_time_message>
         <name>Mortgages Queue (WMR)</name>
         <number>WMR0002</number>
         <order>100</order>
         <schedule/>
-        <service_channel display_value="Work Management">7923ae572f004750b14f861cbfa4e3d0</service_channel>
+        <service_channel display_value="Gatekeeper">7923ae572f004750b14f861cbfa4e3d0</service_channel>
         <short_description/>
         <subflow/>
         <sys_class_name>awa_queue</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-10 03:36:31</sys_created_on>
         <sys_id>38756a572f404750b14f861cbfa4e3a4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Mortgages Queue (WMR)</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>awa_queue_38756a572f404750b14f861cbfa4e3a4</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-10 03:38:54</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-06-05 14:33:16</sys_updated_on>
         <target_wait_time/>
         <use_condition>true</use_condition>
     </awa_queue>

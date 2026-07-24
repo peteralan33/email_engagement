@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_templated_snip_note_template">
+    <sn_templated_snip_note_template action="INSERT_OR_UPDATE">
+        <condition/>
+        <group_visibility/>
+        <html_script_body><![CDATA[<p>Dear Citizen,</p><p>Thank you for contacting the City of Vancouver. We have received your inquiry and a customer service representative will review it shortly. If your request requires urgent attention, please call 3-1-1 directly.</p><p>Thank you,<br/>City of Vancouver</p>]]></html_script_body>
+        <language/>
+        <name>City of Vancouver - General Inquiry Acknowledgement</name>
+        <short_name>CoV - General Ack</short_name>
+        <sys_class_name>sn_templated_snip_note_template</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-16 18:11:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9f2091fe2fc64750b14f861cbfa4e35f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>City of Vancouver - General Inquiry Acknowledgement</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_templated_snip_note_template_9f2091fe2fc64750b14f861cbfa4e35f</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-16 18:11:27</sys_updated_on>
+        <table>interaction</table>
+    </sn_templated_snip_note_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=9f2091fe2fc64750b14f861cbfa4e35f"/>
+</record_update>

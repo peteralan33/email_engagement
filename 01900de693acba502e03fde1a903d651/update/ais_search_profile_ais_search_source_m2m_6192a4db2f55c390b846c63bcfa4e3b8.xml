@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="CalmPoint Health Search Profile">8a82a0db2f55c390b846c63bcfa4e314</profile>
+        <search_source display_value="CalmPoint Health Knowledge">3852609b2f55c390b846c63bcfa4e374</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 21:22:18</sys_created_on>
+        <sys_id>6192a4db2f55c390b846c63bcfa4e3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CalmPoint Health Search Profile.CalmPoint Health Knowledge</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_6192a4db2f55c390b846c63bcfa4e3b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-10 21:22:18</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

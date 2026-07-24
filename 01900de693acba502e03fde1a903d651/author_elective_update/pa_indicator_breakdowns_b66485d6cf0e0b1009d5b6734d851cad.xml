@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_indicator_breakdowns">
+    <pa_indicator_breakdowns action="DELETE">
+        <breakdown display_value="Queue Channel Breakdown">7fd38dde2f4a8b10b14f861cbfa4e337</breakdown>
+        <display>true</display>
+        <indicator display_value="Queue Status Monitor: Active Interactions">7a64059ecfca0b1009d5b6734d851cf2</indicator>
+        <order/>
+        <sql_statement/>
+        <sys_class_name>pa_indicator_breakdowns</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-15 04:03:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b66485d6cf0e0b1009d5b6734d851cad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Queue Channel Breakdown.Queue Status Monitor: Active Interactions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>pa_indicator_breakdowns_b66485d6cf0e0b1009d5b6734d851cad</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-15 04:03:08</sys_updated_on>
+    </pa_indicator_breakdowns>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>pa_indicator_breakdowns_b66485d6cf0e0b1009d5b6734d851cad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_indicator_breakdowns"><pa_indicator_breakdowns action="INSERT_OR_UPDATE"><breakdown display_value="Queue Channel Breakdown">7fd38dde2f4a8b10b14f861cbfa4e337</breakdown><display>true</display><indicator display_value="Queue Status Monitor: Active Interactions">7a64059ecfca0b1009d5b6734d851cf2</indicator><order/><sql_statement/><sys_class_name>pa_indicator_breakdowns</sys_class_name><sys_created_by>ag.mcp</sys_created_by><sys_created_on>2026-07-15 04:03:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b66485d6cf0e0b1009d5b6734d851cad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Queue Channel Breakdown.Queue Status Monitor: Active Interactions</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>pa_indicator_breakdowns_b66485d6cf0e0b1009d5b6734d851cad</sys_update_name><sys_updated_by>ag.mcp</sys_updated_by><sys_updated_on>2026-07-15 04:03:08</sys_updated_on></pa_indicator_breakdowns></record_update>]]></payload>
+        <payload_hash>-1749035352</payload_hash>
+        <record_name>7a64059ecfca0b1009d5b6734d851cf2</record_name>
+        <reverted_from/>
+        <source>40c04d9e2f0a8b10b14f861cbfa4e3e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-15 04:03:09</sys_created_on>
+        <sys_id>8f6485d6cf0e0b1009d5b6734d851cd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f63f158c50000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-15 04:03:09</sys_updated_on>
+        <type>Indicator Breakdown</type>
+        <update_guid>cb6485d6200e0b10370543e778af92d7</update_guid>
+        <update_guid_history>cb6485d6200e0b10370543e778af92d7:-1749035352</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">66d8c1de2fca8b10b14f861cbfa4e3aa</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-15 04:22:29</sys_created_on>
+        <sys_db_object display_value="" name="pa_indicator_breakdowns">pa_indicator_breakdowns</sys_db_object>
+        <sys_id>c979d7dece394dfebacb61b32853b464</sys_id>
+        <sys_metadata>b66485d6cf0e0b1009d5b6734d851cad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Queue Channel Breakdown.Queue Status Monitor: Active Interactions</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>pa_indicator_breakdowns_b66485d6cf0e0b1009d5b6734d851cad</sys_update_name>
+        <sys_update_version display_value="pa_indicator_breakdowns_b66485d6cf0e0b1009d5b6734d851cad">8f6485d6cf0e0b1009d5b6734d851cd8</sys_update_version>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-15 04:22:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -3,50 +3,60 @@
         <active>true</active>
         <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
         <description>Purpose
-The Interaction Record Enrichment (IRE) tool ensures that the crucial context from any analyzed documents is preserved and readily accessible. Its function is to integrate the newly generated attachment summaries into the main conversation log.
+The Interaction Document Enrichment (IDE) tool ensures that crucial context from analyzed attachments is preserved, clean, and easily scannable within the primary conversation log.
 
 Inputs
 Interaction Record (Primary Input): The definitive record of the customer interaction.
 
-Attachment Summaries: The textual output from the summarization process (Step 2), representing the condensed content of documents or prior interactions.
+Attachment Summaries: The clean, plain-text narrative summary of the documents from the previous step (containing no raw JSON syntax or technical metadata). If you are provided a JSON Payload as input, you will need to transform this into a clean, plain-text narrative summary of the documents.
 
 Contextual Data for Action
-Original Interaction Record: This is the existing object that the tool acts upon. While not a direct input to the tool's execution, it is the designated target for the update.
+Original Interaction Record: The existing object targetted for the update.
 
 Action &amp; Logic
-Direct Integration: This tool takes the received Attachment Summaries text and seamlessly embeds or appends it into a designated field within the Original Interaction Record.
+Data Extraction &amp; Clean Up: Extract only the relevant content from the result string within the response payload (discarding raw JSON syntax, metadata fields like sys_id, logId, or technical brackets).
 
-Creating a Complete Package: This action ensures that the master record now contains a holistic view: the associated emails, and the key insights from any supporting documents.
+User-Friendly Formatting: Format the final output cleanly. Introduce clear line breaks between the global summary and individual document summaries to avoid walls of text.
 
-Preparation for Classification: By making the Interaction Record the single source of truth, it perfectly prepares the data package for the next step, Specialized Case Classification (Step 4), which will analyze all this context to make its final determination.
+Direct Integration: Seamlessly append or embed this beautifully formatted text into the designated work notes field within the Original Interaction Record.
 
 Key Output Determined
-Updated Interaction Record: The resulting object is the enriched Interaction Record, which now fully incorporates the Attachment Summaries. This complete data package is passed forward for subsequent analysis and processing.</description>
+Updated Interaction Record: The enriched Interaction Record. It now cleanly displays the structured summaries with explicit line breaks for each document, serving as a highly readable, single source of truth for the upcoming Specialized Case Classification</description>
+        <display_mode>inline</display_mode>
         <display_output>true</display_output>
         <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>9510f586938576d00f91fce79503d6a4</entity_id>
         <execution_mode>autopilot</execution_mode>
         <inputs>[]</inputs>
         <max_auto_executions>10</max_auto_executions>
-        <name>Interaction enrichment with attachment summaries</name>
+        <name>Interaction Document Enrichment</name>
         <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_message/>
         <post_processing_script/>
         <pre_message>Enriching interaction record with attachment summaries</pre_message>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
         <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 17:01:20</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>904ca2e69381bad00f91fce79503d607</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Interaction enrichment with attachment summaries</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Interaction Document Enrichment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sn_aia_agent_tool_m2m_904ca2e69381bad00f91fce79503d607</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-09 17:01:20</sys_updated_on>
+        <sys_updated_on>2026-06-17 23:14:55</sys_updated_on>
+        <timeout/>
         <tool display_value="Update interaction record with attachment summaries">dc4ca2e69381bad00f91fce79503d603</tool>
         <tool_attributes>{}</tool_attributes>
         <transformation_instructions/>
+        <widgets/>
     </sn_aia_agent_tool_m2m>
 </record_update>

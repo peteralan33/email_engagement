@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Major Case" section_id="ab72346dcf918b1009d5b6734d851cb8" sys_domain="global" table="x_snc_pab_ee_tkit_work_management_case" version="3" view="MajorCase">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 12:05:08</sys_created_on>
+            <sys_id>a123b421cfd18b1009d5b6734d851c4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Major Case" display_value="Major Case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="a772346dcf918b1009d5b6734d851c7b">ab72346dcf918b1009d5b6734d851cb8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 12:05:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_definition</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 12:05:08</sys_created_on>
+            <sys_id>2123b421cfd18b1009d5b6734d851c50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Major Case" display_value="Major Case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="a772346dcf918b1009d5b6734d851c7b">ab72346dcf918b1009d5b6734d851cb8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 12:05:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 12:05:08</sys_created_on>
+            <sys_id>ad23b421cfd18b1009d5b6734d851c50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Major Case" display_value="Major Case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="a772346dcf918b1009d5b6734d851c7b">ab72346dcf918b1009d5b6734d851cb8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 12:05:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 12:05:08</sys_created_on>
+            <sys_id>2d23b421cfd18b1009d5b6734d851c51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Major Case" display_value="Major Case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="a772346dcf918b1009d5b6734d851c7b">ab72346dcf918b1009d5b6734d851cb8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 12:05:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 12:05:08</sys_created_on>
+            <sys_id>a923b421cfd18b1009d5b6734d851c52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Major Case" display_value="Major Case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="a772346dcf918b1009d5b6734d851c7b">ab72346dcf918b1009d5b6734d851cb8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 12:05:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 12:05:08</sys_created_on>
+            <sys_id>2923b421cfd18b1009d5b6734d851c53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Major Case" display_value="Major Case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="a772346dcf918b1009d5b6734d851c7b">ab72346dcf918b1009d5b6734d851cb8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 12:05:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 12:05:08</sys_created_on>
+            <sys_id>a523b421cfd18b1009d5b6734d851c54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Major Case" display_value="Major Case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="a772346dcf918b1009d5b6734d851c7b">ab72346dcf918b1009d5b6734d851cb8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 12:05:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Major Case</caption>
+            <header>false</header>
+            <name>x_snc_pab_ee_tkit_work_management_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 12:02:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ab72346dcf918b1009d5b6734d851cb8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>x_snc_pab_ee_tkit_work_management_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+            <sys_update_name>sys_ui_section_ab72346dcf918b1009d5b6734d851cb8</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 12:05:08</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="MajorCase" name="MajorCase">a772346dcf918b1009d5b6734d851c7b</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=328000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>look_up_case_record</internal_name>
+        <label_cache>[{"name":"undefined","label":"2 - Assign Subflow Outputs","type":"ASSIGNSUBFLOWOUTPUTS","base_type":"ASSIGNSUBFLOWOUTPUTS","usedInstances":{"d985096b-3e9e-426d-a75b-b31bd6515f0d":[null]},"attributes":{}},{"name":"subflow.case_number","label":"Input➛Case Number","type":"string","base_type":"string","usedInstances":{"d985096b-3e9e-426d-a75b-b31bd6515f0d":[null,"conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7671d88b-ae71-4fc4-848d-54a5c164bb41"}},{"name":"d985096b-3e9e-426d-a75b-b31bd6515f0d.Record.number","label":"1 - Look Up Record➛Case Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sn_customerservice_case","column_name":"number","usedInstances":{"4842c419-a93b-4750-8e89-915c51a19816":["case_overview-0"]}},{"name":"d985096b-3e9e-426d-a75b-b31bd6515f0d.Record.description","label":"1 - Look Up Record➛Case Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_customerservice_case","column_name":"description","usedInstances":{"4842c419-a93b-4750-8e89-915c51a19816":["case_overview-0"]}},{"name":"d985096b-3e9e-426d-a75b-b31bd6515f0d.Record.short_description","label":"1 - Look Up Record➛Case Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"sn_customerservice_case","column_name":"short_description","usedInstances":{"4842c419-a93b-4750-8e89-915c51a19816":["case_overview-0"]}}]</label_cache>
+        <master_snapshot>5f21b53e938d879051fcffe03603d60a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Look Up Case Record</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:27:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cbef2572938d879051fcffe03603d662</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Look Up Case Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_hub_flow_cbef2572938d879051fcffe03603d662</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:53</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>fb21f53e938d879051fcffe03603d65f</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=cbef2572938d879051fcffe03603d662"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cbef2572938d879051fcffe03603d662"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_cbef2572938d879051fcffe03603d662^id=cbef2572938d879051fcffe03603d662"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=cbef2572938d879051fcffe03603d662"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=cbef2572938d879051fcffe03603d662^sys_idNOT INcbef2572938d879051fcffe03603d668"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>cbef2572938d879051fcffe03603d662</id>
+        <name>Look Up Case Record</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:27:23</sys_created_on>
+        <sys_id>cbef2572938d879051fcffe03603d668</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:27:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cbef2572938d879051fcffe03603d668"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=cbef2572938d879051fcffe03603d662^sys_idNOT INc550b53a938d879051fcffe03603d6cc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7671d88b-ae71-4fc4-848d-54a5c164bb41</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Number</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look Up Case Record">cbef2572938d879051fcffe03603d662</model>
+        <model_id>cbef2572938d879051fcffe03603d662</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_cbef2572938d879051fcffe03603d662</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:29:08</sys_created_on>
+        <sys_id>c550b53a938d879051fcffe03603d6cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c550b53a938d879051fcffe03603d6cc"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=cbef2572938d879051fcffe03603d662^sys_idNOT IN9f203df6938d879051fcffe03603d619"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=18de8571-2496-4f9b-96e5-2a3b0f6ad05b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_overview</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Overview</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look Up Case Record">cbef2572938d879051fcffe03603d662</model>
+        <model_id>cbef2572938d879051fcffe03603d662</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_cbef2572938d879051fcffe03603d662</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:28:29</sys_created_on>
+        <sys_id>9f203df6938d879051fcffe03603d619</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9f203df6938d879051fcffe03603d619"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cbef2572938d879051fcffe03603d662"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=cbef2572938d879051fcffe03603d662"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=cbef2572938d879051fcffe03603d662^sys_idNOT INab203df6938d879051fcffe03603d641"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look Up Case Record">cbef2572938d879051fcffe03603d662</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:28:30</sys_created_on>
+        <sys_id>ab203df6938d879051fcffe03603d641</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:35:47</sys_updated_on>
+        <ui_id>d985096b-3e9e-426d-a75b-b31bd6515f0d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6Bvp1ZIK+1tpba3L3t7lhM7xTpjZ22HLkX87zeOE4ggBaJNpVb76PHY/mbm+yYD3zY+I/61T2bBLJ3NxtMoCIbDIJhMhgkO43g4SeIgxiO/5wu8pOBpcMwpLFeY53atBUpybeSSKk3ViiUUJVhbD8J0xvH6a+l446zJgnGiqPCvv33v+RlWcK2hyr/eHGxdiovjmHJwfSyBHeA062y3RMWes32uH/O+uA2piIUS9Hz601BBKGBIMde05y+xINhItd5ZFMXkTvC9YcGEgRt96/xTsxd4dxpYv5RCVAl1e7slKhPkzOktNvjBqDwxuSpdk4WEfGqXD0JTnHNzU7c5h7vMMCncERe2Oy15vhRfXDr83QVVPcCSawBBMxuoRV6GkT4s5PN9hXLORJGTcpPLBPPdChujWJwbi2fjU06XcBFa4ixj4gllSq5YcRiwLPtPHBb9lMtneFSzJ9HHiQXeh7zi/hzst4X5K1bMRvEXXAOHARDjwBDkSqhlropUrlDCgXh2Q2Gh3V3+tufrtb7hWOt95JBy9CO3uF0eyoiRS5o9kiiWmT/hihUtg9v2KmmMT1JwtqdcIgVhFoWu6UPky5iqf3I4TDYbncc2AX0rEeS2ttt/7+4BM2KkyWu7PZZSJ3e2FOL5LFRCvKmnoSk1pSSPbJ+bLiglGXYmyVEQfCRRwuPvT5PtVeZScEZqITlJMrLnk5bKIJfLmtaOldKa5xdAqHh+Z5npxevXUJU0TxnlpOnLM7cbB1+ewe/55XmXJAdABLnqMcGZKMYIAPpW7B+fpF4cHvCsoFdtDrM2rJNjDWDPSO+ltRIugFMp4QHe9h4dngaIVb8vKHPY6ytjKYBhZwIYDroRwGYX5i6RDTmvJkdbzcr/xfrjQ3+gYO1AuG0SWKs3w7ZvDrbHAh62UnCdbG7n9hXOdTxivqLI3lu2gAUcLd9DTr/omZEnavavV15EmmfM/2vaLxmHqkIV4b3BuBqe/MUU18ZVlqIlVI5lMFUrmgA5NMKKolTmgqBynt4TyVYyZUqb0vm40dxT0I/wJAjTMwvqFd7ezrvlh/h8HFUqP6VeFUj5mvYgEK8IxNsF0i7sNk1r1OFw2nXTmmPGi2rAT6WsVk6qlFSvNK4zhTzBiAu72oWgwk5B/Xrba5JAY/s7g/VD/O7uvjUlFMejAZ5EwzAMgjAgUTCNonA6idMJjkbpXqMIaZFAN4WbU6AKXI8qalR1Do77j2upbRvNBagqCt5KYX9ODyLjWVhQX6+CdR542VBiKTnF4qCjPMJ34o95ib/k6/jddZUP8S9Uzh4PM+1Mjbl+q7khZ38L9iOnnyzFpjQYTEOSXE2jMLoapWRyNSN4fIVn8TgaEpqM0i5Hge//AzSREuvWFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ab203df6938d879051fcffe03603d641"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=cbef2572938d879051fcffe03603d662"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=cbef2572938d879051fcffe03603d662^sys_idNOT INf37079f6938d879051fcffe03603d606"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8b21753e938d879051fcffe03603d684</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look Up Case Record">cbef2572938d879051fcffe03603d662</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>case_overview</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:29:52</sys_created_on>
+        <sys_id>f37079f6938d879051fcffe03603d606</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:50</sys_updated_on>
+        <ui_id>4842c419-a93b-4750-8e89-915c51a19816</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2SzU7DMBCEX8Xyua5SQgLJrSoXLiChigtBlX82dIVjR7aTUkV5dxxa0Qr10jvH/XZ3RhrNQG0X2i74tV16jx+Glm8DNbwBWlLJPWxsD65H2NEZ7bnuJr6KnDx1jQBXEjIMqrjPkiIXLIUC2O1Nrhi/ywQT6UKoPFtkdaLmLyCtU3Pz8zaOlVlZE+ArkNo6Ag1HTRz41hoPlWGs6pIkBfJ8dC+vtPFb68JGgZcO24DWTI6/qg8nfq3wH8mYikLfar5//Q/nQjhyi1o5mGr1PqOH7VIG7GNUNdcexojRTA08nPTcIRcajqMCiT7KrSf2eHan9rGkKM/RzrrPWtvdiY3f+JenY98CAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=cbef2572938d879051fcffe03603d662"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=cbef2572938d879051fcffe03603d662"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_number</element>
+        <help/>
+        <hint/>
+        <label>Case Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cbef2572938d879051fcffe03603d662</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:29:09</sys_created_on>
+        <sys_id>8150b53a938d879051fcffe03603d6d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:29:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_cbef2572938d879051fcffe03603d662"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_overview</element>
+        <help/>
+        <hint/>
+        <label>Case Overview</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_cbef2572938d879051fcffe03603d662</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:28:29</sys_created_on>
+        <sys_id>13203df6938d879051fcffe03603d620</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:28:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_cbef2572938d879051fcffe03603d662"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>look_up_case_record</internal_name>
+        <label_cache>[{"name":"undefined","label":"2 - Assign Subflow Outputs","type":"ASSIGNSUBFLOWOUTPUTS","base_type":"ASSIGNSUBFLOWOUTPUTS","usedInstances":{"d985096b-3e9e-426d-a75b-b31bd6515f0d":[null]},"attributes":{}},{"name":"subflow.case_number","label":"Input➛Case Number","type":"string","base_type":"string","usedInstances":{"d985096b-3e9e-426d-a75b-b31bd6515f0d":[null,"conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7671d88b-ae71-4fc4-848d-54a5c164bb41"}},{"name":"d985096b-3e9e-426d-a75b-b31bd6515f0d.Record.number","label":"1 - Look Up Record➛Case Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sn_customerservice_case","column_name":"number","usedInstances":{"4842c419-a93b-4750-8e89-915c51a19816":["case_overview-0"]}},{"name":"d985096b-3e9e-426d-a75b-b31bd6515f0d.Record.description","label":"1 - Look Up Record➛Case Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_customerservice_case","column_name":"description","usedInstances":{"4842c419-a93b-4750-8e89-915c51a19816":["case_overview-0"]}},{"name":"d985096b-3e9e-426d-a75b-b31bd6515f0d.Record.short_description","label":"1 - Look Up Record➛Case Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"sn_customerservice_case","column_name":"short_description","usedInstances":{"4842c419-a93b-4750-8e89-915c51a19816":["case_overview-0"]}}]</label_cache>
+        <master>true</master>
+        <name>Look Up Case Record</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Look Up Case Record">cbef2572938d879051fcffe03603d662</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:32:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5f21b53e938d879051fcffe03603d60a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:51</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=5f21b53e938d879051fcffe03603d60a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5f21b53e938d879051fcffe03603d60a"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_5f21b53e938d879051fcffe03603d60a^id=5f21b53e938d879051fcffe03603d60a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5f21b53e938d879051fcffe03603d60a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=5f21b53e938d879051fcffe03603d60a^sys_idNOT IN1f21b53e938d879051fcffe03603d619"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>5f21b53e938d879051fcffe03603d60a</id>
+        <name>Look Up Case Record</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:32:51</sys_created_on>
+        <sys_id>1f21b53e938d879051fcffe03603d619</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:51</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1f21b53e938d879051fcffe03603d619"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=5f21b53e938d879051fcffe03603d60a^sys_idNOT IN5321b53e938d879051fcffe03603d61c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7671d88b-ae71-4fc4-848d-54a5c164bb41</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Number</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look Up Case Record">5f21b53e938d879051fcffe03603d60a</model>
+        <model_id>5f21b53e938d879051fcffe03603d60a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_5f21b53e938d879051fcffe03603d60a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:32:51</sys_created_on>
+        <sys_id>5321b53e938d879051fcffe03603d61c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5321b53e938d879051fcffe03603d61c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=5f21b53e938d879051fcffe03603d60a^sys_idNOT IN6b21b53e938d879051fcffe03603d63c"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=18de8571-2496-4f9b-96e5-2a3b0f6ad05b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_overview</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Overview</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look Up Case Record">5f21b53e938d879051fcffe03603d60a</model>
+        <model_id>5f21b53e938d879051fcffe03603d60a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_5f21b53e938d879051fcffe03603d60a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:32:52</sys_created_on>
+        <sys_id>6b21b53e938d879051fcffe03603d63c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6b21b53e938d879051fcffe03603d63c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5f21b53e938d879051fcffe03603d60a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5f21b53e938d879051fcffe03603d60a"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=5f21b53e938d879051fcffe03603d60a^sys_idNOT IN2721b53e938d879051fcffe03603d6b3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look Up Case Record">5f21b53e938d879051fcffe03603d60a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:32:52</sys_created_on>
+        <sys_id>2721b53e938d879051fcffe03603d6b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:52</sys_updated_on>
+        <ui_id>d985096b-3e9e-426d-a75b-b31bd6515f0d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6Bvp1ZIK+1tpba3L3t7lhM7xTpjZ22HLkX87zeOE4ggBaJNpVb76PHY/mbm+yYD3zY+I/61T2bBLJ3NxtMoCIbDIJhMhgkO43g4SeIgxiO/5wu8pOBpcMwpLFeY53atBUpybeSSKk3ViiUUJVhbD8J0xvH6a+l446zJgnGiqPCvv33v+RlWcK2hyr/eHGxdiovjmHJwfSyBHeA062y3RMWes32uH/O+uA2piIUS9Hz601BBKGBIMde05y+xINhItd5ZFMXkTvC9YcGEgRt96/xTsxd4dxpYv5RCVAl1e7slKhPkzOktNvjBqDwxuSpdk4WEfGqXD0JTnHNzU7c5h7vMMCncERe2Oy15vhRfXDr83QVVPcCSawBBMxuoRV6GkT4s5PN9hXLORJGTcpPLBPPdChujWJwbi2fjU06XcBFa4ixj4gllSq5YcRiwLPtPHBb9lMtneFSzJ9HHiQXeh7zi/hzst4X5K1bMRvEXXAOHARDjwBDkSqhlropUrlDCgXh2Q2Gh3V3+tufrtb7hWOt95JBy9CO3uF0eyoiRS5o9kiiWmT/hihUtg9v2KmmMT1JwtqdcIgVhFoWu6UPky5iqf3I4TDYbncc2AX0rEeS2ttt/7+4BM2KkyWu7PZZSJ3e2FOL5LFRCvKmnoSk1pSSPbJ+bLiglGXYmyVEQfCRRwuPvT5PtVeZScEZqITlJMrLnk5bKIJfLmtaOldKa5xdAqHh+Z5npxevXUJU0TxnlpOnLM7cbB1+ewe/55XmXJAdABLnqMcGZKMYIAPpW7B+fpF4cHvCsoFdtDrM2rJNjDWDPSO+ltRIugFMp4QHe9h4dngaIVb8vKHPY6ytjKYBhZwIYDroRwGYX5i6RDTmvJkdbzcr/xfrjQ3+gYO1AuG0SWKs3w7ZvDrbHAh62UnCdbG7n9hXOdTxivqLI3lu2gAUcLd9DTr/omZEnavavV15EmmfM/2vaLxmHqkIV4b3BuBqe/MUU18ZVlqIlVI5lMFUrmgA5NMKKolTmgqBynt4TyVYyZUqb0vm40dxT0I/wJAjTMwvqFd7ezrvlh/h8HFUqP6VeFUj5mvYgEK8IxNsF0i7sNk1r1OFw2nXTmmPGi2rAT6WsVk6qlFSvNK4zhTzBiAu72oWgwk5B/Xrba5JAY/s7g/VD/O7uvjUlFMejAZ5EwzAMgjAgUTCNonA6idMJjkbpXqMIaZFAN4WbU6AKXI8qalR1Do77j2upbRvNBagqCt5KYX9ODyLjWVhQX6+CdR542VBiKTnF4qCjPMJ34o95ib/k6/jddZUP8S9Uzh4PM+1Mjbl+q7khZ38L9iOnnyzFpjQYTEOSXE2jMLoapWRyNSN4fIVn8TgaEpqM0i5Hge//AzSREuvWFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2721b53e938d879051fcffe03603d6b3"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=5f21b53e938d879051fcffe03603d60a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5f21b53e938d879051fcffe03603d60a^sys_idNOT INe321b53e938d879051fcffe03603d6b1"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8b21753e938d879051fcffe03603d684</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look Up Case Record">5f21b53e938d879051fcffe03603d60a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>case_overview</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:32:52</sys_created_on>
+        <sys_id>e321b53e938d879051fcffe03603d6b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:52</sys_updated_on>
+        <ui_id>4842c419-a93b-4750-8e89-915c51a19816</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2US0/jMBSF/0rkdROlDQlNd6gICYmhEjBsBhQ58TW1cOzgR0un6n+f6yZtEcws2M/SJ76P8/koW6K967yzD/rCWvGiyOzXlijaApmRhlqo9ArMSsCajMiKSh/0OerRrW9rMLMo2m5ZOc3TsqjjDEqIzyYFi+l5Xsd1Nq5ZkY9znrLkDhptWKL2Zbvdk5pr5eDdRVybCFoqZGTAdlpZeFJx/OTTNINoMUyffXOMXWrjKga2MaJzQqsw8dj18qR/t/GnlkiFCdtJunn8D+cvcJqlkMxAiNXziHTUYLIcGDLbEoEOjaLyRqhX5PblsmColnySZowXZTZl0/Myzce84RzSrEC5GJdYJWkN8gB+cUrrP0LsNl2QrTNCvQznm6HF/UFEM2HJ8YjgI4BigLtwKi2MSEsVo06bzVExQNlCyZOwRGu9o5a+W/Eb503TNA03OaC/Bvqvx2M1ZKiX+SV1FFfxjfMGDmi0aMD2ZBhw6qWbf9T6C4s9+77E0VoeqrX0rbrtgZBjg0NkUfEIiUEXrIbdByP8fqnXd4ctr4TaUxk+St1QeTxRh+xq78I+W+LFwyfMvfIFNEhocWLV0q5DpeqMXon9FFy6TV4kHhIu9TrEFX9PCW2CwwSfgCZXqF/u5UdqRLD7A9tgcRj3U4k3D9chROMpg2l+Po4nZ2URn/GyjssC8nhCszrlBWVpXpPdiNiNnUtq7QkUvlD15oPNHtsAqOoZh5J93i9wqRUMLHYhuyr8U/uXWQ27HR+vERYtPATt+sM9tsHEiuajtNbmNZg/abs/JCYN27EFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=5f21b53e938d879051fcffe03603d60a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=5f21b53e938d879051fcffe03603d60a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_number</element>
+        <help/>
+        <hint/>
+        <label>Case Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5f21b53e938d879051fcffe03603d60a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:32:51</sys_created_on>
+        <sys_id>9721b53e938d879051fcffe03603d635</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5f21b53e938d879051fcffe03603d60a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_overview</element>
+        <help/>
+        <hint/>
+        <label>Case Overview</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_5f21b53e938d879051fcffe03603d60a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:32:52</sys_created_on>
+        <sys_id>6b21b53e938d879051fcffe03603d65d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5f21b53e938d879051fcffe03603d60a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>cbef2572938d879051fcffe03603d662</sys_id>
+        <latest_snapshot>5f21b53e938d879051fcffe03603d60a</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch2-hotfix1-05-05-2026_05-24-2026_0242.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cbef2572938d879051fcffe03603d662"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=cbef2572938d879051fcffe03603d662^sys_idNOT INa721b53e938d879051fcffe03603d6d0"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_subflow_plan","id":"a721b53e938d879051fcffe03603d6d0","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id display_value="Look Up Case Record">cbef2572938d879051fcffe03603d662</plan_id>
+        <snapshot>4398b3b293090f1051fcffe03603d6cd</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 03:32:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a721b53e938d879051fcffe03603d6d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 03:32:52</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

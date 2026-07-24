@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_pab_ee_tkit.Get Internal Locations Map Markers</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get Internal Locations Map Markers</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var output = [];
+    var gr = new GlideRecord('sn_csm_business_location_internal');
+    gr.addNotNullQuery('latitude');
+    gr.addNotNullQuery('longitude');
+    gr.setLimit(500);
+    gr.query();
+    while(gr.next()) {
+        var obj = {
+            content: '<h3>' + gr.getValue('name') + '</h3><p>Status: ' + gr.getValue('status') + '</p><p>Manager: ' + gr.getDisplayValue('manager') + '</p>',
+            displayValue: '<h3>' + gr.getValue('name') + '</h3>',
+            latitude: parseFloat(gr.getValue('latitude')),
+            longitude: parseFloat(gr.getValue('longitude')),
+            type: 'building'
+        };
+        output.push(obj);
+    }
+    return output;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-21 07:17:47</sys_created_on>
+        <sys_id>f48aac182fda4390b846c63bcfa4e362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Internal Locations Map Markers</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_f48aac182fda4390b846c63bcfa4e362</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-21 07:17:47</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=f48aac182fda4390b846c63bcfa4e362"/>
+</record_update>

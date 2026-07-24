@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_view_workspace">
+    <sysrule_view_workspace action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <condition table="x_snc_pab_ee_tkit_work_management_case">service_definition=3217705dcf55871009d5b6734d851c4a^EQ<item display_table="sn_bom_service_definition" display_value="External Work Upload Case" endquery="false" field="service_definition" goto="false" newquery="false" operator="=" or="false" value="3217705dcf55871009d5b6734d851c4a"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <default_tab_focus>Details</default_tab_focus>
+        <default_tab_order>true</default_tab_order>
+        <description/>
+        <disable_section_collapse>false</disable_section_collapse>
+        <experience_restricted>true</experience_restricted>
+        <hide_details>false</hide_details>
+        <hide_journal_input_fields>false</hide_journal_input_fields>
+        <hide_section_menu>false</hide_section_menu>
+        <name>Major Case View</name>
+        <order>100</order>
+        <roles/>
+        <script/>
+        <sys_class_name>sysrule_view_workspace</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 12:09:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f2237821cfd18b1009d5b6734d851c2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Major Case View</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sysrule_view_workspace_f2237821cfd18b1009d5b6734d851c2f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 12:09:49</sys_updated_on>
+        <table>x_snc_pab_ee_tkit_work_management_case</table>
+        <tabs_order>[{"label":"Details","value":"Details"}]</tabs_order>
+        <view display_value="MajorCase" name="MajorCase">a772346dcf918b1009d5b6734d851c7b</view>
+        <workspace/>
+    </sysrule_view_workspace>
+</record_update>

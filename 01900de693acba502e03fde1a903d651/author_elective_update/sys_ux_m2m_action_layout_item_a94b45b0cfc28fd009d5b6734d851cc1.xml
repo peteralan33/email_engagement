@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_layout_item">
+    <sys_ux_m2m_action_layout_item action="DELETE">
+        <active>true</active>
+        <animate_icon>false</animate_icon>
+        <display_type>1</display_type>
+        <icon/>
+        <order>1000</order>
+        <sys_class_name>sys_ux_m2m_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-10 12:42:11</sys_created_on>
+        <sys_id>a94b45b0cfc28fd009d5b6734d851cc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_m2m_action_layout_item_a94b45b0cfc28fd009d5b6734d851cc1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-10 12:42:11</sys_updated_on>
+        <table/>
+        <ux_form_action_layout display_value="">cd4b81b0cfc28fd009d5b6734d851ce5</ux_form_action_layout>
+        <ux_form_action_layout_item display_value="Copy URL">50dab4e8eb3002107aebddde235228b4</ux_form_action_layout_item>
+        <variant>secondary</variant>
+    </sys_ux_m2m_action_layout_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_m2m_action_layout_item_a94b45b0cfc28fd009d5b6734d851cc1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_layout_item"><sys_ux_m2m_action_layout_item action="INSERT_OR_UPDATE"><active>true</active><animate_icon>false</animate_icon><display_type>1</display_type><icon/><order>1000</order><sys_class_name>sys_ux_m2m_action_layout_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-10 12:42:11</sys_created_on><sys_id>a94b45b0cfc28fd009d5b6734d851cc1</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_ux_m2m_action_layout_item_a94b45b0cfc28fd009d5b6734d851cc1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-10 12:42:11</sys_updated_on><table/><ux_form_action_layout display_value="">cd4b81b0cfc28fd009d5b6734d851ce5</ux_form_action_layout><ux_form_action_layout_item display_value="Copy URL">50dab4e8eb3002107aebddde235228b4</ux_form_action_layout_item><variant>secondary</variant></sys_ux_m2m_action_layout_item></record_update>]]></payload>
+        <payload_hash>1394801447</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-10 12:42:11</sys_created_on>
+        <sys_id>e94b45b0cfc28fd009d5b6734d851cc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f4c0cbedd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-10 12:42:11</sys_updated_on>
+        <type>Sys Ux M2m Action Layout Item</type>
+        <update_guid>694b45b006c28fd013818a0812039fc4</update_guid>
+        <update_guid_history>694b45b006c28fd013818a0812039fc4:1394801447</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-10 12:43:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_m2m_action_layout_item">sys_ux_m2m_action_layout_item</sys_db_object>
+        <sys_id>4a501c014cd4470081512aef293f6400</sys_id>
+        <sys_metadata>a94b45b0cfc28fd009d5b6734d851cc1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_m2m_action_layout_item_a94b45b0cfc28fd009d5b6734d851cc1</sys_update_name>
+        <sys_update_version display_value="sys_ux_m2m_action_layout_item_a94b45b0cfc28fd009d5b6734d851cc1">e94b45b0cfc28fd009d5b6734d851cc5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-10 12:43:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

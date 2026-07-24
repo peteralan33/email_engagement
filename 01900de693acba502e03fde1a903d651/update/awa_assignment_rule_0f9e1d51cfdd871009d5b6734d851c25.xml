@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="awa_assignment_rule">
+    <awa_assignment_rule action="INSERT_OR_UPDATE">
+        <after_timeout_presence display_value="Away">ae1f19ba2f7c3214b14f861cbfa4e3a3</after_timeout_presence>
+        <agent_criteria>least_time_left_in_shift</agent_criteria>
+        <allow_agents_to_decline>false</allow_agents_to_decline>
+        <assign_by>most_capacity</assign_by>
+        <continuous_time_required>false</continuous_time_required>
+        <dedicated_time_required>false</dedicated_time_required>
+        <display_option>card_only</display_option>
+        <enable_auto_assign>false</enable_auto_assign>
+        <enable_shift_based_assignment>false</enable_shift_based_assignment>
+        <enable_skills>false</enable_skills>
+        <enforce_mandatory_skills>false</enforce_mandatory_skills>
+        <evaluate_skill_level>false</evaluate_skill_level>
+        <external>false</external>
+        <include_ai_agents>false</include_ai_agents>
+        <name>Work Management Assignment Rule</name>
+        <prioritize_ai_agent>true</prioritize_ai_agent>
+        <reassign_on_timeout>true</reassign_on_timeout>
+        <short_description>Work Management Assignment Rule</short_description>
+        <sys_class_name>awa_assignment_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:36:33</sys_created_on>
+        <sys_id>0f9e1d51cfdd871009d5b6734d851c25</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Work Management Assignment Rule</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>awa_assignment_rule_0f9e1d51cfdd871009d5b6734d851c25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:36:45</sys_updated_on>
+        <time_required/>
+        <timeout>1970-01-01 02:00:00</timeout>
+    </awa_assignment_rule>
+</record_update>

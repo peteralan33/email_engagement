@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>create_callback_record</action_name>
+        <active>false</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+    console.log('[CALLBACK CLIENT] UI Action clicked successfully.');
+
+    var contactId = g_form.getValue('contact') || '';
+    var consumerId = g_form.getValue('consumer') || '';
+    var contextQuery = contactId ? 'contact=' + contactId : (consumerId ? 'consumer=' + consumerId : '');
+
+    var openModal = function(defaultPhone) {
+        g_modal.showFields({
+            title: 'Create Callback Task',
+            size: 'lg',
+            fields: [
+                { type: 'choice', name: 'reason', label: 'Reason for the call', mandatory: true,
+                  choices: [
+                      { value: 'product_issue', displayValue: 'Product Issue' },
+                      { value: 'order_issue', displayValue: 'Order Issue' },
+                      { value: 'billing_issue', displayValue: 'Billing Issue' },
+                      { value: 'other', displayValue: 'Other Issue' }
+                  ]
+                },
+                { type: 'string', name: 'details', label: 'Callback Reason Details' },
+                { type: 'string', name: 'phone', label: 'Callback number', mandatory: true, value: defaultPhone },
+                { type: 'reference', name: 'context', label: 'Callback Context', reference: 'sn_customerservice_case', sysparm_query: contextQuery }
+            ]
+        }).then(function(result) {
+            console.log('[CALLBACK CLIENT] Modal submitted. Extracting values securely...');
+            g_form.addInfoMessage('Invoking backend subflow logic pipeline...');
+            
+            var getVal = function(name, defaultValue) {
+                if (result && result.updatedFields) {
+                    var field = result.updatedFields.filter(function(f) { return f.name === name; })[0];
+                    if (field) return field.value;
+                }
+                return defaultValue || '';
+            };
+
+            var selectedReason = getVal('reason', 'product_issue');
+            var selectedDetails = getVal('details', '');
+            var selectedPhone = getVal('phone', defaultPhone);
+            var selectedContext = getVal('context', '');
+            var interactionSysId = g_form.getUniqueValue();
+
+            console.log('[CALLBACK CLIENT] Sending to server -> Interaction: ' + interactionSysId + ' | Phone: ' + selectedPhone + ' | Reason: ' + selectedReason);
+
+            // FIX: Pointing GlideAjax directly to your updated Toolkit scope and script name
+            var ga = new GlideAjax('x_snc_pab_ee_tkit.CallbackRecordCreation');
+            ga.addParam('sysparm_name', 'executeCallbackSubflow');
+            ga.addParam('sysparm_interaction', interactionSysId);
+            ga.addParam('sysparm_reason', selectedReason);
+            ga.addParam('sysparm_details', selectedDetails);
+            ga.addParam('sysparm_phone', selectedPhone);
+            ga.addParam('sysparm_context', selectedContext);
+
+            ga.getXMLAnswer(function(response) {
+                g_form.clearMessages();
+                console.log('[CALLBACK CLIENT] Server transaction response returned: ' + response);
+                
+                try {
+                    if (!response) {
+                        g_form.addErrorMessage('Received empty response from the server script.');
+                        return;
+                    }
+                    var parsed = JSON.parse(response);
+                    if (parsed && parsed.status === 'success') {
+                        g_form.addInfoMessage(parsed.notes ? 'Callback task processed: ' + parsed.notes : 'Callback activity created successfully.');
+                        g_form.reload();
+                    } else {
+                        g_form.addErrorMessage(parsed.message || 'Workflow pipeline execution failure.');
+                    }
+                } catch(err) {
+                    g_form.addErrorMessage('An error occurred while processing the server return stream.');
+                }
+            });
+        });
+    };
+
+    if (contactId) {
+        g_form.getReference('contact', function(con) { openModal(con ? (con.phone || con.mobile_phone || '') : ''); });
+    } else if (consumerId) {
+        g_form.getReference('consumer', function(cons) { openModal(cons ? (cons.mobile_phone || cons.phone || '') : ''); });
+    } else {
+        openModal(g_form.getValue('phone') || g_form.getValue('callback_number') || '');
+    }
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_icon/>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_button_icon/>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Callback</name>
+        <onclick/>
+        <order>10</order>
+        <script/>
+        <show_form_icon_only>false</show_form_icon_only>
+        <show_insert>true</show_insert>
+        <show_list_icon_only>false</show_list_icon_only>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 17:16:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9bd66dfdcfc6431009d5b6734d851cc7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Callback</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ui_action_9bd66dfdcfc6431009d5b6734d851cc7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-20 01:16:17</sys_updated_on>
+        <table>interaction</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

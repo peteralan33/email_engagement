@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">1527b4f6cf8ecf1009d5b6734d851c15</canvas>
+        <component display_value="Spline">0f1e76928c4814e1430774fb864003f0</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"disableTooltip":false,"showClosestSeriesOnHover":false,"showXGrid":false,"showDateRangeByDefault":false,"showYGrid":true,"hideYAxis0":false,"yAxis0Position":"left","hideYAxis1":false,"yAxis1Position":"right","hideYAxis2":false,"yAxis2Position":"right","hideYAxis3":false,"yAxis3Position":"right","hideYAxis4":false,"yAxis4Position":"right","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"yAxisStyle":"default","lineStrokeWidth":"2","chartVariation":"stacked","showPercentageOfTotalInTooltip":true,"extensionType":"spline","showContinuousLine":true,"showMarkers":false,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":false,"dataSources":[{"allowRealTime":false,"allowTotalValue":true,"indicatorType":"3","isScriptedIndicator":false,"allowMultiElementsAggregation":false,"indicatorClass":"PA_INDICATOR","aggregateType":1,"label":"Channel Leakage - Daily","sourceType":"indicator","uuid":{"indicator":"1db5906a2fce8f10b14f861cbfa4e35c"},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yMWRiNTkwNmEyZmNlOGYxMGIxNGY4NjFjYmZhNGUzNWMxNzg0MjE1MDY0MzE0","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"start","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headerTitle":"Channel Leakage (%)","headingLevel":2,"showBorder":true,"bareBorder":false,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":true,"metrics":[{"dataSource":"aW5kaWNhdG9yMWRiNTkwNmEyZmNlOGYxMGIxNGY4NjFjYmZhNGUzNWMxNzg0MjE1MDY0MzE0","id":"YVc1a2FXTmhkRzl5TVdSaU5Ua3dObUV5Wm1ObE9HWXhNR0l4TkdZNE5qRmpZbVpoTkdVek5XTXhOemcwTWpFMU1EWTBNekUwMTc4NDIxNTA2NjM5Mg==","frequency":10,"numberFormat":{"customFormat":false},"axisId":"primary","aggregateIndicator":""}],"trendBy":{"trendByFields":[{"field":"anything","metric":"YVc1a2FXTmhkRzl5TVdSaU5Ua3dObUV5Wm1ObE9HWXhNR0l4TkdZNE5qRmpZbVpoTkdVek5XTXhOemcwTWpFMU1EWTBNekUwMTc4NDIxNTA2NjM5Mg=="}]},"showTarget":true,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"29mj1ss4","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"applyDateRange":false,"numberOfPeriods":28,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"scoreType":"latest","useCurrentDateForEnd":false,"period":"D","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","filterPerMetric":[],"sortBy":"","sortByOrder":"","showChangeFrom":null}</component_props>
+        <h>24</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Channel Leakage - Daily","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.7c097cb2cfcecf1009d5b6734d851cfd"},{"comment":"","message":"Channel Leakage (%)","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.7c097cb2cfcecf1009d5b6734d851cfd"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.7c097cb2cfcecf1009d5b6734d851cfd"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.7c097cb2cfcecf1009d5b6734d851cfd"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:30:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7c097cb2cfcecf1009d5b6734d851cfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>par_dashboard_widget_7c097cb2cfcecf1009d5b6734d851cfd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 16:30:16</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props>{"headerTitle":"Channel Leakage (%)"}</widget_props>
+        <x>36</x>
+        <y>36</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>par_dashboard_widget_7c097cb2cfcecf1009d5b6734d851cfd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">1527b4f6cf8ecf1009d5b6734d851c15</canvas><component display_value="Spline">0f1e76928c4814e1430774fb864003f0</component><component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"disableTooltip":false,"showClosestSeriesOnHover":false,"showXGrid":false,"showDateRangeByDefault":false,"showYGrid":true,"hideYAxis0":false,"yAxis0Position":"left","hideYAxis1":false,"yAxis1Position":"right","hideYAxis2":false,"yAxis2Position":"right","hideYAxis3":false,"yAxis3Position":"right","hideYAxis4":false,"yAxis4Position":"right","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"yAxisStyle":"default","lineStrokeWidth":"2","chartVariation":"stacked","showPercentageOfTotalInTooltip":true,"extensionType":"spline","showContinuousLine":true,"showMarkers":false,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":false,"dataSources":[{"allowRealTime":false,"allowTotalValue":true,"indicatorType":"3","isScriptedIndicator":false,"allowMultiElementsAggregation":false,"indicatorClass":"PA_INDICATOR","aggregateType":1,"label":"Channel Leakage - Daily","sourceType":"indicator","uuid":{"indicator":"1db5906a2fce8f10b14f861cbfa4e35c"},"preferredVisualizations":["18ac962264404bcc0039359d184b15f3"],"id":"aW5kaWNhdG9yMWRiNTkwNmEyZmNlOGYxMGIxNGY4NjFjYmZhNGUzNWMxNzg0MjE1MDY0MzE0","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"start","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"headerTitle":"Channel Leakage (%)","headingLevel":2,"showBorder":true,"bareBorder":false,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":true,"metrics":[{"dataSource":"aW5kaWNhdG9yMWRiNTkwNmEyZmNlOGYxMGIxNGY4NjFjYmZhNGUzNWMxNzg0MjE1MDY0MzE0","id":"YVc1a2FXTmhkRzl5TVdSaU5Ua3dObUV5Wm1ObE9HWXhNR0l4TkdZNE5qRmpZbVpoTkdVek5XTXhOemcwTWpFMU1EWTBNekUwMTc4NDIxNTA2NjM5Mg==","frequency":10,"numberFormat":{"customFormat":false},"axisId":"primary","aggregateIndicator":""}],"trendBy":{"trendByFields":[{"field":"anything","metric":"YVc1a2FXTmhkRzl5TVdSaU5Ua3dObUV5Wm1ObE9HWXhNR0l4TkdZNE5qRmpZbVpoTkdVek5XTXhOemcwTWpFMU1EWTBNekUwMTc4NDIxNTA2NjM5Mg=="}]},"showTarget":true,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"29mj1ss4","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","hideDevSettings":false,"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"applyDateRange":false,"numberOfPeriods":28,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"scoreType":"latest","useCurrentDateForEnd":false,"period":"D","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","filterPerMetric":[],"sortBy":"","sortByOrder":"","showChangeFrom":null}</component_props><h>24</h><name/><required_translations>[{"comment":"","message":"Channel Leakage - Daily","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.7c097cb2cfcecf1009d5b6734d851cfd"},{"comment":"","message":"Channel Leakage (%)","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.7c097cb2cfcecf1009d5b6734d851cfd"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.7c097cb2cfcecf1009d5b6734d851cfd"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.1527b4f6cf8ecf1009d5b6734d851c15.7c097cb2cfcecf1009d5b6734d851cfd"}]</required_translations><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-16 16:30:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7c097cb2cfcecf1009d5b6734d851cfd</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>par_dashboard_widget_7c097cb2cfcecf1009d5b6734d851cfd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-16 16:30:16</sys_updated_on><visualization/><w>12</w><widget_props>{"headerTitle":"Channel Leakage (%)"}</widget_props><x>36</x><y>36</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1479132429</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:30:16</sys_created_on>
+        <sys_id>3c09bcb2cfcecf1009d5b6734d851c01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6bc3b6240000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 16:30:16</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>b809bcb25ccecf1057ab6664c7eb5d00</update_guid>
+        <update_guid_history>b809bcb25ccecf1057ab6664c7eb5d00:1479132429</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7e99b4b6cfcecf1009d5b6734d851cc8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:32:51</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>66351b2d078b43508392aabb05bf4d10</sys_id>
+        <sys_metadata>7c097cb2cfcecf1009d5b6734d851cfd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_7c097cb2cfcecf1009d5b6734d851cfd</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_7c097cb2cfcecf1009d5b6734d851cfd">3c09bcb2cfcecf1009d5b6734d851c01</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 16:32:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

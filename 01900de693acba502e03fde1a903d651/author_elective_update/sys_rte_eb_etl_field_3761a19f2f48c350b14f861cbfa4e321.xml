@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="DELETE">
+        <coalesce>false</coalesce>
+        <coercion_action>create</coercion_action>
+        <field>u_case_owner_sn_ihub_pill_uid_1775774230390</field>
+        <name>Case Owner_sn_ihub_target_assigned_to</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:38:14</sys_created_on>
+        <sys_id>3761a19f2f48c350b14f861cbfa4e321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Case Owner_sn_ihub_target_assigned_to</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="Load External Work Items_etl_ihub">e4016ddb2f48c350b14f861cbfa4e34d</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="IHUB_TARGET_TEMP_x_snc_pab_ee_tkit_work_management_case">bf61a19f2f48c350b14f861cbfa4e319</sys_rte_eb_entity>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_3761a19f2f48c350b14f861cbfa4e321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 22:38:14</sys_updated_on>
+    </sys_rte_eb_etl_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_rte_eb_etl_field_3761a19f2f48c350b14f861cbfa4e321</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field"><sys_rte_eb_etl_field action="INSERT_OR_UPDATE"><coalesce>false</coalesce><coercion_action>create</coercion_action><field>u_case_owner_sn_ihub_pill_uid_1775774230390</field><name>Case Owner_sn_ihub_target_assigned_to</name><sys_class_name>sys_rte_eb_etl_field</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-09 22:38:14</sys_created_on><sys_id>3761a19f2f48c350b14f861cbfa4e321</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Case Owner_sn_ihub_target_assigned_to</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_rte_eb_definition display_value="Load External Work Items_etl_ihub">e4016ddb2f48c350b14f861cbfa4e34d</sys_rte_eb_definition><sys_rte_eb_entity display_value="IHUB_TARGET_TEMP_x_snc_pab_ee_tkit_work_management_case">bf61a19f2f48c350b14f861cbfa4e319</sys_rte_eb_entity><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_rte_eb_etl_field_3761a19f2f48c350b14f861cbfa4e321</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-09 22:38:14</sys_updated_on></sys_rte_eb_etl_field></record_update>]]></payload>
+        <payload_hash>-917422938</payload_hash>
+        <record_name>Case Owner_sn_ihub_target_assigned_to</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:38:14</sys_created_on>
+        <sys_id>7361a19f2f48c350b14f861cbfa4e324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d746563630000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 22:38:14</sys_updated_on>
+        <type>ETL Entity field</type>
+        <update_guid>ff61a19fc548c350f005eec8c90e6022</update_guid>
+        <update_guid_history>ff61a19fc548c350f005eec8c90e6022:-917422938</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-03 23:18:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_etl_field">sys_rte_eb_etl_field</sys_db_object>
+        <sys_id>1cd7609bdc884b1da2e5883acdc2b7c1</sys_id>
+        <sys_metadata>3761a19f2f48c350b14f861cbfa4e321</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Case Owner_sn_ihub_target_assigned_to</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_etl_field_3761a19f2f48c350b14f861cbfa4e321</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_etl_field_3761a19f2f48c350b14f861cbfa4e321">7361a19f2f48c350b14f861cbfa4e324</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-03 23:18:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

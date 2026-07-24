@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>RECORD_SRP_UI_CTRL#RECORD_LINK_CLICKED_RELAY_191743f62f060b50b14f861cbfa4e3fe</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Record [Record Page] Record link clicked Relay (Customer Insights Default)</label>
+        <props>[
+    {
+        "description": "",
+        "fieldType": "table_name",
+        "label": "Table",
+        "name": "table",
+        "type": "table_name",
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "label": "Record SysId",
+        "name": "sysId",
+        "type": "string",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:59</sys_created_on>
+        <sys_id>e11783f62f060b50b14f861cbfa4e345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record [Record Page] Record link clicked Relay (Customer Insights Default)</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_event_e11783f62f060b50b14f861cbfa4e345</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:59</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=e11783f62f060b50b14f861cbfa4e345"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>e11783f62f060b50b14f861cbfa4e345</documentkey>
+        <fieldname>description</fieldname>
+        <language>en, fr, es</language>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:59</sys_created_on>
+        <sys_id>e11783f62f060b50b14f861cbfa4e348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:59</sys_updated_on>
+        <tablename>sys_ux_event</tablename>
+        <value/>
+    </sys_translated_text>
+</record_update>
