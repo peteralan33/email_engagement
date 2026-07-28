@@ -3,15 +3,23 @@
         <active>true</active>
         <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
         <description>This tool returns the list of attachments of a Glide record. It returns the file_name and sys_id for each one.</description>
+        <display_mode/>
         <display_output>true</display_output>
         <document_status/>
+        <entity/>
+        <entity_id/>
         <execution_mode>autopilot</execution_mode>
         <inputs>[{"name":"sys_id_or_number","value":"","description":"The sys_id or number of the record.","invalidMessage":null}]</inputs>
         <max_auto_executions>10</max_auto_executions>
         <name>Retrieve attachments of a interaction record</name>
         <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_message/>
         <post_processing_script/>
         <pre_message>Getting attachments on the interaction record</pre_message>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>false</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
         <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 02:44:43</sys_created_on>
@@ -26,8 +34,10 @@
         <sys_update_name>sn_aia_agent_tool_m2m_94386f9e93c53ad00f91fce79503d66c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-09 18:31:47</sys_updated_on>
+        <timeout/>
         <tool display_value="Retrieve attachments of a interaction record">1838eb9e93c53ad00f91fce79503d684</tool>
         <tool_attributes>{}</tool_attributes>
         <transformation_instructions/>
+        <widgets/>
     </sn_aia_agent_tool_m2m>
 </record_update>

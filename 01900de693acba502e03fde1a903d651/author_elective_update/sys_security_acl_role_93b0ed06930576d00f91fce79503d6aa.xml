@@ -41,7 +41,7 @@
         <update_guid_history>93b0ed06770576d0d18cb061571b8eae:-1140329565</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="global.x_snc_pab_ee_tkit.Document and visual insights AI agent (Copy).platform_m">126fad06938576d00f91fce79503d603</sys_audit_delete>
+        <sys_audit_delete display_value="">126fad06938576d00f91fce79503d603</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-07 23:18:32</sys_created_on>

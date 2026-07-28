@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="awa_assignment_rule">
     <awa_assignment_rule action="INSERT_OR_UPDATE">
-        <after_timeout_presence display_value="Away">ae1f19ba2f7c3214b14f861cbfa4e3a3</after_timeout_presence>
+        <after_timeout_presence display_value="">ae1f19ba2f7c3214b14f861cbfa4e3a3</after_timeout_presence>
         <agent_criteria>least_time_left_in_shift</agent_criteria>
         <allow_agents_to_decline>false</allow_agents_to_decline>
         <assign_by>most_capacity</assign_by>

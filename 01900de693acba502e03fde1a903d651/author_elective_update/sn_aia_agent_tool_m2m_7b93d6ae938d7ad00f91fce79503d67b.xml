@@ -102,7 +102,7 @@ Description: It generates a detailed description for the resolving agent, incorp
         <update_guid_history>001cfaae5205bad072d74bdf8c221ed7:1887436726,3fc4e2267e41bad03eabd4de4fc47060:1880625315,339316ee1f8d7ad0aed849de3e2ba7ea:1846730307</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Capital Markets Case Classifier (CMCC)">3c2047aa9345bad00f91fce79503d68f</sys_audit_delete>
+        <sys_audit_delete display_value="">3c2047aa9345bad00f91fce79503d68f</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 18:28:13</sys_created_on>

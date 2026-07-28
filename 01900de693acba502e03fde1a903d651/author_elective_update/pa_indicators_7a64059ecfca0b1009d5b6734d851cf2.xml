@@ -105,7 +105,7 @@
         <update_guid_history>daa8c19e30ca8b10f3e957ac0e91a43d:607026595,cdb70916aec60710f1f0e5d6aa3263a2:-1998798112,0b6485d6de0e0b10e62e732ac25c1fd3:-1296202273,fa6485d6bb0e0b1023692b81d6710ca8:97072256</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Queue Status Monitor: Active Interactions">d6d8c1de2fca8b10b14f861cbfa4e31a</sys_audit_delete>
+        <sys_audit_delete display_value="">d6d8c1de2fca8b10b14f861cbfa4e31a</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>ag.mcp</sys_created_by>
         <sys_created_on>2026-07-15 04:22:31</sys_created_on>

@@ -3,7 +3,7 @@
         <background_color/>
         <cache_expiration_time>0</cache_expiration_time>
         <card_bg_image/>
-        <created_by_user display_value="Pete Barnes">6816f79cc0a8016401c5a33be04be441</created_by_user>
+        <created_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</created_by_user>
         <created_on>2026-01-28 16:17:29</created_on>
         <dashboard display_value="Medical Imagining Requests">bd61661c2f3a7210b14f861cbfa4e362</dashboard>
         <edit_locked/>
@@ -44,7 +44,7 @@
         <sys_update_name>par_dashboard_user_metadata_7d612a1c2f3a7210b14f861cbfa4e321</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-01-28 16:17:29</sys_updated_on>
-        <updated_by_user display_value="Pete Barnes">6816f79cc0a8016401c5a33be04be441</updated_by_user>
+        <updated_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</updated_by_user>
         <use_custom_tab_colors>false</use_custom_tab_colors>
         <widgets_margin>$now-global-space--sm</widgets_margin>
     </par_dashboard_user_metadata>

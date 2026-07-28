@@ -7,7 +7,7 @@
         <doc_url/>
         <icon_url/>
         <public>false</public>
-        <run_as_user display_value="Email Triage  Agent">55e1b18a938576d00f91fce79503d6e3</run_as_user>
+        <run_as_user display_value="">55e1b18a938576d00f91fce79503d6e3</run_as_user>
         <specialist_enabled>true</specialist_enabled>
         <sys_class_name>sn_aia_agent_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>

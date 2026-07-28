@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
     <sn_bom_service_definition action="INSERT_OR_UPDATE">
         <active>true</active>
-        <case_type display_value="sn_customerservice_case">c6f88627877f7090cfdeea8d0ebb359e</case_type>
+        <case_type display_value="">c6f88627877f7090cfdeea8d0ebb359e</case_type>
         <description>This service provides a controlled, auditable process for handling customer enquiries that involve regulated contaminants, sensitive product data, or topics that carry legal, reputational, or food safety risk. These enquiries cannot be resolved through automated retrieval or AI-generated responses alone and require review and approval by a qualified subject matter expert before any response is issued.&#13;
 When a customer submits an enquiry through the Mondelez Customer Enquiry Portal, the system automatically scans the content for keywords associated with sensitive topics as defined in the Mondelez enquiry RACI framework. On detection, the enquiry is immediately flagged, locked from automated delivery, and escalated to the appropriate Responsible function — typically Food Safety, BU/CU Quality, or Legal, depending on the topic.&#13;
 The assigned subject matter expert reviews the enquiry, prepares a response, and submits it for approval before it is released to the customer. A mandatory approval gate is enforced at every stage. If a response is not actioned within the defined SLA, the system triggers an escalating series of alerts to the responsible SME, their team lead, and ultimately to management level. Every action taken on a sensitive case — including escalation events, approval decisions, edits, and SLA breaches — is recorded in a full audit log retained in accordance with Mondelez's document retention policy.&#13;
@@ -25,7 +25,6 @@ Consumer complaints — handled through the Consumer Affairs process</descriptio
         <playbook_record_generator/>
         <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
         <service_type>3</service_type>
-        <show_in_interceptor>true</show_in_interceptor>
         <sys_class_name>sn_bom_service_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-21 21:45:44</sys_created_on>
@@ -43,7 +42,6 @@ Consumer complaints — handled through the Consumer Affairs process</descriptio
         <table>sn_customerservice_case</table>
         <task_table>sn_customerservice_case</task_table>
         <template>service=5d18c3c393d8079051fcffe03603d661^priority=2^EQ</template>
-        <u_email_classification>false</u_email_classification>
         <use_service_catalog_item>false</use_service_catalog_item>
     </sn_bom_service_definition>
 </record_update>

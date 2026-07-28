@@ -5,6 +5,7 @@
         <external>true</external>
         <metadata>{}</metadata>
         <name>1cd448c293c536d00f91fce79503d620_Look up</name>
+        <offglide_enabled>false</offglide_enabled>
         <short_description/>
         <sys_class_name>sys_one_extend_capability</sys_class_name>
         <sys_created_by>admin</sys_created_by>

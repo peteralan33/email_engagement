@@ -66,7 +66,7 @@ The tool returns:
         <update_guid_history>e6b0ad06c10576d0865d942c676e52f2:319245317</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Submit task to DocIntel from attachments">ca6f6d06938576d00f91fce79503d672</sys_audit_delete>
+        <sys_audit_delete display_value="">ca6f6d06938576d00f91fce79503d672</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-07 23:18:31</sys_created_on>

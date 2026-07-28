@@ -29,19 +29,19 @@
         <source>2e4432612f000310d73ea23fafa4e389</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-04 18:10:52</sys_created_on>
         <sys_id>cdc80fb29394039051fcffe03603d6d7</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>19d59b0cbe00000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 03:02:46</sys_updated_on>
         <type>Access Roles</type>
         <update_guid>8dc80fb255940390b6cf6fc0e47980d7</update_guid>
         <update_guid_history>8dc80fb255940390b6cf6fc0e47980d7:-986578727</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="determine_service_definition.12a847b29394039051fcffe03603d6b0.snc_internal">c5c80fb29394039051fcffe03603d6d9</sys_audit_delete>
+        <sys_audit_delete display_value="">c5c80fb29394039051fcffe03603d6d9</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-21 03:08:26</sys_created_on>

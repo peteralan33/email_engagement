@@ -19,8 +19,8 @@
         <report/>
         <require_confirmation>true</require_confirmation>
         <roles/>
-        <route display_value="List">a99d9a43fffcf2102fdcffffffffff31</route>
-        <screen display_value="List">b6254dcaff85b2502fdcffffffffff90</screen>
+        <route display_value="">a99d9a43fffcf2102fdcffffffffff31</route>
+        <screen display_value="">b6254dcaff85b2502fdcffffffffff90</screen>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-10 05:38:18</sys_created_on>

@@ -4,7 +4,7 @@
         <advanced>false</advanced>
         <apply_filter>false</apply_filter>
         <attribute_label/>
-        <capability display_value="Case Classification from Email Interacti">dc06faae93c1bad00f91fce79503d6be</capability>
+        <capability display_value="Case Classification from Email Int">dc06faae93c1bad00f91fce79503d6be</capability>
         <choice_list/>
         <contains_large_input>false</contains_large_input>
         <data_type>string</data_type>

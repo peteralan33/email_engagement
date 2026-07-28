@@ -8,8 +8,9 @@
 	return false;
 })(current);]]></condition_script>
         <context_profile/>
+        <provenance/>
         <roles>now_assist_panel_user,snc_internal,interaction_agent</roles>
-        <skill_id display_value="Case Classification from Email Interacti">63f6ba629305bad00f91fce79503d6a4</skill_id>
+        <skill_id display_value="Case Classification from Email Int">63f6ba629305bad00f91fce79503d6a4</skill_id>
         <sys_class_name>sys_gen_ai_skill_applicability</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 17:48:22</sys_created_on>

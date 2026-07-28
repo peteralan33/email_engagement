@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
     <ais_search_source action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="kb_knowledge">kb_category=2e6a47cb93d8079051fcffe03603d650<item display_table="kb_category" display_value="Certificate Request (FSSC / CoA)" endquery="false" field="kb_category" goto="false" newquery="false" operator="=" or="false" value="2e6a47cb93d8079051fcffe03603d650"/>
+        <condition table="kb_knowledge">kb_category=2e6a47cb93d8079051fcffe03603d650<item endquery="false" field="kb_category" goto="false" newquery="false" operator="=" or="false" value="2e6a47cb93d8079051fcffe03603d650"/>
         </condition>
         <datasource display_value="">kb_knowledge</datasource>
         <has_dynamic_filters>false</has_dynamic_filters>

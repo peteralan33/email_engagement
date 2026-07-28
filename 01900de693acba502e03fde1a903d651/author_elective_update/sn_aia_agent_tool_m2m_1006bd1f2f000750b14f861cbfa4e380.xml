@@ -66,7 +66,7 @@
         <update_guid_history>9406fd1f8500075041629dfd5d856e79:-324847831</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Work Management Knowledge">3ecb7d5b2f800750b14f861cbfa4e34e</sys_audit_delete>
+        <sys_audit_delete display_value="">3ecb7d5b2f800750b14f861cbfa4e34e</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-10 00:33:24</sys_created_on>

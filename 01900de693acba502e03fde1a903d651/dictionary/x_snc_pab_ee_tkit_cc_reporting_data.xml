@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="3dac03562f864f10b14f861cbfa4e361" label="Contact Centre Reporting Data" max_length="40" name="x_snc_pab_ee_tkit_cc_reporting_data" type="collection">
         <element label="Timestamp" max_length="40" name="u_timestamp" type="glide_date_time"/>
-        <element label="Type" max_length="40" name="u_type" type="string"/>
         <element label="Category" max_length="40" name="category" type="string"/>
+        <element label="Type" max_length="40" name="u_type" type="string"/>
         <element label="Channel" max_length="40" name="u_channel" type="string"/>
     </element>
 </database>

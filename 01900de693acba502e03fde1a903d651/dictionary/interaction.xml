@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="email_client=true" audit="true" db_object_id="7e03e7602fa43210b14f861cbfa4e30f" label="Interaction" max_length="40" name="interaction" type="collection">
+    <element attributes="email_client=true" audit="true" db_object_id="9da0eab9086803100a22e9371c04a44c" label="Interaction" max_length="40" name="interaction" type="collection">
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Intent" max_length="4000" name="x_snc_pab_ee_tkit_int_intent" reference="x_snc_pab_ee_tkit_interaction_intent_subcategory" type="glide_list"/>
         <element label="Attachment summarize" max_length="4000" name="x_snc_pab_ee_tkit_attachment_summarize" type="string"/>
-        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Intent" max_length="4000" name="x_snc_pab_ee_tkit_int_intent" reference="x_snc_pab_ee_tkit_interaction_intent_subcategory" type="glide_list"/>
     </element>
 </database>

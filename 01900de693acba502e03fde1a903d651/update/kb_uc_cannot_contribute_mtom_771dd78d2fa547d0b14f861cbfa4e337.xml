@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_uc_cannot_contribute_mtom">
     <kb_uc_cannot_contribute_mtom action="INSERT_OR_UPDATE">
-        <kb_knowledge_base display_value="Motor Vehicle Expense &amp; Reimbursement Knowldge">6eec5f0d2fa547d0b14f861cbfa4e3a7</kb_knowledge_base>
+        <kb_knowledge_base display_value="">6eec5f0d2fa547d0b14f861cbfa4e3a7</kb_knowledge_base>
         <sys_class_name>kb_uc_cannot_contribute_mtom</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-16 21:26:30</sys_created_on>

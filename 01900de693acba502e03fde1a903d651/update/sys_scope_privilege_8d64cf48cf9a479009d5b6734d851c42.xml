@@ -16,7 +16,7 @@
         <sys_updated_by>ag.mcp</sys_updated_by>
         <sys_updated_on>2026-07-20 23:51:37</sys_updated_on>
         <target_name>ProxyContactHelper</target_name>
-        <target_scope display_value="CSM Extension for Proxy Contacts">51fa20e887132300d6b0a7da0acb0b74</target_scope>
+        <target_scope display_value="">51fa20e887132300d6b0a7da0acb0b74</target_scope>
         <target_type>sys_script_include</target_type>
     </sys_scope_privilege>
 </record_update>

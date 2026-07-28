@@ -115,7 +115,7 @@ undefined</description><direction>2</direction><display>true</display><excluded_
         <update_guid_history>3101bf5634c28f1096d468c92930965c:-1904189819,84b0731613c28f1013ffa68f12cb7fa4:-681730411,ad80f3963f0e8710fcca4a2bba16b5ac:501287124,044e2f1aa6828f10ce0f49b993d0cd7b:197770423,4c4e2f1afd828f10400b6e1b292a4077:1684304659,444e2f1ad8828f109320c089f4035503:197770423</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Abandonment Rate">332a7b162fc68f10b14f861cbfa4e348</sys_audit_delete>
+        <sys_audit_delete display_value="">332a7b162fc68f10b14f861cbfa4e348</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>ag.mcp</sys_created_by>
         <sys_created_on>2026-07-15 17:17:16</sys_created_on>

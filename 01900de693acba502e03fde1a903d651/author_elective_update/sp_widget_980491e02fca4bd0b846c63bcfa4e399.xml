@@ -87,7 +87,7 @@
         <update_guid_history>940491e043ca4bd0db8d22127449099e:2092062</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="TempTriggerInsertConfig">f904d52ccf828bd009d5b6734d851c42</sys_audit_delete>
+        <sys_audit_delete display_value="">f904d52ccf828bd009d5b6734d851c42</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>ag.mcp</sys_created_by>
         <sys_created_on>2026-07-09 18:41:57</sys_created_on>

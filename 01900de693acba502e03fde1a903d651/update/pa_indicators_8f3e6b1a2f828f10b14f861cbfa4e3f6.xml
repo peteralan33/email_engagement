@@ -84,4 +84,5 @@ undefined</description>
         <value_when_nil>0</value_when_nil>
         <visible_to>2</visible_to>
     </pa_indicators>
+    <sys_translated_text action="delete_multiple" query="documentkey=8f3e6b1a2f828f10b14f861cbfa4e3f6"/>
 </record_update>

@@ -21,7 +21,7 @@
 })();]]></error_handler_script>
         <error_policy/>
         <metadata>{"isCreatedWithSkillDiagram":true}</metadata>
-        <parent_capability display_value="Case Classification from Email Interacti">dc06faae93c1bad00f91fce79503d6be</parent_capability>
+        <parent_capability display_value="Case Classification from Email Int">dc06faae93c1bad00f91fce79503d6be</parent_capability>
         <resource_capability display_value="1cd448c293c536d00f91fce79503d620_Look up">995c8446930936d00f91fce79503d64d</resource_capability>
         <resource_name>LookUpEmails</resource_name>
         <sys_class_name>sys_one_extend_resource_mapping</sys_class_name>

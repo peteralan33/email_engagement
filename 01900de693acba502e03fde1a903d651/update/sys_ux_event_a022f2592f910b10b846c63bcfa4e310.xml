@@ -50,17 +50,4 @@
         <sys_updated_on>2026-06-05 02:41:27</sys_updated_on>
     </sys_ux_event>
     <sys_translated_text action="delete_multiple" query="documentkey=a022f2592f910b10b846c63bcfa4e310"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey>a022f2592f910b10b846c63bcfa4e310</documentkey>
-        <fieldname>description</fieldname>
-        <language>en, fr, es</language>
-        <sys_created_by>system</sys_created_by>
-        <sys_created_on>2026-06-05 02:41:27</sys_created_on>
-        <sys_id>e422f2592f910b10b846c63bcfa4e311</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-06-05 02:41:27</sys_updated_on>
-        <tablename>sys_ux_event</tablename>
-        <value>Relay event for toggling "Knowledge Category Picker Modal"</value>
-    </sys_translated_text>
 </record_update>

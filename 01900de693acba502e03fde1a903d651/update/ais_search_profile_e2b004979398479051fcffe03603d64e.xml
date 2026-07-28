@@ -7,7 +7,7 @@
         <genius_result_assembly/>
         <label>Sensitive Enquiry Escalation</label>
         <name>x_snc_pab_ee_tkit_sensitive_enquiry_escalation</name>
-        <publish_id>da06e55b-ad25-42b3-afba-1550e32d9679</publish_id>
+        <publish_id>ca99ba70-9f9a-42a9-b308-58b7bf78b041</publish_id>
         <qna_model_id>bert-qa-model-1.1.6</qna_model_id>
         <state>PUBLISHED</state>
         <sys_class_name>ais_search_profile</sys_class_name>

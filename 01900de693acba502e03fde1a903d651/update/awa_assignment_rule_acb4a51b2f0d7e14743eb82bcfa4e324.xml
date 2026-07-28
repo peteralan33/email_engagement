@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="awa_assignment_rule">
     <awa_assignment_rule action="INSERT_OR_UPDATE">
-        <after_timeout_presence display_value="Away">ae1f19ba2f7c3214b14f861cbfa4e3a3</after_timeout_presence>
+        <after_timeout_presence display_value="">ae1f19ba2f7c3214b14f861cbfa4e3a3</after_timeout_presence>
         <agent_criteria>least_time_left_in_shift</agent_criteria>
         <allow_agents_to_decline>true</allow_agents_to_decline>
         <assign_by>most_capacity</assign_by>
@@ -13,7 +13,9 @@
         <enforce_mandatory_skills>false</enforce_mandatory_skills>
         <evaluate_skill_level>false</evaluate_skill_level>
         <external>false</external>
+        <include_ai_agents>false</include_ai_agents>
         <name>Classification Assignment Rule</name>
+        <prioritize_ai_agent>false</prioritize_ai_agent>
         <reassign_on_timeout>true</reassign_on_timeout>
         <short_description>Classification Assignment Rule</short_description>
         <sys_class_name>awa_assignment_rule</sys_class_name>

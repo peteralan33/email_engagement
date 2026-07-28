@@ -44,7 +44,7 @@
         <update_guid_history>c8e8430534d8c3507a3e47498e24f983:-195541393</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Email Classification Service Definitions.Service Portal Catalogs">47f8c7052fd8c350d73ea23fafa4e35d</sys_audit_delete>
+        <sys_audit_delete display_value="">47f8c7052fd8c350d73ea23fafa4e35d</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-15 16:40:01</sys_created_on>

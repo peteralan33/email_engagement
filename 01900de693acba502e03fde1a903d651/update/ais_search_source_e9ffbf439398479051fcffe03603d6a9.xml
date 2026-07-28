@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
     <ais_search_source action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="kb_knowledge">kb_category=589b47cf93d8079051fcffe03603d6ba<item display_table="kb_category" display_value="ESG Statement" endquery="false" field="kb_category" goto="false" newquery="false" operator="=" or="false" value="589b47cf93d8079051fcffe03603d6ba"/>
+        <condition table="kb_knowledge">kb_category=589b47cf93d8079051fcffe03603d6ba<item endquery="false" field="kb_category" goto="false" newquery="false" operator="=" or="false" value="589b47cf93d8079051fcffe03603d6ba"/>
         </condition>
         <datasource display_value="">kb_knowledge</datasource>
         <has_dynamic_filters>false</has_dynamic_filters>

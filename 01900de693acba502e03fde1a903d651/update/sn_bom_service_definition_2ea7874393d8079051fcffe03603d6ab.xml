@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
     <sn_bom_service_definition action="INSERT_OR_UPDATE">
         <active>true</active>
-        <case_type display_value="sn_customerservice_case">c6f88627877f7090cfdeea8d0ebb359e</case_type>
+        <case_type display_value="">c6f88627877f7090cfdeea8d0ebb359e</case_type>
         <description>This service enables retail customers, trading partners, and suppliers to submit ESG questionnaires and surveys to Mondelez for a structured, approved response. It is designed to handle the growing volume and complexity of ESG due diligence requests received from customers across European and global markets.&#13;
 Questionnaires and supporting attachments are submitted through the Mondelez Customer Enquiry Portal. Upon receipt, the ServiceNow platform analyses the questionnaire content, identifies the relevant ESG topics, and uses AI-assisted drafting to generate an initial response drawn from Mondelez's approved library of ESG policy statements. Topics covered include palm oil and RSPO certification, carbon footprint and climate targets, deforestation and EUDR compliance, human rights and child labour, packaging and plastics, water and energy use, and broader sustainability reporting.&#13;
 All AI-generated draft responses are routed to the Corporate and Government Affairs (CGA) team for review and approval before any response is issued to the customer. CGA may approve the draft as written, edit it, or return it for manual handling by the relevant subject matter expert. A complete audit trail of the draft, any edits, the approval decision, and the delivery timestamp is maintained for every case.&#13;
@@ -25,7 +25,6 @@ Regulatory compliance certificates — covered by the Certificate Request Servic
         <playbook_record_generator/>
         <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
         <service_type>3</service_type>
-        <show_in_interceptor>true</show_in_interceptor>
         <sys_class_name>sn_bom_service_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-21 21:43:10</sys_created_on>
@@ -43,7 +42,6 @@ Regulatory compliance certificates — covered by the Certificate Request Servic
         <table>sn_customerservice_case</table>
         <task_table>sn_customerservice_case</task_table>
         <template>service=^EQ</template>
-        <u_email_classification>true</u_email_classification>
         <use_service_catalog_item>false</use_service_catalog_item>
     </sn_bom_service_definition>
 </record_update>

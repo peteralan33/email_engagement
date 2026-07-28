@@ -115,7 +115,7 @@ undefined</description><direction>2</direction><display>false</display><excluded
         <update_guid_history>72b0f31686c28f107934b5e172008df7:96188320,e480b7d2cbc28f102e7ea07dfb780b24:1279205855,ba3e631e7b82cb108d78d684f4c2bb79:-1184602733,f23e631eb182cb10f64ce46b2ab7e276:-1832743906,3e3e631ed982cb10e0df9d9b58a3de3f:-1184602733</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Avg Hold Time">c83abb162fc68f10b14f861cbfa4e316</sys_audit_delete>
+        <sys_audit_delete display_value="">c83abb162fc68f10b14f861cbfa4e316</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>ag.mcp</sys_created_by>
         <sys_created_on>2026-07-15 17:17:17</sys_created_on>

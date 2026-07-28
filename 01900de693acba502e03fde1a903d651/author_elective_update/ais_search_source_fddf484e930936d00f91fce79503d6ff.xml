@@ -45,7 +45,7 @@
         <update_guid_history>1c621c06d24936d0f28f8302bec202f8:2020400314,f9df884e320936d0992bd4ec40540402:-1581201347</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="NASK Created Determine Service Definition from Email searchForCapitalMarketKnowl">c67eebb22f80cb10b14f861cbfa4e33b</sys_audit_delete>
+        <sys_audit_delete display_value="">c67eebb22f80cb10b14f861cbfa4e33b</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-08 19:37:30</sys_created_on>

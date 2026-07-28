@@ -19,10 +19,7 @@
 })(current);]]></condition_script>
         <evaluation_scope>document</evaluation_scope>
         <external>false</external>
-        <external_fields/>
         <external_id/>
-        <external_provider/>
-        <external_request_id/>
         <initial_agent_response>Thank you for contacting support. I am looking into your question now and will be with you shortly.</initial_agent_response>
         <max_wait_time/>
         <max_wait_time_message>No agents are available to chat right now. Check back later.</max_wait_time_message>

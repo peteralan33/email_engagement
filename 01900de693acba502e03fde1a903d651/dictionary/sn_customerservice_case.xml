@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="email_client=true,live_feed=false,timeFromCreateToActivate=97078091000" audit="true" db_object_id="dc5879342fa83210b14f861cbfa4e31f" extends="task" label="Case" max_length="40" name="sn_customerservice_case" text_index="true" type="collection">
+    <element attributes="email_client=true,live_feed=false,timeFromCreateToActivate=97078091000" audit="true" db_object_id="7b881f842b96c310e42cfe8eb891bf74" extends="task" label="Case" max_length="40" name="sn_customerservice_case" type="collection">
         <element label="AI Suggested Response" max_length="4000" name="x_snc_pab_ee_tkit_ai_suggested_response" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Service definition" max_length="32" name="x_snc_pab_ee_tkit_service_definition" reference="sn_case_type_selection" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Case Owner" max_length="32" name="x_snc_pab_ee_tkit_case_owner" reference="sys_user" type="reference"/>
+        <element label="Service definition" max_length="32" name="x_snc_pab_ee_tkit_service_definition" reference="sn_case_type_selection" type="reference"/>
+        <element label="Case Owner" max_length="32" name="x_snc_pab_ee_tkit_case_owner" reference="sys_user" type="reference"/>
     </element>
 </database>

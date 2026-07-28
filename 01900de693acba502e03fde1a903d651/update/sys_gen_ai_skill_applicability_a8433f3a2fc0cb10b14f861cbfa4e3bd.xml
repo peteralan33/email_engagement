@@ -8,6 +8,7 @@
 	return false;
 })(current);]]></condition_script>
         <context_profile/>
+        <provenance/>
         <roles>now_assist_panel_user,snc_internal</roles>
         <skill_id display_value="Determine Email Response for Case">23333b3a2fc0cb10b14f861cbfa4e337</skill_id>
         <sys_class_name>sys_gen_ai_skill_applicability</sys_class_name>

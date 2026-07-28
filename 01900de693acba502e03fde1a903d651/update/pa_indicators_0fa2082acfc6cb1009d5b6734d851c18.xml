@@ -79,4 +79,5 @@
         <value_when_nil>0</value_when_nil>
         <visible_to>2</visible_to>
     </pa_indicators>
+    <sys_translated_text action="delete_multiple" query="documentkey=0fa2082acfc6cb1009d5b6734d851c18"/>
 </record_update>

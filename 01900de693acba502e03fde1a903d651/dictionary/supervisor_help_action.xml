@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="4dc4e5a62f633210d73ea23fafa4e335" label="Supervisor Help Action" max_length="40" name="supervisor_help_action" type="collection">
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Agent requesting support" max_length="32" name="x_snc_pab_ee_tkit_agent_requesting_support" reference="sys_user" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Supervisor group" max_length="32" name="x_snc_pab_ee_tkit_supervisor_group" reference="sys_user_group" type="reference"/>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="30a0aab9086803100a22e9371c04a469" label="Supervisor Help Action" max_length="40" name="supervisor_help_action" type="collection">
+        <element label="Agent requesting support" max_length="32" name="x_snc_pab_ee_tkit_agent_requesting_support" reference="sys_user" type="reference"/>
+        <element label="Supervisor group" max_length="32" name="x_snc_pab_ee_tkit_supervisor_group" reference="sys_user_group" type="reference"/>
     </element>
 </database>

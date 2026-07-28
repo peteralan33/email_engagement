@@ -126,7 +126,7 @@ Success Confirmation: Verification that the record is active and correctly route
         <update_guid_history>0833dc2b3c04c750f969efe4dd13aa0c:2116410623,c433dc2ba204c75049ceb26cc7ef6c07:-1586152639</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Create new WM record via Classification">db462ce72fc8c750b14f861cbfa4e3f8</sys_audit_delete>
+        <sys_audit_delete display_value="">db462ce72fc8c750b14f861cbfa4e3f8</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-10 12:58:22</sys_created_on>

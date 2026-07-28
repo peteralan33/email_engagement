@@ -45,7 +45,7 @@
         <update_guid_history>c6ceb53d8a2aba50da3d8a02fdb3b145:-655858005,c6ceb53d8a2aba50da3d8a02fdb3b145:-655858005</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="ServiceDefinition">c4911b3593a272509634f3990103d6c4</sys_audit_delete>
+        <sys_audit_delete display_value="">c4911b3593a272509634f3990103d6c4</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-21 01:23:04</sys_created_on>

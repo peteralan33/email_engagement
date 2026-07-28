@@ -19,7 +19,7 @@
         <sys_updated_on>2026-06-05 02:53:07</sys_updated_on>
         <table/>
         <ux_form_action_layout display_value="WM Case Actions">cfc4769dcf550b1009d5b6734d851cc2</ux_form_action_layout>
-        <ux_form_action_layout_item display_value="Transfer">467594462f6c0b54d73ea23fafa4e3d4</ux_form_action_layout_item>
+        <ux_form_action_layout_item display_value="">467594462f6c0b54d73ea23fafa4e3d4</ux_form_action_layout_item>
         <variant>secondary</variant>
     </sys_ux_m2m_action_layout_item>
 </record_update>

@@ -45,7 +45,7 @@
         <update_guid_history>29fb4ff16fee3250d9a2d4c530289b99:11408821</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="NASK Created HCLS Medical Imagining Email Review getHealthServiceDefinition Serv">c23f4f71936272509634f3990103d68e</sys_audit_delete>
+        <sys_audit_delete display_value="">c23f4f71936272509634f3990103d68e</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-21 01:12:49</sys_created_on>

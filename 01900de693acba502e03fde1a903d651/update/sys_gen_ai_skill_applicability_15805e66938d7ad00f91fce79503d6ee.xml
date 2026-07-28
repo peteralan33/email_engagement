@@ -8,6 +8,7 @@
 	return false;
 })(current);]]></condition_script>
         <context_profile/>
+        <provenance/>
         <roles>now_assist_panel_user</roles>
         <skill_id display_value="Determine Case Classification from Email">2370da66938d7ad00f91fce79503d6fe</skill_id>
         <sys_class_name>sys_gen_ai_skill_applicability</sys_class_name>

@@ -19,7 +19,7 @@
         <sys_updated_on>2026-06-05 02:53:08</sys_updated_on>
         <table/>
         <ux_form_action_layout display_value="WM Case Actions">cfc4769dcf550b1009d5b6734d851cc2</ux_form_action_layout>
-        <ux_form_action_layout_item display_value="Create Standard Change">628368272fc9fe14743eb82bcfa4e3c9</ux_form_action_layout_item>
+        <ux_form_action_layout_item display_value="">628368272fc9fe14743eb82bcfa4e3c9</ux_form_action_layout_item>
         <variant>secondary</variant>
     </sys_ux_m2m_action_layout_item>
 </record_update>

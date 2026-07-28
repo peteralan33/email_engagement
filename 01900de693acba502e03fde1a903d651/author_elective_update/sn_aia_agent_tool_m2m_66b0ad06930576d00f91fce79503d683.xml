@@ -56,7 +56,7 @@
         <update_guid_history>a2b0ad06d60576d02dba110e35a42086:-1920102500</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Summarize attachments">ca6f6d06938576d00f91fce79503d649</sys_audit_delete>
+        <sys_audit_delete display_value="">ca6f6d06938576d00f91fce79503d649</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-07 23:18:31</sys_created_on>

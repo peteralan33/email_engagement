@@ -3,7 +3,7 @@
         <advanced>false</advanced>
         <api>936e514a53b3b110f028ddeeff7b128c</api>
         <api_type>sys_hub_flow</api_type>
-        <capability display_value="Case Classification from Email Interacti">dc06faae93c1bad00f91fce79503d6be</capability>
+        <capability display_value="Case Classification from Email Int">dc06faae93c1bad00f91fce79503d6be</capability>
         <category display_value="Other">04c489f3532121106b38ddeeff7b1215</category>
         <connection display_value="sn_generative_ai.Now_LLM">4e85d828777721105de60f207b5a9906</connection>
         <description/>

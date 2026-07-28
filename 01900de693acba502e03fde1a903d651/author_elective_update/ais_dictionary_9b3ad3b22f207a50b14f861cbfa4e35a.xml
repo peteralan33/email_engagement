@@ -41,7 +41,7 @@
         <reverted_from/>
         <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
         <source_table>sys_update_set</source_table>
-        <state>current</state>
+        <state>previous</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-08 19:37:21</sys_created_on>
         <sys_id>987ee7b22f80cb10b14f861cbfa4e313</sys_id>
@@ -54,7 +54,7 @@
         <update_guid_history>587ee7b2a580cb1074ea0c4370c4c312:-569003821,9f3ad3b220207a502edb69501e69215b:1885576836</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_snc_pab_ee_tkit_determine_service_definition_from_email_getservicedefinitions_">607ee7b22f80cb10b14f861cbfa4e397</sys_audit_delete>
+        <sys_audit_delete display_value="">607ee7b22f80cb10b14f861cbfa4e397</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-08 19:37:22</sys_created_on>

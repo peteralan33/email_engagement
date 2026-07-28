@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce56e5d1cf51c71009d5b6734d851c80</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Create WM Major Case</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -45,11 +45,11 @@
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_hub_flow_ce56e5d1cf51c71009d5b6734d851c80</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-05 13:32:10</sys_updated_on>
+        <sys_updated_on>2026-07-28 03:00:39</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>28174961cfd58b1009d5b6734d851ca6</version_record>
+        <version_record/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=ce56e5d1cf51c71009d5b6734d851c80"/>
     <sys_variable_value action="delete_multiple" query="document_key=ce56e5d1cf51c71009d5b6734d851c80"/>
@@ -198,11 +198,11 @@
         <sys_created_on>2026-06-04 21:10:21</sys_created_on>
         <sys_id>de56e5d1cf51c71009d5b6734d851cd3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Work Management Case</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ce56e5d1cf51c71009d5b6734d851c80_work_management_case_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-06-04 21:10:21</sys_updated_on>
         <url/>
@@ -401,11 +401,11 @@
         <sys_created_on>2026-06-04 21:13:19</sys_created_on>
         <sys_id>6907e5d5cf51c71009d5b6734d851cce</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Work Management Case</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e507e5d5cf51c71009d5b6734d851c7b_work_management_case_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-06-04 21:13:19</sys_updated_on>
         <url/>

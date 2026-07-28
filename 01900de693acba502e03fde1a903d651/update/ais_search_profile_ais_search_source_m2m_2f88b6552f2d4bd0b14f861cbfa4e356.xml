@@ -4,7 +4,7 @@
         <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
         <exclude_in_regular_search>false</exclude_in_regular_search>
         <profile display_value="Motor Vehicle Expense Knowledge Articles">2b78fe152f2d4bd0b14f861cbfa4e32a</profile>
-        <search_source display_value="Motor Vehicle Expense Knowledge ">518562112fe54bd0b14f861cbfa4e3c3</search_source>
+        <search_source display_value="">518562112fe54bd0b14f861cbfa4e3c3</search_source>
         <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-17 13:25:19</sys_created_on>

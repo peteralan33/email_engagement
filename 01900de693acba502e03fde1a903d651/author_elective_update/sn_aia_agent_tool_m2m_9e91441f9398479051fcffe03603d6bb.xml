@@ -110,7 +110,7 @@ Requirement Outline: For each identified item, the tool provides a Suggested Nex
         <update_guid_history>5a91441fc99847901491c2ca8e77fec6:-2109428180,da91441f14984790b3e755fc181d96c1:423994198</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Determine Email Context for Work Mgt Reply">9787c05b931c479051fcffe03603d6f8</sys_audit_delete>
+        <sys_audit_delete display_value="">9787c05b931c479051fcffe03603d6f8</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-22 02:21:14</sys_created_on>

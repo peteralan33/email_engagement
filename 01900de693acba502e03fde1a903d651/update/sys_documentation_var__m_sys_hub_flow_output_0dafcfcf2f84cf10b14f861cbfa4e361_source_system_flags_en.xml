@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="source_system_flags" label="Source System Flags" language="en" table="var__m_sys_hub_flow_output_0dafcfcf2f84cf10b14f861cbfa4e361">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>source_system_flags</element>
+            <help/>
+            <hint/>
+            <label>Source System Flags</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_0dafcfcf2f84cf10b14f861cbfa4e361</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-09 12:04:07</sys_created_on>
+            <sys_id>fe40d3c32fc4cf10b14f861cbfa4e39b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Source System Flags</sys_name>
+            <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_0dafcfcf2f84cf10b14f861cbfa4e361_source_system_flags_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-09 12:04:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

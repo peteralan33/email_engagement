@@ -16,7 +16,7 @@
         <sys_updated_by>carlos.veron</sys_updated_by>
         <sys_updated_on>2026-07-16 20:59:08</sys_updated_on>
         <target_name>interaction</target_name>
-        <target_scope display_value="Pete's Genesys Configuration Toolkit">3234fb0293f0f210ec6dfc3d4803d6ac</target_scope>
+        <target_scope display_value="">3234fb0293f0f210ec6dfc3d4803d6ac</target_scope>
         <target_type>sys_db_object</target_type>
     </sys_scope_privilege>
 </record_update>

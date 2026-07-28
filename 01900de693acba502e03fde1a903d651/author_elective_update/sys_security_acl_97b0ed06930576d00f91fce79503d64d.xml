@@ -63,7 +63,7 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>global.x_snc_pab_ee_tkit.Summarize new email attachments</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
-        <sys_parent display_value="global">8a5853202f203210b14f861cbfa4e3cc</sys_parent>
+        <sys_parent display_value="">8a5853202f203210b14f861cbfa4e3cc</sys_parent>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>

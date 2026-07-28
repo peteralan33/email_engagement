@@ -7,7 +7,7 @@
         <genius_result_assembly/>
         <label>Certificate Request (FSSC / CoA)</label>
         <name>x_snc_pab_ee_tkit_certificate_request_fssc_coa</name>
-        <publish_id>d3ccbe98-c572-4939-be69-a8df98bca484</publish_id>
+        <publish_id>773fb34a-b071-4012-86f1-e7bc354f1b76</publish_id>
         <qna_model_id>bert-qa-model-1.1.6</qna_model_id>
         <state>PUBLISHED</state>
         <sys_class_name>ais_search_profile</sys_class_name>

@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3cdf9673cf02439009d5b6734d851cf3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Set Inbound Call Parameters (Genesys)</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -45,17 +45,17 @@
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_hub_flow_3cdf9673cf02439009d5b6734d851cf3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-20 02:34:44</sys_updated_on>
+        <sys_updated_on>2026-07-28 02:59:49</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>131026f3cf02439009d5b6734d851c4f</version_record>
+        <version_record/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=3cdf9673cf02439009d5b6734d851cf3"/>
     <sys_variable_value action="delete_multiple" query="document_key=3cdf9673cf02439009d5b6734d851cf3"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="interaction">opened_by=002d95722ffcf290743eb82bcfa4e3ec<item display_table="sys_user" display_value="GC Integration" endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="002d95722ffcf290743eb82bcfa4e3ec"/>
+        <condition table="interaction">opened_by=002d95722ffcf290743eb82bcfa4e3ec<item endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="002d95722ffcf290743eb82bcfa4e3ec"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -347,11 +347,11 @@
         <sys_created_on>2026-07-20 02:33:23</sys_created_on>
         <sys_id>89dfd673cf02439009d5b6734d851c1c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_3cdf9673cf02439009d5b6734d851cf3_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-20 02:33:23</sys_updated_on>
         <url/>
@@ -370,11 +370,11 @@
         <sys_created_on>2026-07-20 02:33:23</sys_created_on>
         <sys_id>c5dfd673cf02439009d5b6734d851c15</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_3cdf9673cf02439009d5b6734d851cf3_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-20 02:33:23</sys_updated_on>
         <url/>
@@ -679,11 +679,11 @@
         <sys_created_on>2026-07-20 02:34:37</sys_created_on>
         <sys_id>4310e2f3cf02439009d5b6734d851c7f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_8310e2f3cf02439009d5b6734d851c31_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-20 02:34:37</sys_updated_on>
         <url/>
@@ -702,11 +702,11 @@
         <sys_created_on>2026-07-20 02:34:37</sys_created_on>
         <sys_id>4b10e2f3cf02439009d5b6734d851c4d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_8310e2f3cf02439009d5b6734d851c31_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-20 02:34:37</sys_updated_on>
         <url/>

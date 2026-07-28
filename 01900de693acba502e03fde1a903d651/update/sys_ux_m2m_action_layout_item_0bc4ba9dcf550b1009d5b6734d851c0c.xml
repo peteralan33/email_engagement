@@ -19,7 +19,7 @@
         <sys_updated_on>2026-06-05 03:09:00</sys_updated_on>
         <table>x_snc_pab_ee_tkit_work_management_case</table>
         <ux_form_action_layout display_value="WM Case Actions">cfc4769dcf550b1009d5b6734d851cc2</ux_form_action_layout>
-        <ux_form_action_layout_item display_value="Show NPS">a89a62f887745e508e97a7d70cbb3576</ux_form_action_layout_item>
+        <ux_form_action_layout_item display_value="">a89a62f887745e508e97a7d70cbb3576</ux_form_action_layout_item>
         <variant>secondary</variant>
     </sys_ux_m2m_action_layout_item>
 </record_update>

@@ -5,7 +5,7 @@
         <in_mobile_roles/>
         <in_product_active>true</in_product_active>
         <in_product_roles/>
-        <skill_config display_value="Case Classification from Email Interaction">710632ee93c1bad00f91fce79503d623</skill_config>
+        <skill_config display_value="Case Classification from Email Int">710632ee93c1bad00f91fce79503d623</skill_config>
         <sys_class_name>sn_nowassist_skill_config_status</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 17:44:02</sys_created_on>

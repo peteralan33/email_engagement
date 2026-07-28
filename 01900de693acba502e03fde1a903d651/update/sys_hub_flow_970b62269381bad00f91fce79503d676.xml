@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>970b62269381bad00f91fce79503d676</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Update interaction record with attachment summaries</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -45,11 +45,11 @@
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_hub_flow_970b62269381bad00f91fce79503d676</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-09 19:56:35</sys_updated_on>
+        <sys_updated_on>2026-07-28 03:00:18</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>c07cbcdb2f0c8350b14f861cbfa4e3d0</version_record>
+        <version_record/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=970b62269381bad00f91fce79503d676"/>
     <sys_variable_value action="delete_multiple" query="document_key=970b62269381bad00f91fce79503d676"/>
@@ -421,11 +421,11 @@
         <sys_created_on>2025-11-09 16:57:33</sys_created_on>
         <sys_id>386b22669381bad00f91fce79503d60a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Attachment summary</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_970b62269381bad00f91fce79503d676_attachment_summary_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-09 16:57:33</sys_updated_on>
         <url/>
@@ -444,11 +444,11 @@
         <sys_created_on>2026-04-09 19:54:01</sys_created_on>
         <sys_id>c2dbf81b2f0c8350b14f861cbfa4e311</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Interaction record Sys ID</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_970b62269381bad00f91fce79503d676_interaction_record_sys_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-09 19:54:01</sys_updated_on>
         <url/>
@@ -468,11 +468,11 @@
         <sys_created_on>2025-11-09 16:57:13</sys_created_on>
         <sys_id>f74bee269381bad00f91fce79503d66d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Confirmation of enrichment</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_970b62269381bad00f91fce79503d676_confirmation_of_enrichment_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-09 16:57:13</sys_updated_on>
         <url/>
@@ -893,11 +893,11 @@
         <sys_created_on>2025-11-09 16:58:43</sys_created_on>
         <sys_id>b1abea669381bad00f91fce79503d6cd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Attachment summary</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_fdabea669381bad00f91fce79503d6b7_attachment_summary_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-09 16:58:43</sys_updated_on>
         <url/>
@@ -916,11 +916,11 @@
         <sys_created_on>2026-04-09 19:55:00</sys_created_on>
         <sys_id>ec1cbc5b2f0c8350b14f861cbfa4e378</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Interaction record Sys ID</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_fdabea669381bad00f91fce79503d6b7_interaction_record_sys_id_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-09 19:55:00</sys_updated_on>
         <url/>
@@ -940,11 +940,11 @@
         <sys_created_on>2025-11-09 16:58:43</sys_created_on>
         <sys_id>82abea669381bad00f91fce79503d6d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Confirmation of enrichment</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_fdabea669381bad00f91fce79503d6b7_confirmation_of_enrichment_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-09 16:58:43</sys_updated_on>
         <url/>

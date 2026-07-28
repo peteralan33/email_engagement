@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
     <sn_bom_service_definition action="INSERT_OR_UPDATE">
         <active>true</active>
-        <case_type display_value="sn_customerservice_case">c6f88627877f7090cfdeea8d0ebb359e</case_type>
+        <case_type display_value="">c6f88627877f7090cfdeea8d0ebb359e</case_type>
         <description>The Property Tax Inquiry service provides property owners with a centralized, secure channel to access information regarding their municipal property taxes. Citizens can use this service to view their current account balances, retrieve historical tax notices, understand their property assessments, and submit specific questions or disputes regarding their tax calculations directly to the City of Vancouver Revenue Services.</description>
         <id>prop_tax_inquiry</id>
         <image/>
@@ -10,7 +10,6 @@
         <playbook_record_generator/>
         <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
         <service_type>3</service_type>
-        <show_in_interceptor>true</show_in_interceptor>
         <sys_class_name>sn_bom_service_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-05-26 13:17:41</sys_created_on>
@@ -28,9 +27,6 @@
         <table>sn_customerservice_case</table>
         <task_table>sn_customerservice_case</task_table>
         <template>short_description=Property Tax Inquiry^contact_type=email^EQ</template>
-        <u_category/>
-        <u_email_classification>true</u_email_classification>
-        <u_sub_category/>
         <use_service_catalog_item>false</use_service_catalog_item>
     </sn_bom_service_definition>
 </record_update>

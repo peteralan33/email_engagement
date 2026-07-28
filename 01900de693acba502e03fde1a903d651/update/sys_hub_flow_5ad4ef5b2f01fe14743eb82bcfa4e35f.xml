@@ -3,6 +3,7 @@
         <access>public</access>
         <acls/>
         <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=224715000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
@@ -50,7 +51,7 @@
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record display_value="Created 2025-11-12 12:04:04 AM">76d4239b2f01fe14743eb82bcfa4e33d</version_record>
+        <version_record>76d4239b2f01fe14743eb82bcfa4e33d</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=5ad4ef5b2f01fe14743eb82bcfa4e35f"/>
     <sys_variable_value action="delete_multiple" query="document_key=5ad4ef5b2f01fe14743eb82bcfa4e35f"/>
@@ -118,6 +119,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -204,6 +206,7 @@
         <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -289,6 +292,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -396,11 +400,11 @@
         <sys_created_on>2025-11-12 05:04:02</sys_created_on>
         <sys_id>9ed4ef5b2f01fe14743eb82bcfa4e390</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Interaction</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_5ad4ef5b2f01fe14743eb82bcfa4e35f_interaction_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-12 05:04:02</sys_updated_on>
         <url/>
@@ -420,11 +424,11 @@
         <sys_created_on>2025-11-12 05:04:02</sys_created_on>
         <sys_id>66d4ef5b2f01fe14743eb82bcfa4e3cb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Email subject</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_5ad4ef5b2f01fe14743eb82bcfa4e35f_email_subject_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-12 05:04:02</sys_updated_on>
         <url/>
@@ -443,11 +447,11 @@
         <sys_created_on>2025-11-12 05:04:02</sys_created_on>
         <sys_id>6ad4ef5b2f01fe14743eb82bcfa4e3ce</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Email body</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_5ad4ef5b2f01fe14743eb82bcfa4e35f_email_body_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-11-12 05:04:02</sys_updated_on>
         <url/>

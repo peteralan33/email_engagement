@@ -13,17 +13,14 @@
 })(current);]]></condition_script>
         <evaluation_scope>document</evaluation_scope>
         <external>false</external>
-        <external_fields/>
         <external_id/>
-        <external_provider/>
-        <external_request_id/>
         <initial_agent_response>Thank you for contacting support. I am looking into your question now and will be with you shortly.</initial_agent_response>
         <max_wait_time/>
         <max_wait_time_message>No agents are available to chat right now. Check back later.</max_wait_time_message>
         <name>Classification</name>
         <number>CLASSIFY0001</number>
         <order>100</order>
-        <schedule display_value="7-21 All Days">29c261762fbc3214b14f861cbfa4e30c</schedule>
+        <schedule display_value="">29c261762fbc3214b14f861cbfa4e30c</schedule>
         <service_channel display_value="Classification">f963e1572f0d7e14743eb82bcfa4e35e</service_channel>
         <short_description/>
         <subflow/>

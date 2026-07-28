@@ -49,7 +49,7 @@
         <update_guid_history>267eebb2d180cb10a0654abaaab3f8da:-273160568,337050ce150936d0a066bf4d538e221a:-463611057,42df884ed00936d0f9c8edb1fd7e0c0c:-1625247555</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Determine Service Definition from Email searchForCapitalMarketKnowledge NASK Cre">a67eebb22f80cb10b14f861cbfa4e3f5</sys_audit_delete>
+        <sys_audit_delete display_value="">a67eebb22f80cb10b14f861cbfa4e3f5</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2026-04-08 19:37:31</sys_created_on>

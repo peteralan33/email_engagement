@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="no_system_fields=true" db_object_id="380a4ef72f8a0f90b14f861cbfa4e37a" label="Authorised Signee List (Safe)" max_length="40" name="x_snc_pab_ee_tkit_df_auth_con_db" read_only="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Authorization tier" max_length="65535" name="u_authorization_tier" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="First name" max_length="65535" name="u_first_name" type="string"/>
+        <element label="Authorized signer" max_length="40" name="u_authorized_signer" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Last name" max_length="65535" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Account number" max_length="65535" name="u_account_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Email address" max_length="65535" name="u_email_address" primary="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Title" max_length="65535" name="u_title" type="string"/>
+    </element>
+</database>

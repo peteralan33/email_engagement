@@ -47,7 +47,7 @@
         <update_guid_history>0348f0be528ecf108a62ef2fc3cc0468:284948848,8d2774f6c78ecf101e6d0e1839ea2ded:-571701295</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Daily AI Operations">2ce8bc72cfcecf1009d5b6734d851ca3</sys_audit_delete>
+        <sys_audit_delete display_value="">2ce8bc72cfcecf1009d5b6734d851ca3</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-16 16:29:42</sys_created_on>

@@ -45,7 +45,7 @@
         <update_guid_history>3e3d2ec64566b650779312d5a4c97387:658153527,3e3d2ec64566b650779312d5a4c97387:658153527</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="indexedHealthServiceDefinitions">929a1b0693223a509634f3990103d633</sys_audit_delete>
+        <sys_audit_delete display_value="">929a1b0693223a509634f3990103d633</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-21 20:41:02</sys_created_on>

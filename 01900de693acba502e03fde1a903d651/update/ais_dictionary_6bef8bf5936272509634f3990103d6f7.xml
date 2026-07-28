@@ -8,12 +8,12 @@
         <derived>true</derived>
         <field/>
         <label>HCLS Medical Imagining Email Review getMedicalImaginingServiceDefinitions NASK Created Default Spell Check Dictionary</label>
-        <last_derived>2026-01-21 01:15:56</last_derived>
+        <last_derived>2026-07-28 03:03:13</last_derived>
         <locale>en</locale>
         <name>x_snc_pab_ee_tkit_hcls_medical_imagining_email_review_getmedicalimaginingservicedefinitions_nask_created_default_spell_check_dictionary</name>
-        <publish_id>def89409-0c99-4449-b4d8-8fe4cd249047</publish_id>
+        <publish_id>080cd6e3-63e7-4111-8c84-fceb921d935c</publish_id>
         <punctuation_sensitive>false</punctuation_sensitive>
-        <state>DRAFT</state>
+        <state>PUBLISHED</state>
         <sys_class_name>ais_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-21 01:15:55</sys_created_on>

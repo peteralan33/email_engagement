@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
     <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
-        <action display_value="Create UR">671d9a3aeb2230101a1234d78f52283b</action>
+        <action display_value="">671d9a3aeb2230101a1234d78f52283b</action>
         <active>true</active>
         <animate_icon>false</animate_icon>
         <color>secondary</color>

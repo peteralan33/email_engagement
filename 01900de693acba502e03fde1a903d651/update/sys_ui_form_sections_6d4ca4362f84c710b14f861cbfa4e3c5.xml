@@ -9,8 +9,8 @@
             <sys_id>394ce8762f84c710b14f861cbfa4e3aa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
-            <sys_ui_form display_value="x_snc_pab_ee_tkit_work_management_case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">6d4ca4362f84c710b14f861cbfa4e3c5</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
+            <sys_ui_form display_value="x_snc_pab_ee_tkit_work_management_case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="1fe9daf508a003100a22e9371c04a417">6d4ca4362f84c710b14f861cbfa4e3c5</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="1fe9daf508a003100a22e9371c04a417">214ce8762f84c710b14f861cbfa4e377</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
         </sys_ui_form_section>
@@ -23,8 +23,8 @@
             <sys_id>a94ce8762f84c710b14f861cbfa4e375</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
-            <sys_ui_form display_value="x_snc_pab_ee_tkit_work_management_case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">6d4ca4362f84c710b14f861cbfa4e3c5</sys_ui_form>
-            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">654ca4362f84c710b14f861cbfa4e3cc</sys_ui_section>
+            <sys_ui_form display_value="x_snc_pab_ee_tkit_work_management_case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="1fe9daf508a003100a22e9371c04a417">6d4ca4362f84c710b14f861cbfa4e3c5</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="1fe9daf508a003100a22e9371c04a417">654ca4362f84c710b14f861cbfa4e3cc</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-04-08 05:29:01</sys_updated_on>
         </sys_ui_form_section>
@@ -37,8 +37,8 @@
             <sys_id>fd4ce8762f84c710b14f861cbfa4e3c6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
-            <sys_ui_form display_value="x_snc_pab_ee_tkit_work_management_case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">6d4ca4362f84c710b14f861cbfa4e3c5</sys_ui_form>
-            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
+            <sys_ui_form display_value="x_snc_pab_ee_tkit_work_management_case" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="1fe9daf508a003100a22e9371c04a417">6d4ca4362f84c710b14f861cbfa4e3c5</sys_ui_form>
+            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_snc_pab_ee_tkit_work_management_case" sys_domain="global" view="1fe9daf508a003100a22e9371c04a417">b14ce8762f84c710b14f861cbfa4e3ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-04-08 05:29:02</sys_updated_on>
         </sys_ui_form_section>
@@ -61,7 +61,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-04-08 05:29:01</sys_updated_on>
             <sys_user/>
-            <view display_value="workspace" name="workspace">90bad3e42f603210b14f861cbfa4e3eb</view>
+            <view display_value="Workspace" name="workspace">1fe9daf508a003100a22e9371c04a417</view>
             <view_name/>
         </sys_ui_form>
     </sys_ui_form_sections>

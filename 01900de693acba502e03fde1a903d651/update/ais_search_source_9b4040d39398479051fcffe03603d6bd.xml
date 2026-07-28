@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
     <ais_search_source action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="kb_knowledge">kb_category=ecce4f8f931c079051fcffe03603d623<item display_table="kb_category" display_value="Sensitive Enquiry Escalation" endquery="false" field="kb_category" goto="false" newquery="false" operator="=" or="false" value="ecce4f8f931c079051fcffe03603d623"/>
+        <condition table="kb_knowledge">kb_category=ecce4f8f931c079051fcffe03603d623<item endquery="false" field="kb_category" goto="false" newquery="false" operator="=" or="false" value="ecce4f8f931c079051fcffe03603d623"/>
         </condition>
         <datasource display_value="">kb_knowledge</datasource>
         <has_dynamic_filters>false</has_dynamic_filters>

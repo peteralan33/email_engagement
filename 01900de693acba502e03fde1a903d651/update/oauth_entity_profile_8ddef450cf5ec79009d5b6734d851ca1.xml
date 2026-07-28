@@ -4,7 +4,7 @@
         <grant_type>client_credentials</grant_type>
         <jwt_provider/>
         <name>Microsoft Teams Graph Client Credentials Profile.1</name>
-        <oauth_entity display_value="Microsoft Teams Graph Spoke OAuth Client Credentials.1">8ddef450cf5ec79009d5b6734d851c9a</oauth_entity>
+        <oauth_entity display_value="">8ddef450cf5ec79009d5b6734d851c9a</oauth_entity>
         <oauth_resources/>
         <saml2_assertion_producer/>
         <sys_class_name>oauth_entity_profile</sys_class_name>

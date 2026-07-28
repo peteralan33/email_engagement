@@ -115,7 +115,7 @@ undefined</description><direction>2</direction><display>false</display><excluded
         <update_guid_history>fbb0371690c28f10938e95206140e6c3:-771420627,1480b7d2f9c28f1053d1e48d028d2c14:411596908,ae3e631eec82cb10cab4cd820fa4c717:-1359665613,663e631e2082cb10ce7b1fec77d55a14:1594614443,2e3e231efa82cb10cab1f2273dbed49e:-1359665613</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Avg Talk Time">bf2a7b162fc68f10b14f861cbfa4e312</sys_audit_delete>
+        <sys_audit_delete display_value="">bf2a7b162fc68f10b14f861cbfa4e312</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>ag.mcp</sys_created_by>
         <sys_created_on>2026-07-15 17:17:16</sys_created_on>

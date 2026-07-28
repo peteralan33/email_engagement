@@ -30,7 +30,7 @@
         <reverted_from/>
         <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
         <source_table>sys_update_set</source_table>
-        <state>current</state>
+        <state>previous</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-08 19:37:30</sys_created_on>
         <sys_id>2e7e2fb22f80cb10b14f861cbfa4e322</sys_id>
@@ -43,7 +43,7 @@
         <update_guid_history>ea7e2fb29c80cb1023dacb0f92bc7b21:1628436743,4edf884ef40936d0950c448c3494ed20:-486237048</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_snc_pab_ee_tkit_determine_service_definition_from_email_searchforcapitalmarket">f27e2fb22f80cb10b14f861cbfa4e343</sys_audit_delete>
+        <sys_audit_delete display_value="">f27e2fb22f80cb10b14f861cbfa4e343</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-08 19:37:31</sys_created_on>

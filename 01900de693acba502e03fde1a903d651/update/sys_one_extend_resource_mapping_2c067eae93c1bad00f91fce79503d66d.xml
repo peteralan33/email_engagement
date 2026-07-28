@@ -24,7 +24,7 @@
 })();]]></error_handler_script>
         <error_policy/>
         <metadata>{}</metadata>
-        <parent_capability display_value="Case Classification from Email Interacti">dc06faae93c1bad00f91fce79503d6be</parent_capability>
+        <parent_capability display_value="Case Classification from Email Int">dc06faae93c1bad00f91fce79503d6be</parent_capability>
         <resource_capability display_value="Correctness Metric">a28f0e067f0202105bc49fbefc8665ec</resource_capability>
         <resource_name>Correctness Metric</resource_name>
         <sys_class_name>sys_one_extend_resource_mapping</sys_class_name>

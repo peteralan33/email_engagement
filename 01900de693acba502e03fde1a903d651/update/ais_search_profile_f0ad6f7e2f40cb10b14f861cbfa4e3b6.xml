@@ -7,7 +7,7 @@
         <genius_result_assembly/>
         <label>Work Management Knowledge </label>
         <name>x_snc_pab_ee_tkit_work_management_knowledge</name>
-        <publish_id>8b0589e1-d3da-48d9-a752-522610ad90fe</publish_id>
+        <publish_id>9a32e37d-e88b-4c42-9c52-6b88fa1b093b</publish_id>
         <qna_model_id>bert-qa-model-1.1.6</qna_model_id>
         <state>PUBLISHED</state>
         <sys_class_name>ais_search_profile</sys_class_name>

@@ -29,19 +29,19 @@
         <source>2e4432612f000310d73ea23fafa4e389</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-04 18:10:52</sys_created_on>
         <sys_id>008d9bcd2f100750d73ea23fafa4e3e7</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>19d59b0cbe00000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 03:02:47</sys_updated_on>
         <type>Access Roles</type>
         <update_guid>cc8d9bcd5d100750f69955485b3215e6</update_guid>
         <update_guid_history>cc8d9bcd5d100750f69955485b3215e6:-287556068</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="determine_service_definition_from_email.3a6aae7a2fe43a50b14f861cbfa4e3d0.snc_int">088d9bcd2f100750d73ea23fafa4e3e8</sys_audit_delete>
+        <sys_audit_delete display_value="">088d9bcd2f100750d73ea23fafa4e3e8</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-15 18:09:40</sys_created_on>

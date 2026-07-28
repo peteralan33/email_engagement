@@ -39,17 +39,4 @@
         <sys_updated_on>2026-07-17 02:50:59</sys_updated_on>
     </sys_ux_event>
     <sys_translated_text action="delete_multiple" query="documentkey=e11783f62f060b50b14f861cbfa4e345"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey>e11783f62f060b50b14f861cbfa4e345</documentkey>
-        <fieldname>description</fieldname>
-        <language>en, fr, es</language>
-        <sys_created_by>system</sys_created_by>
-        <sys_created_on>2026-07-17 02:50:59</sys_created_on>
-        <sys_id>e11783f62f060b50b14f861cbfa4e348</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-07-17 02:50:59</sys_updated_on>
-        <tablename>sys_ux_event</tablename>
-        <value/>
-    </sys_translated_text>
 </record_update>

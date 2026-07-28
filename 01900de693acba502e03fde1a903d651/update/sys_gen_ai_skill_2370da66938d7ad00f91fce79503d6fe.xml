@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill">
     <sys_gen_ai_skill action="INSERT_OR_UPDATE">
-        <enable_followup>false</enable_followup>
         <skill_description>The Determine Case Classification from Email Interaction (DCCEI) skill automatically analyzes a specific type of interaction record—one where the source is an email—to accurately identify and determine the precise support case category and sub-category. This classification uses the email's content (subject line, body text, and context of any attachments within the record) to initiate the correct workflow and ensure accurate routing.</skill_description>
         <skill_document>956ae2762fe43a50b14f861cbfa4e397</skill_document>
         <skill_name>Determine Case Classification from Email</skill_name>
@@ -12,7 +11,7 @@
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2370da66938d7ad00f91fce79503d6fe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Determine Case Classification from Email</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>

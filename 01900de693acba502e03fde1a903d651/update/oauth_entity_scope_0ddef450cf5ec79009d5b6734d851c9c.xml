@@ -2,7 +2,7 @@
     <oauth_entity_scope action="INSERT_OR_UPDATE">
         <in_default_profile>true</in_default_profile>
         <name>Default</name>
-        <oauth_entity display_value="Microsoft Teams Graph Spoke OAuth Client Credentials.1">8ddef450cf5ec79009d5b6734d851c9a</oauth_entity>
+        <oauth_entity display_value="">8ddef450cf5ec79009d5b6734d851c9a</oauth_entity>
         <oauth_entity_scope>https://graph.microsoft.com/.default</oauth_entity_scope>
         <sys_class_name>oauth_entity_scope</sys_class_name>
         <sys_created_by>admin</sys_created_by>

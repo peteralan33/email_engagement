@@ -115,7 +115,7 @@ undefined</description><direction>1</direction><display>false</display><excluded
         <update_guid_history>6cc0771693c28f10e7d7bdc9bdbaa3eb:1159848390,0c8077d26cc28f10cffa3c064456c8de:-1952101371,6e3e2bde14ca87100b9ff0c701187c23:-1599645548,a63e2bdef7ca8710acc914976cd61520:-769083836,9e3e2bdeffca8710e049a0a262985f01:-1599645548</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Total Contacts Handled">cc3a7b162fc68f10b14f861cbfa4e3a5</sys_audit_delete>
+        <sys_audit_delete display_value="">cc3a7b162fc68f10b14f861cbfa4e3a5</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>ag.mcp</sys_created_by>
         <sys_created_on>2026-07-15 17:17:17</sys_created_on>

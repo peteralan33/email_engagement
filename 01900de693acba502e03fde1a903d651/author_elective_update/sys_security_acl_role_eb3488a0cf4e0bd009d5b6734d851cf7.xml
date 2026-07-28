@@ -41,7 +41,7 @@
         <update_guid_history>7734c8a0314e0bd0768324b1e5b46fb6:-1355256793</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_snc_pab_ee_tkit_int_category.x_snc_pab_ee_tkit.external_work_records_user">dd55c068cf4e0bd009d5b6734d851cc7</sys_audit_delete>
+        <sys_audit_delete display_value="">dd55c068cf4e0bd009d5b6734d851cc7</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-09 12:58:08</sys_created_on>

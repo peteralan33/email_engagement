@@ -108,6 +108,8 @@ Knowledge leveraged from returned knowledge:
         <request_tokens>32018</request_tokens>
         <show_in_prompt_library>true</show_in_prompt_library>
         <state>published</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-20 18:58:15</sys_created_on>

@@ -49,7 +49,7 @@
         <update_guid_history>187ee7b2cc80cb10dbf33f8308d5da25:884462299,63c6fcc32420ba50810beeb51b9fc327:-2051283103,573ad3b241207a500c734b1ac729d200:-2036271061</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Determine Service Definition from Email getServiceDefinitions NASK Created">507ee7b22f80cb10b14f861cbfa4e336</sys_audit_delete>
+        <sys_audit_delete display_value="">507ee7b22f80cb10b14f861cbfa4e336</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2026-04-08 19:37:22</sys_created_on>

@@ -64,7 +64,7 @@ If the task record is not marked as "processed", this tool will fail.</descripti
         <update_guid_history>62b0ad06a40576d0f4c1d22892dcdfee:2003568136</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Get extracted values from DocIntel task">f16f6d06938576d00f91fce79503d62d</sys_audit_delete>
+        <sys_audit_delete display_value="">f16f6d06938576d00f91fce79503d62d</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-07 23:18:31</sys_created_on>

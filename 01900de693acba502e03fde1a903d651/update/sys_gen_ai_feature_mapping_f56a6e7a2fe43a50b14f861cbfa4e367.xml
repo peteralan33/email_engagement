@@ -26,4 +26,5 @@
         <sys_updated_on>2025-10-16 15:00:20</sys_updated_on>
         <tier/>
     </sys_gen_ai_feature_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=f56a6e7a2fe43a50b14f861cbfa4e367"/>
 </record_update>

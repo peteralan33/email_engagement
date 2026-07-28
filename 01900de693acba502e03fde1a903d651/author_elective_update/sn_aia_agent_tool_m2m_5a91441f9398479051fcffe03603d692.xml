@@ -106,7 +106,7 @@ The tool dispatches a high-priority notification to the designated manager or te
         <update_guid_history>5a91441f86984790fedf7560eba747a0:-350704965,9691441fa69847908762049aee70579b:1126750829</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Send email for Out office">cf87c05b931c479051fcffe03603d661</sys_audit_delete>
+        <sys_audit_delete display_value="">cf87c05b931c479051fcffe03603d661</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-22 02:21:13</sys_created_on>

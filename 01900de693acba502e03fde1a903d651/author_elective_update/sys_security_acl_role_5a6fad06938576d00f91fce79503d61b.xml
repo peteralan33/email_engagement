@@ -29,19 +29,19 @@
         <source>720477202f203210b14f861cbfa4e3a5</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-09 20:35:44</sys_created_on>
         <sys_id>aa6fad06938576d00f91fce79503d641</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>199caafd1000000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 03:02:46</sys_updated_on>
         <type>Access Roles</type>
         <update_guid>6a6fad06e08576d07ce4b40d9f458641</update_guid>
         <update_guid_history>6a6fad06e08576d07ce4b40d9f458641:495379991</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="global.x_snc_pab_ee_tkit.Summarize new email attachments.snc_internal">2a6fad06938576d00f91fce79503d642</sys_audit_delete>
+        <sys_audit_delete display_value="">2a6fad06938576d00f91fce79503d642</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-07 23:18:33</sys_created_on>

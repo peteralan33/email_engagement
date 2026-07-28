@@ -106,6 +106,8 @@ Knowledge leveraged from returned knowledge:
         <request_tokens>64786</request_tokens>
         <show_in_prompt_library>false</show_in_prompt_library>
         <state>draft</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-21 00:51:36</sys_created_on>

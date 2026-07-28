@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
     <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
-        <action display_value="Put on Hold">dd14f8cceb223010e0ef83c45e52285e</action>
+        <action display_value="">dd14f8cceb223010e0ef83c45e52285e</action>
         <active>true</active>
         <animate_icon>false</animate_icon>
         <color>secondary</color>

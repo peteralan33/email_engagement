@@ -16,17 +16,4 @@
         <sys_updated_on>2026-06-05 02:41:22</sys_updated_on>
     </sys_ux_screen_type>
     <sys_translated_text action="delete_multiple" query="documentkey=1f1272592f910b10b846c63bcfa4e3c7"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey>1f1272592f910b10b846c63bcfa4e3c7</documentkey>
-        <fieldname>description</fieldname>
-        <language>en, fr, es</language>
-        <sys_created_by>system</sys_created_by>
-        <sys_created_on>2026-06-05 02:41:22</sys_created_on>
-        <sys_id>1b1272592f910b10b846c63bcfa4e3e3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-06-05 02:41:22</sys_updated_on>
-        <tablename>sys_ux_screen_type</tablename>
-        <value/>
-    </sys_translated_text>
 </record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_skill">
     <sys_cs_context_profile_skill action="INSERT_OR_UPDATE">
         <context_profile display_value="Now Assist Panel - Platform (default)">e93cab98c7c03110b65579a988c260c4</context_profile>
-        <skill_id display_value="Case Classification from Email Interacti">63f6ba629305bad00f91fce79503d6a4</skill_id>
+        <skill_id display_value="Case Classification from Email Int">63f6ba629305bad00f91fce79503d6a4</skill_id>
         <sys_class_name>sys_cs_context_profile_skill</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 18:03:08</sys_created_on>

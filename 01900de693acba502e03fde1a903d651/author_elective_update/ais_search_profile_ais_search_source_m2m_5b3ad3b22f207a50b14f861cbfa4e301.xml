@@ -44,7 +44,7 @@
         <update_guid_history>673ad3b2a4207a5024263db7a0c24c60:-1961515826</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Determine Service Definition from Email getServiceDefinitions NASK Created.NASK ">187ea7b22f80cb10b14f861cbfa4e3f0</sys_audit_delete>
+        <sys_audit_delete display_value="">187ea7b22f80cb10b14f861cbfa4e3f0</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-08 19:37:21</sys_created_on>

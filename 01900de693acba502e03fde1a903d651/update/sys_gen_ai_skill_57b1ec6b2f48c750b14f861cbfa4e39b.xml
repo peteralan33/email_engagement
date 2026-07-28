@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill">
     <sys_gen_ai_skill action="INSERT_OR_UPDATE">
-        <enable_followup>false</enable_followup>
         <skill_description>Determine Email Context for Work Management</skill_description>
         <skill_document>6c03d8e72f04c750b14f861cbfa4e3ab</skill_document>
         <skill_name>Determine Email Context for Work Mgt Rep</skill_name>
@@ -12,7 +11,7 @@
         <sys_domain_path>/</sys_domain_path>
         <sys_id>57b1ec6b2f48c750b14f861cbfa4e39b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Determine Email Context for Work Mgt Rep</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>

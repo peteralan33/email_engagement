@@ -42,6 +42,5 @@
         <trigger_flow_definition_type>record_update</trigger_flow_definition_type>
         <trigger_strategy>once</trigger_strategy>
         <usecase/>
-        <usecase_discovery>false</usecase_discovery>
     </sn_aia_trigger_configuration>
 </record_update>

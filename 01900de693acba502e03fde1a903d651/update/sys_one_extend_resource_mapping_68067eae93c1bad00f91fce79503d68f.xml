@@ -24,7 +24,7 @@
 })();]]></error_handler_script>
         <error_policy/>
         <metadata>{}</metadata>
-        <parent_capability display_value="Case Classification from Email Interacti">dc06faae93c1bad00f91fce79503d6be</parent_capability>
+        <parent_capability display_value="Case Classification from Email Int">dc06faae93c1bad00f91fce79503d6be</parent_capability>
         <resource_capability display_value="Correctness Metric with Golden Response">f5fa89d57f14121071cab6257d8665a6</resource_capability>
         <resource_name>Correctness Metric with Golden Response</resource_name>
         <sys_class_name>sys_one_extend_resource_mapping</sys_class_name>

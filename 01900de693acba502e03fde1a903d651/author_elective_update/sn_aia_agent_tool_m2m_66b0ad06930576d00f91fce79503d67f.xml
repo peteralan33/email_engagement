@@ -56,7 +56,7 @@
         <update_guid_history>62b0ad063b0576d0d39d2b10347f6882:-1117183112</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Get Relevant DocIntel Task Definition">b96f6d06938576d00f91fce79503d641</sys_audit_delete>
+        <sys_audit_delete display_value="">b96f6d06938576d00f91fce79503d641</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-07 23:18:31</sys_created_on>

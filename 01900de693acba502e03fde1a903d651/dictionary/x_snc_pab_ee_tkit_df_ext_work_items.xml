@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="no_system_fields=true" db_object_id="d29c8fd62fc80310b14f861cbfa4e33a" label="External Work Items" max_length="40" name="x_snc_pab_ee_tkit_df_ext_work_items" read_only="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Customer priority" max_length="65535" name="u_customer_priority" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Detailed type" max_length="65535" name="u_detailed_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Internal source system" max_length="65535" name="u_internal_source_system" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Due date" max_length="40" name="u_due_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Record id" max_length="65535" name="u_record_id" primary="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Request description" max_length="65535" name="u_request_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Business impact" max_length="65535" name="u_business_impact" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Location" max_length="65535" name="u_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Case owner" max_length="65535" name="u_case_owner" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Escalation level" max_length="65535" name="u_escalation_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Segment" max_length="65535" name="u_segment" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Main category" max_length="65535" name="u_main_category" type="string"/>
+    </element>
+</database>

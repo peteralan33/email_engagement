@@ -10,7 +10,7 @@
         <element/>
         <element_level2/>
         <indicator display_value="Calls answered within SLA ">5aacc5d62f4e8b10b14f861cbfa4e3ef</indicator>
-        <owner display_value="Tom Chandler">52d8a5d32f4d7e14743eb82bcfa4e3e1</owner>
+        <owner display_value="">52d8a5d32f4d7e14743eb82bcfa4e3e1</owner>
         <responsible_users/>
         <sys_class_name>pa_targets</sys_class_name>
         <sys_created_by>ag.mcp</sys_created_by>

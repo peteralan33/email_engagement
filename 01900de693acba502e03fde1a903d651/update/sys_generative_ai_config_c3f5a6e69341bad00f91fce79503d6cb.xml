@@ -5,6 +5,7 @@
         <ai_suggested>false</ai_suggested>
         <definition>8a6a6e7a2fe43a50b14f861cbfa4e36c</definition>
         <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
         <max_tokens>500</max_tokens>
         <min_word_count>-1</min_word_count>
         <model>llm_generic_small</model>
@@ -50,9 +51,12 @@ Knowledge leveraged from returned knowledge
 *** End For QA ***
 </prompt>
         <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
         <request_tokens>32018</request_tokens>
         <show_in_prompt_library>true</show_in_prompt_library>
         <state>archived</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 16:33:57</sys_created_on>

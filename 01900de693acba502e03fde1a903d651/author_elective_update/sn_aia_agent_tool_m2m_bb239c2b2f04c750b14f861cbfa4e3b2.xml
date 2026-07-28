@@ -104,7 +104,7 @@ Updated Interaction Record: The resulting object is the enriched Interaction Rec
         <update_guid_history>b3239c2b7304c750182d05236a0f20cd:-1067842853,77239c2b2a04c7500ce9179059d43fbb:1252337697</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Interaction enrichment with attachment summaries">5b466ce72fc8c750b14f861cbfa4e332</sys_audit_delete>
+        <sys_audit_delete display_value="">5b466ce72fc8c750b14f861cbfa4e332</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-10 12:58:22</sys_created_on>

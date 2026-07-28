@@ -56,7 +56,7 @@
         <update_guid_history>b5a4ee179885be141ec97f0c2f242f52:995688954,162aae626881bad0cbcaaec05f9c1a0b:-605078101,92aa2b164e093ad0eb55eceeac44e0a7:1993298828,9038eb9e1fc53ad0e500f9d9f6200883:-1082182139</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Summarise attachments on the interaction record">c8dc38e6938e32540f91fce79503d670</sys_audit_delete>
+        <sys_audit_delete display_value="">c8dc38e6938e32540f91fce79503d670</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-12-29 01:57:13</sys_created_on>

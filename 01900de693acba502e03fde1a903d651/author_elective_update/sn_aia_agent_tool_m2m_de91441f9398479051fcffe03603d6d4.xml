@@ -112,7 +112,7 @@ Enriched Work Management Record: A finalized, high-context data package. This re
         <update_guid_history>9a91441f76984790b84f1e134d3d1ddf:24877546,1e91441fd798479064d28c78bcd423da:-1290795440</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Update Interaction with Email Context">b387045b931c479051fcffe03603d642</sys_audit_delete>
+        <sys_audit_delete display_value="">b387045b931c479051fcffe03603d642</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-22 02:21:16</sys_created_on>

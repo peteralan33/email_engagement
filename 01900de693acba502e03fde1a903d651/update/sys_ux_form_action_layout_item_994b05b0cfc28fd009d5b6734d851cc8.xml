@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
     <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
-        <action display_value="Get Personal Injury Claim Details">055db1c72f61fa10743eb82bcfa4e347</action>
+        <action display_value="">055db1c72f61fa10743eb82bcfa4e347</action>
         <active>true</active>
         <animate_icon>false</animate_icon>
         <color>secondary</color>

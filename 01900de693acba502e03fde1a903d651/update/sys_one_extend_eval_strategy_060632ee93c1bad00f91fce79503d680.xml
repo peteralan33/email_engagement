@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_eval_strategy">
     <sys_one_extend_eval_strategy action="INSERT_OR_UPDATE">
-        <capability display_value="Case Classification from Email Interacti">dc06faae93c1bad00f91fce79503d6be</capability>
+        <capability display_value="Case Classification from Email Int">dc06faae93c1bad00f91fce79503d6be</capability>
         <default>true</default>
         <name>Default</name>
         <skill_config_id>710632ee93c1bad00f91fce79503d623</skill_config_id>

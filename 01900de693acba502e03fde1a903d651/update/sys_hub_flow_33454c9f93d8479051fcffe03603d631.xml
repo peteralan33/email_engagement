@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33454c9f93d8479051fcffe03603d631</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Update with Email Response </sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -45,11 +45,11 @@
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_hub_flow_33454c9f93d8479051fcffe03603d631</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-05-28 04:02:40</sys_updated_on>
+        <sys_updated_on>2026-07-28 02:59:43</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>2ff775fa9385c79051fcffe03603d64e</version_record>
+        <version_record/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=33454c9f93d8479051fcffe03603d631"/>
     <sys_variable_value action="delete_multiple" query="document_key=33454c9f93d8479051fcffe03603d631"/>
@@ -506,11 +506,11 @@
         <sys_created_on>2026-04-22 02:13:43</sys_created_on>
         <sys_id>1dd54453931c479051fcffe03603d680</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Email reply</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_33454c9f93d8479051fcffe03603d631_email_reply_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-22 02:13:43</sys_updated_on>
         <url/>
@@ -529,11 +529,11 @@
         <sys_created_on>2026-05-28 04:02:29</sys_created_on>
         <sys_id>55f7f57a9385c79051fcffe03603d647</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Case Number</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_33454c9f93d8479051fcffe03603d631_case_number_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-05-28 04:02:29</sys_updated_on>
         <url/>
@@ -552,11 +552,11 @@
         <sys_created_on>2026-04-22 02:11:26</sys_created_on>
         <sys_id>ff454c9f93d8479051fcffe03603d67a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Work Notes</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_33454c9f93d8479051fcffe03603d631_work_notes_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-22 02:11:26</sys_updated_on>
         <url/>
@@ -718,11 +718,11 @@
         <sys_created_on>2026-04-22 02:11:27</sys_created_on>
         <sys_id>cc558c9f93d8479051fcffe03603d61f</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
+        <sys_name>Email response</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_33454c9f93d8479051fcffe03603d631_email_response_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-22 02:14:13</sys_updated_on>
         <url/>
@@ -1228,11 +1228,11 @@
         <sys_created_on>2026-04-22 02:15:55</sys_created_on>
         <sys_id>61568cd3931c479051fcffe03603d6af</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Email reply</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9d568cd3931c479051fcffe03603d690_email_reply_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-22 02:15:55</sys_updated_on>
         <url/>
@@ -1251,11 +1251,11 @@
         <sys_created_on>2026-04-22 02:15:55</sys_created_on>
         <sys_id>61568cd3931c479051fcffe03603d6ed</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Work Notes</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9d568cd3931c479051fcffe03603d690_work_notes_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-22 02:15:55</sys_updated_on>
         <url/>
@@ -1274,11 +1274,11 @@
         <sys_created_on>2026-05-28 04:02:35</sys_created_on>
         <sys_id>faf7f9ba9385c79051fcffe03603d675</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Case Number</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9d568cd3931c479051fcffe03603d690_case_number_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-05-28 04:02:35</sys_updated_on>
         <url/>
@@ -1298,11 +1298,11 @@
         <sys_created_on>2026-04-22 02:15:55</sys_created_on>
         <sys_id>a156ccd3931c479051fcffe03603d654</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Email response</sys_name>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_9d568cd3931c479051fcffe03603d690_email_response_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-22 02:15:55</sys_updated_on>
         <url/>

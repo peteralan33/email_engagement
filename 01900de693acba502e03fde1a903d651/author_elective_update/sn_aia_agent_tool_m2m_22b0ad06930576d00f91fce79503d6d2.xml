@@ -56,7 +56,7 @@
         <update_guid_history>aeb0ad06460576d09e363dc95b9af3d4:249819318</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Retrieve attachments of a Glide record">f96f2d06938576d00f91fce79503d669</sys_audit_delete>
+        <sys_audit_delete display_value="">f96f2d06938576d00f91fce79503d669</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-07 23:18:30</sys_created_on>

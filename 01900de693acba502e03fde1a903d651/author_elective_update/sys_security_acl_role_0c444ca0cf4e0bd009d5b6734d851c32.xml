@@ -41,7 +41,7 @@
         <update_guid_history>08444ca0914e0bd0f2b66e2a729e8bd8:1898422672</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="x_snc_pab_ee_tkit_int_category.x_snc_pab_ee_tkit.risk_ratings_user">f9554468cf4e0bd009d5b6734d851cbf</sys_audit_delete>
+        <sys_audit_delete display_value="">f9554468cf4e0bd009d5b6734d851cbf</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-09 12:58:10</sys_created_on>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="6616c4accf4e0bd009d5b6734d851c55" label="Interaction Intent Subcategory" max_length="40" name="x_snc_pab_ee_tkit_interaction_intent_subcategory" type="collection">
-        <element display="true" label="Overview" max_length="200" name="overview" type="string"/>
-        <element label="Category" max_length="32" name="category" reference="x_snc_pab_ee_tkit_interaction_intent_category" type="reference"/>
         <element label="Description" max_length="4000" name="description" type="string"/>
-        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Category" max_length="32" name="category" reference="x_snc_pab_ee_tkit_interaction_intent_category" type="reference"/>
         <element label="Subcategory" max_length="100" name="subcategory" type="string"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Overview" max_length="200" name="overview" type="string"/>
         <index name="index">
             <element name="category"/>
         </index>

@@ -4,7 +4,7 @@
         <business_rule/>
         <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
         <condition table="interaction">type=email^opened_by=55e1b18a938576d00f91fce79503d6e3<item display_value="Email" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="email"/>
-            <item display_table="sys_user" display_value="Email Triage  Agent" endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="55e1b18a938576d00f91fce79503d6e3"/>
+            <item endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="55e1b18a938576d00f91fce79503d6e3"/>
         </condition>
         <description/>
         <enable_discovery>false</enable_discovery>
@@ -42,6 +42,5 @@
         <trigger_flow_definition_type>record_create</trigger_flow_definition_type>
         <trigger_strategy/>
         <usecase display_value="">undefined</usecase>
-        <usecase_discovery>false</usecase_discovery>
     </sn_aia_trigger_configuration>
 </record_update>

@@ -4,7 +4,7 @@
         <channels/>
         <discoverable>true</discoverable>
         <hint>Case Classification from Email Interaction</hint>
-        <skill_id display_value="Case Classification from Email Interacti">63f6ba629305bad00f91fce79503d6a4</skill_id>
+        <skill_id display_value="Case Classification from Email Int">63f6ba629305bad00f91fce79503d6a4</skill_id>
         <supervision/>
         <sys_class_name>sys_gen_ai_skill_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>

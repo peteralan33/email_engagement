@@ -5,6 +5,7 @@
         <ai_suggested>false</ai_suggested>
         <definition>e906feae93c1bad00f91fce79503d631</definition>
         <definition_table>sys_one_extend_capability_definition</definition_table>
+        <documentation/>
         <max_tokens>500</max_tokens>
         <min_word_count>-1</min_word_count>
         <model>llm_generic_small</model>
@@ -94,9 +95,12 @@ Knowledge leveraged from returned knowledge:
 
 </prompt>
         <prompt_template_role>user</prompt_template_role>
+        <provider_company/>
         <request_tokens>32018</request_tokens>
         <show_in_prompt_library>true</show_in_prompt_library>
         <state>archived</state>
+        <structured_output_enabled>false</structured_output_enabled>
+        <structured_output_schema/>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-09 17:54:55</sys_created_on>

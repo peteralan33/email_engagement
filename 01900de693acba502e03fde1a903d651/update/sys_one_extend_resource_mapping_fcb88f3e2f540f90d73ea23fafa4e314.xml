@@ -43,17 +43,4 @@
         <sys_updated_on>2026-04-21 03:08:09</sys_updated_on>
     </sys_one_extend_resource_mapping>
     <sys_translated_text action="delete_multiple" query="documentkey=fcb88f3e2f540f90d73ea23fafa4e314"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey>fcb88f3e2f540f90d73ea23fafa4e314</documentkey>
-        <fieldname>resource_name</fieldname>
-        <language>en, fr, es</language>
-        <sys_created_by>system</sys_created_by>
-        <sys_created_on>2026-04-21 03:08:09</sys_created_on>
-        <sys_id>7cb88f3e2f540f90d73ea23fafa4e317</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-21 03:08:09</sys_updated_on>
-        <tablename>sys_one_extend_resource_mapping</tablename>
-        <value>Correctness Metric with Golden Response</value>
-    </sys_translated_text>
 </record_update>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
     <ais_search_source action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="sn_bom_service_definition">u_email_classification=true<item endquery="false" field="u_email_classification" goto="false" newquery="false" operator="=" or="false" value="true"/>
-        </condition>
+        <condition table="sn_bom_service_definition">u_email_classification=true</condition>
         <datasource display_value="">sn_bom_service_definition</datasource>
         <has_dynamic_filters>false</has_dynamic_filters>
         <name>Email Classification Service Definitions</name>

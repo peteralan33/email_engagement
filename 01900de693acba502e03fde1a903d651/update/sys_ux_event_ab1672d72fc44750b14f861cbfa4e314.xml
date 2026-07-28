@@ -47,17 +47,4 @@
         <sys_updated_on>2026-04-10 04:48:14</sys_updated_on>
     </sys_ux_event>
     <sys_translated_text action="delete_multiple" query="documentkey=ab1672d72fc44750b14f861cbfa4e314"/>
-    <sys_translated_text action="INSERT_OR_UPDATE">
-        <documentkey>ab1672d72fc44750b14f861cbfa4e314</documentkey>
-        <fieldname>description</fieldname>
-        <language>en, fr, es</language>
-        <sys_created_by>system</sys_created_by>
-        <sys_created_on>2026-04-10 04:48:14</sys_created_on>
-        <sys_id>631672d72fc44750b14f861cbfa4e316</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-10 04:48:14</sys_updated_on>
-        <tablename>sys_ux_event</tablename>
-        <value>Relay event for Glide Form SET_VALUE from "Knowledge Category Picker Modal"</value>
-    </sys_translated_text>
 </record_update>

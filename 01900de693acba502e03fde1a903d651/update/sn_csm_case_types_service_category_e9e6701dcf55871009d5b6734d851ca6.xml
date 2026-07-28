@@ -18,7 +18,5 @@
         <sys_update_name>sn_csm_case_types_service_category_e9e6701dcf55871009d5b6734d851ca6</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
         <sys_updated_on>2026-06-04 17:43:05</sys_updated_on>
-        <u_category display_value="Work Management">54563c59cf55871009d5b6734d851c9a</u_category>
-        <u_sub_categories display_value="External Case Updates">e2767499cf55871009d5b6734d851c0f</u_sub_categories>
     </sn_csm_case_types_service_category>
 </record_update>

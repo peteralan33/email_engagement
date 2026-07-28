@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
     <ais_search_source action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="kb_knowledge">kb_knowledge_base=05808158cf098350e0b8fe9b2c851c09<item display_table="kb_knowledge_base" display_value="CalmPoint Health Operations" endquery="false" field="kb_knowledge_base" goto="false" newquery="false" operator="=" or="false" value="05808158cf098350e0b8fe9b2c851c09"/>
+        <condition table="kb_knowledge">kb_knowledge_base=05808158cf098350e0b8fe9b2c851c09<item endquery="false" field="kb_knowledge_base" goto="false" newquery="false" operator="=" or="false" value="05808158cf098350e0b8fe9b2c851c09"/>
         </condition>
         <datasource display_value="">kb_knowledge</datasource>
         <has_dynamic_filters>false</has_dynamic_filters>

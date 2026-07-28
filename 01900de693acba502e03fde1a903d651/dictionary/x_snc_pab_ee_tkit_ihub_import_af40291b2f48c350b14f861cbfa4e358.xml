@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="8f71659f2f48c350b14f861cbfa4e3ef" extends="sys_import_set_row" label="Load External Work Items" max_length="40" name="x_snc_pab_ee_tkit_ihub_import_af40291b2f48c350b14f861cbfa4e358" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Internal Source System" label="Internal Source System" max_length="40" name="u_internal_source_system" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Business Impact" label="Business Impact" max_length="40" name="u_business_impact" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Location" label="Location" max_length="40" name="u_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Record ID" label="Record ID" max_length="40" name="u_record_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Request Description" label="Request Description" max_length="4000" name="u_request_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Due Date" label="Due Date" max_length="40" name="u_due_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Detailed Type" label="Detailed Type" max_length="40" name="u_detailed_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Case Owner" label="Case Owner" max_length="40" name="u_case_owner" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Customer Priority" label="Customer Priority" max_length="40" name="u_customer_priority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Escalation Level" label="Escalation Level" max_length="40" name="u_escalation_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Detailed Description" label="Detailed Description" max_length="4000" name="u_detailed_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Main Category" label="Main Category" max_length="40" name="u_main_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Segment" label="Segment" max_length="40" name="u_segment" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Work Notes" label="Work Notes" max_length="4000" name="u_work_notes" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Service" label="Service" max_length="40" name="u_service" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Detailed Description" label="Detailed Description" max_length="4000" name="u_detailed_description" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Customer Priority" label="Customer Priority" max_length="40" name="u_customer_priority" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Main Category" label="Main Category" max_length="40" name="u_main_category" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Escalation Level" label="Escalation Level" max_length="40" name="u_escalation_level" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Segment" label="Segment" max_length="40" name="u_segment" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Due Date" label="Due Date" max_length="40" name="u_due_date" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Record ID" label="Record ID" max_length="40" name="u_record_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Detailed Type" label="Detailed Type" max_length="40" name="u_detailed_type" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Request Description" label="Request Description" max_length="4000" name="u_request_description" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Case Owner" label="Case Owner" max_length="40" name="u_case_owner" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Business Impact" label="Business Impact" max_length="40" name="u_business_impact" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Internal Source System" label="Internal Source System" max_length="40" name="u_internal_source_system" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Location" label="Location" max_length="40" name="u_location" type="string"/>
     </element>
 </database>

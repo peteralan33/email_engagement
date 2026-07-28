@@ -2,11 +2,13 @@
     <sn_aia_agent_config action="INSERT_OR_UPDATE">
         <active>true</active>
         <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
+        <agent_descriptor/>
         <agent_learning>true</agent_learning>
         <doc_url/>
         <icon_url/>
         <public>false</public>
-        <run_as_user display_value="Email Triage Agent  Capital Markets">55e1b18a938576d00f91fce79503d6e3</run_as_user>
+        <run_as_user display_value="">55e1b18a938576d00f91fce79503d6e3</run_as_user>
+        <specialist_enabled>false</specialist_enabled>
         <sys_class_name>sn_aia_agent_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-07 23:30:57</sys_created_on>

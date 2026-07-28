@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill">
     <sys_gen_ai_skill action="INSERT_OR_UPDATE">
-        <enable_followup>false</enable_followup>
         <skill_description/>
         <skill_document>9506a4762f04c710b14f861cbfa4e3f9</skill_document>
         <skill_name>Determine Email Response for Case</skill_name>
@@ -12,7 +11,7 @@
         <sys_domain_path>/</sys_domain_path>
         <sys_id>23333b3a2fc0cb10b14f861cbfa4e337</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Determine Email Response for Case</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>

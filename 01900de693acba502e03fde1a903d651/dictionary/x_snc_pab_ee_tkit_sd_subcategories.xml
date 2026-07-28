@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="8cf7c7b1933ccb9051fcffe03603d6a7" label="Service Definition Subcategories" max_length="40" name="x_snc_pab_ee_tkit_sd_subcategories" type="collection">
-        <element display="true" label="Subcategories" max_length="40" name="subcategories" type="string"/>
         <element label="Categories" max_length="32" name="reference" reference="x_snc_pab_ee_tkit_sd_cat" type="reference"/>
+        <element display="true" label="Subcategories" max_length="40" name="subcategories" type="string"/>
         <index name="index">
             <element name="reference"/>
         </index>

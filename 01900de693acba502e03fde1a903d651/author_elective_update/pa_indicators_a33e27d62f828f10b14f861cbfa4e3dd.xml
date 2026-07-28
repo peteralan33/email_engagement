@@ -115,7 +115,7 @@ undefined</description><direction>1</direction><display>false</display><excluded
         <update_guid_history>c9b0b31649c28f100ea49333de237c53:1463703994,5180f7d276c28f108f0ec46ca53f0d54:-1648245767,7b3eeb1abf828f10f56a96a64c31c7f4:-1703602860,b33eeb1ac7828f101c685264ca597cf1:-465228232,7b3eeb1a19828f10704ffe4275e442ec:-1703602860</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Service Level">0c3a7b162fc68f10b14f861cbfa4e3ea</sys_audit_delete>
+        <sys_audit_delete display_value="">0c3a7b162fc68f10b14f861cbfa4e3ea</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>ag.mcp</sys_created_by>
         <sys_created_on>2026-07-15 17:17:17</sys_created_on>

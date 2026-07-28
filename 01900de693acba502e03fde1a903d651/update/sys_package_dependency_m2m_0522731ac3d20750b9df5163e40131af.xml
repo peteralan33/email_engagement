@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Financial Services Operations Core" source="sn_bom">52139130737200103fcae6e24ff6a76f</dependency>
+        <min_version>12.1.1</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-28 02:57:49</sys_created_on>
+        <sys_id>0522731ac3d20750b9df5163e40131af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-28 02:57:49</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

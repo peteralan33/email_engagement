@@ -467,7 +467,7 @@ By following these instructions, you will effectively manage and execute documen
         <update_guid_history>f5216186950576d0c36ad475339bca22:-1353627067,97d0a1468d0576d0c34e5f24c4d192fc:1546611182,13d0e146640576d028dc932dd43ded17:1825788249,b8d06146e50576d0a6767db2ef8b3eeb:675052236,20d06146900576d0c8f7876042229f7d:-1221574212,94d061463d0576d058765a930975b7c4:701309614,bdc0ed06130576d06a7d32f3d457c519:-848934045,6dc0ed060b0576d0386cb00d9cbe3494:943863886,59c06146240576d0122473106088bb30:1350891826,deb0ad06c60576d01f692ec49778ad69:-159293029</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Summarize new email attachments">7d6f2d06938576d00f91fce79503d664</sys_audit_delete>
+        <sys_audit_delete display_value="">7d6f2d06938576d00f91fce79503d664</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-07 23:18:32</sys_created_on>
