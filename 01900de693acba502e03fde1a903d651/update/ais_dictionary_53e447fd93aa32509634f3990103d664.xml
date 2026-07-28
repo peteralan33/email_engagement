@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary">
+    <ais_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <auto_refresh>24</auto_refresh>
+        <blocked_field/>
+        <case_sensitive>false</case_sensitive>
+        <data_source/>
+        <derived>true</derived>
+        <field/>
+        <label>HCLS Case Classification from Email Int getHealthServiceDefinitions NASK Created Default Spell Check Dictionary</label>
+        <last_derived>2026-01-21 00:27:52</last_derived>
+        <locale>en</locale>
+        <name>x_snc_pab_ee_tkit_hcls_case_classification_from_email_int_gethealthservicedefinitions_nask_created_default_spell_check_dictionary</name>
+        <publish_id>216abde0-c193-4aa8-958e-932a54089dcc</publish_id>
+        <punctuation_sensitive>false</punctuation_sensitive>
+        <state>DRAFT</state>
+        <sys_class_name>ais_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 00:27:51</sys_created_on>
+        <sys_id>53e447fd93aa32509634f3990103d664</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_hcls_case_classification_from_email_int_gethealthservicedefinitions_nask_created_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_dictionary_53e447fd93aa32509634f3990103d664</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 01:12:50</sys_updated_on>
+        <type>SPELLCHECK</type>
+    </ais_dictionary>
+</record_update>

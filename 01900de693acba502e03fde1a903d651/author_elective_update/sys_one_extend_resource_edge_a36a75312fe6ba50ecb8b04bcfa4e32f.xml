@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_resource_edge">
+    <sys_one_extend_resource_edge action="DELETE">
+        <active>true</active>
+        <applicability_condition_expression/>
+        <applicability_failed_policy/>
+        <applicability_script><![CDATA[(function(currentInputs, context) {  
+	/* @param {Object} currentInputs - Inputs provided for the current step.*/  
+	/* @param {Object} context - Execution context, which may include:*/     
+	/*         - Previous tool outputs/inputs (e.g., context['ToolName.attributeName'] or context.getValue('ToolName.attributeName')).*/     
+	/*         - Additional context information (e.g., context.getAllValues()).*/  
+	/* @returns {Boolean} - Return 'true' if the condition is met; otherwise 'false'.*/  
+	return true;
+  })(currentInputs, context);]]></applicability_script>
+        <applicability_type/>
+        <error_handler_script><![CDATA[(function handleError() {  
+	// customize condition logic here,  
+	return ;
+})();]]></error_handler_script>
+        <error_policy/>
+        <from_resource display_value="searchForCapitalMarketKnowledge">4f6af1312fe6ba50ecb8b04bcfa4e35b</from_resource>
+        <internal_name>searchForCapitalMarketKnowledge__getServiceDefinitions</internal_name>
+        <name>edge</name>
+        <order>0</order>
+        <sys_class_name>sys_one_extend_resource_edge</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:02:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a36a75312fe6ba50ecb8b04bcfa4e32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>edge</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_one_extend_resource_edge_a36a75312fe6ba50ecb8b04bcfa4e32f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:02:23</sys_updated_on>
+        <to_resource display_value="getServiceDefinitions">5b6a35312fe6ba50ecb8b04bcfa4e31d</to_resource>
+    </sys_one_extend_resource_edge>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>6ef21738fbce36dc0c92f633beefdc6a</instance_id>
+        <instance_name>demoalectrihclszu136922</instance_name>
+        <name>sys_one_extend_resource_edge_a36a75312fe6ba50ecb8b04bcfa4e32f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_one_extend_resource_edge"&gt;&lt;sys_one_extend_resource_edge action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applicability_condition_expression/&gt;&lt;applicability_failed_policy/&gt;&lt;applicability_script&gt;&lt;![CDATA[(function(currentInputs, context) {  
+	/* @param {Object} currentInputs - Inputs provided for the current step.*/  
+	/* @param {Object} context - Execution context, which may include:*/     
+	/*         - Previous tool outputs/inputs (e.g., context['ToolName.attributeName'] or context.getValue('ToolName.attributeName')).*/     
+	/*         - Additional context information (e.g., context.getAllValues()).*/  
+	/* @returns {Boolean} - Return 'true' if the condition is met; otherwise 'false'.*/  
+	return true;
+  })(currentInputs, context);]]&gt;&lt;/applicability_script&gt;&lt;applicability_type/&gt;&lt;error_handler_script&gt;&lt;![CDATA[(function handleError() {  
+	// customize condition logic here,  
+	return ;
+})();]]&gt;&lt;/error_handler_script&gt;&lt;error_policy/&gt;&lt;from_resource display_value="searchForCapitalMarketKnowledge"&gt;4f6af1312fe6ba50ecb8b04bcfa4e35b&lt;/from_resource&gt;&lt;internal_name&gt;searchForCapitalMarketKnowledge__getServiceDefinitions&lt;/internal_name&gt;&lt;name&gt;edge&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;sys_class_name&gt;sys_one_extend_resource_edge&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-20 19:02:23&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a36a75312fe6ba50ecb8b04bcfa4e32f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;edge&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_one_extend_resource_edge_a36a75312fe6ba50ecb8b04bcfa4e32f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-20 19:02:23&lt;/sys_updated_on&gt;&lt;to_resource display_value="getServiceDefinitions"&gt;5b6a35312fe6ba50ecb8b04bcfa4e31d&lt;/to_resource&gt;&lt;/sys_one_extend_resource_edge&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1841711424</payload_hash>
+        <record_name>edge</record_name>
+        <reverted_from/>
+        <source>09927d20936af6509634f3990103d697</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:02:23</sys_created_on>
+        <sys_id>6f6a75312fe6ba50ecb8b04bcfa4e332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bdcc9614f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:02:23</sys_updated_on>
+        <type>OneExtend Resource Edge</type>
+        <update_guid>eb6a7531dee6ba50c230380775dbe431</update_guid>
+        <update_guid_history>eb6a7531dee6ba50c230380775dbe431:-1841711424</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:08:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_one_extend_resource_edge">sys_one_extend_resource_edge</sys_db_object>
+        <sys_id>0deb2f31787f4a05a823900d2a7c3581</sys_id>
+        <sys_metadata>a36a75312fe6ba50ecb8b04bcfa4e32f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>edge</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_one_extend_resource_edge_a36a75312fe6ba50ecb8b04bcfa4e32f</sys_update_name>
+        <sys_update_version display_value="sys_one_extend_resource_edge_a36a75312fe6ba50ecb8b04bcfa4e32f">6f6a75312fe6ba50ecb8b04bcfa4e332</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:08:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_resource_mapping">
+    <sys_one_extend_resource_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability_condition/>
+        <applicability_condition_expression/>
+        <applicability_condition_table/>
+        <applicability_failed_policy/>
+        <applicability_script><![CDATA[(function(currentInputs, context) {
+    /* @param {Object} currentInputs - Inputs provided for the current step.*/
+    /* @param {Object} context - Execution context, which may include:*/
+    /*						   - Previous tool outputs/inputs (e.g., context['ToolName.attributeName'] or context.getValue('ToolName.attributeName')).*/
+    /*						   - Additional context information (e.g., context.getAllValues()).*/
+    /* @returns {Boolean} - Return 'true' if the condition is met; otherwise 'false'.*/
+    return true;
+})(currentInputs, context);]]></applicability_script>
+        <applicability_type/>
+        <depends_on_list/>
+        <error_handler_script><![CDATA[(function handleError() {  
+	// customize condition logic here,  
+	return ;
+})();]]></error_handler_script>
+        <error_policy/>
+        <metadata>{"isCreatedWithSkillDiagram":true}</metadata>
+        <parent_capability display_value="ZZZ Case Classification from Email Int">666afdfd2fa6ba50ecb8b04bcfa4e32a</parent_capability>
+        <resource_capability display_value="1cd448c293c536d00f91fce79503d620_Look up">995c8446930936d00f91fce79503d64d</resource_capability>
+        <resource_name>LookUpEmails</resource_name>
+        <sys_class_name>sys_one_extend_resource_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:02:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ea6ab1312fe6ba50ecb8b04bcfa4e310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LookUpEmails</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_one_extend_resource_mapping_ea6ab1312fe6ba50ecb8b04bcfa4e310</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 19:02:19</sys_updated_on>
+    </sys_one_extend_resource_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=ea6ab1312fe6ba50ecb8b04bcfa4e310"/>
+</record_update>

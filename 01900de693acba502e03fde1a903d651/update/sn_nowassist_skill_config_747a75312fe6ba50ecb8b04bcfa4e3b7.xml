@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config">
+    <sn_nowassist_skill_config action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <description><![CDATA[The Determine Case Classification from Email Interaction (DCCEI) skill automatically analyzes a specific type of interaction record—one where the source is an email—to accurately identify and determine the precise support case category and sub-category. This classification uses the email&#39;s content (subject line, body text, and context of any attachments within the record) to initiate the correct workflow and ensure accurate routing.]]></description>
+        <edited_in_nask>false</edited_in_nask>
+        <in_product_active>false</in_product_active>
+        <in_product_roles/>
+        <internal_name>hcls_case_classification_from_email_int.747a75312fe6ba50ecb8b04bcfa4e3b7</internal_name>
+        <is_template>false</is_template>
+        <name>ZZZ Case Classification from Email Int</name>
+        <nap_skill_applicability/>
+        <order>100</order>
+        <parent/>
+        <skill_family display_value="Other">a5efaf1c93764210aa5730f16489186d</skill_family>
+        <skill_id>666afdfd2fa6ba50ecb8b04bcfa4e32a</skill_id>
+        <skill_table>sys_one_extend_capability</skill_table>
+        <state>0</state>
+        <success_message/>
+        <sys_class_name>sn_nowassist_skill_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 19:02:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>747a75312fe6ba50ecb8b04bcfa4e3b7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ZZZ Case Classification from Email Int</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_747a75312fe6ba50ecb8b04bcfa4e3b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 00:49:51</sys_updated_on>
+    </sn_nowassist_skill_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=747a75312fe6ba50ecb8b04bcfa4e3b7"/>
+</record_update>
