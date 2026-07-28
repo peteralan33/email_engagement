@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_pab_ee_tkit.CallbackRecordCreation</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CallbackRecordCreation</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CallbackRecordCreation = Class.create();
+CallbackRecordCreation.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    executeCallbackSubflow: function() {
+        gs.info('[CALLBACK SERVER LOG] Running subflow execution script via Email Toolkit handoff.');
+        
+        try {
+            // 1. Gather fields safely passed over from the workspace modal payload
+            var reason        = this.getParameter('sysparm_reason');
+            var details       = this.getParameter('sysparm_details');
+            var phone         = this.getParameter('sysparm_phone');
+            var contextCase   = this.getParameter('sysparm_context');
+            var interactionId = this.getParameter('sysparm_interaction');
+
+            gs.info('[CALLBACK SERVER LOG] Subflow parameters verified -> Interaction: ' + interactionId + ' | Context: ' + contextCase);
+
+            // 2. Map fields to exactly match your Flow Designer Subflow schema inputs
+            var inputs = {};
+            inputs['callback_context']    = contextCase; 
+            inputs['interaction_sys_id']  = interactionId; 
+            inputs['callback_number']     = phone; 
+            inputs['callback_reason']     = details; 
+            inputs['reason_for_the_call'] = reason; 
+
+            gs.info('[CALLBACK SERVER LOG] Triggering Flow Runner Engine for: x_snc_pab_ee_tkit.create_a_callback_activity');
+
+            // 3. Execute Synchronously inside the foreground pipeline block
+            var result = sn_fd.FlowAPI.getRunner()
+                .subflow('x_snc_pab_ee_tkit.create_a_callback_activity')
+                .inForeground()
+                .withInputs(inputs)
+                .run();
+                
+            var outputs = result.getOutputs();
+            var callback_activity_notes = outputs['callback_activity_notes'] || '';
+            
+            gs.info('[CALLBACK SERVER LOG] Execution complete. Subflow output notes: ' + callback_activity_notes);
+            
+            return JSON.stringify({ 
+                status: 'success', 
+                notes: callback_activity_notes 
+            });
+
+        } catch (ex) {
+            var message = ex.getMessage ? ex.getMessage() : ex.message;
+            gs.error('[CALLBACK SERVER ERROR] Fatal subflow execution exception: ' + message);
+            return JSON.stringify({ status: 'error', message: message });
+        }
+    },
+
+    type: 'CallbackRecordCreation'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 06:15:25</sys_created_on>
+        <sys_id>0d8f8fe12f028b14b846c63bcfa4e3b0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>CallbackRecordCreation</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_script_include_0d8f8fe12f028b14b846c63bcfa4e3b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-13 06:26:29</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>0d8f8fe12f028b14b846c63bcfa4e3b0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 06:15:26</sys_created_on>
+        <sys_id>d58f8fe12f028b14b846c63bcfa4e3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-13 06:15:26</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

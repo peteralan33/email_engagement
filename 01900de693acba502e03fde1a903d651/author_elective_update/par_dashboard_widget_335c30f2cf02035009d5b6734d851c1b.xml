@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">5b5cbcb2cf02035009d5b6734d851cd0</canvas>
+        <component display_value="Divider">8cd779b506633a71bf8d127531094cdc</component>
+        <component_props>{"orientation":"vertical","layout":"fixedlength","length":"300"}</component_props>
+        <h>7</h>
+        <name/>
+        <required_translations>[]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:44:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>335c30f2cf02035009d5b6734d851c1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>par_dashboard_widget_335c30f2cf02035009d5b6734d851c1b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 16:44:56</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>29</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>par_dashboard_widget_335c30f2cf02035009d5b6734d851c1b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">5b5cbcb2cf02035009d5b6734d851cd0</canvas><component display_value="Divider">8cd779b506633a71bf8d127531094cdc</component><component_props>{"orientation":"vertical","layout":"fixedlength","length":"300"}</component_props><h>7</h><name/><required_translations>[]</required_translations><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-16 16:44:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>335c30f2cf02035009d5b6734d851c1b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>par_dashboard_widget_335c30f2cf02035009d5b6734d851c1b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-16 16:44:56</sys_updated_on><visualization/><w>48</w><widget_props/><x>0</x><y>29</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1151067180</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:44:56</sys_created_on>
+        <sys_id>7f5c30f2cf02035009d5b6734d851c1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6bd1254f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 16:44:56</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>fb5c30f283020350250896e1fa62501d</update_guid>
+        <update_guid_history>fb5c30f283020350250896e1fa62501d:1151067180</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">b7dcb476cf02035009d5b6734d851cdb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 16:47:07</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>9376cec8600e4a9aade7ec2a37d6a724</sys_id>
+        <sys_metadata>335c30f2cf02035009d5b6734d851c1b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_335c30f2cf02035009d5b6734d851c1b</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_335c30f2cf02035009d5b6734d851c1b">7f5c30f2cf02035009d5b6734d851c1e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 16:47:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

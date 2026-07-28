@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>sn_customerservice_case</collection>
+        <email_layout display_value="Toolkit Layout">eacd7b26fb1c92907bdafb4655efdca4</email_layout>
+        <message/>
+        <message_html><![CDATA[<p data-path-to-node="2">Hi ${consumer.first_name},</p>
+<p data-path-to-node="3">Thank you for reaching out to ServiceNow.&nbsp;</p>
+<p data-path-to-node="4">Your request has been processed through our specialized service framework to ensure it is routed to the correct expert team for immediate attention.</p>
+<p data-path-to-node="4">Please see a response for your review below.</p>
+<hr data-path-to-node="5">
+<p>AI Suggested Response: ${x_snc_pab_ee_tkit_ai_suggested_response}</p>
+<hr data-path-to-node="8">
+<p data-pm-slice="1 1 []">Our Commitment to Service: By modernizing our internal workflows and improving request routing, we aim to reduce processing times and enhance the efficiency of our services. This focus on operational excellence is a core part of our commitment to serving you effectively and responsibly.</p>
+<p>We will provide a further update as soon as your case progresses.</p>
+<p data-path-to-node="11">Best regards,</p>
+<p data-path-to-node="12">ServiceNow</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Here is your response via AI</name>
+        <sms_alternate/>
+        <subject>Here is your response - ${number}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 14:56:18</sys_created_on>
+        <sys_id>636ab1da2f8d8710b14f861cbfa4e3d0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Here is your response via AI</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sysevent_email_template_636ab1da2f8d8710b14f861cbfa4e3d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-18 01:39:19</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

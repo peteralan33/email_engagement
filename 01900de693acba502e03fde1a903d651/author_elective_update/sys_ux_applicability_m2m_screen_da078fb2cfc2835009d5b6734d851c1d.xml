@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="DELETE">
+        <active>true</active>
+        <applicability display_value="Banking - CSR Agents">5939fb313fa6f2108cf0819d001f8b47</applicability>
+        <order>0</order>
+        <screen display_value="FSO Interaction Record Page (Channel Eng)">1e074fb2cfc2835009d5b6734d851cfa</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:46</sys_created_on>
+        <sys_id>da078fb2cfc2835009d5b6734d851c1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_da078fb2cfc2835009d5b6734d851c1d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:46</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_applicability_m2m_screen_da078fb2cfc2835009d5b6734d851c1d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen"><sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE"><active>true</active><applicability display_value="Banking - CSR Agents">5939fb313fa6f2108cf0819d001f8b47</applicability><order>0</order><screen display_value="FSO Interaction Record Page (Channel Eng)">1e074fb2cfc2835009d5b6734d851cfa</screen><sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-17 02:50:46</sys_created_on><sys_id>da078fb2cfc2835009d5b6734d851c1d</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_ux_applicability_m2m_screen_da078fb2cfc2835009d5b6734d851c1d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-17 02:50:46</sys_updated_on></sys_ux_applicability_m2m_screen></record_update>]]></payload>
+        <payload_hash>-317159625</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:46</sys_created_on>
+        <sys_id>da078fb2cfc2835009d5b6734d851c23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6dfbce380000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:46</sys_updated_on>
+        <type>Screen Applicability</type>
+        <update_guid>1a078fb231c2835028c7f61cf3e4bc22</update_guid>
+        <update_guid_history>1a078fb231c2835028c7f61cf3e4bc22:-317159625</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 02:52:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability_m2m_screen">sys_ux_applicability_m2m_screen</sys_db_object>
+        <sys_id>27122eab89d7492186f67006bed315a9</sys_id>
+        <sys_metadata>da078fb2cfc2835009d5b6734d851c1d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_m2m_screen_da078fb2cfc2835009d5b6734d851c1d</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_m2m_screen_da078fb2cfc2835009d5b6734d851c1d">da078fb2cfc2835009d5b6734d851c23</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:52:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

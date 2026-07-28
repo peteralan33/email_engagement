@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1516077993f8cb9051fcffe03603d644" label="Service Definition Categories" max_length="40" name="x_snc_pab_ee_tkit_sd_cat" type="collection">
+        <element display="true" label="Category" max_length="40" name="category" type="string"/>
+    </element>
+</database>

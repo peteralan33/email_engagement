@@ -2,9 +2,14 @@
     <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
         <active>true</active>
         <agent display_value="Email Triage and Classification Agent">9510f586938576d00f91fce79503d6a4</agent>
-        <description>This tool is used when the user requests a summarization of an image attachment, or a summarization of the image attachments on a record.</description>
+        <description>This tool is used when the user requests a summarization of an image attachment, or a summarization of the image attachments on a record.
+
+Provide a detail summarization of each document that has been provided.</description>
+        <display_mode>inline</display_mode>
         <display_output>true</display_output>
         <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>9510f586938576d00f91fce79503d6a4</entity_id>
         <execution_mode>autopilot</execution_mode>
         <inputs>[{"name":"attachment_sys_ids","value":"","description":"list of sys_ids for the attachments to use as a document for summarization","invalidMessage":null}]</inputs>
         <max_auto_executions>10</max_auto_executions>
@@ -14,12 +19,15 @@
         <post_processing_script/>
         <pre_message>Summarizing attachments</pre_message>
         <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
         <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-12-29 01:57:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>ccdc38e6938e32540f91fce79503d662</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Summarize attachments on interaction</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -27,10 +35,11 @@
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sn_aia_agent_tool_m2m_ccdc38e6938e32540f91fce79503d662</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-12-29 01:57:13</sys_updated_on>
+        <sys_updated_on>2026-06-17 23:05:39</sys_updated_on>
         <timeout/>
         <tool display_value="Summarize attachments on interaction">ffccb4e6938e32540f91fce79503d6bf</tool>
         <tool_attributes>{}</tool_attributes>
         <transformation_instructions/>
+        <widgets/>
     </sn_aia_agent_tool_m2m>
 </record_update>

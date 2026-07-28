@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_response_template_to_channel">
+    <m2m_response_template_to_channel action="INSERT_OR_UPDATE">
+        <channel display_value="Email">e2d9050c3b4300105a18802b13efc43f</channel>
+        <response_template display_value="City of Vancouver - Service Request Follow-Up">932055fe2fc64750b14f861cbfa4e3d3</response_template>
+        <sys_class_name>m2m_response_template_to_channel</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 18:11:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>48405932cf86035009d5b6734d851ced</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Email.City of Vancouver - Service Request Follow-Up</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>m2m_response_template_to_channel_48405932cf86035009d5b6734d851ced</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 18:11:47</sys_updated_on>
+    </m2m_response_template_to_channel>
+</record_update>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Pete's Voice Engagement Interaction Record">df785507cfc2075009d5b6734d851c50</macroponent>
+        <name>update location selected</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    console.log('yeet event payload', event.payload);
+    // var defaultRemoved = api.state.locationSelected.filter(marker => marker.type !== "");
+    
+    // var locationSelected = {
+    //     "latitude": event.payload.latitude,
+    //     "longitude": event.payload.longitude,
+    //     "type": "",
+    //     "displayValue": event.payload.address 
+    // }
+    // defaultRemoved.push(locationSelected);
+    // api.setState('locationSelected', defaultRemoved);
+    // console.log('state: ' + api.state.locationSelected);
+
+    // api.setState('defaultLocation', {"latitude": event.payload.latitude, "longitude": event.payload.longitude});
+    // console.log('defaultLocation', api.state.defaultLocation);
+    api.setState('latitude', event.payload.latitude);
+    api.setState('longitude', event.payload.longitude);
+    api.setState('locationName', event.payload.name);
+    
+    api.data.check_for_markers_then_update__1.execute();
+    // ({
+    //     latitude: event.payload.latitude,
+    //     longitude: event.payload.longitude
+    // });
+    //console.log('output yeet', api.data.check_for_markers_then_update__1.output);
+    //api.setState("locationSelected", api.data.check_for_markers_then_update__1.output);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 13:26:17</sys_created_on>
+        <sys_id>fb785907cfc2075009d5b6734d851c56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>update location selected</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_fb785907cfc2075009d5b6734d851c56</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 13:26:17</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

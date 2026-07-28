@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Motor Vehicle Expense Reimbursement Response Email">57b932d92f2d4bd0b14f861cbfa4e31d</agent>
+        <description>Description: Retrieves the full context, communication history, and metadata of a specific municipal property tax ticket. Use this tool immediately after the user provides a case identification number to gather the raw intelligence needed to synthesize a response draft.
+
+Input Parameters:
+Parameter Name: case_number
+Data Type: String
+Required: Yes
+Description: The unique ticket identifier (e.g., Case Number or Case Sys ID) for the property tax enquiry.
+Example: CS0030156 or 4274a1f6934d479051fcffe03603d605
+
+Output Schema (What the tool returns to the AI):
+When executed, the tool will return a data object containing the following information, which the agent must parse to generate the email draft.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>747ea95e2f498710b14f861cbfa4e332</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Look Up Case Record</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-17 13:30:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ebb9bed92f2d4bd0b14f861cbfa4e39c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Look Up Case Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_ebb9bed92f2d4bd0b14f861cbfa4e39c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-17 13:30:24</sys_updated_on>
+        <timeout/>
+        <tool display_value="Look Up Case Record">45b1fd3e938d879051fcffe03603d6e4</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

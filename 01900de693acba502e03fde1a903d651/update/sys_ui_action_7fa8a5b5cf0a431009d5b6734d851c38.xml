@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>create_esc_record</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+    console.log('[ESC CLIENT] UI Action clicked successfully.');
+
+    var openModal = function() {
+        g_modal.showFields({
+            title: 'Request Supervisor Assistance',
+            size: 'lg',
+            fields: [
+                { type: 'string', name: 'help_requested', label: 'Help Requested', mandatory: true },
+                { type: 'choice', name: 'supervisor_action', label: 'Supervisor Action', mandatory: true,
+                  choices: [
+                      { value: 'observe', displayValue: 'Observe' },
+                      { value: 'monitor', displayValue: 'Monitor' },
+                      { value: 'coach', displayValue: 'Coach' },
+                      { value: 'barge_in', displayValue: 'Barge In' }
+                  ]
+                },
+                { type: 'string', name: 'supervisor_group_display', label: 'Supervisor Group', value: 'Contact Centre Supervisors', disabled: true }
+            ]
+        }).then(function(result) {
+            console.log('[ESC CLIENT] Modal submitted. Extracting fields cleanly...');
+            
+            var getVal = function(name, defaultValue) {
+                if (result && result.updatedFields) {
+                    var field = result.updatedFields.filter(function(f) { return f.name === name; })[0];
+                    if (field) return field.value;
+                }
+                return defaultValue || '';
+            };
+
+            var helpText = getVal('help_requested', '');
+            var actionType = getVal('supervisor_action', 'observe');
+            var interactionSysId = g_form.getUniqueValue();
+            var defaultGroupSysId = 'bc4fe9f9cf8a431009d5b6734d851c73'; 
+
+            var ga = new GlideAjax('x_snc_pab_ee_tkit.EscRecordCreation');
+            ga.addParam('sysparm_name', 'executeEscalationSubflow');
+            ga.addParam('sysparm_interaction', interactionSysId);
+            ga.addParam('sysparm_help_requested', helpText);
+            ga.addParam('sysparm_supervisor_action', actionType);
+            ga.addParam('sysparm_supervisor_group', defaultGroupSysId);
+
+            ga.getXMLAnswer(function(response) {
+                g_form.clearMessages();
+                console.log('[ESC CLIENT] Server tracking package returned: ' + response);
+                
+                try {
+                    if (!response) {
+                        showStaticAutoDismissBanner('Received empty response payload from the server.', true);
+                        return;
+                    }
+                    
+                    var parsed = JSON.parse(response);
+                    if (parsed && parsed.status === 'success') {
+                        var baseMsg = parsed.notes ? 'Escalation processed: ' + parsed.notes : 'Escalation activity created successfully.';
+                        showStaticAutoDismissBanner(baseMsg, false);
+                        g_form.reload();
+                    } else {
+                        showStaticAutoDismissBanner(parsed.message || 'Escalation subflow tracking failure.', true);
+                    }
+                } catch(err) {
+                    showStaticAutoDismissBanner('An error occurred while processing the escalation pipeline stream.', true);
+                }
+            });
+        });
+    };
+
+    // Helper function to render a solid, non-flashing banner that auto-dismisses after 5 seconds
+    function showStaticAutoDismissBanner(baseMessage, isError) {
+        g_form.clearMessages();
+        
+        // Append a clean suffix so agents know it will close on its own
+        var fullMessage = baseMessage + ' (Notification clearing in 5s)';
+        
+        if (isError) {
+            g_form.addErrorMessage(fullMessage);
+        } else {
+            g_form.addInfoMessage(fullMessage);
+        }
+
+        // Quietly clear the message once after 5000ms without intermediate rendering updates
+        setTimeout(function() {
+            if (typeof g_form !== 'undefined' && g_form.clearMessages) {
+                g_form.clearMessages();
+            }
+        }, 5000);
+    }
+
+    openModal();
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_icon/>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>destructive</form_style>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_button_icon/>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Escalate</name>
+        <onclick/>
+        <order>20</order>
+        <script/>
+        <show_form_icon_only>false</show_form_icon_only>
+        <show_insert>true</show_insert>
+        <show_list_icon_only>false</show_list_icon_only>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-13 17:24:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7fa8a5b5cf0a431009d5b6734d851c38</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Escalate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ui_action_7fa8a5b5cf0a431009d5b6734d851c38</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-20 01:36:21</sys_updated_on>
+        <table>interaction</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

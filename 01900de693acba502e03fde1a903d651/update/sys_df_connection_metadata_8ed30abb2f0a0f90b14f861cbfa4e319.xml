@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_df_connection_metadata">
+    <sys_df_connection_metadata action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <connection_label>External Customer Data</connection_label>
+        <connection_name>x_snc_pab_ee_tkit_external_customer_data</connection_name>
+        <connector display_value="snc_bigquery">8f97294d375352109f982bc4f3924bfb</connector>
+        <data_steward_roles/>
+        <order>100</order>
+        <selected_section_choices>[]</selected_section_choices>
+        <short_description/>
+        <sys_class_name>sys_df_connection_metadata</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-20 00:31:07</sys_created_on>
+        <sys_id>8ed30abb2f0a0f90b14f861cbfa4e319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_external_customer_data</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_df_connection_metadata_8ed30abb2f0a0f90b14f861cbfa4e319</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-20 00:31:07</sys_updated_on>
+    </sys_df_connection_metadata>
+</record_update>

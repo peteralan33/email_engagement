@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="FSO Interaction Record Page">75078bb2cfc2835009d5b6734d851cfc</macroponent>
+        <name>secondary_items/isHidden</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+
+    var formFields = api.data.record.form ? api.data.record.form.fields : false;
+    var formFieldsState = formFields ? formFields.state : false;
+    var stateValue = formFieldsState ? formFieldsState.value : false;
+    if (api.data.ribbonCtrl.secondaryItemsHeader)
+        return false;
+    else if (!api.data.wrap_up.enabledCodes && stateValue === 'wrap_up' && api.data.wrap_up.timeLeftInSecond > 0 && api.data.wrap_up.showTimer)
+        return false;
+    else
+        return true;
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:45</sys_created_on>
+        <sys_id>86074fb2cfc2835009d5b6734d851cc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>secondary_items/isHidden</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_86074fb2cfc2835009d5b6734d851cc6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:45</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_client_script_86074fb2cfc2835009d5b6734d851cc6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="FSO Interaction Record Page"&gt;75078bb2cfc2835009d5b6734d851cfc&lt;/macroponent&gt;&lt;name&gt;secondary_items/isHidden&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+
+    var formFields = api.data.record.form ? api.data.record.form.fields : false;
+    var formFieldsState = formFields ? formFields.state : false;
+    var stateValue = formFieldsState ? formFieldsState.value : false;
+    if (api.data.ribbonCtrl.secondaryItemsHeader)
+        return false;
+    else if (!api.data.wrap_up.enabledCodes &amp;&amp; stateValue === 'wrap_up' &amp;&amp; api.data.wrap_up.timeLeftInSecond &gt; 0 &amp;&amp; api.data.wrap_up.showTimer)
+        return false;
+    else
+        return true;
+
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-17 02:50:45&lt;/sys_created_on&gt;&lt;sys_id&gt;86074fb2cfc2835009d5b6734d851cc6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;secondary_items/isHidden&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_86074fb2cfc2835009d5b6734d851cc6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-17 02:50:45&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-335247655</payload_hash>
+        <record_name>secondary_items/isHidden</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:45</sys_created_on>
+        <sys_id>8e074fb2cfc2835009d5b6734d851cd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6dfbca140000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:45</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>0e074fb246c28350490bb3d1d564d8d5</update_guid>
+        <update_guid_history>0e074fb246c28350490bb3d1d564d8d5:-335247655</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-17 12:37:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>d85bb6d6a1184510ae64cf824f766100</sys_id>
+        <sys_metadata>86074fb2cfc2835009d5b6734d851cc6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>secondary_items/isHidden</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_86074fb2cfc2835009d5b6734d851cc6</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_86074fb2cfc2835009d5b6734d851cc6">8e074fb2cfc2835009d5b6734d851cd6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-17 12:37:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

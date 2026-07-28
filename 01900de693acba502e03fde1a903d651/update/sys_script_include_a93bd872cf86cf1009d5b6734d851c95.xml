@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_pab_ee_tkit.SendSMSviaInteraction</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SendSMSviaInteraction</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SendSMSviaInteraction = Class.create();
+SendSMSviaInteraction.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    executeSmsSubflow: function() {
+        gs.info('[SMS SERVER LOG] Initializing SMS subflow handoff via SendSMSviaInteraction.');
+        
+        try {
+            var interactionId = this.getParameter('sysparm_interaction');
+            var reasonMessage = this.getParameter('sysparm_reason');
+            var smsText       = this.getParameter('sysparm_message');
+
+            gs.info('[SMS SERVER LOG] Parameters verified -> Interaction: ' + interactionId);
+
+            // Fetch the Interaction GlideRecord to pass as a reference object
+            var interactionGr = new GlideRecord('interaction');
+            if (!interactionGr.get(interactionId)) {
+                return JSON.stringify({ status: 'error', message: 'Could not find a valid Interaction record with the provided Sys ID.' });
+            }
+
+            var inputs = {};
+            inputs['interaction_sys_id'] = interactionGr; 
+            inputs['reason_for_message'] = reasonMessage;  
+            inputs['message_to_send']    = smsText;        
+
+            gs.info('[SMS SERVER LOG] Triggering Flow Runner Engine for: x_snc_pab_ee_tkit.send_sms_notification_int_eng');
+
+            var result = sn_fd.FlowAPI.getRunner()
+                .subflow('x_snc_pab_ee_tkit.send_sms_notification_int_eng')
+                .inForeground()
+                .withInputs(inputs)
+                .run();
+                
+            var outputs = result.getOutputs();
+            var sms_message_stats = outputs['sms_message_stats'] || '';
+            
+            gs.info('[SMS SERVER LOG] Subflow completed. Output status: ' + sms_message_stats);
+            
+            return JSON.stringify({ 
+                status: 'success', 
+                notes: sms_message_stats 
+            });
+
+        } catch (ex) {
+            var message = ex.getMessage ? ex.getHTMLValue() : ex.message;
+            gs.error('[SMS SERVER ERROR] Fatal SMS subflow exception: ' + message);
+            return JSON.stringify({ status: 'error', message: message });
+        }
+    },
+
+    type: 'SendSMSviaInteraction'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 14:21:14</sys_created_on>
+        <sys_id>a93bd872cf86cf1009d5b6734d851c95</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SendSMSviaInteraction</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_script_include_a93bd872cf86cf1009d5b6734d851c95</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-20 02:16:44</sys_updated_on>
+    </sys_script_include>
+</record_update>

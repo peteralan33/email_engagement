@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="DELETE">
+        <before>false</before>
+        <description/>
+        <name>Create Link to Interaction Search Action</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var gr = new GlideRecord('cxs_ui_action_config');
+gr.initialize();
+gr.setValue('search_ui_config', '6eeed8f6dbbaa3402a4a9cb8db96190f');
+gr.setValue('search_resource', 'com.snc.contextual_search.search_resource.KnowledgeSearchResource');
+gr.setValue('search_ui_action', 'd587f286872a0300692cbba826cb0b6a');
+gr.setValue('action_label', 'Link to Interaction');
+gr.setValue('action_value', 'Attach');
+gr.setValue('active', true);
+gr.setValue('show_on_new', true);
+gr.setValue('order', 150);
+gr.setValue('sys_scope', 'global');
+var sysId = gr.insert();
+gs.info('Create Link to Interaction Search Action Config completed. Sys ID: ' + sysId);]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-09 18:29:26</sys_created_on>
+        <sys_id>de2199a82f8a4bd0b846c63bcfa4e38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Link to Interaction Search Action</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_script_fix_de2199a82f8a4bd0b846c63bcfa4e38c</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-09 18:29:26</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_script_fix_de2199a82f8a4bd0b846c63bcfa4e38c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_fix"&gt;&lt;sys_script_fix action="INSERT_OR_UPDATE"&gt;&lt;before&gt;false&lt;/before&gt;&lt;description/&gt;&lt;name&gt;Create Link to Interaction Search Action&lt;/name&gt;&lt;record_for_rollback&gt;true&lt;/record_for_rollback&gt;&lt;script&gt;&lt;![CDATA[var gr = new GlideRecord('cxs_ui_action_config');
+gr.initialize();
+gr.setValue('search_ui_config', '6eeed8f6dbbaa3402a4a9cb8db96190f');
+gr.setValue('search_resource', 'com.snc.contextual_search.search_resource.KnowledgeSearchResource');
+gr.setValue('search_ui_action', 'd587f286872a0300692cbba826cb0b6a');
+gr.setValue('action_label', 'Link to Interaction');
+gr.setValue('action_value', 'Attach');
+gr.setValue('active', true);
+gr.setValue('show_on_new', true);
+gr.setValue('order', 150);
+gr.setValue('sys_scope', 'global');
+var sysId = gr.insert();
+gs.info('Create Link to Interaction Search Action Config completed. Sys ID: ' + sysId);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_fix&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ag.mcp&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-09 18:29:26&lt;/sys_created_on&gt;&lt;sys_id&gt;de2199a82f8a4bd0b846c63bcfa4e38c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Link to Interaction Search Action&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fix_de2199a82f8a4bd0b846c63bcfa4e38c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ag.mcp&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-09 18:29:26&lt;/sys_updated_on&gt;&lt;unloadable&gt;false&lt;/unloadable&gt;&lt;/sys_script_fix&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1033111493</payload_hash>
+        <record_name>Create Link to Interaction Search Action</record_name>
+        <reverted_from/>
+        <source>40d40d242fc64754b14f861cbfa4e32b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-09 18:29:26</sys_created_on>
+        <sys_id>922199a82f8a4bd0b846c63bcfa4e393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f48244ef50000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-09 18:29:26</sys_updated_on>
+        <type>Fix Script</type>
+        <update_guid>de2199a88a8a4bd02bbd497dec846891</update_guid>
+        <update_guid_history>de2199a88a8a4bd02bbd497dec846891:1033111493</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-09 18:56:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
+        <sys_id>45adf7e967f5450082caa2b3e9a3fb90</sys_id>
+        <sys_metadata>de2199a82f8a4bd0b846c63bcfa4e38c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Link to Interaction Search Action</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_script_fix_de2199a82f8a4bd0b846c63bcfa4e38c</sys_update_name>
+        <sys_update_version display_value="sys_script_fix_de2199a82f8a4bd0b846c63bcfa4e38c">922199a82f8a4bd0b846c63bcfa4e393</sys_update_version>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-09 18:56:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

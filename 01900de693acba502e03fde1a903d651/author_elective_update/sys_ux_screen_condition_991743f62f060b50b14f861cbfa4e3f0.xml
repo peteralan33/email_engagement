@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_condition">
+    <sys_ux_screen_condition action="DELETE">
+        <active>true</active>
+        <conditions_params_mapping>{}</conditions_params_mapping>
+        <is_result_memoizable>false</is_result_memoizable>
+        <screen display_value="Active Call Interaction Control default">191743f62f060b50b14f861cbfa4e3e3</screen>
+        <screen_condition/>
+        <script><![CDATA[(function activeCallComponentScriptCondition(params) {
+    var sysId = params.sysId;
+    var table = params.table;
+    if (!gs.nil(sysId) && !gs.nil(table)) {
+        var input = {
+            "table": table,
+            "sysId": sysId
+        };
+        return new ICCHelper().canShowActiveCallComponent(input);
+    }
+    return false;
+})(inputProperties);]]></script>
+        <scripted_condition>true</scripted_condition>
+        <sys_class_name>sys_ux_screen_condition</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:58</sys_created_on>
+        <sys_id>991743f62f060b50b14f861cbfa4e3f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>191743f62f060b50b14f861cbfa4e3e3</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_screen_condition_991743f62f060b50b14f861cbfa4e3f0</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:58</sys_updated_on>
+    </sys_ux_screen_condition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_screen_condition_991743f62f060b50b14f861cbfa4e3f0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_screen_condition"&gt;&lt;sys_ux_screen_condition action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions_params_mapping&gt;{}&lt;/conditions_params_mapping&gt;&lt;is_result_memoizable&gt;false&lt;/is_result_memoizable&gt;&lt;screen display_value="Active Call Interaction Control default"&gt;191743f62f060b50b14f861cbfa4e3e3&lt;/screen&gt;&lt;screen_condition/&gt;&lt;script&gt;&lt;![CDATA[(function activeCallComponentScriptCondition(params) {
+    var sysId = params.sysId;
+    var table = params.table;
+    if (!gs.nil(sysId) &amp;&amp; !gs.nil(table)) {
+        var input = {
+            "table": table,
+            "sysId": sysId
+        };
+        return new ICCHelper().canShowActiveCallComponent(input);
+    }
+    return false;
+})(inputProperties);]]&gt;&lt;/script&gt;&lt;scripted_condition&gt;true&lt;/scripted_condition&gt;&lt;sys_class_name&gt;sys_ux_screen_condition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;system&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-17 02:50:58&lt;/sys_created_on&gt;&lt;sys_id&gt;991743f62f060b50b14f861cbfa4e3f0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;191743f62f060b50b14f861cbfa4e3e3&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_screen_condition_991743f62f060b50b14f861cbfa4e3f0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-17 02:50:58&lt;/sys_updated_on&gt;&lt;/sys_ux_screen_condition&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1355938696</payload_hash>
+        <record_name>191743f62f060b50b14f861cbfa4e3e3</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:58</sys_created_on>
+        <sys_id>111743f62f060b50b14f861cbfa4e3f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6dfbfc1d0000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:58</sys_updated_on>
+        <type>UX Screen Condition</type>
+        <update_guid>5d1743f618060b500e0453bc0d2d31f5</update_guid>
+        <update_guid_history>5d1743f618060b500e0453bc0d2d31f5:1355938696</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 12:37:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen_condition">sys_ux_screen_condition</sys_db_object>
+        <sys_id>2ae938bd60214e468798cdaa3055a644</sys_id>
+        <sys_metadata>991743f62f060b50b14f861cbfa4e3f0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>191743f62f060b50b14f861cbfa4e3e3</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_condition_991743f62f060b50b14f861cbfa4e3f0</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_condition_991743f62f060b50b14f861cbfa4e3f0">111743f62f060b50b14f861cbfa4e3f7</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 12:37:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1ce5006ccf4e0bd009d5b6734d851c0e" label="Interaction Intent Category" max_length="40" name="x_snc_pab_ee_tkit_interaction_intent_category" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Category" max_length="100" name="category" type="string"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
+    </element>
+</database>

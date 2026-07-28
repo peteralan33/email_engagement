@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_extension_point">
+    <sys_ux_extension_point action="INSERT_OR_UPDATE">
+        <app_shell display_value="UXR Base Experience Shell">76a83a645b122010b913030a1d81c780</app_shell>
+        <component/>
+        <controller display_value="Form">029f04e053610110ac9bddeeff7b1294</controller>
+        <controller_dependencies/>
+        <description>Page collection for the simulated transcript player viewport.</description>
+        <name>Simulated Transcript Page Collection</name>
+        <sys_class_name>sys_ux_extension_point</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-20 21:05:03</sys_created_on>
+        <sys_id>f04b9ac8cfde079009d5b6734d851cbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Simulated Transcript Page Collection</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_extension_point_f04b9ac8cfde079009d5b6734d851cbf</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-20 21:05:03</sys_updated_on>
+        <type>viewport</type>
+    </sys_ux_extension_point>
+    <sys_translated_text action="delete_multiple" query="documentkey=f04b9ac8cfde079009d5b6734d851cbf"/>
+</record_update>

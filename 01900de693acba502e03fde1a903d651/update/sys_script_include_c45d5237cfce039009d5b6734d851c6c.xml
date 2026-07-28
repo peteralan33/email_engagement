@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_pab_ee_tkit.ConfirmOTPViaInteraction</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ConfirmOTPViaInteraction</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ConfirmOTPViaInteraction = Class.create();
+ConfirmOTPViaInteraction.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    confirmAndValidateOTP: function() {
+        gs.info('[OTP SERVER LOG] Initializing OTP post-validation subflow execution.');
+
+        try {
+            var interactionId = this.getParameter('sysparm_interaction');
+            var userEnteredOtp = this.getParameter('sysparm_otp_code');
+
+            if (!interactionId) {
+                return JSON.stringify({ status: 'error', message: 'Missing Interaction Sys ID.' });
+            }
+
+            // Standardize reason and confirmation message for post-OTP subflow context
+            var reasonForMessage = 'Authentication Required';
+            var messageToSend    = 'OTP verified successfully: ' + (userEnteredOtp || 'N/A');
+
+            var inputs = {};
+            inputs['interaction_sys_id'] = interactionId;      // String 
+            inputs['reason_for_message'] = reasonForMessage;    // String 
+            inputs['message_to_send']    = messageToSend;       // String 
+
+            gs.info('[OTP SERVER LOG] Triggering Flow Runner Engine for: x_snc_pab_ee_tkit.update_interaction_post_otp');
+
+            // Execute Synchronously in foreground to capture outputs
+            var result = sn_fd.FlowAPI.getRunner()
+                .subflow('x_snc_pab_ee_tkit.update_interaction_post_otp')
+                .inForeground()
+                .withInputs(inputs)
+                .run();
+
+            var outputs = result.getOutputs();
+            var otp_message_stats = outputs['otp_message_stats'] || '';
+
+            gs.info('[OTP SERVER LOG] OTP subflow completed. Output status: ' + otp_message_stats);
+
+            return JSON.stringify({ 
+                status: 'success', 
+                notes: otp_message_stats 
+            });
+
+        } catch (ex) {
+            var message = ex.getMessage ? ex.getMessage() : ex.message;
+            gs.error('[OTP SERVER ERROR] Fatal OTP subflow exception: ' + message);
+            return JSON.stringify({ status: 'error', message: message });
+        }
+    },
+
+    type: 'ConfirmOTPViaInteraction'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-20 02:23:35</sys_created_on>
+        <sys_id>c45d5237cfce039009d5b6734d851c6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ConfirmOTPViaInteraction</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_script_include_c45d5237cfce039009d5b6734d851c6c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-20 02:23:35</sys_updated_on>
+    </sys_script_include>
+</record_update>

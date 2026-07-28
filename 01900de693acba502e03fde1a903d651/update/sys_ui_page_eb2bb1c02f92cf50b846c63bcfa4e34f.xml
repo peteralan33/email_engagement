@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_pab_ee_tkit_simulated_transcript_player.do</endpoint>
+        <html>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+&lt;div id="transcript-app-root"&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /&gt;
+    &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;amp;display=swap" /&gt;
+    
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"&gt;&lt;/script&gt;
+
+    &lt;div ng-app="transcriptApp" ng-controller="TranscriptCtrl" class="transcript-player-container"&gt;
+        &lt;!-- Header --&gt;
+        &lt;div class="player-header"&gt;
+            &lt;div class="header-title"&gt;
+                &lt;span class="pulse-indicator" ng-class="{'active': isPlaying}"&gt;&lt;/span&gt;
+                &lt;h3&gt;Simulated Call Transcript&lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="mode-toggle-group"&gt;
+                &lt;button class="btn-mode" ng-class="{'active': mode === 'mock'}" ng-click="setMode('mock')"&gt;Mock Script&lt;/button&gt;
+                &lt;button class="btn-mode" ng-class="{'active': mode === 'db'}" ng-click="setMode('db')"&gt;Database (Real)&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Dynamic Status Banners --&gt;
+        &lt;div class="status-banner live animate-fade-in" ng-if="isLive &amp;amp;&amp;amp; !transcriptReady"&gt;
+            &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;
+            &lt;span&gt;Live Call Streaming: The OOB Transcript tab will load once the call completes. You can watch the real-time simulation below!&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="status-banner ready animate-fade-in" ng-if="transcriptReady"&gt;
+            &lt;i class="fa fa-check-circle"&gt;&lt;/i&gt;
+            &lt;span&gt;Full Transcript Ready: The call has completed and the transcript is fully generated. You can now view the OOB Transcript tab.&lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Dialogue Box --&gt;
+        &lt;div class="dialogue-box" id="dialogue-box"&gt;
+            &lt;div class="no-transcript" ng-if="visibleLines.length === 0"&gt;
+                &lt;i class="fa fa-phone-square"&gt;&lt;/i&gt;
+                &lt;p&gt;No call transcript loaded. Press Start to initiate simulation.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="message-bubble" ng-repeat="line in visibleLines" ng-class="line.speaker"&gt;
+                &lt;div class="avatar-col"&gt;
+                    &lt;div class="avatar-icon"&gt;
+                        &lt;i class="fa" ng-class="line.speaker === 'agent' ? 'fa-headphones' : 'fa-user'"&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bubble-content"&gt;
+                    &lt;div class="bubble-header"&gt;
+                        &lt;span class="speaker-name"&gt;{{line.speaker === 'agent' ? 'Quinn (Agent)' : 'Customer'}}&lt;/span&gt;
+                        &lt;span class="bubble-time"&gt;{{line.time}}&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;p class="bubble-text"&gt;{{line.text}}&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Footer controls --&gt;
+        &lt;div class="player-controls"&gt;
+            &lt;div class="progress-section"&gt;
+                &lt;span class="time-label"&gt;{{currentTimeLabel}}&lt;/span&gt;
+                &lt;div class="progress-bar-container"&gt;
+                    &lt;div class="progress-bar-fill" ng-style="{'width': progressPercent + '%'}"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;span class="time-label"&gt;{{totalTimeLabel}}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="control-buttons"&gt;
+                &lt;button class="btn-ctrl btn-play" ng-click="togglePlay()"&gt;
+                    &lt;i class="fa" ng-class="isPlaying ? 'fa-pause' : 'fa-play'"&gt;&lt;/i&gt;
+                    &lt;span&gt;{{isPlaying ? 'Pause' : 'Start Simulation'}}&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;button class="btn-ctrl btn-reset" ng-click="resetSimulation()"&gt;
+                    &lt;i class="fa fa-refresh"&gt;&lt;/i&gt;
+                    &lt;span&gt;Reset&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div class="speed-selector"&gt;
+                    &lt;label&gt;Speed:&lt;/label&gt;
+                    &lt;select ng-model="playSpeed" ng-change="updateSpeed()"&gt;
+                        &lt;option value="1"&gt;1x&lt;/option&gt;
+                        &lt;option value="2"&gt;2x&lt;/option&gt;
+                        &lt;option value="5"&gt;5x&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;&lt;![CDATA[
+.transcript-player-container {
+  font-family: 'Inter', sans-serif;
+  background: rgba(18, 24, 38, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  color: #f3f4f6;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.header-title {
+  display: flex;
+  align-items: center;
+}
+.header-title h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.pulse-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ef4444;
+  margin-right: 10px;
+}
+.pulse-indicator.active {
+  background-color: #10b981;
+  box-shadow: 0 0 6px #10b981;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(0.95); }
+  70% { transform: scale(1); }
+  100% { transform: scale(0.95); }
+}
+
+.status-banner {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.4;
+}
+.status-banner.live {
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #a5b4fc;
+}
+.status-banner.ready {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #6ee7b7;
+}
+
+.mode-toggle-group {
+  display: flex;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 2px;
+}
+.btn-mode {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-mode.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.dialogue-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.dialogue-box::-webkit-scrollbar {
+  width: 4px;
+}
+.dialogue-box::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+.no-transcript {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6b7280;
+}
+.no-transcript i {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.message-bubble {
+  display: flex;
+  gap: 10px;
+  max-width: 85%;
+}
+.message-bubble.agent {
+  align-self: flex-start;
+}
+.message-bubble.customer {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.avatar-col {
+  display: flex;
+  align-items: flex-end;
+}
+.avatar-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 11px;
+}
+.message-bubble.agent .avatar-icon {
+  color: #6366f1;
+  border-color: rgba(99, 102, 241, 0.3);
+  background: rgba(99, 102, 241, 0.1);
+}
+.message-bubble.customer .avatar-icon {
+  color: #06b6d4;
+  border-color: rgba(6, 182, 212, 0.3);
+  background: rgba(6, 182, 212, 0.1);
+}
+
+.bubble-content {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+.message-bubble.agent .bubble-content {
+  border-bottom-left-radius: 2px;
+  border-left: 2px solid #6366f1;
+}
+.message-bubble.customer .bubble-content {
+  border-bottom-right-radius: 2px;
+  border-right: 2px solid #06b6d4;
+}
+
+.bubble-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 2px;
+}
+.speaker-name {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.message-bubble.agent .speaker-name { color: #818cf8; }
+.message-bubble.customer .speaker-name { color: #22d3ee; }
+.bubble-time {
+  font-size: 9px;
+  color: #6b7280;
+}
+.bubble-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #e5e7eb;
+}
+
+.player-controls {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+}
+.progress-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.time-label {
+  font-size: 10px;
+  color: #9ca3af;
+  min-width: 30px;
+  text-align: center;
+}
+.progress-bar-container {
+  flex-grow: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #06b6d4);
+  width: 0%;
+}
+
+.control-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-ctrl {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-play {
+  background: #6366f1;
+}
+.speed-selector {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #9ca3af;
+}
+.speed-selector select {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 2px 4px;
+  outline: none;
+}
+]]&gt;&lt;/style&gt;
+
+&lt;script&gt;&lt;![CDATA[
+angular.module('transcriptApp', [])
+.controller('TranscriptCtrl', function($scope, $interval, $timeout, $http) {
+  $scope.mockScript = [
+    { speaker: 'customer', text: "[IVR Menu Option] Speak to a Commercial Loan Specialist", time: "00:00" },
+    { speaker: 'agent', text: "[IVR System] Connecting your call to a Commercial Loan Specialist. Please stand by.", time: "00:03" },
+    { speaker: 'customer', text: "[Connecting Music]", time: "00:06" },
+    { speaker: 'agent', text: "Hello! Thank you for calling Summit Sports, Outdoors &amp; Events. My name is Quinn. How can I help you today?", time: "00:09" },
+    { speaker: 'customer', text: "Hi Quinn, I have a question about my Summit Commercial Term Loan account.", time: "00:12" },
+    { speaker: 'agent', text: "Sure, I can help you with that. Can you please confirm the last 4 digits of your account number?", time: "00:15" },
+    { speaker: 'customer', text: "Yes, it is 4001.", time: "00:18" },
+    { speaker: 'agent', text: "Excellent, I see the account here. How can I assist you with this loan today?", time: "00:21" },
+    { speaker: 'customer', text: "I'd like to check if there are any prepayment fees if I pay it off early.", time: "00:24" },
+    { speaker: 'agent', text: "Let me pull up the terms of your contract. Please hold for a moment.", time: "00:27" },
+    { speaker: 'customer', text: "No problem, thank you.", time: "00:30" },
+    { speaker: 'agent', text: "Thank you for waiting. According to the contract terms, there are no prepayment penalties for early payoff.", time: "00:33" },
+    { speaker: 'customer', text: "That is great news! How long does it take for the account closure to be processed once payment is received?", time: "00:36" },
+    { speaker: 'agent', text: "Once we receive the payoff amount, it usually takes 2 to 3 business days to process and close the loan.", time: "00:39" },
+    { speaker: 'customer', text: "Perfect. Can you send me the final payoff letter with the exact amount and wire instructions?", time: "00:42" },
+    { speaker: 'agent', text: "Yes, I can email that to the registered address on file: contact@summitsports.com. Is that correct?", time: "00:45" },
+    { speaker: 'customer', text: "Yes, that is the correct email address.", time: "00:48" },
+    { speaker: 'agent', text: "Great. I have initiated the payoff document request. You should receive it in your email within 10 minutes.", time: "00:51" },
+    { speaker: 'customer', text: "Thank you so much, Quinn! You've been extremely helpful.", time: "00:54" },
+    { speaker: 'agent', text: "You are very welcome! Is there anything else I can assist you with today?", time: "00:57" },
+    { speaker: 'customer', text: "No, that's all. Have a great day!", time: "01:00" },
+    { speaker: 'agent', text: "Thank you, you too! Goodbye.", time: "01:03" }
+  ];
+
+  $scope.mode = 'mock';
+  $scope.visibleLines = [];
+  $scope.isPlaying = false;
+  $scope.playSpeed = "1";
+  $scope.currentTimeLabel = "00:00";
+  $scope.totalTimeLabel = "01:03";
+  $scope.progressPercent = 0;
+  $scope.isLive = false;
+  $scope.transcriptReady = false;
+
+  var currentIdx = 0;
+  var timerPromise = null;
+  var dbIntervalPromise = null;
+
+  function checkInteractionState() {
+    var interactionSysId = getInteractionSysId();
+    if (!interactionSysId) return;
+
+    var g_ck = window.g_ck || (parent ? parent.g_ck : '');
+    var reqHeaders = { 'Accept': 'application/json' };
+    if (g_ck) { reqHeaders['X-UserToken'] = g_ck; }
+
+    $http.get('/api/now/table/interaction/' + interactionSysId, { headers: reqHeaders })
+    .then(function(response) {
+      var result = response.data.result;
+      if (result) {
+        $scope.isLive = (result.state === 'new' || result.state === 'work_in_progress');
+        $scope.transcriptReady = (result.state === 'closed_complete');
+      }
+    });
+  }
+  checkInteractionState();
+
+  $scope.setMode = function(m) {
+    $scope.mode = m;
+    $scope.resetSimulation();
+  };
+
+  $scope.togglePlay = function() {
+    if ($scope.isPlaying) {
+      $scope.pauseSimulation();
+    } else {
+      $scope.startSimulation();
+    }
+  };
+
+  $scope.pauseSimulation = function() {
+    $scope.isPlaying = false;
+    if (timerPromise) {
+      $interval.cancel(timerPromise);
+      timerPromise = null;
+    }
+    if (dbIntervalPromise) {
+      $interval.cancel(dbIntervalPromise);
+      dbIntervalPromise = null;
+    }
+  };
+
+  $scope.startSimulation = function() {
+    $scope.isPlaying = true;
+    if ($scope.mode === 'mock') {
+      runMockSimulation();
+    } else {
+      runDbSimulation();
+    }
+  };
+
+  $scope.resetSimulation = function() {
+    $scope.pauseSimulation();
+    $scope.visibleLines = [];
+    currentIdx = 0;
+    $scope.progressPercent = 0;
+    $scope.currentTimeLabel = "00:00";
+  };
+
+  $scope.updateSpeed = function() {
+    if ($scope.isPlaying) {
+      $scope.pauseSimulation();
+      $scope.startSimulation();
+    }
+  };
+
+  function runMockSimulation() {
+    if (currentIdx &gt;= $scope.mockScript.length) {
+      $scope.resetSimulation();
+      $scope.isPlaying = true;
+    }
+
+    if (currentIdx === 0) {
+      for (var i = 0; i &lt; 4; i++) {
+        if (i &lt; $scope.mockScript.length) {
+          $scope.visibleLines.push($scope.mockScript[i]);
+          currentIdx++;
+        }
+      }
+      updateProgress();
+      scrollToBottom();
+    }
+
+    var intervalMs = 3000 / parseInt($scope.playSpeed);
+    timerPromise = $interval(function() {
+      if (currentIdx &lt; $scope.mockScript.length) {
+        $scope.visibleLines.push($scope.mockScript[currentIdx]);
+        currentIdx++;
+        updateProgress();
+        scrollToBottom();
+      } else {
+        $scope.pauseSimulation();
+      }
+    }, intervalMs);
+  }
+
+  function runDbSimulation() {
+    var interactionSysId = getInteractionSysId();
+    if (!interactionSysId) {
+      $scope.visibleLines = [{ speaker: 'agent', text: "[System ERROR] No active interaction ID found.", time: "00:00" }];
+      $scope.pauseSimulation();
+      return;
+    }
+
+    var g_ck = window.g_ck || (parent ? parent.g_ck : '');
+    var reqHeaders = { 'Accept': 'application/json' };
+    if (g_ck) {
+      reqHeaders['X-UserToken'] = g_ck;
+    }
+
+    var pollIntervalMs = 2000;
+    dbIntervalPromise = $interval(function() {
+      checkInteractionState();
+      
+      $http.get('/api/now/table/sys_attachment?sysparm_query=table_name=interaction^table_sys_id=' + interactionSysId + '^file_name=analysis.json&amp;amp;sysparm_limit=1', { headers: reqHeaders })
+      .then(function(attResponse) {
+        var results = attResponse.data.result;
+        if (results &amp;&amp; results.length &gt; 0) {
+          var attSysId = results[0].sys_id;
+          $http.get('/api/now/attachment/' + attSysId + '/file', { headers: reqHeaders })
+          .then(function(fileResponse) {
+            var dataObj = fileResponse.data;
+            if (dataObj &amp;&amp; dataObj.Transcript) {
+              var formattedLines = [];
+              for (var i = 0; i &lt; dataObj.Transcript.length; i++) {
+                var item = dataObj.Transcript[i];
+                var secOffset = Math.floor(item.BeginOffsetMillis / 1000);
+                var m = Math.floor(secOffset / 60);
+                var s = secOffset % 60;
+                var formattedTime = (m &lt; 10 ? '0' + m : m) + ':' + (s &lt; 10 ? '0' + s : s);
+                formattedLines.push({
+                  speaker: item.ParticipantId.toLowerCase(),
+                  text: item.Content,
+                  time: formattedTime
+                });
+              }
+              if (formattedLines.length &gt; $scope.visibleLines.length) {
+                $scope.visibleLines = formattedLines;
+                updateProgressFromLines();
+                scrollToBottom();
+              }
+            }
+          });
+        }
+      });
+    }, pollIntervalMs);
+  }
+
+  function updateProgress() {
+    if ($scope.mockScript.length &gt; 0) {
+      $scope.progressPercent = Math.floor((currentIdx / $scope.mockScript.length) * 100);
+      if (currentIdx &gt; 0 &amp;&amp; currentIdx &lt;= $scope.mockScript.length) {
+        $scope.currentTimeLabel = $scope.mockScript[currentIdx - 1].time;
+      }
+    }
+  }
+
+  function updateProgressFromLines() {
+    if ($scope.visibleLines.length &gt; 0) {
+      var lastLine = $scope.visibleLines[$scope.visibleLines.length - 1];
+      $scope.currentTimeLabel = lastLine.time;
+      var timeSplit = lastLine.time.split(':');
+      var seconds = parseInt(timeSplit[0]) * 60 + parseInt(timeSplit[1]);
+      $scope.progressPercent = Math.min(100, Math.floor((seconds / 63) * 100));
+    }
+  }
+
+  function scrollToBottom() {
+    $timeout(function() {
+      var element = document.getElementById('dialogue-box');
+      if (element) {
+        element.scrollTop = element.scrollHeight;
+      }
+    }, 100);
+  }
+
+  function getInteractionSysId() {
+    if (parent &amp;&amp; parent.g_form) {
+      return parent.g_form.getUniqueValue();
+    }
+    var url = window.location.href;
+    var match = url.match(/sysparm_id=([a-f0-9]{32})/i) || url.match(/sys_id=([a-f0-9]{32})/i) || url.match(/interaction\/([a-f0-9]{32})/i);
+    if (match) {
+      return match[1];
+    }
+    try {
+      if (parent &amp;&amp; parent.location &amp;&amp; parent.location.href) {
+        var parentUrl = parent.location.href;
+        var parentMatch = parentUrl.match(/sysparm_id=([a-f0-9]{32})/i) || parentUrl.match(/sys_id=([a-f0-9]{32})/i) || parentUrl.match(/interaction\/([a-f0-9]{32})/i);
+        if (parentMatch) {
+          return parentMatch[1];
+        }
+      }
+    } catch (e) { }
+    return '';
+  }
+});
+]]&gt;&lt;/script&gt;
+&lt;/j:jelly&gt;
+</html>
+        <name>simulated_transcript_player</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-20 18:31:45</sys_created_on>
+        <sys_id>eb2bb1c02f92cf50b846c63bcfa4e34f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>simulated_transcript_player</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ui_page_eb2bb1c02f92cf50b846c63bcfa4e34f</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-20 21:09:36</sys_updated_on>
+    </sys_ui_page>
+</record_update>

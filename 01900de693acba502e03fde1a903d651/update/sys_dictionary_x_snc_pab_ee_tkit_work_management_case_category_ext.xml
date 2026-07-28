@@ -33,8 +33,8 @@
         <name>x_snc_pab_ee_tkit_work_management_case</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
-        <read_only_option/>
+        <read_only>true</read_only>
+        <read_only_option>display_read_only</read_only_option>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -54,7 +54,7 @@
         <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_pab_ee_tkit_work_management_case_category_ext</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-08 11:56:26</sys_updated_on>
+        <sys_updated_on>2026-06-03 23:42:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

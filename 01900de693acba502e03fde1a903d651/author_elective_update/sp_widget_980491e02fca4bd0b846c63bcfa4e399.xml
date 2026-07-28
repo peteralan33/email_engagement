@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>temp_trigger_insert_config</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>TempTriggerInsertConfig</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var gr = new GlideRecord('cxs_ui_action_config');
+    gr.initialize();
+    gr.setValue('search_ui_config', '6eeed8f6dbbaa3402a4a9cb8db96190f');
+    gr.setValue('search_resource', 'com.snc.contextual_search.search_resource.KnowledgeSearchResource');
+    gr.setValue('search_ui_action', 'd587f286872a0300692cbba826cb0b6a');
+    gr.setValue('action_label', 'Link to Interaction');
+    gr.setValue('action_value', 'Attach');
+    gr.setValue('active', true);
+    gr.setValue('show_on_new', true);
+    gr.setValue('order', 150);
+    gr.setValue('sys_scope', 'global');
+    var sysId = gr.insert();
+    data.created_sys_id = sysId;
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-09 18:41:52</sys_created_on>
+        <sys_id>980491e02fca4bd0b846c63bcfa4e399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TempTriggerInsertConfig</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sp_widget_980491e02fca4bd0b846c63bcfa4e399</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-09 18:41:52</sys_updated_on>
+        <template><![CDATA[<div></div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sp_widget_980491e02fca4bd0b846c63bcfa4e399</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;temp_trigger_insert_config&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;TempTriggerInsertConfig&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    var gr = new GlideRecord('cxs_ui_action_config');
+    gr.initialize();
+    gr.setValue('search_ui_config', '6eeed8f6dbbaa3402a4a9cb8db96190f');
+    gr.setValue('search_resource', 'com.snc.contextual_search.search_resource.KnowledgeSearchResource');
+    gr.setValue('search_ui_action', 'd587f286872a0300692cbba826cb0b6a');
+    gr.setValue('action_label', 'Link to Interaction');
+    gr.setValue('action_value', 'Attach');
+    gr.setValue('active', true);
+    gr.setValue('show_on_new', true);
+    gr.setValue('order', 150);
+    gr.setValue('sys_scope', 'global');
+    var sysId = gr.insert();
+    data.created_sys_id = sysId;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ag.mcp&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-07-09 18:41:52&lt;/sys_created_on&gt;&lt;sys_id&gt;980491e02fca4bd0b846c63bcfa4e399&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;TempTriggerInsertConfig&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Email Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_980491e02fca4bd0b846c63bcfa4e399&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ag.mcp&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-07-09 18:41:52&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2092062</payload_hash>
+        <record_name>TempTriggerInsertConfig</record_name>
+        <reverted_from/>
+        <source>40d40d242fc64754b14f861cbfa4e32b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-09 18:41:52</sys_created_on>
+        <sys_id>580491e02fca4bd0b846c63bcfa4e39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f482faef10000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-09 18:41:52</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>940491e043ca4bd0db8d22127449099e</update_guid>
+        <update_guid_history>940491e043ca4bd0db8d22127449099e:2092062</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="TempTriggerInsertConfig">f904d52ccf828bd009d5b6734d851c42</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-09 18:41:57</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>0af8aa42271c4d988cfbd58310b6c840</sys_id>
+        <sys_metadata>980491e02fca4bd0b846c63bcfa4e399</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TempTriggerInsertConfig</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sp_widget_980491e02fca4bd0b846c63bcfa4e399</sys_update_name>
+        <sys_update_version display_value="sp_widget_980491e02fca4bd0b846c63bcfa4e399">580491e02fca4bd0b846c63bcfa4e39f</sys_update_version>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-09 18:41:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

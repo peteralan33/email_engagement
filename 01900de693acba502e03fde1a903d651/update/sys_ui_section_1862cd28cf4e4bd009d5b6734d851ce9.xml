@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Work Notes" section_id="1862cd28cf4e4bd009d5b6734d851ce9" sys_domain="global" table="interaction" version="3" view="workspace_csm_voice">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-09 17:24:58</sys_created_on>
+            <sys_id>1e624168cf4e4bd009d5b6734d851c2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Work Notes" display_value="Work Notes" name="interaction" sys_domain="global" view="ed9095d99101d210f87705b0d8d7c29f">1862cd28cf4e4bd009d5b6734d851ce9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-09 17:24:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>simulated_transcript_player.xml</element>
+            <position>1</position>
+            <sys_created_by>ag.mcp</sys_created_by>
+            <sys_created_on>2026-07-20 18:31:59</sys_created_on>
+            <sys_id>0b3b35c82f9643d0b14f861cbfa4e3f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Work Notes" display_value="Work Notes" name="interaction" sys_domain="global" view="ed9095d99101d210f87705b0d8d7c29f">1862cd28cf4e4bd009d5b6734d851ce9</sys_ui_section>
+            <sys_updated_by>ag.mcp</sys_updated_by>
+            <sys_updated_on>2026-07-20 18:31:59</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Work Notes</caption>
+            <header>false</header>
+            <name>interaction</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-09 17:24:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1862cd28cf4e4bd009d5b6734d851ce9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>interaction</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+            <sys_update_name>sys_ui_section_1862cd28cf4e4bd009d5b6734d851ce9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-09 17:24:50</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Voice CSM Workspace" name="workspace_csm_voice">ed9095d99101d210f87705b0d8d7c29f</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,1908 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=61247000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>f043fc9f2f057e14743eb82bcfa4e319</copied_from>
+        <copied_from_name>Create interaction from email</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>create_wm_from_email</internal_name>
+        <label_cache>[{"name":"fccc310d-a0cd-4f6c-b5dc-ce9a9cfc7954.record","label":"1 - Create Record➛Work Management Case Record","reference":"x_snc_pab_ee_tkit_work_management_case","reference_display":"Work Management Case","type":"reference","base_type":"reference","usedInstances":{"e24ac377-38bd-4df1-acc2-3dcb5d250521":["target_record"],"8d0c728f-577b-401d-8b05-653fe6acfa75":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"trigger.inbound_email.subject","label":"Trigger - Inbound Email➛Email Record➛Subject","reference":"","reference_display":"Subject","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"subject","usedInstances":{"fccc310d-a0cd-4f6c-b5dc-ce9a9cfc7954":["short_description"]}},{"name":"Inbound Email_1.inbound_email","label":"Trigger - Inbound Email➛Email Record","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","usedInstances":{"e24ac377-38bd-4df1-acc2-3dcb5d250521":["email_record"],"68c540b8-91f7-48ff-aa2d-1ee3d5538649":["source_attachment_record"],"8d0c728f-577b-401d-8b05-653fe6acfa75":["email_record"]},"attributes":{}},{"name":"Inbound Email_1.subject","label":"Trigger - Inbound Email➛Subject","type":"string_full_utf8","base_type":"string_full_utf8","usedInstances":{"74bcf542-2c3d-4b5a-ad63-7020034211ab":["short_description"],"fccc310d-a0cd-4f6c-b5dc-ce9a9cfc7954":["values"]},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master_snapshot>d8fb5d19cf9d871009d5b6734d851c4b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Create WM from email</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>b8fb9d19cf9d871009d5b6734d851c3e</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9eaa5d91cf9d871009d5b6734d851c38</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Create WM from email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_hub_flow_9eaa5d91cf9d871009d5b6734d851c38</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:08</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>e8544de5cf958b1009d5b6734d851c56</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_flow_email_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <email_conditions table="sys_email">subjectLIKEWM^ORsubjectLIKEwm^receive_type=new^type=received<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="WM"/>
+            <item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="true" value="wm"/>
+            <item display_value="New" endquery="false" field="receive_type" goto="false" newquery="false" operator="=" or="false" value="new"/>
+            <item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
+        </email_conditions>
+        <event_name>email.read</event_name>
+        <name/>
+        <order>1</order>
+        <published_version/>
+        <stop_condition_evaluation>true</stop_condition_evaluation>
+        <sys_class_name>sys_flow_email_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b8fb9d19cf9d871009d5b6734d851c3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:55</sys_updated_on>
+        <target_table/>
+        <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
+    </sys_flow_email_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9eaa5d91cf9d871009d5b6734d851c38^sys_idNOT IN9eaa5d91cf9d871009d5b6734d851c39"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9eaa5d91cf9d871009d5b6734d851c38</id>
+        <name>Create WM from email</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:17</sys_created_on>
+        <sys_id>9eaa5d91cf9d871009d5b6734d851c39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:19:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9eaa5d91cf9d871009d5b6734d851c39"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9eaa5d91cf9d871009d5b6734d851c38^sys_idNOT IN26aa5d91cf9d871009d5b6734d851ca8,62aa5d91cf9d871009d5b6734d851caf,96aa5d91cf9d871009d5b6734d851c87,9eaa5d91cf9d871009d5b6734d851c5c,aaaa5d91cf9d871009d5b6734d851c9a,aeaa5d91cf9d871009d5b6734d851cb5,e6aa5d91cf9d871009d5b6734d851ca1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>User</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</model>
+        <model_id>9eaa5d91cf9d871009d5b6734d851c38</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>26aa5d91cf9d871009d5b6734d851ca8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=26aa5d91cf9d871009d5b6734d851ca8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>target_table_name</dependent>
+        <dependent_on_field>target_table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Target Record</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</model>
+        <model_id>9eaa5d91cf9d871009d5b6734d851c38</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>62aa5d91cf9d871009d5b6734d851caf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=62aa5d91cf9d871009d5b6734d851caf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Target Table</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</model>
+        <model_id>9eaa5d91cf9d871009d5b6734d851c38</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>96aa5d91cf9d871009d5b6734d851c87</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=96aa5d91cf9d871009d5b6734d851c87"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inbound_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Inbound Email</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</model>
+        <model_id>9eaa5d91cf9d871009d5b6734d851c38</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="sys_email">sys_email</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ</reference_qual>
+        <reference_qual_condition table="sys_email">type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ<item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
+            <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:17</sys_created_on>
+        <sys_id>9eaa5d91cf9d871009d5b6734d851c5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9eaa5d91cf9d871009d5b6734d851c5c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body_text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Body Text</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</model>
+        <model_id>9eaa5d91cf9d871009d5b6734d851c38</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>aaaa5d91cf9d871009d5b6734d851c9a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aaaa5d91cf9d871009d5b6734d851c9a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>from_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>From address</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</model>
+        <model_id>9eaa5d91cf9d871009d5b6734d851c38</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>aeaa5d91cf9d871009d5b6734d851cb5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aeaa5d91cf9d871009d5b6734d851cb5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>subject</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Subject</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</model>
+        <model_id>9eaa5d91cf9d871009d5b6734d851c38</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>e6aa5d91cf9d871009d5b6734d851ca1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e6aa5d91cf9d871009d5b6734d851ca1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9eaa5d91cf9d871009d5b6734d851c38^sys_idNOT INfaaa9d91cf9d871009d5b6734d851c04"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</flow>
+        <generation_source/>
+        <name>Inbound Email</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:19</sys_created_on>
+        <sys_id>faaa9d91cf9d871009d5b6734d851c04</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:52</sys_updated_on>
+        <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9WWW2/aMBTHv4qVZzYFkpaWt2lrpWoXJFqtD10bOc4JeHLszHagrOp337FJIFzKxrqp2wvCF87lf37/hJuHQNAURDAIzgrKBWFKZtxyJU3QCbi0oCUVV/MS8MbaWUFlRq3S82CQU2GgE+RaFVdQlIJaWG4qnYEOBt0w7ARTKiq4nJuLDINhCEkLFxZc4mQtuL+JR6ZKvwKzHy7en11/vBuOWutZcaeBAZ9CYrG8L1UYRpmE2d1qVZ9nGJBNuMC1DAY3t52gpBpTW1fYw8YRd7V1T8JuGMV91o+6vSgM8xhS2o17R/S0fxzlfQy4R7Wn27I7dGwLBPcWZIYFN+pti6yBZkMpVhsTHBLGfLuMSawi3yoqeD4nswlnE+IrMcRYqi2Zq0qTXKjZaz/Ee8O/Y01x6PJryAGVYF76uUn8D4PWfpJxg/OdN417ZRVnMCxd7sVYLU0FLL4yJapCfloIgusMcloJ+7keL+5UBoNC6dp2fTQoXU7UbNRkPefSa1QfCsWoWK6otZqnlQXjh9nIkKQVjtX9Kpj2gkffQ+JkaQqpUyaLqvFC3do5B1HzaZjmpX3DLEJU53vsrAwz9JPbcolbjv3BYRbp7bGIqlM1vugejPRxmEYhAr0b6T60kG762shtN9tr1/0Mcq8mQErNleZ2TsYotXQEW9zFwY4xFVFT94E7mnCZqkpmC6SbC2YD5XWQn+D3n0N3yg1fZLcaU/wVZC+tKlFsxcAYLsfb8KZKCaDyYHijPfAaTLp6DibgrlGv+TrQdTcthQ9DHMGOT55EPG8jvq3DL9RqNyVq9/4MA1xPHPI4805TEhii8KI3gXtUkxm3E7/CBRj7ystGfP4XYN/zudx9tz62+vDlzfETK4ygRIVHwFBF4unfMoNXJPFkHOqHeI8f8DU8Bpss9F5Z4A84ID3togPik6OoGzkHQNpnIcV/M8cZi+L0qOWAXe3vrs/uEKPd5TMf/T4uUbnHWy/qocYoxlHWbEU+l0wV6FW84yr3L4A19k/+z+f+76J8+wMToCenuwsAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>email</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9eaa5d91cf9d871009d5b6734d851c38^sys_idNOT IN13da59d1cf9d871009d5b6734d851c7e,2eaa5d91cf9d871009d5b6734d851cf6,e6aa5d91cf9d871009d5b6734d851cf5"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:20:10</sys_created_on>
+        <sys_id>13da59d1cf9d871009d5b6734d851c7e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-06-05 15:29:42</sys_updated_on>
+        <ui_id>fccc310d-a0cd-4f6c-b5dc-ce9a9cfc7954</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1X30/jOBD+V3x5ujt1q6RpS9u3VfeQToJFAsQ+bLeWY08aH46dtZ2WLur/fuMkLVwBwUn7shI8IGzPj29mvpkMX+8jKaJZNE4gHk2TMU+TNB3E8WAyTLJxmiUDkTKAYdSLNCsBJT3LFNDm0IvWTNXh8o46zWnFMgpA/a30dGPsLS2ZZisoQXvKmQsKQrpKse1Np/cFpcj5QYrMWyleSCUs6Gj29VsvqphFbx5sNLs/enordsUyUCh6HcC/EIvfVs/enT3WJZ/bB2NFwBP3IrjzoAUgkJwpB70IgxbMG7uNZt7WeGGBiQuttgeJQmqPBqMge+fkD3Q7iYNcDhgZh/btcKRd0trr/BPz7Aotc1/bTpQXRnJwbU4E5KxWfv74rhW4qLw0ulVpwuy0japL/blNSXQwsK8R3tQOQUAV4gzIuzDyq8JsLvcoT6VuUtI9KsOZOpyY91ZmtQ947iNQLSdKVlVSr2hlzVo2yoil7K8UHvq5Mht06uRK9xkPwPuYVtY/xftPzfUNszJEcY5mUHnXi9zWzRVz7iEWTCL9XgckbWRdDLRNQ1DhVlb+IzpYQwd319s3hYB4+iKxkuyBSE0fuEcN4cCuZSgd5FLLgH5Rx3Eq7hf7FlhEs8UT/l/Cd7TjyQfyV8mkWkS9RWuykU7y6UiMRTbIJ5P4ZBRnyTCfjBOe5WwIaT5sxJvCNuJO08yU9BkoQQ5zRaV4o93d0nnmoY1hsHSFsT4Up0neQ3D3WOXVCmxf6szUWlAIUfRdnf0D3O92yycqfx5Czo0ljHgoK2OZ3RJuQUhPlCzxt9R4xNlAvCGMI0lKg2QAUlf4N1KIIAGc0UyhJA4KzYIHPHnL1qAI3GHdHbj+Qv9NCrwiSEjGCxDEF0C4kpj8AGhw4givrQ21qNi2qUkhXehmgm29B1V7qeSPxkmDe2tqSyysJWz65Aw8KYHcarMhMg9vRAN6YhptCCE7aK6uMFIfwAvD6+CqNYghYkPwoLKRvmgQIsOxR5jCAK4Lpm8dcYaUNS8e3Begqt+WTwdxGLzUbDTYZxl4GdKgyBcm4IhtyPHJIBufDHLBeXrMiuHomG3IJ5wT9phcr5vZLQ2WBwTNts9CbFqBXGOzr4CQj6tQq/9CHY2wG5MJm6aT0clYxHE+TXIOJ9MRWhtD+kaor5vZLbnBOnFPw5ehRdtwfOmwBthkaKm5vLo4+zCZpINk/4BukNvt4/zynPx+hpMIi/8HWXJk8goZRvFT0gm0NJszK9zTj+b7bHmfLe+z5X22/JTZ8j9X7dc3ov2qfSpBNR6OV6T9no3dqBAdbVemo127eyQ33WO3byc/a99OxnHz8wtt3W1wv/zS/ej/qxfW72//AkEpnfyVDgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=13da59d1cf9d871009d5b6734d851c7e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Move Email Attachments to Record">bd8fcd48a73133008299b39f087901fc</action_type>
+        <action_type_parent display_value="Move Email Attachments to Record">731fc148a73133008299b39f087901a4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>bd8fcd48a73133008299b39f087901fc</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>2eaa5d91cf9d871009d5b6734d851cf6</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-06-05 15:29:42</sys_updated_on>
+        <ui_id>8d0c728f-577b-401d-8b05-653fe6acfa75</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXWvbMBT9K0HPjrHjZLHzNpoVCtsKbelLKeZaH4lAljxZTpuF/Pdd2Ypb2gzK2GMf77n3SOcc6T4ciGRkRSqWC8rmOSyzNMuSJJ8VRZUVIsmXRZIKRiKioeY4yWuQqrScGuvRHajOw4fDla5Mp9nkWz+QxnKoy55wPOIsk22jYH8fKIjQrVTMck1WD48RacDiHY5bsjq8aX1UpIKKKxztRUxuTirPa3f7xqPM0K7m2pXyBH4Pp6xDZ3K1xg6SvLQ0IvzZcc04ahKgWh6RGjQDZ+yerJztELAc2LVW+3FiK7UbPNfw3MrfeHE283OCo0ka8hjLMmQ1wGINDm7xZOo6O0ZnJOXtEA/jAjrlLl5jw8B146TRA8VBpU5so7pa/xxiIeMBr56ma1EEb7xPrzzYELdb83RzUnkpdR9JaCpDQY0VOGdl1Tmv50C44n3GNTSN1JuysWYnezJqqeONwiIWyjzhpa3c6BioFx5jrBBfIr7u4Xuw0rv4gccgGWXKu3OvaDD7klnTNMGzfxZyjEi7by8UtO2Ldcy8/NV54UMQwXI5pOYp1MrGfUU9Ox7cHaOwN8tFLpI0/8uXTLKXv+fAbrg7tziCUpqlCZtCQtl0Lr7QabVgdEp5AQUVdFks5vHA+y9r9AHNpzW660W/26O3Xv5tkWafi/S5SI9/AKtLClOCBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2eaa5d91cf9d871009d5b6734d851cf6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Associate Record to Email">7b95a4c0a73133008299b39f087901b4</action_type>
+        <action_type_parent display_value="Associate Record to Email">18a22c44a73133008299b39f08790116</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7b95a4c0a73133008299b39f087901b4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>e6aa5d91cf9d871009d5b6734d851cf5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-06-05 15:29:42</sys_updated_on>
+        <ui_id>e24ac377-38bd-4df1-acc2-3dcb5d250521</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXWvjMBD8K0HPjnHi5FLn7WhaKPSu0Ja+lGLW+kgEsqST5bS5kP9+K1txSxuOctxjH3d2R5oZaR/3RDKyJIuqmMOMZrDIJ3meZWfToqjyQmRniyKbVHOSEA01x0leg1Sl49Q4hugWVBvg/f5KV6bVbHTRDUxS2ddlRzgccJbJxirYPUQKInQjFXNck+XjU0IsOLzDc0eW+3etz4pUUHGFo52I0e1R5WntfmcDygxta659KY/gdTxlFTujqxV2kBSkTRLCXzzXjKMmAarhCalBM/DG7cjSuxYBx4HdaLUbJjZS+95zDS+N/I0X59MwJziapDGPoSxjVj0sVuDhDk+mvnVDdEZS3vTxMC6gVf78LdYP3Fgvje4pHip1ZBvV1vpnHwsZDnjzNG2DIrgNPoPyaEPcbczz7VHlpdRdJLGpDAU1VOC9k1Xrg5494Yp3GddgrdTr0jqzlR0ZtdTpWmGRCmWe8dJGrnUKNAhPMVZILxFfdfADOBlc/MBjkIwy5f2pVzSYfcmcsTZ6Ds9CDglpds25gqZ5tY6Zl7/aILwPIlou+9QChTpp/XfUs+XR3SGJe1OJv35JeP17Htya+1OLIyil+SRjY8goG8/ENzqu5oyOKS+goIIuivks7Xn/ZY0+ofm4Rved6A979N7Lvy3S9GuRvhbp6Q92ilsVggYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e6aa5d91cf9d871009d5b6734d851cf5"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user</element>
+        <help/>
+        <hint/>
+        <label>User</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>2eaa5d91cf9d871009d5b6734d851cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:19:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_table_name</element>
+        <help/>
+        <hint/>
+        <label>Target Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>56aa5d91cf9d871009d5b6734d851c98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:19:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_record</element>
+        <help/>
+        <hint/>
+        <label>Target Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>6aaa5d91cf9d871009d5b6734d851cb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:19:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>from_address</element>
+        <help/>
+        <hint/>
+        <label>From address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>6eaa5d91cf9d871009d5b6734d851cc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:19:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inbound_email</element>
+        <help/>
+        <hint>The record representing the inbound email.</hint>
+        <label>Inbound Email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>92aa5d91cf9d871009d5b6734d851c85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:19:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body_text</element>
+        <help/>
+        <hint/>
+        <label>Body Text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>a2aa5d91cf9d871009d5b6734d851c9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:19:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>subject</element>
+        <help/>
+        <hint/>
+        <label>Subject</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:19:18</sys_created_on>
+        <sys_id>eeaa5d91cf9d871009d5b6734d851ca5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:19:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9eaa5d91cf9d871009d5b6734d851c38"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=16927381000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>f043fc9f2f057e14743eb82bcfa4e319</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>create_wm_from_email</internal_name>
+        <label_cache>[{"name":"fccc310d-a0cd-4f6c-b5dc-ce9a9cfc7954.record","label":"1 - Create Record➛Work Management Case Record","reference":"x_snc_pab_ee_tkit_work_management_case","reference_display":"Work Management Case","type":"reference","base_type":"reference","usedInstances":{"e24ac377-38bd-4df1-acc2-3dcb5d250521":["target_record"],"8d0c728f-577b-401d-8b05-653fe6acfa75":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"trigger.inbound_email.subject","label":"Trigger - Inbound Email➛Email Record➛Subject","reference":"","reference_display":"Subject","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"subject","usedInstances":{"fccc310d-a0cd-4f6c-b5dc-ce9a9cfc7954":["short_description"]}},{"name":"Inbound Email_1.inbound_email","label":"Trigger - Inbound Email➛Email Record","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","usedInstances":{"e24ac377-38bd-4df1-acc2-3dcb5d250521":["email_record"],"68c540b8-91f7-48ff-aa2d-1ee3d5538649":["source_attachment_record"],"8d0c728f-577b-401d-8b05-653fe6acfa75":["email_record"]},"attributes":{}},{"name":"Inbound Email_1.subject","label":"Trigger - Inbound Email➛Subject","type":"string_full_utf8","base_type":"string_full_utf8","usedInstances":{"74bcf542-2c3d-4b5a-ad63-7020034211ab":["short_description"],"fccc310d-a0cd-4f6c-b5dc-ce9a9cfc7954":["values"]},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master>true</master>
+        <name>Create WM from email</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create WM from email">9eaa5d91cf9d871009d5b6734d851c38</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d8fb5d19cf9d871009d5b6734d851c4b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:08</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d8fb5d19cf9d871009d5b6734d851c4b^sys_idNOT IN54fb5d19cf9d871009d5b6734d851c4d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d8fb5d19cf9d871009d5b6734d851c4b</id>
+        <name>Create WM from email</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:53</sys_created_on>
+        <sys_id>54fb5d19cf9d871009d5b6734d851c4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:53</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=54fb5d19cf9d871009d5b6734d851c4d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d8fb5d19cf9d871009d5b6734d851c4b^sys_idNOT IN24fb5d19cf9d871009d5b6734d851ca4,24fb5d19cf9d871009d5b6734d851ce3,54fb5d19cf9d871009d5b6734d851c7e,94fb5d19cf9d871009d5b6734d851c4f,98fb5d19cf9d871009d5b6734d851c97,a4fb5d19cf9d871009d5b6734d851cd6,dcfb5d19cf9d871009d5b6734d851c8a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>User</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</model>
+        <model_id>d8fb5d19cf9d871009d5b6734d851c4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>24fb5d19cf9d871009d5b6734d851ca4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=24fb5d19cf9d871009d5b6734d851ca4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>target_table_name</dependent>
+        <dependent_on_field>target_table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Target Record</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</model>
+        <model_id>d8fb5d19cf9d871009d5b6734d851c4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>24fb5d19cf9d871009d5b6734d851ce3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=24fb5d19cf9d871009d5b6734d851ce3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>body_text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Body Text</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</model>
+        <model_id>d8fb5d19cf9d871009d5b6734d851c4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:53</sys_created_on>
+        <sys_id>54fb5d19cf9d871009d5b6734d851c7e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=54fb5d19cf9d871009d5b6734d851c7e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>target_table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Target Table</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</model>
+        <model_id>d8fb5d19cf9d871009d5b6734d851c4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:53</sys_created_on>
+        <sys_id>94fb5d19cf9d871009d5b6734d851c4f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=94fb5d19cf9d871009d5b6734d851c4f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>inbound_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Inbound Email</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</model>
+        <model_id>d8fb5d19cf9d871009d5b6734d851c4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="sys_email">sys_email</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual>type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ</reference_qual>
+        <reference_qual_condition table="sys_email">type=received^sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()^EQ<item display_value="received" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="received"/>
+            <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="ON" or="false" value="Last 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>98fb5d19cf9d871009d5b6734d851c97</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=98fb5d19cf9d871009d5b6734d851c97"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>from_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>From address</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</model>
+        <model_id>d8fb5d19cf9d871009d5b6734d851c4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>a4fb5d19cf9d871009d5b6734d851cd6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a4fb5d19cf9d871009d5b6734d851cd6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>subject</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">string_full_utf8</internal_type>
+        <label>Subject</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</model>
+        <model_id>d8fb5d19cf9d871009d5b6734d851c4b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:53</sys_created_on>
+        <sys_id>dcfb5d19cf9d871009d5b6734d851c8a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dcfb5d19cf9d871009d5b6734d851c8a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d8fb5d19cf9d871009d5b6734d851c4b^sys_idNOT IN28fb9d19cf9d871009d5b6734d851c23"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</flow>
+        <generation_source/>
+        <name>Inbound Email</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:55</sys_created_on>
+        <sys_id>28fb9d19cf9d871009d5b6734d851c23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:55</sys_updated_on>
+        <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9WWW2/aMBTHv4qVZzYFkpaWt2lrpWoXJFqtD10bOc4JeHLszHagrOp337FJIFzKxrqp2wvCF87lf37/hJuHQNAURDAIzgrKBWFKZtxyJU3QCbi0oCUVV/MS8MbaWUFlRq3S82CQU2GgE+RaFVdQlIJaWG4qnYEOBt0w7ARTKiq4nJuLDINhCEkLFxZc4mQtuL+JR6ZKvwKzHy7en11/vBuOWutZcaeBAZ9CYrG8L1UYRpmE2d1qVZ9nGJBNuMC1DAY3t52gpBpTW1fYw8YRd7V1T8JuGMV91o+6vSgM8xhS2o17R/S0fxzlfQy4R7Wn27I7dGwLBPcWZIYFN+pti6yBZkMpVhsTHBLGfLuMSawi3yoqeD4nswlnE+IrMcRYqi2Zq0qTXKjZaz/Ee8O/Y01x6PJryAGVYF76uUn8D4PWfpJxg/OdN417ZRVnMCxd7sVYLU0FLL4yJapCfloIgusMcloJ+7keL+5UBoNC6dp2fTQoXU7UbNRkPefSa1QfCsWoWK6otZqnlQXjh9nIkKQVjtX9Kpj2gkffQ+JkaQqpUyaLqvFC3do5B1HzaZjmpX3DLEJU53vsrAwz9JPbcolbjv3BYRbp7bGIqlM1vugejPRxmEYhAr0b6T60kG762shtN9tr1/0Mcq8mQErNleZ2TsYotXQEW9zFwY4xFVFT94E7mnCZqkpmC6SbC2YD5XWQn+D3n0N3yg1fZLcaU/wVZC+tKlFsxcAYLsfb8KZKCaDyYHijPfAaTLp6DibgrlGv+TrQdTcthQ9DHMGOT55EPG8jvq3DL9RqNyVq9/4MA1xPHPI4805TEhii8KI3gXtUkxm3E7/CBRj7ystGfP4XYN/zudx9tz62+vDlzfETK4ygRIVHwFBF4unfMoNXJPFkHOqHeI8f8DU8Bpss9F5Z4A84ID3togPik6OoGzkHQNpnIcV/M8cZi+L0qOWAXe3vrs/uEKPd5TMf/T4uUbnHWy/qocYoxlHWbEU+l0wV6FW84yr3L4A19k/+z+f+76J8+wMToCenuwsAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>email</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d8fb5d19cf9d871009d5b6734d851c4b^sys_idNOT IN20fb9d19cf9d871009d5b6734d851c22,6cfb9d19cf9d871009d5b6734d851c1e,e8fb9d19cf9d871009d5b6734d851c20"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Move Email Attachments to Record">bd8fcd48a73133008299b39f087901fc</action_type>
+        <action_type_parent display_value="Move Email Attachments to Record">731fc148a73133008299b39f087901a4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>bd8fcd48a73133008299b39f087901fc</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>20fb9d19cf9d871009d5b6734d851c22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:54</sys_updated_on>
+        <ui_id>8d0c728f-577b-401d-8b05-653fe6acfa75</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXWvbMBT9K0HPjrHjZLHzNpoVCtsKbelLKeZaH4lAljxZTpuF/Pdd2Ypb2gzK2GMf77n3SOcc6T4ciGRkRSqWC8rmOSyzNMuSJJ8VRZUVIsmXRZIKRiKioeY4yWuQqrScGuvRHajOw4fDla5Mp9nkWz+QxnKoy55wPOIsk22jYH8fKIjQrVTMck1WD48RacDiHY5bsjq8aX1UpIKKKxztRUxuTirPa3f7xqPM0K7m2pXyBH4Pp6xDZ3K1xg6SvLQ0IvzZcc04ahKgWh6RGjQDZ+yerJztELAc2LVW+3FiK7UbPNfw3MrfeHE283OCo0ka8hjLMmQ1wGINDm7xZOo6O0ZnJOXtEA/jAjrlLl5jw8B146TRA8VBpU5so7pa/xxiIeMBr56ma1EEb7xPrzzYELdb83RzUnkpdR9JaCpDQY0VOGdl1Tmv50C44n3GNTSN1JuysWYnezJqqeONwiIWyjzhpa3c6BioFx5jrBBfIr7u4Xuw0rv4gccgGWXKu3OvaDD7klnTNMGzfxZyjEi7by8UtO2Ldcy8/NV54UMQwXI5pOYp1MrGfUU9Ox7cHaOwN8tFLpI0/8uXTLKXv+fAbrg7tziCUpqlCZtCQtl0Lr7QabVgdEp5AQUVdFks5vHA+y9r9AHNpzW660W/26O3Xv5tkWafi/S5SI9/AKtLClOCBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=20fb9d19cf9d871009d5b6734d851c22"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>6cfb9d19cf9d871009d5b6734d851c1e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:08</sys_updated_on>
+        <ui_id>fccc310d-a0cd-4f6c-b5dc-ce9a9cfc7954</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1X30/jOBD+V3x5ujt1q6RpS9u3VfeQToJFAsQ+bLeWY08aH46dtZ2WLur/fuMkLVwBwUn7shI8IGzPj29mvpkMX+8jKaJZNE4gHk2TMU+TNB3E8WAyTLJxmiUDkTKAYdSLNCsBJT3LFNDm0IvWTNXh8o46zWnFMgpA/a30dGPsLS2ZZisoQXvKmQsKQrpKse1Np/cFpcj5QYrMWyleSCUs6Gj29VsvqphFbx5sNLs/enordsUyUCh6HcC/EIvfVs/enT3WJZ/bB2NFwBP3IrjzoAUgkJwpB70IgxbMG7uNZt7WeGGBiQuttgeJQmqPBqMge+fkD3Q7iYNcDhgZh/btcKRd0trr/BPz7Aotc1/bTpQXRnJwbU4E5KxWfv74rhW4qLw0ulVpwuy0japL/blNSXQwsK8R3tQOQUAV4gzIuzDyq8JsLvcoT6VuUtI9KsOZOpyY91ZmtQ947iNQLSdKVlVSr2hlzVo2yoil7K8UHvq5Mht06uRK9xkPwPuYVtY/xftPzfUNszJEcY5mUHnXi9zWzRVz7iEWTCL9XgckbWRdDLRNQ1DhVlb+IzpYQwd319s3hYB4+iKxkuyBSE0fuEcN4cCuZSgd5FLLgH5Rx3Eq7hf7FlhEs8UT/l/Cd7TjyQfyV8mkWkS9RWuykU7y6UiMRTbIJ5P4ZBRnyTCfjBOe5WwIaT5sxJvCNuJO08yU9BkoQQ5zRaV4o93d0nnmoY1hsHSFsT4Up0neQ3D3WOXVCmxf6szUWlAIUfRdnf0D3O92yycqfx5Czo0ljHgoK2OZ3RJuQUhPlCzxt9R4xNlAvCGMI0lKg2QAUlf4N1KIIAGc0UyhJA4KzYIHPHnL1qAI3GHdHbj+Qv9NCrwiSEjGCxDEF0C4kpj8AGhw4givrQ21qNi2qUkhXehmgm29B1V7qeSPxkmDe2tqSyysJWz65Aw8KYHcarMhMg9vRAN6YhptCCE7aK6uMFIfwAvD6+CqNYghYkPwoLKRvmgQIsOxR5jCAK4Lpm8dcYaUNS8e3Begqt+WTwdxGLzUbDTYZxl4GdKgyBcm4IhtyPHJIBufDHLBeXrMiuHomG3IJ5wT9phcr5vZLQ2WBwTNts9CbFqBXGOzr4CQj6tQq/9CHY2wG5MJm6aT0clYxHE+TXIOJ9MRWhtD+kaor5vZLbnBOnFPw5ehRdtwfOmwBthkaKm5vLo4+zCZpINk/4BukNvt4/zynPx+hpMIi/8HWXJk8goZRvFT0gm0NJszK9zTj+b7bHmfLe+z5X22/JTZ8j9X7dc3ov2qfSpBNR6OV6T9no3dqBAdbVemo127eyQ33WO3byc/a99OxnHz8wtt3W1wv/zS/ej/qxfW72//AkEpnfyVDgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6cfb9d19cf9d871009d5b6734d851c1e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Associate Record to Email">7b95a4c0a73133008299b39f087901b4</action_type>
+        <action_type_parent display_value="Associate Record to Email">18a22c44a73133008299b39f08790116</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7b95a4c0a73133008299b39f087901b4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create WM from email">d8fb5d19cf9d871009d5b6734d851c4b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>e8fb9d19cf9d871009d5b6734d851c20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:54</sys_updated_on>
+        <ui_id>e24ac377-38bd-4df1-acc2-3dcb5d250521</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXWvjMBD8K0HPjnHi5FLn7WhaKPSu0Ja+lGLW+kgEsqST5bS5kP9+K1txSxuOctxjH3d2R5oZaR/3RDKyJIuqmMOMZrDIJ3meZWfToqjyQmRniyKbVHOSEA01x0leg1Sl49Q4hugWVBvg/f5KV6bVbHTRDUxS2ddlRzgccJbJxirYPUQKInQjFXNck+XjU0IsOLzDc0eW+3etz4pUUHGFo52I0e1R5WntfmcDygxta659KY/gdTxlFTujqxV2kBSkTRLCXzzXjKMmAarhCalBM/DG7cjSuxYBx4HdaLUbJjZS+95zDS+N/I0X59MwJziapDGPoSxjVj0sVuDhDk+mvnVDdEZS3vTxMC6gVf78LdYP3Fgvje4pHip1ZBvV1vpnHwsZDnjzNG2DIrgNPoPyaEPcbczz7VHlpdRdJLGpDAU1VOC9k1Xrg5494Yp3GddgrdTr0jqzlR0ZtdTpWmGRCmWe8dJGrnUKNAhPMVZILxFfdfADOBlc/MBjkIwy5f2pVzSYfcmcsTZ6Ds9CDglpds25gqZ5tY6Zl7/aILwPIlou+9QChTpp/XfUs+XR3SGJe1OJv35JeP17Htya+1OLIyil+SRjY8goG8/ENzqu5oyOKS+goIIuivks7Xn/ZY0+ofm4Rved6A979N7Lvy3S9GuRvhbp6Q92ilsVggYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e8fb9d19cf9d871009d5b6734d851c20"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>body_text</element>
+        <help/>
+        <hint/>
+        <label>Body Text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:53</sys_created_on>
+        <sys_id>14fb5d19cf9d871009d5b6734d851c86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_record</element>
+        <help/>
+        <hint/>
+        <label>Target Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>28fb5d19cf9d871009d5b6734d851ceb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>inbound_email</element>
+        <help/>
+        <hint>The record representing the inbound email.</hint>
+        <label>Inbound Email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>68fb5d19cf9d871009d5b6734d851c9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>from_address</element>
+        <help/>
+        <hint/>
+        <label>From address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>68fb5d19cf9d871009d5b6734d851cde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>user</element>
+        <help/>
+        <hint/>
+        <label>User</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>a4fb5d19cf9d871009d5b6734d851cac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>target_table_name</element>
+        <help/>
+        <hint/>
+        <label>Target Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:53</sys_created_on>
+        <sys_id>d0fb5d19cf9d871009d5b6734d851c6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>subject</element>
+        <help/>
+        <hint/>
+        <label>Subject</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:54</sys_created_on>
+        <sys_id>dcfb5d19cf9d871009d5b6734d851c92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 20:24:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d8fb5d19cf9d871009d5b6734d851c4b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>9eaa5d91cf9d871009d5b6734d851c38</sys_id>
+        <latest_snapshot>d8fb5d19cf9d871009d5b6734d851c4b</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch2-hotfix1-05-05-2026_05-24-2026_0242.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9eaa5d91cf9d871009d5b6734d851c38^sys_idNOT INbcfb9d19cf9d871009d5b6734d851c3f"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"bcfb9d19cf9d871009d5b6734d851c3f","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>9eaa5d91cf9d871009d5b6734d851c38</plan_id>
+        <snapshot>46f16965cf5d8b1009d5b6734d851c09</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 20:24:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bcfb9d19cf9d871009d5b6734d851c3f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 13:20:08</sys_updated_on>
+        <trigger display_value="">b8fb9d19cf9d871009d5b6734d851c3e</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9eaa5d91cf9d871009d5b6734d851c38"/>
+</record_update>

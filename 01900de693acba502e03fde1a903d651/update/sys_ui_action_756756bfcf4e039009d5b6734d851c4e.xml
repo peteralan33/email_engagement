@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>send_otp_via_int</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+    console.log('[OTP CLIENT] UI Action clicked successfully.');
+
+    // Gather field references strictly for local phone/first name lookup
+    var consumerId = g_form.getValue('consumer') || '';
+    var contactId  = g_form.getValue('contact') || '';
+
+    // Generate a secure random 6-digit OTP
+    var generatedOtp = Math.floor(100000 + Math.random() * 900000).toString();
+
+    // Helper function for timed message banners
+    var showTimedBanner = function(message, isError, isSuccess, secondsToClear) {
+        g_form.clearMessages();
+        var bannerText = message + ' (Notification clearing in ' + secondsToClear + 's)';
+        
+        if (isError) {
+            g_form.addErrorMessage(bannerText);
+        } else if (isSuccess) {
+            g_form.addSuccessMessage(bannerText);
+        } else {
+            g_form.addInfoMessage(bannerText);
+        }
+
+        setTimeout(function() {
+            if (typeof g_form !== 'undefined' && g_form.clearMessages) {
+                g_form.clearMessages();
+            }
+        }, secondsToClear * 1000);
+    };
+
+    // 1. AUTOMATICALLY FIRE SMS ON ACTION GENERATION
+    var triggerAutoSms = function(defaultPhone, firstName) {
+        var constructedMessage = 'Hi ' + (firstName || 'Customer') + ', Here is your OTP password: ' + generatedOtp + '. Please read this back to the Operator.';
+
+        showTimedBanner('Initiating SMS message pipeline...', false, false, 3);
+
+        var gaSend = new GlideAjax('x_snc_pab_ee_tkit.SendSMSviaInteraction');
+        gaSend.addParam('sysparm_name', 'executeSmsSubflow');
+        gaSend.addParam('sysparm_interaction', g_form.getUniqueValue());
+        gaSend.addParam('sysparm_reason', 'Authentication Required');
+        gaSend.addParam('sysparm_message', constructedMessage);
+
+        // Account/Contact/Consumer data handoff removed—subflow handles context lookup on server side
+
+        gaSend.getXMLAnswer(function(response) {
+            try {
+                if (response) {
+                    var parsed = JSON.parse(response);
+                    if (parsed && parsed.status === 'success') {
+                        showTimedBanner('OTP SMS sent successfully.', false, true, 5);
+                    }
+                }
+            } catch(e) {
+                console.error('[OTP CLIENT] Error sending automated SMS', e);
+            }
+        });
+
+        // Open verification modal immediately after dispatching
+        promptOtpVerification(defaultPhone, constructedMessage);
+    };
+
+    // 2. MODAL VERIFICATION WITH ERROR CHECKING
+    var promptOtpVerification = function(defaultPhone, constructedMessage) {
+        g_modal.showFields({
+            title: 'Send One Time Password (OTP)',
+            size: 'lg',
+            fields: [
+                { type: 'string', name: 'phone', label: 'Phone Number', mandatory: true, value: defaultPhone, disabled: true },
+                { 
+                    type: 'choice', 
+                    name: 'reason', 
+                    label: 'Reason for message', 
+                    mandatory: true,
+                    value: 'authentication_required',
+                    disabled: true,
+                    choices: [
+                        { value: 'authentication_required', displayValue: 'Authentication Required' }
+                    ]
+                },
+                { type: 'string', name: 'message', label: 'Message to send', mandatory: true, value: constructedMessage, disabled: true },
+                { type: 'string', name: 'otp_input', label: 'Enter OTP Code for Verification', mandatory: true }
+            ]
+        }).then(function(result) {
+            var getVal = function(name) {
+                if (result && result.updatedFields) {
+                    var field = result.updatedFields.filter(function(f) { return f.name === name; })[0];
+                    if (field) return field.value;
+                }
+                return '';
+            };
+
+            var userEnteredOtp = getVal('otp_input').trim();
+
+            // Error Check: Compare user input against generated OTP
+            if (userEnteredOtp !== generatedOtp) {
+                showTimedBanner('Invalid OTP entered. Please try again.', true, false, 5);
+                // Re-open modal so agent can try entering the code again
+                promptOtpVerification(defaultPhone, constructedMessage);
+                return;
+            }
+
+            // Correct OTP: Call secondary script include and close modal
+            showTimedBanner('OTP Verified successfully! Updating interaction...', false, false, 3);
+
+            var gaConfirm = new GlideAjax('x_snc_pab_ee_tkit.ConfirmOTPViaInteraction');
+            gaConfirm.addParam('sysparm_name', 'confirmAndValidateOTP');
+            gaConfirm.addParam('sysparm_interaction', g_form.getUniqueValue());
+            gaConfirm.addParam('sysparm_otp_code', userEnteredOtp);
+
+            gaConfirm.getXMLAnswer(function(response) {
+                try {
+                    if (response) {
+                        var parsed = JSON.parse(response);
+                        if (parsed && parsed.status === 'success') {
+                            showTimedBanner('Interaction updated successfully!', false, true, 5);
+                            g_form.reload();
+                        } else {
+                            showTimedBanner(parsed.message || 'Failed to update interaction record.', true, false, 5);
+                        }
+                    }
+                } catch(err) {
+                    showTimedBanner('An error occurred during interaction update.', true, false, 5);
+                }
+            });
+        });
+    };
+
+    // Start execution sequence (client-side reference lookup used only to pull phone and first name for modal display)
+    if (consumerId) {
+        g_form.getReference('consumer', function(cons) {
+            var phoneNum  = cons ? (cons.mobile_phone || cons.phone || '') : '';
+            var firstName = cons ? (cons.first_name || cons.name || '') : '';
+            triggerAutoSms(phoneNum, firstName);
+        });
+    } else if (contactId) {
+        g_form.getReference('contact', function(con) {
+            var phoneNum  = con ? (con.mobile_phone || con.phone || '') : '';
+            var firstName = con ? (con.first_name || con.name || '') : '';
+            triggerAutoSms(phoneNum, firstName);
+        });
+    } else {
+        var fallbackPhone = g_form.getValue('phone') || g_form.getValue('callback_number') || '';
+        triggerAutoSms(fallbackPhone, '');
+    }
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_icon/>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>unstyled</form_style>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_button_icon/>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>OTP</name>
+        <onclick/>
+        <order>3</order>
+        <script/>
+        <show_form_icon_only>false</show_form_icon_only>
+        <show_insert>true</show_insert>
+        <show_list_icon_only>false</show_list_icon_only>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-20 01:56:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>756756bfcf4e039009d5b6734d851c4e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>OTP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ui_action_756756bfcf4e039009d5b6734d851c4e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-20 02:13:03</sys_updated_on>
+        <table>interaction</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

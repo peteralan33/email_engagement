@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>send_sms_via_int</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+    console.log('[SMS CLIENT] UI Action clicked successfully.');
+
+    // Gather local references strictly for initial phone number lookup
+    var consumerId = g_form.getValue('consumer') || '';
+    var contactId  = g_form.getValue('contact') || '';
+
+    // Helper function to handle auto-clearing message banners with green success styling
+    var showTimedBanner = function(message, isError, isSuccess, secondsToClear) {
+        g_form.clearMessages();
+        var bannerText = message + ' (Notification clearing in ' + secondsToClear + 's)';
+        
+        if (isError) {
+            g_form.addErrorMessage(bannerText);    // Red banner
+        } else if (isSuccess) {
+            g_form.addSuccessMessage(bannerText); // Green banner
+        } else {
+            g_form.addInfoMessage(bannerText);    // Blue/Neutral info banner
+        }
+
+        setTimeout(function() {
+            if (typeof g_form !== 'undefined' && g_form.clearMessages) {
+                g_form.clearMessages();
+            }
+        }, secondsToClear * 1000);
+    };
+
+    var openModal = function(defaultPhone) {
+        g_modal.showFields({
+            title: 'Send SMS Notification',
+            size: 'lg',
+            fields: [
+                { type: 'string', name: 'phone', label: 'Phone Number', mandatory: true, value: defaultPhone, disabled: true },
+                { 
+                    type: 'choice', 
+                    name: 'reason', 
+                    label: 'Reason for message', 
+                    mandatory: true,
+                    choices: [
+                        { value: 'knowledge_sharing', displayValue: 'Knowledge Sharing' },
+                        { value: 'appointment_reminder', displayValue: 'Appointment Reminder' },
+                        { value: 'case_update', displayValue: 'Case Update' },
+                        { value: 'follow_up', displayValue: 'Follow-up' },
+                        { value: 'general_inquiry', displayValue: 'General Inquiry' },
+                        { value: 'support_notification', displayValue: 'Support Notification' }
+                    ]
+                },
+                { type: 'string', name: 'message', label: 'Message to send', mandatory: true }
+            ]
+        }).then(function(result) {
+            console.log('[SMS CLIENT] Modal submitted. Preparing parameters...');
+            
+            // 1. Initializing Banner (Neutral Info banner, lasts 3 seconds)
+            showTimedBanner('Initiating SMS message pipeline...', false, false, 3);
+
+            var getVal = function(name, defaultValue) {
+                if (result && result.updatedFields) {
+                    var field = result.updatedFields.filter(function(f) { return f.name === name; })[0];
+                    if (field) return field.value;
+                }
+                return defaultValue || '';
+            };
+
+            var reasonText       = getVal('reason', '');
+            var messageText      = getVal('message', '');
+            var interactionSysId = g_form.getUniqueValue();
+
+            // Instantiate GlideAjax
+            var ga = new GlideAjax('x_snc_pab_ee_tkit.SendSMSviaInteraction');
+            ga.addParam('sysparm_name', 'executeSmsSubflow');
+            ga.addParam('sysparm_interaction', interactionSysId);
+            ga.addParam('sysparm_reason', reasonText);
+            ga.addParam('sysparm_message', messageText);
+
+            // Account/Contact/Consumer data handoff removed—subflow handles context lookup on server side
+
+            ga.getXMLAnswer(function(response) {
+                console.log('[SMS CLIENT] Server response returned: ' + response);
+                
+                try {
+                    if (!response) {
+                        showTimedBanner('Received empty (null) response from the server.', true, false, 5);
+                        return;
+                    }
+
+                    var parsed = JSON.parse(response);
+                    
+                    if (parsed && parsed.status === 'success') {
+                        // 2. Completion Banner (Explicit Green Success banner, lasts 5 seconds)
+                        var successMsg = parsed.notes ? 'SMS Status: ' + parsed.notes : 'SMS message has been sent successfully.';
+                        showTimedBanner(successMsg, false, true, 5);
+                        g_form.reload();
+                    } else {
+                        showTimedBanner(parsed.message || 'SMS subflow execution failed.', true, false, 5);
+                    }
+                } catch(err) {
+                    showTimedBanner('An error occurred while processing the SMS server stream.', true, false, 5);
+                }
+            });
+        });
+    };
+
+    // Smart phone lookup based on available party (Consumer vs Contact vs Fallback)
+    if (consumerId) {
+        g_form.getReference('consumer', function(cons) {
+            var phoneNum = cons ? (cons.mobile_phone || cons.phone || '') : '';
+            openModal(phoneNum);
+        });
+    } else if (contactId) {
+        g_form.getReference('contact', function(con) {
+            var phoneNum = con ? (con.mobile_phone || con.phone || '') : '';
+            openModal(phoneNum);
+        });
+    } else {
+        var fallbackPhone = g_form.getValue('phone') || g_form.getValue('callback_number') || '';
+        openModal(fallbackPhone);
+    }
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_icon/>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>unstyled</form_style>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_button_icon/>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Send SMS</name>
+        <onclick/>
+        <order>5</order>
+        <script/>
+        <show_form_icon_only>false</show_form_icon_only>
+        <show_insert>true</show_insert>
+        <show_list_icon_only>false</show_list_icon_only>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 14:22:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5fdb1876cf86cf1009d5b6734d851c45</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Send SMS</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ui_action_5fdb1876cf86cf1009d5b6734d851c45</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-20 02:14:16</sys_updated_on>
+        <table>interaction</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

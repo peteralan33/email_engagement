@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0167c064cf8e0bd009d5b6734d851c06" label="Knowledge Links" max_length="40" name="x_snc_pab_ee_tkit_m2m_interaction_to_knowledge_link" type="collection">
+        <element label="Interaction" max_length="32" name="interaction" reference="interaction" type="reference"/>
+        <element label="Overview" max_length="200" name="overview" type="string"/>
+        <element label="Knowledge Article" max_length="32" name="knowledge_article" reference="kb_knowledge" type="reference"/>
+        <index name="index">
+            <element name="interaction"/>
+        </index>
+        <index name="index2">
+            <element name="knowledge_article"/>
+        </index>
+    </element>
+</database>

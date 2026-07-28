@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Property Tax Response Email">747ea95e2f498710b14f861cbfa4e332</agent>
+        <description>This tool identifies the precise CoV Knowledge and regulatory context required to generate an accurate, compliant, and stakeholder-aligned email response.</description>
+        <display_mode>inline</display_mode>
+        <display_output>true</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>8291041f9398479051fcffe03603d6f0</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"search_type","description":"Search type","value":"hybrid"},{"name":"query","description":"search query for retrieving relevant information from Knowledge Table"},{"name":"search_profile","value":"x_snc_barnes_gmap_cov_knowledge_search_profile","label":"CoV Knowledge Search Profile","description":"Search profile"},{"name":"sources","label":["Knowledge Table"],"value":["kb_knowledge"],"description":"Search sources"},{"name":"search_results_limit","value":"3","description":"Search results limit"},{"name":"document_match_threshold","value":0,"description":"Document matching threshold"},{"name":"semantic_index_names","label":["body","title"],"value":["body","title"],"description":"Semantic indexed fields"},{"name":"fields","label":["Article body [kb_knowledge]","Short description [kb_knowledge]"],"value":["kb_knowledge.text","kb_knowledge.short_description"],"description":"Fields to be returned"},{"name":"chunking_mode","value":"SMALL_TO_BIG"},{"name":"chunk_unit","value":"WORDS"},{"name":"chunk_size","value":"750"},{"name":"expanded_snippet_size","value":"750"}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>CoV Knowledge Source</name>
+        <output_transformation_strategy>summary_for_search_results</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-26 14:03:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f87ee5962f898710b14f861cbfa4e38e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CoV Knowledge Source</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_f87ee5962f898710b14f861cbfa4e38e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-26 14:14:53</sys_updated_on>
+        <timeout/>
+        <tool display_value="AIA RAG Retriever">8021ddea2b0d52101d72fb466e91bfd1</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-09 12:53:22</sys_created_on>
+        <sys_id>eb3488a0cf4e0bd009d5b6734d851cf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_int_category.x_snc_pab_ee_tkit.external_work_records_user</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_security_acl display_value="x_snc_pab_ee_tkit_int_category">233488a0cf4e0bd009d5b6734d851cd8</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_eb3488a0cf4e0bd009d5b6734d851cf7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-09 12:53:22</sys_updated_on>
+        <sys_user_role display_value="x_snc_pab_ee_tkit.external_work_records_user" name="x_snc_pab_ee_tkit.external_work_records_user">260b595b2fc4c350b14f861cbfa4e3ed</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_security_acl_role_eb3488a0cf4e0bd009d5b6734d851cf7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-09 12:53:22</sys_created_on><sys_id>eb3488a0cf4e0bd009d5b6734d851cf7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_pab_ee_tkit_int_category.x_snc_pab_ee_tkit.external_work_records_user</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_security_acl display_value="x_snc_pab_ee_tkit_int_category">233488a0cf4e0bd009d5b6734d851cd8</sys_security_acl><sys_update_name>sys_security_acl_role_eb3488a0cf4e0bd009d5b6734d851cf7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-09 12:53:22</sys_updated_on><sys_user_role display_value="x_snc_pab_ee_tkit.external_work_records_user" name="x_snc_pab_ee_tkit.external_work_records_user">260b595b2fc4c350b14f861cbfa4e3ed</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1355256793</payload_hash>
+        <record_name>x_snc_pab_ee_tkit_int_category.x_snc_pab_ee_tkit.external_work_records_user</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-09 12:53:22</sys_created_on>
+        <sys_id>f734c8a0cf4e0bd009d5b6734d851cb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f46f0a0ab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-09 12:53:22</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>7734c8a0314e0bd0768324b1e5b46fb6</update_guid>
+        <update_guid_history>7734c8a0314e0bd0768324b1e5b46fb6:-1355256793</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_pab_ee_tkit_int_category.x_snc_pab_ee_tkit.external_work_records_user">dd55c068cf4e0bd009d5b6734d851cc7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-09 12:58:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>5e0e6948309b4a76832e591ecb75cde4</sys_id>
+        <sys_metadata>eb3488a0cf4e0bd009d5b6734d851cf7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_pab_ee_tkit_int_category.x_snc_pab_ee_tkit.external_work_records_user</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent display_value="">233488a0cf4e0bd009d5b6734d851cd8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_eb3488a0cf4e0bd009d5b6734d851cf7</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_eb3488a0cf4e0bd009d5b6734d851cf7">f734c8a0cf4e0bd009d5b6734d851cb7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-09 12:58:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

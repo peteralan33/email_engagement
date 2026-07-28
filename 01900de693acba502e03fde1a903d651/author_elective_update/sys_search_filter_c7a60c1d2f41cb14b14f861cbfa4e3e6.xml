@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="DELETE">
+        <active>true</active>
+        <ais_search_source display_value="Web Crawler">1622ac352fcc4310d73ea23fafa4e3fd</ais_search_source>
+        <label>Web Content</label>
+        <name>Web Crawler</name>
+        <order>600</order>
+        <search_context_config display_value="Eduational Student Support AI Assistant">68d53d142f240390b14f861cbfa4e346</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-23 03:56:38</sys_created_on>
+        <sys_id>c7a60c1d2f41cb14b14f861cbfa4e3e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Web Crawler</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_search_filter_c7a60c1d2f41cb14b14f861cbfa4e3e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-23 03:56:38</sys_updated_on>
+    </sys_search_filter>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_search_filter_c7a60c1d2f41cb14b14f861cbfa4e3e6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter"><sys_search_filter action="INSERT_OR_UPDATE"><active>true</active><ais_search_source display_value="Web Crawler">1622ac352fcc4310d73ea23fafa4e3fd</ais_search_source><label>Web Content</label><name>Web Crawler</name><order>600</order><search_context_config display_value="Eduational Student Support AI Assistant">68d53d142f240390b14f861cbfa4e346</search_context_config><sys_class_name>sys_search_filter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-23 03:56:38</sys_created_on><sys_id>c7a60c1d2f41cb14b14f861cbfa4e3e6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Web Crawler</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_search_filter_c7a60c1d2f41cb14b14f861cbfa4e3e6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-23 03:56:38</sys_updated_on></sys_search_filter></record_update>]]></payload>
+        <payload_hash>134012782</payload_hash>
+        <record_name>Web Crawler</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-23 03:56:38</sys_created_on>
+        <sys_id>c7a60c1d2f41cb14b14f861cbfa4e3e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e52fa570f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-23 03:56:38</sys_updated_on>
+        <type>Source Facet Bucket</type>
+        <update_guid>47a60c1d7b41cb148b75db1d88872ce8</update_guid>
+        <update_guid_history>47a60c1d7b41cb148b75db1d88872ce8:134012782</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-23 03:57:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_search_filter">sys_search_filter</sys_db_object>
+        <sys_id>932f80f561a647f0b40e97207a232900</sys_id>
+        <sys_metadata>c7a60c1d2f41cb14b14f861cbfa4e3e6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Web Crawler</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_search_filter_c7a60c1d2f41cb14b14f861cbfa4e3e6</sys_update_name>
+        <sys_update_version display_value="sys_search_filter_c7a60c1d2f41cb14b14f861cbfa4e3e6">c7a60c1d2f41cb14b14f861cbfa4e3e9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-23 03:57:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

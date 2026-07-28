@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Immediately transfers the customer to a live human agent or fraud prevention specialist. Use this for fraud, unauthorized transactions, stolen identity, lost cards, or any situation requiring immediate human intervention.</description>
+        <input_schema>{"type":"object","properties":{"reason":{"type":"string","description":"The reason for transferring to a live operator. E.g. fraud_detected, unauthorized_transaction, customer_request, lost_card, stolen_identity."}},"required":[]}</input_schema>
+        <name>Transfer_To_Operator</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[/**
+ * Transfer_To_Operator
+ * Signals that the conversation should be escalated to a live human agent.
+ * The platform's voice routing engine will pick up this output and transfer the call.
+ *
+ * @param {Object} inputs
+ * @param {string} inputs.reason - Reason for the transfer (e.g. "fraud_detected", "customer_request")
+ * @returns {Object} transfer_result
+ */
+(function executeScript(inputs, outputs) {
+  var reason = inputs.reason || 'customer_request';
+
+  gs.info('Banking Voice Agent - Transfer_To_Operator triggered. Reason: ' + reason);
+
+  // Signal the transfer action for the voice channel
+  outputs.transfer_action = 'live_agent';
+  outputs.escalation_reason = reason;
+  outputs.message = 'I want to make sure your account is completely secure. I am transferring you immediately to our fraud prevention specialists who can help you right away. Please hold.';
+  outputs.success = true;
+})(inputs, outputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-21 11:33:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>942529102f9a8390b846c63bcfa4e3e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transfer_To_Operator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_942529102f9a8390b846c63bcfa4e3e2</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-21 11:33:53</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

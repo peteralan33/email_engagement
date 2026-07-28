@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout">
+    <sys_ux_form_action_layout action="DELETE">
+        <action_config display_value="CSM/FSM Configurable Workspace Action Config">46e658c35322101043d7ddeeff7b12b4</action_config>
+        <active>true</active>
+        <description>These UI actions are only specific to the FSO interaction page</description>
+        <name>FSO Interaction Actions</name>
+        <order>0</order>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_form_action_layout</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-10 12:42:09</sys_created_on>
+        <sys_id>cd4b81b0cfc28fd009d5b6734d851ce5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FSO Interaction Actions</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_cd4b81b0cfc28fd009d5b6734d851ce5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-10 12:42:09</sys_updated_on>
+        <table>interaction</table>
+        <use_layout_items_only>true</use_layout_items_only>
+    </sys_ux_form_action_layout>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_form_action_layout_cd4b81b0cfc28fd009d5b6734d851ce5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout"><sys_ux_form_action_layout action="INSERT_OR_UPDATE"><action_config display_value="CSM/FSM Configurable Workspace Action Config">46e658c35322101043d7ddeeff7b12b4</action_config><active>true</active><description>These UI actions are only specific to the FSO interaction page</description><name>FSO Interaction Actions</name><order>0</order><specificity>20</specificity><sys_class_name>sys_ux_form_action_layout</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-07-10 12:42:09</sys_created_on><sys_id>cd4b81b0cfc28fd009d5b6734d851ce5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FSO Interaction Actions</sys_name><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_ux_form_action_layout_cd4b81b0cfc28fd009d5b6734d851ce5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-07-10 12:42:09</sys_updated_on><table>interaction</table><use_layout_items_only>true</use_layout_items_only></sys_ux_form_action_layout></record_update>]]></payload>
+        <payload_hash>700830934</payload_hash>
+        <record_name>FSO Interaction Actions</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-10 12:42:11</sys_created_on>
+        <sys_id>6d4b45b0cfc28fd009d5b6734d851ce5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f4c0cbfae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-10 12:42:11</sys_updated_on>
+        <type>UX Form Actions Layout</type>
+        <update_guid>e94b45b067c28fd005f330d5584dcfe4</update_guid>
+        <update_guid_history>e94b45b067c28fd005f330d5584dcfe4:700830934</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-10 12:43:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_form_action_layout">sys_ux_form_action_layout</sys_db_object>
+        <sys_id>0d222b067a134880905c10471384e400</sys_id>
+        <sys_metadata>cd4b81b0cfc28fd009d5b6734d851ce5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FSO Interaction Actions</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_form_action_layout_cd4b81b0cfc28fd009d5b6734d851ce5</sys_update_name>
+        <sys_update_version display_value="sys_ux_form_action_layout_cd4b81b0cfc28fd009d5b6734d851ce5">6d4b45b0cfc28fd009d5b6734d851ce5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-10 12:43:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

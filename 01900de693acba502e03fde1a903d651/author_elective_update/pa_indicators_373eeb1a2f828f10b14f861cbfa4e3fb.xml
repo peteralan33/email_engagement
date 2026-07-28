@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_indicators">
+    <pa_indicators action="DELETE">
+        <aggregate>1</aggregate>
+        <allow_multi_element_aggregation>false</allow_multi_element_aggregation>
+        <benchmarking>false</benchmarking>
+        <calendar>standard</calendar>
+        <calendar_freq/>
+        <collect_breakdown_matrix>false</collect_breakdown_matrix>
+        <collect_records>true</collect_records>
+        <conditions/>
+        <contributor/>
+        <cube/>
+        <data_source/>
+        <default_aggregate display_value="28d running AVG">ee015051d7001100ba986f14ce610378</default_aggregate>
+        <default_chart_type>line</default_chart_type>
+        <description>Abandonment Rate is measured daily as unit .
+The goal for this indicator is to minimize.
+It is the count on data source undefined, which is using the table: 
+undefined
+with the following conditions:
+undefined</description>
+        <direction>2</direction>
+        <display>true</display>
+        <excluded_statistics/>
+        <field/>
+        <forecast_base_periods>2</forecast_base_periods>
+        <forecast_base_start>00000000</forecast_base_start>
+        <forecast_base_type>1</forecast_base_type>
+        <forecast_lower_limit>1</forecast_lower_limit>
+        <forecast_method>1</forecast_method>
+        <forecast_periods>2</forecast_periods>
+        <forecast_preselect_observations>false</forecast_preselect_observations>
+        <forecast_robust_estimation>false</forecast_robust_estimation>
+        <forecast_upper_limit>10</forecast_upper_limit>
+        <formula/>
+        <formula_aggregate_whole>false</formula_aggregate_whole>
+        <formula_allow_null>false</formula_allow_null>
+        <frequency>10</frequency>
+        <groups/>
+        <has_managed_indicators>false</has_managed_indicators>
+        <key>true</key>
+        <label/>
+        <linked_indicator/>
+        <live_group_profile/>
+        <managed_breakdown/>
+        <managed_element/>
+        <managing_indicator/>
+        <name>Abandonment Rate</name>
+        <order/>
+        <override_periods>false</override_periods>
+        <precision>2</precision>
+        <related_breakdowns>0</related_breakdowns>
+        <related_jobs>0</related_jobs>
+        <render_continuous_lines>false</render_continuous_lines>
+        <role_override>true</role_override>
+        <roles/>
+        <score_periods>-1</score_periods>
+        <scores_format>kMGTPE</scores_format>
+        <scores_modified_at/>
+        <script/>
+        <scripted>false</scripted>
+        <show_delta>true</show_delta>
+        <show_realtime_score>false</show_realtime_score>
+        <snapshot_periods>-1</snapshot_periods>
+        <sql_statement/>
+        <sys_class_name>pa_indicators</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-15 16:25:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>373eeb1a2f828f10b14f861cbfa4e3fb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Abandonment Rate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>pa_indicators_373eeb1a2f828f10b14f861cbfa4e3fb</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-15 16:37:15</sys_updated_on>
+        <type>3</type>
+        <unit display_value="%">f9c365e2d7320100ba986f14ce6103b8</unit>
+        <users/>
+        <value_when_nil>0</value_when_nil>
+        <visible_to>2</visible_to>
+    </pa_indicators>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>pa_indicators_373eeb1a2f828f10b14f861cbfa4e3fb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_indicators"><pa_indicators action="INSERT_OR_UPDATE"><aggregate>1</aggregate><allow_multi_element_aggregation>false</allow_multi_element_aggregation><benchmarking>false</benchmarking><calendar>standard</calendar><calendar_freq/><collect_breakdown_matrix>false</collect_breakdown_matrix><collect_records>true</collect_records><conditions/><contributor/><cube/><data_source/><default_aggregate display_value="28d running AVG">ee015051d7001100ba986f14ce610378</default_aggregate><default_chart_type>line</default_chart_type><description>Abandonment Rate is measured daily as unit .
+The goal for this indicator is to minimize.
+It is the count on data source undefined, which is using the table: 
+undefined
+with the following conditions:
+undefined</description><direction>2</direction><display>true</display><excluded_statistics/><field/><forecast_base_periods>2</forecast_base_periods><forecast_base_start>00000000</forecast_base_start><forecast_base_type>1</forecast_base_type><forecast_lower_limit>1</forecast_lower_limit><forecast_method>1</forecast_method><forecast_periods>2</forecast_periods><forecast_preselect_observations>false</forecast_preselect_observations><forecast_robust_estimation>false</forecast_robust_estimation><forecast_upper_limit>10</forecast_upper_limit><formula/><formula_aggregate_whole>false</formula_aggregate_whole><formula_allow_null>false</formula_allow_null><frequency>10</frequency><groups/><has_managed_indicators>false</has_managed_indicators><key>true</key><label/><linked_indicator/><live_group_profile/><managed_breakdown/><managed_element/><managing_indicator/><name>Abandonment Rate</name><order/><override_periods>false</override_periods><precision>2</precision><related_breakdowns>0</related_breakdowns><related_jobs>0</related_jobs><render_continuous_lines>false</render_continuous_lines><role_override>true</role_override><roles/><score_periods>-1</score_periods><scores_format>kMGTPE</scores_format><scores_modified_at/><script/><scripted>false</scripted><show_delta>true</show_delta><show_realtime_score>false</show_realtime_score><snapshot_periods>-1</snapshot_periods><sql_statement/><sys_class_name>pa_indicators</sys_class_name><sys_created_by>ag.mcp</sys_created_by><sys_created_on>2026-07-15 16:25:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>373eeb1a2f828f10b14f861cbfa4e3fb</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Abandonment Rate</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>pa_indicators_373eeb1a2f828f10b14f861cbfa4e3fb</sys_update_name><sys_updated_by>ag.mcp</sys_updated_by><sys_updated_on>2026-07-15 16:37:15</sys_updated_on><type>3</type><unit display_value="%">f9c365e2d7320100ba986f14ce6103b8</unit><users/><value_when_nil>0</value_when_nil><visible_to>2</visible_to></pa_indicators></record_update>]]></payload>
+        <payload_hash>-1904189819</payload_hash>
+        <record_name>Abandonment Rate</record_name>
+        <reverted_from/>
+        <source>40c04d9e2f0a8b10b14f861cbfa4e3e5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-15 16:37:15</sys_created_on>
+        <sys_id>7501bf562fc28f10b14f861cbfa4e35d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f66a3c2240000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-15 16:37:15</sys_updated_on>
+        <type>Indicator</type>
+        <update_guid>3101bf5634c28f1096d468c92930965c</update_guid>
+        <update_guid_history>3101bf5634c28f1096d468c92930965c:-1904189819,84b0731613c28f1013ffa68f12cb7fa4:-681730411,ad80f3963f0e8710fcca4a2bba16b5ac:501287124,044e2f1aa6828f10ce0f49b993d0cd7b:197770423,4c4e2f1afd828f10400b6e1b292a4077:1684304659,444e2f1ad8828f109320c089f4035503:197770423</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Abandonment Rate">332a7b162fc68f10b14f861cbfa4e348</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-15 17:17:16</sys_created_on>
+        <sys_db_object display_value="" name="pa_indicators">pa_indicators</sys_db_object>
+        <sys_id>04352fd34fc641128da271daac8a7864</sys_id>
+        <sys_metadata>373eeb1a2f828f10b14f861cbfa4e3fb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Abandonment Rate</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>pa_indicators_373eeb1a2f828f10b14f861cbfa4e3fb</sys_update_name>
+        <sys_update_version display_value="pa_indicators_373eeb1a2f828f10b14f861cbfa4e3fb">7501bf562fc28f10b14f861cbfa4e35d</sys_update_version>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-15 17:17:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

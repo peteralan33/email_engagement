@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Retrieves the business loan service case from sn_bom_loan_b2b_service (FSO Business Loan Service Case table). Falls back to sn_customerservice_case with LNB prefix. Returns case status, outstanding requirements, contact email, and account name.</description>
+        <input_schema>{"type":"object","properties":{"customer_sys_id":{"type":"string","description":"The sys_id of the customer_contact record from Retrieve_Customer_Profile."},"account_sys_id":{"type":"string","description":"The sys_id of the customer_account record from Retrieve_Customer_Profile."},"business_name":{"type":"string","description":"Business/account name to search loan cases by (fallback if no sys_ids)."},"case_number":{"type":"string","description":"Specific loan case number (e.g. LNB0000501) to look up directly."}},"required":[]}</input_schema>
+        <name>Query_Loan_Case</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[/**
+ * Query_Loan_Case
+ *
+ * Retrieves a business loan service case from the FSO table:
+ *   - sn_bom_loan_b2b_service  (Business Loan Service Case)
+ *     Key fields: number, short_description, state, account → customer_account, contact → customer_contact
+ *
+ * Falls back to generic sn_customerservice_case (LNB prefix) if bom table is empty.
+ *
+ * @param {Object} inputs
+ * @param {string} inputs.customer_sys_id  - contact sys_id from Retrieve_Customer_Profile
+ * @param {string} inputs.account_sys_id   - account sys_id from Retrieve_Customer_Profile
+ * @param {string} inputs.business_name    - Business name to search by
+ * @param {string} inputs.case_number      - Specific case number (optional)
+ * @returns {Object} loan case details
+ */
+(function executeScript(inputs, outputs) {
+  var customerSysId = inputs.customer_sys_id || '';
+  var accountSysId  = inputs.account_sys_id  || '';
+  var businessName  = inputs.business_name   || '';
+  var caseNumber    = inputs.case_number     || '';
+
+  gs.info('BankingVoiceAgent - Query_Loan_Case | contact=' + customerSysId + ', acct=' + accountSysId + ', biz=' + businessName);
+
+  // ── Primary: search sn_bom_loan_b2b_service ───────────────────────────────
+  var loanGr = new GlideRecord('sn_bom_loan_b2b_service');
+
+  if (caseNumber) {
+    loanGr.addQuery('number', caseNumber);
+  } else if (accountSysId && accountSysId !== 'demo_account_001') {
+    loanGr.addQuery('account', accountSysId);
+  } else if (businessName && businessName !== 'Demo Business Inc.') {
+    loanGr.addQuery('account.name', 'CONTAINS', businessName);
+  } else if (customerSysId && customerSysId !== 'demo_contact_001') {
+    loanGr.addQuery('contact', customerSysId);
+  }
+
+  // Prefer open/in-progress cases
+  loanGr.orderBy('state');
+  loanGr.setLimit(1);
+  loanGr.query();
+
+  if (loanGr.next()) {
+    var contactEmail  = loanGr.contact.email + '';
+    var contactPhone  = loanGr.contact.phone + '';
+    var contactName   = loanGr.contact.name  + '';
+    var accountName   = loanGr.account.name  + '';
+
+    outputs.case_sys_id           = loanGr.getUniqueValue();
+    outputs.case_number           = loanGr.getValue('number') || '';
+    outputs.case_table            = 'sn_bom_loan_b2b_service';
+    outputs.case_status           = loanGr.getDisplayValue('state') || 'In Review';
+    outputs.short_description     = loanGr.getValue('short_description') || '';
+    outputs.account_name          = accountName;
+    outputs.contact_name          = contactName;
+    outputs.contact_email         = contactEmail;
+    outputs.outstanding_items     = 'Level 1 Authorizer document signature required';
+    outputs.completion_percentage = '95';
+    outputs.next_step             = 'A document must be signed by a Level 1 Authorizer to proceed to final funding.';
+    outputs.success               = true;
+    outputs.message               = 'Business loan application case ' + loanGr.getValue('number') + ' located for ' + accountName + '. Status: ' + loanGr.getDisplayValue('state') + '. One item outstanding.';
+    gs.info('BankingVoiceAgent - Found loan case: ' + loanGr.getValue('number') + ' for ' + accountName);
+    return;
+  }
+
+  // ── Fallback: search generic CSM case with LNB prefix ─────────────────────
+  gs.info('BankingVoiceAgent - No bom loan case found, trying sn_customerservice_case LNB prefix...');
+  var csmGr = new GlideRecord('sn_customerservice_case');
+  csmGr.addQuery('number', 'STARTSWITH', 'LNB');
+  if (accountSysId && accountSysId !== 'demo_account_001') {
+    csmGr.addQuery('account', accountSysId);
+  } else if (businessName && businessName !== 'Demo Business Inc.') {
+    csmGr.addQuery('account.name', 'CONTAINS', businessName);
+  }
+  csmGr.orderByDesc('sys_created_on');
+  csmGr.setLimit(1);
+  csmGr.query();
+
+  if (csmGr.next()) {
+    outputs.case_sys_id           = csmGr.getUniqueValue();
+    outputs.case_number           = csmGr.getValue('number') || '';
+    outputs.case_table            = 'sn_customerservice_case';
+    outputs.case_status           = csmGr.getDisplayValue('state') || 'In Review';
+    outputs.short_description     = csmGr.getValue('short_description') || '';
+    outputs.account_name          = csmGr.account.name + '';
+    outputs.contact_name          = csmGr.contact.name + '';
+    outputs.contact_email         = csmGr.contact.email + '';
+    outputs.outstanding_items     = 'Level 1 Authorizer document signature required';
+    outputs.completion_percentage = '95';
+    outputs.next_step             = 'A document must be signed by a Level 1 Authorizer to proceed to final funding.';
+    outputs.success               = true;
+    outputs.message               = 'Business loan case ' + csmGr.getValue('number') + ' located. One item outstanding.';
+    gs.info('BankingVoiceAgent - Found CSM loan case: ' + csmGr.getValue('number'));
+    return;
+  }
+
+  // ── Demo fallback ──────────────────────────────────────────────────────────
+  gs.info('BankingVoiceAgent - No real loan case found, using demo fallback.');
+  outputs.case_sys_id           = 'demo_loan_LNB0000501';
+  outputs.case_number           = 'LNB0000501';
+  outputs.case_table            = 'sn_bom_loan_b2b_service';
+  outputs.case_status           = 'Pending Authorization';
+  outputs.short_description     = 'Request for Business Loan Drawdown — ' + (businessName || 'Demo Business Inc.');
+  outputs.account_name          = businessName || 'Demo Business Inc.';
+  outputs.contact_name          = inputs.caller_name || 'Valued Customer';
+  outputs.contact_email         = 'customer@demobusiness.com';
+  outputs.outstanding_items     = 'Level 1 Authorizer document signature required';
+  outputs.completion_percentage = '95';
+  outputs.next_step             = 'A document must be signed by a Level 1 Authorizer to proceed to final funding.';
+  outputs.success               = true;
+  outputs.message               = 'Business loan application located (demo mode). Application is nearly complete — one item outstanding.';
+})(inputs, outputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-21 11:33:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>602561142f5687d0b14f861cbfa4e36d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Query_Loan_Case</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_602561142f5687d0b14f861cbfa4e36d</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-21 11:41:39</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

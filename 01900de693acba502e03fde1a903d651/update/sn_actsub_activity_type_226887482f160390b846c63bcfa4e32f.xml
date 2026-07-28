@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_actsub_activity_type">
+    <sn_actsub_activity_type action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_fanouts/>
+        <activity_nl_string/>
+        <activity_source_table>interaction</activity_source_table>
+        <actor_field/>
+        <actor_is_session_user>false</actor_is_session_user>
+        <additional_field1/>
+        <addl_sub_obj2/>
+        <addl_sub_obj3/>
+        <fanout_to_stream>true</fanout_to_stream>
+        <fanout_to_target>true</fanout_to_target>
+        <feed_conditions/>
+        <is_gamifiable>true</is_gamifiable>
+        <label>Walk-up</label>
+        <module/>
+        <object_field/>
+        <short_description/>
+        <sys_class_name>sn_actsub_activity_type</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-21 00:09:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>226887482f160390b846c63bcfa4e32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_actsub_activity_type_226887482f160390b846c63bcfa4e32f</sys_update_name>
+        <sys_updated_by>ag.mcp</sys_updated_by>
+        <sys_updated_on>2026-07-21 00:09:11</sys_updated_on>
+        <target_field/>
+        <undo_verb/>
+        <use_stream_json>false</use_stream_json>
+        <verb>contact_walkup</verb>
+    </sn_actsub_activity_type>
+    <sys_translated_text action="delete_multiple" query="documentkey=226887482f160390b846c63bcfa4e32f"/>
+</record_update>

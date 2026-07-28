@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="CSM/FSM Configurable Workspace App Config">f224e5a3530210102c30ddeeff7b128d</app_config>
+        <description/>
+        <disable_auto_reflow>true</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
+        <event_mappings>[
+    {
+        "eventMappingId": "HvrfQvfVCEvtjjdoOhjdmNNMo",
+        "isConfiguration": null,
+        "offRowStorageId": null,
+        "sourceEventApiName": "x_snc_pab_ee_tkit.RECORD_SRP_UI_CTRL#RECORD_LINK_CLICKED_RELAY_191743f62f060b50b14f861cbfa4e3fe",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "x_snc_pab_ee_tkit.RECORD_SRP_UI_CTRL#RECORD_LINK_CLICKED_RELAY_191743f62f060b50b14f861cbfa4e3fe",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "clientTransformScript": null,
+                "clientTransformScriptUxValue": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": null,
+                "operation": {
+                    "dataBrokerId": "029f04e053610110ac9bddeeff7b1294",
+                    "operationName": "SRP_UI_CTRL#RECORD_LINK_CLICKED",
+                    "parentResourceId": "record",
+                    "payload": {
+                        "container": {
+                            "sysId": {
+                                "binding": {
+                                    "address": [
+                                        "sysId"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "table": {
+                                "binding": {
+                                    "address": [
+                                        "table"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    }
+                },
+                "targetId": "eiiJyggfhhCAEeehhsjjhoLmFggpSGoL",
+                "type": "DATABROKER_OP"
+            }
+        ]
+    }
+]</event_mappings>
+        <macroponent display_value="Customer Insights Default">191743f62f060b50b14f861cbfa4e3fe</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Customer Insights Default</name>
+        <order>0</order>
+        <parent_macroponent display_value="FSO Interaction Record Page (Channel Eng)">75078bb2cfc2835009d5b6734d851cfc</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Customer Insights">cc1703f62f060b50b14f861cbfa4e3ae</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2d1783f62f060b50b14f861cbfa4e395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer Insights Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_screen_2d1783f62f060b50b14f861cbfa4e395</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:59</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=2d1783f62f060b50b14f861cbfa4e395"/>
+    <sys_translated_text action="DELETE">
+        <documentkey>2d1783f62f060b50b14f861cbfa4e395</documentkey>
+        <fieldname>description</fieldname>
+        <language>en, fr, es</language>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:59</sys_created_on>
+        <sys_id>b11783f62f060b50b14f861cbfa4e398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:59</sys_updated_on>
+        <tablename>sys_ux_screen</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_ux_screen_2d1783f62f060b50b14f861cbfa4e395</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="CSM/FSM Configurable Workspace App Config">f224e5a3530210102c30ddeeff7b128d</app_config><description/><disable_auto_reflow>true</disable_auto_reflow><disable_interoperable>false</disable_interoperable><event_mappings>[
+    {
+        "eventMappingId": "HvrfQvfVCEvtjjdoOhjdmNNMo",
+        "isConfiguration": null,
+        "offRowStorageId": null,
+        "sourceEventApiName": "x_snc_pab_ee_tkit.RECORD_SRP_UI_CTRL#RECORD_LINK_CLICKED_RELAY_191743f62f060b50b14f861cbfa4e3fe",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "x_snc_pab_ee_tkit.RECORD_SRP_UI_CTRL#RECORD_LINK_CLICKED_RELAY_191743f62f060b50b14f861cbfa4e3fe",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "clientTransformScript": null,
+                "clientTransformScriptUxValue": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": null,
+                "operation": {
+                    "dataBrokerId": "029f04e053610110ac9bddeeff7b1294",
+                    "operationName": "SRP_UI_CTRL#RECORD_LINK_CLICKED",
+                    "parentResourceId": "record",
+                    "payload": {
+                        "container": {
+                            "sysId": {
+                                "binding": {
+                                    "address": [
+                                        "sysId"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "table": {
+                                "binding": {
+                                    "address": [
+                                        "table"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    }
+                },
+                "targetId": "eiiJyggfhhCAEeehhsjjhoLmFggpSGoL",
+                "type": "DATABROKER_OP"
+            }
+        ]
+    }
+]</event_mappings><macroponent display_value="Customer Insights Default">191743f62f060b50b14f861cbfa4e3fe</macroponent><macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config><name>Customer Insights Default</name><order>0</order><parent_macroponent display_value="FSO Interaction Record Page (Channel Eng)">75078bb2cfc2835009d5b6734d851cfc</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Customer Insights">cc1703f62f060b50b14f861cbfa4e3ae</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2026-07-17 02:50:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2d1783f62f060b50b14f861cbfa4e395</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Customer Insights Default</sys_name><sys_overrides/><sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_ux_screen_2d1783f62f060b50b14f861cbfa4e395</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-07-17 02:50:59</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=2d1783f62f060b50b14f861cbfa4e395"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey>2d1783f62f060b50b14f861cbfa4e395</documentkey><fieldname>description</fieldname><language>en, fr, es</language><sys_created_by>system</sys_created_by><sys_created_on>2026-07-17 02:50:59</sys_created_on><sys_id>b11783f62f060b50b14f861cbfa4e398</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2026-07-17 02:50:59</sys_updated_on><tablename>sys_ux_screen</tablename><value/></sys_translated_text></record_update>]]></payload>
+        <payload_hash>2114382095</payload_hash>
+        <record_name>Customer Insights Default</record_name>
+        <reverted_from/>
+        <source>e06954b92f1ab610743eb82bcfa4e3aa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 02:50:59</sys_created_on>
+        <sys_id>fd1783f62f060b50b14f861cbfa4e39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f6dfc017b0000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 02:50:59</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>311783f6ce060b503bce76a88e9f1e9a</update_guid>
+        <update_guid_history>311783f6ce060b503bce76a88e9f1e9a:2114382095</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-07-17 12:37:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>2f57b39399084c33b4b55a2303fb5bf9</sys_id>
+        <sys_metadata>2d1783f62f060b50b14f861cbfa4e395</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer Insights Default</sys_name>
+        <sys_package display_value="Pete's Email Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Email Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_2d1783f62f060b50b14f861cbfa4e395</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_2d1783f62f060b50b14f861cbfa4e395">fd1783f62f060b50b14f861cbfa4e39a</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-17 12:37:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
