@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>ca794ace2b3203d02dfdf2166e91bf87</image>
+        <name>chat_icon_launcher.svg</name>
+        <size_bytes/>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:13:26</sys_created_on>
+        <sys_id>42794ace2b3203d02dfdf2166e91bf81</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chat_icon_launcher.svg</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>db_image_42794ace2b3203d02dfdf2166e91bf81</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:13:26</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <encryption_context/>
+        <file_name>chat_icon_launcher.svg</file_name>
+        <hash>96660b3694abd855b9f325941acde3517506077ef9623104c61cf97fc87cf47d</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1275</size_bytes>
+        <size_compressed>629</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:13:26</sys_created_on>
+        <sys_id>ca794ace2b3203d02dfdf2166e91bf87</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:13:26</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>42794ace2b3203d02dfdf2166e91bf81</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="chat_icon_launcher.svg" sys_id="ca794ace2b3203d02dfdf2166e91bf87">ca794ace2b3203d02dfdf2166e91bf87</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:13:26</sys_created_on>
+        <sys_id>8e794ace2b3203d02dfdf2166e91bf87</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>dVTfb5swEH7PX3FztGl9IBB+NZtCpSVpqkn0KdIe9uaACVYJRsaU9L/f2ZiUqB0SvvP5zt/ddwfr9vUEl3NVtwkplWp+um7f94s+WAh5cn3P81z0IPDKWb8Rl4R44MHSMy+BnueqTAjqXwmUjJ9KZXcPM4B1zopWK6h+cRz4w4+S1gpS2tVZySQ8SZpzhhbHsW4VrxmVVzvPE1JZb20kcFliCgj2ZuXFH+Hf/Am0uaxVogFRFC1Tg7M2OJmohEzIPNyH8WNEwP3cP/oQEAdxvF/+N2DI4iYiWG12+9U1Yu3elvcwe+fm0B1VxWAn8cZDSXPRQyEk7CtBFa9P8FgULJsQVfBKIYOaoNa4IxUJcXzDxKiM7Qlv2hNOOSqYhrSIue4vgRwvCHUp+Y69csQXdUJiAkUlRH4tzjPPaBUNzbjCQG8RkGu9Q5ZmFtxhGGa23i2XWVdR+T4MG9oyW986w1NkI7voPhDI3gaJsCEmhrdWCelk9X0+HY47c4J49mzg5c7QP8L+rmuE2pZUwaY7HhHjwKtSdEypK3hDVQnI63PgQxDBFoX/YxGuIIj16kcQ+npNI7PZxsEiMoZ4ZR1RwcAURaTP0eBpl8ExjgADcU3DQQQx3GtxP+yMx9Y3WKj5vo1GBW/7S8C2DiwP8715JvZJL5bRTfkHfm4qXnCWQ9qdeS26Fp5Z29ITg29waKh8gS1OJnL0gQxTdhoboXeYUhppMUFulRQv7LOchhPHTmT88UR/GhltEiJFV+f2mxnz3kg9u5Ca9VeW6X/DTqhPxiUex8U34xKM0zL9Ftf6l/Yw+wdznEMG+wQAAA==</data>
+        <length>828</length>
+        <position>1</position>
+        <sys_attachment display_value="chat_icon_launcher.svg" sys_id="ca794ace2b3203d02dfdf2166e91bf87">ca794ace2b3203d02dfdf2166e91bf87</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:13:26</sys_created_on>
+        <sys_id>42794ace2b3203d02dfdf2166e91bf88</sys_id>
+    </sys_attachment_doc>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment_config_attributes">
+    <sys_now_assist_deployment_config_attributes action="INSERT_OR_UPDATE">
+        <deployment_config display_value="Lumina Engagement Messenger">5ed606462b3203d02dfdf2166e91bfef</deployment_config>
+        <name>conversational_flow_search_source_sys_id</name>
+        <sys_class_name>sys_now_assist_deployment_config_attributes</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:02:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b7d60a462b3203d02dfdf2166e91bf12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>conversational_flow_search_source_sys_id</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_now_assist_deployment_config_attributes_b7d60a462b3203d02dfdf2166e91bf12</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:02:05</sys_updated_on>
+        <value>8dab9d2179c0d210f877b43cc2f2133f</value>
+    </sys_now_assist_deployment_config_attributes>
+</record_update>

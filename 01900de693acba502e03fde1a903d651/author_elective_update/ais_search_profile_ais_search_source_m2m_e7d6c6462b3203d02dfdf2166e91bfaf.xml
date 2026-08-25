@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="DELETE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <include_in_now_assist_genius_results>true</include_in_now_assist_genius_results>
+        <profile display_value="Now Assist in Virtual Agent - 156d686062b3203d02dfdf2166e91bf8e">dbd686462b3203d02dfdf2166e91bfa2</profile>
+        <search_source display_value="Now Assist Q&amp;A">2fd6c6462b3203d02dfdf2166e91bf6e</search_source>
+        <search_source_group/>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:02:04</sys_created_on>
+        <sys_id>e7d6c6462b3203d02dfdf2166e91bfaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Now Assist in Virtual Agent - 156d686062b3203d02dfdf2166e91bf8e.Now Assist Q&amp;A</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_e7d6c6462b3203d02dfdf2166e91bfaf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:02:04</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>ais_search_profile_ais_search_source_m2m_e7d6c6462b3203d02dfdf2166e91bfaf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m"><ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE"><exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results><exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results><exclude_in_regular_search>false</exclude_in_regular_search><include_in_now_assist_genius_results>true</include_in_now_assist_genius_results><profile display_value="Now Assist in Virtual Agent - 156d686062b3203d02dfdf2166e91bf8e">dbd686462b3203d02dfdf2166e91bfa2</profile><search_source display_value="Now Assist Q&amp;A">2fd6c6462b3203d02dfdf2166e91bf6e</search_source><search_source_group/><sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-20 21:02:04</sys_created_on><sys_id>e7d6c6462b3203d02dfdf2166e91bfaf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Now Assist in Virtual Agent - 156d686062b3203d02dfdf2166e91bf8e.Now Assist Q&amp;A</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>ais_search_profile_ais_search_source_m2m_e7d6c6462b3203d02dfdf2166e91bfaf</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-20 21:02:04</sys_updated_on></ais_search_profile_ais_search_source_m2m></record_update>]]></payload>
+        <payload_hash>976312230</payload_hash>
+        <record_name>Now Assist in Virtual Agent - 156d686062b3203d02dfdf2166e91bf8e.Now Assist Q&amp;A</record_name>
+        <reverted_from/>
+        <source>75a33f52c3560750b9df5163e40131f2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:02:04</sys_created_on>
+        <sys_id>fbd6c6462b3203d02dfdf2166e91bfe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a020fb23dd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:02:04</sys_updated_on>
+        <type>AI Search Search Profile Search Source M</type>
+        <update_guid>3bd6c646dd3203d0df31df705a3459e0</update_guid>
+        <update_guid_history>3bd6c646dd3203d0df31df705a3459e0:976312230</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Now Assist in Virtual Agent - 156d686062b3203d02dfdf2166e91bf8e.Now Assist Q&amp;A">2f88165e2b7ec3d02dfdf2166e91bff9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-21 16:57:49</sys_created_on>
+        <sys_db_object display_value="" name="ais_search_profile_ais_search_source_m2m">ais_search_profile_ais_search_source_m2m</sys_db_object>
+        <sys_id>2e1fdbc4208549aca2263e9b9f5bda90</sys_id>
+        <sys_metadata>e7d6c6462b3203d02dfdf2166e91bfaf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Now Assist in Virtual Agent - 156d686062b3203d02dfdf2166e91bf8e.Now Assist Q&amp;A</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_e7d6c6462b3203d02dfdf2166e91bfaf</sys_update_name>
+        <sys_update_version display_value="ais_search_profile_ais_search_source_m2m_e7d6c6462b3203d02dfdf2166e91bfaf">fbd6c6462b3203d02dfdf2166e91bfe1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-21 16:57:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

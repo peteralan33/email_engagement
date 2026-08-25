@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>a19bc2c62b7203d02dfdf2166e91bf67</image>
+        <name>Lumina_Logo_02.svg</name>
+        <size_bytes/>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:22:40</sys_created_on>
+        <sys_id>ad9b0e062b7203d02dfdf2166e91bffe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Lumina_Logo_02.svg</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>db_image_ad9b0e062b7203d02dfdf2166e91bffe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:22:40</sys_updated_on>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <encryption_context/>
+        <file_name>Lumina_Logo_02.svg</file_name>
+        <hash>4b10e9bc60b4bff13920ab5b0b234171e362470b24c5ec36706435601c9e33b8</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1699</size_bytes>
+        <size_compressed>586</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:22:40</sys_created_on>
+        <sys_id>a19bc2c62b7203d02dfdf2166e91bf67</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:22:40</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>ad9b0e062b7203d02dfdf2166e91bffe</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="Lumina_Logo_02.svg" sys_id="a19bc2c62b7203d02dfdf2166e91bf67">a19bc2c62b7203d02dfdf2166e91bf67</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:22:40</sys_created_on>
+        <sys_id>659bc2c62b7203d02dfdf2166e91bf67</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>nVVrb9owFP3Or7jzNLWVksZxXjARJMq6FWnTpHb7AVkwwZoTI8cQ2K+f84BQGmjLh0h+nHPuvfa5zjBfJ7BJeZaHaKHU8rNlFUVxWzi3QiYWwRhbGoFgzWhxJzYhwoCBuPrzMYKCzdQiRDbGnxAsKEsWqpmNegDDD6YJ01hk8E2K1RJMs1pNQMkoy+dCpiGqhjxS9JpgA2x8UzEb7oRmep/DREjasPVOzGTMKcSbKhSCeBuivodAhogQBHPGeYg+4rEzCe4RWDWrFX2MZixSLEtgmmVU6vk2b8WTI369rDckjRXokAMfgQ7oevvq+wel67HUIHcf9yXTxsG7qT6pqMGgPfID6jmmTfA7qccKgVMJeH5n1v5e4OBSpVDljboeBAH47k1nYvagOQ5yibBNHLBLu5yRviBls5E+kXRzFpfkbNan8SznoZWMeq0zf66U9uM4jrXt4YtQXbZ0nMFgMmlt2dUMZRfoZvAPK+jC2W7/LNBxnzXXST3fP4nrgHukRjt1cO+UaplclaVD3gZ8RXAXt0uvA06a4r1a1T0VPWiKt23yNuArgru4L/Uqt7SmqSzzfZWyLIJfdKN2z6sqxwedT4iudC4yZc6jlHG9YkbLJadmvs0VTQ244yz7+yOKn6r5V4004OqJJoLC7+mVAY/ij1DCgAfK11SxODJgLFnEDci1yc2cSjZvIuTsH9UX4TfTommMoHTc0btcpmlGWbwQusiUzWacolFdztAqN0e9YfnrGfX+AwYpcgGjBgAA</data>
+        <length>768</length>
+        <position>1</position>
+        <sys_attachment display_value="Lumina_Logo_02.svg" sys_id="a19bc2c62b7203d02dfdf2166e91bf67">a19bc2c62b7203d02dfdf2166e91bf67</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:22:40</sys_created_on>
+        <sys_id>299bc2c62b7203d02dfdf2166e91bf67</sys_id>
+    </sys_attachment_doc>
+</record_update>

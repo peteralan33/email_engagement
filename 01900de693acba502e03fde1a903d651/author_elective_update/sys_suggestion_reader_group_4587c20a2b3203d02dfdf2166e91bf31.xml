@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="DELETE">
+        <click_in_mode>false</click_in_mode>
+        <context_config_id/>
+        <limit>5</limit>
+        <order>400</order>
+        <section_header>Suggested results</section_header>
+        <suggestion_type>Suggested Result Reader Group for Lumina Engagement Messenger</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:04:53</sys_created_on>
+        <sys_id>4587c20a2b3203d02dfdf2166e91bf31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Suggested Result Reader Group for Lumina Engagement Messenger</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_4587c20a2b3203d02dfdf2166e91bf31</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:04:53</sys_updated_on>
+    </sys_suggestion_reader_group>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_suggestion_reader_group_4587c20a2b3203d02dfdf2166e91bf31</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group"><sys_suggestion_reader_group action="INSERT_OR_UPDATE"><click_in_mode>false</click_in_mode><context_config_id/><limit>5</limit><order>400</order><section_header>Suggested results</section_header><suggestion_type>Suggested Result Reader Group for Lumina Engagement Messenger</suggestion_type><sys_class_name>sys_suggestion_reader_group</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-20 21:04:53</sys_created_on><sys_id>4587c20a2b3203d02dfdf2166e91bf31</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Suggested Result Reader Group for Lumina Engagement Messenger</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_suggestion_reader_group_4587c20a2b3203d02dfdf2166e91bf31</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-20 21:04:53</sys_updated_on></sys_suggestion_reader_group></record_update>]]></payload>
+        <payload_hash>-847995448</payload_hash>
+        <record_name>Suggested Result Reader Group for Lumina Engagement Messenger</record_name>
+        <reverted_from/>
+        <source>75a33f52c3560750b9df5163e40131f2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:04:53</sys_created_on>
+        <sys_id>4587c20a2b3203d02dfdf2166e91bf34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a020fdb7b20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:04:53</sys_updated_on>
+        <type>Suggestion Reader Group</type>
+        <update_guid>c187c20ac73203d08a659d8cfd1ef933</update_guid>
+        <update_guid_history>c187c20ac73203d08a659d8cfd1ef933:-847995448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 14:50:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_suggestion_reader_group">sys_suggestion_reader_group</sys_db_object>
+        <sys_id>20262985f6a74e1a97535cab182f47e4</sys_id>
+        <sys_metadata>4587c20a2b3203d02dfdf2166e91bf31</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Suggested Result Reader Group for Lumina Engagement Messenger</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_suggestion_reader_group_4587c20a2b3203d02dfdf2166e91bf31</sys_update_name>
+        <sys_update_version display_value="sys_suggestion_reader_group_4587c20a2b3203d02dfdf2166e91bf31">4587c20a2b3203d02dfdf2166e91bf34</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 14:50:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

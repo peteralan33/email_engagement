@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_suggestion_reader_sys_suggestion_reader_group">
+    <m2m_sys_suggestion_reader_sys_suggestion_reader_group action="DELETE">
+        <order>100</order>
+        <reader_requested_fields/>
+        <reader_searchable_fields/>
+        <sys_class_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:02:03</sys_created_on>
+        <sys_id>93d6c6462b3203d02dfdf2166e91bf3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_suggestion_reader_group_id display_value="Now Assist Suggested Query Reader Group for Now Assist in Virtual Agent - 1">1bd6c6462b3203d02dfdf2166e91bf39</sys_suggestion_reader_group_id>
+        <sys_suggestion_reader_id display_value="Now Assist Suggested Utterance Reader">ab822a20ff0022103910ffffffffff7e</sys_suggestion_reader_id>
+        <sys_update_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group_93d6c6462b3203d02dfdf2166e91bf3d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:02:03</sys_updated_on>
+    </m2m_sys_suggestion_reader_sys_suggestion_reader_group>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>m2m_sys_suggestion_reader_sys_suggestion_reader_group_93d6c6462b3203d02dfdf2166e91bf3d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_suggestion_reader_sys_suggestion_reader_group"><m2m_sys_suggestion_reader_sys_suggestion_reader_group action="INSERT_OR_UPDATE"><order>100</order><reader_requested_fields/><reader_searchable_fields/><sys_class_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-20 21:02:03</sys_created_on><sys_id>93d6c6462b3203d02dfdf2166e91bf3d</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_suggestion_reader_group_id display_value="Now Assist Suggested Query Reader Group for Now Assist in Virtual Agent - 1">1bd6c6462b3203d02dfdf2166e91bf39</sys_suggestion_reader_group_id><sys_suggestion_reader_id display_value="Now Assist Suggested Utterance Reader">ab822a20ff0022103910ffffffffff7e</sys_suggestion_reader_id><sys_update_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group_93d6c6462b3203d02dfdf2166e91bf3d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-20 21:02:03</sys_updated_on></m2m_sys_suggestion_reader_sys_suggestion_reader_group></record_update>]]></payload>
+        <payload_hash>-1402812783</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>75a33f52c3560750b9df5163e40131f2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:02:03</sys_created_on>
+        <sys_id>2bd6c6462b3203d02dfdf2166e91bf40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a020fb1e990000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:02:03</sys_updated_on>
+        <type>Suggestion Reader and Suggestion Reader </type>
+        <update_guid>97d6c6469f3203d0f7a66692f420d03f</update_guid>
+        <update_guid_history>97d6c6469f3203d0f7a66692f420d03f:-1402812783</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">21c12ee32b3687142dfdf2166e91bf12</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 14:50:30</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sys_suggestion_reader_sys_suggestion_reader_group">m2m_sys_suggestion_reader_sys_suggestion_reader_group</sys_db_object>
+        <sys_id>5bd9dd0af70544eea6c97602aef28d29</sys_id>
+        <sys_metadata>93d6c6462b3203d02dfdf2166e91bf3d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group_93d6c6462b3203d02dfdf2166e91bf3d</sys_update_name>
+        <sys_update_version display_value="m2m_sys_suggestion_reader_sys_suggestion_reader_group_93d6c6462b3203d02dfdf2166e91bf3d">2bd6c6462b3203d02dfdf2166e91bf40</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 14:50:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

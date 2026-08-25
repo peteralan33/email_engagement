@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page_route_map">
+    <sp_page_route_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>10</order>
+        <portals>4998060e2b3203d02dfdf2166e91bf82</portals>
+        <roles/>
+        <route_from_page display_value="csm_case_task_ticket">3f873f760f220010035531ef68767ebb</route_from_page>
+        <route_to_page display_value="ec_case_task_details">98cddc3c53c82010807bddeeff7b12be</route_to_page>
+        <short_description>EC Case Task Page Route</short_description>
+        <sys_class_name>sp_page_route_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:09:36</sys_created_on>
+        <sys_id>c298c60e2b3203d02dfdf2166e91bf0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3f873f760f220010035531ef68767ebb</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sp_page_route_map_c298c60e2b3203d02dfdf2166e91bf0f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:09:36</sys_updated_on>
+    </sp_page_route_map>
+</record_update>

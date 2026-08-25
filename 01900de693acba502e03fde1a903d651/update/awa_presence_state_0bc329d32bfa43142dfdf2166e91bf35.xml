@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="awa_presence_state">
+    <awa_presence_state action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <apply_to_all_groups>false</apply_to_all_groups>
+        <apply_to_groups>8c80a51bc3bacfd4b9df5163e40131d0</apply_to_groups>
+        <available_to_receive_work_items>true</available_to_receive_work_items>
+        <description>Phone AWS</description>
+        <disable_inactivity_check>false</disable_inactivity_check>
+        <name>Available</name>
+        <order>1</order>
+        <restrict_agent_update/>
+        <service_channels>78fd97b2e766001034b36584c2f6a977</service_channels>
+        <show_channels>true</show_channels>
+        <sys_class_name>awa_presence_state</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-24 15:41:36</sys_created_on>
+        <sys_id>0bc329d32bfa43142dfdf2166e91bf35</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Available</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>awa_presence_state_0bc329d32bfa43142dfdf2166e91bf35</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-24 16:11:09</sys_updated_on>
+    </awa_presence_state>
+</record_update>

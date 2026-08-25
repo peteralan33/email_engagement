@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="DELETE">
+        <click_in_mode>false</click_in_mode>
+        <context_config_id/>
+        <limit>3</limit>
+        <order>250</order>
+        <section_header>Ask Now Assist</section_header>
+        <suggestion_type>Now Assist Suggested Query Reader Group for Engagement Messenger AI Search Config</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:09:32</sys_created_on>
+        <sys_id>cd98060e2b3203d02dfdf2166e91bfa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Now Assist Suggested Query Reader Group for Engagement Messenger AI Search Config</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_cd98060e2b3203d02dfdf2166e91bfa3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:09:32</sys_updated_on>
+    </sys_suggestion_reader_group>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_suggestion_reader_group_cd98060e2b3203d02dfdf2166e91bfa3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group"><sys_suggestion_reader_group action="INSERT_OR_UPDATE"><click_in_mode>false</click_in_mode><context_config_id/><limit>3</limit><order>250</order><section_header>Ask Now Assist</section_header><suggestion_type>Now Assist Suggested Query Reader Group for Engagement Messenger AI Search Config</suggestion_type><sys_class_name>sys_suggestion_reader_group</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-20 21:09:32</sys_created_on><sys_id>cd98060e2b3203d02dfdf2166e91bfa3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Now Assist Suggested Query Reader Group for Engagement Messenger AI Search Config</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_suggestion_reader_group_cd98060e2b3203d02dfdf2166e91bfa3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-20 21:09:32</sys_updated_on></sys_suggestion_reader_group></record_update>]]></payload>
+        <payload_hash>-1381188612</payload_hash>
+        <record_name>Now Assist Suggested Query Reader Group for Engagement Messenger AI Search Config</record_name>
+        <reverted_from/>
+        <source>75a33f52c3560750b9df5163e40131f2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:09:32</sys_created_on>
+        <sys_id>cd98060e2b3203d02dfdf2166e91bfa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a02101f96a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:09:32</sys_updated_on>
+        <type>Suggestion Reader Group</type>
+        <update_guid>4d98060e523203d077bb77de213afea5</update_guid>
+        <update_guid_history>4d98060e523203d077bb77de213afea5:-1381188612</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 14:51:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_suggestion_reader_group">sys_suggestion_reader_group</sys_db_object>
+        <sys_id>6fa232336889435a986c74b4f0c100a1</sys_id>
+        <sys_metadata>cd98060e2b3203d02dfdf2166e91bfa3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Now Assist Suggested Query Reader Group for Engagement Messenger AI Search Config</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_suggestion_reader_group_cd98060e2b3203d02dfdf2166e91bfa3</sys_update_name>
+        <sys_update_version display_value="sys_suggestion_reader_group_cd98060e2b3203d02dfdf2166e91bfa3">cd98060e2b3203d02dfdf2166e91bfa6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 14:51:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

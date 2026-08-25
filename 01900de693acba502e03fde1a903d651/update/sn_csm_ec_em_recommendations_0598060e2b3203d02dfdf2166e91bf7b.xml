@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_csm_ec_em_recommendations">
+    <sn_csm_ec_em_recommendations action="INSERT_OR_UPDATE">
+        <animation_tooltip_text>We have some recommendations for you</animation_tooltip_text>
+        <animation_type>ripple</animation_type>
+        <enable_recommendations>false</enable_recommendations>
+        <link_text_messenger>Need more help? [[Help center]]</link_text_messenger>
+        <max_recommendations>3</max_recommendations>
+        <proactive_chat_button_label>Start a conversation</proactive_chat_button_label>
+        <proactive_help_type>none</proactive_help_type>
+        <proactive_search_placeholder_text>What are you looking for?</proactive_search_placeholder_text>
+        <proactive_subtitle_text>Looks like you are stuck. Looking for something? Tell us what you need.</proactive_subtitle_text>
+        <proactive_title_text>Recommendation</proactive_title_text>
+        <show_home_link>true</show_home_link>
+        <show_search_bar>true</show_search_bar>
+        <show_tooltip>true</show_tooltip>
+        <subtitle>This might help you</subtitle>
+        <sys_class_name>sn_csm_ec_em_recommendations</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:09:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0598060e2b3203d02dfdf2166e91bf7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Recommendations</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_csm_ec_em_recommendations_0598060e2b3203d02dfdf2166e91bf7b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:09:32</sys_updated_on>
+        <text_more_recommendations>Show more recommendations</text_more_recommendations>
+        <title>Recommendations</title>
+    </sn_csm_ec_em_recommendations>
+</record_update>

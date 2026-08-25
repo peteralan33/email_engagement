@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_catalog">
+    <m2m_sp_portal_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sc_catalog display_value="Consumer Service">0f910a2ac3112200b12d9f2974d3ae3c</sc_catalog>
+        <sp_portal display_value="Lumina Engagement Messenger">4998060e2b3203d02dfdf2166e91bf82</sp_portal>
+        <sys_class_name>m2m_sp_portal_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:09:33</sys_created_on>
+        <sys_id>d198460e2b3203d02dfdf2166e91bf18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Consumer Service.New module 1</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>m2m_sp_portal_catalog_d198460e2b3203d02dfdf2166e91bf18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:09:33</sys_updated_on>
+    </m2m_sp_portal_catalog>
+</record_update>

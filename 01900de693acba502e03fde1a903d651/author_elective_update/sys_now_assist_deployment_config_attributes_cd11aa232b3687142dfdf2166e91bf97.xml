@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment_config_attributes">
+    <sys_now_assist_deployment_config_attributes action="DELETE">
+        <deployment_config display_value="Lumina Banking">af25f6ab2bd283902dfdf2166e91bf3e</deployment_config>
+        <name>transfer_method</name>
+        <sys_class_name>sys_now_assist_deployment_config_attributes</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 14:47:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>cd11aa232b3687142dfdf2166e91bf97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>transfer_method</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_now_assist_deployment_config_attributes_cd11aa232b3687142dfdf2166e91bf97</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 14:47:28</sys_updated_on>
+        <value>BYE</value>
+    </sys_now_assist_deployment_config_attributes>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_now_assist_deployment_config_attributes_cd11aa232b3687142dfdf2166e91bf97</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment_config_attributes"><sys_now_assist_deployment_config_attributes action="INSERT_OR_UPDATE"><deployment_config display_value="Lumina Banking">af25f6ab2bd283902dfdf2166e91bf3e</deployment_config><name>transfer_method</name><sys_class_name>sys_now_assist_deployment_config_attributes</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 14:47:28</sys_created_on><sys_domain>global</sys_domain><sys_id>cd11aa232b3687142dfdf2166e91bf97</sys_id><sys_mod_count>0</sys_mod_count><sys_name>transfer_method</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_now_assist_deployment_config_attributes_cd11aa232b3687142dfdf2166e91bf97</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 14:47:28</sys_updated_on><value>BYE</value></sys_now_assist_deployment_config_attributes></record_update>]]></payload>
+        <payload_hash>-1936575334</payload_hash>
+        <record_name>transfer_method</record_name>
+        <reverted_from/>
+        <source>75a33f52c3560750b9df5163e40131f2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 14:47:28</sys_created_on>
+        <sys_id>4111aa232b3687142dfdf2166e91bf9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a03963f9cc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 14:47:28</sys_updated_on>
+        <type>Now Assist Deployment Config Attributes</type>
+        <update_guid>cd11aa23b53687148441c49f96e4529a</update_guid>
+        <update_guid_history>cd11aa23b53687148441c49f96e4529a:-1936575334</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 14:50:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_now_assist_deployment_config_attributes">sys_now_assist_deployment_config_attributes</sys_db_object>
+        <sys_id>2091e936e3404dae8b053f5ef1688819</sys_id>
+        <sys_metadata>cd11aa232b3687142dfdf2166e91bf97</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>transfer_method</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_now_assist_deployment_config_attributes_cd11aa232b3687142dfdf2166e91bf97</sys_update_name>
+        <sys_update_version display_value="sys_now_assist_deployment_config_attributes_cd11aa232b3687142dfdf2166e91bf97">4111aa232b3687142dfdf2166e91bf9c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 14:50:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
