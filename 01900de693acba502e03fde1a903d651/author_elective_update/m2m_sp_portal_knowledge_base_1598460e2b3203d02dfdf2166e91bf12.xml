@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_knowledge_base">
+    <m2m_sp_portal_knowledge_base action="DELETE">
+        <active>true</active>
+        <kb_knowledge_base display_value="Consumer Service">2b292926c3302200e7c7d44d81d3ae10</kb_knowledge_base>
+        <order>100</order>
+        <sp_portal display_value="New module 1">4998060e2b3203d02dfdf2166e91bf82</sp_portal>
+        <sys_class_name>m2m_sp_portal_knowledge_base</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:09:33</sys_created_on>
+        <sys_id>1598460e2b3203d02dfdf2166e91bf12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Consumer Service.New module 1</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>m2m_sp_portal_knowledge_base_1598460e2b3203d02dfdf2166e91bf12</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:09:33</sys_updated_on>
+    </m2m_sp_portal_knowledge_base>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>m2m_sp_portal_knowledge_base_1598460e2b3203d02dfdf2166e91bf12</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_knowledge_base"><m2m_sp_portal_knowledge_base action="INSERT_OR_UPDATE"><active>true</active><kb_knowledge_base display_value="Consumer Service">2b292926c3302200e7c7d44d81d3ae10</kb_knowledge_base><order>100</order><sp_portal display_value="New module 1">4998060e2b3203d02dfdf2166e91bf82</sp_portal><sys_class_name>m2m_sp_portal_knowledge_base</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-20 21:09:33</sys_created_on><sys_id>1598460e2b3203d02dfdf2166e91bf12</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Consumer Service.New module 1</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>m2m_sp_portal_knowledge_base_1598460e2b3203d02dfdf2166e91bf12</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-20 21:09:33</sys_updated_on></m2m_sp_portal_knowledge_base></record_update>]]></payload>
+        <payload_hash>1651325599</payload_hash>
+        <record_name>Consumer Service.New module 1</record_name>
+        <reverted_from/>
+        <source>75a33f52c3560750b9df5163e40131f2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:09:33</sys_created_on>
+        <sys_id>5198460e2b3203d02dfdf2166e91bf17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a02101fdc50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-20 21:09:33</sys_updated_on>
+        <type>Portal Knowledge Base</type>
+        <update_guid>9d98460e973203d06408c3c135205f15</update_guid>
+        <update_guid_history>9d98460e973203d06408c3c135205f15:1651325599</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Consumer Service.New module 1">8f415a0c2b8707102dfdf2166e91bf65</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-27 02:55:28</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_portal_knowledge_base">m2m_sp_portal_knowledge_base</sys_db_object>
+        <sys_id>9089521bf438499983391a7517a5c1f9</sys_id>
+        <sys_metadata>1598460e2b3203d02dfdf2166e91bf12</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Consumer Service.New module 1</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>m2m_sp_portal_knowledge_base_1598460e2b3203d02dfdf2166e91bf12</sys_update_name>
+        <sys_update_version display_value="m2m_sp_portal_knowledge_base_1598460e2b3203d02dfdf2166e91bf12">5198460e2b3203d02dfdf2166e91bf17</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-27 02:55:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

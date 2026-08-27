@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="DELETE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <allow_snc_user_exchange>false</allow_snc_user_exchange>
+        <auth_aig_client>false</auth_aig_client>
+        <auth_cimd_client>false</auth_cimd_client>
+        <auth_code_lifespan>60</auth_code_lifespan>
+        <auth_url/>
+        <bff_cookie_exchange_allowed>false</bff_cookie_exchange_allowed>
+        <bind_token_to_session>false</bind_token_to_session>
+        <certificate_url/>
+        <client_id>fea0b1135df24936b167b731fa7767ad</client_id>
+        <client_secret>B3InJ*ksFqpAIOvN(!1S</client_secret>
+        <client_type>integration_as_a_service</client_type>
+        <client_uuid>a9722ee72b3687142dfdf2166e91bf04</client_uuid>
+        <code_challenge_method/>
+        <comments/>
+        <default_grant_type>client_credentials</default_grant_type>
+        <extend_refresh_token_expiry>false</extend_refresh_token_expiry>
+        <id_token_lifespan>86400</id_token_lifespan>
+        <inbound_grant_type>client_credential</inbound_grant_type>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>60</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>Amazon Connect Media gateway 981262a72b3687142dfdf2166e91bf8e</name>
+        <oauth_api_script/>
+        <only_rest_processor>false</only_rest_processor>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url/>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt/>
+        <scope_restriction_status>unrestricted</scope_restriction_status>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sub_claim>sys_id</sub_claim>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 14:53:30</sys_created_on>
+        <sys_id>69722ee72b3687142dfdf2166e91bf04</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Amazon Connect Media gateway 981262a72b3687142dfdf2166e91bf8e</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>oauth_entity_69722ee72b3687142dfdf2166e91bf04</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-25 22:16:58</sys_updated_on>
+        <token_format>opaque</token_format>
+        <token_url/>
+        <type>client</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <use_pkce>false</use_pkce>
+        <user display_value="amz_cnt Api User">9872e6e72b3687142dfdf2166e91bfb8</user>
+    </oauth_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>oauth_entity_69722ee72b3687142dfdf2166e91bf04</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity"><oauth_entity action="INSERT_OR_UPDATE"><access>public</access><access_token_lifespan>1800</access_token_lifespan><active>true</active><allow_snc_user_exchange>false</allow_snc_user_exchange><auth_aig_client>false</auth_aig_client><auth_cimd_client>false</auth_cimd_client><auth_code_lifespan>60</auth_code_lifespan><auth_url/><bff_cookie_exchange_allowed>false</bff_cookie_exchange_allowed><bind_token_to_session>false</bind_token_to_session><certificate_url/><client_id>fea0b1135df24936b167b731fa7767ad</client_id><client_secret>B3InJ*ksFqpAIOvN(!1S</client_secret><client_type>integration_as_a_service</client_type><client_uuid>a9722ee72b3687142dfdf2166e91bf04</client_uuid><code_challenge_method/><comments/><default_grant_type>client_credentials</default_grant_type><extend_refresh_token_expiry>false</extend_refresh_token_expiry><id_token_lifespan>86400</id_token_lifespan><inbound_grant_type>client_credential</inbound_grant_type><jwt_provider/><login_url/><logo_url/><message_signature_lifespan>60</message_signature_lifespan><mobile_client>false</mobile_client><name>Amazon Connect Media gateway 981262a72b3687142dfdf2166e91bf8e</name><oauth_api_script/><only_rest_processor>false</only_rest_processor><protocol_name/><public_client>false</public_client><redirect_url/><refresh_token_lifespan>8640000</refresh_token_lifespan><refresh_token_url/><restricted_binding>false</restricted_binding><revoke_token_url/><salt/><scope_restriction_status>unrestricted</scope_restriction_status><send_client_credentials_as>request_body_parameter</send_client_credentials_as><skip_authorize>false</skip_authorize><sub_claim>sys_id</sub_claim><sys_class_name>oauth_entity</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 14:53:30</sys_created_on><sys_id>69722ee72b3687142dfdf2166e91bf04</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Amazon Connect Media gateway 981262a72b3687142dfdf2166e91bf8e</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>oauth_entity_69722ee72b3687142dfdf2166e91bf04</sys_update_name><sys_updated_by>ag.mcp.lumina</sys_updated_by><sys_updated_on>2026-08-25 22:16:58</sys_updated_on><token_format>opaque</token_format><token_url/><type>client</type><use_mutual_auth>false</use_mutual_auth><use_pkce>false</use_pkce><user display_value="amz_cnt Api User">9872e6e72b3687142dfdf2166e91bfb8</user></oauth_entity></record_update>]]></payload>
+        <payload_hash>946449887</payload_hash>
+        <record_name>Amazon Connect Media gateway 981262a72b3687142dfdf2166e91bf8e</record_name>
+        <reverted_from/>
+        <source>72b47eedc39a8710b9df5163e40131f2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-25 22:16:58</sys_created_on>
+        <sys_id>b1f7443fc3fa8718b9df5163e401313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a03aff82690000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-25 22:16:58</sys_updated_on>
+        <type>Application Registries</type>
+        <update_guid>fdf7443f35fa8718694d7cd1013d813d</update_guid>
+        <update_guid_history>fdf7443f35fa8718694d7cd1013d813d:946449887,52c608f7413ec714906808d920fce5c2:794256707,c416ccf34dfa8718d2186208e81b84c6:1682875182,425500736efa8718eb855c3e23c3bd9f:-2115775769,0fc488bfccba8718db23013ccc07b373:77642858,0684487f51ba87184d809ec84355e51b:-334046568,4684487f62ba8718ab4be92cda544915:-834375919</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Amazon Connect Media gateway 981262a72b3687142dfdf2166e91bf8e">dc1cc4732bbec7142dfdf2166e91bf33</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-25 22:34:54</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity">oauth_entity</sys_db_object>
+        <sys_id>c2d5d76401f043769f3a3bf6dd242dc4</sys_id>
+        <sys_metadata>69722ee72b3687142dfdf2166e91bf04</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Amazon Connect Media gateway 981262a72b3687142dfdf2166e91bf8e</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>oauth_entity_69722ee72b3687142dfdf2166e91bf04</sys_update_name>
+        <sys_update_version display_value="oauth_entity_69722ee72b3687142dfdf2166e91bf04">b1f7443fc3fa8718b9df5163e401313f</sys_update_version>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-25 22:34:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

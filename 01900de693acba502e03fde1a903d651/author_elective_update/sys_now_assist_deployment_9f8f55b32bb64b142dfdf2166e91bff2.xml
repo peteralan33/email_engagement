@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment">
+    <sys_now_assist_deployment action="DELETE">
+        <active>false</active>
+        <assistant_type>voice</assistant_type>
+        <description>A AI Voice Assistant to support the Lumina Businesses</description>
+        <name>Lumina Voice Assistant</name>
+        <relationship_type/>
+        <sys_class_name>sys_now_assist_deployment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 04:39:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9f8f55b32bb64b142dfdf2166e91bff2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Lumina Voice Assistant</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_now_assist_deployment_9f8f55b32bb64b142dfdf2166e91bff2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 06:27:50</sys_updated_on>
+    </sys_now_assist_deployment>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_now_assist_deployment_9f8f55b32bb64b142dfdf2166e91bff2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment"><sys_now_assist_deployment action="INSERT_OR_UPDATE"><active>false</active><assistant_type>voice</assistant_type><description>A AI Voice Assistant to support the Lumina Businesses</description><name>Lumina Voice Assistant</name><relationship_type/><sys_class_name>sys_now_assist_deployment</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-26 04:39:39</sys_created_on><sys_domain>global</sys_domain><sys_id>9f8f55b32bb64b142dfdf2166e91bff2</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Lumina Voice Assistant</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_now_assist_deployment_9f8f55b32bb64b142dfdf2166e91bff2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-26 06:27:50</sys_updated_on></sys_now_assist_deployment></record_update>]]></payload>
+        <payload_hash>546114334</payload_hash>
+        <record_name>Lumina Voice Assistant</record_name>
+        <reverted_from/>
+        <source>021948b32b7ec7142dfdf2166e91bf45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 06:27:51</sys_created_on>
+        <sys_id>505831b32b3e4b142dfdf2166e91bf10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a03cc0ead50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 06:27:51</sys_updated_on>
+        <type>Now Assist Deployment</type>
+        <update_guid>d45831b3a13e4b14e05d1c4b2aae1c0e</update_guid>
+        <update_guid_history>d45831b3a13e4b14e05d1c4b2aae1c0e:546114334,b110217735b64b14c4ae0e73f2148a48:-1687696065,d78fd5b36ab64b14bdabb248a5022362:1896445385</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 06:30:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_now_assist_deployment">sys_now_assist_deployment</sys_db_object>
+        <sys_id>0eb3608c231e45928ed32db6a78a6e84</sys_id>
+        <sys_metadata>9f8f55b32bb64b142dfdf2166e91bff2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lumina Voice Assistant</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_now_assist_deployment_9f8f55b32bb64b142dfdf2166e91bff2</sys_update_name>
+        <sys_update_version display_value="sys_now_assist_deployment_9f8f55b32bb64b142dfdf2166e91bff2">505831b32b3e4b142dfdf2166e91bf10</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 06:30:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

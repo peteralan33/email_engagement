@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <base_version/>
+        <change_description>Initial version</change_description>
+        <condition/>
+        <eval_score/>
+        <instructions/>
+        <layer>overlay</layer>
+        <short_description/>
+        <snapshot>{"schemaVersion":2,"definition":{"name":"Airline Policy and Knowledge Agent","description":"Airline Policy and Knowledge Agent is an autonomous specialist dedicated to answering customer inquiries regarding airline travel policies, carry-on standards, baggage allowance, excess baggage fees, pet transportation, check-in deadlines, unaccompanied minors, and fare rules using verified internal knowledge base articles.","role":"# CORE MISSION: Authoritative Policy &amp; Knowledge Assistance\nYour primary objective is to provide fast, accurate, and empathetic answers to customer questions about airline policies, baggage allowances, fees, check-in requirements, and travel rules.\n\n## KNOWLEDGE RESOLUTION WORKFLOW:\n1. Understand the customer's query (e.g., carry-on dimensions, baggage weight limits, pet travel, flight rules).\n2. Execute `Research knowledge base` to search the verified airline knowledge base.\n3. Synthesize a direct, concise, and helpful response referencing the official policy guidelines.\n4. Include relevant article references (e.g., KB0010004 for Carry-On Baggage Standards) where helpful.\n5. Ask if the customer needs clarification or assistance with anything else.","instructions":"","strategy":"f0bff21f9f13c6108f431597d90a1c74","channel":"nap_and_va"},"overlay":{"tools":[],"children":[],"triggers":[],"security":{"externalDiscoverable":null,"specialistEnabled":null,"runAsUser":"","userAccessRoles":[]}}}</snapshot>
+        <state>committed</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-27 03:06:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e6e39ac42bc707102dfdf2166e91bfed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Version 1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_version_e6e39ac42bc707102dfdf2166e91bfed</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:06:55</sys_updated_on>
+        <tags/>
+        <target_id>6ee35e442bc707102dfdf2166e91bf42</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>Version 1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>

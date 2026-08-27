@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_ec_chat_instance">
+    <sn_csm_ec_chat_instance action="INSERT_OR_UPDATE">
+        <chat_branding display_value="Lumina Engagement Messenger">a198460e2b3203d02dfdf2166e91bfe4</chat_branding>
+        <enabled>true</enabled>
+        <feature display_value="Chat">0c2b5d51876b10109eb0578c87cb0beb</feature>
+        <launch_description>Talk to our team for a quick solution.</launch_description>
+        <launch_message>Chat with us</launch_message>
+        <messenger_module display_value="Lumina Engagement Messenger">c998060e2b3203d02dfdf2166e91bf7a</messenger_module>
+        <offline_chat_message>Our customer support is offline.</offline_chat_message>
+        <order>600</order>
+        <sub_title/>
+        <sys_class_name>sn_csm_ec_chat_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-20 21:09:34</sys_created_on>
+        <sys_id>2198460e2b3203d02dfdf2166e91bfe0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_csm_ec_chat_instance_2198460e2b3203d02dfdf2166e91bfe0</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-21 20:58:26</sys_updated_on>
+        <title>Chat with an agent</title>
+        <va_topic display_value="">b5d58f05c7203110b65579a988c26012</va_topic>
+        <visible_for_guest>true</visible_for_guest>
+        <visible_for_user>true</visible_for_user>
+    </sn_csm_ec_chat_instance>
+</record_update>

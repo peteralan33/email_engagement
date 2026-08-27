@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile">
+    <sys_cs_context_profile action="DELETE">
+        <active>true</active>
+        <assistant_applicability_type>profile</assistant_applicability_type>
+        <condition/>
+        <condition_mode>simple</condition_mode>
+        <condition_script><![CDATA[(function executeCondition(/* glide record */ current) {  
+	// customize condition logic here, return true or false  
+	return false;
+})(current);]]></condition_script>
+        <description/>
+        <model_type>llm</model_type>
+        <name>Lumina Voice Assistant</name>
+        <order>100</order>
+        <sys_class_name>sys_cs_context_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 14:51:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>581262a72b3687142dfdf2166e91bf94</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Lumina Voice Assistant</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_cs_context_profile_581262a72b3687142dfdf2166e91bf94</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-25 21:09:58</sys_updated_on>
+    </sys_cs_context_profile>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_cs_context_profile_581262a72b3687142dfdf2166e91bf94</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_cs_context_profile"&gt;&lt;sys_cs_context_profile action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;assistant_applicability_type&gt;profile&lt;/assistant_applicability_type&gt;&lt;condition/&gt;&lt;condition_mode&gt;simple&lt;/condition_mode&gt;&lt;condition_script&gt;&lt;![CDATA[(function executeCondition(/* glide record */ current) {  
+	// customize condition logic here, return true or false  
+	return false;
+})(current);]]&gt;&lt;/condition_script&gt;&lt;description/&gt;&lt;model_type&gt;llm&lt;/model_type&gt;&lt;name&gt;Lumina Voice Assistant&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_cs_context_profile&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-08-25 14:51:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;581262a72b3687142dfdf2166e91bf94&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Lumina Voice Assistant&lt;/sys_name&gt;&lt;sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Channel Engagement Toolkit"&gt;01900de693acba502e03fde1a903d651&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_cs_context_profile_581262a72b3687142dfdf2166e91bf94&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ag.mcp.lumina&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-08-25 21:09:58&lt;/sys_updated_on&gt;&lt;/sys_cs_context_profile&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1963955874</payload_hash>
+        <record_name>Lumina Voice Assistant</record_name>
+        <reverted_from/>
+        <source>72b47eedc39a8710b9df5163e40131f2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-25 21:09:58</sys_created_on>
+        <sys_id>9ca87febc3f68718b9df5163e4013144</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a03ac22b070000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-25 21:09:58</sys_updated_on>
+        <type>Custom Greetings and Setup</type>
+        <update_guid>5ca87feb53f68718cf6f1fa48d8b5343</update_guid>
+        <update_guid_history>5ca87feb53f68718cf6f1fa48d8b5343:-1963955874,3b22e6a7833687143ce5e95f0e8c5fe6:1796634847,101262a7093687144199dafe281f6a99:1680401871</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-25 22:35:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_context_profile">sys_cs_context_profile</sys_db_object>
+        <sys_id>093cfd0924b64288818fd44dd98ee9a1</sys_id>
+        <sys_metadata>581262a72b3687142dfdf2166e91bf94</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lumina Voice Assistant</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_cs_context_profile_581262a72b3687142dfdf2166e91bf94</sys_update_name>
+        <sys_update_version display_value="sys_cs_context_profile_581262a72b3687142dfdf2166e91bf94">9ca87febc3f68718b9df5163e4013144</sys_update_version>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-25 22:35:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

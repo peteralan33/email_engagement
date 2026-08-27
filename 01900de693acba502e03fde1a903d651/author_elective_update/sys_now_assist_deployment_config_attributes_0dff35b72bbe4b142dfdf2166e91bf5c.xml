@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment_config_attributes">
+    <sys_now_assist_deployment_config_attributes action="DELETE">
+        <deployment_config display_value="Lumina Operations Voice Assistant (AI)">28ffb1b72bbe4b142dfdf2166e91bf5b</deployment_config>
+        <name>voice_profile</name>
+        <sys_class_name>sys_now_assist_deployment_config_attributes</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 07:01:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0dff35b72bbe4b142dfdf2166e91bf5c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>voice_profile</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_now_assist_deployment_config_attributes_0dff35b72bbe4b142dfdf2166e91bf5c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 07:01:56</sys_updated_on>
+        <value>Jacqueline</value>
+    </sys_now_assist_deployment_config_attributes>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_now_assist_deployment_config_attributes_0dff35b72bbe4b142dfdf2166e91bf5c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment_config_attributes"><sys_now_assist_deployment_config_attributes action="INSERT_OR_UPDATE"><deployment_config display_value="Lumina Operations Voice Assistant (AI)">28ffb1b72bbe4b142dfdf2166e91bf5b</deployment_config><name>voice_profile</name><sys_class_name>sys_now_assist_deployment_config_attributes</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-26 07:01:13</sys_created_on><sys_domain>global</sys_domain><sys_id>0dff35b72bbe4b142dfdf2166e91bf5c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>voice_profile</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_now_assist_deployment_config_attributes_0dff35b72bbe4b142dfdf2166e91bf5c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-26 07:01:56</sys_updated_on><value>Jacqueline</value></sys_now_assist_deployment_config_attributes></record_update>]]></payload>
+        <payload_hash>-1614149920</payload_hash>
+        <record_name>voice_profile</record_name>
+        <reverted_from/>
+        <source>021948b32b7ec7142dfdf2166e91bf45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 07:01:56</sys_created_on>
+        <sys_id>6710823b2bbe4b142dfdf2166e91bf71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a03ce020460000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 07:01:56</sys_updated_on>
+        <type>Now Assist Deployment Config Attributes</type>
+        <update_guid>2310823bf7be4b1482c3b608f8a97f70</update_guid>
+        <update_guid_history>2310823bf7be4b1482c3b608f8a97f70:-1614149920,89ff35b724be4b14bc9d35f8fcad105f:171732698</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 07:02:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_now_assist_deployment_config_attributes">sys_now_assist_deployment_config_attributes</sys_db_object>
+        <sys_id>012fef37323647df800ab250cba00981</sys_id>
+        <sys_metadata>0dff35b72bbe4b142dfdf2166e91bf5c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>voice_profile</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_now_assist_deployment_config_attributes_0dff35b72bbe4b142dfdf2166e91bf5c</sys_update_name>
+        <sys_update_version display_value="sys_now_assist_deployment_config_attributes_0dff35b72bbe4b142dfdf2166e91bf5c">6710823b2bbe4b142dfdf2166e91bf71</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 07:02:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

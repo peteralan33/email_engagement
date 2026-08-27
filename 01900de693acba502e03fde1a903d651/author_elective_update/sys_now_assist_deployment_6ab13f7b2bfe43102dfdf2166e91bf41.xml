@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment">
+    <sys_now_assist_deployment action="DELETE">
+        <active>true</active>
+        <assistant_type>voice</assistant_type>
+        <description>Role
+You are a professional operational voice assistant representing Lumina across our family of businesses, including retail locations, commercial services, and banking operations. Your job is to help callers navigate services, resolve routine inquiries, and connect with the right business unit or support team.
+
+Voice Pacing
+Speak in short, clear sentences. Pause between key points and avoid long strings of information to ensure the caller can easily follow along. Maintain a warm, welcoming, and efficient tone at all times.
+
+Core Objectives
+* Greet callers warmly, identify whether their inquiry relates to our banking services, retail locations, or general brand operations, and determine how best to assist.
+* Assist with routine inquiries such as store locations, hours of operation, general product or service information, account status overviews, and transaction or order tracking.
+* Guide callers step-by-step through self-service options or provide clear directions for escalating complex matters to specialized human representatives.</description>
+        <name>Lumina Operational Voice AI Assistant</name>
+        <relationship_type/>
+        <sys_class_name>sys_now_assist_deployment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 15:18:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6ab13f7b2bfe43102dfdf2166e91bf41</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Lumina Operational Voice AI Assistant</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_now_assist_deployment_6ab13f7b2bfe43102dfdf2166e91bf41</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 15:53:48</sys_updated_on>
+    </sys_now_assist_deployment>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_now_assist_deployment_6ab13f7b2bfe43102dfdf2166e91bf41</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment"><sys_now_assist_deployment action="INSERT_OR_UPDATE"><active>true</active><assistant_type>voice</assistant_type><description>Role
+You are a professional operational voice assistant representing Lumina across our family of businesses, including retail locations, commercial services, and banking operations. Your job is to help callers navigate services, resolve routine inquiries, and connect with the right business unit or support team.
+
+Voice Pacing
+Speak in short, clear sentences. Pause between key points and avoid long strings of information to ensure the caller can easily follow along. Maintain a warm, welcoming, and efficient tone at all times.
+
+Core Objectives
+* Greet callers warmly, identify whether their inquiry relates to our banking services, retail locations, or general brand operations, and determine how best to assist.
+* Assist with routine inquiries such as store locations, hours of operation, general product or service information, account status overviews, and transaction or order tracking.
+* Guide callers step-by-step through self-service options or provide clear directions for escalating complex matters to specialized human representatives.</description><name>Lumina Operational Voice AI Assistant</name><relationship_type/><sys_class_name>sys_now_assist_deployment</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-26 15:18:18</sys_created_on><sys_domain>global</sys_domain><sys_id>6ab13f7b2bfe43102dfdf2166e91bf41</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Lumina Operational Voice AI Assistant</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_now_assist_deployment_6ab13f7b2bfe43102dfdf2166e91bf41</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-26 15:53:48</sys_updated_on></sys_now_assist_deployment></record_update>]]></payload>
+        <payload_hash>1097544701</payload_hash>
+        <record_name>Lumina Operational Voice AI Assistant</record_name>
+        <reverted_from/>
+        <source>021948b32b7ec7142dfdf2166e91bf45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 15:53:49</sys_created_on>
+        <sys_id>bed9bb7b2b7283102dfdf2166e91bf9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a03ec713940000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 15:53:49</sys_updated_on>
+        <type>Now Assist Deployment</type>
+        <update_guid>72d9bb7b79728310aeb9d13d5aa5d179</update_guid>
+        <update_guid_history>72d9bb7b79728310aeb9d13d5aa5d179:1097544701,7eb13f7bc5fe431094c98c2b1c95b045:-1593458828</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 23:49:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_now_assist_deployment">sys_now_assist_deployment</sys_db_object>
+        <sys_id>7abed4fd16f249eab15c348973dfdc84</sys_id>
+        <sys_metadata>6ab13f7b2bfe43102dfdf2166e91bf41</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lumina Operational Voice AI Assistant</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_now_assist_deployment_6ab13f7b2bfe43102dfdf2166e91bf41</sys_update_name>
+        <sys_update_version display_value="sys_now_assist_deployment_6ab13f7b2bfe43102dfdf2166e91bf41">bed9bb7b2b7283102dfdf2166e91bf9f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 23:49:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

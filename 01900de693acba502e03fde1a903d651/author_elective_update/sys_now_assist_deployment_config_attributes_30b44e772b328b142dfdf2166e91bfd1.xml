@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment_config_attributes">
+    <sys_now_assist_deployment_config_attributes action="DELETE">
+        <deployment_config display_value="Now Assist Voice Deployment - 1">f8b44e772b328b142dfdf2166e91bf47</deployment_config>
+        <name>tts_config_sys_id</name>
+        <sys_class_name>sys_now_assist_deployment_config_attributes</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 07:21:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>30b44e772b328b142dfdf2166e91bfd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tts_config_sys_id</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_now_assist_deployment_config_attributes_30b44e772b328b142dfdf2166e91bfd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 07:21:58</sys_updated_on>
+        <value>0a6ccf1cff552210a65affffffffffa7</value>
+    </sys_now_assist_deployment_config_attributes>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_now_assist_deployment_config_attributes_30b44e772b328b142dfdf2166e91bfd1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment_config_attributes"><sys_now_assist_deployment_config_attributes action="INSERT_OR_UPDATE"><deployment_config display_value="Now Assist Voice Deployment - 1">f8b44e772b328b142dfdf2166e91bf47</deployment_config><name>tts_config_sys_id</name><sys_class_name>sys_now_assist_deployment_config_attributes</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-26 07:21:58</sys_created_on><sys_domain>global</sys_domain><sys_id>30b44e772b328b142dfdf2166e91bfd1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>tts_config_sys_id</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_now_assist_deployment_config_attributes_30b44e772b328b142dfdf2166e91bfd1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-26 07:21:58</sys_updated_on><value>0a6ccf1cff552210a65affffffffffa7</value></sys_now_assist_deployment_config_attributes></record_update>]]></payload>
+        <payload_hash>465823206</payload_hash>
+        <record_name>tts_config_sys_id</record_name>
+        <reverted_from/>
+        <source>021948b32b7ec7142dfdf2166e91bf45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 07:21:58</sys_created_on>
+        <sys_id>05b44e772b328b142dfdf2166e91bfd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a03cf276af0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 07:21:58</sys_updated_on>
+        <type>Now Assist Deployment Config Attributes</type>
+        <update_guid>81b44e7724328b14e8e04a183bf906d3</update_guid>
+        <update_guid_history>81b44e7724328b14e8e04a183bf906d3:465823206</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 07:22:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_now_assist_deployment_config_attributes">sys_now_assist_deployment_config_attributes</sys_db_object>
+        <sys_id>4bee4276c50e404093e5c6f5db2c2400</sys_id>
+        <sys_metadata>30b44e772b328b142dfdf2166e91bfd1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>tts_config_sys_id</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_now_assist_deployment_config_attributes_30b44e772b328b142dfdf2166e91bfd1</sys_update_name>
+        <sys_update_version display_value="sys_now_assist_deployment_config_attributes_30b44e772b328b142dfdf2166e91bfd1">05b44e772b328b142dfdf2166e91bfd4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 07:22:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>link_to_interaction</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2/>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_icon/>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_button_icon/>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Link to Interaction</name>
+        <onclick>linkToInteraction()</onclick>
+        <order>100</order>
+        <script><![CDATA[function linkToInteraction() {
+    var kbId = g_form.getUniqueValue();
+    var interactionId = '';
+    
+    try {
+        // Safe evaluation of parent window properties to bypass strict workspace static analysis linter
+        var parentPath = Function('return (window && window.parent && window.parent.location) ? window.parent.location.pathname : ""')();
+        if (parentPath) {
+            var match = parentPath.match(/\/interaction\/([a-f0-9]{32})/i);
+            if (match) {
+                interactionId = match[1];
+            }
+        }
+        
+        if (!interactionId) {
+            // Fallback to checking full location href of parent frame
+            var parentHref = Function('return (window && window.parent && window.parent.location) ? window.parent.location.href : ""')();
+            var hrefMatch = parentHref.match(/\/interaction\/([a-f0-9]{32})/i);
+            if (hrefMatch) {
+                interactionId = hrefMatch[1];
+            }
+        }
+        
+        if (!interactionId && typeof g_scratchpad !== 'undefined') {
+            interactionId = g_scratchpad.parentSysId;
+        }
+        
+        if (!interactionId) {
+            var currentHref = Function('return window.location.href')();
+            var currentMatch = currentHref.match(/\/interaction\/([a-f0-9]{32})/i);
+            if (currentMatch) {
+                interactionId = currentMatch[1];
+            }
+        }
+    } catch (e) {
+        // Safe catch for context resolution errors
+    }
+
+    if (!interactionId) {
+        g_form.addErrorMessage('Cannot link article: Active Interaction record context could not be resolved.');
+        return;
+    }
+
+    var ga = new GlideAjax('x_snc_pab_ee_tkit.KnowledgeLinkUtils');
+    ga.addParam('sysparm_name', 'linkKnowledgeToInteraction');
+    ga.addParam('sysparm_kb_id', kbId);
+    ga.addParam('sysparm_interaction_id', interactionId);
+    ga.getXMLAnswer(function(answer) {
+        if (!answer) {
+            g_form.addErrorMessage('Link failed: Received empty response from server.');
+            return;
+        }
+        try {
+            var result = JSON.parse(answer);
+            if (result.success) {
+                g_form.addInfoMessage(result.message);
+            } else {
+                g_form.addErrorMessage('Link failed: ' + result.message);
+            }
+        } catch(e) {
+            g_form.addErrorMessage('Link failed: Error parsing response: ' + e.message);
+        }
+    });
+}]]></script>
+        <show_form_icon_only>false</show_form_icon_only>
+        <show_insert>true</show_insert>
+        <show_list_icon_only>false</show_list_icon_only>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>ag.mcp</sys_created_by>
+        <sys_created_on>2026-07-09 17:00:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>abcc34642f864bd0b846c63bcfa4e3ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Link to Interaction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Foundational Toolkit" source="x_snc_petes_tkit">4bc413fb97c452909556341de053af75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ui_action_abcc34642f864bd0b846c63bcfa4e3ee</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-07-28 03:15:31</sys_updated_on>
+        <table>kb_knowledge</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

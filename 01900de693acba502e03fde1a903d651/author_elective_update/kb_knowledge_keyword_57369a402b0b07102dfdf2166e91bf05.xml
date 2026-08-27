@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_knowledge_keyword">
+    <kb_knowledge_keyword action="DELETE">
+        <keywords>9f2e0180ff5031009b20ffffffffffcf</keywords>
+        <knowledge display_value="KB0010044 v0.01">306217c2c3b60f94b9df5163e401313d</knowledge>
+        <sys_class_name>kb_knowledge_keyword</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-27 03:17:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>57369a402b0b07102dfdf2166e91bf05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>kb_knowledge_keyword_57369a402b0b07102dfdf2166e91bf05</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:17:04</sys_updated_on>
+    </kb_knowledge_keyword>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>kb_knowledge_keyword_57369a402b0b07102dfdf2166e91bf05</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_knowledge_keyword"><kb_knowledge_keyword action="INSERT_OR_UPDATE"><keywords>9f2e0180ff5031009b20ffffffffffcf</keywords><knowledge display_value="KB0010044 v0.01">306217c2c3b60f94b9df5163e401313d</knowledge><sys_class_name>kb_knowledge_keyword</sys_class_name><sys_created_by>ag.mcp.lumina</sys_created_by><sys_created_on>2026-08-27 03:17:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>57369a402b0b07102dfdf2166e91bf05</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>kb_knowledge_keyword_57369a402b0b07102dfdf2166e91bf05</sys_update_name><sys_updated_by>ag.mcp.lumina</sys_updated_by><sys_updated_on>2026-08-27 03:17:04</sys_updated_on></kb_knowledge_keyword></record_update>]]></payload>
+        <payload_hash>-2991368</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>37d4b0ccc3c7c310b9df5163e40131a7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-27 03:17:04</sys_created_on>
+        <sys_id>d3369a402b0b07102dfdf2166e91bf3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a041389d920000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:17:04</sys_updated_on>
+        <type>Knowledge keyword</type>
+        <update_guid>53369a40db0b07104e078c261977683a</update_guid>
+        <update_guid_history>53369a40db0b07104e078c261977683a:-2991368</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6df912802b4b07102dfdf2166e91bfab</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-27 03:33:20</sys_created_on>
+        <sys_db_object display_value="" name="kb_knowledge_keyword">kb_knowledge_keyword</sys_db_object>
+        <sys_id>dd168ffe56d74ea086f28d1f94c8d104</sys_id>
+        <sys_metadata>57369a402b0b07102dfdf2166e91bf05</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>kb_knowledge_keyword_57369a402b0b07102dfdf2166e91bf05</sys_update_name>
+        <sys_update_version display_value="kb_knowledge_keyword_57369a402b0b07102dfdf2166e91bf05">d3369a402b0b07102dfdf2166e91bf3b</sys_update_version>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-27 03:33:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

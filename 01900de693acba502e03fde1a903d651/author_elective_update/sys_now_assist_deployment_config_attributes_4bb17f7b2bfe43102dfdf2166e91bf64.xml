@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment_config_attributes">
+    <sys_now_assist_deployment_config_attributes action="DELETE">
+        <deployment_config display_value="New voice assistant - 1">7eb13f7b2bfe43102dfdf2166e91bf5a</deployment_config>
+        <name>voice_minutes_account_is_locked</name>
+        <sys_class_name>sys_now_assist_deployment_config_attributes</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 15:18:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4bb17f7b2bfe43102dfdf2166e91bf64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>voice_minutes_account_is_locked</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_now_assist_deployment_config_attributes_4bb17f7b2bfe43102dfdf2166e91bf64</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 15:18:20</sys_updated_on>
+        <value>1440</value>
+    </sys_now_assist_deployment_config_attributes>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_now_assist_deployment_config_attributes_4bb17f7b2bfe43102dfdf2166e91bf64</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_now_assist_deployment_config_attributes"><sys_now_assist_deployment_config_attributes action="INSERT_OR_UPDATE"><deployment_config display_value="New voice assistant - 1">7eb13f7b2bfe43102dfdf2166e91bf5a</deployment_config><name>voice_minutes_account_is_locked</name><sys_class_name>sys_now_assist_deployment_config_attributes</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-26 15:18:20</sys_created_on><sys_domain>global</sys_domain><sys_id>4bb17f7b2bfe43102dfdf2166e91bf64</sys_id><sys_mod_count>0</sys_mod_count><sys_name>voice_minutes_account_is_locked</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_now_assist_deployment_config_attributes_4bb17f7b2bfe43102dfdf2166e91bf64</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-26 15:18:20</sys_updated_on><value>1440</value></sys_now_assist_deployment_config_attributes></record_update>]]></payload>
+        <payload_hash>988113932</payload_hash>
+        <record_name>voice_minutes_account_is_locked</record_name>
+        <reverted_from/>
+        <source>021948b32b7ec7142dfdf2166e91bf45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 15:18:20</sys_created_on>
+        <sys_id>cfb17f7b2bfe43102dfdf2166e91bf67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a03ea698ce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 15:18:20</sys_updated_on>
+        <type>Now Assist Deployment Config Attributes</type>
+        <update_guid>4fb17f7ba8fe43102d7f36657ccf1766</update_guid>
+        <update_guid_history>4fb17f7ba8fe43102d7f36657ccf1766:988113932</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 23:48:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_now_assist_deployment_config_attributes">sys_now_assist_deployment_config_attributes</sys_db_object>
+        <sys_id>8c5134f24d1e47f0acf7428d4ccfae10</sys_id>
+        <sys_metadata>4bb17f7b2bfe43102dfdf2166e91bf64</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>voice_minutes_account_is_locked</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_now_assist_deployment_config_attributes_4bb17f7b2bfe43102dfdf2166e91bf64</sys_update_name>
+        <sys_update_version display_value="sys_now_assist_deployment_config_attributes_4bb17f7b2bfe43102dfdf2166e91bf64">cfb17f7b2bfe43102dfdf2166e91bf67</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 23:48:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

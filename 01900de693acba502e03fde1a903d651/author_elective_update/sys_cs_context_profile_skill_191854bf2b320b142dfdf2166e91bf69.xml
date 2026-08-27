@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_skill">
+    <sys_cs_context_profile_skill action="DELETE">
+        <context_profile display_value="Lumina Voice Assistant Deployment ">3cf71c7f2b320b142dfdf2166e91bfc4</context_profile>
+        <skill_id display_value="Banking Voice Assistant">6f84c6d4cf1e0b9009d5b6734d851c64</skill_id>
+        <sys_class_name>sys_cs_context_profile_skill</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 23:27:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>191854bf2b320b142dfdf2166e91bf69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_cs_context_profile_skill_191854bf2b320b142dfdf2166e91bf69</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 23:27:24</sys_updated_on>
+    </sys_cs_context_profile_skill>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_cs_context_profile_skill_191854bf2b320b142dfdf2166e91bf69</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_skill"><sys_cs_context_profile_skill action="INSERT_OR_UPDATE"><context_profile display_value="Lumina Voice Assistant Deployment ">3cf71c7f2b320b142dfdf2166e91bfc4</context_profile><skill_id display_value="Banking Voice Assistant">6f84c6d4cf1e0b9009d5b6734d851c64</skill_id><sys_class_name>sys_cs_context_profile_skill</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-25 23:27:24</sys_created_on><sys_domain>global</sys_domain><sys_id>191854bf2b320b142dfdf2166e91bf69</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_cs_context_profile_skill_191854bf2b320b142dfdf2166e91bf69</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-25 23:27:24</sys_updated_on></sys_cs_context_profile_skill></record_update>]]></payload>
+        <payload_hash>-1374352246</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>021948b32b7ec7142dfdf2166e91bf45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-25 23:27:24</sys_created_on>
+        <sys_id>e11854bf2b320b142dfdf2166e91bf6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a03b3ffeb80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-25 23:27:24</sys_updated_on>
+        <type>Profile and Skill Mapping</type>
+        <update_guid>611854bf49320b148fb9d236a5b72d6d</update_guid>
+        <update_guid_history>611854bf49320b148fb9d236a5b72d6d:-1374352246</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-26 04:38:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_context_profile_skill">sys_cs_context_profile_skill</sys_db_object>
+        <sys_id>6be13899bd874084adb2516a8916b690</sys_id>
+        <sys_metadata>191854bf2b320b142dfdf2166e91bf69</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_cs_context_profile_skill_191854bf2b320b142dfdf2166e91bf69</sys_update_name>
+        <sys_update_version display_value="sys_cs_context_profile_skill_191854bf2b320b142dfdf2166e91bf69">e11854bf2b320b142dfdf2166e91bf6e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-26 04:38:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

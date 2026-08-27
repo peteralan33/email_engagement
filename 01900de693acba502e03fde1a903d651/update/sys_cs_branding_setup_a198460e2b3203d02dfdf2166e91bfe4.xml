@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_branding_setup">
     <sys_cs_branding_setup action="INSERT_OR_UPDATE">
-        <agent_bubble_bg_color>#E9EBF7</agent_bubble_bg_color>
+        <agent_bubble_bg_color>#E5F4F6</agent_bubble_bg_color>
         <agent_bubble_font_color>#000000</agent_bubble_font_color>
         <bg_color>#ffffff</bg_color>
         <body_font_name/>
         <body_font_src/>
-        <bot_bubble_bg_color>#E9EBF7</bot_bubble_bg_color>
+        <bot_bubble_bg_color>#E5F4F6</bot_bubble_bg_color>
         <bot_bubble_font_color>#000000</bot_bubble_font_color>
         <branding_key>c998060e2b3203d02dfdf2166e91bf7a</branding_key>
         <branding_name>Lumina Engagement Messenger</branding_name>
-        <bubble_bg_color>#B5DDE5</bubble_bg_color>
+        <bubble_bg_color>#B2EBF2</bubble_bg_color>
         <bubble_font_color>#000000</bubble_font_color>
         <button_bg_action_color>#0080A3</button_bg_action_color>
         <button_bg_color>#ffffff</button_bg_color>
@@ -33,7 +33,7 @@
         <disabled_link_color>#85909566</disabled_link_color>
         <error_color>#E52239</error_color>
         <focus_ring_color>#359325</focus_ring_color>
-        <header_bg_color>#E9EBF7</header_bg_color>
+        <header_bg_color>#E5F4F6</header_bg_color>
         <header_font_color>#000000</header_font_color>
         <header_font_name/>
         <header_font_src/>
@@ -73,15 +73,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a198460e2b3203d02dfdf2166e91bfe4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Lumina Engagement Messenger</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_cs_branding_setup_a198460e2b3203d02dfdf2166e91bfe4</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-20 21:27:48</sys_updated_on>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-27 02:51:49</sys_updated_on>
         <system_message_color>#37444A</system_message_color>
         <timestamp_color>#37444A</timestamp_color>
         <tooltip_bg_color>#0B1012</tooltip_bg_color>

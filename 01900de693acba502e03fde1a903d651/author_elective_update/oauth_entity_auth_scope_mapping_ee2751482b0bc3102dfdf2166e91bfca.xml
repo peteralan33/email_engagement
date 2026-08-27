@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_auth_scope_mapping">
+    <oauth_entity_auth_scope_mapping action="DELETE">
+        <auth_scope display_value="AI Voice">fc9d796dff356210c126ffffffffff45</auth_scope>
+        <oauth_entity display_value="Amazon Connect Media gateway 6ab13f7b2bfe43102dfdf2166e91bf41">28e6ddc42b0bc3102dfdf2166e91bf3b</oauth_entity>
+        <sys_class_name>oauth_entity_auth_scope_mapping</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-26 22:41:29</sys_created_on>
+        <sys_id>ee2751482b0bc3102dfdf2166e91bfca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>oauth_entity_auth_scope_mapping_ee2751482b0bc3102dfdf2166e91bfca</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-26 22:41:29</sys_updated_on>
+    </oauth_entity_auth_scope_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>oauth_entity_auth_scope_mapping_ee2751482b0bc3102dfdf2166e91bfca</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_auth_scope_mapping"><oauth_entity_auth_scope_mapping action="INSERT_OR_UPDATE"><auth_scope display_value="AI Voice">fc9d796dff356210c126ffffffffff45</auth_scope><oauth_entity display_value="Amazon Connect Media gateway 6ab13f7b2bfe43102dfdf2166e91bf41">28e6ddc42b0bc3102dfdf2166e91bf3b</oauth_entity><sys_class_name>oauth_entity_auth_scope_mapping</sys_class_name><sys_created_by>ag.mcp.lumina</sys_created_by><sys_created_on>2026-08-26 22:41:29</sys_created_on><sys_id>ee2751482b0bc3102dfdf2166e91bfca</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>oauth_entity_auth_scope_mapping_ee2751482b0bc3102dfdf2166e91bfca</sys_update_name><sys_updated_by>ag.mcp.lumina</sys_updated_by><sys_updated_on>2026-08-26 22:41:29</sys_updated_on></oauth_entity_auth_scope_mapping></record_update>]]></payload>
+        <payload_hash>106930848</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>37d4b0ccc3c7c310b9df5163e40131a7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-26 22:41:29</sys_created_on>
+        <sys_id>262791482b0bc3102dfdf2166e91bf1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0403c50090000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-26 22:41:29</sys_updated_on>
+        <type>Auth Scopes</type>
+        <update_guid>2a275148800bc3109162a476cb2cced0</update_guid>
+        <update_guid_history>2a275148800bc3109162a476cb2cced0:106930848</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2ee6258cc3470710b9df5163e4013166</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-26 23:50:18</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_auth_scope_mapping">oauth_entity_auth_scope_mapping</sys_db_object>
+        <sys_id>538d24d37282470196ca6ebdac8ad609</sys_id>
+        <sys_metadata>ee2751482b0bc3102dfdf2166e91bfca</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>oauth_entity_auth_scope_mapping_ee2751482b0bc3102dfdf2166e91bfca</sys_update_name>
+        <sys_update_version display_value="oauth_entity_auth_scope_mapping_ee2751482b0bc3102dfdf2166e91bfca">262791482b0bc3102dfdf2166e91bf1c</sys_update_version>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-26 23:50:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
