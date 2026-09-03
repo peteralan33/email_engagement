@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_embeddable_core_group">
+    <sn_embeddable_core_group action="DELETE">
+        <display_order>3</display_order>
+        <module display_value="Lumina">364dde9ac3470710b9df5163e4013140</module>
+        <name>Group 1</name>
+        <sys_class_name>sn_embeddable_core_group</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 04:01:37</sys_created_on>
+        <sys_id>9493ea9ac3c70710b9df5163e4013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Group 1</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_embeddable_core_group_9493ea9ac3c70710b9df5163e4013112</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 04:01:37</sys_updated_on>
+    </sn_embeddable_core_group>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sn_embeddable_core_group_9493ea9ac3c70710b9df5163e4013112</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_embeddable_core_group"><sn_embeddable_core_group action="INSERT_OR_UPDATE"><display_order>3</display_order><module display_value="Lumina">364dde9ac3470710b9df5163e4013140</module><name>Group 1</name><sys_class_name>sn_embeddable_core_group</sys_class_name><sys_created_by>ag.mcp.lumina</sys_created_by><sys_created_on>2026-09-03 04:01:37</sys_created_on><sys_id>9493ea9ac3c70710b9df5163e4013112</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Group 1</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_embeddable_core_group_9493ea9ac3c70710b9df5163e4013112</sys_update_name><sys_updated_by>ag.mcp.lumina</sys_updated_by><sys_updated_on>2026-09-03 04:01:37</sys_updated_on></sn_embeddable_core_group></record_update>]]></payload>
+        <payload_hash>1372970157</payload_hash>
+        <record_name>Group 1</record_name>
+        <reverted_from/>
+        <source>ad0d541cc387c710b9df5163e4013184</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 04:01:37</sys_created_on>
+        <sys_id>d893ea9ac3c70710b9df5163e4013116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0656dea970000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 04:01:37</sys_updated_on>
+        <type>Embeddable Groups</type>
+        <update_guid>1893ea9a39c707101525d35247914a15</update_guid>
+        <update_guid_history>1893ea9a39c707101525d35247914a15:1372970157</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Group 1">72b3a2dac3c70710b9df5163e4013131</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 04:02:20</sys_created_on>
+        <sys_db_object display_value="" name="sn_embeddable_core_group">sn_embeddable_core_group</sys_db_object>
+        <sys_id>0b3cbef6629b46fb8fbddb7ba19752c9</sys_id>
+        <sys_metadata>9493ea9ac3c70710b9df5163e4013112</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Group 1</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_embeddable_core_group_9493ea9ac3c70710b9df5163e4013112</sys_update_name>
+        <sys_update_version display_value="sn_embeddable_core_group_9493ea9ac3c70710b9df5163e4013112">d893ea9ac3c70710b9df5163e4013116</sys_update_version>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 04:02:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Use this tool at the start of a document upload conversation to identify the client's active commercial account, case, and outstanding Financial Tasks (e.g. sales agreements, insurance certificates). Cross-references logged-in contact &gt; company account, informs client of accepted file formats (PDF, JPG, PNG) and size limits (10 MB), and provides a personalized conversational greeting.</description>
+        <input_schema>[{"name":"contact_sys_id","description":"The customer contact sys_id","mandatory":false},{"name":"phone_number","description":"The customer phone number","mandatory":false},{"name":"case_number","description":"The loan case number or application number","mandatory":false},{"name":"account_sys_id","description":"The company account sys_id","mandatory":false}]</input_schema>
+        <name>identify_upload_requirements</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    var outputs = {};
+    var svc = new x_snc_pab_ee_tkit.LendingDocumentUploadService();
+    var res = svc.getUploadRequirements(inputs, outputs);
+    return res;
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 12:39:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e12ad8a6c3c78710b9df5163e401317a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>identify_upload_requirements</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_e12ad8a6c3c78710b9df5163e401317a</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 12:39:43</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

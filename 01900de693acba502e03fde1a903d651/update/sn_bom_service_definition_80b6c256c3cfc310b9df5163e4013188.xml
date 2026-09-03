@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
+    <sn_bom_service_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <case_type/>
+        <description>Payment exception investigation when outgoing or incoming payments fail due to recipient account detail discrepancies.</description>
+        <id>payment_exception_details_mismatch</id>
+        <image/>
+        <name>Payment Exception - Account Details Mismatch</name>
+        <order>10</order>
+        <playbook_record_generator/>
+        <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
+        <service_type>2</service_type>
+        <sys_class_name>sn_bom_service_definition</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 01:55:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>80b6c256c3cfc310b9df5163e4013188</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Payment Exception - Account Details Mismatch</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_bom_service_definition_80b6c256c3cfc310b9df5163e4013188</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 01:55:27</sys_updated_on>
+        <table>sn_bom_payment_inquiry</table>
+        <task_table>sn_bom_payment_inquiry</task_table>
+        <template>short_description=Payment Exception - Account Details Do Not Match^EQ</template>
+        <use_service_catalog_item>false</use_service_catalog_item>
+    </sn_bom_service_definition>
+</record_update>

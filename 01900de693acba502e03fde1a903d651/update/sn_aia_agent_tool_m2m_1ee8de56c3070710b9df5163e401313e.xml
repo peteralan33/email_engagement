@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Report Fraud and Scam">3e1ece96c3430710b9df5163e4013114</agent>
+        <description>Use this tool to create an official Fraud Case on the sn_bom_fraud_case table with the Service Definition 'Report Fraud via Voice AI'.
+
+When to call:
+- Call this tool when the customer confirms an unauthorized charge, compromised card, or fraudulent transaction on their account.
+
+Inputs to provide:
+- 'financial_account_sys_id': Pass the Sys ID of the selected account from 'selected_account_sys_id'.
+- 'transaction_sys_id': (Optional) Pass the Sys ID of the disputed transaction if identified during transaction review.
+- 'disputed_amount': Pass the amount of the unauthorized charge (e.g. 898.75).
+- 'fraud_reason': State the caller's reason (e.g. "Customer reports unauthorized online purchase").
+- 'card_blocked': Set to true to apply immediate temporary restriction on the card.
+
+Outputs &amp; Context:
+- Store the returned 'case_sys_id' in conversation context for the confirmation email tool.
+- Inform the caller of their case number (e.g. FRC0001030) and confirm that a security block has been placed on their card.</description>
+        <display_mode>inline</display_mode>
+        <display_output>false</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>3e1ece96c3430710b9df5163e4013114</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Create Fraud Case</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:15:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1ee8de56c3070710b9df5163e401313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Fraud Case</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_1ee8de56c3070710b9df5163e401313e</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:15:03</sys_updated_on>
+        <timeout/>
+        <tool display_value="create_fraud_case_via_voice_ai">2e26965ac3c30710b9df5163e401311d</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <wait_for_widget_interaction>false</wait_for_widget_interaction>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

@@ -26,3 +26,4 @@ If you find yourself unable to import your repository due to the presence of fil
    Currently listed dependencies:
    * System Import Sets
    * Financial Services Operations Core
+   * Financial Services Business Loan Operations

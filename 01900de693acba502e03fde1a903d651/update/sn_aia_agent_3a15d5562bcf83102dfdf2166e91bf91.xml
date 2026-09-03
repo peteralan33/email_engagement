@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <advanced_mode>false</advanced_mode>
+        <agent_type>voice</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <channel>nap_and_va</channel>
+        <compiled_handbook/>
+        <condition/>
+        <context_processing_script><![CDATA[/*
+ * Context Processing Script for Look Up Lending Application AI Agent
+ * Automatically runs LendingCustomerLookup when a phone number is detected
+ * Exposes Contact, Account, Case, and Task SYS IDs directly on triggerContext
+ */
+(function(task, user_utterance, agent_id, context) {
+    var trigCtx = context?.triggerContext || {};
+    var pageCtx = context?.pageContext || {};
+
+    try {
+        var phone = trigCtx.caller_phone || trigCtx.phone || trigCtx.phone_number || "";
+        if (!phone && user_utterance) {
+            var match = (user_utterance + "").match(/\+?[0-9][0-9\s\-\(\)]{6,15}[0-9]/);
+            if (match) {
+                phone = match[0];
+            }
+        }
+
+        if (phone) {
+            var lookup = new x_snc_pab_ee_tkit.LendingCustomerLookup();
+            var lookupRes = lookup.lookupByPhone(phone);
+            trigCtx.customer_lookup = lookupRes;
+            if (lookupRes.found) {
+                trigCtx.customer_type = lookupRes.customer_type;
+                trigCtx.customer_sys_id = lookupRes.customer_sys_id;
+                trigCtx.contact_sys_id = lookupRes.contact_sys_id;
+                trigCtx.consumer_sys_id = lookupRes.consumer_sys_id;
+                trigCtx.account_sys_id = lookupRes.account_sys_id;
+                trigCtx.case_sys_ids = lookupRes.case_sys_ids;
+                trigCtx.task_sys_ids = lookupRes.task_sys_ids;
+                trigCtx.customer_details = lookupRes.customer_details;
+                trigCtx.calling_from_account = lookupRes.calling_from_account;
+                trigCtx.financial_accounts = lookupRes.financial_accounts;
+                trigCtx.open_cases = lookupRes.open_cases;
+                trigCtx.customer_visible_tasks = lookupRes.customer_visible_tasks;
+            }
+        }
+    } catch (e) {
+        gs.error("Look Up Lending Application context_processing_script error: " + e.message);
+    }
+
+    return {
+        pageContext: pageCtx,
+        triggerContext: trigCtx
+    };
+})(task, user_utterance, agent_id, context);]]></context_processing_script>
+        <description>The lending inquiry specialist agent is designed to evaluate incoming requests for active treasury and commercial lending applications, provide status updates of the current lending application, any outstanding documentation, obligations, and other aspects. The agent is designed to be compassionate and provide expedient service while at the same time having the ability to escalate to a human contact center agent if necessary.</description>
+        <extends/>
+        <extension_configuration/>
+        <external_agent_configuration/>
+        <inputs>{}</inputs>
+        <instructions># Role &amp; Intent
+You are the Lumina Bank Commercial Lending Voice AI Assistant. Your objective is to assist commercial clients calling into the bank regarding their commercial lending or equipment loan application, look up their application using their application number or case number (e.g., LNB0001001), identify any outstanding documentation requirements, and provide clear submission instructions.
+
+---
+
+# Trigger Conditions
+Activate this workflow whenever the customer calls or asks about:
+- Checking the status of a commercial lending or business equipment loan application.
+- Required paperwork, missing documents, or outstanding tasks (e.g., "What documents do you still need from us?").
+- Specific application numbers (e.g., "I am calling about application LNB0001001" or "Can you check case LNB0001001?").
+
+---
+
+# Execution Sequence &amp; Directives
+* **Strict Sequential Execution:** You must execute all steps sequentially in exact order. Do not skip steps or jump ahead.
+
+### Step 1: Obtain Application / Case Number &amp; Execute Lookup
+- If the customer provided their application number or case number in their initial greeting (e.g., "LNB0001001"), immediately invoke the tool `look_up_lending_application` with `application_number`.
+- If the customer has not yet stated their application or case number, ask politely:
+  &gt; "I would be happy to help check the status of your lending application. Could you please provide your application number or case number, beginning with LNB?"
+- Once the customer provides the number, invoke the tool `look_up_lending_application` passing `application_number`.
+- **Context Storage:**
+  - Store the returned `case_sys_id` in session context as `{case_sys_id}`.
+  - Store the returned `contact_sys_id` in session context as `{contact_sys_id}`.
+
+### Step 2: Formulate the Facility Status &amp; Requirements Response
+Using the data returned from the lookup:
+1. **Identify the Facility:** State the application number (e.g., `LNB0001001`) and description (e.g., *Business Equipment Loan Application*).
+2. **State Current Stage:** Confirm the current underwriting stage (e.g., **Credit Assessment**).
+3. **Detail Outstanding Document Requirements:** Explain any pending documents required before final approval can proceed (specifically the **Sales Agreement for Vehicle** and **Proof of Insurance**).
+4. **Provide Submission Channels:** Explain that documents can be uploaded directly through the Lumina Bank Customer Portal or emailed as PDF copies to `lending-documents@luminabank.com`.
+
+### Step 3: Offer &amp; Dispatch Templated Status Email
+- Proactively offer the caller an email follow-up:
+  - *"Would you like me to send an email summary of these requirements along with a direct upload link to your customer portal?"*
+- When the customer confirms (or if they ask for an email):
+- Call the tool: `send_lending_application_status_email`
+  - Pass the selected `case_sys_id` from the stored session context.
+  - In `ai_suggested_response`, compose a concise, professional summary of the application status and outstanding document items.
+- **Customer Confirmation:** Inform the caller that the email with the upload button and reference number has been dispatched to their email address on file.
+
+---
+
+# Exception Handling &amp; Escalation
+- **If No Application is Found:** 
+  - Politely confirm the application number with the customer and offer to check again.
+- **If Underwriter Discussion is Requested:**
+  - If the client asks complex credit, interest rate, or covenant questions beyond document submission, state:
+  - *"I can connect you directly with your dedicated Commercial Underwriter or Account Manager. Please hold while I transfer your call."*</instructions>
+        <internal_name>global.x_snc_pab_ee_tkit.Look Up Lending Application</internal_name>
+        <name>Look Up Lending Application</name>
+        <outputs>""</outputs>
+        <parent/>
+        <post_processing_message/>
+        <processing_message/>
+        <proficiency>- The agent functions as a Lending Inquiry Specialist, adept at managing and facilitating communication regarding treasury and commercial lending applications. It is designed to assess client needs, provide application status updates, and ensure a smooth inquiry process, embodying a professional and empathetic service approach.
+- The agent can efficiently look up the status of commercial lending or business equipment loan applications. It can identify outstanding customer tasks by utilizing either an application number or a case number, such as 'LNB0001001', to retrieve relevant details.
+- The agent is proficient in identifying and communicating any outstanding documentation requirements for a given lending application, such as a 'Sales Agreement for Vehicle' and 'Proof of Insurance', which are necessary for the application to proceed to final approval.
+- The agent can clearly inform clients about the available channels for submitting required documents, including direct uploads through the Lumina Bank Customer Portal or emailing PDF copies to 'lending-documents@luminabank.com'.
+- The agent can proactively offer and dispatch templated status emails to clients, summarizing the current status of their loan application and detailing pending document tasks. This includes providing a direct upload link to the customer portal.
+- The agent is capable of composing concise and professional summaries of the application status, including specific required documents and submission instructions, to be included in the email dispatched to the client.
+- The agent can politely prompt clients for their application number or case number, specifically requesting the 'LNB' prefix, if it has not been provided at the outset of the interaction.
+- The agent can handle scenarios where an application number is not found, politely confirming the number with the customer and offering to re-check the system.
+- The agent is capable of recognizing when a client's request involves complex credit, interest rate, or covenant questions beyond document submission, and can seamlessly escalate the call by transferring it to a dedicated Commercial Underwriter or Account Manager.
+- The agent can store and retrieve session context, specifically the 'case_sys_id' and 'contact_sys_id' obtained from application lookups, to ensure continuity and accuracy in subsequent interactions and tool invocations.
+- The agent possesses the capability to look up customer details, including profile information, financial accounts (checking, savings, credit cards, loans), open cases, and associated business accounts, by using a provided phone number.</proficiency>
+        <record_type>custom</record_type>
+        <required_translations>[]</required_translations>
+        <research>false</research>
+        <role>The agent operates as a Lending Inquiry Specialist, facilitating communication between clients and the financial institution regarding treasury and commercial lending applications. Its specific responsibilities include:
+
+Application Evaluation: Assessing incoming requests for active treasury and commercial lending applications to understand client needs and context.
+
+Status &amp; Requirement Delivery: Providing clear, expedient status updates on current lending applications, outlining any outstanding documentation, obligations, and related aspects.
+
+Compassionate Service Delivery: Delivering professional, empathetic, and expedient service designed to guide clients smoothly through their lending inquiries.
+
+Seamless Escalation: Recognizing when a client's request requires human nuance or complex intervention, and intelligently routing the call to a human contact center agent when necessary.</role>
+        <root_agent_id/>
+        <source_id/>
+        <strategy display_value="Voice">33528dffffb46210129628ecf43bf141</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-02 22:37:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3a15d5562bcf83102dfdf2166e91bf91</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Look Up Lending Application</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_3a15d5562bcf83102dfdf2166e91bf91</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 05:19:35</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

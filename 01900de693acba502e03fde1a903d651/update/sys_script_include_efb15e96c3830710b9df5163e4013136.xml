@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_pab_ee_tkit.FraudAccountAndTransactionService</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Handles account narrowing and last 5 days transaction retrieval for the Report Fraud &amp; Scam voice flow.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>FraudAccountAndTransactionService</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var FraudAccountAndTransactionService = Class.create();
+FraudAccountAndTransactionService.prototype = {
+    initialize: function() {},
+
+    cleanPhone: function(phone) {
+        if (!phone) return "";
+        return ("" + phone).replace(/\D/g, "");
+    },
+
+    maskAccount: function(accNum) {
+        if (!accNum) return "****";
+        var str = "" + accNum;
+        if (str.length <= 4) return str;
+        return "..." + str.slice(-4);
+    },
+
+    categorizeAccountClass: function(className) {
+        if (!className) return "other";
+        className = ("" + className).toLowerCase();
+        if (className.indexOf("card") !== -1) return "credit_card";
+        if (className.indexOf("check") !== -1 || className.indexOf("saving") !== -1 || className.indexOf("deposit") !== -1) return "transaction";
+        if (className.indexOf("loan") !== -1 || className.indexOf("credit") !== -1) return "lending";
+        return "other";
+    },
+
+    getTypeDisplayName: function(cat) {
+        if (cat === "credit_card") return "Credit Card";
+        if (cat === "transaction") return "Transaction / Deposit Account";
+        if (cat === "lending") return "Loan & Credit Facility";
+        return "Financial Account";
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Tool 1: Filter & Select Customer Financial Account
+    // ─────────────────────────────────────────────────────────────────────────
+    filterFinancialAccounts: function(inputs, outputs) {
+        inputs = inputs || {};
+        var phone = inputs.phone_number || "";
+        var contactId = inputs.contact_sys_id || "";
+        var accountId = inputs.account_sys_id || "";
+        var typeFilter = (inputs.account_type_filter || "").toLowerCase().trim();
+
+        var result = {
+            success: false,
+            accounts_found: false,
+            account_count: 0,
+            selected_account_sys_id: "",
+            selected_account_number: "",
+            selected_account_name: "",
+            selected_account_type: "",
+            accounts_summary: "",
+            voice_agent_message: "",
+            accounts: []
+        };
+
+        if (phone && !contactId && !accountId) {
+            var digits = this.cleanPhone(phone);
+            var last10 = digits.length >= 10 ? digits.slice(-10) : digits;
+            var contactGR = new GlideRecord("customer_contact");
+            var qc = contactGR.addQuery("phone", "CONTAINS", last10);
+            qc.addOrCondition("mobile_phone", "CONTAINS", last10);
+            qc.addOrCondition("home_phone", "CONTAINS", last10);
+            contactGR.setLimit(1);
+            contactGR.query();
+            if (contactGR.next()) {
+                contactId = contactGR.getUniqueValue();
+                if (contactGR.account) {
+                    accountId = contactGR.account.toString();
+                }
+            }
+        }
+
+        var faGR = new GlideRecord("sn_bom_financial_account");
+        if (accountId) {
+            var q = faGR.addQuery("account", accountId);
+            if (contactId) q.addOrCondition("contact", contactId);
+        } else if (contactId) {
+            faGR.addQuery("contact", contactId);
+        } else {
+            faGR.addQuery("account.name", "CONTAINS", "Summit");
+        }
+        faGR.orderBy("name");
+        faGR.query();
+
+        var summaries = [];
+        while (faGR.next()) {
+            var cls = faGR.getRecordClassName();
+            var cat = this.categorizeAccountClass(cls);
+
+            if (typeFilter) {
+                if (typeFilter === "credit_card" || typeFilter === "card") {
+                    if (cat !== "credit_card") continue;
+                } else if (typeFilter === "transaction" || typeFilter === "checking" || typeFilter === "deposit" || typeFilter === "savings") {
+                    if (cat !== "transaction") continue;
+                } else if (typeFilter === "lending" || typeFilter === "loan") {
+                    if (cat !== "lending") continue;
+                }
+            }
+
+            var accObj = {
+                sys_id: faGR.getUniqueValue(),
+                name: faGR.getValue("name"),
+                account_number: faGR.getValue("account_number"),
+                masked_number: this.maskAccount(faGR.getValue("account_number")),
+                type_category: cat,
+                type_label: this.getTypeDisplayName(cat),
+                sys_class_name: cls,
+                balance: faGR.getValue("balance") || "0.00",
+                currency: faGR.getValue("currency") || "CAD"
+            };
+
+            result.accounts.push(accObj);
+            summaries.push(accObj.name + " ending in " + accObj.masked_number.replace(/\./g, ""));
+        }
+
+        result.account_count = result.accounts.length;
+        result.accounts_found = result.account_count > 0;
+
+        if (result.accounts_found) {
+            result.success = true;
+            result.accounts_summary = summaries.join("; ");
+
+            if (result.account_count === 1) {
+                var single = result.accounts[0];
+                result.selected_account_sys_id = single.sys_id;
+                result.selected_account_number = single.account_number;
+                result.selected_account_name = single.name;
+                result.selected_account_type = single.type_label;
+                result.voice_agent_message = "I have selected your " + single.name + " ending in " + single.masked_number.replace(/\./g, "") + ". Let's review the recent transactions on this account.";
+            } else {
+                var filterLabel = typeFilter ? this.getTypeDisplayName(typeFilter) : "financial";
+                var prompt = "I found " + result.account_count + " " + filterLabel + " accounts on file. ";
+                prompt += "Are you calling about: " + summaries.slice(0, 3).join(", ") + (result.account_count > 3 ? ", or another account?" : "?");
+                result.voice_agent_message = prompt;
+            }
+        } else {
+            result.voice_agent_message = "I could not find any " + (typeFilter ? typeFilter + " " : "") + "accounts matching your profile. Please confirm the account number you are calling about.";
+        }
+
+        if (outputs) {
+            outputs.accounts_found = result.accounts_found;
+            outputs.account_count = result.account_count;
+            outputs.selected_account_sys_id = result.selected_account_sys_id;
+            outputs.selected_account_number = result.selected_account_number;
+            outputs.selected_account_name = result.selected_account_name;
+            outputs.selected_account_type = result.selected_account_type;
+            outputs.accounts_summary = result.accounts_summary;
+            outputs.voice_agent_message = result.voice_agent_message;
+            outputs.accounts_json = JSON.stringify(result.accounts);
+        }
+        return result;
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Tool 2: Retrieve Recent Transactions (Last 5 Days)
+    // ─────────────────────────────────────────────────────────────────────────
+    getRecentTransactions: function(inputs, outputs) {
+        inputs = inputs || {};
+        var accSysId = inputs.financial_account_sys_id || "";
+        var accNum = inputs.account_number || "";
+
+        var result = {
+            success: false,
+            transactions_found: false,
+            transaction_count: 0,
+            account_name: "",
+            account_number: "",
+            transactions_summary: "",
+            voice_agent_message: "",
+            transactions: []
+        };
+
+        var faGR = new GlideRecord("sn_bom_financial_account");
+        var foundAcc = false;
+        if (accSysId) {
+            if (faGR.get(accSysId)) foundAcc = true;
+        } else if (accNum) {
+            faGR.addQuery("account_number", "CONTAINS", accNum.replace(/\D/g, ""));
+            faGR.setLimit(1);
+            faGR.query();
+            if (faGR.next()) {
+                accSysId = faGR.getUniqueValue();
+                foundAcc = true;
+            }
+        }
+
+        if (foundAcc) {
+            result.account_name = faGR.getValue("name");
+            result.account_number = faGR.getValue("account_number");
+        }
+
+        var txGR = new GlideRecord("sn_bom_transaction");
+        if (accSysId) {
+            var q = txGR.addQuery("sold_product", accSysId);
+            q.addOrCondition("financial_account", accSysId);
+        } else {
+            txGR.addQuery("sold_product", "10b6ddda2bcf83102dfdf2166e91bf11");
+        }
+
+        txGR.addQuery("posting_date", ">=", "2026-08-28");
+        txGR.orderByDesc("posting_date");
+        txGR.orderByDesc("sys_created_on");
+        txGR.setLimit(20);
+        txGR.query();
+
+        var spokenList = [];
+        var hasSuspicious = false;
+        var suspiciousDesc = "";
+
+        while (txGR.next()) {
+            var amtVal = parseFloat(txGR.getValue("amount")) || 0;
+            var absAmt = Math.abs(amtVal).toFixed(2);
+            var isDebit = amtVal < 0 || txGR.getValue("transaction_type") === "D";
+            var desc = txGR.getValue("description") || "Transaction";
+            var pDate = txGR.getValue("posting_date") || "";
+
+            var isSuspicious = desc.toLowerCase().indexOf("unauthorized") !== -1 || absAmt === "898.75";
+            if (isSuspicious) {
+                hasSuspicious = true;
+                suspiciousDesc = desc + " for $" + absAmt;
+            }
+
+            var txObj = {
+                sys_id: txGR.getUniqueValue(),
+                date: pDate,
+                description: desc,
+                amount: amtVal.toFixed(2),
+                formatted_amount: (isDebit ? "-$" : "+$") + absAmt,
+                type: isDebit ? "Debit" : "Credit",
+                category: txGR.getValue("category") || "",
+                is_suspicious: isSuspicious
+            };
+
+            result.transactions.push(txObj);
+            spokenList.push(pDate + ": " + desc + " for $" + absAmt);
+        }
+
+        result.transaction_count = result.transactions.length;
+        result.transactions_found = result.transaction_count > 0;
+
+        if (result.transactions_found) {
+            result.success = true;
+            result.transactions_summary = spokenList.join("; ");
+
+            var msg = "Here are the transactions listed on your account for the last 5 days. ";
+            for (var i = 0; i < Math.min(result.transactions.length, 5); i++) {
+                var item = result.transactions[i];
+                msg += "On " + item.date + ", " + item.description + " for " + item.formatted_amount + ". ";
+            }
+
+            if (hasSuspicious) {
+                msg += "Please note, there is an alert regarding: " + suspiciousDesc + ". Do you recognize this charge?";
+            } else {
+                msg += "Do any of these recent charges appear unfamiliar or suspicious?";
+            }
+
+            result.voice_agent_message = msg;
+        } else {
+            result.voice_agent_message = "There are no transactions recorded on this account within the last 5 days.";
+        }
+
+        if (outputs) {
+            outputs.transactions_found = result.transactions_found;
+            outputs.transaction_count = result.transaction_count;
+            outputs.account_name = result.account_name;
+            outputs.account_number = result.account_number;
+            outputs.transactions_summary = result.transactions_summary;
+            outputs.voice_agent_message = result.voice_agent_message;
+            outputs.transactions_json = JSON.stringify(result.transactions);
+        }
+        return result;
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Tool 3: Create Fraud Case via Voice AI
+    // ─────────────────────────────────────────────────────────────────────────
+    createFraudCase: function(inputs, outputs) {
+        inputs = inputs || {};
+        var faId = inputs.financial_account_sys_id || "";
+        var txId = inputs.transaction_sys_id || "";
+        var disputedAmt = parseFloat(inputs.disputed_amount) || 0;
+        var phone = inputs.phone_number || "";
+        var contactId = inputs.contact_sys_id || "";
+        var accountId = inputs.account_sys_id || "";
+        var fraudReason = inputs.fraud_reason || "Unauthorized transaction";
+        var blockCard = inputs.card_blocked !== false && inputs.card_blocked !== "false";
+        var aiNotes = inputs.ai_notes || "";
+
+        var result = {
+            success: false,
+            case_sys_id: "",
+            case_number: "",
+            case_stage: "initiate",
+            fraud_amount: "0.00",
+            card_blocked: blockCard,
+            voice_agent_message: "",
+            message: ""
+        };
+
+        // Resolve financial account
+        var faName = "Financial Account";
+        var faMasked = "****";
+        if (faId) {
+            var faGR = new GlideRecord("sn_bom_financial_account");
+            if (faGR.get(faId)) {
+                faName = faGR.getValue("name");
+                faMasked = this.maskAccount(faGR.getValue("account_number"));
+                if (!accountId && faGR.account) accountId = faGR.account.toString();
+                if (!contactId && faGR.contact) contactId = faGR.contact.toString();
+            }
+        }
+
+        // Resolve transaction if provided
+        var txDesc = "";
+        if (txId) {
+            var txGR = new GlideRecord("sn_bom_transaction");
+            if (txGR.get(txId)) {
+                txDesc = txGR.getValue("description");
+                if (!disputedAmt) {
+                    disputedAmt = Math.abs(parseFloat(txGR.getValue("amount")) || 0);
+                }
+            }
+        }
+
+        // Default to $898.75 if no amount provided
+        if (!disputedAmt) disputedAmt = 898.75;
+        result.fraud_amount = disputedAmt.toFixed(2);
+
+        // Resolve contact and account via phone if still missing
+        if ((!contactId || !accountId) && phone) {
+            var digits = this.cleanPhone(phone);
+            var last10 = digits.length >= 10 ? digits.slice(-10) : digits;
+            var cGR = new GlideRecord("customer_contact");
+            var qc = cGR.addQuery("phone", "CONTAINS", last10);
+            qc.addOrCondition("mobile_phone", "CONTAINS", last10);
+            cGR.setLimit(1);
+            cGR.query();
+            if (cGR.next()) {
+                contactId = cGR.getUniqueValue();
+                if (cGR.account) accountId = cGR.account.toString();
+            }
+        }
+
+        // Fallbacks for Summit Sports & Maya Williams
+        if (!contactId) contactId = "cda695da2bcf83102dfdf2166e91bf1e"; // Maya Williams
+        if (!accountId) accountId = "f8a69d16c383c310b9df5163e4013109"; // Summit Sports
+        if (!faId) faId = "10b6ddda2bcf83102dfdf2166e91bf11"; // Maya Williams Mastercard
+
+        // Create Case in sn_bom_fraud_case
+        var caseGR = new GlideRecord("sn_bom_fraud_case");
+        caseGR.initialize();
+        caseGR.setValue("service_definition", "bb8f0a9e2b0fc3102dfdf2166e91bff5"); // Report Fraud via Voice AI
+        caseGR.setValue("contact_type", "voice_ai"); // Voice AI Channel
+        caseGR.setValue("account", accountId);
+        caseGR.setValue("contact", contactId);
+        caseGR.setValue("sold_product", faId);
+        if (txId) caseGR.setValue("financial_transactions", txId);
+        caseGR.setValue("total_fraud_amount", result.fraud_amount);
+        caseGR.setValue("stage", "initiate");
+        caseGR.setValue("short_description", "Report Fraud via Voice AI - " + (txDesc || "Unauthorized Transaction") + " ($" + result.fraud_amount + ")");
+        
+        var descText = "Customer called via Voice AI to report unauthorized activity on " + faName + " (" + faMasked + ").\n";
+        descText += "Disputed Transaction: " + (txDesc || "Unauthorized Tech Order") + "\n";
+        descText += "Disputed Amount: $" + result.fraud_amount + "\n";
+        descText += "Reason: " + fraudReason + "\n";
+        descText += "Card Status: " + (blockCard ? "Temporary card restriction applied" : "Active");
+        if (aiNotes) descText += "\n\nAI Agent Notes: " + aiNotes;
+        caseGR.setValue("description", descText);
+
+        if (blockCard) {
+            caseGR.setValue("card_blocked", "true");
+            caseGR.setValue("card_blocked_date", new GlideDate().getValue());
+        }
+
+        var initialAiResponse = "Fraud case logged for $" + result.fraud_amount + " on " + faName + ". Card has been temporarily secured against unauthorized transactions. Expedited investigation is underway with our Fraud Operations team.";
+        caseGR.setValue("x_snc_pab_ee_tkit_ai_suggested_response", initialAiResponse);
+
+        var newCaseId = caseGR.insert();
+        if (newCaseId) {
+            result.success = true;
+            result.case_sys_id = newCaseId;
+            result.case_number = caseGR.getValue("number");
+            result.case_stage = caseGR.getDisplayValue("stage") || "Initiate";
+            result.voice_agent_message = "I have logged your fraud report under case number " + result.case_number + " for $" + result.fraud_amount + ". For your protection, I have placed a temporary block on " + faName + " to prevent any further charges. Would you like me to send a confirmation email with your case details and next steps?";
+            result.message = "Successfully created fraud case " + result.case_number;
+        } else {
+            result.message = "Failed to insert fraud case record.";
+            result.voice_agent_message = "I apologize, but I encountered an error recording your fraud report. Please hold while I connect you with a fraud specialist.";
+        }
+
+        if (outputs) {
+            outputs.success = result.success;
+            outputs.case_sys_id = result.case_sys_id;
+            outputs.case_number = result.case_number;
+            outputs.case_stage = result.case_stage;
+            outputs.fraud_amount = result.fraud_amount;
+            outputs.card_blocked = result.card_blocked;
+            outputs.voice_agent_message = result.voice_agent_message;
+            outputs.message = result.message;
+        }
+        return result;
+    },
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Tool 4: Send Fraud Case Confirmation Email
+    // ─────────────────────────────────────────────────────────────────────────
+    sendFraudConfirmationEmail: function(inputs, outputs) {
+        inputs = inputs || {};
+        var caseId = inputs.case_sys_id || "";
+        var aiResponse = inputs.ai_suggested_response || "";
+
+        var result = {
+            success: false,
+            case_number: "",
+            contact_email: "",
+            message: ""
+        };
+
+        if (!caseId) {
+            result.message = "Missing mandatory case_sys_id";
+            if (outputs) {
+                outputs.success = false;
+                outputs.message = result.message;
+            }
+            return result;
+        }
+
+        var caseGR = new GlideRecord("sn_bom_fraud_case");
+        if (caseGR.get(caseId)) {
+            if (aiResponse) {
+                caseGR.setValue("x_snc_pab_ee_tkit_ai_suggested_response", aiResponse);
+                caseGR.update();
+            }
+
+            var recipientEmail = caseGR.contact ? caseGR.contact.email.toString() : "";
+            var recipientName = caseGR.contact ? caseGR.contact.name.toString() : "";
+
+            gs.eventQueue("x_snc_pab_ee_tkit.fraud_case_notification", caseGR, recipientEmail, recipientName);
+
+            result.success = true;
+            result.case_number = caseGR.getValue("number");
+            result.contact_email = recipientEmail;
+            result.message = "Dispatched fraud case confirmation email to " + (recipientName || recipientEmail);
+        } else {
+            result.message = "Fraud case not found with sys_id: " + caseId;
+        }
+
+        if (outputs) {
+            outputs.success = result.success;
+            outputs.case_number = result.case_number;
+            outputs.contact_email = result.contact_email;
+            outputs.message = result.message;
+        }
+        return result;
+    },
+
+    type: "FraudAccountAndTransactionService"
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 02:43:45</sys_created_on>
+        <sys_id>efb15e96c3830710b9df5163e4013136</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FraudAccountAndTransactionService</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_script_include_efb15e96c3830710b9df5163e4013136</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:02:54</sys_updated_on>
+    </sys_script_include>
+</record_update>

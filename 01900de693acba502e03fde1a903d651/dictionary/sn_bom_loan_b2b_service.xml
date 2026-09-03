@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true,email_client=true" audit="true" db_object_id="e03bf7542b52cf10e42cfe8eb891bff9" extends="sn_bom_loan_b2b_base" label="Business Loan Service Case" max_length="40" name="sn_bom_loan_b2b_service" text_index="true" type="collection">
+        <element label="Application number" max_length="40" name="x_snc_pab_ee_tkit_application_number" type="string"/>
+    </element>
+</database>

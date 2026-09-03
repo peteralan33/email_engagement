@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Report Fraud and Scam">3e1ece96c3430710b9df5163e4013114</agent>
+        <description>Use this tool to retrieve transactions on the customer's selected financial account for the last 5 days to investigate suspicious or fraudulent activity.
+
+When to call:
+- Call this tool after an account has been selected via 'select_customer_financial_account'.
+
+Inputs to provide:
+- 'financial_account_sys_id': Pass the Sys ID of the selected account from 'selected_account_sys_id'.
+- 'days_back': Set to 5 (or leave blank for default 5 days).
+
+Outputs &amp; Customer Response:
+- Use the 'voice_agent_message' to read the last 5 days of transactions to the customer.
+- Specifically highlight any flagged suspicious charges (such as the $898.75 Apple Store Online transaction) and ask the caller if they recognize or authorized the charge.</description>
+        <display_mode>inline</display_mode>
+        <display_output>false</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>3e1ece96c3430710b9df5163e4013114</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Retrieve Recent Account Transactions</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:15:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8ae89e56c3070710b9df5163e40131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Retrieve Recent Account Transactions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_8ae89e56c3070710b9df5163e40131b3</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:15:03</sys_updated_on>
+        <timeout/>
+        <tool display_value="retrieve_recent_account_transactions">eec192d6c3830710b9df5163e401319e</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <wait_for_widget_interaction>false</wait_for_widget_interaction>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

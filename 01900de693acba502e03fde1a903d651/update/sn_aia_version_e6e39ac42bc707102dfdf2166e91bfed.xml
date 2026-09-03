@@ -4,17 +4,22 @@
         <change_description>Initial version</change_description>
         <condition/>
         <eval_score/>
-        <instructions/>
+        <instructions>## KNOWLEDGE RESOLUTION WORKFLOW:
+1. Understand the customer's query (e.g., carry-on dimensions, baggage weight limits, pet travel, flight rules).
+2. Execute `Research airline knowledge base` to search the verified airline knowledge base.
+3. Synthesize a direct, concise, and helpful response referencing the official policy guidelines.
+4. Include relevant article references (e.g., KB0010004 for Carry-On Baggage Standards) where helpful.
+5. Ask if the customer needs clarification or assistance with anything else.</instructions>
         <layer>overlay</layer>
         <short_description/>
-        <snapshot>{"schemaVersion":2,"definition":{"name":"Airline Policy and Knowledge Agent","description":"Airline Policy and Knowledge Agent is an autonomous specialist dedicated to answering customer inquiries regarding airline travel policies, carry-on standards, baggage allowance, excess baggage fees, pet transportation, check-in deadlines, unaccompanied minors, and fare rules using verified internal knowledge base articles.","role":"# CORE MISSION: Authoritative Policy &amp; Knowledge Assistance\nYour primary objective is to provide fast, accurate, and empathetic answers to customer questions about airline policies, baggage allowances, fees, check-in requirements, and travel rules.\n\n## KNOWLEDGE RESOLUTION WORKFLOW:\n1. Understand the customer's query (e.g., carry-on dimensions, baggage weight limits, pet travel, flight rules).\n2. Execute `Research knowledge base` to search the verified airline knowledge base.\n3. Synthesize a direct, concise, and helpful response referencing the official policy guidelines.\n4. Include relevant article references (e.g., KB0010004 for Carry-On Baggage Standards) where helpful.\n5. Ask if the customer needs clarification or assistance with anything else.","instructions":"","strategy":"f0bff21f9f13c6108f431597d90a1c74","channel":"nap_and_va"},"overlay":{"tools":[],"children":[],"triggers":[],"security":{"externalDiscoverable":null,"specialistEnabled":null,"runAsUser":"","userAccessRoles":[]}}}</snapshot>
+        <snapshot>{"schemaVersion":2,"definition":{"name":"Airline Policy and Knowledge Agent","description":"Airline Policy and Knowledge Agent is an autonomous specialist dedicated to answering customer inquiries regarding airline travel policies, carry-on standards, baggage allowance, excess baggage fees, pet transportation, check-in deadlines, unaccompanied minors, and fare rules using verified internal knowledge base articles.","role":"# CORE MISSION: Authoritative Policy &amp; Knowledge Assistance\nYour primary objective is to provide fast, accurate, and empathetic answers to customer questions about airline policies, baggage allowances, fees, check-in requirements, and travel rules.","instructions":"## KNOWLEDGE RESOLUTION WORKFLOW:\n1. Understand the customer's query (e.g., carry-on dimensions, baggage weight limits, pet travel, flight rules).\n2. Execute `Research airline knowledge base` to search the verified airline knowledge base.\n3. Synthesize a direct, concise, and helpful response referencing the official policy guidelines.\n4. Include relevant article references (e.g., KB0010004 for Carry-On Baggage Standards) where helpful.\n5. Ask if the customer needs clarification or assistance with anything else.","strategy":"f0bff21f9f13c6108f431597d90a1c74","channel":"nap_and_va"},"overlay":{"tools":[{"m2mId":"6b698d18c3830b10b9df5163e401312e","toolId":"8021ddea2b0d52101d72fb466e91bfd1","executionMode":"autopilot","inputs":"[{\"name\":\"search_type\",\"description\":\"Search type\",\"value\":\"hybrid\"},{\"name\":\"query\",\"description\":\"search query for retrieving relevant information from Knowledge Table\"},{\"name\":\"search_profile\",\"value\":\"x_snc_pab_ee_tkit_lumina_airways_operational_knowledge\",\"label\":\"Lumina Airways Operational Knowledge\",\"description\":\"Search profile\"},{\"name\":\"sources\",\"label\":[\"Knowledge Table\"],\"value\":[\"kb_knowledge\"],\"description\":\"Search sources\"},{\"name\":\"fields\",\"label\":[\"Article body [kb_knowledge]\",\"Short description [kb_knowledge]\"],\"value\":[\"kb_knowledge.text\",\"kb_knowledge.short_description\"],\"description\":\"Fields to be returned\"},{\"name\":\"search_results_limit\",\"value\":\"3\",\"description\":\"Search results limit\"},{\"name\":\"semantic_index_names\",\"label\":[\"body\",\"title\"],\"value\":[\"body\",\"title\"],\"description\":\"Semantic indexed fields\"},{\"name\":\"document_match_threshold\",\"value\":0,\"description\":\"Document matching threshold\"},{\"name\":\"chunking_mode\",\"value\":\"SMALL_TO_BIG\"},{\"name\":\"chunk_unit\",\"value\":\"WORDS\"},{\"name\":\"chunk_size\",\"value\":\"750\"},{\"name\":\"expanded_snippet_size\",\"value\":\"750\"}]","active":true}],"children":[],"triggers":[],"security":{"externalDiscoverable":"0","specialistEnabled":"0","runAsUser":"","userAccessRoles":[]}}}</snapshot>
         <state>committed</state>
         <sys_class_name>sn_aia_version</sys_class_name>
         <sys_created_by>ag.mcp.lumina</sys_created_by>
         <sys_created_on>2026-08-27 03:06:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e6e39ac42bc707102dfdf2166e91bfed</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Version 1</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -22,7 +27,7 @@
         <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sn_aia_version_e6e39ac42bc707102dfdf2166e91bfed</sys_update_name>
         <sys_updated_by>ag.mcp.lumina</sys_updated_by>
-        <sys_updated_on>2026-08-27 03:06:55</sys_updated_on>
+        <sys_updated_on>2026-08-27 16:23:45</sys_updated_on>
         <tags/>
         <target_id>6ee35e442bc707102dfdf2166e91bf42</target_id>
         <target_table>sn_aia_agent</target_table>

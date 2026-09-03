@@ -17,8 +17,8 @@
         <launch_icon_position>right</launch_icon_position>
         <launcher_icon display_value="chat_icon_launcher.svg">42794ace2b3203d02dfdf2166e91bf81</launcher_icon>
         <link_text_color>#007A87</link_text_color>
-        <logo display_value="WestJet_Logo.png">fbe94acc2b0707102dfdf2166e91bf2c</logo>
-        <name>Lumina Engagement Messenger</name>
+        <logo display_value="BMO-Logo-Only.png">df30aca2c34b8710b9df5163e401311f</logo>
+        <name>WestJet Engagement Messenger</name>
         <navigate_back_icon display_value="em-navigate-back-icon.svg">b8cccab31b0338107cf62026624bcbf5</navigate_back_icon>
         <portal display_value="Lumina Engagement Messenger">4998060e2b3203d02dfdf2166e91bf82</portal>
         <primary_module_color>#007A87</primary_module_color>
@@ -27,7 +27,7 @@
         <search_icon display_value="em-list-search-icon.svg">40e15eb71b0338107cf62026624bcb58</search_icon>
         <secondary_module_color>#E5F4F6</secondary_module_color>
         <secondary_text_color>#000000</secondary_text_color>
-        <short_description>Lumina Engagement Messenger</short_description>
+        <short_description>BMO Engagement Messenger</short_description>
         <source_code><![CDATA[<script src="https://luminabankpab.service-now.com/scripts/sn_csm_ec.js?v=5.6"></script>
 <script>
 SN_CSM_EC.init({
@@ -50,17 +50,17 @@ function getTokenCallBack(){
         <sys_created_on>2026-08-20 21:09:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>c998060e2b3203d02dfdf2166e91bf7a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Lumina Engagement Messenger</sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>WestJet Engagement Messenger</sys_name>
         <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sn_csm_ec_engmnt_center_module_c998060e2b3203d02dfdf2166e91bf7a</sys_update_name>
         <sys_updated_by>ag.mcp.lumina</sys_updated_by>
-        <sys_updated_on>2026-08-27 02:51:49</sys_updated_on>
+        <sys_updated_on>2026-09-03 13:06:20</sys_updated_on>
         <tertiary_module_color>#B2EBF2</tertiary_module_color>
         <tertiary_text_color>#000000</tertiary_text_color>
-        <title>Customer Support</title>
+        <title>BMO Customer Support</title>
         <website_urls>https://fir-toolkit-webapp.web.app, http://localhost:5173, http://localhost:3000</website_urls>
     </sn_csm_ec_engmnt_center_module>
 </record_update>

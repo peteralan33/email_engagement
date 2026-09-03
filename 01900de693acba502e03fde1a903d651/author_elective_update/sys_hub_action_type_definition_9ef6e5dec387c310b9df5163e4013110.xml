@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Looks up either a consumer or a contact by phone number. When found, retrieves customer profile details, financial accounts (checking, savings, credit cards, loans), current open cases, the business account they are calling from (if a contact), and all customer-visible open tasks on those cases.</description>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>lookup_customer_by_phone</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Lookup Customer By Phone</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-02 23:36:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9ef6e5dec387c310b9df5163e4013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lookup Customer By Phone</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_9ef6e5dec387c310b9df5163e4013110</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-02 23:36:53</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_variable_value action="DELETE" query="document_key=9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_hub_step_instance action="DELETE" query="action=9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_hub_action_input action="DELETE" query="model=9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_hub_action_output action="DELETE" query="model=9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_hub_action_plan action="DELETE" query="action_id=9ef6e5dec387c310b9df5163e4013110"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sys_hub_action_type_definition_9ef6e5dec387c310b9df5163e4013110</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><acls/><action_status/><action_template/><active>true</active><annotation/><attributes/><authored_on_release_version/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description>Looks up either a consumer or a contact by phone number. When found, retrieves customer profile details, financial accounts (checking, savings, credit cards, loans), current open cases, the business account they are calling from (if a contact), and all customer-visible open tasks on those cases.</description><flow_priority/><ih_action>false</ih_action><internal_name>lookup_customer_by_phone</internal_name><label_cache/><latest_snapshot/><master_snapshot/><master_snapshot_digest/><name>Lookup Customer By Phone</name><natlang/><outputs/><pre_compiled>false</pre_compiled><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>ag.mcp.lumina</sys_created_by><sys_created_on>2026-09-02 23:36:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9ef6e5dec387c310b9df5163e4013110</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Lookup Customer By Phone</sys_name><sys_overrides/><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sys_hub_action_type_definition_9ef6e5dec387c310b9df5163e4013110</sys_update_name><sys_updated_by>ag.mcp.lumina</sys_updated_by><sys_updated_on>2026-09-02 23:36:53</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=9ef6e5dec387c310b9df5163e4013110"/><sys_variable_value action="delete_multiple" query="document_key=9ef6e5dec387c310b9df5163e4013110"/><sys_hub_step_instance action="delete_multiple" query="action=9ef6e5dec387c310b9df5163e4013110"/><sys_hub_action_input action="delete_multiple" query="model=9ef6e5dec387c310b9df5163e4013110"/><sys_hub_action_output action="delete_multiple" query="model=9ef6e5dec387c310b9df5163e4013110"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=9ef6e5dec387c310b9df5163e4013110"/><sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=9ef6e5dec387c310b9df5163e4013110"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_9ef6e5dec387c310b9df5163e4013110"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_9ef6e5dec387c310b9df5163e4013110"/><sys_hub_action_plan action="delete_multiple" query="action_id=9ef6e5dec387c310b9df5163e4013110"/></record_update>]]></payload>
+        <payload_hash>-1875535541</payload_hash>
+        <record_name>Lookup Customer By Phone</record_name>
+        <reverted_from/>
+        <source>ad0d541cc387c710b9df5163e4013184</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-02 23:36:53</sys_created_on>
+        <sys_id>def6e5dec387c310b9df5163e4013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0647b8d0e0000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-02 23:36:53</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>1ef6e5de7987c310cd3ea922007e4f3f</update_guid>
+        <update_guid_history>1ef6e5de7987c310cd3ea922007e4f3f:-1875535541</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-02 23:36:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>1878fd2a7d7745cc9df1fc280ac4aad1</sys_id>
+        <sys_metadata>9ef6e5dec387c310b9df5163e4013110</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lookup Customer By Phone</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_9ef6e5dec387c310b9df5163e4013110</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_9ef6e5dec387c310b9df5163e4013110">def6e5dec387c310b9df5163e4013140</sys_update_version>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-02 23:36:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

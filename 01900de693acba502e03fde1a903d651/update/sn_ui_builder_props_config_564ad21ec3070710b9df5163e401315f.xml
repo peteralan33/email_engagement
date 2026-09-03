@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ui_builder_props_config">
+    <sn_ui_builder_props_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <config_layout>[
+    "table",
+    "sysId",
+    "headerConfigurationId",
+    "hideActions",
+    "actionConfigurationId",
+    "hideActivity",
+    "enableRichText",
+    "hideAttachments",
+    "hideAllRelatedLists",
+    "tableViewForRelatedList",
+    "showCustomTab",
+    "hidePlaybookProcessTab",
+    "playbookExperience",
+    "hidePlaybookStages",
+    "playbookStageOrientation",
+    "visibleHorizontalPlaybookStages",
+    "playbookActivityViewMode",
+    "hideErrors"
+]</config_layout>
+        <icon>none</icon>
+        <image/>
+        <name>B2B Loan Application Task</name>
+        <scripted_config_policy><![CDATA[// eslint-disable-next-line no-unused-vars
+            function configureProps(obj) {
+                const { trigger, api, properties } = obj;
+
+                const toggleVisibility = (property, value) => {
+                    api.updateVisibility(property, value);
+                };
+
+                const updatePlaybookPropertiesVisibility = () => {
+                    const playbookProperties = [
+                        { property: 'playbookExperience', value: !properties.hidePlaybookProcessTab },
+                        { property: 'playbookStageOrientation', value: !properties.hidePlaybookProcessTab && !properties.hidePlaybookStages },
+                        { property: 'visibleHorizontalPlaybookStages', value: !properties.hidePlaybookProcessTab && !properties.hidePlaybookStages && properties.playbookStageOrientation === 'horizontal' },
+                        { property: 'playbookActivityViewMode', value: !properties.hidePlaybookProcessTab },
+						{ property: 'hidePlaybookStages', value: !properties.hidePlaybookProcessTab }
+                    ];
+                    playbookProperties.forEach(({ property, value }) => {
+                        toggleVisibility(property, value);
+                    });
+                };
+
+                const updateTriggerSpecificVisibility = () => {
+                    switch (trigger) {
+                        case 'hideActions':
+                            toggleVisibility('actionConfigurationId', !properties.hideActions);
+                            break;
+                        case 'hideAllRelatedLists':
+                            toggleVisibility('tableViewForRelatedList', !properties.hideAllRelatedLists);
+                            break;
+                        case 'hideActivity':
+                            toggleVisibility('enableRichText', !properties.hideActivity);
+                            break;
+                        default:
+                            break;
+                    }
+                };
+
+                if(trigger)
+                    updateTriggerSpecificVisibility();
+                updatePlaybookPropertiesVisibility();
+        }]]></scripted_config_policy>
+        <sys_class_name>sn_ui_builder_props_config</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:21:04</sys_created_on>
+        <sys_id>564ad21ec3070710b9df5163e401315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>B2B Loan Application Task</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_ui_builder_props_config_564ad21ec3070710b9df5163e401315f</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:21:04</sys_updated_on>
+        <target>a94a521ec3070710b9df5163e4013192</target>
+        <target_table>sys_ux_macroponent</target_table>
+    </sn_ui_builder_props_config>
+</record_update>

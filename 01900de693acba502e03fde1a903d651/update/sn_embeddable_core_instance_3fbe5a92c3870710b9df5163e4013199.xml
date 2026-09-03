@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_embeddable_core_instance">
+    <sn_embeddable_core_instance action="INSERT_OR_UPDATE">
+        <display_order>2</display_order>
+        <embeddable_macroponent display_value="sn-embedx-object-list">2910bff901534221ae39d405d083ba05</embeddable_macroponent>
+        <group display_value="Lists">34dd1e5ec3470710b9df5163e401316f</group>
+        <instance_name>Task List</instance_name>
+        <properties>{
+    "type": "default",
+    "table": "sn_bom_task",
+    "hideHeader": false,
+    "hideRecordCount": false,
+    "hideSearch": true,
+    "hideFilters": true,
+    "disableColumnSelection": true,
+    "hideActions": true,
+    "actionConfig": "6316ec1355dd422a8ebfdeb6336b1179",
+    "maxColumnsDisplayed": null,
+    "hideRecordLinks": false,
+    "showReferenceRecordLinks": false,
+    "disableColumnHighlighting": false,
+    "shadeAlternateRows": false,
+    "childRecordsPerLoad": 10,
+    "hideChildRecordCount": false,
+    "disableQuickEdit": true,
+    "disableCellWrapping": false,
+    "maxCellCharacters": 500,
+    "disableCellEditing": true,
+    "recordsPerPage": [
+        10,
+        20,
+        50
+    ],
+    "visiblePageRange": 5,
+    "footerText": "View All",
+    "maxTopRecords": 20,
+    "hideErrors": false,
+    "limitRecordsFetched": null,
+    "hidePageSizeControl": false,
+    "disableCellFiltering": false,
+    "disableColumnSorting": false,
+    "disableColumnFiltering": false,
+    "disableColumnGrouping": false,
+    "showConditionBuilder": false,
+    "hideRefreshButton": false,
+    "headerSize": "md",
+    "disableTitleWrap": false,
+    "disableColumnResizing": false,
+    "disableColumnDragAndDrop": false,
+    "disableRowDragAndDrop": false,
+    "expandGroupsByDefault": false,
+    "hideToggleAllGroupsButton": false,
+    "hideWhenEmpty": false,
+    "editQuery": "account=f8a69d16c383c310b9df5163e4013109^visible_to_customer=true",
+    "defaultFilter": "",
+    "columns": "number,service,short_description,due_date,sys_updated_on",
+    "listView": "",
+    "nestBy": "",
+    "defaultGroupBy": "",
+    "listTitle": "Pending Activites",
+    "subtitle": "",
+    "highlightedValueConfig": ""
+}</properties>
+        <sys_class_name>sn_embeddable_core_instance</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:40:33</sys_created_on>
+        <sys_id>3fbe5a92c3870710b9df5163e4013199</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Task List</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_embeddable_core_instance_3fbe5a92c3870710b9df5163e4013199</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 04:05:09</sys_updated_on>
+    </sn_embeddable_core_instance>
+</record_update>

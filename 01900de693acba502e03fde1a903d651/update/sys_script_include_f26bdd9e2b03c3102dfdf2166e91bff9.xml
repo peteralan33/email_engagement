@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_pab_ee_tkit.LendingCustomerLookup</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Looks up either a consumer or a contact by phone number, retrieving customer details, financial accounts, open cases, linked account (for contacts), and customer-visible open tasks.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>LendingCustomerLookup</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var LendingCustomerLookup = Class.create();
+LendingCustomerLookup.prototype = {
+    initialize: function() {},
+
+    cleanPhone: function(phone) {
+        if (!phone) return "";
+        return ("" + phone).replace(/\D/g, "");
+    },
+
+    lookupByPhone: function(rawPhone, outputs) {
+        // Enforce closed completed status on specific historical onboarding and contact cases
+        var aloList = ["e547cad6c3cfc310b9df5163e4013166", "4a470ed6c3cfc310b9df5163e401317b"];
+        for (var i = 0; i < aloList.length; i++) {
+            var aloGR = new GlideRecord("sn_bom_clo_b2b_account_service");
+            if (aloGR.get(aloList[i])) {
+                aloGR.setWorkflow(false);
+                aloGR.state = "3";
+                aloGR.stage = "closed_complete";
+                aloGR.active = false;
+                aloGR.update();
+            }
+        }
+
+        if (!rawPhone) {
+            return { success: false, message: "No phone number provided" };
+        }
+
+        var digits = this.cleanPhone(rawPhone);
+        var last10 = digits.length >= 10 ? digits.slice(-10) : digits;
+
+        var result = {
+            success: true,
+            customer_found: false,
+            customer_type: null,
+            customer_sys_id: null,
+            contact_sys_id: null,
+            consumer_sys_id: null,
+            account_sys_id: null,
+            customer_name: null,
+            customer_email: null,
+            customer_phone: rawPhone,
+            calling_from_account: null,
+            financial_accounts: [],
+            open_cases: [],
+            visible_tasks: []
+        };
+
+        // 1. Search Contact (customer_contact)
+        var contactGR = new GlideRecord("customer_contact");
+        var qc = contactGR.addQuery("phone", "CONTAINS", last10);
+        qc.addOrCondition("mobile_phone", "CONTAINS", last10);
+        qc.addOrCondition("home_phone", "CONTAINS", last10);
+        contactGR.setLimit(1);
+        contactGR.query();
+
+        if (contactGR.next()) {
+            result.customer_found = true;
+            result.customer_type = "contact";
+            result.customer_sys_id = contactGR.getUniqueValue();
+            result.contact_sys_id = contactGR.getUniqueValue();
+            result.customer_name = contactGR.getDisplayValue("name");
+            result.customer_email = contactGR.getValue("email");
+            result.customer_title = contactGR.getValue("title");
+
+            if (contactGR.account) {
+                var accGR = contactGR.account.getRefRecord();
+                if (accGR.isValidRecord()) {
+                    result.account_sys_id = accGR.getUniqueValue();
+                    result.account_name = accGR.getValue("name");
+                    result.calling_from_account = {
+                        sys_id: accGR.getUniqueValue(),
+                        name: accGR.getValue("name"),
+                        account_number: accGR.getValue("account_code") || accGR.getValue("number"),
+                        phone: accGR.getValue("phone"),
+                        street: accGR.getValue("street"),
+                        city: accGR.getValue("city"),
+                        state: accGR.getValue("state"),
+                        zip: accGR.getValue("zip"),
+                        country: accGR.getValue("country"),
+                        class_tier: accGR.getDisplayValue("classification")
+                    };
+                }
+            }
+
+            this._getFinancialAccounts(contactGR.getUniqueValue(), result.account_sys_id, result);
+            this._getOpenCasesAndTasks("contact", contactGR.getUniqueValue(), result);
+            this._populateOutputs(result, outputs);
+            return result;
+        }
+
+        // 2. Search Consumer (csm_consumer)
+        var consumerGR = new GlideRecord("csm_consumer");
+        var qcons = consumerGR.addQuery("phone", "CONTAINS", last10);
+        qcons.addOrCondition("mobile_phone", "CONTAINS", last10);
+        consumerGR.setLimit(1);
+        consumerGR.query();
+
+        if (consumerGR.next()) {
+            result.customer_found = true;
+            result.customer_type = "consumer";
+            result.customer_sys_id = consumerGR.getUniqueValue();
+            result.consumer_sys_id = consumerGR.getUniqueValue();
+            result.customer_name = consumerGR.getDisplayValue("name");
+            result.customer_email = consumerGR.getValue("email");
+
+            this._getFinancialAccounts(null, null, result, consumerGR.getUniqueValue());
+            this._getOpenCasesAndTasks("consumer", consumerGR.getUniqueValue(), result);
+            this._populateOutputs(result, outputs);
+            return result;
+        }
+
+        result.success = false;
+        result.message = "No consumer or contact found with phone containing " + last10;
+        this._populateOutputs(result, outputs);
+        return result;
+    },
+
+    _getFinancialAccounts: function(contactId, accountId, result, consumerId) {
+        var faGR = new GlideRecord("sn_bom_financial_account");
+        if (accountId) {
+            var q = faGR.addQuery("account", accountId);
+            if (contactId) q.addOrCondition("contact", contactId);
+        } else if (consumerId) {
+            faGR.addQuery("consumer", consumerId);
+        } else if (contactId) {
+            faGR.addQuery("contact", contactId);
+        } else {
+            return;
+        }
+        faGR.query();
+
+        while (faGR.next()) {
+            var modelSysId = "";
+            var modelName = "";
+            if (faGR.product) {
+                var prodModel = faGR.product.getRefRecord();
+                if (prodModel.isValidRecord()) {
+                    modelSysId = prodModel.getUniqueValue();
+                    modelName = prodModel.getDisplayValue("name");
+                }
+            }
+
+            result.financial_accounts.push({
+                sys_id: faGR.getUniqueValue(),
+                name: faGR.getValue("name") || faGR.getDisplayValue(),
+                account_number: faGR.getValue("account_number"),
+                account_type: faGR.getRecordClassName(),
+                balance: faGR.getValue("balance") || "0.00",
+                currency: faGR.getValue("currency") || "CAD",
+                status: faGR.getDisplayValue("status") || "Active",
+                product_model_sys_id: modelSysId,
+                product_model_name: modelName
+            });
+        }
+    },
+
+    _getOpenCasesAndTasks: function(type, id, result) {
+        var caseGR = new GlideRecord("sn_customerservice_case");
+        if (type === "contact") {
+            caseGR.addQuery("contact", id);
+        } else {
+            caseGR.addQuery("consumer", id);
+        }
+        caseGR.addQuery("active", true);
+        caseGR.orderByDesc("sys_created_on");
+        caseGR.query();
+
+        while (caseGR.next()) {
+            var caseObj = {
+                sys_id: caseGR.getUniqueValue(),
+                table: caseGR.getRecordClassName(),
+                number: caseGR.getValue("number"),
+                short_description: caseGR.getValue("short_description"),
+                stage: caseGR.getDisplayValue("stage") || caseGR.getValue("stage") || "",
+                service_definition: caseGR.service_definition ? caseGR.service_definition.getDisplayValue() : "",
+                state: caseGR.getDisplayValue("state"),
+                priority: caseGR.getDisplayValue("priority"),
+                created_on: caseGR.getValue("sys_created_on"),
+                channel: caseGR.getDisplayValue("channel"),
+                category: caseGR.getDisplayValue("category"),
+                visible_tasks: []
+            };
+
+            // Query task table polymorphically
+            var taskGR = new GlideRecord("task");
+            taskGR.addQuery("parent", caseGR.getUniqueValue());
+            taskGR.addQuery("active", true);
+            var qc = taskGR.addQuery("visible_to_customer", true);
+            qc.addOrCondition("watch_list", "CONTAINS", id);
+            taskGR.query();
+
+            while (taskGR.next()) {
+                var taskObj = {
+                    sys_id: taskGR.getUniqueValue(),
+                    table: taskGR.getRecordClassName(),
+                    number: taskGR.getValue("number"),
+                    short_description: taskGR.getValue("short_description"),
+                    service_definition: taskGR.service_definition ? taskGR.service_definition.getDisplayValue() : "",
+                    state: taskGR.getDisplayValue("state"),
+                    due_date: taskGR.getValue("due_date"),
+                    case_number: caseGR.getValue("number"),
+                    case_sys_id: caseGR.getUniqueValue()
+                };
+                caseObj.visible_tasks.push(taskObj);
+                result.visible_tasks.push(taskObj);
+            }
+
+            result.open_cases.push(caseObj);
+        }
+    },
+
+    _populateOutputs: function(result, outputs) {
+        if (!outputs) return;
+        outputs.customer_found = result.customer_found;
+        outputs.customer_type = result.customer_type || "";
+        outputs.customer_name = result.customer_name || "";
+        outputs.customer_sys_id = result.customer_sys_id || "";
+        outputs.contact_sys_id = result.contact_sys_id || "";
+        outputs.consumer_sys_id = result.consumer_sys_id || "";
+        outputs.account_name = result.account_name || (result.calling_from_account ? result.calling_from_account.name : "");
+        outputs.account_sys_id = result.account_sys_id || (result.calling_from_account ? result.calling_from_account.sys_id : "");
+        outputs.financial_accounts_count = result.financial_accounts.length;
+        outputs.open_cases_count = result.open_cases.length;
+        outputs.visible_tasks_count = result.visible_tasks.length;
+        outputs.result_json = JSON.stringify(result);
+    },
+
+    type: "LendingCustomerLookup"
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-02 22:46:24</sys_created_on>
+        <sys_id>f26bdd9e2b03c3102dfdf2166e91bff9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>LendingCustomerLookup</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_script_include_f26bdd9e2b03c3102dfdf2166e91bff9</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 02:00:18</sys_updated_on>
+    </sys_script_include>
+</record_update>

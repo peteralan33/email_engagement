@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes>f73e4012471f4fc1ae50a97a8c62fb31</includes>
+        <macroponent display_value="B2B Loan Application Task">a94a521ec3070710b9df5163e4013192</macroponent>
+        <name>onCaseViewPropertyValidationSucceeded</name>
+        <preset/>
+        <required_translations>[
+    {
+        "message": "Can't display this information"
+    },
+    {
+        "message": "Contact your administrator for more info."
+    },
+    {
+        "message": "Configured table is not a task table. Enter a task table."
+    },
+    {
+        "message": "Record not found in {0}. Enter a valid record id"
+    },
+    {
+        "message": "Record not found in the UX Header Configurations (sys_ux_header_config) table. Enter a valid Header Config ID."
+    },
+    {
+        "message": "Record not found in the Action Configs (sys_ux_action_config) table. Enter a valid Action Config ID."
+    }
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+async function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    var {
+        table,
+        isTableValid,
+        isRecordSysIdValid,
+        isHeaderConfigIdValid,
+        isActionConfigIdValid,
+        actionLayoutId,
+        viewName
+    } = api.data.validate_case_view_properties.output;
+    const webComponentsUtil = imports["sn_core_components.ComponentsUtil"]();
+    var headerMessage = await helpers.translate("Can't display this information"),
+        endUserErrorMessage = await helpers.translate("Contact your administrator for more info."),
+        tableErrorMessage = "",
+        sysIdErrorMessage = "",
+        headerConfigErrorMessage = "",
+        actionConfigErrorMessage = "";
+
+    if (isTableValid && isRecordSysIdValid && isHeaderConfigIdValid && isActionConfigIdValid) {
+        api.setState("table", api.context.props.table ? api.context.props.table : table);
+        api.setState("recordSysId", api.context.props.sysId);
+        api.setState("headerConfigId", api.context.props.headerConfigurationId);
+        api.setState("actionConfigId", api.context.props.actionConfigurationId);
+        api.setState("actionLayoutId", actionLayoutId);
+        api.setState("hideErrorComponent", true);
+        api.setState("hideLoader", true);
+        api.setState("tableViewForRelatedList",viewName);
+    } else {
+        var propertyErrors = [];
+        if (!isTableValid) {
+            tableErrorMessage = await helpers.translate("Configured table is not a task table. Enter a task table.");
+            propertyErrors.push({
+                property: "table",
+                message: tableErrorMessage
+            });
+        } else {
+            if (!isRecordSysIdValid) {
+                sysIdErrorMessage = await helpers.translate("Record not found in {0}. Enter a valid record id", table);
+                propertyErrors.push({
+                    property: "sysId",
+                    message: sysIdErrorMessage
+                });
+            }
+            if (!isHeaderConfigIdValid) {
+                headerConfigErrorMessage = await helpers.translate("Record not found in the UX Header Configurations (sys_ux_header_config) table. Enter a valid Header Config ID.");
+                propertyErrors.push({
+                    property: "headerConfigurationId",
+                    message: headerConfigErrorMessage
+                });
+            }
+            if (!isActionConfigIdValid) {
+                actionConfigErrorMessage = await helpers.translate("Record not found in the Action Configs (sys_ux_action_config) table. Enter a valid Action Config ID.");
+                propertyErrors.push({
+                    property: "actionConfigurationId",
+                    message: actionConfigErrorMessage
+                });
+            }
+        }
+
+        if (api.context.props.hideErrors)
+            console.error(endUserErrorMessage);
+
+        api.setState("errorMessageHeader", {
+            label: headerMessage
+        });
+        api.setState("errorMessageDescription", endUserErrorMessage);
+        api.setState("hideStandardTicket", true);
+        api.setState("hideLoader", true);
+        api.setState("hideErrorComponent", api.context.props.hideErrors);
+        api.setState("table", null);
+
+        api.emit('SN_EMBEDX_CASE_VIEW#COMPONENT_ERROR', {
+            errorType: "property_error",
+            errorMessage: propertyErrors
+        });
+    }
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:21:02</sys_created_on>
+        <sys_id>394a921ec3070710b9df5163e401318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onCaseViewPropertyValidationSucceeded</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_394a921ec3070710b9df5163e401318f</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:21:02</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

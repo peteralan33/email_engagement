@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Report Fraud and Scam">3e1ece96c3430710b9df5163e4013114</agent>
+        <description>Use this tool to dispatch an official Lumina Bank fraud case confirmation email to the customer contact.
+
+When to call:
+- Call this tool after creating the fraud case with 'create_fraud_case_via_voice_ai', or when the customer asks for written confirmation and case details.
+
+Inputs to provide:
+- 'case_sys_id': Pass the Case Sys ID stored from 'create_fraud_case_via_voice_ai'.
+- 'ai_suggested_response': Compose a clear, reassuring summary of the case number, disputed charge amount, temporary card block status, and next steps for the customer. This text is injected directly into the branded email template.
+
+Customer response:
+- Confirm to the customer that a confirmation email with their reference number and portal tracking link has been sent to their email address on file.</description>
+        <display_mode>inline</display_mode>
+        <display_output>false</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>3e1ece96c3430710b9df5163e4013114</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Send Fraud Case Confirmation Email</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:15:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>dee8de56c3070710b9df5163e4013172</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send Fraud Case Confirmation Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_dee8de56c3070710b9df5163e4013172</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:15:04</sys_updated_on>
+        <timeout/>
+        <tool display_value="send_fraud_case_confirmation_email">22261e5ac3c30710b9df5163e4013159</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <wait_for_widget_interaction>false</wait_for_widget_interaction>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>

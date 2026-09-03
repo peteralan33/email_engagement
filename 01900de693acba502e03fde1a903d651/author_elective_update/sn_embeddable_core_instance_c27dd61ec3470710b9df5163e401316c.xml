@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_embeddable_core_instance">
+    <sn_embeddable_core_instance action="DELETE">
+        <display_order>1</display_order>
+        <embeddable_macroponent display_value="sn-embedx-case-view">748662a905128210f877295dedfb2115</embeddable_macroponent>
+        <group display_value="Form Submission">764dde9ac3470710b9df5163e4013141</group>
+        <instance_name>Case view 1</instance_name>
+        <properties>{
+    "table": "sn_customerservice_case",
+    "tableViewForRelatedList": "4006fee3d7600200e5982cf65e6103de",
+    "headerConfigurationId": "1db45f9118520210f8775b8843daf927",
+    "actionConfigurationId": "b226535518520210f8775b8843daf9fb",
+    "hideActivity": false,
+    "hideAttachments": false,
+    "enableRichText": false,
+    "hideActions": false,
+    "hideAllRelatedLists": false,
+    "showCustomTab": false,
+    "hideErrors": false,
+    "hidePlaybookProcessTab": false,
+    "playbookStageOrientation": "horizontal",
+    "visibleHorizontalPlaybookStages": 5,
+    "playbookActivityViewMode": "focused",
+    "sysId": "aa5ca024d7700200e5982cf65e61030e",
+    "playbookExperience": "0d71033773f220109edbc1f52ff6a741",
+    "selectedPlaybookContextId": "",
+    "selectedStageContextId": "",
+    "selectedActivityContextId": "",
+    "hidePlaybookStages": false
+}</properties>
+        <sys_class_name>sn_embeddable_core_instance</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:34:58</sys_created_on>
+        <sys_id>c27dd61ec3470710b9df5163e401316c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Case view 1</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_embeddable_core_instance_c27dd61ec3470710b9df5163e401316c</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:34:58</sys_updated_on>
+    </sn_embeddable_core_instance>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</application>
+        <file_path/>
+        <instance_id>ab1ab84ceb5e8710cbbffceacad0cded</instance_id>
+        <instance_name>luminabankpab</instance_name>
+        <name>sn_embeddable_core_instance_c27dd61ec3470710b9df5163e401316c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_embeddable_core_instance"><sn_embeddable_core_instance action="INSERT_OR_UPDATE"><display_order>1</display_order><embeddable_macroponent display_value="sn-embedx-case-view">748662a905128210f877295dedfb2115</embeddable_macroponent><group display_value="Form Submission">764dde9ac3470710b9df5163e4013141</group><instance_name>Case view 1</instance_name><properties>{
+    "table": "sn_customerservice_case",
+    "tableViewForRelatedList": "4006fee3d7600200e5982cf65e6103de",
+    "headerConfigurationId": "1db45f9118520210f8775b8843daf927",
+    "actionConfigurationId": "b226535518520210f8775b8843daf9fb",
+    "hideActivity": false,
+    "hideAttachments": false,
+    "enableRichText": false,
+    "hideActions": false,
+    "hideAllRelatedLists": false,
+    "showCustomTab": false,
+    "hideErrors": false,
+    "hidePlaybookProcessTab": false,
+    "playbookStageOrientation": "horizontal",
+    "visibleHorizontalPlaybookStages": 5,
+    "playbookActivityViewMode": "focused",
+    "sysId": "aa5ca024d7700200e5982cf65e61030e",
+    "playbookExperience": "0d71033773f220109edbc1f52ff6a741",
+    "selectedPlaybookContextId": "",
+    "selectedStageContextId": "",
+    "selectedActivityContextId": "",
+    "hidePlaybookStages": false
+}</properties><sys_class_name>sn_embeddable_core_instance</sys_class_name><sys_created_by>ag.mcp.lumina</sys_created_by><sys_created_on>2026-09-03 03:34:58</sys_created_on><sys_id>c27dd61ec3470710b9df5163e401316c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Case view 1</sys_name><sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package><sys_policy/><sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope><sys_update_name>sn_embeddable_core_instance_c27dd61ec3470710b9df5163e401316c</sys_update_name><sys_updated_by>ag.mcp.lumina</sys_updated_by><sys_updated_on>2026-09-03 03:34:58</sys_updated_on></sn_embeddable_core_instance></record_update>]]></payload>
+        <payload_hash>1352540611</payload_hash>
+        <record_name>Case view 1</record_name>
+        <reverted_from/>
+        <source>ad0d541cc387c710b9df5163e4013184</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:34:58</sys_created_on>
+        <sys_id>027dd61ec3470710b9df5163e4013171</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0655586300000001</sys_recorded_at>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:34:58</sys_updated_on>
+        <type>Embeddable Instances</type>
+        <update_guid>4e7dd61efa470710eadc9753b0cc7c6f</update_guid>
+        <update_guid_history>4e7dd61efa470710eadc9753b0cc7c6f:1352540611</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Case view 1">00236e56c3c70710b9df5163e4013137</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:59:41</sys_created_on>
+        <sys_db_object display_value="" name="sn_embeddable_core_instance">sn_embeddable_core_instance</sys_db_object>
+        <sys_id>8ce2766c2e394a06a5935e5b55a99a09</sys_id>
+        <sys_metadata>c27dd61ec3470710b9df5163e401316c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Case view 1</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_scope_delete display_value="">7f3c4b3b187c476ea20507635850af84</sys_scope_delete>
+        <sys_update_name>sn_embeddable_core_instance_c27dd61ec3470710b9df5163e401316c</sys_update_name>
+        <sys_update_version display_value="sn_embeddable_core_instance_c27dd61ec3470710b9df5163e401316c">027dd61ec3470710b9df5163e4013171</sys_update_version>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:59:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

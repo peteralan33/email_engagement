@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Use this tool when a client uploads or attaches a document in chat. Validates file format and legibility, queries institutional knowledge base policies (KB0010263 for Sales Agreements / KB0010264 for Proof of Insurance) to verify correctness and completeness (17-character VIN, pricing math, liability minimums, loss payee clauses), and automatically extracts verified particulars directly into the description field of the financial task.</description>
+        <input_schema>[{"name":"task_sys_id","description":"The sys_id of the target financial task","mandatory":false},{"name":"task_number","description":"The number of the target task (e.g. LTB0001001)","mandatory":false},{"name":"file_name","description":"The filename of the uploaded file (e.g. sales_agreement.pdf)","mandatory":true},{"name":"document_type","description":"Category: 'sales_agreement' or 'proof_of_insurance'","mandatory":false},{"name":"extracted_text","description":"Text content or OCR transcription of the uploaded file","mandatory":false}]</input_schema>
+        <name>validate_and_extract_document_data</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    var outputs = {};
+    var svc = new x_snc_pab_ee_tkit.LendingDocumentUploadService();
+    var res = svc.validateAndExtractDocument(inputs, outputs);
+    return res;
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 12:39:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>212ad42ac3c78710b9df5163e4013136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>validate_and_extract_document_data</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_212ad42ac3c78710b9df5163e4013136</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 12:39:43</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

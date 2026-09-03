@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Use this tool to create an official Fraud Case on sn_bom_fraud_case with Service Definition 'Report Fraud via Voice AI'. Automatically prefills account, contact, financial account (sold_product), disputed transaction, total fraud amount, and channel as 'voice_ai'. Returns 'case_sys_id' and 'case_number'.</description>
+        <input_schema>[{"name":"financial_account_sys_id","description":"The sys_id of the compromised financial account","mandatory":false},{"name":"contact_sys_id","description":"The sys_id of the customer contact","mandatory":false},{"name":"account_sys_id","description":"The sys_id of the company account","mandatory":false},{"name":"phone_number","description":"The customer phone number","mandatory":false},{"name":"disputed_transaction_sys_id","description":"The sys_id of the disputed transaction","mandatory":false},{"name":"transaction_sys_id","description":"Alternate parameter for transaction sys_id","mandatory":false},{"name":"disputed_amount","description":"Total amount disputed as fraudulent (e.g. 898.75)","mandatory":false},{"name":"disputed_merchant","description":"The merchant or description of the fraudulent charge","mandatory":false},{"name":"card_blocked","description":"Whether the card or account has been restricted / blocked","mandatory":false},{"name":"fraud_reason","description":"Reason for reporting fraud (e.g. Unauthorized transaction)","mandatory":false},{"name":"ai_notes","description":"Summary notes compiled by the Voice AI agent","mandatory":false}]</input_schema>
+        <name>create_fraud_case_via_voice_ai</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    var outputs = {};
+    var svc = new x_snc_pab_ee_tkit.FraudAccountAndTransactionService();
+    var res = svc.createFraudCase(inputs, outputs);
+    return res;
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:03:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2e26965ac3c30710b9df5163e401311d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>create_fraud_case_via_voice_ai</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_2e26965ac3c30710b9df5163e401311d</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 11:56:40</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

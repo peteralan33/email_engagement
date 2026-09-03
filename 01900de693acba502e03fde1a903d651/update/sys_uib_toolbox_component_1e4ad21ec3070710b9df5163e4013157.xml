@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{
+    "sn_embeddables": {
+        "component_code_snippet": "/* Uncomment this code for the default behaviour of the Case View component.\n\n\t// Get the record id and table from the current URL for a standard case.\n\t// Optionally, get playbook experience ID, playbook context ID, stage context ID,\n\t// and activity context ID for playbook case.\n\tconst currentURL = new URL(window.location.href);\n\tconst urlParams = new URLSearchParams(currentURL.search);\n\tconst tableName = urlParams.get('emb_table');\n\tconst sysRecordId = urlParams.get('emb_recordid');\n\tconst playbookExperience = urlParams.get('emb_playbook_experience');\n\tconst playbookContextId = urlParams.get('emb_playbook_context_id');\n\tconst stageContextId = urlParams.get('emb_stage_context_id');\n\tconst activityContextId = urlParams.get('emb_activity_context_id');\n\n\t// Update the sysId and table properties of the componentProperties object.\n\t// Optionally, update the playbook experience ID, playbook context ID,\n\t// stage context ID, and activity context ID for the playbook case view as well.\n\tsetProperties(snCustomEmbedxB2bLoanApplicationTask,{\n\t\ttable:tableName,\n\t\tsysId:sysRecordId,\n\t\tplaybookExperience:playbookExperience,\n\t\tselectedPlaybookContextId:playbookContextId,\n\t\tselectedStageContextId:stageContextId,\n\t\tselectedActivityContextId:activityContextId\n\t});\n\t*/",
+        "embed_code": {
+            "hide_events": [
+                "SN_EMBEDX_CASE_VIEW#ACTIVITY_SELECTED",
+                "SN_EMBEDX_CASE_VIEW#STAGE_SELECTED",
+                "SN_EMBEDX_CASE_VIEW#ACTIVITY_STATE_CHANGED",
+                "SN_EMBEDX_CASE_VIEW#UPDATE_SELECTION",
+                "SN_EMBEDX_CASE_VIEW#FILTER_SELECTED",
+                "SN_EMBEDX_CASE_VIEW#FILTER_OPTION_SELECTED",
+                "SN_EMBEDX_CASE_VIEW#PLAYBOOK_EXPANDED",
+                "SN_EMBEDX_CASE_VIEW#OPEN_RECORD",
+                "SN_EMBEDX_CASE_VIEW#USER_INTERACTION",
+                "SN_EMBEDX_CASE_VIEW#OPEN_LIST"
+            ],
+            "hide_properties": [
+                "playbookExperience"
+            ]
+        },
+        "overrided_props": {
+            "hideErrors": false
+        },
+        "refresh_preview_on_prop_change": [
+            "actionConfigurationId",
+            "hideActivity",
+            "hideAttachments",
+            "hideAllRelatedLists",
+            "showCustomTab",
+            "tableViewForRelatedList",
+            "visibleHorizontalPlaybookStages"
+        ],
+        "static_preview_image": null
+    }
+}</component_config>
+        <config_layout>[
+    "table",
+    "sysId",
+    "headerConfigurationId",
+    "hideActions",
+    "actionConfigurationId",
+    "hideActivity",
+    "enableRichText",
+    "hideAttachments",
+    "hideAllRelatedLists",
+    "tableViewForRelatedList",
+    "showCustomTab",
+    "hidePlaybookProcessTab",
+    "playbookExperience",
+    "hidePlaybookStages",
+    "playbookStageOrientation",
+    "visibleHorizontalPlaybookStages",
+    "playbookActivityViewMode",
+    "hideErrors"
+]</config_layout>
+        <description/>
+        <external_configuration_sources>[
+    {
+        "label": "Configure header",
+        "type": "URL",
+        "configProperties": {
+            "url": "/sys_ux_header_config_list"
+        }
+    },
+    {
+        "label": "Configure actions",
+        "type": "URL",
+        "configProperties": {
+            "url": "/sys_ux_action_config_list"
+        }
+    },
+    {
+        "label": "Configure custom tab",
+        "type": "URL",
+        "configProperties": {
+            "url": "/now/builder/ui/pc/5ca357128be5c610ca1c6e88222395bd"
+        }
+    }
+]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon>none</icon>
+        <image_icon display_value="sn_cx_components.case-view-image.svg">d9eb2f3c4366c650e39f79539ab8f2b5</image_icon>
+        <internal_component>false</internal_component>
+        <label>B2B Loan Application Task</label>
+        <macroponent display_value="B2B Loan Application Task">a94a521ec3070710b9df5163e4013192</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy><![CDATA[// eslint-disable-next-line no-unused-vars
+            function configureProps(obj) {
+                const { trigger, api, properties } = obj;
+
+                const toggleVisibility = (property, value) => {
+                    api.updateVisibility(property, value);
+                };
+
+                const updatePlaybookPropertiesVisibility = () => {
+                    const playbookProperties = [
+                        { property: 'playbookExperience', value: !properties.hidePlaybookProcessTab },
+                        { property: 'playbookStageOrientation', value: !properties.hidePlaybookProcessTab && !properties.hidePlaybookStages },
+                        { property: 'visibleHorizontalPlaybookStages', value: !properties.hidePlaybookProcessTab && !properties.hidePlaybookStages && properties.playbookStageOrientation === 'horizontal' },
+                        { property: 'playbookActivityViewMode', value: !properties.hidePlaybookProcessTab },
+						{ property: 'hidePlaybookStages', value: !properties.hidePlaybookProcessTab }
+                    ];
+                    playbookProperties.forEach(({ property, value }) => {
+                        toggleVisibility(property, value);
+                    });
+                };
+
+                const updateTriggerSpecificVisibility = () => {
+                    switch (trigger) {
+                        case 'hideActions':
+                            toggleVisibility('actionConfigurationId', !properties.hideActions);
+                            break;
+                        case 'hideAllRelatedLists':
+                            toggleVisibility('tableViewForRelatedList', !properties.hideAllRelatedLists);
+                            break;
+                        case 'hideActivity':
+                            toggleVisibility('enableRichText', !properties.hideActivity);
+                            break;
+                        default:
+                            break;
+                    }
+                };
+
+                if(trigger)
+                    updateTriggerSpecificVisibility();
+                updatePlaybookPropertiesVisibility();
+        }]]></scripted_config_policy>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:21:04</sys_created_on>
+        <sys_id>1e4ad21ec3070710b9df5163e4013157</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>B2B Loan Application Task</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_1e4ad21ec3070710b9df5163e4013157</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:24:22</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=1e4ad21ec3070710b9df5163e4013157"/>
+</record_update>

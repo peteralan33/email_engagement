@@ -2,41 +2,41 @@
     <sp_portal action="INSERT_OR_UPDATE">
         <alternate_portal/>
         <communication_channels/>
-        <css_variables>$primary-color: #007A87;
-$secondary-color: #E5F4F6;
-$tertiary-color: #B2EBF2;
-$primary-area-text-color: #FFFFFF;
-$secondary-area-text-color: #000000;
-$tertiary-area-text-color: #000000;
-$links-color: #007A87;
-$background-color: #f9f9f9;
-$surface-color: #ffffff;
-$heading-color: #161b1c;
-$heading-font-size: 24px;
-$section-heading-size: 20px;
-$section-heading-color: #161b1c;
-$mainfont-size: 18px;
-$mainfont-color: #425051;
-$maintext-color: #161b1c;
-$maintext-font-size: 16px;
-$metadata-color: #425051;
-$metadata-font-size: 12px;
-$tertiary-text-color: #637274;
-$tertiary-font-size: 12px;
-$links-text-size: 12px;
-$icon-color: $primary-color;
-$primary-action-label-size: $maintext-font-size;
-$min-height: 64px;
-$brand-primary: $primary-color;
-$btn-primary-color: $primary-color;
-$ec-footer-btn-padding: 8px 24px;
-$ec-footer-btn-width: auto;
-$ec-footer-container-padding: 24px;
-$primary-catalog-text-color: rgb(0, 0, 0);
-$card-border-color: rgb(217, 217, 217);
-$card-border-radius: 4px;
-$card-margin: 6px;
-</css_variables>
+        <css_variables>$primary-color: #0079C1;&#13;
+$secondary-color: #E6F3F8;&#13;
+$tertiary-color: #C8E4F1;&#13;
+$primary-area-text-color: #FFFFFF;&#13;
+$secondary-area-text-color: #000000;&#13;
+$tertiary-area-text-color: #000000;&#13;
+$links-color: #0079C1;&#13;
+$background-color: #f9f9f9;&#13;
+$surface-color: #ffffff;&#13;
+$heading-color: #161b1c;&#13;
+$heading-font-size: 24px;&#13;
+$section-heading-size: 20px;&#13;
+$section-heading-color: #161b1c;&#13;
+$mainfont-size: 18px;&#13;
+$mainfont-color: #425051;&#13;
+$maintext-color: #161b1c;&#13;
+$maintext-font-size: 16px;&#13;
+$metadata-color: #425051;&#13;
+$metadata-font-size: 12px;&#13;
+$tertiary-text-color: #637274;&#13;
+$tertiary-font-size: 12px;&#13;
+$links-text-size: 12px;&#13;
+$icon-color: $primary-color;&#13;
+$primary-action-label-size: $maintext-font-size;&#13;
+$min-height: 64px;&#13;
+$brand-primary: $primary-color;&#13;
+$btn-primary-color: $primary-color;&#13;
+$ec-footer-btn-padding: 8px 24px;&#13;
+$ec-footer-btn-width: auto;&#13;
+$ec-footer-container-padding: 24px;&#13;
+$primary-catalog-text-color: rgb(0, 0, 0);&#13;
+$card-border-color: transparent;&#13;
+$card-border-radius: 0px;&#13;
+$card-margin: 0px;&#13;
+$cache_bust: '1787853171';</css_variables>
         <dark_theme/>
         <default>false</default>
         <embeddable_macroponents/>
@@ -71,14 +71,14 @@ $card-margin: 6px;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-20 21:09:32</sys_created_on>
         <sys_id>4998060e2b3203d02dfdf2166e91bf82</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>341</sys_mod_count>
         <sys_name>Lumina Engagement Messenger</sys_name>
         <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sp_portal_4998060e2b3203d02dfdf2166e91bf82</sys_update_name>
         <sys_updated_by>ag.mcp.lumina</sys_updated_by>
-        <sys_updated_on>2026-08-27 02:51:49</sys_updated_on>
+        <sys_updated_on>2026-09-03 13:08:41</sys_updated_on>
         <theme display_value="CWF Engagement Messenger Theme">f2c5a93d53ae5010be19ddeeff7b125c</theme>
         <title>Lumina Engagement Messenger</title>
         <ts_index_group/>

@@ -3,8 +3,8 @@
         <active>true</active>
         <agent display_value="Airline Policy and Knowledge Agent">6ee35e442bc707102dfdf2166e91bf42</agent>
         <agent_descriptor/>
-        <agent_learning>false</agent_learning>
-        <current_version/>
+        <agent_learning>true</agent_learning>
+        <current_version display_value="Version 1">e6e39ac42bc707102dfdf2166e91bfed</current_version>
         <doc_url/>
         <icon_url/>
         <public>false</public>
@@ -15,7 +15,7 @@
         <sys_created_on>2026-08-27 03:06:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>f2e3dac42bc707102dfdf2166e91bf00</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -23,6 +23,6 @@
         <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sn_aia_agent_config_f2e3dac42bc707102dfdf2166e91bf00</sys_update_name>
         <sys_updated_by>ag.mcp.lumina</sys_updated_by>
-        <sys_updated_on>2026-08-27 03:06:55</sys_updated_on>
+        <sys_updated_on>2026-08-27 16:23:46</sys_updated_on>
     </sn_aia_agent_config>
 </record_update>

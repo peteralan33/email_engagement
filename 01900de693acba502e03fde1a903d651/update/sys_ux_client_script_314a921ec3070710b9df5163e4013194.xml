@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes>f73e4012471f4fc1ae50a97a8c62fb31</includes>
+        <macroponent display_value="B2B Loan Application Task">a94a521ec3070710b9df5163e4013192</macroponent>
+        <name>onCaseViewLoadingErrorOccurred</name>
+        <preset/>
+        <required_translations>[
+    {
+        "message": "Try refreshing the page"
+    },
+    {
+        "message": "Can't display this information"
+    }
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+async function handler({api, event, helpers, imports}) {
+    api.setState("hideLoader", true);
+
+    const emitError = (loadingError, errorType) => {
+        api.emit('SN_EMBEDX_CASE_VIEW#COMPONENT_ERROR', {
+            errorType: errorType,
+            errorMessage: [{ message: loadingError }]
+        });
+        api.emit('MACROPONENT_TRACK_USAGE_REQUESTED', {
+            event: '[WE] Case View - Component Error',
+            value: {}
+        });
+    };
+
+    const webComponentsUtil = imports["sn_core_components.ComponentsUtil"]();
+    var loadingError = await helpers.translate("Try refreshing the page");
+    var errorType = event.payload.errorType ? event.payload.errorType : "internal_error";
+
+    if (event.payload.status) {
+        console.error(loadingError);
+        emitError(loadingError, errorType);
+        return;
+    }
+
+    api.setState("hideStandardTicket", true);
+
+    if (!api.context.props.hideErrors) {
+        var headerMessage = await helpers.translate("Can't display this information");
+        api.setState("hideErrorComponent", false);
+        api.setState("errorMessageHeader", {
+            label: headerMessage
+        });
+        api.setState("errorMessageDescription", loadingError);
+    } else 
+        console.error(loadingError);
+
+    emitError(loadingError, errorType);
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:21:02</sys_created_on>
+        <sys_id>314a921ec3070710b9df5163e4013194</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onCaseViewLoadingErrorOccurred</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_client_script_314a921ec3070710b9df5163e4013194</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:21:02</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

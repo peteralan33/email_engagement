@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_embeddable_macroponent">
+    <sys_ux_embeddable_macroponent action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <default_property_values/>
+        <macroponent display_value="B2B Loan Application Task">a94a521ec3070710b9df5163e4013192</macroponent>
+        <sys_class_name>sys_ux_embeddable_macroponent</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:21:05</sys_created_on>
+        <sys_id>a24a121ec3070710b9df5163e40131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn-custom-embedx-b2b-loan-application-task</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_ux_embeddable_macroponent_a24a121ec3070710b9df5163e40131e1</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:21:05</sys_updated_on>
+        <tag_name>sn-custom-embedx-b2b-loan-application-task</tag_name>
+    </sys_ux_embeddable_macroponent>
+</record_update>

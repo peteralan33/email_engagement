@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_embeddable_core_instance">
+    <sn_embeddable_core_instance action="INSERT_OR_UPDATE">
+        <display_order>2</display_order>
+        <embeddable_macroponent display_value="sn-custom-embedx-b2b-loan-application-task">a24a121ec3070710b9df5163e40131e1</embeddable_macroponent>
+        <group display_value="Form Submission">764dde9ac3470710b9df5163e4013141</group>
+        <instance_name>B2B Loan Application Task View</instance_name>
+        <properties>{
+    "table": "sn_bom_loan_b2b_task",
+    "sysId": "45158ed62b8bc3102dfdf2166e91bf94",
+    "headerConfigurationId": "0a2d92f65333101043d7ddeeff7b12cc",
+    "actionConfigurationId": "b226535518520210f8775b8843daf9fb",
+    "hideActions": false,
+    "hideAllRelatedLists": true,
+    "tableViewForRelatedList": "",
+    "showCustomTab": false,
+    "hideErrors": false,
+    "hideActivity": true,
+    "hideAttachments": false,
+    "hidePlaybookProcessTab": true,
+    "playbookExperience": "0d71033773f220109edbc1f52ff6a741",
+    "playbookStageOrientation": "horizontal",
+    "visibleHorizontalPlaybookStages": 5,
+    "playbookActivityViewMode": "focused",
+    "selectedPlaybookContextId": "",
+    "selectedStageContextId": "",
+    "selectedActivityContextId": "",
+    "hidePlaybookStages": false,
+    "enableRichText": false
+}</properties>
+        <sys_class_name>sn_embeddable_core_instance</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:35:11</sys_created_on>
+        <sys_id>c98dde1ec3470710b9df5163e40131d9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>B2B Loan Application Task View</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_embeddable_core_instance_c98dde1ec3470710b9df5163e40131d9</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 04:00:23</sys_updated_on>
+    </sn_embeddable_core_instance>
+</record_update>

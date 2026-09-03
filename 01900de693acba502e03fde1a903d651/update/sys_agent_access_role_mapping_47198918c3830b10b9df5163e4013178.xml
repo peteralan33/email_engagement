@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_agent_access_role_mapping">
+    <sys_agent_access_role_mapping action="INSERT_OR_UPDATE">
+        <agent_access_config display_value="6ee35e442bc707102dfdf2166e91bf42">8f194918c3830b10b9df5163e40131a9</agent_access_config>
+        <role display_value="snc_external" name="snc_external">940ba702933002009c8579b4f47ffbe2</role>
+        <sys_class_name>sys_agent_access_role_mapping</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-08-27 16:18:33</sys_created_on>
+        <sys_id>47198918c3830b10b9df5163e4013178</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6ee35e442bc707102dfdf2166e91bf42.snc_external</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_agent_access_role_mapping_47198918c3830b10b9df5163e4013178</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-08-27 16:18:33</sys_updated_on>
+    </sys_agent_access_role_mapping>
+</record_update>

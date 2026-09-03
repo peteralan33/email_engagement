@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Use this tool to send the official branded fraud case confirmation email to the customer contact. Pushes the AI suggested summary into 'x_snc_pab_ee_tkit_ai_suggested_response' on the fraud case and dispatches the templated security alert with card restriction details and portal tracking link.</description>
+        <input_schema>[{"name":"case_sys_id","description":"The sys_id of the created fraud case","mandatory":true},{"name":"contact_sys_id","description":"The sys_id of the customer contact","mandatory":false},{"name":"ai_suggested_response","description":"The summary response to include in the confirmation email","mandatory":false}]</input_schema>
+        <name>send_fraud_case_confirmation_email</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    var outputs = {};
+    var svc = new x_snc_pab_ee_tkit.FraudAccountAndTransactionService();
+    var res = svc.sendFraudConfirmationEmail(inputs, outputs);
+    return res;
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:03:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>22261e5ac3c30710b9df5163e4013159</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>send_fraud_case_confirmation_email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_tool_22261e5ac3c30710b9df5163e4013159</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 11:56:41</sys_updated_on>
+        <target_document/>
+        <target_document_table/>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

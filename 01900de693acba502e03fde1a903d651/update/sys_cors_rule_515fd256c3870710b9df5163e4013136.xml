@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_cors_rule">
+    <sys_cors_rule action="INSERT_OR_UPDATE">
+        <access_control_allow_credentials>true</access_control_allow_credentials>
+        <access_control_allow_headers>*</access_control_allow_headers>
+        <active>true</active>
+        <delete>false</delete>
+        <domain>https://fir-toolkit-webapp.web.app</domain>
+        <exposed_headers>X-Is-Logged-In,X-Sessionloggedin,Content-Type,X-Content-Type-Options,x-snc-clear-node-affinity</exposed_headers>
+        <for_embeddables>true</for_embeddables>
+        <get>true</get>
+        <max_age>172800</max_age>
+        <name>B2B Loan Application Task 1</name>
+        <patch>false</patch>
+        <post>false</post>
+        <put>false</put>
+        <resource_path>/logout.do</resource_path>
+        <rest_api/>
+        <sys_class_name>sys_cors_rule</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 03:43:07</sys_created_on>
+        <sys_id>515fd256c3870710b9df5163e4013136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>B2B Loan Application Task 1</sys_name>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sys_cors_rule_515fd256c3870710b9df5163e4013136</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 03:43:07</sys_updated_on>
+        <use_resource_path>true</use_resource_path>
+    </sys_cors_rule>
+</record_update>

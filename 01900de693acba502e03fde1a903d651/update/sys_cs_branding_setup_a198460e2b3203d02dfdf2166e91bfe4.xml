@@ -7,18 +7,18 @@
         <body_font_src/>
         <bot_bubble_bg_color>#E5F4F6</bot_bubble_bg_color>
         <bot_bubble_font_color>#000000</bot_bubble_font_color>
-        <branding_key>c998060e2b3203d02dfdf2166e91bf7a</branding_key>
+        <branding_key>lumina_engagement_messenger</branding_key>
         <branding_name>Lumina Engagement Messenger</branding_name>
         <bubble_bg_color>#B2EBF2</bubble_bg_color>
         <bubble_font_color>#000000</bubble_font_color>
-        <button_bg_action_color>#0080A3</button_bg_action_color>
+        <button_bg_action_color>#007A87</button_bg_action_color>
         <button_bg_color>#ffffff</button_bg_color>
         <button_hover_bg_header_color>#FFFFFF1A</button_hover_bg_header_color>
         <button_hover_bg_modal_color>#F1F2F3</button_hover_bg_modal_color>
         <button_primary_bg_active_color/>
         <button_primary_bg_color/>
         <button_primary_bg_hover_color/>
-        <button_selection_text_color>#0080A3</button_selection_text_color>
+        <button_selection_text_color>#007A87</button_selection_text_color>
         <category_bg_color>#FFFFFF</category_bg_color>
         <category_font_color>#37444A</category_font_color>
         <chat_body_font_size>1</chat_body_font_size>
@@ -28,7 +28,7 @@
         <choicepicker_input_icon_color>#4F5C62</choicepicker_input_icon_color>
         <citation_badge_background_color>#C6CBCB</citation_badge_background_color>
         <citation_badge_background_hover_color>#A3ABAC</citation_badge_background_hover_color>
-        <close_icon_color>#4F5C62</close_icon_color>
+        <close_icon_color>#FFFFFF</close_icon_color>
         <disabled_input_bg_color>#FFFFFF</disabled_input_bg_color>
         <disabled_link_color>#85909566</disabled_link_color>
         <error_color>#E52239</error_color>
@@ -46,13 +46,13 @@
         <input_field_text_color>#151920</input_field_text_color>
         <input_placeholder_text_color>#151920</input_placeholder_text_color>
         <left_panel_header_label/>
-        <link_color>#113A82</link_color>
+        <link_color>#007A87</link_color>
         <link_color_nonneutral_bg>#113A82</link_color_nonneutral_bg>
         <load_animation_color>#032D42</load_animation_color>
         <menu_icon_color>#000000</menu_icon_color>
         <menu_title>Contact Support</menu_title>
         <modal_body_bg_color>#FFFFFF</modal_body_bg_color>
-        <modal_header_bg_color>#F5F6F7</modal_header_bg_color>
+        <modal_header_bg_color>#007A87</modal_header_bg_color>
         <msg_delay>100</msg_delay>
         <new_messages_notifications_enabled>true</new_messages_notifications_enabled>
         <non_clickable_title_color>#10171A</non_clickable_title_color>
@@ -73,7 +73,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a198460e2b3203d02dfdf2166e91bfe4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Lumina Engagement Messenger</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
@@ -81,7 +81,7 @@
         <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
         <sys_update_name>sys_cs_branding_setup_a198460e2b3203d02dfdf2166e91bfe4</sys_update_name>
         <sys_updated_by>ag.mcp.lumina</sys_updated_by>
-        <sys_updated_on>2026-08-27 02:51:49</sys_updated_on>
+        <sys_updated_on>2026-08-27 14:24:40</sys_updated_on>
         <system_message_color>#37444A</system_message_color>
         <timestamp_color>#37444A</timestamp_color>
         <tooltip_bg_color>#0B1012</tooltip_bg_color>
@@ -89,6 +89,6 @@
         <type_presence_delay>0</type_presence_delay>
         <unread_conversation_count_display_enabled>true</unread_conversation_count_display_enabled>
         <va_logo>f598860e2b3203d02dfdf2166e91bf5a</va_logo>
-        <va_profile display_value="EC Virtual Agent">775bdec453812010b595ddeeff7b128b</va_profile>
+        <va_profile display_value="Lumina EM Profile">b31eacd4c3cbc710b9df5163e401312c</va_profile>
     </sys_cs_branding_setup>
 </record_update>

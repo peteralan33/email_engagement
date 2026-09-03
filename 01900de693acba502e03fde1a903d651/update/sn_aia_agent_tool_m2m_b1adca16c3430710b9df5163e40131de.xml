@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Look Up Lending Application">3a15d5562bcf83102dfdf2166e91bf91</agent>
+        <description>Use this tool to send the customer an official branded email notification summarizing the current status of their loan application and detailing the pending document tasks requiring their attention.
+
+When to call:
+- Call this tool after locating the loan application and identifying the outstanding document tasks, or when the customer asks for a follow-up email with the requirements and portal upload link.
+
+Inputs to provide:
+- 'case_sys_id': Pass the Case Sys ID stored from the lookup tool (e.g. from 'case_sys_id').
+- 'ai_suggested_response': Compose a clear, professional summary of the application status (Credit Assessment), the specific required documents (Sales Agreement for Vehicle and Proof of Insurance), and instructions on how to submit them (via customer portal or by emailing lending-documents@luminabank.com). This text will be written directly into the case field 'x_snc_pab_ee_tkit_ai_suggested_response' and embedded into the email template.
+- 'contact_sys_id': (Optional) Pass the Contact Sys ID if available.
+
+Customer response:
+- After calling this tool, confirm to the customer that a detailed summary email has been dispatched to their email address on file with direct links to upload the required documents through the customer portal.</description>
+        <display_mode>inline</display_mode>
+        <display_output>false</display_output>
+        <document_status/>
+        <entity>sn_aia_agent</entity>
+        <entity_id>3a15d5562bcf83102dfdf2166e91bf91</entity_id>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Send Email Outlining the Lending Application</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <pre_run>false</pre_run>
+        <requires_text_refined_message>false</requires_text_refined_message>
+        <requires_widget_transformation>true</requires_widget_transformation>
+        <should_display_refined_message>false</should_display_refined_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>ag.mcp.lumina</sys_created_by>
+        <sys_created_on>2026-09-03 02:25:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b1adca16c3430710b9df5163e40131de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send Email Outlining the Lending Application</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Channel Engagement Toolkit" source="x_snc_pab_ee_tkit">01900de693acba502e03fde1a903d651</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Channel Engagement Toolkit">01900de693acba502e03fde1a903d651</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_b1adca16c3430710b9df5163e40131de</sys_update_name>
+        <sys_updated_by>ag.mcp.lumina</sys_updated_by>
+        <sys_updated_on>2026-09-03 02:25:53</sys_updated_on>
+        <timeout/>
+        <tool display_value="send_lending_application_status_email">ff5b86de2bcbc3102dfdf2166e91bf6c</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+        <wait_for_widget_interaction>false</wait_for_widget_interaction>
+        <widgets>db0e858eff62b210f465ffffffffff2c</widgets>
+    </sn_aia_agent_tool_m2m>
+</record_update>
